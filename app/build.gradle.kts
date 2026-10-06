@@ -23,8 +23,8 @@ android {
         applicationId = "ru.dlyasvoih.app"
         minSdk = 26
         targetSdk = 36
-        versionCode = 124
-        versionName = "0.3.120"
+        versionCode = 125
+        versionName = "0.3.121"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
