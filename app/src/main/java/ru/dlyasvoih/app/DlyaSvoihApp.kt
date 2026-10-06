@@ -2,11 +2,15 @@ package ru.dlyasvoih.app
 
 import android.net.Uri
 import android.content.pm.ApplicationInfo
+import android.os.SystemClock
+import androidx.compose.animation.Crossfade
 import androidx.compose.animation.EnterTransition
 import androidx.compose.animation.ExitTransition
+import androidx.compose.animation.core.tween
 import androidx.compose.foundation.layout.*
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
+import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
@@ -29,6 +33,7 @@ import ru.dlyasvoih.app.data.CatalogFilter
 import ru.dlyasvoih.app.data.MainSection
 import ru.dlyasvoih.app.ui.*
 import ru.dlyasvoih.app.ui.screens.*
+import kotlinx.coroutines.delay
 
 private enum class Tab(val route: String, val label: String, val icon: Int) {
     CATALOG("catalog", "Каталог", R.drawable.icon_ui_catalog),
@@ -45,15 +50,26 @@ fun DlyaSvoihApp(shortcutRequest: State<ShortcutRequest?> = remember { mutableSt
         viewModelFactory { initializer { BootstrapViewModel(repo) } }
     })
     val state by boot.state.collectAsStateWithLifecycle()
+    // Database initialization already runs in the ViewModel. The short intro shares
+    // that time, survives rotation, and does not run again when resuming this Activity.
+    val introDeadline = rememberSaveable { SystemClock.elapsedRealtime() + 900L }
+    var introDone by remember { mutableStateOf(SystemClock.elapsedRealtime() >= introDeadline) }
+    LaunchedEffect(introDeadline) {
+        delay((introDeadline - SystemClock.elapsedRealtime()).coerceIn(0L, 900L))
+        introDone = true
+    }
+    val displayedState = if (state == BootState.Ready && !introDone) BootState.Loading else state
     Surface(Modifier.fillMaxSize().semantics { testTagsAsResourceId = true }) {
-        when (val current = state) {
-            BootState.Loading -> StatusPanel("Подготавливаем справочник…", loading = true)
-            is BootState.Error -> {
-                val detail = if ((context.applicationInfo.flags and ApplicationInfo.FLAG_DEBUGGABLE) != 0)
-                    "\n\n${current.detail}" else ""
-                StatusPanel("Не удалось открыть локальную базу. Попробуйте ещё раз.$detail", retry = boot::retry)
+        Crossfade(targetState = displayedState, animationSpec = tween(220), label = "launch-preview") { current ->
+            when (current) {
+                BootState.Loading -> LaunchPreview(loading = state == BootState.Loading)
+                is BootState.Error -> {
+                    val detail = if ((context.applicationInfo.flags and ApplicationInfo.FLAG_DEBUGGABLE) != 0)
+                        "\n\n${current.detail}" else ""
+                    StatusPanel("Не удалось открыть локальную базу. Попробуйте ещё раз.$detail", retry = boot::retry)
+                }
+                BootState.Ready -> GuideNavigation(repo, shortcutRequest)
             }
-            BootState.Ready -> GuideNavigation(repo, shortcutRequest)
         }
     }
 }
