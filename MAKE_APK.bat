@@ -47,7 +47,7 @@ if not exist "app\build\outputs\apk\debug\app-debug.apk" (
     exit /b 1
 )
 
-copy /Y "app\build\outputs\apk\debug\app-debug.apk" "DLYA_SVOIH_v0.3.121-debug.apk" >nul
+copy /Y "app\build\outputs\apk\debug\app-debug.apk" "DLYA_SVOIH_v0.3.122-debug.apk" >nul
 if errorlevel 1 (
     echo APK COPY FAILED
     pause
@@ -56,6 +56,6 @@ if errorlevel 1 (
 
 echo.
 echo APK READY:
-echo %CD%\DLYA_SVOIH_v0.3.121-debug.apk
+echo %CD%\DLYA_SVOIH_v0.3.122-debug.apk
 pause
 
