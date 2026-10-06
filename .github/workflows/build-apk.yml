@@ -24,7 +24,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 30
     env:
-      CI_SIGNING_KEYSTORE: ${{ runner.temp }}/dlya-svoih-debug.keystore
+      CI_SIGNING_KEYSTORE: ${{ github.workspace }}/dlya-svoih-debug.keystore
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-java@v4
