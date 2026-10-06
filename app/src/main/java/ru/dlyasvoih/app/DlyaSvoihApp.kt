@@ -192,7 +192,8 @@ private fun GuideNavigation(repo: GuideRepository, shortcutRequest: State<Shortc
                         } else {
                             nav.navigate(listRoute(model.filter)) { popUpTo(readerEntry.destination.id) { inclusive = true } }
                         }
-                    }, onImage = { id, index -> nav.navigate("catalog/gallery/${Uri.encode(id)}/$index") })
+                    }, onRelated = { id -> nav.navigate("catalog/card/${Uri.encode(id)}") { launchSingleTop = true } },
+                        onImage = { id, index -> nav.navigate("catalog/gallery/${Uri.encode(id)}/$index") })
                 }
                 cardRoutes("catalog", repo, nav)
             }
@@ -233,7 +234,8 @@ private fun listRoute(filter: CatalogFilter): String =
 private fun NavGraphBuilder.cardRoutes(prefix: String, repo: GuideRepository, nav: NavHostController) {
     composable("$prefix/card/{id}") { entry ->
         val id = entry.arguments?.getString("id").orEmpty()
-        DetailScreen(detailModel(repo), onBack = { nav.popBackStack() }) { index ->
+        DetailScreen(detailModel(repo), onBack = { nav.popBackStack() },
+            onRelated = { relatedId -> nav.navigate("$prefix/card/${Uri.encode(relatedId)}") { launchSingleTop = true } }) { index ->
             nav.navigate("$prefix/gallery/${Uri.encode(id)}/$index")
         }
     }
