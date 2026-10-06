@@ -23,6 +23,8 @@ jobs:
   apk:
     runs-on: ubuntu-latest
     timeout-minutes: 30
+    env:
+      CI_SIGNING_KEYSTORE: ${{ runner.temp }}/dlya-svoih-debug.keystore
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-java@v4
@@ -40,18 +42,24 @@ jobs:
           value = ''.join(os.environ.get('ANDROID_DEBUG_KEYSTORE_BASE64', '').split())
           if not value:
               raise SystemExit('Add the ANDROID_DEBUG_KEYSTORE_BASE64 Actions secret from your build PC first.')
-          path = Path.home() / '.android/debug.keystore'
+          path = Path(os.environ['CI_SIGNING_KEYSTORE'])
           path.parent.mkdir(parents=True, exist_ok=True)
           path.write_bytes(base64.b64decode(value, validate=True))
           path.chmod(0o600)
           PY
-          keytool -list -keystore "$HOME/.android/debug.keystore" -storepass android -alias androiddebugkey > /dev/null
+          python3 - <<'PY'
+          import hashlib, os, subprocess
+          certificate = subprocess.run(['keytool', '-exportcert', '-keystore', os.environ['CI_SIGNING_KEYSTORE'],
+              '-storepass', 'android', '-alias', 'androiddebugkey'], capture_output=True, check=True).stdout
+          print('Restored signing certificate SHA-256:', hashlib.sha256(certificate).hexdigest(), flush=True)
+          PY
       - name: Install Android SDK components
         run: |
           "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" 'platforms;android-36' 'build-tools;36.0.0'
           printf 'sdk.dir=%s\n' "$ANDROID_HOME" > local.properties
       - name: Build APK
-        run: bash ./gradlew :app:assembleDebug --no-daemon
+        id: build-apk
+        run: bash ./gradlew :app:assembleDebug --no-daemon -PciSigningKeystore="$CI_SIGNING_KEYSTORE"
       - name: Prepare versioned APK and preserve published catalog
         env:
           RELEASE_TAG: ${{ inputs.tag }}
@@ -68,6 +76,7 @@ jobs:
           signer = str(Path(os.environ['ANDROID_HOME']) / 'build-tools/36.0.0/apksigner')
           analyzer = str(Path(os.environ['ANDROID_HOME']) / 'cmdline-tools/latest/bin/apkanalyzer')
           metadata = apk_metadata(apk, analyzer=analyzer, signer=signer)
+          print('Built APK identity:', metadata, flush=True)
           tag = os.environ.get('RELEASE_TAG') or 'app-' + metadata['versionName']
           if not re.fullmatch(r'app-[a-zA-Z0-9._-]+', tag):
               raise SystemExit('Use a unique tag beginning with app-, for example app-0.3.114')
@@ -92,10 +101,11 @@ jobs:
           (base / 'notes.txt').write_text(changes, encoding='utf-8')
           PY
       - uses: actions/upload-artifact@v4
+        if: ${{ always() && !cancelled() && steps.build-apk.outcome == 'success' }}
         with:
           name: apk-and-update-feed
           path: |
-            build/release/*.apk
+            app/build/outputs/apk/debug/app-debug.apk
             build/release/latest.json
           if-no-files-found: error
       - name: Publish only after both files are uploaded
@@ -109,6 +119,7 @@ jobs:
         if: always()
         run: |
           python3 - <<'PY'
+          import os
           from pathlib import Path
-          (Path.home() / '.android/debug.keystore').unlink(missing_ok=True)
+          Path(os.environ['CI_SIGNING_KEYSTORE']).unlink(missing_ok=True)
           PY

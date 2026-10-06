@@ -101,7 +101,8 @@ class AppFeedTests(unittest.TestCase):
         self.output.unlink()
         for code, key in ((118, 'b'), (117, 'b'), (119, 'c')):
             self.metadata.update(versionCode=code, signerSha256=key * 64)
-            with self.subTest(code=code, key=key), self.assertRaisesRegex(ValueError, 'existing signing key'):
+            expected = 'Increase versionCode' if code <= 118 else 'existing signing key'
+            with self.subTest(code=code, key=key), self.assertRaisesRegex(ValueError, expected):
                 self.write()
         self.assertFalse(self.output.exists())
 

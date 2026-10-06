@@ -38,6 +38,17 @@ android {
     }
 
     signingConfigs {
+        // CI must use the restored key explicitly, regardless of runner defaults.
+        providers.gradleProperty("ciSigningKeystore").orNull?.let { keyPath ->
+            val keyFile = rootProject.file(keyPath)
+            require(keyFile.isFile) { "CI signing keystore is missing" }
+            getByName("debug") {
+                storeFile = keyFile
+                storePassword = "android"
+                keyAlias = "androiddebugkey"
+                keyPassword = "android"
+            }
+        }
         if (keystorePropertiesFile.isFile) {
             create("release") {
                 storeFile = rootProject.file(requireNotNull(keystoreProperties.getProperty("storeFile")))

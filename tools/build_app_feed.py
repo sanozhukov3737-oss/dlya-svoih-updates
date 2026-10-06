@@ -125,8 +125,13 @@ def write_app_feed(apk, catalog_feed, url, output, changes='', analyzer=None, si
                bytes=apk.stat().st_size, sha256=hashlib.sha256(apk.read_bytes()).hexdigest(), changes=changes)
     validate_app_metadata(app)
     previous = feed.get('app')
-    if previous and (app['versionCode'] <= previous['versionCode'] or app['signerSha256'] != previous['signerSha256']):
-        raise ValueError('Increase versionCode and keep the existing signing key')
+    if previous and app['versionCode'] <= previous['versionCode']:
+        raise ValueError('Increase versionCode: built APK has '
+                         f"{app['versionCode']}, published APK has {previous['versionCode']}")
+    if previous and app['signerSha256'] != previous['signerSha256']:
+        raise ValueError('Keep the existing signing key: '
+                         f"built APK certificate={app['signerSha256']}; "
+                         f"published APK certificate={previous['signerSha256']}")
     feed['app'] = app
     payload = json.dumps(feed, ensure_ascii=False, indent=2) + '\n'
     if len(payload.encode('utf-8')) > 64 * 1024:
