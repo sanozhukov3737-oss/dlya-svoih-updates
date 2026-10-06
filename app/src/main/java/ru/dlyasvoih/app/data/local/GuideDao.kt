@@ -117,17 +117,23 @@ interface GuideDao {
             c.contentStatus, c.modelStatus
         FROM cards c
         WHERE c.archived = 0 AND c.id != :id
-            AND c.categoryId = (SELECT categoryId FROM cards WHERE id = :id)
-        ORDER BY c.sortTitle, c.rowid LIMIT 12
+            AND (c.categoryId = (SELECT categoryId FROM cards WHERE id = :id) OR c.id IN (:familyIds))
+        ORDER BY CASE WHEN c.id IN (:familyIds) THEN 0 ELSE 1 END,
+            CASE WHEN EXISTS (SELECT 1 FROM card_countries a JOIN card_countries b ON a.countryId = b.countryId
+                WHERE a.cardId = :id AND b.cardId = c.id) THEN 0 ELSE 1 END,
+            c.sortTitle, c.rowid LIMIT 12
     """)
-    fun relatedCards(id: String): Flow<List<CardPreview>>
+    fun relatedCards(id: String, familyIds: List<String>): Flow<List<CardPreview>>
     @Query("""
         SELECT c.* FROM cards c
         WHERE c.archived = 0 AND c.id != :id
-            AND c.categoryId = (SELECT categoryId FROM cards WHERE id = :id)
-        ORDER BY c.sortTitle, c.rowid LIMIT 12
+            AND (c.categoryId = (SELECT categoryId FROM cards WHERE id = :id) OR c.id IN (:familyIds))
+        ORDER BY CASE WHEN c.id IN (:familyIds) THEN 0 ELSE 1 END,
+            CASE WHEN EXISTS (SELECT 1 FROM card_countries a JOIN card_countries b ON a.countryId = b.countryId
+                WHERE a.cardId = :id AND b.cardId = c.id) THEN 0 ELSE 1 END,
+            c.sortTitle, c.rowid LIMIT 12
     """)
-    fun relatedCardEntities(id: String): Flow<List<CardEntity>>
+    fun relatedCardEntities(id: String, familyIds: List<String>): Flow<List<CardEntity>>
     @Upsert suspend fun saveReading(value: ReadingEntity)
     @Query("DELETE FROM reading WHERE cardId = :id") suspend fun removeReading(id: String): Int
     @Query("DELETE FROM reading WHERE cardId NOT IN (SELECT cardId FROM reading ORDER BY updatedAt DESC, cardId LIMIT 50)")
