@@ -218,7 +218,7 @@ class GuideRepository(private val db: GuideDatabase, private val legacyPrefs: Sh
     fun detail(id: String) = combine(combine(dao.card(id), dao.images(id), dao.sources(id),
         dao.isFavorite(id), dao.cardCountries(id)) { card, images, sources, favorite, countries ->
         CardDetails(card, images, sources, favorite, countries)
-    }, dao.relatedCards(id), dao.relatedCardEntities(id)) { details, related, comparisonCards ->
+    }, dao.relatedCards(id, CardFamilies.relatedIds(id)), dao.relatedCardEntities(id, CardFamilies.relatedIds(id))) { details, related, comparisonCards ->
         details.copy(related = related, comparisonCards = comparisonCards)
     }
 
