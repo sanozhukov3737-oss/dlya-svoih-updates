@@ -78,6 +78,21 @@ def sdk_tool(name):
     raise ValueError('Android SDK tool not found: ' + name)
 
 
+def signing_certificate_digest(signature):
+    # apksigner prints SDK-range labels for v3.1/v3 signers. The same
+    # certificate can appear in more than one range; key rotation cannot.
+    records = re.findall(
+        r'^Signer (#[1-9][0-9]*|\(minSdkVersion=[0-9]+(?: \(dev release=true\))?, '
+        r'maxSdkVersion=[0-9]+\)) certificate SHA-256 digest:[ \t]*([A-Fa-f0-9]{64})[ \t\r]*$',
+        signature, re.MULTILINE)
+    digests = {digest.lower() for _, digest in records}
+    numbered = {label for label, _ in records if label.startswith('#')}
+    if len(digests) != 1 or len(numbered) > 1:
+        raise ValueError('Use one verified APK signing certificate '
+                         f'(found {len(records)} records, {len(digests)} distinct certificates)')
+    return next(iter(digests))
+
+
 def apk_metadata(apk, analyzer=None, signer=None):
     analyzer = analyzer or sdk_tool('apkanalyzer')
     signer = signer or sdk_tool('apksigner')
@@ -87,12 +102,10 @@ def apk_metadata(apk, analyzer=None, signer=None):
         except subprocess.CalledProcessError as e:
             raise ValueError('APK validation failed: ' + Path(args[0]).name) from e
     signature = run([signer, 'verify', '--print-certs', str(apk)])
-    digests = re.findall(r'Signer #\d+ certificate SHA-256 digest:\s*([A-Fa-f0-9]{64})', signature)
-    if len(digests) != 1:
-        raise ValueError('Use one verified APK signing certificate')
+    digest = signing_certificate_digest(signature)
     values = {key: run([analyzer, 'manifest', key, str(apk)]) for key in ('application-id', 'version-code', 'version-name', 'min-sdk')}
     return dict(packageName=values['application-id'], versionCode=int(values['version-code']),
-                versionName=values['version-name'], minSdk=int(values['min-sdk']), signerSha256=digests[0].lower())
+                versionName=values['version-name'], minSdk=int(values['min-sdk']), signerSha256=digest)
 
 
 def write_app_feed(apk, catalog_feed, url, output, changes='', analyzer=None, signer=None):

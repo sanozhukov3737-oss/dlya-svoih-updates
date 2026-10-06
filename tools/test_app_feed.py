@@ -6,7 +6,7 @@ import tempfile
 import unittest
 from unittest.mock import patch
 import zipfile
-from build_app_feed import apk_metadata, write_app_feed, validate_app_metadata
+from build_app_feed import apk_metadata, write_app_feed, validate_app_metadata, signing_certificate_digest
 
 
 class AppFeedTests(unittest.TestCase):
@@ -50,6 +50,44 @@ class AppFeedTests(unittest.TestCase):
             return subprocess.CompletedProcess(args, 0, stdout=output)
         with patch('build_app_feed.subprocess.run', side_effect=result):
             self.assertEqual(self.metadata, apk_metadata(self.apk, 'apkanalyzer', 'apksigner'))
+
+    def test_v31_sdk_range_output_is_used_for_apk_metadata(self):
+        certificate = 'B' * 64
+        output = (f'Signer (minSdkVersion=33, maxSdkVersion=2147483647) certificate SHA-256 digest: {certificate}\r\n'
+                  f'Signer (minSdkVersion=26, maxSdkVersion=32) certificate SHA-256 digest: {certificate}\r\n'
+                  f'Source Stamp Signer certificate SHA-256 digest: {"c" * 64}\r\n')
+        def result(args, **kwargs):
+            values = {'application-id': 'ru.dlyasvoih.app', 'version-code': '118', 'version-name': '0.3.114', 'min-sdk': '26'}
+            return subprocess.CompletedProcess(args, 0, stdout=output if args[0] == 'apksigner' else values[args[2]])
+        with patch('build_app_feed.subprocess.run', side_effect=result):
+            self.assertEqual(self.metadata, apk_metadata(self.apk, 'apkanalyzer', 'apksigner'))
+
+    def test_multiple_certificates_and_parallel_signers_are_rejected(self):
+        outputs = [
+            f'Signer (minSdkVersion=33, maxSdkVersion=2147483647) certificate SHA-256 digest: {"b" * 64}\n'
+            f'Signer (minSdkVersion=26, maxSdkVersion=32) certificate SHA-256 digest: {"c" * 64}',
+            f'Signer #1 certificate SHA-256 digest: {"b" * 64}\nSigner #2 certificate SHA-256 digest: {"c" * 64}',
+            f'Signer #1 certificate SHA-256 digest: {"b" * 64}\nSigner #2 certificate SHA-256 digest: {"b" * 64}',
+        ]
+        for output in outputs:
+            with self.subTest(output=output), self.assertRaisesRegex(ValueError, 'one verified APK signing certificate'):
+                signing_certificate_digest(output)
+
+    def test_source_stamp_public_key_and_invalid_digests_are_rejected(self):
+        outputs = [
+            f'Source Stamp Signer certificate SHA-256 digest: {"b" * 64}',
+            f'Signer #1 public key SHA-256 digest: {"b" * 64}',
+            f'Signer #1 certificate SHA-256 digest: {"b" * 63}',
+            f'Signer #1 certificate SHA-256 digest: {"b" * 65}',
+            '',
+        ]
+        for output in outputs:
+            with self.subTest(output=output), self.assertRaisesRegex(ValueError, 'one verified APK signing certificate'):
+                signing_certificate_digest(output)
+
+    def test_development_sdk_range_label_is_supported(self):
+        output = f'Signer (minSdkVersion=33 (dev release=true), maxSdkVersion=2147483647) certificate SHA-256 digest: {"b" * 64}'
+        self.assertEqual('b' * 64, signing_certificate_digest(output))
 
     def test_wrong_package_is_rejected_without_output(self):
         self.metadata['packageName'] = 'other.app'
