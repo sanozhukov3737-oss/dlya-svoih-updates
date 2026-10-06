@@ -5,11 +5,13 @@ from pathlib import Path
 import sqlite3
 import unittest
 from rewrite_reader_v121 import READY, strip_table_citations, table_blocks
+from rewrite_reader_v122 import ARCHIVED_ROWS
 
 ROOT=Path(__file__).resolve().parents[1]
 DATA=json.loads((ROOT/'content/catalog.json').read_text())
 CARDS={c['id']:c for c in DATA['cards']}
 BASELINE=json.loads((ROOT/'tools/reader_150_baseline.json').read_text())
+BASELINE151={r['id']:r for r in json.loads((ROOT/'tools/reader_151_baseline.json').read_text())}
 
 
 class Reader151Tests(unittest.TestCase):
@@ -33,12 +35,18 @@ class Reader151Tests(unittest.TestCase):
             expected=row['tableValues']
             if not row['protectedBody']:
                 expected=[strip_table_citations(value,[]).strip() for value in expected]
+            if row['id'] in ARCHIVED_ROWS:
+                # Catalog 152 moves exactly three editorial rows to service notes.
+                # Their values still exist verbatim; no physical row is exempted.
+                archived=BASELINE151[row['id']]['archivedTableValues']
+                expected=[v for v in expected if v not in archived]
+                for value in archived:self.assertIn(value,c['body'].partition('\n\n## Служебные сведения')[2])
             actual=[v for table in table_blocks(article) for k,v in table]
             self.assertEqual(expected,actual,c['id'])
 
     def test_catalog_database_and_audit_agree_on_final_batch(self):
         audit=json.loads((ROOT/'docs/READER_151_AUDIT.json').read_text())
-        self.assertEqual(151,DATA['contentVersion'])
+        self.assertGreaterEqual(DATA['contentVersion'],151)
         rows={r['id']:r for r in audit['cards']}
         self.assertEqual(1253,len(rows))
         self.assertEqual(set(CARDS)-READY-{c['id'] for c in CARDS.values() if c['section']=='MEDICINE'},set(rows))

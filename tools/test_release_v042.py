@@ -1,4 +1,4 @@
-"""Local release checks for v0.3.121."""
+"""Local release checks for v0.3.122."""
 
 from pathlib import Path
 import json
@@ -12,9 +12,9 @@ ROOT = Path(__file__).resolve().parents[1]
 class ReleaseV043Test(unittest.TestCase):
     def test_version_and_build_scripts(self):
         gradle = (ROOT / "app/build.gradle.kts").read_text(encoding="utf-8")
-        self.assertIn('versionName = "0.3.121"', gradle)
-        self.assertIn("versionCode = 125", gradle)
-        self.assertIn("DLYA_SVOIH_v0.3.121-debug.apk", (ROOT / "MAKE_APK.bat").read_text(encoding="utf-8"))
+        self.assertIn('versionName = "0.3.122"', gradle)
+        self.assertIn("versionCode = 126", gradle)
+        self.assertIn("DLYA_SVOIH_v0.3.122-debug.apk", (ROOT / "MAKE_APK.bat").read_text(encoding="utf-8"))
 
     def test_only_production_database_is_packaged(self):
         database = ROOT / "app/src/main/assets/database"
