@@ -73,7 +73,7 @@ class UpdateTests(unittest.TestCase):
         self.assertEqual(len(DATA['cards']), len(rows))
         for card in DATA['cards']:
             expected_search = normalize(' '.join([
-                card['title'], card['summary'], card['body'], *card['tags']
+                card['title'], card['summary'], card['body'].split('\n\n## Служебные сведения', 1)[0], *card['tags']
             ]))
             self.assertEqual(normalize(card['title']), rows[card['id']][0], card['id'])
             self.assertEqual(expected_search, rows[card['id']][1], card['id'])

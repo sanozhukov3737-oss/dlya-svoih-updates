@@ -114,7 +114,7 @@ def build(source, output):
                 fields = {k: card[k] for k in ['rowid','id','section','categoryId','title','summary','body','contentStatus','reviewedAt',
                     'modelStatus','sourceGrade','verifiedAt']}
                 fields.update(tags=' · '.join(card['tags']), sortTitle=normalize(card['title']),
-                    searchText=normalize(' '.join([card['title'], card['summary'], card['body'], *card['tags']])),
+                    searchText=normalize(' '.join([card['title'], card['summary'], card['body'].split('\n\n## Служебные сведения', 1)[0], *card['tags']])),
                     thumbnailPath=card['images'][0]['thumbnailPath'] if card['images'] else None)
                 db.execute('INSERT INTO cards ('+','.join(fields)+') VALUES ('+','.join(':'+key for key in fields)+')', fields)
                 db.executemany('INSERT INTO card_countries VALUES (?,?)', [(card['id'], country) for country in card['countries']])
