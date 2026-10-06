@@ -52,6 +52,7 @@ import ru.dlyasvoih.app.ui.DetailState
 import ru.dlyasvoih.app.ui.DetailViewModel
 import ru.dlyasvoih.app.ui.GalleryViewModel
 import ru.dlyasvoih.app.ui.content.ReferenceBodyParser
+import ru.dlyasvoih.app.ui.content.ReaderContent
 import kotlin.math.max
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -164,7 +165,7 @@ fun DetailScreen(vm: DetailViewModel, onBack: () -> Unit, active: Boolean = true
                             }
                         }
                     }
-                    item(key = "sources") { SourcesCard(value.sources, card.sourceGrade, card.verifiedAt) }
+                    item(key = "sources") { SourcesCard(value.sources, card.sourceGrade, card.verifiedAt, ReaderContent.notes(paragraphs)) }
                 }
             }
         }
@@ -274,7 +275,7 @@ private fun CompareColumn(card: CardEntity, modifier: Modifier = Modifier) {
     }
 }
 
-private fun comparisonFacts(body: String): List<Pair<String, String>> = body.lineSequence()
+private fun comparisonFacts(body: String): List<Pair<String, String>> = ReaderContent.searchableBody(body).lineSequence()
     .map(String::trim)
     .filter { it.startsWith("|") && it.endsWith("|") }
     .map { row -> row.trim('|').split('|').map(String::trim) }
@@ -284,17 +285,8 @@ private fun comparisonFacts(body: String): List<Pair<String, String>> = body.lin
     .distinctBy { it.first.lowercase() }
     .take(6).toList()
 
-private fun readerParagraphs(paragraphs: List<String>, mortar: Boolean): List<String> {
-    val hidden = setOf("Статус проверки") + (if (mortar) setOf(
-        "Основание", "Признаки распознавания", "Фото и визуальная сверка", "Границы карточки"
-    ) else emptySet())
-    var skip = false
-    return paragraphs.filter { paragraph ->
-        val block = ReferenceBodyParser.parseBlock(paragraph)
-        if (block.kind == ReferenceBodyParser.Kind.HEADING) skip = block.text in hidden
-        !skip
-    }
-}
+private fun readerParagraphs(paragraphs: List<String>, mortar: Boolean): List<String> =
+    ReaderContent.article(paragraphs, mortar)
 
 private fun recognitionBlocks(paragraphs: List<String>): List<String> {
     val start = paragraphs.indexOfFirst { it.trim().startsWith("Признаки распознавания", ignoreCase = true) }
@@ -330,8 +322,8 @@ private fun buildShareText(card: CardEntity, paragraphs: List<String>): String =
 }
 
 @Composable
-private fun SourcesCard(sources: List<ru.dlyasvoih.app.data.local.SourceEntity>, sourceGrade: String, verifiedAt: String?) {
-    var expanded by remember { mutableStateOf(false) }
+private fun SourcesCard(sources: List<ru.dlyasvoih.app.data.local.SourceEntity>, sourceGrade: String, verifiedAt: String?, notes: List<String>) {
+    var expanded by remember(sources, notes) { mutableStateOf(false) }
     val uriHandler = LocalUriHandler.current
     OutlinedCard(Modifier.fillMaxWidth().padding(horizontal = 16.dp)) {
         Column(Modifier.padding(14.dp), verticalArrangement = Arrangement.spacedBy(10.dp)) {
@@ -362,6 +354,12 @@ private fun SourcesCard(sources: List<ru.dlyasvoih.app.data.local.SourceEntity>,
                     source.accessedAt?.let { Text("Проверено: $it", style = MaterialTheme.typography.labelSmall) }
                 }
             }
+            if (expanded && notes.isNotEmpty()) {
+                HorizontalDivider()
+                Text("Примечания к документам", style = MaterialTheme.typography.titleSmall)
+                notes.forEach { ReferenceBodyBlock(it) }
+            }
+
         }
     }
 }
