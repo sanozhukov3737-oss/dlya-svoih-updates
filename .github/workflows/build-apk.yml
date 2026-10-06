@@ -96,7 +96,8 @@ jobs:
           changes = os.environ['RELEASE_CHANGES']
           write_app_feed(target, previous,
               'https://github.com/sanozhukov3737-oss/dlya-svoih-updates/releases/download/' + tag + '/' + name,
-              base / 'latest.json', changes, analyzer=analyzer, signer=signer)
+              base / 'latest.json', changes, analyzer=analyzer, signer=signer,
+              repair_initial_publication=True)
           (base / 'tag.txt').write_text(tag, encoding='utf-8')
           (base / 'notes.txt').write_text(changes, encoding='utf-8')
           PY

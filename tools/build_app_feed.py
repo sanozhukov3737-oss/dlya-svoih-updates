@@ -13,6 +13,25 @@ import zipfile
 MAX_BYTES = 256 * 1024 * 1024
 PACKAGE = 'ru.dlyasvoih.app'
 
+# One bounded recovery for the first GitHub APK, which did not use the
+# owner's PC signing key. The installed PC build must keep its own key.
+# Later publications still require an unchanged certificate.
+INITIAL_GITHUB_APK = dict(
+    packageName=PACKAGE, versionCode=119, versionName='0.3.115', minSdk=26,
+    signerSha256='e8844f35fdd9471b73f90098b3ece7a6a972ebf4f704ecf8edc9deb101874950',
+    sha256='66b565bd932aa0fb78f1f28baa08a504aeb0787253e646d90cfa7eaf8a34eb38',
+    bytes=72921719,
+    url='https://github.com/sanozhukov3737-oss/dlya-svoih-updates/releases/download/app-0.3.115/DLYA_SVOIH_v0.3.115.apk')
+RECOVERED_PC_APK = dict(
+    packageName=PACKAGE, versionCode=120, versionName='0.3.116', minSdk=26,
+    signerSha256='2f0a0908f269bc039311edb58fca8863347f1e4c3a7cfaddd909991cf1f0b509',
+    url='https://github.com/sanozhukov3737-oss/dlya-svoih-updates/releases/download/app-0.3.116/DLYA_SVOIH_v0.3.116.apk')
+
+
+def is_initial_publication_repair(previous, app):
+    return (all(previous.get(k) == v for k, v in INITIAL_GITHUB_APK.items())
+            and all(app.get(k) == v for k, v in RECOVERED_PC_APK.items()))
+
 
 def https_url(value):
     if not isinstance(value, str) or len(value) > 2048:
@@ -108,7 +127,8 @@ def apk_metadata(apk, analyzer=None, signer=None):
                 versionName=values['version-name'], minSdk=int(values['min-sdk']), signerSha256=digest)
 
 
-def write_app_feed(apk, catalog_feed, url, output, changes='', analyzer=None, signer=None):
+def write_app_feed(apk, catalog_feed, url, output, changes='', analyzer=None, signer=None,
+                   *, repair_initial_publication=False):
     apk, output = Path(apk), Path(output)
     if output.resolve() == apk.resolve() or output.with_suffix(output.suffix + '.tmp').resolve() == apk.resolve():
         raise ValueError('Feed must not overwrite the APK')
@@ -129,9 +149,12 @@ def write_app_feed(apk, catalog_feed, url, output, changes='', analyzer=None, si
         raise ValueError('Increase versionCode: built APK has '
                          f"{app['versionCode']}, published APK has {previous['versionCode']}")
     if previous and app['signerSha256'] != previous['signerSha256']:
-        raise ValueError('Keep the existing signing key: '
-                         f"built APK certificate={app['signerSha256']}; "
-                         f"published APK certificate={previous['signerSha256']}")
+        if not (repair_initial_publication and is_initial_publication_repair(previous, app)):
+            raise ValueError('Keep the existing signing key: '
+                             f"built APK certificate={app['signerSha256']}; "
+                             f"published APK certificate={previous['signerSha256']}")
+        print('Repairing the exact initial GitHub publication: '
+              '0.3.116 uses the confirmed PC installation signing key.', flush=True)
     feed['app'] = app
     payload = json.dumps(feed, ensure_ascii=False, indent=2) + '\n'
     if len(payload.encode('utf-8')) > 64 * 1024:

@@ -6,7 +6,8 @@ import tempfile
 import unittest
 from unittest.mock import patch
 import zipfile
-from build_app_feed import apk_metadata, write_app_feed, validate_app_metadata, signing_certificate_digest
+from build_app_feed import (apk_metadata, write_app_feed, validate_app_metadata,
+                            signing_certificate_digest, INITIAL_GITHUB_APK, RECOVERED_PC_APK)
 
 
 class AppFeedTests(unittest.TestCase):
@@ -116,6 +117,59 @@ class AppFeedTests(unittest.TestCase):
     def test_apk_cannot_be_overwritten_by_feed(self):
         with self.assertRaisesRegex(ValueError, 'overwrite'):
             write_app_feed(self.apk, self.previous, 'https://example.com/a.apk', self.apk)
+
+    def recovery_fixture(self):
+        self.previous.write_text(json.dumps(dict(self.catalog, app=dict(formatVersion=1, **INITIAL_GITHUB_APK))))
+        self.metadata = {k: v for k, v in RECOVERED_PC_APK.items() if k != 'url'}
+
+    def write_recovery(self, enabled=True):
+        with patch('build_app_feed.apk_metadata', return_value=self.metadata):
+            return write_app_feed(self.apk, self.previous, RECOVERED_PC_APK['url'], self.output,
+                                  repair_initial_publication=enabled)
+
+    def test_initial_recovery_is_disabled_by_default(self):
+        self.recovery_fixture()
+        with self.assertRaisesRegex(ValueError, 'existing signing key'):
+            self.write_recovery(enabled=False)
+        self.assertFalse(self.output.exists())
+
+    def test_exact_initial_recovery_preserves_catalog(self):
+        self.recovery_fixture()
+        feed = self.write_recovery()
+        self.assertEqual(self.catalog, {k: v for k, v in feed.items() if k != 'app'})
+        self.assertEqual(RECOVERED_PC_APK['signerSha256'], feed['app']['signerSha256'])
+        self.assertEqual(hashlib.sha256(self.apk.read_bytes()).hexdigest(), feed['app']['sha256'])
+
+    def test_initial_recovery_rejects_changed_old_release_or_new_identity(self):
+        variants = [('previous', k, v) for k, v in (
+            ('versionCode', 118), ('versionName', '0.3.114'), ('minSdk', 27),
+            ('signerSha256', 'c' * 64), ('sha256', 'c' * 64), ('bytes', 72921718),
+            ('url', 'https://example.com/other.apk'))]
+        variants += [('new', k, v) for k, v in (
+            ('versionCode', 121), ('versionName', '0.3.117'), ('minSdk', 27),
+            ('signerSha256', 'c' * 64))]
+        for side, field, value in variants:
+            with self.subTest(side=side, field=field):
+                self.recovery_fixture()
+                if side == 'previous':
+                    feed = json.loads(self.previous.read_text())
+                    feed['app'][field] = value
+                    self.previous.write_text(json.dumps(feed))
+                else:
+                    self.metadata[field] = value
+                with self.assertRaisesRegex(ValueError, 'existing signing key'):
+                    self.write_recovery()
+                self.assertFalse(self.output.exists())
+
+    def test_later_key_change_remains_blocked_after_recovery(self):
+        self.recovery_fixture()
+        previous = self.write_recovery()
+        self.previous.write_text(json.dumps(previous))
+        self.output.unlink()
+        self.metadata.update(versionCode=121, versionName='0.3.117', signerSha256='c' * 64)
+        with self.assertRaisesRegex(ValueError, 'existing signing key'):
+            self.write_recovery()
+        self.assertFalse(self.output.exists())
 
 
 if __name__ == '__main__':
