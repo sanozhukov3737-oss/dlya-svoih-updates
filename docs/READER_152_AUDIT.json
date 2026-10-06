@@ -1,0 +1,813 @@
+{
+  "contentVersion": 152,
+  "cards": [
+    {
+      "id": "eng-pom-2-family",
+      "title": "ПОМ-2 (семейство)",
+      "categoryId": "mines-antipersonnel",
+      "paragraphs": 3,
+      "newEvidence": [],
+      "previousBodyHash": "0fe6f1bc9b00f8b7338fa0863453d6ab0e7eea4620cd372c1de8c0dfd56d2856",
+      "bodyHash": "3a4116ae4d8ad7e904f107ddae4e915bdd47d2de632839adabdb6107f8658653",
+      "archivedTableValues": []
+    },
+    {
+      "id": "eng-m18a1",
+      "title": "M18A1 Claymore",
+      "categoryId": "mines-antipersonnel",
+      "paragraphs": 3,
+      "newEvidence": [],
+      "previousBodyHash": "e46faef44311b2b0162f0faf3b7864019a0387d64f68c408a4502e6052b0d360",
+      "bodyHash": "5c20110044ce94fd67209d986843152e7cb7834d759b35555fd0a04f833036c9",
+      "archivedTableValues": []
+    },
+    {
+      "id": "eng-m19",
+      "title": "M19",
+      "categoryId": "mines-antitank",
+      "paragraphs": 3,
+      "newEvidence": [],
+      "previousBodyHash": "104dc29c5dabed92b48b3d7c4f1ead15397eb40874a17309be87fda98b2bbc09",
+      "bodyHash": "cb6b4c8b1652a0f6986057abbeaa4c7d10acd691b420f29a7d672cb413c66cc7",
+      "archivedTableValues": []
+    },
+    {
+      "id": "eng-type-72p-av",
+      "title": "Type 72 (P), противотранспортная",
+      "categoryId": "mines-antitank",
+      "paragraphs": 3,
+      "newEvidence": [],
+      "previousBodyHash": "0e9dea4f4f4c63d55576b75d2ec8ecad85e222e6334061e684585556f9bb406e",
+      "bodyHash": "c20e64caec91d5c8c7f045b8366570d454e53f2eda92ef26f30d48c14d07b821",
+      "archivedTableValues": []
+    },
+    {
+      "id": "artillery-krasnopol-family",
+      "title": "3ОФ39 «Краснополь» и семейство «Краснополь-М2»",
+      "categoryId": "artillery",
+      "paragraphs": 3,
+      "newEvidence": [],
+      "previousBodyHash": "23fdc3d74e0bb842616f3d8844930d3513190bceda1bf423dca5b3869cca9ad4",
+      "bodyHash": "6ee8dc7b69f3c540b5b6b7518efbc38c13e0a240141b2a961e0f6b1ba3708294",
+      "archivedTableValues": []
+    },
+    {
+      "id": "artillery-of-462",
+      "title": "ОФ-462 — 122-мм осколочно-фугасный снаряд",
+      "categoryId": "artillery",
+      "paragraphs": 3,
+      "newEvidence": [],
+      "previousBodyHash": "8ed0f17b13bb642dc1e4e0b6da0d435c9820e04a89e81106231ea129860fb63c",
+      "bodyHash": "fd22d4badf97dfe8ced2e5158dfc0e1be365e4acb7215e0a14efa4fc1412b092",
+      "archivedTableValues": []
+    },
+    {
+      "id": "artillery-of-25",
+      "title": "ОФ-25 — 152-мм осколочно-фугасный снаряд",
+      "categoryId": "artillery",
+      "paragraphs": 3,
+      "newEvidence": [],
+      "previousBodyHash": "5b7d16a3f948d90aa41f4c9c8d512a8a5bd3f7ca795e1c160bba2d1ef0d6dc67",
+      "bodyHash": "367fb90d4cd1582e3b0df7a708a7c29f6e35146d27f9420b7c58d635fe59c38d",
+      "archivedTableValues": []
+    },
+    {
+      "id": "artillery-m795",
+      "title": "M795 — 155-мм осколочно-фугасный снаряд",
+      "categoryId": "artillery",
+      "paragraphs": 3,
+      "newEvidence": [],
+      "previousBodyHash": "d8a5e4a97df2e77f76f974b20446a2fc342ae1cdf3f5e36cc1fec6b63df9b4ce",
+      "bodyHash": "9efe8055eb75dd3eecc44c2511ad9a227d7b05199e66c1fb63821075cb1fa316",
+      "archivedTableValues": []
+    },
+    {
+      "id": "artillery-m982-excalibur",
+      "title": "M982 Excalibur — 155-мм управляемый снаряд",
+      "categoryId": "artillery",
+      "paragraphs": 3,
+      "newEvidence": [],
+      "previousBodyHash": "272f922e32c236c01b548b015bac034c14ad6b1a759d86e8fc654e8fc531cb34",
+      "bodyHash": "645fa311bc86e2676fbe481b4764c409a731726705ccc27058e478abf055b715",
+      "archivedTableValues": []
+    },
+    {
+      "id": "artillery-bonus-155",
+      "title": "BONUS — 155-мм снаряд с сенсорными суббоеприпасами",
+      "categoryId": "artillery",
+      "paragraphs": 3,
+      "newEvidence": [],
+      "previousBodyHash": "4693348d43064b452d09789fa4c497a6d46758ef70057031669ffb7d8b29e32d",
+      "bodyHash": "12a04672203d46833cbb20d518d30f2f967f65c29108ab7fa29b711f0cd4faa7",
+      "archivedTableValues": []
+    },
+    {
+      "id": "grenade-m67",
+      "title": "M67 — американская ручная осколочная граната",
+      "categoryId": "grenades",
+      "paragraphs": 3,
+      "newEvidence": [
+        {
+          "url": "https://www.nammo.com/products/grenades-warheads-energetics/m67-grenade/",
+          "claims": "Стальной шарообразный корпус, диаметр, высота и масса изделия со взрывателем. Дистанции и задержки не переносились."
+        }
+      ],
+      "previousBodyHash": "ad7966cbe015f5ae132de19fedae7d1683f393d97e1b4cb7017bae545f27e9a7",
+      "bodyHash": "ede57c321b9838f45ba730411f64743b7c4a5148ae22afa10d4c95fae7d361e5",
+      "archivedTableValues": []
+    },
+    {
+      "id": "grenade-dm51",
+      "title": "DM51 — немецкая ручная граната",
+      "categoryId": "grenades",
+      "paragraphs": 3,
+      "newEvidence": [
+        {
+          "url": "https://www.bundeswehr.de/de/ausruestung-technik-bundeswehr/ausruestung-bewaffnung/handgranate-dm51",
+          "claims": "Бочкообразная наружная часть, внутренний фугасный корпус, литая пластиковая осколочная оболочка со стальными шариками, полная масса около 450 г. Способы изменения конфигурации исключены."
+        }
+      ],
+      "previousBodyHash": "f482415d157206a1a8a79bb3562a52d66330862aa3cee0aaf13671f953753618",
+      "bodyHash": "eeabd1d831ba3dcd1f9ebb49cd0068e8eff72d1c6cbf6d8ad0b10119830336f9",
+      "archivedTableValues": []
+    },
+    {
+      "id": "eng-m14-ap-mine",
+      "title": "M14 (противопехотная мина)",
+      "categoryId": "mines-antipersonnel",
+      "paragraphs": 3,
+      "newEvidence": [],
+      "previousBodyHash": "b4e4b349be2ca4f1cde4f28c9639f1fb88b6c3cb3cca0c7bf3d07d061f374494",
+      "bodyHash": "e6990320e6e963da0ed4b77e8b6f63560eccfeeeff133f18c3687c9d5a7cabba",
+      "archivedTableValues": []
+    },
+    {
+      "id": "eng-m16-mine-family",
+      "title": "M16 / M16A1 / M16A2 — противопехотные мины",
+      "categoryId": "mines-antipersonnel",
+      "paragraphs": 3,
+      "newEvidence": [],
+      "previousBodyHash": "9c831cc4916e9c2a19c630e53eafe8ff88947e4d09064901f2506abe814be36f",
+      "bodyHash": "8a07d44e721240ea722bf35047d85ee58f5112960fc04244c743ee5b7a895466",
+      "archivedTableValues": []
+    },
+    {
+      "id": "eng-nr-413",
+      "title": "NR 413",
+      "categoryId": "mines-antipersonnel",
+      "paragraphs": 3,
+      "newEvidence": [],
+      "previousBodyHash": "6d96d52c3287e5b273a33a588c1371fd2828deb3ff88dbd52805b6592457925b",
+      "bodyHash": "83f780bfbd357d856b6de6a8e6ee04d2d4a646aca978537349e135393ebb3da5",
+      "archivedTableValues": []
+    },
+    {
+      "id": "eng-sb-33-family",
+      "title": "SB-33 (семейство)",
+      "categoryId": "mines-antipersonnel",
+      "paragraphs": 3,
+      "newEvidence": [],
+      "previousBodyHash": "417e0954731e860cc7700e29ea0ecd908103e7d85ffc2343fa303475fde4ebb7",
+      "bodyHash": "524fe20e3a9c4a365ed2324f50403b2d77e765a2d1cbc14d69c34827dbd2a344",
+      "archivedTableValues": []
+    },
+    {
+      "id": "eng-type-72-ap-family",
+      "title": "Type 72 A/B/C (противопехотная ветвь)",
+      "categoryId": "mines-antipersonnel",
+      "paragraphs": 3,
+      "newEvidence": [],
+      "previousBodyHash": "cdd9e54b970fd655fef025a429484ab6c9932bda9ccf36245843a677a25c29bf",
+      "bodyHash": "57da69e6bca4b74f5b21542e695037a9553b20a872ec3d8eafa59767642e98f9",
+      "archivedTableValues": []
+    },
+    {
+      "id": "eng-vs-50-family",
+      "title": "VS-50 / VS-50 EO3",
+      "categoryId": "mines-antipersonnel",
+      "paragraphs": 3,
+      "newEvidence": [],
+      "previousBodyHash": "27b13a2ad122e2fba19c1574fc0e5ba5a671865fb5f1a1d366fa9b5e1019208f",
+      "bodyHash": "7a02a5c6e42a42253d59b35555e1917950816dd4b8ccc6917b4161b6418d07ac",
+      "archivedTableValues": []
+    },
+    {
+      "id": "eng-vs-jap",
+      "title": "VS-JAP",
+      "categoryId": "mines-antipersonnel",
+      "paragraphs": 3,
+      "newEvidence": [],
+      "previousBodyHash": "ebbd7cd61cb8f5ee6abdeb8d88bb45f18147ae999891f1fc6a43bbded534d9f1",
+      "bodyHash": "a422cca5527debed09c541e7509496996bb348254ac148b664a0b54ef9eff9a1",
+      "archivedTableValues": []
+    },
+    {
+      "id": "eng-vs-mk2-family",
+      "title": "VS-Mk-2 / VS-Mk2-EL",
+      "categoryId": "mines-antipersonnel",
+      "paragraphs": 3,
+      "newEvidence": [],
+      "previousBodyHash": "2149d2a030dc4b1d942b044076e03fa9c88cf28b98a155c3015396fd867b5343",
+      "bodyHash": "3c70c85ee5d2a3f526b8cbb840da72265574e4ec9f5773a14360aa885b84e821",
+      "archivedTableValues": []
+    },
+    {
+      "id": "eng-vs-sapf-m3",
+      "title": "VS-SAPF-M3",
+      "categoryId": "mines-antipersonnel",
+      "paragraphs": 3,
+      "newEvidence": [],
+      "previousBodyHash": "3ad3edafe9645320c9c1bcf73770416e1ac50e7c6a75c96cecb698b26a702e1b",
+      "bodyHash": "d78faccc27bce29d76c05ac6c14443b33ec6f6c801d591a6c3b944bb964e5fd9",
+      "archivedTableValues": []
+    },
+    {
+      "id": "eng-pma-1a",
+      "title": "ПМА-1А",
+      "categoryId": "mines-antipersonnel",
+      "paragraphs": 3,
+      "newEvidence": [],
+      "previousBodyHash": "1e8498d59cb8c2cd2bf8b64005c047a58a36012e42d9cb6b2ae9a2d736255efb",
+      "bodyHash": "02807b55f7e176c408878f59dc9f7f5e78b24b7dfc4cc4ea43e24e1c3c16a690",
+      "archivedTableValues": []
+    },
+    {
+      "id": "eng-pma-2",
+      "title": "ПМА-2",
+      "categoryId": "mines-antipersonnel",
+      "paragraphs": 3,
+      "newEvidence": [],
+      "previousBodyHash": "3265188fad793889501a2c2ef0ac517d5733436b1e5c3500d4ea7cafe9981373",
+      "bodyHash": "cfef1f5dcf3f2db124e0b95442f9500628a59f002ca2983666fc298543052a5f",
+      "archivedTableValues": []
+    },
+    {
+      "id": "eng-pma-3",
+      "title": "ПМА-3",
+      "categoryId": "mines-antipersonnel",
+      "paragraphs": 3,
+      "newEvidence": [],
+      "previousBodyHash": "5b19d0452f2ccfc3db185225f64877dec7d20d1dde6fa49759f822d80658c3b3",
+      "bodyHash": "6143e1de08aeb04d405d7e30034b20512d01aa5b5ad55d3baa4dd8a1f46aac8b",
+      "archivedTableValues": []
+    },
+    {
+      "id": "eng-ts-50",
+      "title": "TS-50",
+      "categoryId": "mines-antipersonnel",
+      "paragraphs": 3,
+      "newEvidence": [],
+      "previousBodyHash": "244325af0cadf1a5457734fc7be958342a1610a5ab60b50bbe152d702606d121",
+      "bodyHash": "d8c0e57dbf055419acff2afc521def0df56973b010e3e2217eeec9403476334a",
+      "archivedTableValues": []
+    },
+    {
+      "id": "eng-m15-av",
+      "title": "M15 (противотанковая мина)",
+      "categoryId": "mines-antitank",
+      "paragraphs": 3,
+      "newEvidence": [],
+      "previousBodyHash": "3a43d4eeadea27bd2147a289f4d7d092b0b447b036487ae6bc27f6d62d81bbb3",
+      "bodyHash": "3cfdd55637f42daf6a342367b19afe64eb9c1765eae5ae3c224674c542e4cdce",
+      "archivedTableValues": []
+    },
+    {
+      "id": "eng-m21-av",
+      "title": "M21 (противотранспортная мина)",
+      "categoryId": "mines-antibottom",
+      "paragraphs": 3,
+      "newEvidence": [],
+      "previousBodyHash": "5a7b7b21f858b0337d9542bd152873dac8ede66b429e63f25da078e97397ecf9",
+      "bodyHash": "c226ed9dd695b7497c5eb3b9a7ded59aa9a9d73aa5b871dad2f5c88963aba267",
+      "archivedTableValues": []
+    },
+    {
+      "id": "eng-m6a2-av",
+      "title": "M6A2",
+      "categoryId": "mines-antitank",
+      "paragraphs": 3,
+      "newEvidence": [],
+      "previousBodyHash": "60dd284dda6c5ef83d211c0374a13035a282a8e51c46222d2eb1f2b04febb6d7",
+      "bodyHash": "08123523a93067b46c8a42d893570dd6f00bdca9b3fa0384cf4a12b29a22d3f7",
+      "archivedTableValues": []
+    },
+    {
+      "id": "eng-tmrp-6",
+      "title": "TMRP-6",
+      "categoryId": "mines-antibottom",
+      "paragraphs": 3,
+      "newEvidence": [],
+      "previousBodyHash": "5b3d95a8a34eba798481c3c9c85103d4f58c0d5cb82610ee943cdcaa4cc87572",
+      "bodyHash": "7b4cbb446db51863a3066926191bc7601ba31c089f90a1402eddf5df712c3dc9",
+      "archivedTableValues": []
+    },
+    {
+      "id": "eng-vs-1-6-family",
+      "title": "VS-1.6 / VS-1.6-AR-AN",
+      "categoryId": "mines-antitank",
+      "paragraphs": 3,
+      "newEvidence": [],
+      "previousBodyHash": "d114a0607c0cf8db53864a899d9341a2b3807eb4f42e3df4e309531961b03b42",
+      "bodyHash": "8e60f8c3aacb7d5ef42d8cb4f2b9b0cbbadd8ff6c1a0701015ce07f60c74ad0e",
+      "archivedTableValues": []
+    },
+    {
+      "id": "eng-vs-av-family",
+      "title": "VS-2.2 / VS-3.6 / VS-6.0 / VS-9.0",
+      "categoryId": "mines-antivehicle",
+      "paragraphs": 3,
+      "newEvidence": [],
+      "previousBodyHash": "cc6b09eb7a3b2feef4d21843d2bfebb7abdf2921323c93e1d87035c59153b42e",
+      "bodyHash": "7a69b6e28bfd5ca4dc57f90bee1585aeaaf850decaceaa207a41d78d27c0a912",
+      "archivedTableValues": []
+    },
+    {
+      "id": "eng-tma-family",
+      "title": "TMA — TMA-1A, TMA-2A, TMA-3, TMA-4, TMA-5/5A",
+      "categoryId": "mines-antitank",
+      "paragraphs": 3,
+      "newEvidence": [],
+      "previousBodyHash": "e513da6a52b7aad80e054746962e083caeebb0666b0478c77a941e2c6b65d085",
+      "bodyHash": "3740d208b9bde9671aa2c6ad90dc26befc6cd89159e57089260caeb56afbd8d7",
+      "archivedTableValues": []
+    },
+    {
+      "id": "ref-v8-pom-3",
+      "title": "ПОМ-3 «Медальон»",
+      "categoryId": "mines-antipersonnel",
+      "paragraphs": 3,
+      "newEvidence": [
+        {
+          "url": "https://armamentresearch.com/russian-pom-3-anti-personnel-landmines-documented-in-ukraine-2022/",
+          "claims": "Публичное представление 2015 года, начало поставок 2019 года, связь с ПОМ-2, общий тип датчика, отсутствие независимого подтверждения заявлений о распознавании людей. Алгоритмы, последовательность действия и дистанции исключены."
+        }
+      ],
+      "previousBodyHash": "291f76c1ec036242d8d882adc8525cfa451117df17cdf52d971f302ad292ac1a",
+      "bodyHash": "03a6f77dc8e1b9609a7b8355798b37ffd006527f1230ac40aa9c04ad16d956dd",
+      "archivedTableValues": []
+    },
+    {
+      "id": "ref-v9-su-tmdb",
+      "title": "ТМД-Б",
+      "categoryId": "mines-antitank",
+      "paragraphs": 3,
+      "newEvidence": [],
+      "previousBodyHash": "3caa69e0af6f8ba94806d50da9332e7fc95f1569dc29cb1238a78c76d3f1bb2b",
+      "bodyHash": "73fca741beb330d1e1205e0b93ee07163c2b6ffaa31411fe3bacb555baf175b9",
+      "archivedTableValues": []
+    },
+    {
+      "id": "ref-v10-artillery-m864",
+      "title": "M864 — 155-мм кассетный артиллерийский снаряд",
+      "categoryId": "artillery",
+      "paragraphs": 3,
+      "newEvidence": [],
+      "previousBodyHash": "41e0e291d5c73812852bea52748ef71cdc6538f84bc4ccb416c328429c83e92a",
+      "bodyHash": "873d2e90881cab9937f8ab862aeb47e36e790ed110e2aff8a963a147da4da868",
+      "archivedTableValues": []
+    },
+    {
+      "id": "ref-v10-artillery-m483a1",
+      "title": "M483A1 — 155-мм кассетный артиллерийский снаряд",
+      "categoryId": "artillery",
+      "paragraphs": 3,
+      "newEvidence": [],
+      "previousBodyHash": "69dae2faa2e24559df974d323e26c6e2f7355ff51e8fe92b7b8129a4ae39e58f",
+      "bodyHash": "29dbd79ce0f0ff7d51fa0d189a8e8bf9443ddaea08dad59790d5b9536f0ef382",
+      "archivedTableValues": []
+    },
+    {
+      "id": "ref-v10-artillery-smart-155",
+      "title": "SMArt 155 — 155-мм артиллерийский снаряд",
+      "categoryId": "artillery",
+      "paragraphs": 3,
+      "newEvidence": [
+        {
+          "url": "https://www.gdots.com/wp-content/uploads/2017/11/SMArt155.pdf",
+          "claims": "Два самостоятельных внутренних боеприпаса, общий класс SFM, материал корпуса, окраска, длина и масса со взрывателем; промышленная кооперация GIWS/GD-OTS. Алгоритмы, дистанции, механизмы действия исключены."
+        }
+      ],
+      "previousBodyHash": "2a5f8ab4e376d363b13a42b0284059d6c06a816c6fc299a55bd11c3d9986a813",
+      "bodyHash": "2d2c5f4e4ca3fa3ae8fdd972ffd26f3ec01f6ffe7119456a2b68b02f8a021452",
+      "archivedTableValues": []
+    },
+    {
+      "id": "ref-v10-artillery-xm1113",
+      "title": "XM1113 — 155-мм артиллерийский снаряд",
+      "categoryId": "artillery",
+      "paragraphs": 3,
+      "newEvidence": [
+        {
+          "url": "https://www.gd.com/Articles/2019/10/10/general-dynamics-at-ausa-2019",
+          "claims": "Класс Rocket Assisted Projectile, XM1113, связь с M549A1; историческое промышленное представление. Численные дальности исключены."
+        },
+        {
+          "url": "https://www.gd.com/Articles/2020/10/08/gd-at-ausa-2020",
+          "claims": "Официальный поисковый результат General Dynamics подтверждает описание разработки и связь с заменой M549A1; полный текст страницы недоступен, текущий статус не утверждается."
+        }
+      ],
+      "previousBodyHash": "3831e5ef1b121418b5396af2bf5adfbec92a29f25ada044b1655e72dfdc05235",
+      "bodyHash": "d1a6470cc1d998acef2ac9bf5675e8b4be5e96bb7fcdb906b5615140873c65b3",
+      "archivedTableValues": [
+        "Заводской лист General Dynamics, редакция 2022.05"
+      ]
+    },
+    {
+      "id": "ref-v10-artillery-xm1128",
+      "title": "XM1128 — 155-мм артиллерийский снаряд",
+      "categoryId": "artillery",
+      "paragraphs": 3,
+      "newEvidence": [
+        {
+          "url": "https://www.army.mil/article/231418/new_cornerstone_ota_boosts_xm1128_development_and_the_industrial_base",
+          "claims": "155-мм HE unitary projectile; контракт American Ordnance 2019 года на Iowa Army Ammunition Plant; историческая стадия промышленной подготовки. Производственные методы и параметры применения исключены."
+        }
+      ],
+      "previousBodyHash": "3dcb43d057521be58c3e0104a35194ddfdf4bc9f0e130f93ef40afd567f4daa4",
+      "bodyHash": "4b05e3ee26179c5c4b56ca9da5d3376441463525f8248f9afa98c35234328f4a",
+      "archivedTableValues": [
+        "155-мм артиллерийский снаряд, сообщение U.S. Army от 03.01.2020"
+      ]
+    },
+    {
+      "id": "ref-v10-artillery-lu211",
+      "title": "LU211 — семейство 155-мм осколочно-фугасных снарядов",
+      "categoryId": "artillery",
+      "paragraphs": 3,
+      "newEvidence": [],
+      "previousBodyHash": "7368dd276cdc2520144157be9be1178328cf87322c756af789e2cae5af41bc45",
+      "bodyHash": "469df362b733685e071fda135911908475918d90d7773ad120a89a24646c3eaa",
+      "archivedTableValues": []
+    },
+    {
+      "id": "ref-v10-artillery-lu215",
+      "title": "LU215 — 155-мм осветительный снаряд",
+      "categoryId": "artillery",
+      "paragraphs": 3,
+      "newEvidence": [],
+      "previousBodyHash": "92628ecea8316cff01833c1d2402cd7b3bda80912a51706586eb66fddb41a2be",
+      "bodyHash": "a050bc503b02e934f925b17550d49ff61b27af4f098db387eb8e51f3da636d89",
+      "archivedTableValues": []
+    },
+    {
+      "id": "ref-v10-artillery-lu216",
+      "title": "LU216 — 155-мм инфракрасный осветительный снаряд",
+      "categoryId": "artillery",
+      "paragraphs": 3,
+      "newEvidence": [],
+      "previousBodyHash": "50e513794047aa396a1a62ee5d2e36329eef90c6f3ed752a0ff09d9661d9a522",
+      "bodyHash": "6a8c353cd5a515d826c1823df92df5e1caee4aa92ed8ccd1b9beb6d66d32f572",
+      "archivedTableValues": []
+    },
+    {
+      "id": "ref-v10-artillery-lu217",
+      "title": "LU217 — 155-мм дымовой снаряд",
+      "categoryId": "artillery",
+      "paragraphs": 3,
+      "newEvidence": [],
+      "previousBodyHash": "daff93f66fb1d5c6740517175adf903f05df7b94a600ea363b5df334c7b4a135",
+      "bodyHash": "f6a883301c381cd23a782880c4587857f1c9d59484a21413effe4c11ff57a4e7",
+      "archivedTableValues": []
+    },
+    {
+      "id": "ref-v10-artillery-m107-family",
+      "title": "M107 / KM107 — семейство 155-мм осколочно-фугасных снарядов",
+      "categoryId": "artillery",
+      "paragraphs": 3,
+      "newEvidence": [],
+      "previousBodyHash": "fa7352136d06772b0bb52c713209f85fc35e1c3305bad476a092e8efb3637fdc",
+      "bodyHash": "e9d0544066b9f3df782921eca4cdca1e69ba23b91656925677bd899cc43a6b6e",
+      "archivedTableValues": []
+    },
+    {
+      "id": "ref-v10-artillery-nm269",
+      "title": "NM269 / IM HE-ER — 155-мм артиллерийский снаряд Nammo",
+      "categoryId": "artillery",
+      "paragraphs": 3,
+      "newEvidence": [],
+      "previousBodyHash": "8ec9774e47958e31f8a47d00d632016c8db3e23d5e92a601cd25a83d80c60b06",
+      "bodyHash": "1683f5050654743c9cd98a642cfe5f1cf8d5dcad9fe6dad187d10240a6421a3a",
+      "archivedTableValues": []
+    },
+    {
+      "id": "ref-v10-artillery-k122-kitolov-2m",
+      "title": "К122 «Китолов-2М» — 122-мм артиллерийский снаряд",
+      "categoryId": "artillery",
+      "paragraphs": 3,
+      "newEvidence": [],
+      "previousBodyHash": "95a8b3d20ab4d1877caac85884d9735c5c31b604b0d2904e099723215e4a0f2d",
+      "bodyHash": "55f3aca9e64265b1d360d90ca32b9a70d7b86e60626fd988bf411732ca523f80",
+      "archivedTableValues": []
+    },
+    {
+      "id": "mine-audit-v25-ru-ptkm-1r",
+      "title": "ПТКМ-1Р",
+      "categoryId": "mines-antitank",
+      "paragraphs": 3,
+      "newEvidence": [
+        {
+          "url": "https://roe.ru/production/land-forces/engineer-equipment/ptkm-1r/?theme=theme-green",
+          "claims": "Общий класс; контейнер и боевой элемент как две части; полная масса, высота изделия и диаметр корпуса боевого элемента. Порядок действия не переносился."
+        }
+      ],
+      "previousBodyHash": "e4515382271d501226a9df0231fd47d12b68286b4518d17acea40c076c1a3e41",
+      "bodyHash": "8d591f5c63174b303aa6857e16eaedf01530409d031ffd9a35e392e236d5d383",
+      "archivedTableValues": []
+    },
+    {
+      "id": "mine-audit-v25-su-pom-1s",
+      "title": "ПОМ-1 / ПОМ-1С",
+      "categoryId": "mines-antipersonnel",
+      "paragraphs": 3,
+      "newEvidence": [],
+      "previousBodyHash": "2270e1c9d02c3f95f1192ba043124fd747c8d3fb2497a08dab9fcbf566f81519",
+      "bodyHash": "d89ac81e53cc62ca4440afe6dc5ca323f9c20e44bc11ff203344753386bb3dfe",
+      "archivedTableValues": []
+    },
+    {
+      "id": "mine-audit-v25-su-pom-2s",
+      "title": "ПОМ-2С",
+      "categoryId": "mines-antipersonnel",
+      "paragraphs": 3,
+      "newEvidence": [],
+      "previousBodyHash": "f9072e56715cf3cbf39b50c1d9c6260d46dc1bfb7ef6e02aeadbb451ea6aefd6",
+      "bodyHash": "fc0c0a3c305829187606444541ea680c6fa4211d6bee8f28901451e2fc0b9c3d",
+      "archivedTableValues": []
+    },
+    {
+      "id": "mine-audit-v25-su-tm-73",
+      "title": "ТМ-73",
+      "categoryId": "mines-antivehicle",
+      "paragraphs": 3,
+      "newEvidence": [],
+      "previousBodyHash": "2982645530bcf2c870636c3b92e37f1ea612dfd9ec8e622198cf6c57713f8459",
+      "bodyHash": "0ebcb85e1a7ad71c6bff246b3f1d9b547073c853ed40fd62319abf8418e18b83",
+      "archivedTableValues": []
+    },
+    {
+      "id": "mine-audit-v25-de-sm-70",
+      "title": "SM-70",
+      "categoryId": "mines-antipersonnel",
+      "paragraphs": 3,
+      "newEvidence": [
+        {
+          "url": "https://www.bundesarchiv.de/themen-entdecken/online-entdecken/themenbeitraege/der-veb-chemiewerk-kapen-und-die-splittermine-sm-70/",
+          "claims": "Обозначение, изготовитель, форма корпуса, внутренняя германская граница, отсутствие на Берлинской стене, даты объявления и окончания демонтажа."
+        }
+      ],
+      "previousBodyHash": "b6aa88138aeab8b125116d800f5b0202bb0265b5981ca7c39e313e12df80c815",
+      "bodyHash": "244601e381e30da5fe66e32ee0dd9cb4c743639e4cfbab5220d0f9040685ba3a",
+      "archivedTableValues": [
+        "История производства и точное обозначение; не полный числовой паспорт"
+      ]
+    },
+    {
+      "id": "mine-audit-v25-su-tm-44",
+      "title": "ТМ-44",
+      "categoryId": "mines-antitank",
+      "paragraphs": 3,
+      "newEvidence": [],
+      "previousBodyHash": "c6e10f3181d4fc1b8a442603d55737ab54240e6b9d1d7d9719087a7b44c913f2",
+      "bodyHash": "e471f4a657b7f1a0c4966e840d84acc8e86fa9f04e457f5b7082dbceccabd1ae",
+      "archivedTableValues": []
+    },
+    {
+      "id": "mine-audit-v25-su-tmd-40",
+      "title": "ТМД-40",
+      "categoryId": "mines-antitank",
+      "paragraphs": 3,
+      "newEvidence": [],
+      "previousBodyHash": "9519fe2d0c01d7c5a0efdc4858570dff8c08a72afa8ebbb7d83928be3e5ca2a6",
+      "bodyHash": "363acffb29ce6899325d99b045a7a4d584c75da93387f83abc73aecaecd039bb",
+      "archivedTableValues": []
+    },
+    {
+      "id": "mine-audit-v25-su-tmd-44",
+      "title": "ТМД-44",
+      "categoryId": "mines-antitank",
+      "paragraphs": 3,
+      "newEvidence": [],
+      "previousBodyHash": "8357fd0b583df2cf1972ab3fea03ea72b6dc9f15e25f174e4be6cfda82c0276a",
+      "bodyHash": "135d31a70518029851a96877d0e5e28e02cd10d45232c15fcc714fb90ef912c1",
+      "archivedTableValues": []
+    },
+    {
+      "id": "ordnance-v27-rkg-3-rkg-3",
+      "title": "РКГ-3 / RKG-3",
+      "categoryId": "grenades",
+      "paragraphs": 3,
+      "newEvidence": [],
+      "previousBodyHash": "2a0871aa6ddd1b6c2b606e51f10a7c7b4841cb2baffd5605125b603a05b57e04",
+      "bodyHash": "e6418cfd86c58f10eeeb0b7880e0383e1bf39c555ee5b83943c9f4f454a0b53d",
+      "archivedTableValues": []
+    },
+    {
+      "id": "ordnance-v27-vog-17-vog-17m",
+      "title": "ВОГ-17 / ВОГ-17М",
+      "categoryId": "grenades",
+      "paragraphs": 3,
+      "newEvidence": [],
+      "previousBodyHash": "e7823839fcd457765d0126a2c3a1a42da80314e3265d75093305bae9fdb83e88",
+      "bodyHash": "a14bdbcc6b2bf3d38e3d041395dc6fb47cd6a2d183b98d3f1189e5ce15dafb4a",
+      "archivedTableValues": []
+    },
+    {
+      "id": "ordnance-v27-vog-25",
+      "title": "ВОГ-25",
+      "categoryId": "grenades",
+      "paragraphs": 3,
+      "newEvidence": [],
+      "previousBodyHash": "ce0531e6c166cb5825795f939401f6467feb572be45c2d90957d31216e352bb1",
+      "bodyHash": "f020f144e2c6fd24f57119001ef1f768e5b24b5705a39de23e1665d5631e6534",
+      "archivedTableValues": []
+    },
+    {
+      "id": "ordnance-v27-vog-25m",
+      "title": "ВОГ-25М",
+      "categoryId": "grenades",
+      "paragraphs": 3,
+      "newEvidence": [],
+      "previousBodyHash": "0d66af2b3d768ef6f7817ea9dad5cc865e2972b394816b029f7a8a0f4778dc1b",
+      "bodyHash": "87e70f601f7e959d41f3c9cf335c4695a54bf6d01e6fd58f3bd505fa20205626",
+      "archivedTableValues": []
+    },
+    {
+      "id": "ordnance-v27-m430a1-hedp",
+      "title": "M430A1 HEDP",
+      "categoryId": "grenades",
+      "paragraphs": 3,
+      "newEvidence": [],
+      "previousBodyHash": "b81b674b8373a32e2b68ba3f5191167172d6f6c6bdd83f84fe608fa2a09b5ce4",
+      "bodyHash": "87b8cc565ab79953cdc24da627cf242e595bbd733d1cd0d9a5625f7b8d9395e1",
+      "archivedTableValues": []
+    },
+    {
+      "id": "ordnance-v27-km14-respublika-koreya",
+      "title": "KM14 (Республика Корея)",
+      "categoryId": "mines-antipersonnel",
+      "paragraphs": 3,
+      "newEvidence": [],
+      "previousBodyHash": "8fde636ce4817dc2098d54e7bc5be4709c809f56807bd5d44589cbc7e6bbde4b",
+      "bodyHash": "568d44da9807a177fa98ac0a5d18c0a968328c9bb48308e2e80b177ac26eee18",
+      "archivedTableValues": []
+    },
+    {
+      "id": "ordnance-v27-km16-respublika-koreya",
+      "title": "KM16 (Республика Корея)",
+      "categoryId": "mines-antipersonnel",
+      "paragraphs": 3,
+      "newEvidence": [],
+      "previousBodyHash": "98ff498a31075d61284515d5ea5f4d1d49b09db516bd866191698778a780c99c",
+      "bodyHash": "994ebe6cd0ca6167da15f6e46bacb10c12da5229d0ed3aff39f609d6c96df312",
+      "archivedTableValues": []
+    },
+    {
+      "id": "ordnance-v27-km18a1-respublika-koreya",
+      "title": "KM18A1 (Республика Корея)",
+      "categoryId": "mines-antipersonnel",
+      "paragraphs": 3,
+      "newEvidence": [],
+      "previousBodyHash": "5792513b6da92b6e862476ef757f613ec572a1e6124e1805d28beb9699380276",
+      "bodyHash": "d63adce7aab346baf3f7ec9c29eedbb99f6e0b2103aeb7fe67d844822c14c5e6",
+      "archivedTableValues": []
+    },
+    {
+      "id": "ordnance-v29-ga-0097",
+      "title": "GH S&F-CS",
+      "categoryId": "grenades",
+      "paragraphs": 3,
+      "newEvidence": [],
+      "previousBodyHash": "d02f266f0a9d53e73bc5ba3c28921457fe9d6f8971b9365b04df569239b3fa0e",
+      "bodyHash": "6e2fae0f588d750340e92f4f4a2ed775c5efa2f357db9e466206190b8e323e93",
+      "archivedTableValues": []
+    },
+    {
+      "id": "ordnance-v29-ga-0105",
+      "title": "Nammo training hand grenade",
+      "categoryId": "grenades",
+      "paragraphs": 3,
+      "newEvidence": [],
+      "previousBodyHash": "b15aef482db5f0432d149c62860f161c4a53cc32170c6e848a0358c6ef9879c4",
+      "bodyHash": "d71c34d154a6db14b1e8955cdf59fa2738e94c84182bc58d21c65c8019796a12",
+      "archivedTableValues": []
+    },
+    {
+      "id": "ordnance-v29-ga-0106",
+      "title": "SOHG",
+      "categoryId": "grenades",
+      "paragraphs": 3,
+      "newEvidence": [],
+      "previousBodyHash": "17b28d4b5e9b4c52d40f34917d6606f42f03e728288d0a28cd5327b71b8e38c3",
+      "bodyHash": "d6afcceb61bd169f1035d8de00fc924d926fff1059ebe01913290fe2bced61a6",
+      "archivedTableValues": []
+    },
+    {
+      "id": "ordnance-v29-ga-0107",
+      "title": "TTC Smoke",
+      "categoryId": "grenades",
+      "paragraphs": 3,
+      "newEvidence": [],
+      "previousBodyHash": "f65518ce6a44eabe82e0561bfb7a1fa55515e620410e46c65ef588c9c27bf5c0",
+      "bodyHash": "9a9c5c39dd6956d051ac6f58de37168c65af7115591db76837c121e77983b942",
+      "archivedTableValues": []
+    },
+    {
+      "id": "ordnance-v29-ga-0155",
+      "title": "AN-M14",
+      "categoryId": "grenades",
+      "paragraphs": 3,
+      "newEvidence": [],
+      "previousBodyHash": "94d301d4334b61240441099f7acef9ea1e6e583134bd09c1dfa82c65f8f16152",
+      "bodyHash": "5ece18c9790e2c87692969239ca8da710894842eb20d4d880ea4ecc388700edd",
+      "archivedTableValues": []
+    },
+    {
+      "id": "ordnance-v29-ga-0156",
+      "title": "AN-M8",
+      "categoryId": "grenades",
+      "paragraphs": 3,
+      "newEvidence": [],
+      "previousBodyHash": "a3ebe61fe25ed974ffd5eb95dbfd3be7460e10475383dd635248c2adcc73baa9",
+      "bodyHash": "095c1512943537c2364bffdcfcfb7eb7a3a76e58bcf90042806be9061c1f7f16",
+      "archivedTableValues": []
+    },
+    {
+      "id": "ordnance-v29-ga-0158",
+      "title": "M18",
+      "categoryId": "grenades",
+      "paragraphs": 3,
+      "newEvidence": [],
+      "previousBodyHash": "d240aa89fa01be23233cc7449f8994be408d1879031983e4a19dbf0b29bdde3e",
+      "bodyHash": "7426576e47d7e6e84079f7b522dc8ae953cbb7d185596028195ade52a1d886bb",
+      "archivedTableValues": []
+    },
+    {
+      "id": "ordnance-v29-ga-0169",
+      "title": "M84",
+      "categoryId": "grenades",
+      "paragraphs": 3,
+      "newEvidence": [],
+      "previousBodyHash": "84bf4e78046e27cc4df1560812c67b94e327d28f96936ec06445b0312dda4b76",
+      "bodyHash": "aff0b7f47d9a40e4070517b9778cba6360eec20f822e58a9613ef7c2e66f60e4",
+      "archivedTableValues": []
+    },
+    {
+      "id": "ordnance-v29-ga-0172",
+      "title": "M26",
+      "categoryId": "grenades",
+      "paragraphs": 3,
+      "newEvidence": [],
+      "previousBodyHash": "fdecd8cc7b217d3068c860a910dc946a1b6c2b70472ea1b1eee9b3a65aa702a5",
+      "bodyHash": "db6e9734d42d10379ab5c221f6219641f0124501b2796337e1afab39ec4ce568",
+      "archivedTableValues": []
+    },
+    {
+      "id": "ordnance-v29-ga-0173",
+      "title": "M26A1",
+      "categoryId": "grenades",
+      "paragraphs": 3,
+      "newEvidence": [],
+      "previousBodyHash": "e3f46e972bed9d932047a4da63518c75c7215f1ac8e28ff5dcb7bed9ef980c98",
+      "bodyHash": "71826e01e37a73bd3136e5ff2efa7805ca6fbd7c4cbf4fd976d17ed4de2c426c",
+      "archivedTableValues": []
+    },
+    {
+      "id": "ordnance-v29-ga-0179",
+      "title": "M61",
+      "categoryId": "grenades",
+      "paragraphs": 3,
+      "newEvidence": [],
+      "previousBodyHash": "f5c9c7b8ac586320f176f19750aa8f00bb6991cb9eda510eba9cb23438bb3a31",
+      "bodyHash": "4dff98a87e5d65ab2fbfe19f5dbe5d899afe1a51dad9987a11bb1ef7670870f5",
+      "archivedTableValues": []
+    },
+    {
+      "id": "ordnance-v29-ga-0182",
+      "title": "Mk 2",
+      "categoryId": "grenades",
+      "paragraphs": 3,
+      "newEvidence": [],
+      "previousBodyHash": "b825263a453bc82edace4460e04c9c3d9f33c4ca76b09c648d874719c57d9ea4",
+      "bodyHash": "55c23a9ea3543e1313c13ff518f002cdba53c2ea41c5410e8a564be7823b9383",
+      "archivedTableValues": []
+    },
+    {
+      "id": "ordnance-v29-ga-0191",
+      "title": "M69 practice",
+      "categoryId": "grenades",
+      "paragraphs": 3,
+      "newEvidence": [],
+      "previousBodyHash": "76769f3f3321b03aee241cb3ccb3a40db8c83993aec854d8aa8dd64f47fe70d5",
+      "bodyHash": "8305395e903f5921180a38ad64f79baf9115bbdb3dbf959c51a8bb2548014537",
+      "archivedTableValues": []
+    }
+  ],
+  "counts": {
+    "mines-antipersonnel": 22,
+    "mines-antitank": 11,
+    "artillery": 18,
+    "grenades": 20,
+    "mines-antibottom": 2,
+    "mines-antivehicle": 2
+  }
+}
