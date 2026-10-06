@@ -43,7 +43,8 @@ private enum class Tab(val route: String, val label: String, val icon: Int) {
 }
 
 @Composable
-fun DlyaSvoihApp(shortcutRequest: State<ShortcutRequest?> = remember { mutableStateOf(null) }) {
+fun DlyaSvoihApp(shortcutRequest: State<ShortcutRequest?> = remember { mutableStateOf(null) },
+                nativeSplash: Boolean = false, onLaunchReady: () -> Unit = {}) {
     val context = LocalContext.current
     val repo = (context.applicationContext as GuideApplication).repository
     val boot: BootstrapViewModel = viewModel(factory = remember(repo) {
@@ -52,23 +53,31 @@ fun DlyaSvoihApp(shortcutRequest: State<ShortcutRequest?> = remember { mutableSt
     val state by boot.state.collectAsStateWithLifecycle()
     // Database initialization already runs in the ViewModel. The short intro shares
     // that time, survives rotation, and does not run again when resuming this Activity.
-    val introDeadline = rememberSaveable { SystemClock.elapsedRealtime() + 900L }
+    val introDeadline = rememberSaveable { SystemClock.elapsedRealtime() + if (nativeSplash) 0L else 700L }
     var introDone by remember { mutableStateOf(SystemClock.elapsedRealtime() >= introDeadline) }
     LaunchedEffect(introDeadline) {
-        delay((introDeadline - SystemClock.elapsedRealtime()).coerceIn(0L, 900L))
+        delay((introDeadline - SystemClock.elapsedRealtime()).coerceIn(0L, 700L))
         introDone = true
     }
     val displayedState = if (state == BootState.Ready && !introDone) BootState.Loading else state
+    LaunchedEffect(displayedState) {
+        if (displayedState != BootState.Loading) onLaunchReady()
+    }
+    val screen: @Composable (BootState) -> Unit = { current ->
+        when (current) {
+            BootState.Loading -> LaunchPreview()
+            is BootState.Error -> {
+                val detail = if ((context.applicationInfo.flags and ApplicationInfo.FLAG_DEBUGGABLE) != 0)
+                    "\n\n${current.detail}" else ""
+                StatusPanel("Не удалось открыть локальную базу. Попробуйте ещё раз.$detail", retry = boot::retry)
+            }
+            BootState.Ready -> GuideNavigation(repo, shortcutRequest)
+        }
+    }
     Surface(Modifier.fillMaxSize().semantics { testTagsAsResourceId = true }) {
-        Crossfade(targetState = displayedState, animationSpec = tween(220), label = "launch-preview") { current ->
-            when (current) {
-                BootState.Loading -> LaunchPreview(loading = state == BootState.Loading)
-                is BootState.Error -> {
-                    val detail = if ((context.applicationInfo.flags and ApplicationInfo.FLAG_DEBUGGABLE) != 0)
-                        "\n\n${current.detail}" else ""
-                    StatusPanel("Не удалось открыть локальную базу. Попробуйте ещё раз.$detail", retry = boot::retry)
-                }
-                BootState.Ready -> GuideNavigation(repo, shortcutRequest)
+        if (nativeSplash) screen(displayedState) else {
+            Crossfade(targetState = displayedState, animationSpec = tween(180), label = "launch-preview") { current ->
+                screen(current)
             }
         }
     }

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Outer canvas keeps the whole logo and title inside the splash mask. -->
+    <item>
+        <shape android:shape="rectangle">
+            <size android:width="288dp" android:height="288dp" />
+            <solid android:color="@android:color/transparent" />
+        </shape>
+    </item>
+    <item android:width="224dp" android:height="224dp" android:gravity="center">
+        <bitmap android:src="@drawable/ic_launcher_foreground"
+            android:gravity="fill" android:tint="@color/launch_ink" />
+    </item>
+</layer-list>
