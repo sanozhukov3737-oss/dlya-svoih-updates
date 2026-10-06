@@ -31,7 +31,7 @@ import ru.dlyasvoih.app.ui.DetailViewModel
 
 @Composable
 fun CardReaderScreen(vm: CardReaderViewModel, repo: GuideRepository, onBack: () -> Unit,
-    onList: () -> Unit, onImage: (String, Int) -> Unit) {
+    onList: () -> Unit, onRelated: (String) -> Unit, onImage: (String, Int) -> Unit) {
     val state by vm.state.collectAsStateWithLifecycle()
     var pickerPage by remember { mutableStateOf<Int?>(null) }
     var jump by remember { mutableStateOf<ReaderJump?>(null) }
@@ -43,7 +43,7 @@ fun CardReaderScreen(vm: CardReaderViewModel, repo: GuideRepository, onBack: () 
             ReaderStatus(onBack) { StatusPanel("Нет карточек с выбранными фильтрами.") }
         } else {
             CardReaderPages(current.ids, vm.initialId, vm::rememberCard, jump) { id, active, page, total, previous, next ->
-                ReaderDetailPage(repo, id, active, onBack, pageNavigation = {
+                ReaderDetailPage(repo, id, active, onBack, onRelated, pageNavigation = {
                     Column(Modifier.fillMaxWidth().padding(horizontal = 12.dp)) {
                         Text(current.title, maxLines = 1, overflow = TextOverflow.Ellipsis,
                             style = MaterialTheme.typography.labelLarge)
@@ -112,7 +112,7 @@ internal fun CardReaderPages(ids: List<String>, initialId: String, onSettled: (S
 internal data class ReaderJump(val index: Int, val token: Int)
 
 @Composable
-private fun ReaderDetailPage(repo: GuideRepository, id: String, active: Boolean, onBack: () -> Unit,
+private fun ReaderDetailPage(repo: GuideRepository, id: String, active: Boolean, onBack: () -> Unit, onRelated: (String) -> Unit,
     pageNavigation: @Composable () -> Unit, onImage: (Int) -> Unit) {
     // A store belongs to one composed page and is cleared when it leaves the pager. Using the
     // navigation entry's store here would retain a DetailViewModel for every card ever visited.
@@ -121,7 +121,7 @@ private fun ReaderDetailPage(repo: GuideRepository, id: String, active: Boolean,
     val vm: DetailViewModel = viewModel(viewModelStoreOwner = owner, factory = remember(repo, id) {
         viewModelFactory { initializer { DetailViewModel(repo, SavedStateHandle(mapOf("id" to id))) } }
     })
-    DetailScreen(vm, onBack, active, pageNavigation, onImage)
+    DetailScreen(vm, onBack, active, pageNavigation, onRelated, onImage)
 }
 
 @Composable

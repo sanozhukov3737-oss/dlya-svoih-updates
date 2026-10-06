@@ -1,9 +1,15 @@
 package ru.dlyasvoih.app.ui.screens
 
 import android.content.Intent
+import android.content.Context
+import android.content.SharedPreferences
 import androidx.compose.foundation.background
+import androidx.compose.foundation.border
 import androidx.compose.foundation.gestures.detectTapGestures
-import androidx.compose.foundation.gestures.detectTransformGestures
+import androidx.compose.foundation.gestures.awaitEachGesture
+import androidx.compose.foundation.gestures.awaitFirstDown
+import androidx.compose.foundation.gestures.calculatePan
+import androidx.compose.foundation.gestures.calculateZoom
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.LazyRow
@@ -15,6 +21,13 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.selection.SelectionContainer
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
+import androidx.compose.runtime.saveable.rememberSaveable
+import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.SpanStyle
+import androidx.compose.ui.text.buildAnnotatedString
+import kotlinx.coroutines.launch
+import ru.dlyasvoih.app.data.CardFamilies
+import ru.dlyasvoih.app.ui.content.ReaderNavigation
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
@@ -58,7 +71,7 @@ import kotlin.math.max
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun DetailScreen(vm: DetailViewModel, onBack: () -> Unit, active: Boolean = true,
-    pageNavigation: (@Composable () -> Unit)? = null, onImage: (Int) -> Unit) {
+    pageNavigation: (@Composable () -> Unit)? = null, onRelated: (String) -> Unit = {}, onImage: (Int) -> Unit) {
     val state by vm.state.collectAsStateWithLifecycle()
     val busy by vm.busy.collectAsStateWithLifecycle()
     val error by vm.error.collectAsStateWithLifecycle()
@@ -69,6 +82,18 @@ fun DetailScreen(vm: DetailViewModel, onBack: () -> Unit, active: Boolean = true
     var compareOpen by remember { mutableStateOf(false) }
     LaunchedEffect(error) { error?.let { snackbar.showSnackbar(it); vm.clearError() } }
     val context = LocalContext.current
+    val readerPrefs = remember(context) { context.getSharedPreferences("reader", Context.MODE_PRIVATE) }
+    var textScale by remember { mutableFloatStateOf(readerPrefs.getFloat("text_scale", 1f).coerceIn(0.9f, 1.5f)) }
+    var readerOpen by remember { mutableStateOf(false) }
+    var query by rememberSaveable { mutableStateOf("") }
+    var matchIndex by rememberSaveable { mutableIntStateOf(0) }
+    DisposableEffect(readerPrefs) {
+        val listener = SharedPreferences.OnSharedPreferenceChangeListener { prefs, key ->
+            if (key == "text_scale") textScale = prefs.getFloat(key, 1f).coerceIn(0.9f, 1.5f)
+        }
+        readerPrefs.registerOnSharedPreferenceChangeListener(listener)
+        onDispose { readerPrefs.unregisterOnSharedPreferenceChangeListener(listener) }
+    }
     Scaffold(topBar = {
         Column {
             GuideBar("Карточка", onBack) {
@@ -85,6 +110,7 @@ fun DetailScreen(vm: DetailViewModel, onBack: () -> Unit, active: Boolean = true
                         Icon(painterResource(R.drawable.icon_ui_share), contentDescription = null)
                     }
                 }
+                if (ready != null) TextButton(onClick = { readerOpen = true }) { Text("Чтение") }
                 if (ready != null) FavoriteButton(ready.favorite, !busy, vm::toggleFavorite)
             }
             pageNavigation?.invoke()
@@ -102,7 +128,13 @@ fun DetailScreen(vm: DetailViewModel, onBack: () -> Unit, active: Boolean = true
                 val displayParagraphs = remember(paragraphs, card.categoryId) {
                     readerParagraphs(paragraphs, card.categoryId == "mortars")
                 }
-                val itemCount = 5 + secondaryImages.size + displayParagraphs.size
+                val paragraphStart = 2 + secondaryImages.size
+                val sourcesIndex = paragraphStart + displayParagraphs.size +
+                    (if (card.categoryId != "mortars") 1 else 0) + (if (value.related.isNotEmpty()) 1 else 0)
+                val itemCount = sourcesIndex + 1
+                val sections = remember(displayParagraphs) { ReaderNavigation.sections(displayParagraphs) }
+                val matches = remember(displayParagraphs, query) { ReaderNavigation.matchingParagraphs(displayParagraphs, query) }
+                val scope = rememberCoroutineScope()
                 val listState = rememberLazyListState(reading?.itemIndex?.coerceIn(0, (itemCount - 1).coerceAtLeast(0)) ?: 0,
                     reading?.offset?.coerceIn(0, 100_000) ?: 0)
                 val lifecycle = LocalLifecycleOwner.current.lifecycle
@@ -116,19 +148,46 @@ fun DetailScreen(vm: DetailViewModel, onBack: () -> Unit, active: Boolean = true
                     lifecycle.addObserver(observer)
                     onDispose { if (active) flush(); lifecycle.removeObserver(observer) }
                 }
+                Column(Modifier.fillMaxSize().padding(padding)) {
+                        if (query.isNotBlank()) Row(Modifier.fillMaxWidth().padding(horizontal = 16.dp), verticalAlignment = Alignment.CenterVertically) {
+                            Text(if (matches.isEmpty()) "«$query»: не найдено" else "«$query»: фрагмент ${matchIndex.coerceIn(matches.indices) + 1} из ${matches.size}",
+                                Modifier.weight(1f), maxLines = 2, overflow = TextOverflow.Ellipsis, style = MaterialTheme.typography.bodySmall)
+                            TextButton(enabled = matches.isNotEmpty(), onClick = {
+                                matchIndex = (matchIndex - 1 + matches.size) % matches.size
+                                scope.launch { listState.animateScrollToItem(paragraphStart + matches[matchIndex]) }
+                            }, modifier = Modifier.semantics { contentDescription = "Предыдущий результат" }) { Text("↑") }
+                            TextButton(enabled = matches.isNotEmpty(), onClick = {
+                                matchIndex = (matchIndex + 1) % matches.size
+                                scope.launch { listState.animateScrollToItem(paragraphStart + matches[matchIndex]) }
+                            }, modifier = Modifier.semantics { contentDescription = "Следующий результат" }) { Text("↓") }
+                            IconButton(onClick = { query = "" }, modifier = Modifier.semantics { contentDescription = "Закрыть поиск по статье" }) {
+                                Icon(painterResource(R.drawable.icon_ui_close), null)
+                            }
+                        }
                 LazyColumn(
-                    Modifier.fillMaxSize().padding(padding).testTag("detail_list"),
+                    Modifier.fillMaxWidth().weight(1f).testTag("detail_list"),
                     state = listState,
                     contentPadding = PaddingValues(bottom = 28.dp),
                     verticalArrangement = Arrangement.spacedBy(16.dp)
                 ) {
                     item(key = "hero") { DetailHero(card, value.images.firstOrNull(), value.countries.joinToString(" · ") { it.name }) { onImage(0) } }
-                    if (card.categoryId != "mortars" || value.comparisonCards.isNotEmpty()) item(key = "actions") {
+                    item(key = "actions") {
+                        Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
                         Row(Modifier.fillMaxWidth().padding(horizontal = 16.dp), horizontalArrangement = Arrangement.spacedBy(10.dp)) {
                             if (card.categoryId != "mortars") {
                                 QuickAction("Быстрая сверка", R.drawable.icon_ui_focus, Modifier.weight(1f)) { quickOpen = true }
                             }
                             QuickAction("Сравнить", R.drawable.icon_ui_compare, Modifier.weight(1f), enabled = value.comparisonCards.isNotEmpty()) { compareOpen = true }
+                        }
+                        LazyRow(contentPadding = PaddingValues(horizontal = 16.dp), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                            items(sections.take(5), key = { it.paragraphIndex }) { section ->
+                                AssistChip(onClick = { scope.launch { listState.animateScrollToItem(paragraphStart + section.paragraphIndex) } },
+                                    label = { Text(section.title, maxLines = 1) })
+                            }
+                            if (value.images.isNotEmpty()) item { AssistChip(onClick = { onImage(0) }, label = { Text("Фото · ${value.images.size}") }) }
+                            item { AssistChip(onClick = { scope.launch { listState.animateScrollToItem(sourcesIndex) } }, label = { Text("Источники") }) }
+                        }
+
                         }
                     }
                     items(secondaryImages, key = { "image_${it.id}" }, contentType = { "image" }) { picture ->
@@ -149,7 +208,7 @@ fun DetailScreen(vm: DetailViewModel, onBack: () -> Unit, active: Boolean = true
                         }
                     }
                     items(displayParagraphs, contentType = { "paragraph" }) { paragraph ->
-                        Box(Modifier.padding(horizontal = 18.dp)) { ReferenceBodyBlock(paragraph) }
+                        Box(Modifier.padding(horizontal = 18.dp)) { ReferenceBodyBlock(paragraph, textScale, query) }
                     }
                     if (card.categoryId != "mortars") item(key = "tags") {
                         Text(card.tags, Modifier.padding(horizontal = 18.dp), style = MaterialTheme.typography.bodySmall,
@@ -157,15 +216,49 @@ fun DetailScreen(vm: DetailViewModel, onBack: () -> Unit, active: Boolean = true
                     }
                     if (value.related.isNotEmpty()) item(key = "related") {
                         Column(verticalArrangement = Arrangement.spacedBy(9.dp)) {
-                            Text("Похожие в категории", Modifier.padding(horizontal = 18.dp), style = MaterialTheme.typography.titleLarge)
-                            LazyRow(contentPadding = PaddingValues(horizontal = 18.dp), horizontalArrangement = Arrangement.spacedBy(10.dp)) {
-                                items(value.related.take(6), key = { it.id }) { related ->
-                                    AtlasPreviewCard(related) { compareOpen = true }
+                            val family = value.related.filter { CardFamilies.sameFamily(card.id, it.id) }
+                            val others = value.related.filterNot { CardFamilies.sameFamily(card.id, it.id) }
+                            listOf("Другие модели семейства" to family, "Другие в категории" to others.take(6)).forEach { (title, cards) ->
+                                if (cards.isNotEmpty()) {
+                                    Text(title, Modifier.padding(horizontal = 18.dp), style = MaterialTheme.typography.titleLarge)
+                                    LazyRow(contentPadding = PaddingValues(horizontal = 18.dp), horizontalArrangement = Arrangement.spacedBy(10.dp)) {
+                                        items(cards, key = { it.id }) { related -> AtlasPreviewCard(related) { onRelated(related.id) } }
+                                    }
                                 }
                             }
                         }
                     }
                     item(key = "sources") { SourcesCard(value.sources, card.sourceGrade, card.verifiedAt, ReaderContent.notes(paragraphs)) }
+                }
+                }
+                if (readerOpen) {
+                    var draft by remember { mutableStateOf(query) }
+                    ModalBottomSheet(onDismissRequest = { readerOpen = false }) {
+                        LazyColumn(Modifier.fillMaxWidth(), contentPadding = PaddingValues(20.dp), verticalArrangement = Arrangement.spacedBy(12.dp)) {
+                            item { Text("Чтение", style = MaterialTheme.typography.headlineSmall) }
+                            item {
+                                Text("Размер текста", style = MaterialTheme.typography.titleSmall)
+                                LazyRow(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                                    items(listOf(0.9f, 1f, 1.15f, 1.3f, 1.5f)) { size ->
+                                        FilterChip(selected = textScale == size, onClick = { readerPrefs.edit().putFloat("text_scale", size).apply() },
+                                            label = { Text("${(size * 100).toInt()}%") })
+                                    }
+                                }
+                            }
+                            item {
+                                OutlinedTextField(draft, { draft = it }, label = { Text("Найти в статье") }, singleLine = true, modifier = Modifier.fillMaxWidth())
+                                FilledTonalButton(onClick = {
+                                    query = draft.trim(); matchIndex = 0; readerOpen = false
+                                    val found = ReaderNavigation.matchingParagraphs(displayParagraphs, query)
+                                    if (found.isNotEmpty()) scope.launch { listState.animateScrollToItem(paragraphStart + found.first()) }
+                                }) { Text("Найти") }
+                            }
+                            if (sections.isNotEmpty()) item { Text("Разделы", style = MaterialTheme.typography.titleSmall) }
+                            items(sections, key = { it.paragraphIndex }) { section ->
+                                TextButton(onClick = { readerOpen = false; scope.launch { listState.animateScrollToItem(paragraphStart + section.paragraphIndex) } }) { Text(section.title) }
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -175,7 +268,7 @@ fun DetailScreen(vm: DetailViewModel, onBack: () -> Unit, active: Boolean = true
     if (quickOpen && card != null) {
         QuickRecognitionSheet(card, recognitionBlocks(paragraphs)) { quickOpen = false }
     }
-    if (compareOpen && card != null && value != null && value.comparisonCards.isNotEmpty()) {
+    if (compareOpen && card != null && value.comparisonCards.isNotEmpty()) {
         ComparisonSheet(card, value.comparisonCards) { compareOpen = false }
     }
 }
@@ -370,35 +463,51 @@ private fun sourceGradeLabel(value: String): String = when (value) {
     else -> "архивная редакционная запись"
 }
 
+@Composable
+private fun ReaderText(text: String, textScale: Float, query: String, modifier: Modifier = Modifier,
+    style: TextStyle = MaterialTheme.typography.bodyLarge, color: Color = Color.Unspecified) {
+    val highlight = MaterialTheme.colorScheme.primaryContainer
+    val foreground = MaterialTheme.colorScheme.onPrimaryContainer
+    val annotated = remember(text, query, highlight, foreground) {
+        buildAnnotatedString {
+            append(text)
+            ReaderNavigation.ranges(text, query).forEach { range ->
+                addStyle(SpanStyle(background = highlight, color = foreground), range[0], range[1])
+            }
+        }
+    }
+    Text(annotated, modifier, color = color, style = style.copy(fontSize = style.fontSize * textScale, lineHeight = style.lineHeight * textScale))
+}
+
 /** Parsing changes presentation only: each old paragraph still occupies one lazy item. */
 @Composable
-private fun ReferenceBodyBlock(paragraph: String) {
+private fun ReferenceBodyBlock(paragraph: String, textScale: Float = 1f, query: String = "") {
     val block = remember(paragraph) { ReferenceBodyParser.parseBlock(paragraph) }
     SelectionContainer {
         when (block.kind) {
-            ReferenceBodyParser.Kind.HEADING -> Text(block.text, modifier = Modifier.fillMaxWidth().semantics { heading() },
+            ReferenceBodyParser.Kind.HEADING -> ReaderText(block.text, textScale, query, modifier = Modifier.fillMaxWidth().semantics { heading() },
                 style = MaterialTheme.typography.titleLarge)
-            ReferenceBodyParser.Kind.TABLE -> ReferenceTable(block)
-            else -> Text(block.text, style = MaterialTheme.typography.bodyLarge)
+            ReferenceBodyParser.Kind.TABLE -> ReferenceTable(block, textScale, query)
+            else -> ReaderText(block.text, textScale, query, style = MaterialTheme.typography.bodyLarge)
         }
     }
 }
 
 @Composable
-private fun ReferenceTable(block: ReferenceBodyParser.Block) {
+private fun ReferenceTable(block: ReferenceBodyParser.Block, textScale: Float, query: String) {
     val fontScale = LocalDensity.current.fontScale
     OutlinedCard(Modifier.fillMaxWidth()) {
         BoxWithConstraints(Modifier.fillMaxWidth().padding(horizontal = 14.dp)) {
-            val stacked = maxWidth / fontScale < 340.dp
+            val stacked = maxWidth / (fontScale * textScale) < 340.dp
             Column(Modifier.fillMaxWidth()) {
                 if (stacked) {
-                    Text("${block.header.label} — ${block.header.value}", Modifier.fillMaxWidth().padding(vertical = 12.dp),
+                    ReaderText("${block.header.label} — ${block.header.value}", textScale, query, Modifier.fillMaxWidth().padding(vertical = 12.dp),
                         style = MaterialTheme.typography.labelLarge, color = MaterialTheme.colorScheme.onSurfaceVariant)
                     HorizontalDivider()
                 } else {
                     Row(Modifier.fillMaxWidth().padding(vertical = 12.dp), horizontalArrangement = Arrangement.spacedBy(16.dp)) {
-                        Text(block.header.label, Modifier.weight(1f), style = MaterialTheme.typography.titleSmall)
-                        Text(block.header.value, Modifier.weight(1f), style = MaterialTheme.typography.titleSmall)
+                        ReaderText(block.header.label, textScale, query, Modifier.weight(1f), style = MaterialTheme.typography.titleSmall)
+                        ReaderText(block.header.value, textScale, query, Modifier.weight(1f), style = MaterialTheme.typography.titleSmall)
                     }
                     HorizontalDivider()
                 }
@@ -406,14 +515,14 @@ private fun ReferenceTable(block: ReferenceBodyParser.Block) {
                     if (index > 0) HorizontalDivider()
                     if (stacked) {
                         Column(Modifier.fillMaxWidth().padding(vertical = 12.dp), verticalArrangement = Arrangement.spacedBy(6.dp)) {
-                            Text(row.label, style = MaterialTheme.typography.titleSmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
-                            Text(row.value, style = MaterialTheme.typography.bodyLarge)
+                            ReaderText(row.label, textScale, query, style = MaterialTheme.typography.titleSmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                            ReaderText(row.value, textScale, query, style = MaterialTheme.typography.bodyLarge)
                         }
                     } else {
                         Row(Modifier.fillMaxWidth().padding(vertical = 12.dp), horizontalArrangement = Arrangement.spacedBy(16.dp)) {
-                            Text(row.label, Modifier.weight(1f), style = MaterialTheme.typography.bodyLarge,
+                            ReaderText(row.label, textScale, query, Modifier.weight(1f), style = MaterialTheme.typography.bodyLarge,
                                 color = MaterialTheme.colorScheme.onSurfaceVariant)
-                            Text(row.value, Modifier.weight(1f), style = MaterialTheme.typography.bodyLarge)
+                            ReaderText(row.value, textScale, query, Modifier.weight(1f), style = MaterialTheme.typography.bodyLarge)
                         }
                     }
                 }
@@ -422,10 +531,12 @@ private fun ReferenceTable(block: ReferenceBodyParser.Block) {
     }
 }
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun GalleryScreen(vm: GalleryViewModel, initialIndex: Int, onBack: () -> Unit) {
     val state by vm.state.collectAsStateWithLifecycle()
     val images = (state as? DataState.Ready<List<ImageEntity>>)?.value.orEmpty()
+    var detailsOpen by remember { mutableStateOf(false) }
     Scaffold(topBar = { GuideBar("Изображения", onBack) }) { padding ->
         when {
             state == DataState.Loading -> StatusPanel("Открываем изображения…", Modifier.padding(padding), loading = true)
@@ -433,15 +544,38 @@ fun GalleryScreen(vm: GalleryViewModel, initialIndex: Int, onBack: () -> Unit) {
             images.isEmpty() -> StatusPanel("Изображений нет", Modifier.padding(padding))
             else -> {
                 val pager = rememberPagerState(initialPage = initialIndex.coerceIn(images.indices)) { images.size }
+                val zoomed = remember { mutableStateMapOf<String, Boolean>() }
+                val scope = rememberCoroutineScope()
+                val current = pager.currentPage.coerceIn(images.indices)
+                val picture = images[current]
                 Column(Modifier.fillMaxSize().padding(padding)) {
-                    HorizontalPager(pager, modifier = Modifier.weight(1f), key = { images[it].id }) { index ->
-                        ZoomableGuideImage(images[index], Modifier.fillMaxSize().padding(10.dp))
+                    HorizontalPager(pager, userScrollEnabled = zoomed[picture.id] != true,
+                        modifier = Modifier.weight(1f), key = { images[it].id }) { index ->
+                        ZoomableGuideImage(images[index], Modifier.fillMaxSize().padding(10.dp)) { zoomed[images[index].id] = it }
                     }
-                    val current = pager.currentPage.coerceIn(images.indices)
-                    Text("${current + 1} / ${images.size} · ${imageKindLabel(images[current].caption)}\n" +
-                        "${images[current].caption}\n${imageRightsLabel(images[current].caption)}\n" +
-                        "Щипок — масштаб, двойное касание — приблизить",
-                        Modifier.padding(18.dp), style = MaterialTheme.typography.bodyMedium)
+                    if (images.size > 1) LazyRow(contentPadding = PaddingValues(horizontal = 18.dp), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                        items(images, key = { it.id }) { image ->
+                            Surface(onClick = { scope.launch { pager.animateScrollToPage(images.indexOf(image)) } },
+                                modifier = Modifier.size(70.dp).clip(RoundedCornerShape(10.dp)).border(
+                                    if (image.id == picture.id) 2.dp else 0.dp, MaterialTheme.colorScheme.primary, RoundedCornerShape(10.dp)), color = Color.White) {
+                                LocalGuideImage(image.localPath, "Изображение ${images.indexOf(image) + 1}", Modifier.fillMaxSize(), fit = true)
+                            }
+                        }
+                    }
+                    Row(Modifier.fillMaxWidth().padding(horizontal = 18.dp, vertical = 8.dp), verticalAlignment = Alignment.CenterVertically) {
+                        Column(Modifier.weight(1f)) {
+                            Text("${current + 1} / ${images.size} · ${imageKindLabel(picture.caption)}", style = MaterialTheme.typography.bodyMedium)
+                            Text("Щипок и двойное касание — масштаб", style = MaterialTheme.typography.bodySmall)
+                        }
+                        TextButton(onClick = { detailsOpen = true }) { Text("Подпись") }
+                    }
+                }
+                if (detailsOpen) ModalBottomSheet(onDismissRequest = { detailsOpen = false }) {
+                    LazyColumn(contentPadding = PaddingValues(20.dp), verticalArrangement = Arrangement.spacedBy(12.dp)) {
+                        item { Text("Изображение ${current + 1}", style = MaterialTheme.typography.titleLarge) }
+                        item { SelectionContainer { Text(picture.caption, style = MaterialTheme.typography.bodyLarge) } }
+                        item { Text(imageRightsLabel(picture.caption), style = MaterialTheme.typography.bodySmall) }
+                    }
                 }
             }
         }
@@ -472,12 +606,13 @@ private fun imageRightsLabel(caption: String): String {
 }
 
 @Composable
-private fun ZoomableGuideImage(image: ImageEntity, modifier: Modifier = Modifier) {
+private fun ZoomableGuideImage(image: ImageEntity, modifier: Modifier = Modifier, onZoomChanged: (Boolean) -> Unit) {
     var scale by remember(image.id) { mutableFloatStateOf(1f) }
     var offsetX by remember(image.id) { mutableFloatStateOf(0f) }
     var offsetY by remember(image.id) { mutableFloatStateOf(0f) }
     var size by remember(image.id) { mutableStateOf(IntSize.Zero) }
     val haptics = LocalHapticFeedback.current
+    LaunchedEffect(scale > 1f) { onZoomChanged(scale > 1f) }
     fun clampOffsets() {
         val maxX = max(0f, (scale - 1f) * size.width / 2f)
         val maxY = max(0f, (scale - 1f) * size.height / 2f)
@@ -486,21 +621,39 @@ private fun ZoomableGuideImage(image: ImageEntity, modifier: Modifier = Modifier
     }
     Box(modifier.clip(RoundedCornerShape(16.dp)).background(Color.Black), contentAlignment = Alignment.Center) {
         LocalGuideImage(image.localPath, image.caption,
-            Modifier.fillMaxSize().onSizeChanged { size = it }
+            Modifier.fillMaxSize().onSizeChanged { size = it; clampOffsets() }
                 .pointerInput(image.id) {
                     detectTapGestures(onDoubleTap = {
                         scale = if (scale > 1f) 1f else 2.5f
-                        if (scale == 1f) { offsetX = 0f; offsetY = 0f }
+                        clampOffsets()
                         haptics.performHapticFeedback(HapticFeedbackType.LongPress)
                     })
                 }
                 .pointerInput(image.id) {
-                    detectTransformGestures { _, pan, zoom, _ ->
-                        scale = (scale * zoom).coerceIn(1f, 4f)
-                        if (scale == 1f) { offsetX = 0f; offsetY = 0f }
-                        else { offsetX += pan.x; offsetY += pan.y; clampOffsets() }
+                    awaitEachGesture {
+                        awaitFirstDown(requireUnconsumed = false)
+                        do {
+                            val event = awaitPointerEvent()
+                            // At 1x, leave one-finger drags to the gallery pager.
+                            // Consume pinch/pan only while manipulating the enlarged image.
+                            if (event.changes.count { it.pressed } > 1 || scale > 1f) {
+                                val pan = event.calculatePan()
+                                scale = (scale * event.calculateZoom()).coerceIn(1f, 4f)
+                                offsetX += pan.x; offsetY += pan.y; clampOffsets()
+                                event.changes.forEach { it.consume() }
+                            }
+                        } while (event.changes.any { it.pressed })
                     }
                 }
                 .graphicsLayer { scaleX = scale; scaleY = scale; translationX = offsetX; translationY = offsetY }, fit = true)
+        Surface(Modifier.align(Alignment.BottomCenter).padding(12.dp), shape = RoundedCornerShape(24.dp), color = MaterialTheme.colorScheme.surface.copy(alpha = 0.9f)) {
+            Row(verticalAlignment = Alignment.CenterVertically) {
+                TextButton(enabled = scale > 1f, onClick = { scale = (scale - 0.5f).coerceAtLeast(1f); clampOffsets() },
+                    modifier = Modifier.semantics { contentDescription = "Уменьшить изображение" }) { Text("−") }
+                TextButton(onClick = { scale = 1f; clampOffsets() }, modifier = Modifier.semantics { contentDescription = "Сбросить масштаб" }) { Text("${(scale * 100).toInt()}%") }
+                TextButton(enabled = scale < 4f, onClick = { scale = (scale + 0.5f).coerceAtMost(4f); clampOffsets() },
+                    modifier = Modifier.semantics { contentDescription = "Увеличить изображение" }) { Text("+") }
+            }
+        }
     }
 }
