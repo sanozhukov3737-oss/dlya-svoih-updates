@@ -151,7 +151,10 @@ class ContentUpdater(private val context: Context, private val db: GuideDatabase
             safeId(card.id); require(card.rowId > 0 && !card.archived); section(card.section)
             limited(card.title, 200); limited(card.summary, 600); limited(card.body, 100_000); limited(card.tags, 2000, true)
             require(card.sortTitle == SearchQuery.normalize(card.title)) { "Неверная сортировка" }
-            require(card.searchText == SearchQuery.normalize(listOf(card.title, card.summary, card.body, card.tags.replace(" · ", " ")).joinToString(" "))) {
+            val legacySearch = SearchQuery.normalize(listOf(card.title, card.summary, card.body, card.tags.replace(" · ", " ")).joinToString(" "))
+            val readerSearch = SearchQuery.normalize(listOf(card.title, card.summary,
+                ru.dlyasvoih.app.ui.content.ReaderContent.searchableBody(card.body), card.tags.replace(" · ", " ")).joinToString(" "))
+            require(card.searchText == legacySearch || card.searchText == readerSearch) {
                 "Неверный поисковый текст"
             }
             require(card.contentStatus in setOf("demo", "medical_review_required", "reviewed", "source_only", "candidate")) {
