@@ -1,0 +1,3855 @@
+{
+  "ref-v8-ptm-4": {
+    "rows": [
+      [
+        "Масса всей мины",
+        "3,25 кг"
+      ],
+      [
+        "Габариты мины",
+        "350 × 110 × 55 мм"
+      ]
+    ],
+    "source": {
+      "id": "ref-v8-ptm-4-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 39: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Характеристики самой ПТМ-4, не транспортной кассеты КПТМ-4."
+  },
+  "ordnance-v27-155-mm-m692-m731-adam": {
+    "rows": [
+      [
+        "Масса по источнику, г",
+        "46 500 (без взрывателя)"
+      ],
+      [
+        "Размеры по источнику, мм",
+        "804 (длина, без взрывателя), 899 (длина, со взрывателем), 155 (диаметр)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-155-mm-m692-m731-adam-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 40: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-m131-mopms-sistema-rasseivaniya-min": {
+    "rows": [
+      [
+        "Масса по источнику, г",
+        "Loaded MOPMS dispenser (21×AP/AT mines): 73 500"
+      ],
+      [
+        "Размеры по источнику, мм",
+        "818 (длина), 576 (ширина), 345 (высота)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-m131-mopms-sistema-rasseivaniya-min-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 42: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Масса и размеры относятся к снаряжённому контейнеру MOPMS, а не к отдельной мине."
+  },
+  "ordnance-v27-m131-mopms-ap-mine": {
+    "rows": [
+      [
+        "Масса по источнику, г",
+        "1 600"
+      ],
+      [
+        "Размеры по источнику, мм",
+        "66 (высота), 121 (диаметр; без пружинных элементов поздних вариантов)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-m131-mopms-ap-mine-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 43: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-m131-mopms-at-mine": {
+    "rows": [
+      [
+        "Масса по источнику, г",
+        "1 900"
+      ],
+      [
+        "Размеры по источнику, мм",
+        "66 (высота), 121 (диаметр; без пружинных элементов поздних вариантов)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-m131-mopms-at-mine-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 44: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-m139-volcano-sistema-rasseivaniya-min": {
+    "rows": [
+      [
+        "Масса по источнику, г",
+        "Противопехотная мина: 1 600; противотранспортная мина: 1 600"
+      ],
+      [
+        "Размеры по источнику, мм",
+        "Кассета: длина 620, диаметр 127. Размеры отдельных мин приводятся в их карточках."
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-m139-volcano-sistema-rasseivaniya-min-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 45: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-m139-volcano-ap-mine": {
+    "rows": [
+      [
+        "Масса по источнику, г",
+        "1 600"
+      ],
+      [
+        "Размеры по источнику, мм",
+        "66 (высота), 121 (диаметр; без пружинных элементов поздних вариантов)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-m139-volcano-ap-mine-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 46: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-m139-volcano-at-mine": {
+    "rows": [
+      [
+        "Масса по источнику, г",
+        "1 600"
+      ],
+      [
+        "Размеры по источнику, мм",
+        "66 (высота), 121 (диаметр; без пружинных элементов поздних вариантов)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-m139-volcano-at-mine-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 47: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-rkg-3-rkg-3": {
+    "rows": [
+      [
+        "Масса по источнику, г",
+        "1 070"
+      ],
+      [
+        "Размеры по источнику, мм",
+        "362×72"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-rkg-3-rkg-3-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 53: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-vog-17-vog-17m": {
+    "rows": [
+      [
+        "Масса по источнику, г",
+        "350"
+      ],
+      [
+        "Размеры по источнику, мм",
+        "132×30"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-vog-17-vog-17m-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 54: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-vog-17-polevaya-aviatsionnaya-peredelka": {
+    "rows": [
+      [
+        "Масса по источнику, г",
+        "300, оценка источника"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-vog-17-polevaya-aviatsionnaya-peredelka-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 55: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-vog-25": {
+    "rows": [
+      [
+        "Масса по источнику, г",
+        "250"
+      ],
+      [
+        "Размеры по источнику, мм",
+        "102×40"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-vog-25-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 56: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-vog-25m": {
+    "rows": [
+      [
+        "Масса по источнику, г",
+        "278"
+      ],
+      [
+        "Размеры по источнику, мм",
+        "107×40"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-vog-25m-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 57: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-m430a1-hedp": {
+    "rows": [
+      [
+        "Масса по источнику, г",
+        "340"
+      ],
+      [
+        "Размеры по источнику, мм",
+        "112×40"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-m430a1-hedp-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 60: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-of-17-100-mm-snaryad": {
+    "rows": [
+      [
+        "Масса по источнику, г",
+        "18 100"
+      ],
+      [
+        "Размеры по источнику, мм",
+        "100×611"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-of-17-100-mm-snaryad-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 70: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-of-32-100-mm-snaryad": {
+    "rows": [
+      [
+        "Масса по источнику, г",
+        "15 660"
+      ],
+      [
+        "Размеры по источнику, мм",
+        "100×490"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-of-32-100-mm-snaryad-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 71: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-bk-13m-122-mm-snaryad": {
+    "rows": [
+      [
+        "Масса по источнику, г",
+        "18 200"
+      ],
+      [
+        "Размеры по источнику, мм",
+        "122×637 (только снаряд)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-bk-13m-122-mm-snaryad-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 73: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-3sh1-122-mm-snaryad": {
+    "rows": [
+      [
+        "Масса по источнику, г",
+        "22 340"
+      ],
+      [
+        "Размеры по источнику, мм",
+        "122×480 (без взрывателя)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-3sh1-122-mm-snaryad-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 75: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-of-19-125-mm-snaryad": {
+    "rows": [
+      [
+        "Масса по источнику, г",
+        "23 219"
+      ],
+      [
+        "Размеры по источнику, мм",
+        "125×670"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-of-19-125-mm-snaryad-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 76: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-of-26-125-mm-snaryad": {
+    "rows": [
+      [
+        "Масса по источнику, г",
+        "23 200"
+      ],
+      [
+        "Размеры по источнику, мм",
+        "125×675"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-of-26-125-mm-snaryad-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 77: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-bm-26-125-mm-snaryad": {
+    "rows": [
+      [
+        "Масса по источнику, г",
+        "4 800 (снаряд), 7 050 (полный выстрел)"
+      ],
+      [
+        "Размеры по источнику, мм",
+        "125×395 (только снаряд)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-bm-26-125-mm-snaryad-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 78: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-bm-32-125-mm-snaryad": {
+    "rows": [
+      [
+        "Масса по источнику, г",
+        "7 050"
+      ],
+      [
+        "Размеры по источнику, мм",
+        "125×585 (только снаряд)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-bm-32-125-mm-snaryad-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 79: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-bk-14-125-mm-snaryad": {
+    "rows": [
+      [
+        "Масса по источнику, г",
+        "19 020"
+      ],
+      [
+        "Размеры по источнику, мм",
+        "125×677 (только снаряд)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-bk-14-125-mm-snaryad-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 80: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-bk-18-125-mm-snaryad": {
+    "rows": [
+      [
+        "Масса по источнику, г",
+        "19 000"
+      ],
+      [
+        "Размеры по источнику, мм",
+        "680×125"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-bk-18-125-mm-snaryad-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 81: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-of-29-152-mm-snaryad": {
+    "rows": [
+      [
+        "Масса по источнику, г",
+        "46 000"
+      ],
+      [
+        "Размеры по источнику, мм",
+        "725×152"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-of-29-152-mm-snaryad-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 83: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-3-o-13-152-mm-kassetnyi-snaryad": {
+    "rows": [
+      [
+        "Масса по источнику, г",
+        "41 400"
+      ],
+      [
+        "Размеры по источнику, мм",
+        "664x152"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-3-o-13-152-mm-kassetnyi-snaryad-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 86: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-m1-he-105-mm-snaryad": {
+    "rows": [
+      [
+        "Размеры по источнику, мм",
+        "552×105"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-m1-he-105-mm-snaryad-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 89: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "В строке массы GICHD расходятся единица и значение; массу до дополнительной сверки не переносим."
+  },
+  "ordnance-v27-dm121-155-mm-snaryad": {
+    "rows": [
+      [
+        "Масса по источнику, г",
+        "43 500"
+      ],
+      [
+        "Размеры по источнику, мм",
+        "841×155"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-dm121-155-mm-snaryad-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 90: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-oe-155-f1-155-mm-snaryad": {
+    "rows": [
+      [
+        "Масса по источнику, г",
+        "42 200"
+      ],
+      [
+        "Размеры по источнику, мм",
+        "841×155"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-oe-155-f1-155-mm-snaryad-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 91: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-ofd-mkm-155-mm-snaryad": {
+    "rows": [
+      [
+        "Масса по источнику, г",
+        "43 550"
+      ],
+      [
+        "Размеры по источнику, мм",
+        "829×155"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-ofd-mkm-155-mm-snaryad-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 93: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-m549-hera-155-mm-snaryad": {
+    "rows": [
+      [
+        "Масса по источнику, г",
+        "42 600"
+      ],
+      [
+        "Размеры по источнику, мм",
+        "858×155"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-m549-hera-155-mm-snaryad-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 96: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-m718-m741-raam-155-mm-snaryady": {
+    "rows": [
+      [
+        "Масса по источнику, г",
+        "46 700"
+      ],
+      [
+        "Размеры по источнику, мм",
+        "860"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-m718-m741-raam-155-mm-snaryady-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 98: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-dm105-smoke-155-mm-snaryad": {
+    "rows": [
+      [
+        "Масса по источнику, г",
+        "42 500"
+      ],
+      [
+        "Размеры по источнику, мм",
+        "Корпус снаряда: 780 (длина), 155 (диаметр)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-dm105-smoke-155-mm-snaryad-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 99: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-dm106-illuminating-155-mm-snaryad": {
+    "rows": [
+      [
+        "Масса по источнику, г",
+        "42 500"
+      ],
+      [
+        "Размеры по источнику, мм",
+        "Корпус снаряда: 780 (длина), 155 (диаметр)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-dm106-illuminating-155-mm-snaryad-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 100: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-120-mm-boepripasy-leopard-2-m1-abrams": {
+    "rows": [
+      [
+        "Масса по источнику, г",
+        "M830: 13 500 (снаряд)"
+      ],
+      [
+        "Размеры по источнику, мм",
+        "M830: 850 (снаряд длина), 120 (диаметр)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-120-mm-boepripasy-leopard-2-m1-abrams-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 102: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-120-mm-boepripasy-challenger-2": {
+    "rows": [
+      [
+        "Размеры по источнику, мм",
+        "HESH: 440; дымовой WP: 430 — размеры в формулировке источника, ось не указана"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-120-mm-boepripasy-challenger-2-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 103: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-og-7v": {
+    "rows": [
+      [
+        "Масса по источнику, г",
+        "1 760"
+      ],
+      [
+        "Размеры по источнику, мм",
+        "593×40"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-og-7v-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 106: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-pg-7l": {
+    "rows": [
+      [
+        "Масса по источнику, г",
+        "1 500"
+      ],
+      [
+        "Размеры по источнику, мм",
+        "680×93"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-pg-7l-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 107: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-pg-7m": {
+    "rows": [
+      [
+        "Масса по источнику, г",
+        "1 500"
+      ],
+      [
+        "Размеры по источнику, мм",
+        "675×71"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-pg-7m-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 108: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-pg-7v": {
+    "rows": [
+      [
+        "Масса по источнику, г",
+        "1 750"
+      ],
+      [
+        "Размеры по источнику, мм",
+        "646×85"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-pg-7v-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 109: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-pg-7vl": {
+    "rows": [
+      [
+        "Масса по источнику, г",
+        "2 600"
+      ],
+      [
+        "Размеры по источнику, мм",
+        "93×40"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-pg-7vl-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 110: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-pg-7r": {
+    "rows": [
+      [
+        "Масса по источнику, г",
+        "3 630"
+      ],
+      [
+        "Размеры по источнику, мм",
+        "1 230×105 (с вышибным зарядом)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-pg-7r-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 111: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-tbg-7l": {
+    "rows": [
+      [
+        "Размеры по источнику, мм",
+        "93 (диаметр)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-tbg-7l-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 112: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-og-9v": {
+    "rows": [
+      [
+        "Масса по источнику, г",
+        "3 700"
+      ],
+      [
+        "Размеры по источнику, мм",
+        "774×73"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-og-9v-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 113: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-pg-9v": {
+    "rows": [
+      [
+        "Масса по источнику, г",
+        "2 530"
+      ],
+      [
+        "Размеры по источнику, мм",
+        "774×73"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-pg-9v-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 114: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-og-15": {
+    "rows": [
+      [
+        "Масса по источнику, г",
+        "4 600"
+      ],
+      [
+        "Размеры по источнику, мм",
+        "828×82"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-og-15-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 115: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-pg-15": {
+    "rows": [
+      [
+        "Масса по источнику, г",
+        "3 470"
+      ],
+      [
+        "Размеры по источнику, мм",
+        "878×82"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-pg-15-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 116: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-pg-18": {
+    "rows": [
+      [
+        "Масса по источнику, г",
+        "2 600 (пусковая труба), 1 400 (ракета)"
+      ],
+      [
+        "Размеры по источнику, мм",
+        "705×64"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-pg-18-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 117: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-pg-22": {
+    "rows": [
+      [
+        "Масса по источнику, г",
+        "2 700 (пусковая труба), 1 480 (ракета)"
+      ],
+      [
+        "Размеры по источнику, мм",
+        "755×72,5"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-pg-22-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 118: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-pg-26": {
+    "rows": [
+      [
+        "Масса по источнику, г",
+        "2 900 (пусковая труба), 1 480 (ракета)"
+      ],
+      [
+        "Размеры по источнику, мм",
+        "770×72,5"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-pg-26-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 119: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-pg-27": {
+    "rows": [
+      [
+        "Масса по источнику, г",
+        "8 300"
+      ],
+      [
+        "Размеры по источнику, мм",
+        "1 135×105"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-pg-27-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 120: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-pg-29": {
+    "rows": [
+      [
+        "Масса по источнику, г",
+        "6 700"
+      ],
+      [
+        "Размеры по источнику, мм",
+        "1 097×105"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-pg-29-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 121: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-rpg-30": {
+    "rows": [
+      [
+        "Масса по источнику, г",
+        "10 300"
+      ],
+      [
+        "Размеры по источнику, мм",
+        "1 135×105"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-rpg-30-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 122: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-rpo-a": {
+    "rows": [
+      [
+        "Масса по источнику, г",
+        "22 000"
+      ],
+      [
+        "Размеры по источнику, мм",
+        "920×93"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-rpo-a-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 123: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-9m22-122-mm-raketa-grad": {
+    "rows": [
+      [
+        "Масса по источнику, г",
+        "66 000"
+      ],
+      [
+        "Размеры по источнику, мм",
+        "2 729×122"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-9m22-122-mm-raketa-grad-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 124: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-9m27-220-mm-rakety-uragan": {
+    "rows": [
+      [
+        "Размеры по источнику, мм",
+        "4 833×220"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-9m27-220-mm-rakety-uragan-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 125: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "В GICHD указана неоднозначная масса 9М27F; она не переносится как масса всего семейства 9М27."
+  },
+  "ordnance-v27-9m55-300-mm-rakety-smerch": {
+    "rows": [
+      [
+        "Масса по источнику, г",
+        "800 000"
+      ],
+      [
+        "Размеры по источнику, мм",
+        "7 600×300"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-9m55-300-mm-rakety-smerch-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 126: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-tg-73": {
+    "rows": [
+      [
+        "Размеры по источнику, мм",
+        "73"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-tg-73-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 127: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-bullspike-pg-22": {
+    "rows": [
+      [
+        "Масса по источнику, г",
+        "3 480 (PG-22)"
+      ],
+      [
+        "Размеры по источнику, мм",
+        "774×73"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-bullspike-pg-22-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 128: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-rpg-75": {
+    "rows": [
+      [
+        "Масса по источнику, г",
+        "800"
+      ],
+      [
+        "Размеры по источнику, мм",
+        "630×68"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-rpg-75-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 129: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-rgw-90-hh": {
+    "rows": [
+      [
+        "Масса по источнику, г",
+        "8 900"
+      ],
+      [
+        "Размеры по источнику, мм",
+        "1 000×90"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-rgw-90-hh-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 130: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-rpg-76-komar": {
+    "rows": [
+      [
+        "Масса по источнику, г",
+        "2 100"
+      ],
+      [
+        "Размеры по источнику, мм",
+        "1 190×68 (в разложенном виде)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-rpg-76-komar-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 132: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-m80-zolja-64-mm": {
+    "rows": [
+      [
+        "Масса по источнику, г",
+        "3 000"
+      ],
+      [
+        "Размеры по источнику, мм",
+        "800×64 (1 200×64 в разложенном виде)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-m80-zolja-64-mm-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 133: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-c90-cr-am-m3": {
+    "rows": [
+      [
+        "Масса по источнику, г",
+        "5 200"
+      ],
+      [
+        "Размеры по источнику, мм",
+        "774×90"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-c90-cr-am-m3-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 134: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-at4-heat-hesh": {
+    "rows": [
+      [
+        "Масса по источнику, г",
+        "6 800"
+      ],
+      [
+        "Размеры по источнику, мм",
+        "1 016×84"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-at4-heat-hesh-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 135: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-m72-law": {
+    "rows": [
+      [
+        "Масса по источнику, г",
+        "3 450"
+      ],
+      [
+        "Размеры по источнику, мм",
+        "981×66 (в разложенном виде)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-m72-law-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 136: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-3ubr6-30-165-mm": {
+    "rows": [
+      [
+        "Масса по источнику, г",
+        "853"
+      ],
+      [
+        "Размеры по источнику, мм",
+        "30×292 (полный выстрел); 30×165 (обозначение калибра и длины гильзы)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-3ubr6-30-165-mm-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 138: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-3uof8-30-165-mm": {
+    "rows": [
+      [
+        "Масса по источнику, г",
+        "837"
+      ],
+      [
+        "Размеры по источнику, мм",
+        "30×292 (полный выстрел); 30×165 (обозначение калибра и длины гильзы)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-3uof8-30-165-mm-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 139: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-bushmaster-25-137-mm": {
+    "rows": [
+      [
+        "Размеры по источнику, мм",
+        "137 (case длина), 223 (round overall длина)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-bushmaster-25-137-mm-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 140: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-gepard-35-228-mm": {
+    "rows": [
+      [
+        "Масса по источнику, г",
+        "1 500 (полный выстрел), 550 (снаряд)"
+      ],
+      [
+        "Размеры по источнику, мм",
+        "228 (case длина), 387 (round overall длина)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-gepard-35-228-mm-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 141: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-rarden-30-mm": {
+    "rows": [
+      [
+        "Размеры по источнику, мм",
+        "30×170 (гильза)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-rarden-30-mm-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 142: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-3b30": {
+    "rows": [
+      [
+        "Масса по источнику, г",
+        "240"
+      ],
+      [
+        "Размеры по источнику, мм",
+        "128×43"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-3b30-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 144: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-9n24": {
+    "rows": [
+      [
+        "Масса по источнику, г",
+        "7 450"
+      ],
+      [
+        "Размеры по источнику, мм",
+        "373×88"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-9n24-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 145: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-ptab-1m": {
+    "rows": [
+      [
+        "Масса по источнику, г",
+        "934"
+      ],
+      [
+        "Размеры по источнику, мм",
+        "260×42"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-ptab-1m-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 146: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-spbe-spbe": {
+    "rows": [
+      [
+        "Масса по источнику, г",
+        "15 500"
+      ],
+      [
+        "Размеры по источнику, мм",
+        "384×185"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-spbe-spbe-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 147: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-9n210": {
+    "rows": [
+      [
+        "Масса по источнику, г",
+        "1 850"
+      ],
+      [
+        "Размеры по источнику, мм",
+        "265×65"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-9n210-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 148: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-9n235": {
+    "rows": [
+      [
+        "Масса по источнику, г",
+        "1 850"
+      ],
+      [
+        "Размеры по источнику, мм",
+        "265×65"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-9n235-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 149: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-3-o-10": {
+    "rows": [
+      [
+        "Масса по источнику, г",
+        "3 900"
+      ],
+      [
+        "Размеры по источнику, мм",
+        "300×65"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-3-o-10-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 150: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-3-o-16": {
+    "rows": [
+      [
+        "Масса по источнику, г",
+        "1 375"
+      ],
+      [
+        "Размеры по источнику, мм",
+        "193×52"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-3-o-16-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 151: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-subboepripas-h-101-soobschaemyi-variant": {
+    "rows": [
+      [
+        "Масса по источнику, г",
+        "Приблизительноly 4 000"
+      ],
+      [
+        "Размеры по источнику, мм",
+        "Сферический корпус: приблизительно 150 (диаметр)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-subboepripas-h-101-soobschaemyi-variant-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 152: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-m74-subboepripas": {
+    "rows": [
+      [
+        "Масса по источнику, г",
+        "Приблизительноly 600"
+      ],
+      [
+        "Размеры по источнику, мм",
+        "Приблизительно сферический корпус: приблизительно 70 (диаметр)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-m74-subboepripas-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 153: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-blu-97": {
+    "rows": [
+      [
+        "Масса по источнику, г",
+        "1 500"
+      ],
+      [
+        "Размеры по источнику, мм",
+        "168 (длина, без выдвинутого щупа); 64 (диаметр)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-blu-97-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 155: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-rbk-250-rbk-275": {
+    "rows": [
+      [
+        "Масса по источнику, кг",
+        "250–275"
+      ],
+      [
+        "Размеры по источнику, м",
+        "2,15×0,325"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-rbk-250-rbk-275-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 158: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-rbk-500": {
+    "rows": [
+      [
+        "Масса по источнику, кг",
+        "500"
+      ],
+      [
+        "Размеры по источнику, м",
+        "1,955×0,45"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-rbk-500-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 159: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-fab-500-m-62": {
+    "rows": [
+      [
+        "Масса по источнику, кг",
+        "497"
+      ],
+      [
+        "Размеры по источнику, м",
+        "2,47×0,4"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-fab-500-m-62-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 160: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-ofzab-500": {
+    "rows": [
+      [
+        "Масса по источнику, кг",
+        "500"
+      ],
+      [
+        "Размеры по источнику, м",
+        "2,5×0,45"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-ofzab-500-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 161: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-s-5ko-57-mm-raketa": {
+    "rows": [
+      [
+        "Масса по источнику, г",
+        "4 500"
+      ],
+      [
+        "Размеры по источнику, мм",
+        "1 004×57"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-s-5ko-57-mm-raketa-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 162: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-s-8ko-80-mm-raketa": {
+    "rows": [
+      [
+        "Масса по источнику, кг",
+        "11,3"
+      ],
+      [
+        "Размеры по источнику, мм",
+        "1 570×80"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-s-8ko-80-mm-raketa-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 163: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-s-24-240-mm-raketa": {
+    "rows": [
+      [
+        "Масса по источнику, кг",
+        "239"
+      ],
+      [
+        "Размеры по источнику, мм",
+        "2 120 x 240"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-s-24-240-mm-raketa-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 164: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-s-25-o": {
+    "rows": [
+      [
+        "Масса по источнику, кг",
+        "385"
+      ],
+      [
+        "Размеры по источнику, м",
+        "3,76×0,266"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-s-25-o-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 165: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-umpb-d-30sn": {
+    "rows": [
+      [
+        "Масса по источнику, кг",
+        "250, оценка источника"
+      ],
+      [
+        "Размеры по источнику, м",
+        "3 (длина), 0,3 (диаметр)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-umpb-d-30sn-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 166: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-umpk-modul-planirovaniya-i-korrektsii": {
+    "rows": [
+      [
+        "Размеры по источнику, м",
+        "1,85 (длина), 2,32 (wingspan)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-umpk-modul-planirovaniya-i-korrektsii-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 167: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Масса зависит от базовой бомбы; размеры относятся к показанному в GICHD варианту модуля."
+  },
+  "ordnance-v27-h-31p-kh-31-arm": {
+    "rows": [
+      [
+        "Размеры по источнику, м",
+        "0,36 (диаметр)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-h-31p-kh-31-arm-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 168: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Длина и масса в GICHD приведены как пределы для Kh-31 ARM. Их не приписываем базовой Х-31П."
+  },
+  "ordnance-v27-brimstone": {
+    "rows": [
+      [
+        "Масса по источнику, кг",
+        "Приблизительноly 50"
+      ],
+      [
+        "Размеры по источнику, м",
+        "1,8 (длина), 0,18 (диаметр)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-brimstone-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 169: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-gbu-39-sdb": {
+    "rows": [
+      [
+        "Масса по источнику, кг",
+        "130"
+      ],
+      [
+        "Размеры по источнику, м",
+        "1,8 (длина), 0,19 (диаметр)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-gbu-39-sdb-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 170: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-mk-80-semeistvo-aviatsionnyh-bomb": {
+    "rows": [
+      [
+        "Масса по источнику, фунты",
+        "Mk-81: 250; Mk-82: 500; Mk-83: 1000; Mk-84: 2000 — номинальные весовые классы"
+      ],
+      [
+        "Размеры по источнику, м",
+        "Mk-81: 1,3 × 0,23; Mk-82: 1,7 × 0,27; Mk-83: 1,9 × 0,36; Mk-84: 2,6 × 0,46 (длина × диаметр)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-mk-80-semeistvo-aviatsionnyh-bomb-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 171: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Значения относятся к перечисленным моделям, а не к единому изделию Mk 80."
+  },
+  "ordnance-v27-jdam": {
+    "rows": [
+      [
+        "Масса по источнику, кг",
+        "940 (GBU-31 с бомбой Mk-84)"
+      ],
+      [
+        "Размеры по источнику, м",
+        "GBU-31 с Mk-84: длина 3,8; диаметр 0,46"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-jdam-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 172: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Значения относятся к GBU-31 с Mk-84; к GBU-32 и GBU-38 они не относятся."
+  },
+  "ordnance-v27-agm-88-harm": {
+    "rows": [
+      [
+        "Масса по источнику, кг",
+        "Приблизительноly 365"
+      ],
+      [
+        "Размеры по источнику, м",
+        "4,15 (длина), 0,25 (диаметр)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-agm-88-harm-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 173: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-agm-154-jsow": {
+    "rows": [
+      [
+        "Масса по источнику, кг",
+        "483"
+      ],
+      [
+        "Размеры по источнику, м",
+        "4,1 (длина), 0,34 (ширина)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-agm-154-jsow-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 174: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-m-6-vzryvatel": {
+    "rows": [
+      [
+        "Масса по источнику, г",
+        "168"
+      ],
+      [
+        "Размеры по источнику, мм",
+        "51×83×40"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-m-6-vzryvatel-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 236: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-m-12-vzryvatel": {
+    "rows": [
+      [
+        "Масса по источнику, г",
+        "535"
+      ],
+      [
+        "Размеры по источнику, мм",
+        "117×40"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-m-12-vzryvatel-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 237: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-gpv-3": {
+    "rows": [
+      [
+        "Размеры по источнику, мм",
+        "125×40"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-gpv-3-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 239: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-t-7-vzryvatel": {
+    "rows": [
+      [
+        "Масса по источнику, г",
+        "626"
+      ],
+      [
+        "Размеры по источнику, мм",
+        "157×64"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-t-7-vzryvatel-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 241: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-mrv": {
+    "rows": [
+      [
+        "Масса по источнику, г",
+        "746g"
+      ],
+      [
+        "Размеры по источнику, мм",
+        "195x64"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-mrv-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 242: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-tm-120-vzryvatel": {
+    "rows": [
+      [
+        "Масса по источнику, г",
+        "694"
+      ],
+      [
+        "Размеры по источнику, мм",
+        "196×64"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-tm-120-vzryvatel-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 243: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-atk-mt": {
+    "rows": [
+      [
+        "Размеры по источнику, мм",
+        "64×86"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-atk-mt-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 244: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-avu": {
+    "rows": [
+      [
+        "Масса по источнику, г",
+        "1 970"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-avu-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 245: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Размеры в таблице GICHD требуют независимой сверки; не переносим их в качестве подтверждённых габаритов."
+  },
+  "ordnance-v27-a-670m": {
+    "rows": [
+      [
+        "Масса по источнику, г",
+        "49"
+      ],
+      [
+        "Размеры по источнику, мм",
+        "69×20"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-a-670m-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 247: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-go-2": {
+    "rows": [
+      [
+        "Масса по источнику, г",
+        "204"
+      ],
+      [
+        "Размеры по источнику, мм",
+        "131×40"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-go-2-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 250: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-dtm-75": {
+    "rows": [
+      [
+        "Масса по источнику, г",
+        "580"
+      ],
+      [
+        "Размеры по источнику, мм",
+        "140×63"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-dtm-75-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 251: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-m-5m-vzryvatel": {
+    "rows": [
+      [
+        "Масса по источнику, г",
+        "77g"
+      ],
+      [
+        "Размеры по источнику, мм",
+        "68×39"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-m-5m-vzryvatel-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 252: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-t90-vzryvatel": {
+    "rows": [
+      [
+        "Масса по источнику, г",
+        "482"
+      ],
+      [
+        "Размеры по источнику, мм",
+        "108×41"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-t90-vzryvatel-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 254: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-v-24a": {
+    "rows": [
+      [
+        "Масса по источнику, г",
+        "2 650"
+      ],
+      [
+        "Размеры по источнику, мм",
+        "229×80"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-v-24a-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 255: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-rv-25": {
+    "rows": [
+      [
+        "Масса по источнику, г",
+        "4 820"
+      ],
+      [
+        "Размеры по источнику, мм",
+        "454×170"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-rv-25-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 256: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-vp-7m": {
+    "rows": [
+      [
+        "Масса по источнику, г",
+        "96"
+      ],
+      [
+        "Размеры по источнику, мм",
+        "96×76"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-vp-7m-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 257: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-vp-22": {
+    "rows": [
+      [
+        "Масса по источнику, г",
+        "80"
+      ],
+      [
+        "Размеры по источнику, мм",
+        "96×76"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-vp-22-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 258: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-v5-k": {
+    "rows": [
+      [
+        "Масса по источнику, г",
+        "168"
+      ],
+      [
+        "Размеры по источнику, мм",
+        "119×40"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-v5-k-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 259: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-ralec-f3": {
+    "rows": [
+      [
+        "Масса по источнику, г",
+        "626"
+      ],
+      [
+        "Размеры по источнику, мм",
+        "151×61"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-ralec-f3-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 260: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-kz-984": {
+    "rows": [
+      [
+        "Масса по источнику, г",
+        "700"
+      ],
+      [
+        "Размеры по источнику, мм",
+        "141×60"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-kz-984-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 261: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-m557": {
+    "rows": [
+      [
+        "Масса по источнику, г",
+        "976"
+      ],
+      [
+        "Размеры по источнику, мм",
+        "151×61"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-m557-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 263: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-ms-4": {
+    "rows": [
+      [
+        "Масса по источнику, г",
+        "410"
+      ],
+      [
+        "Размеры по источнику, мм",
+        "155 (длина), 92 (ширина), 31 (глубина)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-ms-4-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 269: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v27-sm-320": {
+    "rows": [
+      [
+        "Масса по источнику, г",
+        "400"
+      ],
+      [
+        "Размеры по источнику, мм",
+        "278×25"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v27-sm-320-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 279: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v29-ga-0149": {
+    "rows": [
+      [
+        "Масса всего изделия",
+        "1,5 фунта (≈ 0,680 кг)"
+      ],
+      [
+        "Высота / длина по источнику",
+        "11,31 дюйма (≈ 287,3 мм)"
+      ],
+      [
+        "Диаметр",
+        "2,0 дюйма (≈ 50,8 мм)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0149-specs-v146-tm29",
+      "title": "Армия США — TM 43-0001-29 (1994), печатная с. 3-7: таблица характеристик изделия",
+      "url": "https://www.militarynewbie.com/wp-content/uploads/2013/11/TM-43-0001-29-Army-Ammunition-Data-Sheets-for-Grenades.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Масса изделия в указанной руководством комплектации; масса наполнения и упаковки сюда не включена."
+  },
+  "ordnance-v29-ga-0150": {
+    "rows": [
+      [
+        "Масса всего изделия",
+        "1,26 фунта (≈ 0,572 кг)"
+      ],
+      [
+        "Высота / длина по источнику",
+        "10,72 дюйма (≈ 272,3 мм)"
+      ],
+      [
+        "Диаметр",
+        "1,8 дюйма (≈ 45,7 мм)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0150-specs-v146-tm29",
+      "title": "Армия США — TM 43-0001-29 (1994), печатная с. 3-9: таблица характеристик изделия",
+      "url": "https://www.militarynewbie.com/wp-content/uploads/2013/11/TM-43-0001-29-Army-Ammunition-Data-Sheets-for-Grenades.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Масса изделия в указанной руководством комплектации; масса наполнения и упаковки сюда не включена."
+  },
+  "ordnance-v29-ga-0151": {
+    "rows": [
+      [
+        "Масса всего изделия",
+        "1,26 фунта (≈ 0,572 кг)"
+      ],
+      [
+        "Высота / длина по источнику",
+        "10,72 дюйма (≈ 272,3 мм)"
+      ],
+      [
+        "Диаметр",
+        "1,8 дюйма (≈ 45,7 мм)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0151-specs-v146-tm29",
+      "title": "Армия США — TM 43-0001-29 (1994), печатная с. 3-9: таблица характеристик изделия",
+      "url": "https://www.militarynewbie.com/wp-content/uploads/2013/11/TM-43-0001-29-Army-Ammunition-Data-Sheets-for-Grenades.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Масса изделия в указанной руководством комплектации; масса наполнения и упаковки сюда не включена."
+  },
+  "ordnance-v29-ga-0152": {
+    "rows": [
+      [
+        "Масса всего изделия",
+        "1,16 фунта (≈ 0,526 кг)"
+      ],
+      [
+        "Высота / длина по источнику",
+        "9,89 дюйма (≈ 251,2 мм)"
+      ],
+      [
+        "Диаметр",
+        "1,8 дюйма (≈ 45,7 мм)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0152-specs-v146-tm29",
+      "title": "Армия США — TM 43-0001-29 (1994), печатная с. 3-11: таблица характеристик изделия",
+      "url": "https://www.militarynewbie.com/wp-content/uploads/2013/11/TM-43-0001-29-Army-Ammunition-Data-Sheets-for-Grenades.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Масса изделия в указанной руководством комплектации; масса наполнения и упаковки сюда не включена."
+  },
+  "ordnance-v29-ga-0153": {
+    "rows": [
+      [
+        "Масса всего изделия",
+        "1,16 фунта (≈ 0,526 кг)"
+      ],
+      [
+        "Высота / длина по источнику",
+        "9,89 дюйма (≈ 251,2 мм)"
+      ],
+      [
+        "Диаметр",
+        "1,8 дюйма (≈ 45,7 мм)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0153-specs-v146-tm29",
+      "title": "Армия США — TM 43-0001-29 (1994), печатная с. 3-11: таблица характеристик изделия",
+      "url": "https://www.militarynewbie.com/wp-content/uploads/2013/11/TM-43-0001-29-Army-Ammunition-Data-Sheets-for-Grenades.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Масса изделия в указанной руководством комплектации; масса наполнения и упаковки сюда не включена."
+  },
+  "ordnance-v29-ga-0154": {
+    "rows": [
+      [
+        "Масса всего изделия",
+        "1,56 фунта (≈ 0,708 кг)"
+      ],
+      [
+        "Высота / длина по источнику",
+        "16,96 дюйма (≈ 430,8 мм)"
+      ],
+      [
+        "Диаметр",
+        "2,61 дюйма (≈ 66,3 мм)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0154-specs-v146-tm29",
+      "title": "Армия США — TM 43-0001-29 (1994), печатная с. 3-3: таблица характеристик изделия",
+      "url": "https://www.militarynewbie.com/wp-content/uploads/2013/11/TM-43-0001-29-Army-Ammunition-Data-Sheets-for-Grenades.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Масса изделия в указанной руководством комплектации; масса наполнения и упаковки сюда не включена."
+  },
+  "ordnance-v29-ga-0155": {
+    "rows": [
+      [
+        "Масса всего изделия",
+        "32 унций (≈ 907,2 г)"
+      ],
+      [
+        "Длина",
+        "5,7 дюйма (≈ 144,8 мм)"
+      ],
+      [
+        "Диаметр",
+        "2,5 дюйма (≈ 63,5 мм)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0155-specs-v146-tm29",
+      "title": "Армия США — TM 43-0001-29 (1994), печатная с. 2-35: таблица характеристик изделия",
+      "url": "https://www.militarynewbie.com/wp-content/uploads/2013/11/TM-43-0001-29-Army-Ammunition-Data-Sheets-for-Grenades.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Масса изделия в указанной руководством комплектации; масса наполнения и упаковки сюда не включена."
+  },
+  "ordnance-v29-ga-0156": {
+    "rows": [
+      [
+        "Масса всего изделия",
+        "24 унций (≈ 680,4 г)"
+      ],
+      [
+        "Длина",
+        "5,7 дюйма (≈ 144,8 мм)"
+      ],
+      [
+        "Диаметр",
+        "2,5 дюйма (≈ 63,5 мм)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0156-specs-v146-tm29",
+      "title": "Армия США — TM 43-0001-29 (1994), печатная с. 2-23: таблица характеристик изделия",
+      "url": "https://www.militarynewbie.com/wp-content/uploads/2013/11/TM-43-0001-29-Army-Ammunition-Data-Sheets-for-Grenades.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Масса изделия в указанной руководством комплектации; масса наполнения и упаковки сюда не включена."
+  },
+  "ordnance-v29-ga-0157": {
+    "rows": [
+      [
+        "Масса всего изделия",
+        "31 унций (≈ 878,8 г)"
+      ],
+      [
+        "Длина",
+        "не более 4,5 дюйма (≈ 114,3 мм)"
+      ],
+      [
+        "Диаметр",
+        "2-3/8 дюйма (≈ 60,3 мм)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0157-specs-v146-tm29",
+      "title": "Армия США — TM 43-0001-29 (1994), печатная с. 2-25: таблица характеристик изделия",
+      "url": "https://www.militarynewbie.com/wp-content/uploads/2013/11/TM-43-0001-29-Army-Ammunition-Data-Sheets-for-Grenades.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Масса изделия в указанной руководством комплектации; масса наполнения и упаковки сюда не включена."
+  },
+  "ordnance-v29-ga-0158": {
+    "rows": [
+      [
+        "Масса всего изделия",
+        "19 унций (≈ 538,6 г)"
+      ],
+      [
+        "Длина",
+        "5,75 дюйма (≈ 146,0 мм)"
+      ],
+      [
+        "Диаметр",
+        "2,5 дюйма (≈ 63,5 мм)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0158-specs-v146-tm29",
+      "title": "Армия США — TM 43-0001-29 (1994), печатная с. 2-27: таблица характеристик изделия",
+      "url": "https://www.militarynewbie.com/wp-content/uploads/2013/11/TM-43-0001-29-Army-Ammunition-Data-Sheets-for-Grenades.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Масса изделия в указанной руководством комплектации; масса наполнения и упаковки сюда не включена."
+  },
+  "ordnance-v29-ga-0159": {
+    "rows": [
+      [
+        "Масса всего изделия",
+        "24 унций (≈ 680,4 г)"
+      ],
+      [
+        "Длина",
+        "5,2 дюйма (≈ 132,1 мм)"
+      ],
+      [
+        "Диаметр",
+        "2,375 дюйма (≈ 60,3 мм)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0159-specs-v146-tm29",
+      "title": "Армия США — TM 43-0001-29 (1994), печатная с. 2-31: таблица характеристик изделия",
+      "url": "https://www.militarynewbie.com/wp-content/uploads/2013/11/TM-43-0001-29-Army-Ammunition-Data-Sheets-for-Grenades.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Масса изделия в указанной руководством комплектации; масса наполнения и упаковки сюда не включена."
+  },
+  "ordnance-v29-ga-0161": {
+    "rows": [
+      [
+        "Масса всего изделия",
+        "7,5 унций (≈ 212,6 г)"
+      ],
+      [
+        "Длина",
+        "не более 3,4 дюйма (≈ 86,4 мм)"
+      ],
+      [
+        "Диаметр",
+        "2,93 дюйма (≈ 74,4 мм)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0161-specs-v146-tm29",
+      "title": "Армия США — TM 43-0001-29 (1994), печатная с. 2-49: таблица характеристик изделия",
+      "url": "https://www.militarynewbie.com/wp-content/uploads/2013/11/TM-43-0001-29-Army-Ammunition-Data-Sheets-for-Grenades.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Масса изделия в указанной руководством комплектации; масса наполнения и упаковки сюда не включена."
+  },
+  "ordnance-v29-ga-0162": {
+    "rows": [
+      [
+        "Масса всего изделия",
+        "8 унций (≈ 226,8 г)"
+      ],
+      [
+        "Длина",
+        "не более 3,4 дюйма (≈ 86,4 мм)"
+      ],
+      [
+        "Диаметр",
+        "2,93 дюйма (≈ 74,4 мм)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0162-specs-v146-tm29",
+      "title": "Армия США — TM 43-0001-29 (1994), печатная с. 2-51: таблица характеристик изделия",
+      "url": "https://www.militarynewbie.com/wp-content/uploads/2013/11/TM-43-0001-29-Army-Ammunition-Data-Sheets-for-Grenades.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Масса изделия в указанной руководством комплектации; масса наполнения и упаковки сюда не включена."
+  },
+  "ordnance-v29-ga-0164": {
+    "rows": [
+      [
+        "Масса всего изделия",
+        "410 г"
+      ],
+      [
+        "Диаметр",
+        "3,5 дюйма (≈ 88,9 мм)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0164-specs-v146-tm29",
+      "title": "Армия США — TM 43-0001-29 (1994), печатная с. 2-47: таблица характеристик изделия",
+      "url": "https://www.militarynewbie.com/wp-content/uploads/2013/11/TM-43-0001-29-Army-Ammunition-Data-Sheets-for-Grenades.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Масса изделия в указанной руководством комплектации; масса наполнения и упаковки сюда не включена."
+  },
+  "ordnance-v29-ga-0165": {
+    "rows": [
+      [
+        "Масса всего изделия",
+        "4 унций (приблизительно) (≈ 113,4 г)"
+      ],
+      [
+        "Длина",
+        "не более 3,26 дюйма (≈ 82,8 мм)"
+      ],
+      [
+        "Диаметр",
+        "1,31 дюйма (≈ 33,3 мм)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0165-specs-v146-tm29",
+      "title": "Армия США — TM 43-0001-29 (1994), печатная с. 2-53: таблица характеристик изделия",
+      "url": "https://www.militarynewbie.com/wp-content/uploads/2013/11/TM-43-0001-29-Army-Ammunition-Data-Sheets-for-Grenades.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Масса изделия в указанной руководством комплектации; масса наполнения и упаковки сюда не включена."
+  },
+  "ordnance-v29-ga-0166": {
+    "rows": [
+      [
+        "Масса всего изделия",
+        "17 унций (≈ 481,9 г)"
+      ],
+      [
+        "Длина",
+        "5,7 дюйма (≈ 144,8 мм)"
+      ],
+      [
+        "Диаметр",
+        "2,5 дюйма (≈ 63,5 мм)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0166-specs-v146-tm29",
+      "title": "Армия США — TM 43-0001-29 (1994), печатная с. 2-43: таблица характеристик изделия",
+      "url": "https://www.militarynewbie.com/wp-content/uploads/2013/11/TM-43-0001-29-Army-Ammunition-Data-Sheets-for-Grenades.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Масса изделия в указанной руководством комплектации; масса наполнения и упаковки сюда не включена."
+  },
+  "ordnance-v29-ga-0167": {
+    "rows": [
+      [
+        "Масса всего изделия",
+        "17 унций (≈ 481,9 г)"
+      ],
+      [
+        "Длина",
+        "5,7 дюйма (≈ 144,8 мм)"
+      ],
+      [
+        "Диаметр",
+        "2,5 дюйма (≈ 63,5 мм)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0167-specs-v146-tm29",
+      "title": "Армия США — TM 43-0001-29 (1994), печатная с. 2-43: таблица характеристик изделия",
+      "url": "https://www.militarynewbie.com/wp-content/uploads/2013/11/TM-43-0001-29-Army-Ammunition-Data-Sheets-for-Grenades.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Масса изделия в указанной руководством комплектации; масса наполнения и упаковки сюда не включена."
+  },
+  "ordnance-v29-ga-0168": {
+    "rows": [
+      [
+        "Масса всего изделия",
+        "15-1/2 унций (≈ 439,4 г)"
+      ],
+      [
+        "Длина",
+        "не более 5,7 дюйма (≈ 144,8 мм)"
+      ],
+      [
+        "Диаметр",
+        "2,5 дюйма (≈ 63,5 мм)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0168-specs-v146-tm29",
+      "title": "Армия США — TM 43-0001-29 (1994), печатная с. 2-45: таблица характеристик изделия",
+      "url": "https://www.militarynewbie.com/wp-content/uploads/2013/11/TM-43-0001-29-Army-Ammunition-Data-Sheets-for-Grenades.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Масса изделия в указанной руководством комплектации; масса наполнения и упаковки сюда не включена."
+  },
+  "ordnance-v29-ga-0170": {
+    "rows": [
+      [
+        "Масса всего изделия",
+        "10 унций (≈ 283,5 г)"
+      ],
+      [
+        "Длина",
+        "не более 4,35 дюйма (≈ 110,5 мм)"
+      ],
+      [
+        "Диаметр",
+        "2,19 дюйма (≈ 55,6 мм)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0170-specs-v146-tm29",
+      "title": "Армия США — TM 43-0001-29 (1994), печатная с. 2-57: таблица характеристик изделия",
+      "url": "https://www.militarynewbie.com/wp-content/uploads/2013/11/TM-43-0001-29-Army-Ammunition-Data-Sheets-for-Grenades.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Масса изделия в указанной руководством комплектации; масса наполнения и упаковки сюда не включена."
+  },
+  "ordnance-v29-ga-0171": {
+    "rows": [
+      [
+        "Масса всего изделия",
+        "15,6 унций (≈ 442,3 г)"
+      ],
+      [
+        "Длина",
+        "не более 5,275 дюйма (≈ 134,0 мм)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0171-specs-v146-tm29",
+      "title": "Армия США — TM 43-0001-29 (1994), печатная с. 2-39: таблица характеристик изделия",
+      "url": "https://www.militarynewbie.com/wp-content/uploads/2013/11/TM-43-0001-29-Army-Ammunition-Data-Sheets-for-Grenades.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Масса изделия в указанной руководством комплектации; масса наполнения и упаковки сюда не включена."
+  },
+  "ordnance-v29-ga-0172": {
+    "rows": [
+      [
+        "Масса всего изделия",
+        "16 унций (≈ 453,6 г)"
+      ],
+      [
+        "Длина",
+        "не более 3,9 дюйма (≈ 99,1 мм)"
+      ],
+      [
+        "Диаметр",
+        "2,25 дюйма (≈ 57,1 мм)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0172-specs-v146-tm29",
+      "title": "Армия США — TM 43-0001-29 (1994), печатная с. 2-5: таблица характеристик изделия",
+      "url": "https://www.militarynewbie.com/wp-content/uploads/2013/11/TM-43-0001-29-Army-Ammunition-Data-Sheets-for-Grenades.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Масса изделия в указанной руководством комплектации; масса наполнения и упаковки сюда не включена."
+  },
+  "ordnance-v29-ga-0173": {
+    "rows": [
+      [
+        "Масса всего изделия",
+        "16 унций (≈ 453,6 г)"
+      ],
+      [
+        "Длина",
+        "не более 3,9 дюйма (≈ 99,1 мм)"
+      ],
+      [
+        "Диаметр",
+        "2,25 дюйма (≈ 57,1 мм)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0173-specs-v146-tm29",
+      "title": "Армия США — TM 43-0001-29 (1994), печатная с. 2-5: таблица характеристик изделия",
+      "url": "https://www.militarynewbie.com/wp-content/uploads/2013/11/TM-43-0001-29-Army-Ammunition-Data-Sheets-for-Grenades.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Масса изделия в указанной руководством комплектации; масса наполнения и упаковки сюда не включена."
+  },
+  "ordnance-v29-ga-0174": {
+    "rows": [
+      [
+        "Масса всего изделия",
+        "16 унций (≈ 453,6 г)"
+      ],
+      [
+        "Длина",
+        "не более 3,9 дюйма (≈ 99,1 мм)"
+      ],
+      [
+        "Диаметр",
+        "2,25 дюйма (≈ 57,1 мм)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0174-specs-v146-tm29",
+      "title": "Армия США — TM 43-0001-29 (1994), печатная с. 2-3: таблица характеристик изделия",
+      "url": "https://www.militarynewbie.com/wp-content/uploads/2013/11/TM-43-0001-29-Army-Ammunition-Data-Sheets-for-Grenades.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Масса изделия в указанной руководством комплектации; масса наполнения и упаковки сюда не включена."
+  },
+  "ordnance-v29-ga-0175": {
+    "rows": [
+      [
+        "Масса всего изделия",
+        "14 унций (≈ 396,9 г)"
+      ],
+      [
+        "Длина",
+        "не более 3,53 дюйма (≈ 89,7 мм)"
+      ],
+      [
+        "Диаметр",
+        "2,5 дюйма (≈ 63,5 мм)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0175-specs-v146-tm29",
+      "title": "Армия США — TM 43-0001-29 (1994), печатная с. 2-7: таблица характеристик изделия",
+      "url": "https://www.militarynewbie.com/wp-content/uploads/2013/11/TM-43-0001-29-Army-Ammunition-Data-Sheets-for-Grenades.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Масса изделия в указанной руководством комплектации; масса наполнения и упаковки сюда не включена."
+  },
+  "ordnance-v29-ga-0176": {
+    "rows": [
+      [
+        "Масса всего изделия",
+        "14 унций (≈ 396,9 г)"
+      ],
+      [
+        "Длина",
+        "не более 3,2 дюйма (≈ 81,3 мм)"
+      ],
+      [
+        "Диаметр",
+        "2,5 дюйма (≈ 63,5 мм)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0176-specs-v146-tm29",
+      "title": "Армия США — TM 43-0001-29 (1994), печатная с. 2-11: таблица характеристик изделия",
+      "url": "https://www.militarynewbie.com/wp-content/uploads/2013/11/TM-43-0001-29-Army-Ammunition-Data-Sheets-for-Grenades.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Масса изделия в указанной руководством комплектации; масса наполнения и упаковки сюда не включена."
+  },
+  "ordnance-v29-ga-0177": {
+    "rows": [
+      [
+        "Масса всего изделия",
+        "16 унций (≈ 453,6 г)"
+      ],
+      [
+        "Длина",
+        "не более 3,9 дюйма (≈ 99,1 мм)"
+      ],
+      [
+        "Диаметр",
+        "2,25 дюйма (≈ 57,1 мм)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0177-specs-v146-tm29",
+      "title": "Армия США — TM 43-0001-29 (1994), печатная с. 2-9: таблица характеристик изделия",
+      "url": "https://www.militarynewbie.com/wp-content/uploads/2013/11/TM-43-0001-29-Army-Ammunition-Data-Sheets-for-Grenades.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Масса изделия в указанной руководством комплектации; масса наполнения и упаковки сюда не включена."
+  },
+  "ordnance-v29-ga-0178": {
+    "rows": [
+      [
+        "Масса всего изделия",
+        "14 унций (≈ 396,9 г)"
+      ],
+      [
+        "Длина",
+        "не более 3,2 дюйма (≈ 81,3 мм)"
+      ],
+      [
+        "Диаметр",
+        "2,5 дюйма (≈ 63,5 мм)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0178-specs-v146-tm29",
+      "title": "Армия США — TM 43-0001-29 (1994), печатная с. 2-11: таблица характеристик изделия",
+      "url": "https://www.militarynewbie.com/wp-content/uploads/2013/11/TM-43-0001-29-Army-Ammunition-Data-Sheets-for-Grenades.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Масса изделия в указанной руководством комплектации; масса наполнения и упаковки сюда не включена."
+  },
+  "ordnance-v29-ga-0179": {
+    "rows": [
+      [
+        "Масса всего изделия",
+        "16 унций (≈ 453,6 г)"
+      ],
+      [
+        "Длина",
+        "не более 3,9 дюйма (≈ 99,1 мм)"
+      ],
+      [
+        "Диаметр",
+        "2,25 дюйма (≈ 57,1 мм)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0179-specs-v146-tm29",
+      "title": "Армия США — TM 43-0001-29 (1994), печатная с. 2-13: таблица характеристик изделия",
+      "url": "https://www.militarynewbie.com/wp-content/uploads/2013/11/TM-43-0001-29-Army-Ammunition-Data-Sheets-for-Grenades.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Масса изделия в указанной руководством комплектации; масса наполнения и упаковки сюда не включена."
+  },
+  "ordnance-v29-ga-0181": {
+    "rows": [
+      [
+        "Масса всего изделия",
+        "14 унций (≈ 396,9 г)"
+      ],
+      [
+        "Длина",
+        "не более 3,2 дюйма (≈ 81,3 мм)"
+      ],
+      [
+        "Диаметр",
+        "2,5 дюйма (≈ 63,5 мм)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0181-specs-v146-tm29",
+      "title": "Армия США — TM 43-0001-29 (1994), печатная с. 2-17: таблица характеристик изделия",
+      "url": "https://www.militarynewbie.com/wp-content/uploads/2013/11/TM-43-0001-29-Army-Ammunition-Data-Sheets-for-Grenades.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Масса изделия в указанной руководством комплектации; масса наполнения и упаковки сюда не включена."
+  },
+  "ordnance-v29-ga-0182": {
+    "rows": [
+      [
+        "Масса всего изделия",
+        "21 унций (≈ 595,3 г)"
+      ],
+      [
+        "Длина",
+        "не более 4,5 дюйма (≈ 114,3 мм)"
+      ],
+      [
+        "Диаметр",
+        "2,25 дюйма (≈ 57,1 мм)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0182-specs-v146-tm29",
+      "title": "Армия США — TM 43-0001-29 (1994), печатная с. 2-19: таблица характеристик изделия",
+      "url": "https://www.militarynewbie.com/wp-content/uploads/2013/11/TM-43-0001-29-Army-Ammunition-Data-Sheets-for-Grenades.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Масса изделия в указанной руководством комплектации; масса наполнения и упаковки сюда не включена."
+  },
+  "ordnance-v29-ga-0188": {
+    "rows": [
+      [
+        "Масса всего изделия",
+        "1,5 фунта (≈ 0,680 кг)"
+      ],
+      [
+        "Высота / длина по источнику",
+        "14,5 дюйма (≈ 368,3 мм)"
+      ],
+      [
+        "Диаметр",
+        "3,0 дюйма (≈ 76,2 мм)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0188-specs-v146-tm29",
+      "title": "Армия США — TM 43-0001-29 (1994), печатная с. 4-5: таблица характеристик изделия",
+      "url": "https://www.militarynewbie.com/wp-content/uploads/2013/11/TM-43-0001-29-Army-Ammunition-Data-Sheets-for-Grenades.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Масса изделия в указанной руководством комплектации; масса наполнения и упаковки сюда не включена."
+  },
+  "ordnance-v29-ga-0189": {
+    "rows": [
+      [
+        "Масса всего изделия",
+        "16 унций (≈ 453,6 г)"
+      ],
+      [
+        "Длина",
+        "не более 3,9 дюйма (≈ 99,1 мм)"
+      ],
+      [
+        "Диаметр",
+        "2,25 дюйма (≈ 57,1 мм)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0189-specs-v146-tm29",
+      "title": "Армия США — TM 43-0001-29 (1994), печатная с. 4-7: таблица характеристик изделия",
+      "url": "https://www.militarynewbie.com/wp-content/uploads/2013/11/TM-43-0001-29-Army-Ammunition-Data-Sheets-for-Grenades.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Масса изделия в указанной руководством комплектации; масса наполнения и упаковки сюда не включена."
+  },
+  "ordnance-v29-ga-0190": {
+    "rows": [
+      [
+        "Масса всего изделия",
+        "16 унций (≈ 453,6 г)"
+      ],
+      [
+        "Длина",
+        "не более 3,9 дюйма (≈ 99,1 мм)"
+      ],
+      [
+        "Диаметр",
+        "2,25 дюйма (≈ 57,1 мм)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0190-specs-v146-tm29",
+      "title": "Армия США — TM 43-0001-29 (1994), печатная с. 4-9: таблица характеристик изделия",
+      "url": "https://www.militarynewbie.com/wp-content/uploads/2013/11/TM-43-0001-29-Army-Ammunition-Data-Sheets-for-Grenades.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Масса изделия в указанной руководством комплектации; масса наполнения и упаковки сюда не включена."
+  },
+  "ordnance-v29-ga-0191": {
+    "rows": [
+      [
+        "Масса всего изделия",
+        "14 унций (≈ 396,9 г)"
+      ],
+      [
+        "Длина",
+        "не более 3,53 дюйма (≈ 89,7 мм)"
+      ],
+      [
+        "Диаметр",
+        "2,5 дюйма (≈ 63,5 мм)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0191-specs-v146-tm29",
+      "title": "Армия США — TM 43-0001-29 (1994), печатная с. 4-11: таблица характеристик изделия",
+      "url": "https://www.militarynewbie.com/wp-content/uploads/2013/11/TM-43-0001-29-Army-Ammunition-Data-Sheets-for-Grenades.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Масса изделия в указанной руководством комплектации; масса наполнения и упаковки сюда не включена."
+  },
+  "ordnance-v29-ga-0193": {
+    "rows": [
+      [
+        "Масса всего изделия",
+        "21 унций (≈ 595,3 г)"
+      ],
+      [
+        "Длина",
+        "не более 4,5 дюйма (≈ 114,3 мм)"
+      ],
+      [
+        "Диаметр",
+        "2,25 дюйма (≈ 57,1 мм)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0193-specs-v146-tm29",
+      "title": "Армия США — TM 43-0001-29 (1994), печатная с. 4-3: таблица характеристик изделия",
+      "url": "https://www.militarynewbie.com/wp-content/uploads/2013/11/TM-43-0001-29-Army-Ammunition-Data-Sheets-for-Grenades.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Масса изделия в указанной руководством комплектации; масса наполнения и упаковки сюда не включена."
+  },
+  "ref-v9-mvp62": {
+    "rows": [
+      [
+        "Размеры по источнику, мм",
+        "122×80"
+      ]
+    ],
+    "source": {
+      "id": "ref-v9-mvp62-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 235: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Значения относятся к МВП-62М; на МВП-62 они не переносятся."
+  },
+  "ref-v9-mve72": {
+    "rows": [
+      [
+        "Масса по источнику, г",
+        "600"
+      ],
+      [
+        "Размеры по источнику, мм",
+        "150×65"
+      ]
+    ],
+    "source": {
+      "id": "ref-v9-mve72-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 276: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "mine-audit-v25-ru-ptkm-1r": {
+    "rows": [
+      [
+        "Масса по источнику, г",
+        "19 900"
+      ],
+      [
+        "Размеры по источнику, мм",
+        "510×220"
+      ]
+    ],
+    "source": {
+      "id": "mine-audit-v25-ru-ptkm-1r-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 23: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "mine-audit-v25-su-ptm-1": {
+    "rows": [
+      [
+        "Размеры по источнику, мм",
+        "310×85"
+      ]
+    ],
+    "source": {
+      "id": "mine-audit-v25-su-ptm-1-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 37: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Строка массы в GICHD требует независимой сверки и пока не перенесена."
+  },
+  "mine-audit-v25-su-tm-83": {
+    "rows": [
+      [
+        "Масса по источнику, г",
+        "20 400"
+      ],
+      [
+        "Размеры по источнику, мм",
+        "250 (диаметр), 440 (высота на подставке)"
+      ]
+    ],
+    "source": {
+      "id": "mine-audit-v25-su-tm-83-specs-v146-gichd",
+      "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 24: масса и габариты",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v29-ga-0128": {
+    "rows": [
+      [
+        "Масса полного выстрела",
+        "0,75 фунта (≈ 0,34 кг)"
+      ],
+      [
+        "Длина полного выстрела",
+        "4,415 дюйма (≈ 112,1 мм)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0128-specs-v146-tm28",
+      "title": "Армия США — TM 43-0001-28 (1994), печатная с. 6-25: масса и длина",
+      "url": "https://archive.org/download/milmanual-tm-43-0001-28-army-ammunition-data-sheets/tm_43-0001-28_army_ammunition_data_sheets.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Комплектация по источнику: полный выстрел."
+  },
+  "ordnance-v29-ga-0027": {
+    "rows": [
+      [
+        "Масса полного выстрела",
+        "39,92 фунта (≈ 18,107 кг)"
+      ],
+      [
+        "Длина полного выстрела",
+        "28,6 дюйма (≈ 726,4 мм)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0027-specs-v146-tm28",
+      "title": "Армия США — TM 43-0001-28 (1994), печатная с. 3-9: масса и длина",
+      "url": "https://archive.org/download/milmanual-tm-43-0001-28-army-ammunition-data-sheets/tm_43-0001-28_army_ammunition_data_sheets.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Комплектация по источнику: полный выстрел; длина с закрывающей пробкой, не более."
+  },
+  "ordnance-v29-ga-0029": {
+    "rows": [
+      [
+        "Масса полного выстрела",
+        "38,5 фунта (≈ 17,463 кг)"
+      ],
+      [
+        "Длина полного выстрела",
+        "32,3 дюйма (≈ 820,4 мм)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0029-specs-v146-tm28",
+      "title": "Армия США — TM 43-0001-28 (1994), печатная с. 3-65: масса и длина",
+      "url": "https://archive.org/download/milmanual-tm-43-0001-28-army-ammunition-data-sheets/tm_43-0001-28_army_ammunition_data_sheets.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Комплектация по источнику: полный выстрел."
+  },
+  "ordnance-v29-ga-0034": {
+    "rows": [
+      [
+        "Масса полного выстрела",
+        "46,43 фунта (≈ 21,06 кг)"
+      ],
+      [
+        "Длина полного выстрела",
+        "32,17 дюйма (≈ 817,1 мм)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0034-specs-v146-tm28",
+      "title": "Армия США — TM 43-0001-28 (1994), печатная с. 3-33: масса и длина",
+      "url": "https://archive.org/download/milmanual-tm-43-0001-28-army-ammunition-data-sheets/tm_43-0001-28_army_ammunition_data_sheets.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Комплектация по источнику: полный выстрел, исполнение по таблице M314/M314A2."
+  },
+  "ordnance-v29-ga-0035": {
+    "rows": [
+      [
+        "Масса полного выстрела",
+        "46,43 фунта (≈ 21,06 кг)"
+      ],
+      [
+        "Длина полного выстрела",
+        "32,17 дюйма (≈ 817,1 мм)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0035-specs-v146-tm28",
+      "title": "Армия США — TM 43-0001-28 (1994), печатная с. 3-33: масса и длина",
+      "url": "https://archive.org/download/milmanual-tm-43-0001-28-army-ammunition-data-sheets/tm_43-0001-28_army_ammunition_data_sheets.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Комплектация по источнику: полный выстрел, исполнение по таблице M314/M314A2."
+  },
+  "ordnance-v29-ga-0036": {
+    "rows": [
+      [
+        "Масса полного выстрела",
+        "46,43 фунта (≈ 21,06 кг)"
+      ],
+      [
+        "Длина полного выстрела",
+        "32,17 дюйма (≈ 817,1 мм)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0036-specs-v146-tm28",
+      "title": "Армия США — TM 43-0001-28 (1994), печатная с. 3-37: масса и длина",
+      "url": "https://archive.org/download/milmanual-tm-43-0001-28-army-ammunition-data-sheets/tm_43-0001-28_army_ammunition_data_sheets.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Комплектация по источнику: полный выстрел."
+  },
+  "ordnance-v29-ga-0037": {
+    "rows": [
+      [
+        "Масса полного выстрела",
+        "33,45 фунта (≈ 15,173 кг)"
+      ],
+      [
+        "Длина полного выстрела",
+        "29,08 дюйма (≈ 738,6 мм)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0037-specs-v146-tm28",
+      "title": "Армия США — TM 43-0001-28 (1994), печатная с. 3-41: масса и длина",
+      "url": "https://archive.org/download/milmanual-tm-43-0001-28-army-ammunition-data-sheets/tm_43-0001-28_army_ammunition_data_sheets.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Комплектация по источнику: полный выстрел."
+  },
+  "ordnance-v29-ga-0038": {
+    "rows": [
+      [
+        "Масса полного выстрела",
+        "42 фунта (≈ 19,051 кг)"
+      ],
+      [
+        "Длина полного выстрела",
+        "31,04 дюйма (≈ 788,4 мм)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0038-specs-v146-tm28",
+      "title": "Армия США — TM 43-0001-28 (1994), печатная с. 3-49: масса и длина",
+      "url": "https://archive.org/download/milmanual-tm-43-0001-28-army-ammunition-data-sheets/tm_43-0001-28_army_ammunition_data_sheets.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Комплектация по источнику: полный выстрел."
+  },
+  "ordnance-v29-ga-0039": {
+    "rows": [
+      [
+        "Масса полного выстрела",
+        "42 фунта (≈ 19,051 кг)"
+      ],
+      [
+        "Длина полного выстрела",
+        "31,04 дюйма (≈ 788,4 мм)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0039-specs-v146-tm28",
+      "title": "Армия США — TM 43-0001-28 (1994), печатная с. 3-53: масса и длина",
+      "url": "https://archive.org/download/milmanual-tm-43-0001-28-army-ammunition-data-sheets/tm_43-0001-28_army_ammunition_data_sheets.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Комплектация по источнику: полный выстрел."
+  },
+  "ordnance-v29-ga-0040": {
+    "rows": [
+      [
+        "Масса полного выстрела",
+        "38,25 фунта (≈ 17,35 кг)"
+      ],
+      [
+        "Длина полного выстрела",
+        "34,153 дюйма (≈ 867,5 мм)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0040-specs-v146-tm28",
+      "title": "Армия США — TM 43-0001-28 (1994), печатная с. 3-57: масса и длина",
+      "url": "https://archive.org/download/milmanual-tm-43-0001-28-army-ammunition-data-sheets/tm_43-0001-28_army_ammunition_data_sheets.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Комплектация по источнику: полный выстрел; длина не более."
+  },
+  "ordnance-v29-ga-0043": {
+    "rows": [
+      [
+        "Масса полного выстрела",
+        "32,1 фунта (≈ 14,56 кг)"
+      ],
+      [
+        "Длина полного выстрела",
+        "29,67 дюйма (≈ 753,6 мм)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0043-specs-v146-tm28",
+      "title": "Армия США — TM 43-0001-28 (1994), печатная с. 3-29: масса и длина",
+      "url": "https://archive.org/download/milmanual-tm-43-0001-28-army-ammunition-data-sheets/tm_43-0001-28_army_ammunition_data_sheets.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Комплектация по источнику: полный выстрел."
+  },
+  "ordnance-v29-ga-0044": {
+    "rows": [
+      [
+        "Масса полного выстрела",
+        "37,06 фунта (≈ 16,81 кг)"
+      ],
+      [
+        "Длина полного выстрела",
+        "31,05 дюйма (≈ 788,7 мм)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0044-specs-v146-tm28",
+      "title": "Армия США — TM 43-0001-28 (1994), печатная с. 3-23: масса и длина",
+      "url": "https://archive.org/download/milmanual-tm-43-0001-28-army-ammunition-data-sheets/tm_43-0001-28_army_ammunition_data_sheets.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Комплектация по источнику: полный учебный выстрел."
+  },
+  "ordnance-v29-ga-0046": {
+    "rows": [
+      [
+        "Масса полного выстрела",
+        "41,96 фунта (≈ 19,033 кг)"
+      ],
+      [
+        "Длина полного выстрела",
+        "30,49 дюйма (≈ 774,4 мм)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0046-specs-v146-tm28",
+      "title": "Армия США — TM 43-0001-28 (1994), печатная с. 3-25: масса и длина",
+      "url": "https://archive.org/download/milmanual-tm-43-0001-28-army-ammunition-data-sheets/tm_43-0001-28_army_ammunition_data_sheets.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Комплектация по источнику: полный выстрел, исполнение таблицы M84/M84A1."
+  },
+  "ordnance-v29-ga-0060": {
+    "rows": [
+      [
+        "Масса полного выстрела",
+        "41,96 фунта (≈ 19,033 кг)"
+      ],
+      [
+        "Длина полного выстрела",
+        "30,49 дюйма (≈ 774,4 мм)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0060-specs-v146-tm28",
+      "title": "Армия США — TM 43-0001-28 (1994), печатная с. 3-25: масса и длина",
+      "url": "https://archive.org/download/milmanual-tm-43-0001-28-army-ammunition-data-sheets/tm_43-0001-28_army_ammunition_data_sheets.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Комплектация по источнику: полный выстрел, исполнение таблицы M84/M84A1."
+  },
+  "ordnance-v29-ga-0059": {
+    "rows": [
+      [
+        "Масса снаряда",
+        "102,6 фунта (≈ 46,539 кг)"
+      ],
+      [
+        "Длина снаряда",
+        "34,9 дюйма (≈ 886,5 мм)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0059-specs-v146-tm28",
+      "title": "Армия США — TM 43-0001-28 (1994), печатная с. 3-165: масса и длина",
+      "url": "https://archive.org/download/milmanual-tm-43-0001-28-army-ammunition-data-sheets/tm_43-0001-28_army_ammunition_data_sheets.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Комплектация по источнику: снаряд; длина M825A1 со взрывателем."
+  },
+  "ordnance-v29-ga-0084": {
+    "rows": [
+      [
+        "Масса снаряда",
+        "102,6 фунта (≈ 46,539 кг)"
+      ],
+      [
+        "Длина снаряда",
+        "35,4 дюйма (≈ 899,2 мм)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0084-specs-v146-tm28",
+      "title": "Армия США — TM 43-0001-28 (1994), печатная с. 3-165: масса и длина",
+      "url": "https://archive.org/download/milmanual-tm-43-0001-28-army-ammunition-data-sheets/tm_43-0001-28_army_ammunition_data_sheets.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Комплектация по источнику: снаряд; длина M825 со взрывателем."
+  },
+  "ordnance-v29-ga-0085": {
+    "rows": [
+      [
+        "Масса снаряда",
+        "102,6 фунта (≈ 46,539 кг)"
+      ],
+      [
+        "Длина снаряда",
+        "34,9 дюйма (≈ 886,5 мм)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0085-specs-v146-tm28",
+      "title": "Армия США — TM 43-0001-28 (1994), печатная с. 3-165: масса и длина",
+      "url": "https://archive.org/download/milmanual-tm-43-0001-28-army-ammunition-data-sheets/tm_43-0001-28_army_ammunition_data_sheets.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Комплектация по источнику: снаряд; длина M825A1 со взрывателем."
+  },
+  "ordnance-v29-ga-0066": {
+    "rows": [
+      [
+        "Масса снаряда",
+        "102 фунта (≈ 46,266 кг)"
+      ],
+      [
+        "Длина снаряда",
+        "23,4 дюйма (≈ 594,4 мм)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0066-specs-v146-tm28",
+      "title": "Армия США — TM 43-0001-28 (1994), печатная с. 3-101: масса и длина",
+      "url": "https://archive.org/download/milmanual-tm-43-0001-28-army-ammunition-data-sheets/tm_43-0001-28_army_ammunition_data_sheets.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Комплектация по источнику: снаряд без взрывателя; длина с подъёмной пробкой, не более."
+  },
+  "ordnance-v29-ga-0071": {
+    "rows": [
+      [
+        "Масса снаряда",
+        "96 фунта (≈ 43,545 кг)"
+      ],
+      [
+        "Длина снаряда",
+        "34,39 дюйма (≈ 873,5 мм)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0071-specs-v146-tm28",
+      "title": "Армия США — TM 43-0001-28 (1994), печатная с. 3-119: масса и длина",
+      "url": "https://archive.org/download/milmanual-tm-43-0001-28-army-ammunition-data-sheets/tm_43-0001-28_army_ammunition_data_sheets.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Комплектация по источнику: снаряд со взрывателем; масса приблизительная, длина не более."
+  },
+  "ordnance-v29-ga-0072": {
+    "rows": [
+      [
+        "Масса снаряда",
+        "96 фунта (≈ 43,545 кг)"
+      ],
+      [
+        "Длина снаряда",
+        "34,39 дюйма (≈ 873,5 мм)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0072-specs-v146-tm28",
+      "title": "Армия США — TM 43-0001-28 (1994), печатная с. 3-119: масса и длина",
+      "url": "https://archive.org/download/milmanual-tm-43-0001-28-army-ammunition-data-sheets/tm_43-0001-28_army_ammunition_data_sheets.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Комплектация по источнику: снаряд со взрывателем; масса приблизительная, длина не более."
+  },
+  "ordnance-v29-ga-0116": {
+    "rows": [
+      [
+        "Масса полного выстрела",
+        "0,503 фунта (≈ 0,228 кг)"
+      ],
+      [
+        "Длина полного выстрела",
+        "3,89 дюйма (≈ 98,8 мм)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0116-specs-v146-tm28",
+      "title": "Армия США — TM 43-0001-28 (1994), печатная с. 6-3: масса и длина",
+      "url": "https://archive.org/download/milmanual-tm-43-0001-28-army-ammunition-data-sheets/tm_43-0001-28_army_ammunition_data_sheets.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Комплектация по источнику: полный выстрел."
+  },
+  "ordnance-v29-ga-0117": {
+    "rows": [
+      [
+        "Масса полного выстрела",
+        "0,5 фунта (≈ 0,227 кг)"
+      ],
+      [
+        "Длина полного выстрела",
+        "3,89 дюйма (≈ 98,8 мм)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0117-specs-v146-tm28",
+      "title": "Армия США — TM 43-0001-28 (1994), печатная с. 6-5: масса и длина",
+      "url": "https://archive.org/download/milmanual-tm-43-0001-28-army-ammunition-data-sheets/tm_43-0001-28_army_ammunition_data_sheets.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Комплектация по источнику: полный учебный выстрел."
+  },
+  "ordnance-v29-ga-0118": {
+    "rows": [
+      [
+        "Масса полного выстрела",
+        "0,75 фунта (≈ 0,34 кг)"
+      ],
+      [
+        "Длина полного выстрела",
+        "4,415 дюйма (≈ 112,1 мм)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0118-specs-v146-tm28",
+      "title": "Армия США — TM 43-0001-28 (1994), печатная с. 6-7: масса и длина",
+      "url": "https://archive.org/download/milmanual-tm-43-0001-28-army-ammunition-data-sheets/tm_43-0001-28_army_ammunition_data_sheets.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Комплектация по источнику: полный выстрел."
+  },
+  "ordnance-v29-ga-0119": {
+    "rows": [
+      [
+        "Масса полного выстрела",
+        "0,75 фунта (≈ 0,34 кг)"
+      ],
+      [
+        "Длина полного выстрела",
+        "4,415 дюйма (≈ 112,1 мм)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0119-specs-v146-tm28",
+      "title": "Армия США — TM 43-0001-28 (1994), печатная с. 6-9: масса и длина",
+      "url": "https://archive.org/download/milmanual-tm-43-0001-28-army-ammunition-data-sheets/tm_43-0001-28_army_ammunition_data_sheets.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Комплектация по источнику: полный выстрел."
+  },
+  "ordnance-v29-ga-0121": {
+    "rows": [
+      [
+        "Масса полного выстрела",
+        "0,77 фунта (≈ 0,349 кг)"
+      ],
+      [
+        "Длина полного выстрела",
+        "4,415 дюйма (≈ 112,1 мм)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0121-specs-v146-tm28",
+      "title": "Армия США — TM 43-0001-28 (1994), печатная с. 6-13: масса и длина",
+      "url": "https://archive.org/download/milmanual-tm-43-0001-28-army-ammunition-data-sheets/tm_43-0001-28_army_ammunition_data_sheets.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Комплектация по источнику: полный учебный выстрел."
+  },
+  "ordnance-v29-ga-0122": {
+    "rows": [
+      [
+        "Масса полного выстрела",
+        "0,5 фунта (≈ 0,227 кг)"
+      ],
+      [
+        "Длина полного выстрела",
+        "3,89 дюйма (≈ 98,8 мм)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0122-specs-v146-tm28",
+      "title": "Армия США — TM 43-0001-28 (1994), печатная с. 6-15: масса и длина",
+      "url": "https://archive.org/download/milmanual-tm-43-0001-28-army-ammunition-data-sheets/tm_43-0001-28_army_ammunition_data_sheets.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Комплектация по источнику: полный выстрел."
+  },
+  "ordnance-v29-ga-0124": {
+    "rows": [
+      [
+        "Масса полного выстрела",
+        "0,51 фунта (≈ 0,231 кг)"
+      ],
+      [
+        "Длина полного выстрела",
+        "4,05 дюйма (≈ 102,9 мм)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0124-specs-v146-tm28",
+      "title": "Армия США — TM 43-0001-28 (1994), печатная с. 6-17: масса и длина",
+      "url": "https://archive.org/download/milmanual-tm-43-0001-28-army-ammunition-data-sheets/tm_43-0001-28_army_ammunition_data_sheets.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Комплектация по источнику: полный выстрел."
+  },
+  "ordnance-v29-ga-0125": {
+    "rows": [
+      [
+        "Масса полного выстрела",
+        "0,503 фунта (≈ 0,228 кг)"
+      ],
+      [
+        "Длина полного выстрела",
+        "3,894 дюйма (≈ 98,9 мм)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0125-specs-v146-tm28",
+      "title": "Армия США — TM 43-0001-28 (1994), печатная с. 6-21: масса и длина",
+      "url": "https://archive.org/download/milmanual-tm-43-0001-28-army-ammunition-data-sheets/tm_43-0001-28_army_ammunition_data_sheets.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Комплектация по источнику: полный выстрел."
+  },
+  "ordnance-v29-ga-0127": {
+    "rows": [
+      [
+        "Масса полного выстрела",
+        "0,75 фунта (≈ 0,34 кг)"
+      ],
+      [
+        "Длина полного выстрела",
+        "4,415 дюйма (≈ 112,1 мм)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0127-specs-v146-tm28",
+      "title": "Армия США — TM 43-0001-28 (1994), печатная с. 6-25: масса и длина",
+      "url": "https://archive.org/download/milmanual-tm-43-0001-28-army-ammunition-data-sheets/tm_43-0001-28_army_ammunition_data_sheets.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Комплектация по источнику: полный выстрел."
+  },
+  "ordnance-v29-ga-0129": {
+    "rows": [
+      [
+        "Масса полного выстрела",
+        "0,507 фунта (≈ 0,23 кг)"
+      ],
+      [
+        "Длина полного выстрела",
+        "4,05 дюйма (≈ 102,9 мм)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0129-specs-v146-tm28",
+      "title": "Армия США — TM 43-0001-28 (1994), печатная с. 6-29: масса и длина",
+      "url": "https://archive.org/download/milmanual-tm-43-0001-28-army-ammunition-data-sheets/tm_43-0001-28_army_ammunition_data_sheets.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Комплектация по источнику: полный выстрел."
+  },
+  "ordnance-v29-ga-0130": {
+    "rows": [
+      [
+        "Масса полного выстрела",
+        "0,503 фунта (≈ 0,228 кг)"
+      ],
+      [
+        "Длина полного выстрела",
+        "3,89 дюйма (≈ 98,8 мм)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0130-specs-v146-tm28",
+      "title": "Армия США — TM 43-0001-28 (1994), печатная с. 6-31: масса и длина",
+      "url": "https://archive.org/download/milmanual-tm-43-0001-28-army-ammunition-data-sheets/tm_43-0001-28_army_ammunition_data_sheets.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Комплектация по источнику: полный выстрел."
+  },
+  "ordnance-v29-ga-0131": {
+    "rows": [
+      [
+        "Масса полного выстрела",
+        "0,254 фунта (≈ 0,115 кг)"
+      ],
+      [
+        "Длина полного выстрела",
+        "2,646 дюйма (≈ 67,2 мм)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0131-specs-v146-tm28",
+      "title": "Армия США — TM 43-0001-28 (1994), печатная с. 6-33: масса и длина",
+      "url": "https://archive.org/download/milmanual-tm-43-0001-28-army-ammunition-data-sheets/tm_43-0001-28_army_ammunition_data_sheets.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Комплектация по источнику: полный выстрел."
+  },
+  "ordnance-v29-ga-0133": {
+    "rows": [
+      [
+        "Масса полного выстрела",
+        "0,41 фунта (≈ 0,186 кг)"
+      ],
+      [
+        "Длина полного выстрела",
+        "5,268 дюйма (≈ 133,8 мм)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0133-specs-v146-tm28",
+      "title": "Армия США — TM 43-0001-28 (1994), печатная с. 6-37: масса и длина",
+      "url": "https://archive.org/download/milmanual-tm-43-0001-28-army-ammunition-data-sheets/tm_43-0001-28_army_ammunition_data_sheets.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Комплектация по источнику: полный выстрел."
+  },
+  "ordnance-v29-ga-0136": {
+    "rows": [
+      [
+        "Масса полного выстрела",
+        "0,48 фунта (≈ 0,218 кг)"
+      ],
+      [
+        "Длина полного выстрела",
+        "5,212 дюйма (≈ 132,4 мм)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0136-specs-v146-tm28",
+      "title": "Армия США — TM 43-0001-28 (1994), печатная с. 6-39: масса и длина",
+      "url": "https://archive.org/download/milmanual-tm-43-0001-28-army-ammunition-data-sheets/tm_43-0001-28_army_ammunition_data_sheets.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Комплектация по источнику: полный выстрел."
+  },
+  "ordnance-v29-ga-0141": {
+    "rows": [
+      [
+        "Масса полного выстрела",
+        "0,49 фунта (≈ 0,222 кг)"
+      ],
+      [
+        "Длина полного выстрела",
+        "3,91 дюйма (≈ 99,3 мм)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0141-specs-v146-tm28",
+      "title": "Армия США — TM 43-0001-28 (1994), печатная с. 6-49: масса и длина",
+      "url": "https://archive.org/download/milmanual-tm-43-0001-28-army-ammunition-data-sheets/tm_43-0001-28_army_ammunition_data_sheets.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Комплектация по источнику: полный выстрел."
+  },
+  "ordnance-v29-ga-0142": {
+    "rows": [
+      [
+        "Масса полного выстрела",
+        "0,49 фунта (≈ 0,222 кг)"
+      ],
+      [
+        "Длина полного выстрела",
+        "3,91 дюйма (≈ 99,3 мм)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0142-specs-v146-tm28",
+      "title": "Армия США — TM 43-0001-28 (1994), печатная с. 6-49: масса и длина",
+      "url": "https://archive.org/download/milmanual-tm-43-0001-28-army-ammunition-data-sheets/tm_43-0001-28_army_ammunition_data_sheets.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Комплектация по источнику: полный выстрел."
+  },
+  "ordnance-v29-ga-0143": {
+    "rows": [
+      [
+        "Масса полного выстрела",
+        "0,49 фунта (≈ 0,222 кг)"
+      ],
+      [
+        "Длина полного выстрела",
+        "3,91 дюйма (≈ 99,3 мм)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0143-specs-v146-tm28",
+      "title": "Армия США — TM 43-0001-28 (1994), печатная с. 6-49: масса и длина",
+      "url": "https://archive.org/download/milmanual-tm-43-0001-28-army-ammunition-data-sheets/tm_43-0001-28_army_ammunition_data_sheets.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Комплектация по источнику: полный выстрел."
+  }
+}

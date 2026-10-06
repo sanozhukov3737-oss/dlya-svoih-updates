@@ -1,0 +1,674 @@
+{
+  "filling": {
+    "ref-v8-cn-type59-ap": {
+      "rows": [
+        [
+          "Type 59 AP (Китай): основное наполнение по JRC",
+          "TNT (тротил)"
+        ],
+        [
+          "Type 59 AP (Китай): масса основного наполнения по JRC",
+          "75 г"
+        ]
+      ],
+      "note": "Историческая исследовательская таблица, не паспорт всех партий. Авторы допускают альтернативные наполнения. Осколочная противопехотная модель; не противотанковая Type 59.",
+      "sources": [
+        {
+          "id": "ref-v8-cn-type59-ap-reference-v172",
+          "title": "European Commission / JRC — Metal Detector Handbook for Humanitarian Demining (2003), Annex C, печатная с. 152 / PDF 154",
+          "url": "https://nolandmines.com/PDF_files/MetalDetectorHandbook.pdf",
+          "accessedAt": "2026-10-04"
+        }
+      ]
+    },
+    "ordnance-v30-app-m57-kndr": {
+      "rows": [
+        [
+          "APP M-57 (КНДР): основное наполнение по JRC",
+          "TNT (тротил)"
+        ],
+        [
+          "APP M-57 (КНДР): масса основного наполнения по JRC",
+          "200 г"
+        ]
+      ],
+      "note": "Историческая исследовательская таблица, не паспорт всех партий. Авторы допускают альтернативные наполнения. Не относится к одноимённой кубинской M57.",
+      "sources": [
+        {
+          "id": "ordnance-v30-app-m57-kndr-reference-v172",
+          "title": "European Commission / JRC — Metal Detector Handbook for Humanitarian Demining (2003), Annex C, печатная с. 152 / PDF 154",
+          "url": "https://nolandmines.com/PDF_files/MetalDetectorHandbook.pdf",
+          "accessedAt": "2026-10-04"
+        }
+      ]
+    },
+    "ref-v9-vn-mdh10": {
+      "rows": [
+        [
+          "MDH-10 (Вьетнам): основное наполнение по JRC",
+          "TNT (тротил)"
+        ],
+        [
+          "MDH-10 (Вьетнам): масса основного наполнения по JRC",
+          "2 кг"
+        ]
+      ],
+      "note": "Историческая исследовательская таблица, не паспорт всех партий. Авторы допускают альтернативные наполнения. Не подменяет данные другого изделия с обозначением DH-10.",
+      "sources": [
+        {
+          "id": "ref-v9-vn-mdh10-reference-v172",
+          "title": "European Commission / JRC — Metal Detector Handbook for Humanitarian Demining (2003), Annex C, печатная с. 152 / PDF 154",
+          "url": "https://nolandmines.com/PDF_files/MetalDetectorHandbook.pdf",
+          "accessedAt": "2026-10-04"
+        }
+      ],
+      "create_heading": true
+    },
+    "ref-v9-vn-nomz2b": {
+      "rows": [
+        [
+          "NO-MZ 2B (Вьетнам): основное наполнение по JRC",
+          "TNT (тротил)"
+        ],
+        [
+          "NO-MZ 2B (Вьетнам): масса основного наполнения по JRC",
+          "65 г"
+        ]
+      ],
+      "note": "Историческая исследовательская таблица, не паспорт всех партий. Авторы допускают альтернативные наполнения. Сохранено написание первичной таблицы; карточка использует также NOMZ2B.",
+      "sources": [
+        {
+          "id": "ref-v9-vn-nomz2b-reference-v172",
+          "title": "European Commission / JRC — Metal Detector Handbook for Humanitarian Demining (2003), Annex C, печатная с. 152 / PDF 154",
+          "url": "https://nolandmines.com/PDF_files/MetalDetectorHandbook.pdf",
+          "accessedAt": "2026-10-04"
+        }
+      ],
+      "create_heading": true
+    },
+    "mine-audit-v25-su-tm-62b": {
+      "rows": [
+        [
+          "ТМ-62Б: основное наполнение по JRC",
+          "TNT (тротил)"
+        ],
+        [
+          "ТМ-62Б: масса основного наполнения по JRC",
+          "7,5 кг"
+        ]
+      ],
+      "note": "Историческая исследовательская таблица, не паспорт всех партий. Авторы допускают альтернативные наполнения. Значение относится к варианту Б, не назначено всему семейству ТМ-62.",
+      "sources": [
+        {
+          "id": "mine-audit-v25-su-tm-62b-reference-v172",
+          "title": "European Commission / JRC — Metal Detector Handbook for Humanitarian Demining (2003), Annex C, печатная с. 152 / PDF 154",
+          "url": "https://nolandmines.com/PDF_files/MetalDetectorHandbook.pdf",
+          "accessedAt": "2026-10-04"
+        }
+      ]
+    },
+    "ref-v8-tm-72": {
+      "rows": [
+        [
+          "ТМ-72: основное наполнение по JRC",
+          "Смешанное RDX / TNT; точная марка не дана"
+        ],
+        [
+          "ТМ-72: масса основного наполнения по JRC",
+          "2,5 кг"
+        ]
+      ],
+      "note": "Историческая исследовательская таблица, не паспорт всех партий. Авторы допускают альтернативные наполнения. ТГ-40 не назначена по аналогии с другими изделиями.",
+      "sources": [
+        {
+          "id": "ref-v8-tm-72-reference-v172",
+          "title": "European Commission / JRC — Metal Detector Handbook for Humanitarian Demining (2003), Annex C, печатная с. 154 / PDF 156",
+          "url": "https://nolandmines.com/PDF_files/MetalDetectorHandbook.pdf",
+          "accessedAt": "2026-10-04"
+        }
+      ]
+    },
+    "ref-v8-za-mini-ms803": {
+      "rows": [
+        [
+          "MINI-MS-803: основное наполнение по JRC",
+          "PE9"
+        ],
+        [
+          "MINI-MS-803: масса основного наполнения по JRC",
+          "460 г"
+        ]
+      ],
+      "note": "Историческая исследовательская таблица, не паспорт всех партий. Авторы допускают альтернативные наполнения. Раннее написание MIM MS-803 сохранено в историческом описании.",
+      "sources": [
+        {
+          "id": "ref-v8-za-mini-ms803-reference-v172",
+          "title": "European Commission / JRC — Metal Detector Handbook for Humanitarian Demining (2003), Annex C, печатная с. 155 / PDF 157",
+          "url": "https://nolandmines.com/PDF_files/MetalDetectorHandbook.pdf",
+          "accessedAt": "2026-10-04"
+        }
+      ],
+      "create_heading": true
+    },
+    "ref-v8-cn-type66": {
+      "rows": [
+        [
+          "Type 66 (Китай): основное наполнение по JRC",
+          "Пластичное ВВ; точная марка не дана"
+        ],
+        [
+          "Type 66 (Китай): масса основного наполнения по JRC",
+          "680 г"
+        ]
+      ],
+      "note": "Историческая исследовательская таблица, не паспорт всех партий. Авторы допускают альтернативные наполнения. Марка C4 не перенесена с американской M18A1.",
+      "sources": [
+        {
+          "id": "ref-v8-cn-type66-reference-v172",
+          "title": "European Commission / JRC — Metal Detector Handbook for Humanitarian Demining (2003), Annex C, печатная с. 155 / PDF 157",
+          "url": "https://nolandmines.com/PDF_files/MetalDetectorHandbook.pdf",
+          "accessedAt": "2026-10-04"
+        }
+      ]
+    },
+    "ref-v8-pk-p5-family": {
+      "rows": [
+        [
+          "P5 Mk1 / Mk2: основное наполнение по JRC",
+          "PE-3A"
+        ]
+      ],
+      "note": "Историческая исследовательская таблица, не паспорт всех партий. Авторы допускают альтернативные наполнения. Масса наполнения не указана; одинаковое количество для двух моделей не предполагается.",
+      "sources": [
+        {
+          "id": "ref-v8-pk-p5-family-reference-v172",
+          "title": "European Commission / JRC — Metal Detector Handbook for Humanitarian Demining (2003), Annex C, печатная с. 155 / PDF 157",
+          "url": "https://nolandmines.com/PDF_files/MetalDetectorHandbook.pdf",
+          "accessedAt": "2026-10-04"
+        }
+      ]
+    },
+    "ref-v9-mvch62": {
+      "rows": [
+        [
+          "Размерное поле GICHD",
+          "144 мм; ось не подписана"
+        ],
+        [
+          "Масса изделия по GICHD",
+          "Нет данных"
+        ]
+      ],
+      "note": "Заголовок листа — MVCH-62, текст — MVCh-62M. Значение не объявлено диаметром либо высотой всех исполнений. Количества внутренних энергетических компонентов не перенесены.",
+      "sources": [
+        {
+          "id": "ref-v9-mvch62-reference-v172",
+          "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), PDF / печатная с. 234",
+          "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+          "accessedAt": "2026-10-04"
+        }
+      ],
+      "create_heading": true
+    },
+    "ref-v9-mvp62": {
+      "rows": [
+        [
+          "Сверка модели по GICHD",
+          "Таблица относится к МВП-62М"
+        ],
+        [
+          "Масса МВП-62М по GICHD",
+          "Нет данных"
+        ]
+      ],
+      "note": "Прежние размеры сверены по первичному листу. МВП-62 остаётся отдельным обозначением без автоматически перенесённых размеров.",
+      "sources": [
+        {
+          "id": "ref-v9-mvp62-reference-v172",
+          "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), PDF / печатная с. 235",
+          "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+          "accessedAt": "2026-10-04"
+        }
+      ]
+    },
+    "mine-audit-v26-su-ms-3": {
+      "rows": [
+        [
+          "МС-3: полная масса по GICHD",
+          "630 г"
+        ],
+        [
+          "МС-3: размерное поле по GICHD",
+          "110 × 65 мм"
+        ],
+        [
+          "МС-3: основное ВВ по GICHD",
+          "TNT (тротил)"
+        ],
+        [
+          "МС-3: масса основного наполнения по GICHD",
+          "310 г"
+        ]
+      ],
+      "note": "Ранее приведённые вторичные значения остаются раздельно атрибутированными. Новая первичная таблица не подтверждает их как единый паспорт. Масса основного наполнения независимо совпадает с JRC 2003.",
+      "sources": [
+        {
+          "id": "mine-audit-v26-su-ms-3-reference-v172",
+          "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), PDF / печатная с. 268",
+          "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+          "accessedAt": "2026-10-04"
+        },
+        {
+          "id": "mine-audit-v26-su-ms-3-jrc-v172",
+          "title": "European Commission / JRC — Metal Detector Handbook (2003), Annex C, печатная с. 152 / PDF 154: MS3",
+          "url": "https://nolandmines.com/PDF_files/MetalDetectorHandbook.pdf",
+          "accessedAt": "2026-10-04"
+        }
+      ],
+      "replacements": [
+        [
+          "Источники расходятся.",
+          "Ранее использованные вторичные источники расходятся."
+        ]
+      ]
+    },
+    "ordnance-v27-ms-4": {
+      "rows": [
+        [
+          "МС-4: основное ВВ по GICHD",
+          "TNT (тротил)"
+        ],
+        [
+          "МС-4: масса основного наполнения по GICHD",
+          "120 г"
+        ]
+      ],
+      "note": "Масса наполнения отделена от прежней полной массы изделия. Наружная таблица повторно сверена.",
+      "sources": [
+        {
+          "id": "ordnance-v27-ms-4-reference-v172",
+          "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), PDF / печатная с. 269",
+          "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+          "accessedAt": "2026-10-04"
+        }
+      ]
+    },
+    "mine-audit-v26-su-ml-7": {
+      "rows": [
+        [
+          "МЛ-7: основное ВВ по GICHD",
+          "ПВВ-5А"
+        ],
+        [
+          "МЛ-7: масса основного наполнения по GICHD",
+          "30 г"
+        ],
+        [
+          "МЛ-7: полная масса по GICHD",
+          "100 г"
+        ]
+      ],
+      "note": "Прежняя суммарная масса энергетических частей не является отдельной массой основного наполнения. Размерное поле листа расходится с прежним описанием; до независимой сверки оно не объявлено подтверждённым габаритом. Внутренние количества не добавлялись.",
+      "sources": [
+        {
+          "id": "mine-audit-v26-su-ml-7-reference-v172",
+          "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), PDF / печатная с. 270",
+          "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+          "accessedAt": "2026-10-04"
+        }
+      ]
+    },
+    "mine-audit-v26-su-ml-8": {
+      "rows": [
+        [
+          "МЛ-8: основное ВВ по GICHD",
+          "ПВВ-5А"
+        ],
+        [
+          "МЛ-8: масса основного наполнения по GICHD",
+          "80 г"
+        ],
+        [
+          "МЛ-8: полная масса по GICHD",
+          "370 г"
+        ]
+      ],
+      "note": "Прежние массы подтверждены первичным листом; добавлена атрибуция основного ВВ. Размерное поле листа неполное и не заменяет прежние три размера.",
+      "sources": [
+        {
+          "id": "mine-audit-v26-su-ml-8-reference-v172",
+          "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), PDF / печатная с. 271",
+          "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+          "accessedAt": "2026-10-04"
+        }
+      ]
+    },
+    "ordnance-v27-kz-6": {
+      "rows": [
+        [
+          "КЗ-6: основное ВВ по GICHD",
+          "ТГ-40"
+        ],
+        [
+          "КЗ-6: масса основного наполнения по GICHD",
+          "1,8 кг"
+        ],
+        [
+          "КЗ-6: сверка полной массы по GICHD",
+          "3 кг"
+        ]
+      ],
+      "note": "Основное наполнение отделено от полной массы; наружные данные сверены. Сведения о переделках изделия не использованы.",
+      "sources": [
+        {
+          "id": "ordnance-v27-kz-6-reference-v172",
+          "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), PDF / печатная с. 274",
+          "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+          "accessedAt": "2026-10-04"
+        }
+      ]
+    },
+    "ordnance-v27-md-5m": {
+      "rows": [
+        [
+          "МД-5М: масса изделия по GICHD",
+          "9,7 г"
+        ],
+        [
+          "МД-5М: размерное поле по GICHD",
+          "50 × 13 мм"
+        ]
+      ],
+      "note": "Прежние наружные числовые данные сверены и оформлены таблицей. Количества и составы внутренних частей не переносились.",
+      "sources": [
+        {
+          "id": "ordnance-v27-md-5m-reference-v172",
+          "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), PDF / печатная с. 275",
+          "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+          "accessedAt": "2026-10-04"
+        }
+      ]
+    },
+    "ref-v9-mve72": {
+      "rows": [
+        [
+          "Сверка наружной таблицы GICHD",
+          "Прежние масса и размерное поле подтверждены"
+        ],
+        [
+          "Основное наполнение: поле GICHD",
+          "Not applicable — неприменимо к указанному прибору"
+        ]
+      ],
+      "note": "Текстовое поле не заменено нулевой массой и не определяет все элементы совместной комплектации. МВЭ-92 и МВЭ-08 не объединены с МВЭ-72.",
+      "sources": [
+        {
+          "id": "ref-v9-mve72-reference-v172",
+          "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), PDF / печатная с. 276",
+          "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+          "accessedAt": "2026-10-04"
+        }
+      ]
+    },
+    "ordnance-v27-initsiator-nm": {
+      "rows": [
+        [
+          "НМ: размерное поле по GICHD",
+          "54 × 39 мм; оси не подписаны"
+        ],
+        [
+          "НМ: статус массы",
+          "Отдельная надёжная масса изделия не подтверждена"
+        ]
+      ],
+      "note": "Размеры уже присутствовали в описании и теперь оформлены таблицей. Поле массы в листе совпадает с МД-5М; без независимого источника оно не приписано всему НМ.",
+      "sources": [
+        {
+          "id": "ordnance-v27-initsiator-nm-reference-v172",
+          "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), PDF / печатная с. 277",
+          "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+          "accessedAt": "2026-10-04"
+        }
+      ]
+    },
+    "ordnance-v27-nvu-pm-vp-13": {
+      "rows": [
+        [
+          "НВУ-ПМ / ВП-13: масса в таблице GICHD",
+          "2 кг; комплектация не разделена"
+        ],
+        [
+          "НВУ-ПМ / ВП-13: размерное поле GICHD",
+          "250 × 110 мм"
+        ]
+      ],
+      "note": "Лист не разделяет массу прибора, датчика и полного набора. Прежняя фраза о массе основного блока уточнена; значение не назначено каждому компоненту.",
+      "sources": [
+        {
+          "id": "ordnance-v27-nvu-pm-vp-13-reference-v172",
+          "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), PDF / печатная с. 278",
+          "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+          "accessedAt": "2026-10-04"
+        }
+      ],
+      "replacements": [
+        [
+          "GICHD указывает массу основного блока около 2 кг и размеры 250 × 110 мм.",
+          "GICHD указывает массу 2 кг без раздельной атрибуции комплектации и размерное поле 250 × 110 мм."
+        ]
+      ]
+    },
+    "ordnance-v27-sm-320": {
+      "rows": [
+        [
+          "Сверка наружной таблицы GICHD",
+          "Прежние масса и размерное поле подтверждены"
+        ],
+        [
+          "Точная марка и масса основного пиротехнического наполнения",
+          "В листе не раскрыты"
+        ]
+      ],
+      "note": "Числовые поля повторно сверены; отсутствие точной марки и массы наполнения не заменено догадкой.",
+      "sources": [
+        {
+          "id": "ordnance-v27-sm-320-reference-v172",
+          "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), PDF / печатная с. 279",
+          "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+          "accessedAt": "2026-10-04"
+        }
+      ]
+    },
+    "ordnance-v27-sz-6": {
+      "rows": [
+        [
+          "СЗ-6: основное ВВ по GICHD",
+          "TNT (тротил)"
+        ],
+        [
+          "СЗ-6: масса основного наполнения по тексту GICHD",
+          "Номинально 6 кг"
+        ],
+        [
+          "СЗ-6: полная масса по GICHD",
+          "7,3 кг"
+        ]
+      ],
+      "note": "Номинальная масса основного наполнения не подменена диапазоном общей NEQ: у них различный состав учёта. Упомянутый альтернативный состав не назначен всем экземплярам.",
+      "sources": [
+        {
+          "id": "ordnance-v27-sz-6-reference-v172",
+          "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), PDF / печатная с. 280",
+          "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+          "accessedAt": "2026-10-04"
+        }
+      ]
+    },
+    "ordnance-v27-oz-1": {
+      "rows": [
+        [
+          "ОЗ-1: основное ВВ по GICHD",
+          "А-IX-1"
+        ],
+        [
+          "ОЗ-1: масса основного наполнения по общей таблице",
+          "1,1 кг"
+        ],
+        [
+          "ОЗ-1: полная масса по GICHD",
+          "3,5 кг"
+        ]
+      ],
+      "note": "Приведено суммарное основное наполнение указанного исполнения. Количества отдельных частей, схема и способы применения не добавлялись.",
+      "sources": [
+        {
+          "id": "ordnance-v27-oz-1-reference-v172",
+          "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), PDF / печатная с. 281",
+          "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+          "accessedAt": "2026-10-04"
+        }
+      ]
+    },
+    "ref-v9-mv5": {
+      "rows": [
+        [
+          "МВ-5: сверка наружной таблицы USAREUR",
+          "Прежние длина и диаметр подтверждены"
+        ],
+        [
+          "МВ-5: масса по выбранной таблице",
+          "Не опубликована"
+        ]
+      ],
+      "note": "Это повторная проверка уже добавленных наружных размеров, а не новые числовые ТТХ. Внутренние данные не переносились.",
+      "sources": [
+        {
+          "id": "ref-v9-mv5-reference-v172",
+          "title": "USAREUR — Pam 30-60-1, Part Three, Volume II (30 July 1975), печатная с. 115 / PDF 116",
+          "url": "https://www.bulletpicker.com/pdf/PAM-30-60-1-Part-3-Vol-2.pdf",
+          "accessedAt": "2026-10-04"
+        }
+      ]
+    },
+    "ref-v9-vpf": {
+      "rows": [
+        [
+          "ВПФ: сверка наружной таблицы USAREUR",
+          "Прежние длина и диаметр подтверждены"
+        ],
+        [
+          "ВПФ: масса по выбранной таблице",
+          "Не опубликована"
+        ]
+      ],
+      "note": "Это повторная проверка уже добавленных наружных размеров, а не новые числовые ТТХ. Внутренние данные не переносились.",
+      "sources": [
+        {
+          "id": "ref-v9-vpf-reference-v172",
+          "title": "USAREUR — Pam 30-60-1, Part Three, Volume II (30 July 1975), печатная с. 129 / PDF 130",
+          "url": "https://www.bulletpicker.com/pdf/PAM-30-60-1-Part-3-Vol-2.pdf",
+          "accessedAt": "2026-10-04"
+        }
+      ]
+    },
+    "atgm-akeron-mp": {
+      "rows": [
+        [
+          "Сверка наружных ТТХ по брошюре MBDA",
+          "Прежние масса, диаметр и длина подтверждены"
+        ],
+        [
+          "Основное ВВ: отдельная марка и масса",
+          "В выбранных таблицах не раскрыты"
+        ]
+      ],
+      "note": "Длина относится к тактическому контейнеру, масса ракеты включает трубу, масса пускового блока включает треногу и батарею. Проверка не добавляет новых числовых полей.",
+      "sources": [
+        {
+          "id": "atgm-akeron-mp-reference-v172",
+          "title": "MBDA — AKERON MP brochure, PDF 7 и 16 / печатные с. 6 и 15",
+          "url": "https://www.mbda-systems.com/sites/mbda/files/2024-07/AKERON%20MP%20brochure%20-%20WEB.pdf",
+          "accessedAt": "2026-10-04"
+        }
+      ]
+    },
+    "atgm-spike-lr2": {
+      "rows": [
+        [
+          "SPIKE LR2: масса round по EUROSpike",
+          "Около 13,4 кг"
+        ],
+        [
+          "SPIKE LR2: размерное поле архивного листа Rafael",
+          "117 см; ось в поле не подписана"
+        ],
+        [
+          "SPIKE LR2: наземная пусковая установка по архивному листу",
+          "12 кг"
+        ]
+      ],
+      "note": "Архивный Rafael даёт Round Weight около 13 кг, EUROSpike — около 13,4 кг. Значения сохранены по источникам и не усреднены. Комплектация round не объявлена массой извлечённой ракеты. Точная марка и отдельная масса основного ВВ не раскрыты.",
+      "sources": [
+        {
+          "id": "atgm-spike-lr2-reference-v172",
+          "title": "EUROSpike — SPIKE LR2, поле Round Weight (проверено 04.10.2026)",
+          "url": "https://eurospike.com/system/spike-lr2/",
+          "accessedAt": "2026-10-04"
+        },
+        {
+          "id": "atgm-spike-lr2-rafael-sheet-v172",
+          "title": "Rafael — SPIKE LR II Missile Weapon System, архивный заводской лист UNC0617, PDF 2; первичная веб-копия",
+          "url": "https://he.rafael.co.il/wp-content/uploads/2019/03/Spike-LR2.pdf",
+          "accessedAt": "2026-10-04"
+        }
+      ],
+      "replacements": [
+        [
+          "указывает массу ракеты 13 кг.",
+          "в архивном листе указывает Round Weight около 13 кг; комплектация этого поля отдельно не раскрыта."
+        ],
+        [
+          "| Масса ракеты, заявленная изготовителем | 13 кг; не масса полного комплекса |",
+          "| Масса round в архивном листе Rafael | Около 13 кг; комплектация отдельно не раскрыта |"
+        ]
+      ]
+    },
+    "atgm-fgm148-javelin": {
+      "rows": [
+        [
+          "Javelin Block 1: ракета и CLU вместе по Army 2020–2021",
+          "48,8 lb (≈22,14 кг)"
+        ],
+        [
+          "Javelin Block 1: поле Missile по Army 2020–2021",
+          "33,3 lb (≈15,10 кг)"
+        ],
+        [
+          "Javelin Block 1: поле CLU по Army 2020–2021",
+          "15,5 lb (≈7,03 кг)"
+        ],
+        [
+          "Javelin: диаметр в таблице Army 2020–2021",
+          "127 мм"
+        ]
+      ],
+      "note": "Таблица относится к Block 1. Missile и CLU разделены; источник не даёт здесь отдельного уточнения массы ракеты без пусковой трубы. Эти числа не назначены LWCLU либо всем поколениям Javelin. Точная марка и отдельная масса основного ВВ не раскрыты.",
+      "sources": [
+        {
+          "id": "atgm-fgm148-javelin-reference-v172",
+          "title": "U.S. Army — Weapon Systems Handbook 2020–2021, печатная с. 230 / PDF 232",
+          "url": "https://www.army.mil/e2/downloads/rv7/2020-2021_Weapon_Systems_Handbook.pdf",
+          "accessedAt": "2026-10-04"
+        }
+      ],
+      "replacements": [
+        [
+          "Масса и габариты конкретной модификации не указаны на открытой странице",
+          "Открытая страница производителя не даёт полного числового паспорта; отдельные массы и диаметр Block 1 добавлены по Army 2020–2021."
+        ]
+      ]
+    }
+  },
+  "text_corrections": {},
+  "source_corrections": {}
+}

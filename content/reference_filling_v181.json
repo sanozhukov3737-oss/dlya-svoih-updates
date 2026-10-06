@@ -1,0 +1,625 @@
+{
+  "filling": {
+    "atgm-bill-family": {
+      "rows": [
+        [
+          "Масса полного PAL 2000 по Bundesheer",
+          "45 кг; в комплектном состоянии (Gewicht feuerbereit)"
+        ],
+        [
+          "Масса и размеры отдельной ракеты BILL",
+          "На странице Bundesheer не выделены"
+        ],
+        [
+          "Основное ВВ: марка и масса",
+          "В проверенной карточке PAL 2000 не опубликованы"
+        ]
+      ],
+      "note": "45 кг — масса австрийского комплекса PAL 2000, а не одной ракеты. Страница не устанавливает единый паспорт для всех BILL и BILL 2. Архивное сообщение Saab и новая таблица имеют разный предмет описания.",
+      "sources": [
+        {
+          "id": "reference-v181-atgm-bill-family-0",
+          "title": "Bundesheer: Panzerabwehrlenkwaffe 2000 BILL, таблица PAL 2000",
+          "url": "https://www.bundesheer.at/unser-heer/waffen-und-geraet/panzerabwehrlenkwaffe-2000-bill",
+          "accessedAt": "2026-10-05"
+        }
+      ],
+      "create_heading": false
+    },
+    "atgm-9k11-malyutka": {
+      "rows": [
+        [
+          "Граница музейных сведений о «Малютке»",
+          "Комплекс 1963 года; переносное и машинное исполнения"
+        ],
+        [
+          "Числовой паспорт исходной ракеты",
+          "Масса, внешние размеры и масса основного ВВ в музейном тексте не приведены"
+        ]
+      ],
+      "note": "Повторно проверена музейная экспозиция. Числа других ракет и более поздних MALYUTKA 2 не назначены исходному 9К11.",
+      "sources": [
+        {
+          "id": "reference-v181-atgm-9k11-malyutka-0",
+          "title": "Военно-исторический музей артиллерии МО РФ: История ракетного вооружения, раздел ПТРК",
+          "url": "https://museum-artillery.ru/ru/basic/istoriya-raketnogo-vooruzheniya.html",
+          "accessedAt": "2026-10-05"
+        }
+      ],
+      "create_heading": false
+    },
+    "atgm-pirat": {
+      "rows": [
+        [
+          "Исполнение PIRAT, подтверждённое сообщением MESKO",
+          "Испытательный этап 15 июля 2020 года"
+        ],
+        [
+          "Раздельные массы ракеты, контейнера и комплекса",
+          "В проверенном сообщении MESKO не приведены"
+        ],
+        [
+          "Внешние размеры и масса основного ВВ PIRAT",
+          "В сообщении об испытаниях не опубликованы"
+        ]
+      ],
+      "note": "Сообщение 2020 года проверено по оригиналу MESKO. Оно не подтверждает числовой паспорт современной серийной комплектации.",
+      "sources": [
+        {
+          "id": "reference-v181-atgm-pirat-0",
+          "title": "MESKO: PIRAT na poligonie w Nowej Dębie, испытания 15.07.2020",
+          "url": "https://www.mesko.com.pl/aktualnosci/pirat-na-poligonie-w-nowej-debie",
+          "accessedAt": "2026-10-05"
+        }
+      ],
+      "create_heading": false
+    },
+    "atgm-spike-pandur-cz": {
+      "rows": [
+        [
+          "Машина-носитель Pandur II CZ: длина",
+          "7919 мм"
+        ],
+        [
+          "Машина-носитель Pandur II CZ: ширина",
+          "2670 мм"
+        ],
+        [
+          "Машина-носитель Pandur II CZ: высота",
+          "2680 мм в походном положении"
+        ],
+        [
+          "Машина-носитель Pandur II CZ: боевая масса без экипажа",
+          "19 000 кг"
+        ],
+        [
+          "Машина-носитель Pandur II CZ: боевая масса с экипажем",
+          "20 600 кг"
+        ],
+        [
+          "Отдельная ракета SPIKE на документированном носителе",
+          "Масса, размеры и масса основного ВВ не установлены этими двумя страницами"
+        ]
+      ],
+      "note": "Числа относятся к машине на технической странице Минобороны Чехии. Публикация о стрельбах 2025 года подтверждает сочетание Pandur II и SPIKE, но не полный индекс ракеты. Массы носителя не стали массами SPIKE; LR и LR2 не отождествлены.",
+      "sources": [
+        {
+          "id": "reference-v181-atgm-spike-pandur-cz-0",
+          "title": "Минобороны Чехии: Kolový obrněný transportér Pandur II 8x8, технические данные",
+          "url": "https://acr.mo.gov.cz/technika-a-vyzbroj/tanky/-kolovy-obrneny-transporter-pandur-ii-8x8-89949/",
+          "accessedAt": "2026-10-05"
+        },
+        {
+          "id": "reference-v181-atgm-spike-pandur-cz-1",
+          "title": "Минобороны Чехии: SPIKE на Pandur II, сообщение 01.04.2025",
+          "url": "https://mise.mo.gov.cz/aktualni-mise/slovensko/zpravodajstvi/ostry-vycvik-na-slovensku:-cesi-si-vyzkouseli-strelby-s-protitankovymi-rizenymi-strelami-spike-257077/",
+          "accessedAt": "2026-10-05"
+        }
+      ],
+      "create_heading": false
+    },
+    "svo-zala-z16-family": {
+      "rows": [
+        [
+          "Граница массы Z-16E",
+          "12 кг — максимальная взлётная масса одного аппарата"
+        ],
+        [
+          "Масса пустого Z-16E и внешние размеры",
+          "Отдельными числовыми полями на проверенной странице не опубликованы"
+        ]
+      ],
+      "note": "Повторно подтверждено значение 12 кг. Оно уже было в карточке и не засчитано новым; масса наземной станции и транспортного комплекта в него не включена.",
+      "sources": [
+        {
+          "id": "reference-v181-svo-zala-z16-family-0",
+          "title": "ZALA: Z-16E, открытая заводская таблица",
+          "url": "https://zala-aero.com/en/product/zala-z-16/",
+          "accessedAt": "2026-10-05"
+        }
+      ],
+      "create_heading": false
+    },
+    "svo-lancet-loitering-munition": {
+      "rows": [
+        [
+          "Паспорт массы и размеров Z-52E",
+          "В открытой заводской таблице не опубликован"
+        ],
+        [
+          "Основное ВВ Z-52E: марка и масса",
+          "Проверенная страница этих полей не содержит"
+        ]
+      ],
+      "note": "Проверена страница Z-52E («Изделие 52»). Характеристики других «Ланцетов» не перенесены на это исполнение.",
+      "sources": [
+        {
+          "id": "reference-v181-svo-lancet-loitering-munition-0",
+          "title": "ZALA: Z-52E / Izdelie 52, заводская страница",
+          "url": "https://zala-aero.com/en/product/izdelie-52/",
+          "accessedAt": "2026-10-05"
+        }
+      ],
+      "create_heading": false
+    },
+    "svo-forpost-r-family": {
+      "rows": [
+        [
+          "Различие обозначений в сообщении УЗГА",
+          "«Форпост-РЭ» представлен как экспортное изделие на базе «Форпост-Р»"
+        ],
+        [
+          "Масса и внешние размеры Р / РЭ в сообщении",
+          "Раздельные числовые паспорта не опубликованы"
+        ]
+      ],
+      "note": "Проверено собственное сообщение УЗГА о Dubai Airshow 2025. Оно разграничивает Р и РЭ; числовые данные из сторонних публикаций в этот проход не включены.",
+      "sources": [
+        {
+          "id": "reference-v181-svo-forpost-r-family-0",
+          "title": "УЗГА: официальное сообщение о «Форпост-РЭ» и Dubai Airshow 2025",
+          "url": "https://t.me/s/uwca_ru?after=462",
+          "accessedAt": "2026-10-05"
+        }
+      ],
+      "create_heading": false
+    },
+    "svo-leleka-100-family": {
+      "rows": [
+        [
+          "Название на текущей странице DEVIRO",
+          "Leleka; числовой паспорт именно прежнего Leleka-100 не выделен"
+        ],
+        [
+          "Масса и внешние размеры Leleka-100",
+          "По этой странице не подтверждены"
+        ]
+      ],
+      "note": "Открытая страница изготовителя проверена. Общее название Leleka не доказывает неизменность характеристик всех поколений Leleka-100.",
+      "sources": [
+        {
+          "id": "reference-v181-svo-leleka-100-family-0",
+          "title": "DEVIRO: Leleka, текущая страница семейства",
+          "url": "https://deviro.ua/produkciya/leleka/?lang=en",
+          "accessedAt": "2026-10-05"
+        }
+      ],
+      "create_heading": false
+    },
+    "svo-pd2-uas-family": {
+      "rows": [
+        [
+          "Граница MTOW PD-2 по конфигурации",
+          "55 кг — VTOL; 45 кг — самолёт с обычным шасси"
+        ],
+        [
+          "Объект этих двух масс PD-2",
+          "Отдельный летательный аппарат, а не весь перевозимый комплекс"
+        ]
+      ],
+      "note": "Заводская страница повторно подтверждает уже записанные значения. Различие конфигураций сохранено; новые числовые значения в этот проход не добавлены.",
+      "sources": [
+        {
+          "id": "reference-v181-svo-pd2-uas-family-0",
+          "title": "UkrSpecSystems: PD-2 UAS, таблицы двух конфигураций",
+          "url": "https://ukrspecsystems.com/drones/pd-2-uas",
+          "accessedAt": "2026-10-05"
+        }
+      ],
+      "create_heading": false
+    },
+    "svo-bayraktar-tb2-class": {
+      "rows": [
+        [
+          "Граница MTOW Bayraktar TB2",
+          "700 кг — максимум для аппарата в общей таблице производителя"
+        ],
+        [
+          "Таблицы отдельных TB2-A / B / C / D",
+          "Общая страница перечисляет варианты, но не даёт отдельного набора размеров каждому"
+        ]
+      ],
+      "note": "Повторно сверены 700 кг, длина 6,4 м, высота 2,2 м и размах 12 м. Эти числа уже присутствовали. Общая таблица не признана отдельным паспортом каждого варианта.",
+      "sources": [
+        {
+          "id": "reference-v181-svo-bayraktar-tb2-class-0",
+          "title": "Baykar: Bayraktar TB2, Technical Specifications",
+          "url": "https://baykartech.com/en/uav/bayraktar-tb2/",
+          "accessedAt": "2026-10-05"
+        }
+      ],
+      "create_heading": false
+    },
+    "svo-shark-uas-family": {
+      "rows": [
+        [
+          "SHARK-M: длина / высота",
+          "1650 / 300 мм"
+        ],
+        [
+          "SHARK-M: размах крыла",
+          "3,4 м"
+        ],
+        [
+          "SHARK-M: максимальная взлётная масса",
+          "До 14,5 кг"
+        ],
+        [
+          "MINI SHARK 2025: длина / высота",
+          "1250 / 260 мм"
+        ],
+        [
+          "MINI SHARK 2025: размах крыла",
+          "2,6 м"
+        ],
+        [
+          "MINI SHARK 2025: максимальная взлётная масса",
+          "5,5 кг"
+        ]
+      ],
+      "note": "Добавлены отдельные заводские поля SHARK-M и MINI SHARK 2025. Данные SHARK-D сохранены. MTOW относится к аппарату, не к пустому корпусу, контейнеру или полному комплексу; значения не объединены между вариантами.",
+      "sources": [
+        {
+          "id": "reference-v181-svo-shark-uas-family-0",
+          "title": "UkrSpecSystems: SHARK-M, Measurements and weight",
+          "url": "https://ukrspecsystems.com/drones/shark-m-uas",
+          "accessedAt": "2026-10-05"
+        },
+        {
+          "id": "reference-v181-svo-shark-uas-family-1",
+          "title": "UkrSpecSystems: MINI SHARK UAS 2025, Measurements",
+          "url": "https://ukrspecsystems.com/drones/mini-shark-uas",
+          "accessedAt": "2026-10-05"
+        }
+      ],
+      "create_heading": false
+    },
+    "ordnance-v29-ga-0387": {
+      "rows": [
+        [
+          "Объект открытого указателя Army DAC",
+          "Блок управления, MCA"
+        ],
+        [
+          "Масса изделия, внешние размеры, масса ВВ",
+          "В открытой строке не опубликованы"
+        ]
+      ],
+      "note": "Проверен открытый указатель. Чертежи перенесены в раздел Army 365 с авторизацией; числовой паспорт не получен. Параметры тары изделию не назначены.",
+      "sources": [
+        {
+          "id": "reference-v181-ordnance-v29-ga-0387-0",
+          "title": "U.S. Army Defense Ammunition Center: Landmines, открытый указатель XM10",
+          "url": "https://defenseammunitioncenter.army.mil/usatces/capdraw/drawings/landmines.html",
+          "accessedAt": "2026-10-05"
+        }
+      ],
+      "create_heading": false
+    },
+    "ordnance-v29-ga-0388": {
+      "rows": [
+        [
+          "Объект открытого указателя Army DAC",
+          "Комплект блока управления; не один цельный боеприпас"
+        ],
+        [
+          "Масса изделия, внешние размеры, масса ВВ",
+          "В открытой строке не опубликованы"
+        ]
+      ],
+      "note": "Проверен открытый указатель. Чертежи перенесены в раздел Army 365 с авторизацией; числовой паспорт не получен. Параметры тары изделию не назначены.",
+      "sources": [
+        {
+          "id": "reference-v181-ordnance-v29-ga-0388-0",
+          "title": "U.S. Army Defense Ammunition Center: Landmines, открытый указатель XM332",
+          "url": "https://defenseammunitioncenter.army.mil/usatces/capdraw/drawings/landmines.html",
+          "accessedAt": "2026-10-05"
+        }
+      ],
+      "create_heading": false
+    },
+    "ordnance-v29-ga-0389": {
+      "rows": [
+        [
+          "Объект открытого указателя Army DAC",
+          "Компонент MGL в группе Spider"
+        ],
+        [
+          "Масса изделия, внешние размеры, масса ВВ",
+          "В открытой строке не опубликованы"
+        ]
+      ],
+      "note": "Проверен открытый указатель. Чертежи перенесены в раздел Army 365 с авторизацией; числовой паспорт не получен. Параметры тары изделию не назначены.",
+      "sources": [
+        {
+          "id": "reference-v181-ordnance-v29-ga-0389-0",
+          "title": "U.S. Army Defense Ammunition Center: Landmines, открытый указатель XM8",
+          "url": "https://defenseammunitioncenter.army.mil/usatces/capdraw/drawings/landmines.html",
+          "accessedAt": "2026-10-05"
+        }
+      ],
+      "create_heading": false
+    },
+    "ordnance-v29-ga-0390": {
+      "rows": [
+        [
+          "Объект открытого указателя Army DAC",
+          "Компонент ERTS в группе Spider"
+        ],
+        [
+          "Масса изделия, внешние размеры, масса ВВ",
+          "В открытой строке не опубликованы"
+        ]
+      ],
+      "note": "Проверен открытый указатель. Чертежи перенесены в раздел Army 365 с авторизацией; числовой паспорт не получен. Параметры тары изделию не назначены.",
+      "sources": [
+        {
+          "id": "reference-v181-ordnance-v29-ga-0390-0",
+          "title": "U.S. Army Defense Ammunition Center: Landmines, открытый указатель XM9",
+          "url": "https://defenseammunitioncenter.army.mil/usatces/capdraw/drawings/landmines.html",
+          "accessedAt": "2026-10-05"
+        }
+      ],
+      "create_heading": false
+    },
+    "ordnance-v29-ga-0391": {
+      "rows": [
+        [
+          "Объект открытого указателя Army DAC",
+          "Учебный блок управления, MCAT"
+        ],
+        [
+          "Масса изделия, внешние размеры, масса ВВ",
+          "В открытой строке не опубликованы"
+        ]
+      ],
+      "note": "Проверен открытый указатель. Чертежи перенесены в раздел Army 365 с авторизацией; числовой паспорт не получен. Параметры тары изделию не назначены.",
+      "sources": [
+        {
+          "id": "reference-v181-ordnance-v29-ga-0391-0",
+          "title": "U.S. Army Defense Ammunition Center: Landmines, открытый указатель XM96",
+          "url": "https://defenseammunitioncenter.army.mil/usatces/capdraw/drawings/landmines.html",
+          "accessedAt": "2026-10-05"
+        }
+      ],
+      "create_heading": false
+    },
+    "ordnance-v29-ga-0392": {
+      "rows": [
+        [
+          "Объект открытого указателя Army DAC",
+          "Отдельное изделие; не компонент Spider"
+        ],
+        [
+          "Масса изделия, внешние размеры, масса ВВ",
+          "В открытой строке не опубликованы"
+        ]
+      ],
+      "note": "Проверен открытый указатель. Чертежи перенесены в раздел Army 365 с авторизацией; числовой паспорт не получен. Параметры тары изделию не назначены.",
+      "sources": [
+        {
+          "id": "reference-v181-ordnance-v29-ga-0392-0",
+          "title": "U.S. Army Defense Ammunition Center: Landmines, открытый указатель XM204",
+          "url": "https://defenseammunitioncenter.army.mil/usatces/capdraw/drawings/landmines.html",
+          "accessedAt": "2026-10-05"
+        }
+      ],
+      "create_heading": false
+    },
+    "ref-v10-artillery-xm1113": {
+      "rows": [
+        [
+          "Документированный XM1113",
+          "Заводской лист General Dynamics, редакция 2022.05"
+        ],
+        [
+          "Общий класс основного наполнения XM1113",
+          "Малочувствительное ВВ; конкретная марка не названа"
+        ],
+        [
+          "Масса и внешние размеры XM1113",
+          "В этом заводском листе не опубликованы"
+        ],
+        [
+          "Масса основного ВВ XM1113",
+          "В заводском листе не указана"
+        ]
+      ],
+      "note": "Просмотрен заводской лист, а не только обзор 2017 года. Общее описание insensitive high explosives не заменено конкретной маркой или составом. Редакция 2022.05 не подтверждает серийный статус на 2026 год.",
+      "sources": [
+        {
+          "id": "reference-v181-ref-v10-artillery-xm1113-0",
+          "title": "General Dynamics Ordnance and Tactical Systems: 155 mm XM1113, product brief 2022.05",
+          "url": "https://www.gdots.com/wp-content/uploads/2023/10/155mm-XM1113-202205.pdf",
+          "accessedAt": "2026-10-05"
+        }
+      ],
+      "create_heading": true
+    },
+    "ref-v10-artillery-xm1128": {
+      "rows": [
+        [
+          "Документированный XM1128",
+          "155-мм артиллерийский снаряд, сообщение U.S. Army от 03.01.2020"
+        ],
+        [
+          "Масса и внешние размеры XM1128",
+          "В сообщении о программе разработки не опубликованы"
+        ],
+        [
+          "Основное ВВ XM1128: марка и масса",
+          "В проверенном сообщении не приведены"
+        ]
+      ],
+      "note": "Проверен оригинал Army о программе XM1128. Публикация 2020 года не является текущим заводским паспортом; числа других 155-мм снарядов не подставлены.",
+      "sources": [
+        {
+          "id": "reference-v181-ref-v10-artillery-xm1128-0",
+          "title": "U.S. Army: New Cornerstone OTA boosts XM1128 development and the industrial base, 03.01.2020",
+          "url": "https://www.army.mil/article/231418/new_cornerstone_ota_boosts_xm1128_development_and_the_industrial_base",
+          "accessedAt": "2026-10-05"
+        }
+      ],
+      "create_heading": true
+    },
+    "ordnance-v29-ga-0163": {
+      "rows": [
+        [
+          "Материал корпуса M111 по DEVCOM",
+          "Пластик"
+        ],
+        [
+          "Учебное исполнение в сообщении о M111",
+          "M112; самостоятельное обозначение"
+        ],
+        [
+          "Паспорт массы, размеров и основного ВВ M111",
+          "Числовая масса изделия, размеры, марка и масса ВВ в сообщении не опубликованы"
+        ]
+      ],
+      "note": "Проверено собственное сообщение DEVCOM марта 2026 года. M111 и учебная M112 разграничены; характеристики Mk3A2, M67 и M69 не назначены M111.",
+      "sources": [
+        {
+          "id": "reference-v181-ordnance-v29-ga-0163-0",
+          "title": "U.S. Army DEVCOM Armaments Center: Army approves M111, март 2026",
+          "url": "https://ac.devcom.army.mil/news/army-approves-m111-first-new-lethal-hand-grenade-since-1968/",
+          "accessedAt": "2026-10-05"
+        }
+      ],
+      "create_heading": false
+    },
+    "ordnance-v29-ga-0088": {
+      "rows": [
+        [
+          "Предмет заводского перечня MKE",
+          "Группа 175-мм пушечных боеприпасов без индекса конкретного снаряда"
+        ],
+        [
+          "Числовой паспорт одного 175-мм изделия MKE",
+          "Масса, внешние размеры, марка и масса ВВ в перечне не опубликованы"
+        ]
+      ],
+      "note": "Перечень продукции MKE повторно проверен. Калибр не устанавливает конкретную модель; данные M437 и других внешне близких изделий не назначены всей группе.",
+      "sources": [
+        {
+          "id": "reference-v181-ordnance-v29-ga-0088-0",
+          "title": "MKE: Ammunition Factory, перечень продукции 175 mm gun ammunition",
+          "url": "https://www.mke.gov.tr/Plants/AMMUNITION-FACTORY/6",
+          "accessedAt": "2026-10-05"
+        }
+      ],
+      "create_heading": false
+    },
+    "ordnance-v29-ga-0549": {
+      "rows": [
+        [
+          "Объект справочной карточки IMAS",
+          "СВУ в целом — общая категория, не серийная модель"
+        ],
+        [
+          "Размеры, масса изделия и масса ВВ для категории",
+          "Единого числового значения нет"
+        ]
+      ],
+      "note": "Сверена только общая классификация IMAS 09.31. Отсутствие единого паспорта категории не означает отсутствие опасности и не позволяет определить устройство по внешнему виду.",
+      "sources": [
+        {
+          "id": "reference-v181-ordnance-v29-ga-0549-0",
+          "title": "IMAS 09.31: общие определения и классификация, СВУ в целом",
+          "url": "https://www.mineactionstandards.org/standards/09-31/",
+          "accessedAt": "2026-10-05"
+        }
+      ],
+      "create_heading": false
+    },
+    "ordnance-v29-ga-0550": {
+      "rows": [
+        [
+          "Объект справочной карточки IMAS",
+          "Command-initiated — общая категория, не серийная модель"
+        ],
+        [
+          "Размеры, масса изделия и масса ВВ для категории",
+          "Единого числового значения нет"
+        ]
+      ],
+      "note": "Сверена только общая классификация IMAS 09.31. Отсутствие единого паспорта категории не означает отсутствие опасности и не позволяет определить устройство по внешнему виду.",
+      "sources": [
+        {
+          "id": "reference-v181-ordnance-v29-ga-0550-0",
+          "title": "IMAS 09.31: общие определения и классификация, Command-initiated",
+          "url": "https://www.mineactionstandards.org/standards/09-31/",
+          "accessedAt": "2026-10-05"
+        }
+      ],
+      "create_heading": false
+    },
+    "ordnance-v29-ga-0551": {
+      "rows": [
+        [
+          "Объект справочной карточки IMAS",
+          "Time-initiated — общая категория, не серийная модель"
+        ],
+        [
+          "Размеры, масса изделия и масса ВВ для категории",
+          "Единого числового значения нет"
+        ]
+      ],
+      "note": "Сверена только общая классификация IMAS 09.31. Отсутствие единого паспорта категории не означает отсутствие опасности и не позволяет определить устройство по внешнему виду.",
+      "sources": [
+        {
+          "id": "reference-v181-ordnance-v29-ga-0551-0",
+          "title": "IMAS 09.31: общие определения и классификация, Time-initiated",
+          "url": "https://www.mineactionstandards.org/standards/09-31/",
+          "accessedAt": "2026-10-05"
+        }
+      ],
+      "create_heading": false
+    },
+    "ordnance-v29-ga-0552": {
+      "rows": [
+        [
+          "Объект справочной карточки IMAS",
+          "Victim-operated — общая категория, не серийная модель"
+        ],
+        [
+          "Размеры, масса изделия и масса ВВ для категории",
+          "Единого числового значения нет"
+        ]
+      ],
+      "note": "Сверена только общая классификация IMAS 09.31. Отсутствие единого паспорта категории не означает отсутствие опасности и не позволяет определить устройство по внешнему виду.",
+      "sources": [
+        {
+          "id": "reference-v181-ordnance-v29-ga-0552-0",
+          "title": "IMAS 09.31: общие определения и классификация, Victim-operated",
+          "url": "https://www.mineactionstandards.org/standards/09-31/",
+          "accessedAt": "2026-10-05"
+        }
+      ],
+      "create_heading": false
+    }
+  },
+  "text_corrections": {},
+  "source_corrections": {},
+  "field_corrections": {}
+}

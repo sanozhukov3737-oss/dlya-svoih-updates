@@ -1,0 +1,869 @@
+{
+  "ordnance-v29-ga-0101": {
+    "rows": [
+      [
+        "Масса изделия",
+        "450 г"
+      ],
+      [
+        "Высота со взрывателем",
+        "93 мм"
+      ],
+      [
+        "Диаметр корпуса",
+        "63 мм"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0101-specs-v147",
+      "title": "Nammo — Ammunition Handbook, Edition 7 (August 2024), стр. 145",
+      "url": "https://www.nammo.com/wp-content/uploads/2024/09/Nammo-Handbook-2024_08_Web.cleaned.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v29-ga-0102": {
+    "rows": [
+      [
+        "Масса изделия",
+        "350 г (со взрывателем)"
+      ],
+      [
+        "Высота со взрывателем",
+        "135 мм"
+      ],
+      [
+        "Диаметр корпуса",
+        "53 мм"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0102-specs-v147",
+      "title": "Nammo — Ammunition Handbook, Edition 7 (August 2024), стр. 142",
+      "url": "https://www.nammo.com/wp-content/uploads/2024/09/Nammo-Handbook-2024_08_Web.cleaned.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v29-ga-0103": {
+    "rows": [
+      [
+        "Масса изделия",
+        "150 г"
+      ],
+      [
+        "Высота со взрывателем",
+        "85 мм"
+      ],
+      [
+        "Диаметр корпуса",
+        "53 мм"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0103-specs-v147",
+      "title": "Nammo — Ammunition Handbook, Edition 7 (August 2024), стр. 141",
+      "url": "https://www.nammo.com/wp-content/uploads/2024/09/Nammo-Handbook-2024_08_Web.cleaned.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v29-ga-0106": {
+    "rows": [
+      [
+        "Масса одного модуля со взрывателем",
+        "230 г"
+      ],
+      [
+        "Масса одного модуля без взрывателя",
+        "190 г"
+      ],
+      [
+        "Высота одного модуля со взрывателем",
+        "85 мм"
+      ],
+      [
+        "Диаметр корпуса модуля",
+        "53 мм"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0106-specs-v147",
+      "title": "Nammo — Ammunition Handbook, Edition 7 (August 2024), стр. 140",
+      "url": "https://www.nammo.com/wp-content/uploads/2024/09/Nammo-Handbook-2024_08_Web.cleaned.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Данные относятся к одному модулю SOHG. Это не масса многомодульного изделия."
+  },
+  "ordnance-v29-ga-0107": {
+    "rows": [
+      [
+        "Масса изделия",
+        "600 г"
+      ],
+      [
+        "Длина изделия",
+        "155 мм"
+      ],
+      [
+        "Диаметр изделия",
+        "66 мм"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0107-specs-v147",
+      "title": "Nammo — Ammunition Handbook, Edition 7 (August 2024), стр. 148",
+      "url": "https://www.nammo.com/wp-content/uploads/2024/09/Nammo-Handbook-2024_08_Web.cleaned.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v29-ga-0108": {
+    "rows": [
+      [
+        "Масса изделия",
+        "410 г"
+      ],
+      [
+        "Длина изделия",
+        "279 мм"
+      ],
+      [
+        "Диаметр головной части",
+        "40 мм"
+      ],
+      [
+        "Диаметр стабилизатора",
+        "60 мм"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0108-specs-v147",
+      "title": "Dezamet — каталог производителя, стр. 2, таблица винтовочных гранат",
+      "url": "https://dezamet.com.pl/static/upload/store/ONASPLIKIDOPOBRANIA/katalog_PL_www_2.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v29-ga-0109": {
+    "rows": [
+      [
+        "Масса изделия",
+        "455 г"
+      ],
+      [
+        "Длина изделия",
+        "226 мм"
+      ],
+      [
+        "Диаметр головной части",
+        "52 мм"
+      ],
+      [
+        "Диаметр стабилизатора",
+        "60 мм"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0109-specs-v147",
+      "title": "Dezamet — каталог производителя, стр. 2, таблица винтовочных гранат",
+      "url": "https://dezamet.com.pl/static/upload/store/ONASPLIKIDOPOBRANIA/katalog_PL_www_2.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v29-ga-0110": {
+    "rows": [
+      [
+        "Масса изделия",
+        "450 г"
+      ],
+      [
+        "Длина изделия",
+        "314 мм"
+      ],
+      [
+        "Диаметр головной части",
+        "43 мм"
+      ],
+      [
+        "Диаметр стабилизатора",
+        "60 мм"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0110-specs-v147",
+      "title": "Dezamet — каталог производителя, стр. 2, таблица винтовочных гранат",
+      "url": "https://dezamet.com.pl/static/upload/store/ONASPLIKIDOPOBRANIA/katalog_PL_www_2.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v29-ga-0111": {
+    "rows": [
+      [
+        "Масса изделия",
+        "456 г"
+      ],
+      [
+        "Длина изделия",
+        "228 мм"
+      ],
+      [
+        "Диаметр головной части",
+        "52 мм"
+      ],
+      [
+        "Диаметр стабилизатора",
+        "60 мм"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0111-specs-v147",
+      "title": "Dezamet — каталог производителя, стр. 2, таблица винтовочных гранат",
+      "url": "https://dezamet.com.pl/static/upload/store/ONASPLIKIDOPOBRANIA/katalog_PL_www_2.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v29-ga-0112": {
+    "rows": [
+      [
+        "Масса с транспортной пробкой",
+        "440 г"
+      ],
+      [
+        "Высота с транспортной пробкой",
+        "не более 73,3 мм"
+      ],
+      [
+        "Диаметр корпуса",
+        "не более 57 мм"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0112-specs-v147",
+      "title": "Dezamet — каталог производителя, стр. 2, таблица ручных гранат",
+      "url": "https://dezamet.com.pl/static/upload/store/ONASPLIKIDOPOBRANIA/katalog_PL_www_2.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "В каталоге указана комплектация с транспортной пробкой. Масса изделия со взрывателем здесь не подтверждена."
+  },
+  "ordnance-v29-ga-0113": {
+    "rows": [
+      [
+        "Масса с транспортной пробкой",
+        "325 ± 5 г"
+      ],
+      [
+        "Высота с транспортной пробкой",
+        "не более 98 мм"
+      ],
+      [
+        "Диаметр корпуса",
+        "не более 59 мм"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0113-specs-v147",
+      "title": "Dezamet — каталог производителя, стр. 2, таблица ручных гранат",
+      "url": "https://dezamet.com.pl/static/upload/store/ONASPLIKIDOPOBRANIA/katalog_PL_www_2.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "В каталоге указана комплектация с транспортной пробкой. Масса изделия со взрывателем здесь не подтверждена."
+  },
+  "ref-v10-artillery-lu215": {
+    "rows": [
+      [
+        "Модификация по источнику",
+        "LU215 BB"
+      ],
+      [
+        "Масса снаряда",
+        "43,7 кг"
+      ],
+      [
+        "Длина изделия по источнику",
+        "898 мм"
+      ]
+    ],
+    "source": {
+      "id": "ref-v10-artillery-lu215-specs-v147",
+      "title": "KNDS — 155mm ammunition, раздел LU215 BB",
+      "url": "https://knds.com/en/products/ammunition/155mm-ammunition",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Значения относятся к указанному варианту BB. Масса снаряда не включает отдельно заряжаемый метательный заряд."
+  },
+  "ref-v10-artillery-lu216": {
+    "rows": [
+      [
+        "Модификация по источнику",
+        "LU216 BB"
+      ],
+      [
+        "Масса снаряда",
+        "43,7 кг"
+      ],
+      [
+        "Длина изделия по источнику",
+        "898 мм"
+      ]
+    ],
+    "source": {
+      "id": "ref-v10-artillery-lu216-specs-v147",
+      "title": "KNDS — 155mm ammunition, раздел LU216 BB",
+      "url": "https://knds.com/en/products/ammunition/155mm-ammunition",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Значения относятся к указанному варианту BB. Масса снаряда не включает отдельно заряжаемый метательный заряд."
+  },
+  "ref-v10-artillery-lu217": {
+    "rows": [
+      [
+        "Модификация по источнику",
+        "LU217 BB"
+      ],
+      [
+        "Масса снаряда",
+        "44,6 кг"
+      ],
+      [
+        "Длина изделия по источнику",
+        "898 мм"
+      ]
+    ],
+    "source": {
+      "id": "ref-v10-artillery-lu217-specs-v147",
+      "title": "KNDS — 155mm ammunition, раздел LU217 BB",
+      "url": "https://knds.com/en/products/ammunition/155mm-ammunition",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Значения относятся к указанному варианту BB. Масса снаряда не включает отдельно заряжаемый метательный заряд."
+  },
+  "ref-v10-artillery-er-g3-105": {
+    "rows": [
+      [
+        "Модификации по источнику",
+        "105MM HE BB ER G3; 105MM SMK BB ER G3"
+      ],
+      [
+        "Масса полного выстрела",
+        "18 кг"
+      ],
+      [
+        "Масса снаряда",
+        "13,1 кг"
+      ],
+      [
+        "Длина полного выстрела",
+        "850 мм"
+      ]
+    ],
+    "source": {
+      "id": "ref-v10-artillery-er-g3-105-specs-v147",
+      "title": "KNDS — 105 mm ER G3, таблицы HE BB и SMK BB",
+      "url": "https://knds.com/en/products/ammunition/105-mm-er-g3",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Эти значения опубликованы для двух указанных модификаций. Они не распространяются автоматически на всё семейство ER G3."
+  },
+  "ordnance-v29-ga-0045": {
+    "rows": [
+      [
+        "Масса полного выстрела",
+        "39,92 lb (≈ 18,107 кг)"
+      ],
+      [
+        "Длина полного выстрела",
+        "28,6 in (≈ 726,4 мм)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0045-specs-v147",
+      "title": "US Army — TM 43-0001-28, табличные характеристики, стр. 3-73–3-74",
+      "url": "https://archive.org/download/milmanual-tm-43-0001-28-army-ammunition-data-sheets/tm_43-0001-28_army_ammunition_data_sheets.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Масса и длина всего выстрела; значения не относятся к упаковке или наполнению. Метрический пересчёт приблизительный."
+  },
+  "ordnance-v29-ga-0057": {
+    "rows": [
+      [
+        "Масса полного выстрела",
+        "42,92 lb (≈ 19,468 кг)"
+      ],
+      [
+        "Длина полного выстрела",
+        "31,1 in (≈ 789,9 мм)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0057-specs-v147",
+      "title": "US Army — TM 43-0001-28, табличные характеристики, стр. 3-15–3-16",
+      "url": "https://archive.org/download/milmanual-tm-43-0001-28-army-ammunition-data-sheets/tm_43-0001-28_army_ammunition_data_sheets.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Масса и длина всего выстрела; значения не относятся к упаковке или наполнению. Метрический пересчёт приблизительный."
+  },
+  "ordnance-v29-ga-0114": {
+    "rows": [
+      [
+        "Масса полного выстрела",
+        "0,15 lb (≈ 0,068 кг)"
+      ],
+      [
+        "Длина полного выстрела",
+        "3,95 in (≈ 100,3 мм)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0114-specs-v147",
+      "title": "US Army — TM 43-0001-28, табличные характеристики, стр. 6-59–6-60",
+      "url": "https://archive.org/download/milmanual-tm-43-0001-28-army-ammunition-data-sheets/tm_43-0001-28_army_ammunition_data_sheets.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Масса и длина всего выстрела; значения не относятся к упаковке или наполнению. Метрический пересчёт приблизительный."
+  },
+  "ordnance-v29-ga-0115": {
+    "rows": [
+      [
+        "Масса полного выстрела",
+        "0,47 lb (≈ 0,213 кг)"
+      ],
+      [
+        "Длина полного выстрела",
+        "4,8 in (≈ 121,9 мм)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0115-specs-v147",
+      "title": "US Army — TM 43-0001-28, табличные характеристики, стр. 6-61",
+      "url": "https://archive.org/download/milmanual-tm-43-0001-28-army-ammunition-data-sheets/tm_43-0001-28_army_ammunition_data_sheets.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Масса и длина всего выстрела; значения не относятся к упаковке или наполнению. Метрический пересчёт приблизительный."
+  },
+  "ordnance-v29-ga-0126": {
+    "rows": [
+      [
+        "Масса полного выстрела",
+        "0,5 lb (≈ 0,227 кг)"
+      ],
+      [
+        "Длина полного выстрела",
+        "3,894 in (≈ 98,9 мм)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0126-specs-v147",
+      "title": "US Army — TM 43-0001-28, табличные характеристики, стр. 6-23–6-24",
+      "url": "https://archive.org/download/milmanual-tm-43-0001-28-army-ammunition-data-sheets/tm_43-0001-28_army_ammunition_data_sheets.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Масса и длина всего выстрела; значения не относятся к упаковке или наполнению. Метрический пересчёт приблизительный."
+  },
+  "ordnance-v29-ga-0132": {
+    "rows": [
+      [
+        "Масса полного выстрела",
+        "0,49 lb (≈ 0,222 кг)"
+      ],
+      [
+        "Длина полного выстрела",
+        "5,272 in (≈ 133,9 мм)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0132-specs-v147",
+      "title": "US Army — TM 43-0001-28, табличные характеристики, стр. 6-35–6-36",
+      "url": "https://archive.org/download/milmanual-tm-43-0001-28-army-ammunition-data-sheets/tm_43-0001-28_army_ammunition_data_sheets.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Масса и длина всего выстрела; значения не относятся к упаковке или наполнению. Метрический пересчёт приблизительный."
+  },
+  "ordnance-v29-ga-0134": {
+    "rows": [
+      [
+        "Масса полного выстрела",
+        "0,49 lb (≈ 0,222 кг)"
+      ],
+      [
+        "Длина полного выстрела",
+        "5,272 in (≈ 133,9 мм)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0134-specs-v147",
+      "title": "US Army — TM 43-0001-28, табличные характеристики, стр. 6-35–6-36",
+      "url": "https://archive.org/download/milmanual-tm-43-0001-28-army-ammunition-data-sheets/tm_43-0001-28_army_ammunition_data_sheets.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Масса и длина всего выстрела; значения не относятся к упаковке или наполнению. Метрический пересчёт приблизительный."
+  },
+  "ordnance-v29-ga-0135": {
+    "rows": [
+      [
+        "Масса полного выстрела",
+        "0,49 lb (≈ 0,222 кг)"
+      ],
+      [
+        "Длина полного выстрела",
+        "5,272 in (≈ 133,9 мм)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0135-specs-v147",
+      "title": "US Army — TM 43-0001-28, табличные характеристики, стр. 6-35–6-36",
+      "url": "https://archive.org/download/milmanual-tm-43-0001-28-army-ammunition-data-sheets/tm_43-0001-28_army_ammunition_data_sheets.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Масса и длина всего выстрела; значения не относятся к упаковке или наполнению. Метрический пересчёт приблизительный."
+  },
+  "ordnance-v29-ga-0137": {
+    "rows": [
+      [
+        "Масса полного выстрела",
+        "0,75 lb (≈ 0,340 кг)"
+      ],
+      [
+        "Длина полного выстрела",
+        "4,415 in (≈ 112,1 мм)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0137-specs-v147",
+      "title": "US Army — TM 43-0001-28, табличные характеристики, стр. 6-41–6-42",
+      "url": "https://archive.org/download/milmanual-tm-43-0001-28-army-ammunition-data-sheets/tm_43-0001-28_army_ammunition_data_sheets.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Масса и длина всего выстрела; значения не относятся к упаковке или наполнению. Метрический пересчёт приблизительный."
+  },
+  "ordnance-v29-ga-0138": {
+    "rows": [
+      [
+        "Масса полного выстрела",
+        "0,48 lb (≈ 0,218 кг)"
+      ],
+      [
+        "Длина полного выстрела",
+        "5,212 in (≈ 132,4 мм)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0138-specs-v147",
+      "title": "US Army — TM 43-0001-28, табличные характеристики, стр. 6-43–6-44",
+      "url": "https://archive.org/download/milmanual-tm-43-0001-28-army-ammunition-data-sheets/tm_43-0001-28_army_ammunition_data_sheets.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Масса и длина всего выстрела; значения не относятся к упаковке или наполнению. Метрический пересчёт приблизительный."
+  },
+  "ordnance-v29-ga-0139": {
+    "rows": [
+      [
+        "Масса полного выстрела",
+        "0,48 lb (≈ 0,218 кг)"
+      ],
+      [
+        "Длина полного выстрела",
+        "5,212 in (≈ 132,4 мм)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0139-specs-v147",
+      "title": "US Army — TM 43-0001-28, табличные характеристики, стр. 6-45–6-46",
+      "url": "https://archive.org/download/milmanual-tm-43-0001-28-army-ammunition-data-sheets/tm_43-0001-28_army_ammunition_data_sheets.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Масса и длина всего выстрела; значения не относятся к упаковке или наполнению. Метрический пересчёт приблизительный."
+  },
+  "ordnance-v29-ga-0140": {
+    "rows": [
+      [
+        "Масса полного выстрела",
+        "0,74 lb (≈ 0,336 кг)"
+      ],
+      [
+        "Длина полного выстрела",
+        "4,415 in (≈ 112,1 мм)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0140-specs-v147",
+      "title": "US Army — TM 43-0001-28, табличные характеристики, стр. 6-47–6-48",
+      "url": "https://archive.org/download/milmanual-tm-43-0001-28-army-ammunition-data-sheets/tm_43-0001-28_army_ammunition_data_sheets.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Масса и длина всего выстрела; значения не относятся к упаковке или наполнению. Метрический пересчёт приблизительный."
+  },
+  "ordnance-v29-ga-0145": {
+    "rows": [
+      [
+        "Масса полного выстрела",
+        "0,76 lb (≈ 0,345 кг)"
+      ],
+      [
+        "Длина полного выстрела",
+        "4,415 in (≈ 112,1 мм)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0145-specs-v147",
+      "title": "US Army — TM 43-0001-28, табличные характеристики, стр. 6-53–6-54",
+      "url": "https://archive.org/download/milmanual-tm-43-0001-28-army-ammunition-data-sheets/tm_43-0001-28_army_ammunition_data_sheets.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Масса и длина всего выстрела; значения не относятся к упаковке или наполнению. Метрический пересчёт приблизительный."
+  },
+  "ordnance-v29-ga-0051": {
+    "rows": [
+      [
+        "Масса снаряда с подъёмной пробкой",
+        "98,49 lb (≈ 44,674 кг); номинальная"
+      ],
+      [
+        "Длина с подъёмной проушиной",
+        "26,93 in (≈ 684,0 мм); не более"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0051-specs-v147",
+      "title": "US Army — TM 43-0001-28, табличные характеристики, стр. 3-89–3-90",
+      "url": "https://archive.org/download/milmanual-tm-43-0001-28-army-ammunition-data-sheets/tm_43-0001-28_army_ammunition_data_sheets.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Масса и размеры снаряда в указанной комплектации; отдельно заряжаемый метательный заряд не включён."
+  },
+  "ordnance-v29-ga-0056": {
+    "rows": [
+      [
+        "Масса снаряда без взрывателя",
+        "92 lb (≈ 41,730 кг); номинальная"
+      ],
+      [
+        "Длина без взрывателя и подъёмной пробки",
+        "23,79 in (≈ 604,3 мм); не более"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0056-specs-v147",
+      "title": "US Army — TM 43-0001-28, табличные характеристики, стр. 3-115–3-116",
+      "url": "https://archive.org/download/milmanual-tm-43-0001-28-army-ammunition-data-sheets/tm_43-0001-28_army_ammunition_data_sheets.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "В руководстве приведена общая таблица серии M485, M485A1 и M485A2. Сохраняются указанные источником условия измерения."
+  },
+  "ordnance-v29-ga-0070": {
+    "rows": [
+      [
+        "Масса снаряда без взрывателя",
+        "92 lb (≈ 41,730 кг); номинальная"
+      ],
+      [
+        "Длина без взрывателя и подъёмной пробки",
+        "23,79 in (≈ 604,3 мм); не более"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0070-specs-v147",
+      "title": "US Army — TM 43-0001-28, табличные характеристики, стр. 3-115–3-116",
+      "url": "https://archive.org/download/milmanual-tm-43-0001-28-army-ammunition-data-sheets/tm_43-0001-28_army_ammunition_data_sheets.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "В руководстве приведена общая таблица серии M485, M485A1 и M485A2. Сохраняются указанные источником условия измерения."
+  },
+  "ordnance-v29-ga-0065": {
+    "rows": [
+      [
+        "Масса снаряда в конфигурации as fired, дым HC",
+        "94,8 lb (≈ 43,001 кг)"
+      ],
+      [
+        "Масса снаряда в конфигурации as fired, цветной дым",
+        "86,23 lb (≈ 39,113 кг)"
+      ],
+      [
+        "Длина с подъёмной пробкой",
+        "26,41 in (≈ 670,8 мм); номинальная"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0065-specs-v147",
+      "title": "US Army — TM 43-0001-28, табличные характеристики, стр. 3-93–3-94",
+      "url": "https://archive.org/download/milmanual-tm-43-0001-28-army-ammunition-data-sheets/tm_43-0001-28_army_ammunition_data_sheets.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Источник различает два варианта дымового наполнения. Эти массы нельзя объединять в одно значение или считать массой упаковки."
+  },
+  "ordnance-v29-ga-0068": {
+    "rows": [
+      [
+        "Масса снаряда M449 (as fired)",
+        "95 lb (≈ 43,091 кг)"
+      ],
+      [
+        "Длина со взрывателем",
+        "27,5 in (≈ 698,5 мм)"
+      ],
+      [
+        "Длина с подъёмной пробкой",
+        "26,9 in (≈ 683,3 мм)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0068-specs-v147",
+      "title": "US Army — TM 43-0001-28, табличные характеристики, стр. 3-109–3-110",
+      "url": "https://archive.org/download/milmanual-tm-43-0001-28-army-ammunition-data-sheets/tm_43-0001-28_army_ammunition_data_sheets.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Данные массы относятся к M449. Для M449A1 источник указывает другое значение; оно не перенесено на M449."
+  },
+  "ordnance-v29-ga-0074": {
+    "rows": [
+      [
+        "Масса снаряда",
+        "138 lb (≈ 62,596 кг)"
+      ],
+      [
+        "Длина снаряда",
+        "54 in (≈ 1371,6 мм)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0074-specs-v147",
+      "title": "US Army — TM 43-0001-28, табличные характеристики, стр. 3-131–3-132",
+      "url": "https://archive.org/download/milmanual-tm-43-0001-28-army-ammunition-data-sheets/tm_43-0001-28_army_ammunition_data_sheets.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Характеристики снаряда M712; масса транспортного контейнера и отдельного метательного заряда не включена."
+  },
+  "ordnance-v29-ga-0081": {
+    "rows": [
+      [
+        "Длина с подъёмной пробкой",
+        "28,13 in (≈ 714,5 мм); не более"
+      ],
+      [
+        "Длина без подъёмной пробки",
+        "23,8 in (≈ 604,5 мм); не более"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0081-specs-v147",
+      "title": "US Army — TM 43-0001-28, табличные характеристики, стр. 3-159–3-160",
+      "url": "https://archive.org/download/milmanual-tm-43-0001-28-army-ammunition-data-sheets/tm_43-0001-28_army_ammunition_data_sheets.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Общая таблица M804/M804A1. Точная масса изделия в выбранном источнике не приведена одним числом; масса упаковки не используется вместо неё."
+  },
+  "ordnance-v29-ga-0082": {
+    "rows": [
+      [
+        "Длина с подъёмной пробкой",
+        "28,13 in (≈ 714,5 мм); не более"
+      ],
+      [
+        "Длина без подъёмной пробки",
+        "23,8 in (≈ 604,5 мм); не более"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0082-specs-v147",
+      "title": "US Army — TM 43-0001-28, табличные характеристики, стр. 3-159–3-160",
+      "url": "https://archive.org/download/milmanual-tm-43-0001-28-army-ammunition-data-sheets/tm_43-0001-28_army_ammunition_data_sheets.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Общая таблица M804/M804A1. Точная масса изделия в выбранном источнике не приведена одним числом; масса упаковки не используется вместо неё."
+  },
+  "ordnance-v29-ga-0083": {
+    "rows": [
+      [
+        "Масса учебного снаряда",
+        "138 lb (≈ 62,596 кг)"
+      ],
+      [
+        "Длина учебного снаряда",
+        "54 in (≈ 1371,6 мм)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0083-specs-v147",
+      "title": "US Army — TM 43-0001-28, табличные характеристики, стр. 3-163–3-164",
+      "url": "https://archive.org/download/milmanual-tm-43-0001-28-army-ammunition-data-sheets/tm_43-0001-28_army_ammunition_data_sheets.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Значения относятся к инертному учебному снаряду M823."
+  },
+  "ordnance-v29-ga-0120": {
+    "rows": [
+      [
+        "Масса полного учебного выстрела",
+        "350 г"
+      ],
+      [
+        "Длина полного учебного выстрела",
+        "4,415 in (≈ 112,1 мм)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0120-specs-v147",
+      "title": "US Army — TM 43-0001-28, табличные характеристики, стр. 6-11",
+      "url": "https://archive.org/download/milmanual-tm-43-0001-28-army-ammunition-data-sheets/tm_43-0001-28_army_ammunition_data_sheets.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v29-ga-0146": {
+    "rows": [
+      [
+        "Масса полного учебного выстрела",
+        "350 г"
+      ],
+      [
+        "Длина полного учебного выстрела",
+        "4,415 in (≈ 112,1 мм)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0146-specs-v147",
+      "title": "US Army — TM 43-0001-28, табличные характеристики, стр. 6-55",
+      "url": "https://archive.org/download/milmanual-tm-43-0001-28-army-ammunition-data-sheets/tm_43-0001-28_army_ammunition_data_sheets.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v29-ga-0147": {
+    "rows": [
+      [
+        "Масса полного учебного выстрела",
+        "350 г"
+      ],
+      [
+        "Длина полного учебного выстрела",
+        "4,42 in (≈ 112,3 мм)"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0147-specs-v147",
+      "title": "US Army — TM 43-0001-28, табличные характеристики, стр. 6-57 (Change 3)",
+      "url": "https://archive.org/download/milmanual-tm-43-0001-28-army-ammunition-data-sheets/tm_43-0001-28_army_ammunition_data_sheets.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": ""
+  },
+  "ordnance-v29-ga-0144": {
+    "rows": [
+      [
+        "Масса полного учебного выстрела",
+        "205 г"
+      ]
+    ],
+    "source": {
+      "id": "ordnance-v29-ga-0144-specs-v147",
+      "title": "US Army — TM 43-0001-28, табличные характеристики, стр. 6-51",
+      "url": "https://archive.org/download/milmanual-tm-43-0001-28-army-ammunition-data-sheets/tm_43-0001-28_army_ammunition_data_sheets.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "У строки длины в таблице источника отсутствует единица измерения. Длина не перенесена как подтверждённое значение."
+  }
+}

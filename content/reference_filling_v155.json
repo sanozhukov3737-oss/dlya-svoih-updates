@@ -1,0 +1,322 @@
+{
+  "ordnance-v29-ga-0049": {
+    "rows": [
+      [
+        "Тип осветительного наполнения",
+        "ИК осветительный пиротехнический состав; марка в каталоге не указана"
+      ],
+      [
+        "Масса осветительного состава",
+        "0,65 lb (≈ 295 г)"
+      ],
+      [
+        "Масса ВВ отдельно от осветительного состава",
+        "В выбранной таблице не указана"
+      ]
+    ],
+    "note": "Payload из каталога 2025 года — осветительный состав, а не масса всего выстрела и не суммарная масса ВВ.",
+    "sources": [
+      {
+        "id": "ordnance-v29-ga-0049-specs-v154",
+        "title": "U.S. Army JPEO A&A — Portfolio Book 2025, M1064, CAS-13; лист PDF 40",
+        "url": "https://jpeoaa.army.mil/Portals/94/Documents/JPEOAAPortfolioBook_2025.pdf",
+        "accessedAt": "2026-10-04"
+      }
+    ]
+  },
+  "ordnance-v29-ga-0050": {
+    "rows": [
+      [
+        "Тип осветительного наполнения",
+        "ИК осветительный пиротехнический состав; марка в каталоге не указана"
+      ],
+      [
+        "Масса осветительного состава",
+        "2,25 lb (≈ 1,02 кг)"
+      ],
+      [
+        "Масса ВВ отдельно от осветительного состава",
+        "В выбранной таблице не указана"
+      ]
+    ],
+    "note": "Осветительный состав указан отдельно; он не назван массой ВВ всего снаряда.",
+    "sources": [
+      {
+        "id": "ordnance-v29-ga-0050-specs-v154",
+        "title": "U.S. Army JPEO A&A — Portfolio Book 2025, M1066, CAS-35; лист PDF 62",
+        "url": "https://jpeoaa.army.mil/Portals/94/Documents/JPEOAAPortfolioBook_2025.pdf",
+        "accessedAt": "2026-10-04"
+      }
+    ]
+  },
+  "ordnance-v29-ga-0053": {
+    "rows": [
+      [
+        "Тип ВВ основного наполнения",
+        "IMX-101, Filler-E или TNT (варианты по каталогу 2025 года)"
+      ],
+      [
+        "Масса ВВ",
+        "В выбранном каталоге не указана"
+      ]
+    ],
+    "note": "Типы наполнения относятся к разным исполнениям M1122, а не к одному совместному составу. Бетонный наполнитель не является ВВ. Масса M795 или транспортная NEWQD не подставлена вместо массы ВВ M1122.",
+    "sources": [
+      {
+        "id": "ordnance-v29-ga-0053-specs-v154",
+        "title": "U.S. Army JPEO A&A — Portfolio Book 2025, M1122, CAS-37; лист PDF 64",
+        "url": "https://jpeoaa.army.mil/Portals/94/Documents/JPEOAAPortfolioBook_2025.pdf",
+        "accessedAt": "2026-10-04"
+      }
+    ]
+  },
+  "ordnance-v29-ga-0054": {
+    "rows": [
+      [
+        "Тип осветительного наполнения",
+        "Осветительный пиротехнический состав ИК; марка не указана"
+      ],
+      [
+        "Масса осветительного состава",
+        "В выбранном каталоге не указана"
+      ],
+      [
+        "Масса ВВ отдельно от осветительного состава",
+        "В выбранном каталоге не указана"
+      ]
+    ],
+    "note": "Масса наполнения соседних осветительных моделей не перенесена. Неизвестное значение не означает отсутствие ВВ или безопасность изделия.",
+    "sources": [
+      {
+        "id": "ordnance-v29-ga-0054-specs-v154",
+        "title": "U.S. Army JPEO A&A — Portfolio Book 2025, M1123, CAS-29; лист PDF 56",
+        "url": "https://jpeoaa.army.mil/Portals/94/Documents/JPEOAAPortfolioBook_2025.pdf",
+        "accessedAt": "2026-10-04"
+      }
+    ]
+  },
+  "ordnance-v29-ga-0055": {
+    "rows": [
+      [
+        "Тип осветительного наполнения",
+        "Осветительный пиротехнический состав видимого света; марка не указана"
+      ],
+      [
+        "Масса осветительного состава",
+        "В выбранном каталоге не указана"
+      ],
+      [
+        "Масса ВВ отдельно от осветительного состава",
+        "В выбранном каталоге не указана"
+      ]
+    ],
+    "note": "Масса наполнения соседних осветительных моделей не перенесена. Неизвестное значение не означает отсутствие ВВ или безопасность изделия.",
+    "sources": [
+      {
+        "id": "ordnance-v29-ga-0055-specs-v154",
+        "title": "U.S. Army JPEO A&A — Portfolio Book 2025, M1124, CAS-30; лист PDF 57",
+        "url": "https://jpeoaa.army.mil/Portals/94/Documents/JPEOAAPortfolioBook_2025.pdf",
+        "accessedAt": "2026-10-04"
+      }
+    ]
+  },
+  "mine-audit-v25-de-topfmine-4531": {
+    "rows": [
+      [
+        "Topfmine A — масса ВВ по TM 9-1985-2 (1953)",
+        "12,5 lb (≈ 5,67 кг)"
+      ],
+      [
+        "Topfmine A — масса основного заряда по TM 5-223C (1952)",
+        "около 13 lb (≈ 5,90 кг)"
+      ],
+      [
+        "Topfmine A — тип ВВ",
+        "В выбранных разделах не указан"
+      ]
+    ],
+    "note": "В двух справочниках масса наполнения приведена по-разному; значения сохранены с источниками без усреднения. Данные только Topfmine A, без переноса на B4531.",
+    "sources": [
+      {
+        "id": "mine-audit-v25-de-topfmine-4531-specs-v153",
+        "title": "US Army — TM 9-1985-2 (1953), TOPF MINE A (A/T), Figure 235; лист PDF 297",
+        "url": "https://www.bulletpicker.com/pdf/TM-9-1985-2.pdf",
+        "accessedAt": "2026-10-04"
+      },
+      {
+        "id": "mine-audit-v25-de-topfmine-4531-comparison-v153",
+        "title": "US Army — TM 5-223C (1952), стр. 101, Topfmine A / To. Mi. A4531 / 4531",
+        "url": "https://bulletpicker.com/pdf/TM-5-223C.pdf",
+        "accessedAt": "2026-10-04"
+      }
+    ]
+  },
+  "ref-v9-vn-mn79": {
+    "rows": [
+      [
+        "Масса взрывчатого содержимого (NEQ по HALO)",
+        "29 г"
+      ],
+      [
+        "Тип ВВ",
+        "В выбранной таблице HALO не указан"
+      ]
+    ],
+    "note": "Общая таблица M14 / MN79. Сохранён показатель NEQ источника; он не заявлен как отдельно измеренная масса основного заряда и не равен тротиловому эквиваленту.",
+    "sources": [
+      {
+        "id": "ref-v9-vn-mn79-specs-v152",
+        "title": "HALO Trust — Land Mines Identification Guide, edited by Itamar Levy (August 2005), стр. 16",
+        "url": "https://www.bulletpicker.com/pdf/HALO-Land-Mines-Identification-Guide.pdf",
+        "accessedAt": "2026-10-04"
+      }
+    ]
+  },
+  "mine-audit-v25-yu-pmr-3": {
+    "rows": [
+      [
+        "Масса взрывчатого содержимого (NEQ по HALO)",
+        "410 г"
+      ],
+      [
+        "Тип ВВ",
+        "В выбранной таблице HALO не указан"
+      ]
+    ],
+    "note": "Отдельная строка PMR-3. Сохранён показатель NEQ источника; он не заявлен как отдельно измеренная масса основного заряда и не равен тротиловому эквиваленту.",
+    "sources": [
+      {
+        "id": "mine-audit-v25-yu-pmr-3-specs-v152",
+        "title": "HALO Trust — Land Mines Identification Guide, edited by Itamar Levy (August 2005), стр. 54",
+        "url": "https://www.bulletpicker.com/pdf/HALO-Land-Mines-Identification-Guide.pdf",
+        "accessedAt": "2026-10-04"
+      }
+    ]
+  },
+  "mine-audit-v25-su-pom-2s": {
+    "rows": [
+      [
+        "Масса взрывчатого содержимого (NEQ по HALO)",
+        "120 г"
+      ],
+      [
+        "Тип ВВ",
+        "В выбранной таблице HALO не указан"
+      ]
+    ],
+    "note": "Таблица POM 2S. Сохранён показатель NEQ источника; он не заявлен как отдельно измеренная масса основного заряда и не равен тротиловому эквиваленту.",
+    "sources": [
+      {
+        "id": "mine-audit-v25-su-pom-2s-specs-v152",
+        "title": "HALO Trust — Land Mines Identification Guide, edited by Itamar Levy (August 2005), стр. 58",
+        "url": "https://www.bulletpicker.com/pdf/HALO-Land-Mines-Identification-Guide.pdf",
+        "accessedAt": "2026-10-04"
+      }
+    ]
+  },
+  "ref-v9-vn-mbv78a1-a2": {
+    "rows": [
+      [
+        "Масса взрывчатого содержимого (NEQ по HALO)",
+        "65 г"
+      ],
+      [
+        "Тип ВВ",
+        "В выбранной таблице HALO не указан"
+      ]
+    ],
+    "note": "Только MBV78A2; без переноса на A1. Сохранён показатель NEQ источника; он не заявлен как отдельно измеренная масса основного заряда и не равен тротиловому эквиваленту.",
+    "sources": [
+      {
+        "id": "ref-v9-vn-mbv78a1-a2-specs-v152",
+        "title": "HALO Trust — Land Mines Identification Guide, edited by Itamar Levy (August 2005), стр. 60",
+        "url": "https://www.bulletpicker.com/pdf/HALO-Land-Mines-Identification-Guide.pdf",
+        "accessedAt": "2026-10-04"
+      }
+    ]
+  },
+  "ref-v8-za-no8-at": {
+    "rows": [
+      [
+        "Масса взрывчатого содержимого (NEQ по HALO)",
+        "7 кг"
+      ],
+      [
+        "Тип ВВ",
+        "В выбранной таблице HALO не указан"
+      ]
+    ],
+    "note": "Южноафриканская No. 8 AT. Сохранён показатель NEQ источника; он не заявлен как отдельно измеренная масса основного заряда и не равен тротиловому эквиваленту.",
+    "sources": [
+      {
+        "id": "ref-v8-za-no8-at-specs-v152",
+        "title": "HALO Trust — Land Mines Identification Guide, edited by Itamar Levy (August 2005), стр. 73",
+        "url": "https://www.bulletpicker.com/pdf/HALO-Land-Mines-Identification-Guide.pdf",
+        "accessedAt": "2026-10-04"
+      }
+    ]
+  },
+  "mine-audit-v25-ru-mdm-1-mod-1": {
+    "rows": [
+      [
+        "Тип ВВ",
+        "В выбранном экспортном каталоге не указан"
+      ],
+      [
+        "Масса ВВ",
+        "В выбранном экспортном каталоге не указана"
+      ]
+    ],
+    "note": "Таблица Rosoboronexport, стр. 79, даёт массу изделия, но не массу и марку ВВ. Тротиловый эквивалент и данные других модификаций не подставлены как масса наполнения.",
+    "sources": [
+      {
+        "id": "mine-audit-v25-ru-mdm-1-mod-1-specs-v153",
+        "title": "Rosoboronexport — Naval Systems export catalogue, стр. 79, архивная копия 2009 года",
+        "url": "https://web.archive.org/web/20090419060403id_/http://www.rusarm.ru/cataloque/navy/navy.pdf",
+        "accessedAt": "2026-10-04"
+      }
+    ]
+  },
+  "mine-audit-v25-ru-mdm-2-mod-1": {
+    "rows": [
+      [
+        "Тип ВВ",
+        "В выбранном экспортном каталоге не указан"
+      ],
+      [
+        "Масса ВВ",
+        "В выбранном экспортном каталоге не указана"
+      ]
+    ],
+    "note": "Таблица Rosoboronexport, стр. 79, даёт массу изделия, но не массу и марку ВВ. Тротиловый эквивалент и данные других модификаций не подставлены как масса наполнения.",
+    "sources": [
+      {
+        "id": "mine-audit-v25-ru-mdm-2-mod-1-specs-v153",
+        "title": "Rosoboronexport — Naval Systems export catalogue, стр. 79, архивная копия 2009 года",
+        "url": "https://web.archive.org/web/20090419060403id_/http://www.rusarm.ru/cataloque/navy/navy.pdf",
+        "accessedAt": "2026-10-04"
+      }
+    ]
+  },
+  "mine-audit-v25-ru-mdm-3-mod-1": {
+    "rows": [
+      [
+        "Тип ВВ",
+        "В выбранном экспортном каталоге не указан"
+      ],
+      [
+        "Масса ВВ",
+        "В выбранном экспортном каталоге не указана"
+      ]
+    ],
+    "note": "Таблица Rosoboronexport, стр. 79, даёт массу изделия, но не массу и марку ВВ. Тротиловый эквивалент и данные других модификаций не подставлены как масса наполнения.",
+    "sources": [
+      {
+        "id": "mine-audit-v25-ru-mdm-3-mod-1-specs-v153",
+        "title": "Rosoboronexport — Naval Systems export catalogue, стр. 79, архивная копия 2009 года",
+        "url": "https://web.archive.org/web/20090419060403id_/http://www.rusarm.ru/cataloque/navy/navy.pdf",
+        "accessedAt": "2026-10-04"
+      }
+    ]
+  }
+}

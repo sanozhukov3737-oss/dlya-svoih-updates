@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Decorative category symbol; not a depiction of a particular model. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android" android:width="80dp" android:height="80dp" android:viewportWidth="80" android:viewportHeight="80">
+    <path android:pathData="M9,43 Q15,38 21,43 Q27,48 33,43 M47,43 Q53,38 59,43 Q65,48 71,43" android:fillColor="#00000000" android:strokeColor="#A7B5AE" android:strokeWidth="3" android:strokeLineCap="round" />
+    <path android:pathData="M40,7 V12 M21,15 L25,19 M59,15 L55,19 M19,30 H25 M55,30 H61" android:fillColor="#00000000" android:strokeColor="#27382E" android:strokeWidth="3" android:strokeLineCap="round" />
+    <path android:pathData="M25,27 A15,15 0 1,0 55,27 A15,15 0 1,0 25,27 Z" android:fillColor="#7D8C5A" android:strokeColor="#27382E" android:strokeWidth="2.4" />
+    <path android:pathData="M31,24 Q33,18 39,18" android:fillColor="#00000000" android:strokeColor="#E9DEBE" android:strokeWidth="3" android:strokeLineCap="round" />
+    <path android:pathData="M40,43 V68 M33,53 H47 M25,58 Q25,68 40,70 Q55,68 55,58 M25,58 L21,63 M25,58 L30,61 M55,58 L50,61 M55,58 L59,63" android:fillColor="#00000000" android:strokeColor="#27382E" android:strokeWidth="3.2" android:strokeLineCap="round" android:strokeLineJoin="round" />
+</vector>

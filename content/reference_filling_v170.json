@@ -1,0 +1,912 @@
+{
+  "filling": {
+    "ordnance-v27-m-6-vzryvatel": {
+      "rows": [
+        [
+          "Сверка наружной таблицы M-6 — GICHD 2025, PDF 236",
+          "168 г; 51×83×40 мм"
+        ]
+      ],
+      "note": "Сверена наружная таблица GICHD. Данные относятся к отдельному компоненту, а не к целому боеприпасу.",
+      "sources": [
+        {
+          "id": "ordnance-v27-m-6-vzryvatel-reference-v170",
+          "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), PDF 236: M-6 — сверка наружных данных",
+          "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+          "accessedAt": "2026-10-04"
+        }
+      ]
+    },
+    "ordnance-v27-m-12-vzryvatel": {
+      "rows": [
+        [
+          "Сверка наружной таблицы M-12 — GICHD 2025, PDF 237",
+          "535 г; 117×40 мм"
+        ]
+      ],
+      "note": "Сверена наружная таблица GICHD. Данные относятся к отдельному компоненту, а не к целому боеприпасу.",
+      "sources": [
+        {
+          "id": "ordnance-v27-m-12-vzryvatel-reference-v170",
+          "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), PDF 237: M-12 — сверка наружных данных",
+          "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+          "accessedAt": "2026-10-04"
+        }
+      ]
+    },
+    "fuze-rgm-2": {
+      "rows": [
+        [
+          "РГМ-2: масса отдельного изделия по GICHD 2025",
+          "438 г"
+        ],
+        [
+          "РГМ-2: наружное размерное поле GICHD 2025",
+          "106 × 40 мм"
+        ]
+      ],
+      "note": "Сверена наружная таблица GICHD. Данные относятся к отдельному компоненту, а не к целому боеприпасу. РГМ-2М остаётся отдельной модификацией; эти значения не назначены всем национальным исполнениям.",
+      "sources": [
+        {
+          "id": "fuze-rgm-2-reference-v170",
+          "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), PDF 238: RGM-2 — сверка наружных данных",
+          "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+          "accessedAt": "2026-10-04"
+        }
+      ],
+      "replacements": [
+        [
+          "Полная масса и внешние размеры исходного РГМ-2: не подтверждены использованным изданием",
+          "Числа для РГМ-2 добавлены по GICHD 2025; отдельные таблицы всех национальных исполнений не подтверждены."
+        ],
+        [
+          "Полная размерная таблица РГМ-2 в использованном разделе отсутствует.",
+          "Полная размерная таблица РГМ-2 в ранее использованном разделе JMU отсутствует; ниже добавлены отдельные поля GICHD 2025."
+        ]
+      ]
+    },
+    "ordnance-v27-gpv-3": {
+      "rows": [
+        [
+          "Сверка наружной таблицы GPV-3 — GICHD 2025, PDF 239",
+          "125×40 мм"
+        ]
+      ],
+      "note": "Сверена наружная таблица GICHD. Данные относятся к отдельному компоненту, а не к целому боеприпасу. Численная полная масса в листе отсутствует; неизвестное значение не заменено нулём.",
+      "sources": [
+        {
+          "id": "ordnance-v27-gpv-3-reference-v170",
+          "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), PDF 239: GPV-3 — сверка наружных данных",
+          "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+          "accessedAt": "2026-10-04"
+        }
+      ]
+    },
+    "fuze-ar-5-signal": {
+      "rows": [
+        [
+          "Сверка наружной таблицы AR-5 — GICHD 2025, PDF 240",
+          "500 г; 130×44 мм"
+        ]
+      ],
+      "note": "Сверена наружная таблица GICHD. Данные относятся к отдельному компоненту, а не к целому боеприпасу.",
+      "sources": [
+        {
+          "id": "fuze-ar-5-signal-reference-v170",
+          "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), PDF 240: AR-5 — сверка наружных данных",
+          "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+          "accessedAt": "2026-10-04"
+        }
+      ]
+    },
+    "ordnance-v27-t-7-vzryvatel": {
+      "rows": [
+        [
+          "Сверка наружной таблицы T-7 — GICHD 2025, PDF 241",
+          "626 г; 157×64 мм"
+        ]
+      ],
+      "note": "Сверена наружная таблица GICHD. Данные относятся к отдельному компоненту, а не к целому боеприпасу.",
+      "sources": [
+        {
+          "id": "ordnance-v27-t-7-vzryvatel-reference-v170",
+          "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), PDF 241: T-7 — сверка наружных данных",
+          "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+          "accessedAt": "2026-10-04"
+        }
+      ]
+    },
+    "ordnance-v27-mrv": {
+      "rows": [
+        [
+          "Атрибуция размерной таблицы МРВ / МРВ-У",
+          "Модификация не установлена: заголовок и основной текст листа различаются"
+        ]
+      ],
+      "note": "У листа заголовок MRV, но текст описывает MRV-U. Таблица 746 г и 195 × 64 мм не подтверждает одинаковые параметры обоих исполнений.",
+      "sources": [
+        {
+          "id": "ordnance-v27-mrv-reference-v170",
+          "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), PDF 242: MRV — сверка наружных данных",
+          "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+          "accessedAt": "2026-10-04"
+        }
+      ],
+      "replacements": [
+        [
+          "| Масса по источнику, г | 746g |",
+          "| Масса по листу GICHD, г — модификация не установлена | 746 |"
+        ],
+        [
+          "| Размеры по источнику, мм | 195x64 |",
+          "| Размеры по листу GICHD, мм — модификация не установлена | 195 × 64 |"
+        ]
+      ]
+    },
+    "ordnance-v27-tm-120-vzryvatel": {
+      "rows": [
+        [
+          "Сверка наружной таблицы TM-120 — GICHD 2025, PDF 243",
+          "694 г; 196×64 мм"
+        ]
+      ],
+      "note": "Сверена наружная таблица GICHD. Данные относятся к отдельному компоненту, а не к целому боеприпасу.",
+      "sources": [
+        {
+          "id": "ordnance-v27-tm-120-vzryvatel-reference-v170",
+          "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), PDF 243: TM-120 — сверка наружных данных",
+          "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+          "accessedAt": "2026-10-04"
+        }
+      ]
+    },
+    "ordnance-v27-atk-mt": {
+      "rows": [
+        [
+          "Сверка наружной таблицы ATK MT — GICHD 2025, PDF 244",
+          "64×86 мм"
+        ]
+      ],
+      "note": "Сверена наружная таблица GICHD. Данные относятся к отдельному компоненту, а не к целому боеприпасу. Численная полная масса в листе отсутствует; неизвестное значение не заменено нулём.",
+      "sources": [
+        {
+          "id": "ordnance-v27-atk-mt-reference-v170",
+          "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), PDF 244: ATK MT — сверка наружных данных",
+          "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+          "accessedAt": "2026-10-04"
+        }
+      ]
+    },
+    "fuze-uzrgm-2": {
+      "rows": [
+        [
+          "Область применения длины 104 мм по GICHD 2025",
+          "Полная длина УЗРГМ-2; не назначена всем исполнениям УЗРГМ"
+        ]
+      ],
+      "note": "Сверена наружная таблица GICHD. Данные относятся к отдельному компоненту, а не к целому боеприпасу.",
+      "sources": [
+        {
+          "id": "fuze-uzrgm-2-reference-v170",
+          "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), PDF 246: UZRGM-2 — сверка наружных данных",
+          "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+          "accessedAt": "2026-10-04"
+        }
+      ],
+      "heading_occurrence": 1
+    },
+    "ordnance-v27-a-670m": {
+      "rows": [
+        [
+          "Сверка наружной таблицы A-670M — GICHD 2025, PDF 247",
+          "49 г; 69×20 мм"
+        ]
+      ],
+      "note": "Сверена наружная таблица GICHD. Данные относятся к отдельному компоненту, а не к целому боеприпасу.",
+      "sources": [
+        {
+          "id": "ordnance-v27-a-670m-reference-v170",
+          "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), PDF 247: A-670M — сверка наружных данных",
+          "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+          "accessedAt": "2026-10-04"
+        }
+      ]
+    },
+    "ordnance-v27-go-2": {
+      "rows": [
+        [
+          "Сверка наружной таблицы GO-2 — GICHD 2025, PDF 250",
+          "204 г; 131×40 мм"
+        ]
+      ],
+      "note": "Сверена наружная таблица GICHD. Данные относятся к отдельному компоненту, а не к целому боеприпасу.",
+      "sources": [
+        {
+          "id": "ordnance-v27-go-2-reference-v170",
+          "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), PDF 250: GO-2 — сверка наружных данных",
+          "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+          "accessedAt": "2026-10-04"
+        }
+      ]
+    },
+    "ordnance-v27-dtm-75": {
+      "rows": [
+        [
+          "Сверка наружной таблицы DTM-75 — GICHD 2025, PDF 251",
+          "580 г; 140×63 мм"
+        ]
+      ],
+      "note": "Сверена наружная таблица GICHD. Данные относятся к отдельному компоненту, а не к целому боеприпасу.",
+      "sources": [
+        {
+          "id": "ordnance-v27-dtm-75-reference-v170",
+          "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), PDF 251: DTM-75 — сверка наружных данных",
+          "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+          "accessedAt": "2026-10-04"
+        }
+      ]
+    },
+    "ordnance-v27-m-5m-vzryvatel": {
+      "rows": [
+        [
+          "Сверка наружной таблицы M-5M — GICHD 2025, PDF 252",
+          "77 г; 68×39 мм"
+        ]
+      ],
+      "note": "Сверена наружная таблица GICHD. Данные относятся к отдельному компоненту, а не к целому боеприпасу.",
+      "sources": [
+        {
+          "id": "ordnance-v27-m-5m-vzryvatel-reference-v170",
+          "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), PDF 252: M-5M — сверка наружных данных",
+          "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+          "accessedAt": "2026-10-04"
+        }
+      ],
+      "replacements": [
+        [
+          "| Масса по источнику, г | 77g |",
+          "| Масса по источнику, г | 77 |"
+        ]
+      ]
+    },
+    "ref-v9-muv": {
+      "rows": [
+        [
+          "МУВ-4: наружное размерное поле GICHD 2025",
+          "117 × 17 мм"
+        ],
+        [
+          "Область применения размеров МУВ-4",
+          "Только МУВ-4; размеры базового МУВ 56 × 13 мм сохранены отдельно"
+        ]
+      ],
+      "note": "Сверена наружная таблица GICHD. Данные относятся к отдельному компоненту, а не к целому боеприпасу. Поле массы МУВ-4 в листе не даёт численного значения; нулевой массой оно не заменено.",
+      "sources": [
+        {
+          "id": "ref-v9-muv-reference-v170",
+          "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), PDF 253: MUV-4 — сверка наружных данных",
+          "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+          "accessedAt": "2026-10-04"
+        }
+      ]
+    },
+    "ordnance-v27-t90-vzryvatel": {
+      "rows": [
+        [
+          "Сверка наружной таблицы T90 — GICHD 2025, PDF 254",
+          "482 г; 108×41 мм"
+        ]
+      ],
+      "note": "Сверена наружная таблица GICHD. Данные относятся к отдельному компоненту, а не к целому боеприпасу. T90 не объединён с V90.",
+      "sources": [
+        {
+          "id": "ordnance-v27-t90-vzryvatel-reference-v170",
+          "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), PDF 254: T90 — сверка наружных данных",
+          "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+          "accessedAt": "2026-10-04"
+        }
+      ]
+    },
+    "ordnance-v27-v-24a": {
+      "rows": [
+        [
+          "Сверка наружной таблицы V-24A — GICHD 2025, PDF 255",
+          "2,650 г; 229×80 мм"
+        ]
+      ],
+      "note": "Сверена наружная таблица GICHD. Данные относятся к отдельному компоненту, а не к целому боеприпасу.",
+      "sources": [
+        {
+          "id": "ordnance-v27-v-24a-reference-v170",
+          "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), PDF 255: V-24A — сверка наружных данных",
+          "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+          "accessedAt": "2026-10-04"
+        }
+      ]
+    },
+    "ordnance-v27-rv-25": {
+      "rows": [
+        [
+          "Сверка наружной таблицы RV-25 — GICHD 2025, PDF 256",
+          "4,820 г; 454×170 мм"
+        ]
+      ],
+      "note": "Сверена наружная таблица GICHD. Данные относятся к отдельному компоненту, а не к целому боеприпасу.",
+      "sources": [
+        {
+          "id": "ordnance-v27-rv-25-reference-v170",
+          "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), PDF 256: RV-25 — сверка наружных данных",
+          "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+          "accessedAt": "2026-10-04"
+        }
+      ]
+    },
+    "ordnance-v27-vp-7m": {
+      "rows": [
+        [
+          "Предел атрибуции наружных размеров VP-7M",
+          "96 × 76 мм — поле справочника; отдельные размерные схемы частей не установлены"
+        ]
+      ],
+      "note": "Источник описывает составной компонент. Поле 96 × 76 мм не объявлено размерами одного непрерывного корпуса или целой гранаты.",
+      "sources": [
+        {
+          "id": "ordnance-v27-vp-7m-reference-v170",
+          "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), PDF 257: VP-7M — сверка наружных данных",
+          "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+          "accessedAt": "2026-10-04"
+        }
+      ],
+      "replacements": [
+        [
+          "| Размеры по источнику, мм | 96×76 |",
+          "| Размерное поле листа GICHD, мм — без атрибуции осей отдельным частям | 96 × 76 |"
+        ]
+      ]
+    },
+    "ordnance-v27-vp-22": {
+      "rows": [
+        [
+          "Предел атрибуции наружных размеров VP-22",
+          "96 × 76 мм — поле справочника; отдельные размерные схемы частей не установлены"
+        ]
+      ],
+      "note": "Источник описывает составной компонент. Поле 96 × 76 мм не объявлено размерами одного непрерывного корпуса или целой гранаты.",
+      "sources": [
+        {
+          "id": "ordnance-v27-vp-22-reference-v170",
+          "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), PDF 258: VP-22 — сверка наружных данных",
+          "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+          "accessedAt": "2026-10-04"
+        }
+      ],
+      "replacements": [
+        [
+          "| Размеры по источнику, мм | 96×76 |",
+          "| Размерное поле листа GICHD, мм — без атрибуции осей отдельным частям | 96 × 76 |"
+        ]
+      ]
+    },
+    "ordnance-v27-v5-k": {
+      "rows": [
+        [
+          "Сверка наружной таблицы V5-K — GICHD 2025, PDF 259",
+          "168 г; 119×40 мм"
+        ]
+      ],
+      "note": "Сверена наружная таблица GICHD. Данные относятся к отдельному компоненту, а не к целому боеприпасу.",
+      "sources": [
+        {
+          "id": "ordnance-v27-v5-k-reference-v170",
+          "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), PDF 259: V5-K — сверка наружных данных",
+          "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+          "accessedAt": "2026-10-04"
+        }
+      ]
+    },
+    "ordnance-v27-ralec-f3": {
+      "rows": [
+        [
+          "Сверка наружной таблицы RALEC F3 — GICHD 2025, PDF 260",
+          "626 г; 151×61 мм"
+        ]
+      ],
+      "note": "Сверена наружная таблица GICHD. Данные относятся к отдельному компоненту, а не к целому боеприпасу.",
+      "sources": [
+        {
+          "id": "ordnance-v27-ralec-f3-reference-v170",
+          "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), PDF 260: RALEC F3 — сверка наружных данных",
+          "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+          "accessedAt": "2026-10-04"
+        }
+      ]
+    },
+    "ordnance-v27-kz-984": {
+      "rows": [
+        [
+          "Сверка наружной таблицы KZ 984 — GICHD 2025, PDF 261",
+          "700 г; 141×60 мм"
+        ]
+      ],
+      "note": "Сверена наружная таблица GICHD. Данные относятся к отдельному компоненту, а не к целому боеприпасу.",
+      "sources": [
+        {
+          "id": "ordnance-v27-kz-984-reference-v170",
+          "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), PDF 261: KZ 984 — сверка наружных данных",
+          "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+          "accessedAt": "2026-10-04"
+        }
+      ]
+    },
+    "ordnance-v27-m557": {
+      "rows": [
+        [
+          "Сверка наружной таблицы M557 — GICHD 2025, PDF 263",
+          "976 г; 151×61 мм"
+        ]
+      ],
+      "note": "Сверена наружная таблица GICHD. Данные относятся к отдельному компоненту, а не к целому боеприпасу. Это проверка числа в справочнике, а не независимое подтверждение заводского допуска. M739 и M572 остаются отдельными моделями.",
+      "sources": [
+        {
+          "id": "ordnance-v27-m557-reference-v170",
+          "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), PDF 263: M557 — сверка наружных данных",
+          "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+          "accessedAt": "2026-10-04"
+        }
+      ]
+    },
+    "fuze-m782-mofa": {
+      "rows": [
+        [
+          "M782: полная масса по таблице армии США",
+          "1,65 lb (≈748 г)"
+        ],
+        [
+          "M782: полная длина по таблице армии США",
+          "5,97 in (≈151,6 мм)"
+        ],
+        [
+          "M782: длина выступающей части по таблице армии США",
+          "2,41 in (≈61,2 мм)"
+        ]
+      ],
+      "note": "Полная и выступающая длина — разные поля; 2,41 in не объявлено диаметром. GICHD даёт 748 г и размерное поле 151 × 61 мм. M782A1 MOFA II — отдельное исполнение.",
+      "sources": [
+        {
+          "id": "fuze-m782-mofa-reference-v170",
+          "title": "U.S. Army — TM 43-0001-28 (1994, изменения до 2003), PDF 684, 685",
+          "url": "https://www.bulletpicker.com/pdf/TM-43-0001-28-1994.pdf",
+          "accessedAt": "2026-10-04"
+        },
+        {
+          "id": "fuze-m782-mofa-reference-v170-gichd",
+          "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), PDF 265: M782 MOFA",
+          "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+          "accessedAt": "2026-10-04"
+        }
+      ],
+      "replacements": [
+        [
+          "Полная масса и внешние размеры: отсутствуют на проверенной странице армии США",
+          "На ранее проверенной странице армии США полной таблицы не было; полная масса и две длины добавлены по TM 43-0001-28."
+        ],
+        [
+          "Каталожная публикация описывает семейство на уровне назначения и особенностей, но не содержит отдельной таблицы внешних размеров и полной массы. Эти поля оставлены неподтверждёнными вместо переноса чисел от M739 или других моделей.",
+          "Ранее использованная каталожная публикация не содержит отдельной таблицы внешних размеров и полной массы. Ниже добавлены данные TM 43-0001-28 именно для M782."
+        ]
+      ]
+    },
+    "ordnance-v29-ga-0026": {
+      "rows": [
+        [
+          "MKM: калибр",
+          "155 мм"
+        ],
+        [
+          "MKM: длина без взрывателя",
+          "816,5–819,7 мм"
+        ],
+        [
+          "MKM: длина со взрывателем",
+          "Не более 905 мм"
+        ],
+        [
+          "MKM: масса снаряда со взрывателем",
+          "40,3 кг"
+        ],
+        [
+          "MKM: основное наполнение в заводской таблице",
+          "TNT (тротил)"
+        ],
+        [
+          "MKM: масса основного наполнения",
+          "10 кг"
+        ],
+        [
+          "MKM: материал ведущего пояска",
+          "Медь"
+        ],
+        [
+          "MKM-DV: калибр",
+          "155 мм"
+        ],
+        [
+          "MKM-DV: длина без взрывателя",
+          "825,5–828,7 мм"
+        ],
+        [
+          "MKM-DV: длина со взрывателем",
+          "Не более 914 мм"
+        ],
+        [
+          "MKM-DV: масса снаряда со взрывателем",
+          "43,55 кг"
+        ],
+        [
+          "MKM-DV: основное наполнение в заводской таблице",
+          "TNT (тротил)"
+        ],
+        [
+          "MKM-DV: масса основного наполнения",
+          "10 кг"
+        ],
+        [
+          "MKM-DV: материал ведущего пояска",
+          "Медь"
+        ],
+        [
+          "M3: калибр",
+          "155 мм"
+        ],
+        [
+          "M3: длина без взрывателя",
+          "828,5–831,7 мм"
+        ],
+        [
+          "M3: длина со взрывателем",
+          "Не более 917 мм"
+        ],
+        [
+          "M3: масса снаряда со взрывателем",
+          "44,0 кг"
+        ],
+        [
+          "M3: основное наполнение в заводской таблице",
+          "TNT (тротил)"
+        ],
+        [
+          "M3: масса основного наполнения",
+          "8,1 кг"
+        ],
+        [
+          "M3: материал ведущего пояска",
+          "Медь"
+        ],
+        [
+          "M3-DV: калибр",
+          "155 мм"
+        ],
+        [
+          "M3-DV: длина без взрывателя",
+          "837,5–840,7 мм"
+        ],
+        [
+          "M3-DV: длина со взрывателем",
+          "Не более 926 мм"
+        ],
+        [
+          "M3-DV: масса снаряда со взрывателем",
+          "47,0 кг"
+        ],
+        [
+          "M3-DV: основное наполнение в заводской таблице",
+          "TNT (тротил)"
+        ],
+        [
+          "M3-DV: масса основного наполнения",
+          "8,1 кг"
+        ],
+        [
+          "M3-DV: материал ведущего пояска",
+          "Медь"
+        ]
+      ],
+      "note": "Четыре модели имеют отдельные таблицы. Масса указана со взрывателем, не с метательным зарядом. TNT и его масса взяты из таблиц, без переноса на альтернативные наполнения. M3 не отождествлён с M03 другого производителя; эти параметры не назначены всему ассортименту ZVS.",
+      "sources": [
+        {
+          "id": "ordnance-v29-ga-0026-reference-v170-mkm",
+          "title": "MSM Group / ZVS — 155 mm HE MKM, заводская таблица",
+          "url": "https://www.msm.sk/en/produkt/155-mm-he-er-bt-mkm/",
+          "accessedAt": "2026-10-04"
+        },
+        {
+          "id": "ordnance-v29-ga-0026-reference-v170-mkm-dv",
+          "title": "MSM Group / ZVS — 155 mm HE MKM-DV, заводская таблица",
+          "url": "https://www.msm.sk/en/produkt/155-mm-he-er-bb-ofd-mkm-dv-modernized/",
+          "accessedAt": "2026-10-04"
+        },
+        {
+          "id": "ordnance-v29-ga-0026-reference-v170-m3",
+          "title": "MSM Group / ZVS — 155 mm HE M3, заводская таблица",
+          "url": "https://www.msm.sk/en/produkt/155-mm-he-er-fb-bt-m3/",
+          "accessedAt": "2026-10-04"
+        },
+        {
+          "id": "ordnance-v29-ga-0026-reference-v170-m3-dv",
+          "title": "MSM Group / ZVS — 155 mm HE M3-DV, заводская таблица",
+          "url": "https://www.msm.sk/en/produkt/155-mm-he-er-fb-bb-m3-dv/",
+          "accessedAt": "2026-10-04"
+        }
+      ]
+    },
+    "atgm-pars-3-lr": {
+      "rows": [
+        [
+          "PARS 3 LR: масса в пусковой трубе по MBDA",
+          "49 кг"
+        ],
+        [
+          "PARS 3 LR: длина в заводском листе",
+          "1600 мм"
+        ],
+        [
+          "PARS 3 LR: калибр в заводском листе",
+          "159 мм"
+        ]
+      ],
+      "note": "Масса 49 кг включает пусковую трубу; это не масса одной извлечённой ракеты и не всего комплекса. Область длины 1600 мм не расширена сверх формулировки листа. Отдельные марка и масса основного наполнения в листе не указаны.",
+      "sources": [
+        {
+          "id": "atgm-pars-3-lr-reference-v170",
+          "title": "MBDA — PARS 3 LR, заводской лист D 2015-01-v.001",
+          "url": "https://www.mbda-systems.com/wp-content/uploads/2015/07/PARS-3.pdf",
+          "accessedAt": "2026-10-04"
+        }
+      ],
+      "replacements": [
+        [
+          "Масса и внешние габариты не опубликованы на проверенной корпоративной странице",
+          "На ранее проверенной корпоративной странице числовой таблицы не было; добавлены отдельные поля заводского листа MBDA."
+        ]
+      ]
+    },
+    "eng-mn-111": {
+      "rows": [
+        [
+          "Заводская сверка MN-111 — BELMA, лист 2",
+          "Масса 3,5 кг; калибр 116 мм; высота 257 мм"
+        ],
+        [
+          "Основное наполнение MN-111 — предел заводского листа",
+          "Точная марка и отдельная масса не опубликованы"
+        ]
+      ],
+      "note": "Подтверждены числа ранее использованного справочника. Первичный лист BELMA доступен в зеркальной копии; это не сведения автора форума. Размер 116 мм назван calibre, без дополнительного утверждения о конкретной наружной детали. MN-121 и MN-123 имеют другие индексы.",
+      "sources": [
+        {
+          "id": "eng-mn-111-reference-v170",
+          "title": "BELMA — MN-111, заводской двухстраничный лист, PDF 2 (зеркальная копия)",
+          "url": "https://cdck-file-uploads-us1.s3.dualstack.us-west-2.amazonaws.com/flex016/uploads/cartridgecollectors/original/3X/d/1/d1dacc646aac7b95ae7a469eb0c66529f0d32a76.pdf",
+          "accessedAt": "2026-10-04"
+        }
+      ]
+    },
+    "ordnance-v29-ga-0195": {
+      "rows": [
+        [
+          "PRACT 120: статус подтверждения массы и длины",
+          "Значения до 16 кг и до 674 мм требуют отдельного заводского паспорта"
+        ],
+        [
+          "Раздельные обозначения в перечне Arsenal",
+          "PRACT 120 и PRACT 120TM"
+        ]
+      ],
+      "note": "Прежняя ссылка ошибочно вела на 23 × 152 мм RAPIT. Она заменена официальным перечнем продукции, который подтверждает названия, но не числовую таблицу. Существующие пределы массы и длины отмечены как неподтверждённые, а не выданы за параметры другого изделия.",
+      "sources": [
+        {
+          "id": "ordnance-v29-ga-0195-reference-v170-scope",
+          "title": "Arsenal JSCo — Company: перечень продукции, PRACT 120 и PRACT 120TM",
+          "url": "https://www.arsenal-bg.com/index.php/company",
+          "accessedAt": "2026-10-04"
+        }
+      ],
+      "replacements": [
+        [
+          "| Масса изделия | до 16 кг |",
+          "| Масса изделия — ранее внесённое значение, не подтверждено | до 16 кг |"
+        ],
+        [
+          "| Длина изделия | до 674 мм |",
+          "| Длина изделия — ранее внесённое значение, не подтверждено | до 674 мм |"
+        ],
+        [
+          "Arsenal JSCo, 120 mm PRACT 120, страница изделия.",
+          "Arsenal JSCo: наличие PRACT 120 в официальном перечне продукции. Числовой паспорт этой модели не подтверждён проверенной ссылкой."
+        ],
+        [
+          "Чугунный корпус с инертным наполнением, головной учебный взрыватель и хвостовой стабилизатор.",
+          "Ранее внесённое описание: «Чугунный корпус с инертным наполнением, головной учебный взрыватель и хвостовой стабилизатор». Это описание требует отдельного паспорта PRACT 120; проверенный перечень Arsenal состав изделия не подтверждает."
+        ]
+      ]
+    },
+    "fuze-m739a1": {
+      "rows": [
+        [
+          "M739 / M739A1: масса отдельного изделия по общей таблице армии США",
+          "1,5 lb (≈680 г)"
+        ],
+        [
+          "M739 / M739A1: полная длина по общей таблице армии США",
+          "5,97 in (≈151,6 мм)"
+        ],
+        [
+          "M739 / M739A1: выступающая длина по общей таблице армии США",
+          "3,76 in (≈95,5 мм)"
+        ]
+      ],
+      "note": "Руководство объединяет M739 и M739A1 в общей наружной таблице. Числа не объявлены отдельным заводским допуском каждого исполнения. Значение 976 г GICHD для M739 не перенесено на M739A1; полная и выступающая длина сохранены раздельно.",
+      "sources": [
+        {
+          "id": "fuze-m739a1-reference-v170",
+          "title": "U.S. Army — TM 43-0001-28 (1994, изменения до 2003), PDF 730, 731",
+          "url": "https://www.bulletpicker.com/pdf/TM-43-0001-28-1994.pdf",
+          "accessedAt": "2026-10-04"
+        }
+      ],
+      "replacements": [
+        [
+          "Масса и полные внешние габариты в предметном разделе не приведены",
+          "В ранее использованном предметном разделе изготовителя числовой таблицы не было; ниже добавлена общая наружная таблица M739 / M739A1 армии США."
+        ]
+      ]
+    },
+    "ordnance-v29-ga-0064": {
+      "rows": [
+        [
+          "Дымовые M110 / M110E1: масса с подъёмной пробкой",
+          "98,49 lb номинально (≈44,67 кг)"
+        ],
+        [
+          "Дымовые M110 / M110E1: длина с подъёмной пробкой",
+          "Не более 26,78 in (≈680,2 мм)"
+        ],
+        [
+          "Дымовые M110 / M110E1: материал корпуса",
+          "Сталь"
+        ]
+      ],
+      "note": "Поля относятся к общей таблице дымовых M110 / M110E1. Они не перенесены на химический M110 или отдельные M110A1 / M110A2. Масса с подъёмной пробкой не названа массой с установленным взрывателем.",
+      "sources": [
+        {
+          "id": "ordnance-v29-ga-0064-reference-v170",
+          "title": "U.S. Army — TM 43-0001-28 (1994, изменения до 2003), PDF 296, 297",
+          "url": "https://www.bulletpicker.com/pdf/TM-43-0001-28-1994.pdf",
+          "accessedAt": "2026-10-04"
+        }
+      ]
+    },
+    "ordnance-v29-ga-0067": {
+      "rows": [
+        [
+          "M121A1: масса снаряда по исходной таблице",
+          "98,9 lb (≈44,86 кг)"
+        ],
+        [
+          "M121A1: длина с подъёмной пробкой",
+          "Не более 26,93 in (≈684,0 мм)"
+        ],
+        [
+          "M121A1: материал корпуса",
+          "Сталь"
+        ]
+      ],
+      "note": "Приведены только наружные поля исторического изделия. Количества токсичного наполнения не перенесены. Разные комплектации и весовые зоны источника не объявлены универсальной точной массой любого экземпляра.",
+      "sources": [
+        {
+          "id": "ordnance-v29-ga-0067-reference-v170",
+          "title": "U.S. Army — TM 43-0001-28 (1994, изменения до 2003), PDF 316, 317",
+          "url": "https://www.bulletpicker.com/pdf/TM-43-0001-28-1994.pdf",
+          "accessedAt": "2026-10-04"
+        }
+      ]
+    },
+    "ordnance-v29-ga-0224": {
+      "rows": [
+        [
+          "M2 / M2A1, газовое исполнение: масса полного изделия",
+          "24,67 lb (≈11,19 кг)"
+        ],
+        [
+          "M2 / M2A1, дымовое исполнение: масса полного изделия",
+          "24,91 lb (≈11,30 кг)"
+        ],
+        [
+          "M2 / M2A1: длина в обеих исходных таблицах",
+          "21,01 in (≈533,7 мм)"
+        ],
+        [
+          "M2 / M2A1: материал корпуса",
+          "Сталь"
+        ]
+      ],
+      "note": "Руководство объединяет M2 и M2A1, но разделяет газовую и дымовую таблицы. Это наружные справочные поля, без количества наполнения. Их нельзя назначать всем исполнениям по одному индексу M2 или M2A1.",
+      "sources": [
+        {
+          "id": "ordnance-v29-ga-0224-reference-v170",
+          "title": "U.S. Army — TM 43-0001-28 (1994, изменения до 2003), PDF 494, 495, 496, 497",
+          "url": "https://www.bulletpicker.com/pdf/TM-43-0001-28-1994.pdf",
+          "accessedAt": "2026-10-04"
+        }
+      ]
+    },
+    "ordnance-v29-ga-0225": {
+      "rows": [
+        [
+          "M2 / M2A1, газовое исполнение: масса полного изделия",
+          "24,67 lb (≈11,19 кг)"
+        ],
+        [
+          "M2 / M2A1, дымовое исполнение: масса полного изделия",
+          "24,91 lb (≈11,30 кг)"
+        ],
+        [
+          "M2 / M2A1: длина в обеих исходных таблицах",
+          "21,01 in (≈533,7 мм)"
+        ],
+        [
+          "M2 / M2A1: материал корпуса",
+          "Сталь"
+        ]
+      ],
+      "note": "Руководство объединяет M2 и M2A1, но разделяет газовую и дымовую таблицы. Это наружные справочные поля, без количества наполнения. Их нельзя назначать всем исполнениям по одному индексу M2 или M2A1.",
+      "sources": [
+        {
+          "id": "ordnance-v29-ga-0225-reference-v170",
+          "title": "U.S. Army — TM 43-0001-28 (1994, изменения до 2003), PDF 494, 495, 496, 497",
+          "url": "https://www.bulletpicker.com/pdf/TM-43-0001-28-1994.pdf",
+          "accessedAt": "2026-10-04"
+        }
+      ]
+    },
+    "ordnance-v29-ga-0237": {
+      "rows": [
+        [
+          "M630: сверка массы полного изделия по армии США",
+          "27,07 lb (≈12,28 кг)"
+        ],
+        [
+          "M630: сверка полной длины по армии США",
+          "25,698 in (≈652,7 мм)"
+        ]
+      ],
+      "note": "Ранее внесённые округлённые наружные числа подтверждены исходной таблицей. Приведена масса полного изделия, без отдельного количества раздражающего вещества.",
+      "sources": [
+        {
+          "id": "ordnance-v29-ga-0237-reference-v170",
+          "title": "U.S. Army — TM 43-0001-28 (1994, изменения до 2003), PDF 512, 513",
+          "url": "https://www.bulletpicker.com/pdf/TM-43-0001-28-1994.pdf",
+          "accessedAt": "2026-10-04"
+        }
+      ],
+      "replacements": [
+        [
+          "| Тип | С раздражающим веществом cs |",
+          "| Тип | С раздражающим веществом CS |"
+        ]
+      ]
+    }
+  },
+  "text_corrections": {},
+  "source_corrections": {
+    "ordnance-v29-ga-0195": [
+      {
+        "id": "ordnance-v29-ga-0195-source-s16",
+        "old_title": "Arsenal JSCo — 120 mm PRACT 120",
+        "new_title": "Arsenal JSCo — Company: перечень продукции, PRACT 120 и PRACT 120TM",
+        "old_url": "https://www.arsenal-bg.com/c/23x152-mm-rounds-for-air-defence-systems-ads-ads-n-zu-23-2-zu-23-2f-and-zsu-23-4-135/rapit-capiapi-tap-t-190",
+        "new_url": "https://www.arsenal-bg.com/index.php/company"
+      }
+    ]
+  }
+}
