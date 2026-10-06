@@ -64,7 +64,10 @@ jobs:
           sys.path.insert(0, 'tools')
           from build_app_feed import apk_metadata, write_app_feed
           apk = Path('app/build/outputs/apk/debug/app-debug.apk')
-          metadata = apk_metadata(apk)
+          # Use the exact Build Tools version installed above, not a newer runner tool.
+          signer = str(Path(os.environ['ANDROID_HOME']) / 'build-tools/36.0.0/apksigner')
+          analyzer = str(Path(os.environ['ANDROID_HOME']) / 'cmdline-tools/latest/bin/apkanalyzer')
+          metadata = apk_metadata(apk, analyzer=analyzer, signer=signer)
           tag = os.environ.get('RELEASE_TAG') or 'app-' + metadata['versionName']
           if not re.fullmatch(r'app-[a-zA-Z0-9._-]+', tag):
               raise SystemExit('Use a unique tag beginning with app-, for example app-0.3.114')
@@ -84,7 +87,7 @@ jobs:
           changes = os.environ['RELEASE_CHANGES']
           write_app_feed(target, previous,
               'https://github.com/sanozhukov3737-oss/dlya-svoih-updates/releases/download/' + tag + '/' + name,
-              base / 'latest.json', changes)
+              base / 'latest.json', changes, analyzer=analyzer, signer=signer)
           (base / 'tag.txt').write_text(tag, encoding='utf-8')
           (base / 'notes.txt').write_text(changes, encoding='utf-8')
           PY
