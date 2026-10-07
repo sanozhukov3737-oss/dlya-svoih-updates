@@ -1,0 +1,66 @@
+{
+  "ref-v10-imp": [
+    {
+      "old": "Не подтверждена",
+      "new": "Великобритания",
+      "url": "https://www.academia.edu/7464598/British_Landmines",
+      "reason": "Own Hunting Engineering Infantry Mine Project identified in original1996 UK WorkingGroup/MAG report, including directcompany correspondence."
+    }
+  ],
+  "eng-pdf-v7-112": [
+    {
+      "old": "Украина (происхождение предположительное)",
+      "new": "Украина",
+      "url": "https://metis.fenixinsight.com/munition/mine/hfm0050",
+      "reason": "Independent own expert record confirms Ukrainian origin; prior tentative wording archived."
+    }
+  ],
+  "eng-pdf-v7-118": [
+    {
+      "old": "Украина (происхождение предположительное)",
+      "new": "Украина",
+      "url": "https://metis.fenixinsight.com/munition/mine/tm-2025",
+      "reason": "Independent own expert record confirms Ukrainian origin; prior tentative wording archived."
+    }
+  ],
+  "eng-pdf-v7-119": [
+    {
+      "old": "Украина (происхождение предположительное)",
+      "new": "Украина",
+      "url": "https://metis.fenixinsight.com/munition/mine/tm-124",
+      "reason": "Independent own expert record confirms Ukrainian origin; prior tentative wording archived."
+    }
+  ],
+  "ref-v10-artillery-of45": [
+    {
+      "old": "Россия (страна происхождения по GICHD)",
+      "new": "Россия",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "reason": "Remove source commentary from reader country heading; preserve country itself."
+    }
+  ],
+  "ref-v10-artillery-of43": [
+    {
+      "old": "Россия (страна происхождения по GICHD)",
+      "new": "Россия",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "reason": "Remove source commentary from reader country heading; preserve country itself."
+    }
+  ],
+  "ref-v10-artillery-s463": [
+    {
+      "old": "Россия (страна происхождения по GICHD)",
+      "new": "Россия",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "reason": "Remove source commentary from reader country heading; preserve country itself."
+    }
+  ],
+  "ref-v10-artillery-bp540": [
+    {
+      "old": "Россия (страна происхождения по GICHD)",
+      "new": "Россия",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "reason": "Remove source commentary from reader country heading; preserve country itself."
+    }
+  ]
+}
