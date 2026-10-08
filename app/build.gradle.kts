@@ -23,8 +23,8 @@ android {
         applicationId = "ru.dlyasvoih.app"
         minSdk = 26
         targetSdk = 36
-        versionCode = 126
-        versionName = "0.3.122"
+        versionCode = 127
+        versionName = "0.3.123"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -61,11 +61,16 @@ android {
 
     buildTypes {
         release {
+            isDebuggable = false
             isMinifyEnabled = true
             isShrinkResources = true
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
             if (keystorePropertiesFile.isFile) {
                 signingConfig = signingConfigs.getByName("release")
+            } else if (providers.gradleProperty("ciSigningKeystore").isPresent) {
+                // Preserve update compatibility with installed APKs while publishing
+                // optimized, non-debuggable release bytecode.
+                signingConfig = signingConfigs.getByName("debug")
             }
         }
         create("benchmark") {
