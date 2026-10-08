@@ -99,6 +99,10 @@ internal fun CardReaderPages(ids: List<String>, initialId: String, onSettled: (S
     }
     CompositionLocalProvider(LocalLayoutDirection provides LayoutDirection.Ltr) {
         HorizontalPager(state = pager, modifier = Modifier.fillMaxSize().testTag("card_reader"),
+            // Prepare one page in each direction while idle, including its asynchronous
+            // detail/image load. Do not start composing the next article during the swipe.
+            // Keep this window bounded; page-owned ViewModels are still disposed outside it.
+            beyondViewportPageCount = 1,
             reverseLayout = false, key = { ids[ids.lastIndex - it] }) { physicalPage ->
             val index = ids.lastIndex - physicalPage
             val previous: (() -> Unit)? = if (index > 0) ({ scope.launch { pager.animateScrollToPage(physicalPage + 1) }; Unit }) else null
