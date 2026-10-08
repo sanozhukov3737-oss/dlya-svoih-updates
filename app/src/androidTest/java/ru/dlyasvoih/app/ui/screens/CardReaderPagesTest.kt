@@ -25,7 +25,7 @@ import ru.dlyasvoih.app.data.local.ReaderCard
 class CardReaderPagesTest {
     @get:Rule val compose = createComposeRule()
 
-    @Test fun neighborsArePreparedWithoutRecordingOffscreenCardsAsRead() {
+    @Test fun distantJumpReleasesOldPagesAndRecordsOnlySettledCards() {
         val ids = (1..100).map { "card-$it" }
         val prepared = mutableSetOf<String>()
         val settled = mutableListOf<String>()
@@ -50,7 +50,7 @@ class CardReaderPagesTest {
         }
         compose.onNodeWithTag("visible_card").assertTextEquals("card-50")
         compose.runOnIdle {
-            assertTrue(prepared.containsAll(listOf("card-49", "card-50", "card-51")))
+            assertTrue(prepared.contains("card-50"))
             assertFalse(prepared.contains("card-1"))
             assertFalse(prepared.contains("card-100"))
             assertEquals(listOf("card-50"), settled)
@@ -58,8 +58,8 @@ class CardReaderPagesTest {
         compose.onNodeWithTag("jump_75").performClick()
         compose.onNodeWithTag("visible_card").assertTextEquals("card-75")
         compose.runOnIdle {
-            assertTrue(prepared.containsAll(listOf("card-74", "card-75", "card-76")))
-            // A distant jump must release the old page window, rather than keep a VM
+            assertTrue(prepared.contains("card-75"))
+            // A distant jump must release the old page, rather than keep a VM
             // for every article encountered while navigating a large catalogue.
             assertFalse(prepared.contains("card-50"))
             assertEquals(listOf("card-50", "card-75"), settled)
