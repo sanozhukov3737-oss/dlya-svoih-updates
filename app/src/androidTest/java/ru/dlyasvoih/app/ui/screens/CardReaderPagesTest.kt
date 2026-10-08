@@ -16,12 +16,55 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.test.*
 import androidx.compose.ui.test.junit4.createComposeRule
 import org.junit.Assert.assertEquals
+import org.junit.Assert.assertTrue
+import org.junit.Assert.assertFalse
 import org.junit.Rule
 import org.junit.Test
 import ru.dlyasvoih.app.data.local.ReaderCard
 
 class CardReaderPagesTest {
     @get:Rule val compose = createComposeRule()
+
+    @Test fun neighborsArePreparedWithoutRecordingOffscreenCardsAsRead() {
+        val ids = (1..100).map { "card-$it" }
+        val prepared = mutableSetOf<String>()
+        val settled = mutableListOf<String>()
+        compose.setContent {
+            var jump by remember { mutableStateOf<ReaderJump?>(null) }
+            MaterialTheme {
+                CardReaderPages(ids, "card-50", { settled.add(it) }, jump) { id, active, _, _, _, _ ->
+                    DisposableEffect(id) {
+                        prepared.add(id)
+                        onDispose { prepared.remove(id) }
+                    }
+                    Column(Modifier.fillMaxSize()) {
+                        if (active) {
+                            Text(id, Modifier.testTag("visible_card"))
+                            Button(onClick = { jump = ReaderJump(74, 1) }, modifier = Modifier.testTag("jump_75")) {
+                                Text("Go to 75")
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        compose.onNodeWithTag("visible_card").assertTextEquals("card-50")
+        compose.runOnIdle {
+            assertTrue(prepared.containsAll(listOf("card-49", "card-50", "card-51")))
+            assertFalse(prepared.contains("card-1"))
+            assertFalse(prepared.contains("card-100"))
+            assertEquals(listOf("card-50"), settled)
+        }
+        compose.onNodeWithTag("jump_75").performClick()
+        compose.onNodeWithTag("visible_card").assertTextEquals("card-75")
+        compose.runOnIdle {
+            assertTrue(prepared.containsAll(listOf("card-74", "card-75", "card-76")))
+            // A distant jump must release the old page window, rather than keep a VM
+            // for every article encountered while navigating a large catalogue.
+            assertFalse(prepared.contains("card-50"))
+            assertEquals(listOf("card-50", "card-75"), settled)
+        }
+    }
 
     @Test fun selectedCardOpensAndRightSwipeAdvancesWithFiniteEnds() {
         val settled = mutableListOf<String>()
