@@ -134,7 +134,7 @@ class PackagedDatabaseTest {
         }
     }
 
-    @Test fun sharedMenuCacheRefreshesAfterCatalogChanges() = runBlocking(Dispatchers.IO) {
+    @Test fun sharedMenuCacheRefreshesAfterCatalogChanges() = runBlocking<Unit>(Dispatchers.IO) {
         val repo = GuideRepository(db, context.getSharedPreferences(prefsName, Context.MODE_PRIVATE))
         repo.initialize()
         val before = (repo.menuData.value as CatalogMenuLoad.Ready).value
