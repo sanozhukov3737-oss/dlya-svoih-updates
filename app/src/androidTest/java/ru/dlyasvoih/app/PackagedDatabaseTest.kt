@@ -39,7 +39,8 @@ class PackagedDatabaseTest {
 
     @Test fun packagedSchemaIsAcceptedByRoomAndFtsFindsRussianBodyText() = runBlocking(Dispatchers.IO) {
         // Opening this asset executes Room's generated schema validation, including FTS options.
-        assertEquals("148", db.guideDao().metadata("content_version"))
+        val bundledVersion = context.assets.open("database/content-version.txt").bufferedReader().use { it.readText().trim() }
+        assertEquals(bundledVersion, db.guideDao().metadata("content_version"))
         db.openHelper.readableDatabase.query("SELECT COUNT(*) FROM cards").use { cursor ->
             assertTrue(cursor.moveToFirst())
             assertEquals(1293L, cursor.getLong(0))
