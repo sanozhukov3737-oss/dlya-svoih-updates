@@ -57,6 +57,11 @@ jobs:
         run: |
           "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" 'platforms;android-36' 'build-tools;36.0.0'
           printf 'sdk.dir=%s\n' "$ANDROID_HOME" > local.properties
+      - name: Check reader behavior and compile Android regression tests
+        run: |
+          python3 -m unittest discover -s tools -p 'test_reader_navigation.py'
+          python3 -m unittest discover -s tools -p 'test_java_features.py'
+          bash ./gradlew :app:testDebugUnitTest :app:assembleDebugAndroidTest --no-daemon -PciSigningKeystore="$CI_SIGNING_KEYSTORE"
       - name: Build APK
         id: build-apk
         run: bash ./gradlew :app:assembleDebug --no-daemon -PciSigningKeystore="$CI_SIGNING_KEYSTORE"
