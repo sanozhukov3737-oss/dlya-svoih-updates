@@ -1,4 +1,4 @@
-840de695d59b43e389a3e06be6b1e1337486b08be0ca62f6ad7998dc41c05938  .github/workflows/build-apk.yml
+6bd291b63f6b5567e5957e6fb532d7ac5c2c9a63c296dc110d01cae49d94da56  .github/workflows/build-apk.yml
 00f286cff1cc6d485deadc72218a83e2591117eb672e67548aa05cef6a508f50  .github/workflows/publish-catalog.yml
 4118d7f54fa9b3c33c50ec9d2bdab443551e340cafd60373ca8cda2e210ac6b8  .gitignore
 bf4ead2621f9f4cda9b9954f1bf681349f0e6e3e4794a5b1405b9248b0f72910  BUILD_DEBUG.bat
@@ -13,7 +13,7 @@ e9deac2f844a77690f13904ed4f596355c1471d0d3bd92205c60dc8fee7fc88b  app/src/androi
 022b451d4870dd981fe1d8dc07c89372c77aeedff2cfa7259474b3e4b81f56a7  app/src/androidTest/java/ru/dlyasvoih/app/PackagedDatabaseTest.kt
 f17f44c34e04a83f1182506954c27e4b76f320367806622b2b2620ed298c28da  app/src/androidTest/java/ru/dlyasvoih/app/RemoteAppContractTest.kt
 d0cbca07a31ff8641d1ec5646065c8e8c725417ed00e568601f8eb24233d147d  app/src/androidTest/java/ru/dlyasvoih/app/RemoteCatalogContractTest.kt
-7965859cd49a2c66e58add3f84f4b9a1a50a1e0bb94afd87f5aa59168f10abb0  app/src/androidTest/java/ru/dlyasvoih/app/ui/screens/CardReaderPagesTest.kt
+1373a2d8cfd2ff8de5e345dba1ab0151c460f2599438e46d220d8f854d753de0  app/src/androidTest/java/ru/dlyasvoih/app/ui/screens/CardReaderPagesTest.kt
 2da9488a4bf33c5a1a6241a59138b76254a0d976a329cec60b4f8b67ce04ef53  app/src/main/AndroidManifest.xml
 a6ade98870a92fc7e8bfd6eee3662e7823131fe83fdcdab6b73af38144accd49  app/src/main/assets/database/content-version.txt
 a44c1da80f8bac4056a44c66d0ad95a37bc808328f1a6d941bcdfe5f3d08a759  app/src/main/assets/database/guide-v29.db
@@ -1877,7 +1877,7 @@ f6ecac02c6555e166174975fd1648d7454ada1a870e101be409a0fd2c6d9a43f  app/src/main/j
 3a37a0cac6ce7e8a59be09100cfe8e57c3691f485a476feb0f07ee0687921ebd  app/src/main/java/ru/dlyasvoih/app/ui/content/ReferenceBodyParser.java
 3e3495285d740f62c532def373c43eee9f31738473d4b2a02d08219372351aff  app/src/main/java/ru/dlyasvoih/app/ui/screens/AppUpdateCard.kt
 eae73ec8b8b241721e753b1528cca9e4ee86fe4c537e051f6c646dbfd560d035  app/src/main/java/ru/dlyasvoih/app/ui/screens/BackupScreen.kt
-3c3164ee27bb27c30b5f737bc1762601b766b8d68eeee4578571f33f8df22c15  app/src/main/java/ru/dlyasvoih/app/ui/screens/CardReaderScreen.kt
+05f94f18190578327de0313a2207d8e0e3899bd6e1cc8dd24e74a30fd87f04eb  app/src/main/java/ru/dlyasvoih/app/ui/screens/CardReaderScreen.kt
 50c963f6383417f9a68e71a4454085fc8311f70eea0e213919205f3e1db9646d  app/src/main/java/ru/dlyasvoih/app/ui/screens/CatalogMenuIcon.kt
 0b32b12121bbd609ea47cd44ae24db8baa5edf60b154d04a8958a72faa4812f9  app/src/main/java/ru/dlyasvoih/app/ui/screens/CatalogScreen.kt
 23f31e3f0adfb6b4c919ec908322b352668725730aff007d8f084fa0ddb9c8f4  app/src/main/java/ru/dlyasvoih/app/ui/screens/Components.kt
