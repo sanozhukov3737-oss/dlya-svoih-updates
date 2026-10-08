@@ -80,6 +80,7 @@ jobs:
           arch: x86_64
           disable-animations: false
           script: |
+            mkdir -p build
             bash ./gradlew :app:connectedDebugAndroidTest --no-daemon -PciSigningKeystore="$CI_SIGNING_KEYSTORE" -Pandroid.testInstrumentationRunnerArguments.class=ru.dlyasvoih.app.ui.screens.CardReaderPagesTest,ru.dlyasvoih.app.PackagedDatabaseTest
             adb logcat -c
             adb install -r app/build/outputs/apk/release/app-release.apk
