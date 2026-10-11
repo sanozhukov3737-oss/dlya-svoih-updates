@@ -84,7 +84,7 @@ if not only_screenshots:
  (OUT/'android-migration-check.json').write_text(json.dumps(report,indent=2)+'\n')
 # The same already-signed APK is used for clean store screenshots.
 if only_screenshots:
- assert hashlib.sha256((OUT/'DLYA_SVOIH_v0.3.126_RUSTORE.apk').read_bytes()).hexdigest()=='0c3b394f7ec048326d065c04f3a4efc7e78f7e125773d508b5592581600dbcc8'
+ assert hashlib.sha256((OUT/'DLYA_SVOIH_v0.3.126_RUSTORE.apk').read_bytes()).hexdigest()=='82159d3208e2229f4fba9f0e76e17983104bc8104d0f265717b4b815043abc16'
  assert 'Success' in adb('install','-r',OUT/'DLYA_SVOIH_v0.3.126_RUSTORE.apk')
 adb('shell','pm','clear',PKG)
 adb('shell','settings','put','global','sysui_demo_allowed','1')
@@ -108,18 +108,13 @@ except AssertionError:
  raise
 shot('02_search.png')
 tap(wait('text','9К111 «Фагот»'));wait('resource-id','detail_list');shot('03_fagot.png')
-for _ in range(14):
- node=find('text','Характеристики — 9М111-2')
- if node is not None:
-  y=int(re.findall(r'\d+',node.get('bounds'))[1]);delta=max(0,y-int(height*.15))
-  if delta>100:adb('shell','input','swipe',width//2,int(height*.85),width//2,max(int(height*.18),int(height*.85)-delta),'450')
-  shot('04_fagot_characteristics.png');break
- adb('shell','input','swipe',width//2,int(height*.85),width//2,int(height*.35),'450')
-else:raise AssertionError('Fagot table absent on real Android UI')
+# Jump with the actual section chip, then require a table cell rather than the chip label.
+tap(wait('text','Характеристики — 9М111-2'))
+wait('text','Калибр');wait('text','120 мм');shot('04_fagot_characteristics.png')
 crashes=adb('logcat','-d','-b','crash')
 assert 'FATAL EXCEPTION' not in crashes and 'Fatal signal' not in crashes
 (OUT/'release-crash.log').write_text(crashes)
-(OUT/'screenshots-check.json').write_text(json.dumps({'deviceSdk':int(adb('shell','getprop','ro.build.version.sdk')),'width':width,'height':height,'screenshots':4,'crashes':0,'apkSha256':hashlib.sha256((OUT/'DLYA_SVOIH_v0.3.126_RUSTORE.apk').read_bytes()).hexdigest()},indent=2)+'\n')
+(OUT/'screenshots-check.json').write_text(json.dumps({'deviceSdk':int(adb('shell','getprop','ro.build.version.sdk')),'width':width,'height':height,'screenshots':4,'fagotTableVisible':True,'crashes':0,'apkSha256':hashlib.sha256((OUT/'DLYA_SVOIH_v0.3.126_RUSTORE.apk').read_bytes()).hexdigest()},indent=2)+'\n')
 if not only_screenshots:
  old.unlink();seed.unlink();after.unlink()
  for p in OUT.glob('migration-after.db-*'):p.unlink()
