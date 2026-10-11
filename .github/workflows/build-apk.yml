@@ -34,7 +34,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: rustore-prepared-app
-          run-id: 38144030022
+          run-id: 38146664625
           github-token: ${{ github.token }}
           path: .
       - uses: actions/setup-java@v4
