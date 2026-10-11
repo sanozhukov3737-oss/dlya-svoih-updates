@@ -86,7 +86,6 @@ jobs:
           script: |
             mkdir -p build
             bash ./gradlew :app:connectedDebugAndroidTest --no-daemon -PciSigningKeystore="$CI_SIGNING_KEYSTORE" -Pandroid.testInstrumentationRunnerArguments.class=ru.dlyasvoih.app.ui.screens.CardReaderPagesTest,ru.dlyasvoih.app.ui.screens.ComparisonSheetTest,ru.dlyasvoih.app.ui.screens.CatalogMenuIconTest,ru.dlyasvoih.app.PackagedDatabaseTest
-            adb shell run-as ru.dlyasvoih.app cat files/menu-icons.png > build/menu-icons.png
             adb logcat -c
             adb install -r app/build/outputs/apk/release/app-release.apk
             adb shell am start -W -n ru.dlyasvoih.app/.MainActivity
@@ -143,7 +142,6 @@ jobs:
           path: |
             app/build/outputs/apk/release/app-release.apk
             build/release/latest.json
-            build/menu-icons.png
             build/release-ui.xml
             build/release-crash.log
             app/build/outputs/mapping/release/mapping.txt
