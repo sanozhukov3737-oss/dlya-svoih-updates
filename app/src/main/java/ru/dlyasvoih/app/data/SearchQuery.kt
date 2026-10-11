@@ -12,8 +12,9 @@ object SearchQuery {
 
     fun match(value: String): String? = word.findAll(normalize(value.take(MAX_LENGTH)))
         .map { it.value }.take(8).distinct().toList().takeIf { it.isNotEmpty() }
+        // Implicit AND works with both standard and enhanced FTS3/4 parsers.
         // FTS4 requires '*' inside the quoted token. FTS5 examples differ here.
-        ?.joinToString(" AND ") { "\"$it*\"" }
+        ?.joinToString(" ") { "\"$it*\"" }
 
     // Deduplicate by the effective FTS expression, including case, ё/е and punctuation.
     fun key(value: String): String = match(value) ?: if (value.isBlank()) "" else "!empty"
