@@ -8,6 +8,8 @@ plugins {
     id("androidx.baselineprofile")
 }
 
+val rustoreBuild = providers.gradleProperty("rustoreBuild").orNull == "true"
+
 val keystorePropertiesFile = rootProject.file("keystore.properties")
 val keystoreProperties = Properties().apply {
     if (keystorePropertiesFile.isFile) {
@@ -21,15 +23,21 @@ android {
 
     defaultConfig {
         applicationId = "ru.dlyasvoih.app"
-        minSdk = 26
+        minSdk = if (rustoreBuild) 28 else 26
         targetSdk = 36
-        versionCode = 129
-        versionName = "0.3.125"
+        versionCode = if (rustoreBuild) 130 else 129
+        versionName = if (rustoreBuild) "0.3.126" else "0.3.125"
+        buildConfigField("boolean", "RUSTORE_BUILD", rustoreBuild.toString())
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildFeatures {
         compose = true
+        buildConfig = true
+    }
+
+    if (rustoreBuild) {
+        sourceSets.getByName("main").manifest.srcFile("src/rustore/AndroidManifest.xml")
     }
 
     compileOptions {
@@ -65,7 +73,10 @@ android {
             isMinifyEnabled = true
             isShrinkResources = true
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
-            if (keystorePropertiesFile.isFile) {
+            if (rustoreBuild) {
+                // The store artifact is signed with its permanent key and lineage after compilation.
+                signingConfig = null
+            } else if (keystorePropertiesFile.isFile) {
                 signingConfig = signingConfigs.getByName("release")
             } else if (providers.gradleProperty("ciSigningKeystore").isPresent) {
                 // Preserve update compatibility with installed APKs while publishing

@@ -9,10 +9,10 @@ import urllib.request
 import zipfile
 
 ROOT = Path(__file__).resolve().parents[1]
-URL = 'https://github.com/sanozhukov3737-oss/dlya-svoih-updates/releases/download/catalog-188/catalog-188.zip'
-SHA256 = 'e5bfa1d9fea163f5119ee200f5729c991d55231c0950178a85d469aae2e0001f'
-SIZE = 85957620
-VERSION = 188
+URL = 'https://github.com/sanozhukov3737-oss/dlya-svoih-updates/releases/download/catalog-189/catalog-189.zip'
+SHA256 = '5247c1e8bce5f00cfb3b2f1f6d62c7c33f4deba86cac8b3a3667792a167ecf91'
+SIZE = 85838324
+VERSION = 189
 
 
 def restore(archive):

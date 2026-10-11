@@ -40,6 +40,9 @@ fun UpdateScreen(repo: GuideRepository, onBack: () -> Unit) {
         Column(Modifier.fillMaxSize().padding(padding).verticalScroll(rememberScrollState()).padding(20.dp),
             verticalArrangement = Arrangement.spacedBy(16.dp)) {
             repo.appUpdater?.let { AppUpdateCard(it, catalogBusy) }
+            if (ru.dlyasvoih.app.BuildConfig.RUSTORE_BUILD) {
+                Text("Обновления приложения устанавливаются через RuStore.")
+            }
             Text("Каталог: новые карточки и фотографии без установки APK.")
             Card(Modifier.fillMaxWidth()) {
                 Column(Modifier.padding(16.dp), verticalArrangement = Arrangement.spacedBy(12.dp)) {
@@ -111,12 +114,12 @@ private fun UpdateSourceDialog(source: String, autoCheck: Boolean, onSave: (Stri
     var error by remember { mutableStateOf<String?>(null) }
     AlertDialog(onDismissRequest = onDismiss, title = { Text("Источник обновлений") }, text = {
         Column(Modifier.verticalScroll(rememberScrollState()), verticalArrangement = Arrangement.spacedBy(12.dp)) {
-            Text("Пустое поле отключает интернет-обновления каталога. Обновления APK берутся из официального репозитория приложения.")
+            Text("Пустое поле отключает интернет-обновления каталога. ${if (ru.dlyasvoih.app.BuildConfig.RUSTORE_BUILD) "Обновления приложения устанавливаются через RuStore." else "Обновления APK берутся из официального репозитория приложения."}")
             OutlinedTextField(value = address, onValueChange = { address = it.take(2048); error = null },
                 label = { Text("Адрес обновлений") }, placeholder = { Text("https://…") }, isError = error != null,
                 modifier = Modifier.fillMaxWidth().testTag("update_source_address"))
             Row(verticalAlignment = Alignment.CenterVertically) {
-                Text("Проверять каталог и приложение при запуске", Modifier.weight(1f))
+                Text("Проверять обновления при запуске", Modifier.weight(1f))
                 Switch(automatic, onCheckedChange = { automatic = it })
             }
             error?.let { Text(it, color = MaterialTheme.colorScheme.error) }

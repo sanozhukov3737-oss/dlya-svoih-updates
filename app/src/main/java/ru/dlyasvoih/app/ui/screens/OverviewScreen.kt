@@ -180,6 +180,10 @@ fun OverviewScreen(
 @Composable
 private fun AboutDialog(contentVersion: String, total: Int?, onDismiss: () -> Unit) {
     val context = LocalContext.current
+    var privacyOpen by rememberSaveable { mutableStateOf(false) }
+    val privacyText = remember(context) {
+        context.assets.open("privacy-rustore.txt").bufferedReader().use { it.readText() }
+    }
     val appVersion = remember(context) {
         runCatching { context.packageManager.getPackageInfo(context.packageName, 0).versionName }
             .getOrNull().orEmpty().ifBlank { "—" }
@@ -193,10 +197,18 @@ private fun AboutDialog(contentVersion: String, total: Int?, onDismiss: () -> Un
                 Text("Карточек в каталоге: ${total?.toString() ?: "—"}", Modifier.testTag("about_card_count"))
                 Text("Версия каталога: ${contentVersion.ifBlank { "—" }}")
                 Text("Версия приложения: $appVersion")
+                if (ru.dlyasvoih.app.BuildConfig.RUSTORE_BUILD) {
+                    TextButton(onClick = { privacyOpen = true }) { Text("Данные и конфиденциальность") }
+                }
                 Text("Каталог и встроенные фотографии доступны без подключения к интернету.",
                     style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
             }
         }, confirmButton = { TextButton(onClick = onDismiss) { Text("Закрыть") } })
+    if (privacyOpen) {
+        AlertDialog(onDismissRequest = { privacyOpen = false }, title = { Text("Данные и конфиденциальность") },
+            text = { Text(privacyText, Modifier.verticalScroll(rememberScrollState())) },
+            confirmButton = { TextButton(onClick = { privacyOpen = false }) { Text("Закрыть") } })
+    }
 }
 
 private data class MenuEntry(

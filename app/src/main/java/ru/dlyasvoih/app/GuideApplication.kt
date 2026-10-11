@@ -19,7 +19,7 @@ class GuideApplication : Application(), SingletonImageLoader.Factory {
         val appCode = packageManager.getPackageInfo(packageName, 0).versionCode
         val prefs = getSharedPreferences("dlya_svoih", MODE_PRIVATE)
         GuideRepository(db, prefs, ContentUpdater(this, db), RemoteCatalogSource(cacheDir), appCode,
-            AppUpdateController(this, prefs))
+            if (BuildConfig.RUSTORE_BUILD) null else AppUpdateController(this, prefs))
     }
 
     override fun newImageLoader(context: Context): ImageLoader {
