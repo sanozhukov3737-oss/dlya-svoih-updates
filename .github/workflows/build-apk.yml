@@ -11,6 +11,7 @@ on:
 
 permissions:
   contents: read
+  actions: read
 
 concurrency:
   group: rustore-preparation
@@ -42,6 +43,20 @@ jobs:
           printf 'sdk.dir=%s\n' "$ANDROID_HOME" > local.properties
           bash ./gradlew :app:testDebugUnitTest :app:assembleDebugAndroidTest :app:assembleRelease --no-daemon -PrustoreBuild=true
           test -s app/build/outputs/mapping/release/mapping.txt
+      - name: Reuse the existing encrypted signing artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: rustore-signing-backup
+          run-id: 38142894573
+          github-token: ${{ github.token }}
+          path: docs/releases
+      - name: Verify retained public signing identity
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          assert json.loads(Path('docs/releases/rustore-signing.json').read_text())['signerSha256']=='0681253f0552175888aca4278977703241c5bbce528a425f7fa23a63020904f9'
+          PY
       - name: Sign with permanent certificate and proof of rotation
         env:
           ANDROID_DEBUG_KEYSTORE_BASE64: ${{ secrets.ANDROID_DEBUG_KEYSTORE_BASE64 }}
