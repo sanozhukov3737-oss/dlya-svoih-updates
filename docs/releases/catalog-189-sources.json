@@ -1,0 +1,17 @@
+{
+  "checkedAt": "2026-10-11",
+  "cardId": "atgm-9k111-fagot",
+  "variant": "9М111-2",
+  "source": "https://vmz.bg/bg/production/production-an-historical-archive/protivotankov-upravliaem-snariad-9m111-2-fagot",
+  "sourceEnglish": "https://vmz.bg/en/production/production-an-historical-archive/protivotankov-upravliaem-snariad-9m111-2-fagot",
+  "scope": "General historical reference characteristics, no operational instructions. The source labels 13 kg as missile weight and does not clarify inclusion of the container. Packaging dimensions are not missile dimensions.",
+  "rows": {
+    "Комплекс": "9К111 «Фагот»",
+    "Ракета": "9М111-2",
+    "Калибр": "120 мм",
+    "Масса ракеты по каталогу VMZ": "13 кг; учёт контейнера не уточнён",
+    "Дальность в каталоге VMZ": "70–2000 м",
+    "Средняя скорость полёта": "186 м/с",
+    "Система управления": "Проводная"
+  }
+}
