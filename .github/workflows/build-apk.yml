@@ -111,12 +111,8 @@ jobs:
           profile: pixel_2
           disable-animations: true
           script: |
-            if [ '${{ inputs.screenshots_only }}' = 'true' ]; then
-              /usr/bin/python3 tools/check_rustore_android.py --screenshots-only
-            else
-              bash ./gradlew :app:connectedDebugAndroidTest --no-daemon -PrustoreBuild=true -Pandroid.testInstrumentationRunnerArguments.class=ru.dlyasvoih.app.ui.screens.CardReaderPagesTest,ru.dlyasvoih.app.ui.screens.ComparisonSheetTest,ru.dlyasvoih.app.ui.screens.CatalogMenuIconTest,ru.dlyasvoih.app.PackagedDatabaseTest
-              /usr/bin/python3 tools/check_rustore_android.py
-            fi
+            test '${{ inputs.screenshots_only }}' = 'true' || bash ./gradlew :app:connectedDebugAndroidTest --no-daemon -PrustoreBuild=true -Pandroid.testInstrumentationRunnerArguments.class=ru.dlyasvoih.app.ui.screens.CardReaderPagesTest,ru.dlyasvoih.app.ui.screens.ComparisonSheetTest,ru.dlyasvoih.app.ui.screens.CatalogMenuIconTest,ru.dlyasvoih.app.PackagedDatabaseTest
+            /usr/bin/python3 tools/check_rustore_android.py ${{ inputs.screenshots_only && '--screenshots-only' || '' }}
       - uses: actions/upload-artifact@v4
         if: always()
         with:
