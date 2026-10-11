@@ -48,12 +48,16 @@ wait('resource-id','home_list')
 adb('shell','am','force-stop',PKG)
 uid=adb('shell','stat','-c','%u',DB)
 seed=OUT/'migration-before.db';adb('pull',DB,seed)
-# Checkpoint sidecars before replacing the private DB on the disposable emulator.
+# Seed the database on the disposable emulator; flush its local WAL before adb push.
 with sqlite3.connect(seed) as db:
  assert db.execute("select value from metadata where key='content_version'").fetchone()==('188',)
  db.execute("insert or replace into favorites values ('first-aid-burn',123456)")
  db.execute("insert or replace into reading values ('first-aid-burn',2,33,123456,188)")
  db.commit()
+ db.execute("PRAGMA wal_checkpoint(TRUNCATE)")
+db.close()
+with sqlite3.connect(seed) as check:
+ assert check.execute("select savedAt from favorites where cardId='first-aid-burn'").fetchone()==(123456,)
 adb('push',seed,DB)
 adb('shell','rm','-f',DB+'-wal',DB+'-shm')
 adb('shell','chown',uid+':'+uid,DB)
