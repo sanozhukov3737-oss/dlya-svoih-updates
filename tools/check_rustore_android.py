@@ -93,7 +93,7 @@ wait('resource-id','home_list');shot('01_catalog.png')
 width,height=struct.unpack('>II',(SCREEN/'01_catalog.png').read_bytes()[16:24])
 assert width>=720 and height>=1280,(width,height)
 tap(wait('content-desc','Открыть поиск'));field=wait('resource-id','search_input');tap(field)
-adb('shell','input','text','186');adb('shell','input','keyevent','4')
+adb('shell','input','text','1966%s1970');adb('shell','input','keyevent','4')
 try:
  wait('text','9К111 «Фагот»')
 except AssertionError:
