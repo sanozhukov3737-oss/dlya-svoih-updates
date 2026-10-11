@@ -57,6 +57,18 @@ class PackagedDatabaseTest {
         assertEquals(2, db.guideDao().images("ammo-reference-scope").first().size)
     }
 
+    @Test fun multiTermBodySearchFindsFagotOnAndroid() = runBlocking(Dispatchers.IO) {
+        for (query in listOf("186", "1966 1970", "9К111 Фагот")) {
+            val request = CatalogQuery.build(CatalogFilter(query = query))
+            db.openHelper.readableDatabase.query(request.sql, request.args.toTypedArray()).use { rows ->
+                val ids = buildSet {
+                    while (rows.moveToNext()) add(rows.getString(rows.getColumnIndexOrThrow("id")))
+                }
+                assertTrue("Fagot should match '$query'", ids.contains("atgm-9k111-fagot"))
+            }
+        }
+    }
+
     @Test fun importedFavoritesSurviveReopenAndDoNotReappearAfterRemoval() = runBlocking(Dispatchers.IO) {
         val prefs = context.getSharedPreferences(prefsName, Context.MODE_PRIVATE)
         prefs.edit().putStringSet("favorites", setOf("first-aid-burn", "missing-id")).commit()
