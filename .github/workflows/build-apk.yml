@@ -10,7 +10,7 @@ on:
         type: boolean
 
 permissions:
-  contents: write
+  contents: read
 
 concurrency:
   group: rustore-preparation
@@ -22,22 +22,6 @@ jobs:
     timeout-minutes: 40
     steps:
       - uses: actions/checkout@v4
-      - name: Apply exact reviewed source bundle
-        run: |
-          python3 - <<'PY'
-          import hashlib,json,zipfile
-          from pathlib import Path,PurePosixPath
-          bundle=Path('rustore-source-patch.zip')
-          assert hashlib.sha256(bundle.read_bytes()).hexdigest()=='4a96528dafae7b2fd572fe8090431a85e990ddb8a4a7be5e364de2722d1a8348'
-          with zipfile.ZipFile(bundle) as z:
-              files=json.loads(z.read('manifest.json'))['files']
-              assert set(z.namelist())=={'manifest.json'}|{f['path'] for f in files}
-              for f in files:
-                  p=PurePosixPath(f['path']);assert not p.is_absolute() and '..' not in p.parts
-                  assert p.parts[0] in ('app','tools','docs') and not p.suffix in ('.jks','.keystore')
-                  data=z.read(f['path']);assert len(data)==f['bytes'] and hashlib.sha256(data).hexdigest()==f['sha256']
-                  target=Path(f['path']);target.parent.mkdir(parents=True,exist_ok=True);target.write_bytes(data)
-          PY
       - uses: actions/setup-java@v4
         with:
           distribution: temurin
@@ -47,23 +31,6 @@ jobs:
         run: |
           sudo apt-get update && sudo apt-get install -y python3-pil python3-cryptography
           /usr/bin/python3 tools/restore_packaged_catalog.py
-      - name: Persist reviewed source in preparation branch
-        run: |
-          python3 - <<'PY'
-          import json,zipfile,subprocess,hashlib
-          from pathlib import Path
-          with zipfile.ZipFile('rustore-source-patch.zip') as z:files=[f['path'] for f in json.loads(z.read('manifest.json'))['files']]
-          subprocess.run(['git','add','--',*files],check=True)
-          tracked=subprocess.check_output(['git','ls-files'],text=True).splitlines()
-          Path('SHA256SUMS.txt').write_text(''.join(hashlib.sha256(Path(p).read_bytes()).hexdigest()+'  '+p+'\n' for p in sorted(tracked) if p!='SHA256SUMS.txt' and Path(p).is_file()))
-          subprocess.run(['git','add','SHA256SUMS.txt'],check=True)
-          PY
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          if ! git diff --cached --quiet; then
-            git commit -m 'Apply reviewed RuStore channel and signing preparation'
-            git push origin "HEAD:$GITHUB_REF_NAME"
-          fi
       - name: Validate handbook and compile store channel
         run: |
           /usr/bin/python3 -m unittest discover -s tools -p 'test_catalog_189.py'
