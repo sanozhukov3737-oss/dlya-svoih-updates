@@ -1,4 +1,4 @@
-"""Local release checks for v0.3.123."""
+"""Local release checks for v0.3.124."""
 
 from pathlib import Path
 import json
@@ -12,9 +12,9 @@ ROOT = Path(__file__).resolve().parents[1]
 class ReleaseV043Test(unittest.TestCase):
     def test_version_and_build_scripts(self):
         gradle = (ROOT / "app/build.gradle.kts").read_text(encoding="utf-8")
-        self.assertIn('versionName = "0.3.123"', gradle)
-        self.assertIn("versionCode = 127", gradle)
-        self.assertIn("DLYA_SVOIH_v0.3.123-debug.apk", (ROOT / "MAKE_APK.bat").read_text(encoding="utf-8"))
+        self.assertIn('versionName = "0.3.124"', gradle)
+        self.assertIn("versionCode = 128", gradle)
+        self.assertIn("DLYA_SVOIH_v0.3.124-debug.apk", (ROOT / "MAKE_APK.bat").read_text(encoding="utf-8"))
 
     def test_only_production_database_is_packaged(self):
         database = ROOT / "app/src/main/assets/database"
@@ -48,7 +48,7 @@ class ReleaseV043Test(unittest.TestCase):
         for marker in ("WITH_PHOTO", "WITHOUT_PHOTO", "CatalogStatus.VERIFIED", "JOIN reading history"):
             self.assertIn(marker, query)
         self.assertIn('HISTORY("history_tab", "Недавние"', navigation)
-        self.assertIn("comparisonFacts", detail)
+        self.assertIn("ComparisonContent.rows", detail)
         self.assertIn("imageRightsLabel", detail)
 
     def test_no_emergency_call_feature_was_added(self):
