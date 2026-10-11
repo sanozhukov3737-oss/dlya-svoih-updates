@@ -56,7 +56,7 @@ public class NavigationChecks {
         ids = set(families)
         for group in families.values(): self.assertTrue(set(group) <= ids)
         dao = (ROOT/'app/src/main/java/ru/dlyasvoih/app/data/local/GuideDao.kt').read_text()
-        queries = re.findall(r'@Query\("""((?:(?!""").)*)"""\)\s*fun related(?:Cards|CardEntities)',dao,re.S)
+        queries = re.findall(r'@Query\("""((?:(?!""").)*)"""\)\s*fun (?:relatedCards|comparisonCards)',dao,re.S)
         self.assertEqual(2,len(queries))
         with sqlite3.connect(ROOT/'app/src/main/assets/database/guide-v29.db') as db:
             for current in ('eng-pmn','ref-v8-tm-62p3','grenade-rgn','eng-pfm-1','eng-mon-50'):

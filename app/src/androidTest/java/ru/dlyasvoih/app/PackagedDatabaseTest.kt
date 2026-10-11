@@ -43,7 +43,7 @@ class PackagedDatabaseTest {
         assertEquals(bundledVersion, db.guideDao().metadata("content_version"))
         db.openHelper.readableDatabase.query("SELECT COUNT(*) FROM cards").use { cursor ->
             assertTrue(cursor.moveToFirst())
-            assertEquals(1293L, cursor.getLong(0))
+            assertEquals(1324L, cursor.getLong(0))
         }
         assertNotNull(db.guideDao().card("first-aid-burn").first())
         val request = CatalogQuery.build(CatalogFilter(query = "проточной"))
