@@ -26,9 +26,11 @@ jobs:
         run: sudo apt-get update && sudo apt-get install -y python3-pil
       - name: Check cards, medical exceptions and reader compatibility
         run: |
-          /usr/bin/python3 -m unittest discover -s tools -p 'test_reader_catalog_152.py'
+          /usr/bin/python3 -m unittest discover -s tools -p 'test_catalog_189.py'
           /usr/bin/python3 -m unittest discover -s tools -p 'test_medical_reader_revision.py'
           /usr/bin/python3 -m unittest discover -s tools -p 'test_java_features.py'
+          /usr/bin/python3 -m unittest discover -s tools -p 'test_quick_comparison.py'
+          /usr/bin/python3 -m unittest discover -s tools -p 'test_menu_images.py'
       - name: Prepare exact catalog and preserve current APK offer
         run: |
           mkdir -p build/catalog-release
