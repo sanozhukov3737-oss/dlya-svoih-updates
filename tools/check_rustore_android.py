@@ -93,8 +93,20 @@ wait('resource-id','home_list');shot('01_catalog.png')
 width,height=struct.unpack('>II',(SCREEN/'01_catalog.png').read_bytes()[16:24])
 assert width>=720 and height>=1280,(width,height)
 tap(wait('content-desc','Открыть поиск'));field=wait('resource-id','search_input');tap(field)
-adb('shell','input','text','1966%s1970');adb('shell','input','keyevent','4')
-wait('text','9К111 «Фагот»');shot('02_search.png')
+adb('shell','input','text','186');adb('shell','input','keyevent','4')
+try:
+ wait('text','9К111 «Фагот»')
+except AssertionError:
+ # Inspect the disposable emulator database, including its WAL, to explain search failures.
+ shot('search_failure.png');adb('shell','am','force-stop',PKG);adb('root');adb('wait-for-device')
+ probe=OUT/'search-probe.db';adb('pull',DB,probe)
+ if adb('shell',f'if [ -f {DB}-wal ]; then echo yes; fi')=='yes':adb('pull',DB+'-wal',str(probe)+'-wal')
+ with sqlite3.connect(probe) as live:
+  print('Live Fagot record',live.execute("select title,archived,searchText from cards where id='atgm-9k111-fagot'").fetchone())
+  for query in ['"186*"','"1966*" AND "1970*"']:
+   print('Live FTS result',query,live.execute('select c.title from cards c join cards_fts on cards_fts.rowid=c.rowid where cards_fts MATCH ? AND c.archived=0',(query,)).fetchall())
+ raise
+shot('02_search.png')
 tap(wait('text','9К111 «Фагот»'));wait('resource-id','detail_list');shot('03_fagot.png')
 for _ in range(14):
  node=find('text','Характеристики — 9М111-2')
