@@ -27,7 +27,49 @@ jobs:
       CI_SIGNING_KEYSTORE: ${{ github.workspace }}/dlya-svoih-debug.keystore
     steps:
       - uses: actions/checkout@v4
-      - name: Restore published catalog 188 into APK assets
+      - name: Restore reviewed offline 3D sources and assets
+        env:
+          SOURCE_BRANCH: ${{ github.ref_name }}
+        run: |
+          python3 - <<'PYCODE'
+          import hashlib, json, os, subprocess, tempfile, urllib.request, zipfile
+          from pathlib import Path, PurePosixPath
+          if os.environ['SOURCE_BRANCH'] != 'offline-3d-0.3.127':
+              raise SystemExit('Run the 3D build from offline-3d-0.3.127')
+          url = 'https://github.com/sanozhukov3737-oss/dlya-svoih-updates/releases/download/catalog-190/DLYA_SVOIH_OFFLINE_3D_0.3.127_r2.zip'
+          expected = 'bed905b78bea60075f7134590243ba658c27f7acb40bee0c25853af15b90fc11'
+          with urllib.request.urlopen(url, timeout=60) as response:
+              data = response.read(1190706)
+          if len(data) != 1190705 or hashlib.sha256(data).hexdigest() != expected:
+              raise SystemExit('Offline 3D source archive hash mismatch')
+          with tempfile.TemporaryDirectory() as temporary:
+              archive = Path(temporary) / 'source.zip'
+              archive.write_bytes(data)
+              with zipfile.ZipFile(archive) as z:
+                  manifest = json.loads(z.read('patch-manifest.json'))
+                  paths = [item['path'] for item in manifest['files']]
+                  if len(set(paths)) != len(paths) or set(z.namelist()) != set(paths) | {'patch-manifest.json'}:
+                      raise SystemExit('Unexpected source archive members')
+                  for item in manifest['files']:
+                      name = item['path']
+                      parts = PurePosixPath(name).parts
+                      if not parts or '..' in parts or PurePosixPath(name).is_absolute() or name.startswith('.git/'):
+                          raise SystemExit('Invalid source path')
+                      value = z.read(name)
+                      if len(value) != item['bytes'] or hashlib.sha256(value).hexdigest() != item['sha256']:
+                          raise SystemExit('Source member hash mismatch: ' + name)
+                      target = Path(name)
+                      target.parent.mkdir(parents=True, exist_ok=True)
+                      target.write_bytes(value)
+          subprocess.run(['git', 'add', '--', *paths], check=True)
+          if subprocess.run(['git', 'diff', '--cached', '--quiet']).returncode:
+              subprocess.run(['git', 'config', 'user.name', 'github-actions[bot]'], check=True)
+              subprocess.run(['git', 'config', 'user.email', '41898282+github-actions[bot]@users.noreply.github.com'], check=True)
+              subprocess.run(['git', 'commit', '-m', 'Add offline TM-46 3D viewer and packaged credits'], check=True)
+              subprocess.run(['git', 'push', 'origin', 'HEAD:' + os.environ['SOURCE_BRANCH']], check=True)
+          print('Reviewed offline 3D sources are committed; model and viewer are bundled locally.')
+          PYCODE
+      - name: Restore published catalog 190 into APK assets
         run: python3 tools/restore_packaged_catalog.py
       - uses: actions/setup-java@v4
         with:
@@ -61,6 +103,7 @@ jobs:
           printf 'sdk.dir=%s\n' "$ANDROID_HOME" > local.properties
       - name: Check reader behavior and compile Android regression tests
         run: |
+          python3 -m unittest discover -s tools -p 'test_offline_model.py'
           python3 -m unittest discover -s tools -p 'test_menu_images.py'
           python3 -m unittest discover -s tools -p 'test_reader_navigation.py'
           python3 -m unittest discover -s tools -p 'test_quick_comparison.py'
@@ -85,7 +128,8 @@ jobs:
           disable-animations: false
           script: |
             mkdir -p build
-            bash ./gradlew :app:connectedDebugAndroidTest --no-daemon -PciSigningKeystore="$CI_SIGNING_KEYSTORE" -Pandroid.testInstrumentationRunnerArguments.class=ru.dlyasvoih.app.ui.screens.CardReaderPagesTest,ru.dlyasvoih.app.ui.screens.ComparisonSheetTest,ru.dlyasvoih.app.ui.screens.CatalogMenuIconTest,ru.dlyasvoih.app.PackagedDatabaseTest
+            bash ./gradlew :app:connectedDebugAndroidTest --no-daemon -PciSigningKeystore="$CI_SIGNING_KEYSTORE" -Pandroid.testInstrumentationRunnerArguments.class=ru.dlyasvoih.app.ui.screens.CardReaderPagesTest,ru.dlyasvoih.app.ui.screens.ComparisonSheetTest,ru.dlyasvoih.app.ui.screens.CatalogMenuIconTest,ru.dlyasvoih.app.ui.screens.OfflineModelViewerTest,ru.dlyasvoih.app.PackagedDatabaseTest
+            adb pull /data/local/tmp/offline-model-tm46.png build/offline-model-tm46.png
             adb logcat -c
             adb install -r app/build/outputs/apk/release/app-release.apk
             adb shell am start -W -n ru.dlyasvoih.app/.MainActivity
@@ -143,6 +187,7 @@ jobs:
             app/build/outputs/apk/release/app-release.apk
             build/release/latest.json
             build/release-ui.xml
+            build/offline-model-tm46.png
             build/release-crash.log
             app/build/outputs/mapping/release/mapping.txt
             app/build/reports/androidTests/connected/debug
