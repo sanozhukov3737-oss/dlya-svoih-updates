@@ -174,6 +174,7 @@ fun DetailScreen(vm: DetailViewModel, onBack: () -> Unit, active: Boolean = true
                     item(key = "hero") { DetailHero(card, value.images.firstOrNull(), value.countries.joinToString(" · ") { it.name }) { onImage(0) } }
                     item(key = "actions") {
                         Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
+                        OfflineModelAction(card.id, active, Modifier.padding(horizontal = 16.dp))
                         Row(Modifier.fillMaxWidth().padding(horizontal = 16.dp), horizontalArrangement = Arrangement.spacedBy(10.dp)) {
                             if (card.categoryId != "mortars") {
                                 QuickAction("Быстрая сверка", R.drawable.icon_ui_focus, Modifier.weight(1f)) { quickOpen = true }

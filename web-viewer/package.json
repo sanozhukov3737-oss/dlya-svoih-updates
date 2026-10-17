@@ -1,0 +1,10 @@
+{
+  "name": "dlya-svoih-offline-model-viewer",
+  "version": "0.3.127",
+  "private": true,
+  "scripts": {
+    "build": "esbuild viewer.js --bundle --minify --format=iife --target=es2018 --outfile=../app/src/main/assets/viewer3d/viewer.bundle.js --legal-comments=eof"
+  },
+  "dependencies": { "three": "0.180.0" },
+  "devDependencies": { "esbuild": "0.25.10" }
+}

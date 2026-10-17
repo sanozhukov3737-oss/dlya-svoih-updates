@@ -1,0 +1,13 @@
+{
+  "cardId": "ref-v8-tm-46",
+  "title": "ТМ-46",
+  "author": "Oscar Goldsworthy",
+  "source": "https://sketchfab.com/3d-models/tm-46-anti-tank-landmine-3f3ef18d34764342934e96c508d488b0",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "modifications": "Textures reduced from 2048 to 1024 pixels; base color textures encoded as JPEG. Mesh buffers unchanged.",
+  "originalSha256": "5607f9b98bedcd178d6d5ec9da593d262de8d739b04bea26bc8cc638f667f107",
+  "packagedSha256": "44f88451d9268716342dc9f86b7e382e84d9fd5f5b642f54e1fe7f8ac2baea26",
+  "bytes": 1117072,
+  "resources": "All model buffers and textures are embedded; no remote resources."
+}

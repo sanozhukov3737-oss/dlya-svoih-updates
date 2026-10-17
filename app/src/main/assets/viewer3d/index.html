@@ -1,0 +1,8 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; connect-src 'self' blob:; img-src 'self' blob: data:; style-src 'unsafe-inline'; object-src 'none'; frame-src 'none'; base-uri 'none'">
+<title>ТМ-46 — офлайн 3D</title>
+<style>
+*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#131a17;color:#e4e8e0;font:14px system-ui,sans-serif}#stage{position:absolute;inset:0;touch-action:none}canvas{display:block;width:100%;height:100%;touch-action:none}#status{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding:30px;text-align:center;pointer-events:none}#status[hidden]{display:none}#reset{position:absolute;right:14px;top:14px;padding:10px 16px;border:1px solid #58665b;border-radius:20px;color:#edf1e7;background:#28352de8;font:inherit}#hint{position:absolute;bottom:10px;width:100%;margin:0;text-align:center;color:#bdc7bd;font-size:12px;pointer-events:none}
+</style></head><body data-state="loading"><main id="stage"></main><div id="status" role="status">Открываем модель…</div><button id="reset" aria-label="Сбросить положение модели">Сбросить</button><p id="hint">Поворот — одним пальцем · Масштаб — двумя</p><script src="viewer.bundle.js" defer></script></body></html>
