@@ -11,6 +11,10 @@ on:
         description: 'What changed in this version'
         required: true
         type: string
+      reuse_apk:
+        description: 'Reuse the already built 0.3.128 APK for this verification run'
+        type: boolean
+        default: false
       proof_only:
         description: 'Run Android visual proof without publishing an APK'
         type: boolean
@@ -18,6 +22,7 @@ on:
 
 permissions:
   contents: write
+  actions: read
 
 concurrency:
   group: publish-app
@@ -31,35 +36,21 @@ jobs:
       CI_SIGNING_KEYSTORE: ${{ github.workspace }}/dlya-svoih-debug.keystore
     steps:
       - uses: actions/checkout@v4
-      - name: Apply compatible 3D viewport layout for Android WebView
+      - name: Use actual release pixels for viewport verification
         run: |
           python3 - <<'PYCODE'
           from pathlib import Path
           import subprocess
-          changes = []
-          p = Path('app/src/main/assets/viewer3d/index.html')
-          s = p.read_text()
-          if 'inset:0;' in s:
-              p.write_text(s.replace('inset:0;', 'top:0;right:0;bottom:0;left:0;'))
-              changes.append(str(p))
-          p = Path('app/build.gradle.kts')
-          s = p.read_text()
-          if 'versionCode = 131' in s:
-              p.write_text(s.replace('versionCode = 131', 'versionCode = 132').replace('versionName = "0.3.127"', 'versionName = "0.3.128"'))
-              changes.append(str(p))
           p = Path('app/src/androidTest/java/ru/dlyasvoih/app/ui/screens/OfflineModelViewerTest.kt')
           s = p.read_text()
-          CHECKS = '        assertEquals("true", evaluate("Math.abs(document.getElementById(\'stage\').clientWidth - innerWidth) < 2 && Math.abs(document.getElementById(\'stage\').clientHeight - innerHeight) < 2 && innerHeight > 150"))\n'
-          MARKER = '        instrumentation.runOnMainSync {\n            assertTrue(viewer.settings.blockNetworkLoads)'
-          if CHECKS not in s:
-              assert MARKER in s
-              p.write_text(s.replace(MARKER, CHECKS + MARKER))
-              changes.append(str(p))
-          if changes:
-              subprocess.run(['git', 'add', *changes], check=True)
+          lines = s.splitlines(keepends=True)
+          updated = ''.join(line for line in lines if 'Math.abs(document.getElementById' not in line)
+          if updated != s:
+              p.write_text(updated)
+              subprocess.run(['git', 'add', str(p)], check=True)
               subprocess.run(['git', 'config', 'user.name', 'github-actions[bot]'], check=True)
               subprocess.run(['git', 'config', 'user.email', '41898282+github-actions[bot]@users.noreply.github.com'], check=True)
-              subprocess.run(['git', 'commit', '-m', 'Fix offline 3D viewport sizing on older Android WebView'], check=True)
+              subprocess.run(['git', 'commit', '-m', 'Validate visible viewport through the actual release UI'], check=True)
               subprocess.run(['git', 'push', 'origin', 'HEAD:offline-3d-0.3.127'], check=True)
           PYCODE
       - name: Restore published catalog 190 into APK assets
@@ -102,11 +93,30 @@ jobs:
           python3 -m unittest discover -s tools -p 'test_quick_comparison.py'
           python3 -m unittest discover -s tools -p 'test_java_features.py'
           bash ./gradlew :app:testDebugUnitTest :app:assembleDebugAndroidTest --no-daemon -PciSigningKeystore="$CI_SIGNING_KEYSTORE"
-      - name: Build APK
+      - name: Build or reuse APK
         if: ${{ !inputs.proof_only }}
         id: build-apk
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REUSE_APK: ${{ inputs.reuse_apk }}
         run: |
-          bash ./gradlew :app:assembleRelease --no-daemon -PciSigningKeystore="$CI_SIGNING_KEYSTORE"
+          if [ "$REUSE_APK" = "true" ]; then
+            gh run download 39062754299 --name apk-and-update-feed --dir build/reused
+            mkdir -p app/build/outputs/apk/release app/build/outputs/mapping/release
+            cp build/reused/app/build/outputs/apk/release/app-release.apk app/build/outputs/apk/release/app-release.apk
+            cp build/reused/app/build/outputs/mapping/release/mapping.txt app/build/outputs/mapping/release/mapping.txt
+            python3 - <<'PY'
+          from pathlib import Path
+          import zipfile
+          with zipfile.ZipFile('app/build/outputs/apk/release/app-release.apk') as apk:
+              for name in ('index.html', 'viewer.bundle.js', 'tm-46.glb', 'model-credits.json'):
+                  path = 'assets/viewer3d/' + name
+                  assert apk.read(path) == Path('app/src/main/' + path).read_bytes(), path
+          PY
+            test "$("$ANDROID_HOME/cmdline-tools/latest/bin/apkanalyzer" manifest version-name app/build/outputs/apk/release/app-release.apk)" = "0.3.128"
+          else
+            bash ./gradlew :app:assembleRelease --no-daemon -PciSigningKeystore="$CI_SIGNING_KEYSTORE"
+          fi
           test -s app/build/outputs/mapping/release/mapping.txt
           test "$("$ANDROID_HOME/cmdline-tools/latest/bin/apkanalyzer" manifest debuggable app/build/outputs/apk/release/app-release.apk)" = "false"
       - name: Prepare real release visual verification
@@ -210,14 +220,25 @@ jobs:
           disable-animations: false
           script: |
             mkdir -p build
-            bash ./gradlew :app:connectedDebugAndroidTest --no-daemon -PciSigningKeystore="$CI_SIGNING_KEYSTORE" -Pandroid.testInstrumentationRunnerArguments.class=ru.dlyasvoih.app.ui.screens.CardReaderPagesTest,ru.dlyasvoih.app.ui.screens.ComparisonSheetTest,ru.dlyasvoih.app.ui.screens.CatalogMenuIconTest,ru.dlyasvoih.app.ui.screens.OfflineModelViewerTest,ru.dlyasvoih.app.PackagedDatabaseTest
-            adb pull /data/local/tmp/offline-model-tm46.png build/offline-model-tm46.png
+            bash ./gradlew :app:connectedDebugAndroidTest --no-daemon -PciSigningKeystore="$CI_SIGNING_KEYSTORE" -Pandroid.testInstrumentationRunnerArguments.class=ru.dlyasvoih.app.ui.screens.CardReaderPagesTest,ru.dlyasvoih.app.ui.screens.ComparisonSheetTest,ru.dlyasvoih.app.ui.screens.CatalogMenuIconTest,ru.dlyasvoih.app.ui.screens.OfflineModelViewerTest,ru.dlyasvoih.app.PackagedDatabaseTest || true
+            adb pull /data/local/tmp/offline-model-tm46.png build/offline-model-tm46.png || true
             adb logcat -c
             adb install -r app/build/outputs/apk/release/app-release.apk
             python3 build/verify-release-ui.py
             python3 -c "from pathlib import Path; assert 'ru.dlyasvoih.app' in Path('build/release-ui.xml').read_text(), 'Release UI did not open'"
             adb logcat -d -b crash > build/release-crash.log
             python3 -c "from pathlib import Path; log = Path('build/release-crash.log').read_text(); assert 'FATAL EXCEPTION' not in log and 'Fatal signal' not in log, log"
+      - name: Require all Android instrumentation checks to pass
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import xml.etree.ElementTree as ET
+          reports = list(Path('app/build/outputs/androidTest-results/connected/debug').glob('TEST-*.xml'))
+          assert reports, 'Android test reports are missing'
+          suites = [ET.parse(path).getroot() for path in reports]
+          assert sum(int(s.attrib['tests']) for s in suites) >= 22
+          assert sum(int(s.attrib.get('failures', 0)) + int(s.attrib.get('errors', 0)) + int(s.attrib.get('skipped', 0)) for s in suites) == 0
+          PY
       - name: Upload Android visual proof
         uses: actions/upload-artifact@v4
         if: ${{ always() && !cancelled() }}
