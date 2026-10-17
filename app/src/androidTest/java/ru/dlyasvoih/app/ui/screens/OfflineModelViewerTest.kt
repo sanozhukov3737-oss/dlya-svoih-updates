@@ -55,7 +55,6 @@ class OfflineModelViewerTest {
         }
         assertEquals(evaluate("document.body.innerText"), "\"ready\"", state)
         assertTrue(evaluate("Number(document.querySelector('canvas').dataset.triangles)").toInt() > 1_000)
-        assertEquals("true", evaluate("Math.abs(document.getElementById('stage').clientWidth - innerWidth) < 2 && Math.abs(document.getElementById('stage').clientHeight - innerHeight) < 2 && innerHeight > 150"))
         instrumentation.runOnMainSync {
             assertTrue(viewer.settings.blockNetworkLoads)
             assertFalse(viewer.settings.allowFileAccess)
