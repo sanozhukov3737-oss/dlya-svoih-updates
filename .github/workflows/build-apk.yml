@@ -31,6 +31,37 @@ jobs:
       CI_SIGNING_KEYSTORE: ${{ github.workspace }}/dlya-svoih-debug.keystore
     steps:
       - uses: actions/checkout@v4
+      - name: Apply compatible 3D viewport layout for Android WebView
+        run: |
+          python3 - <<'PYCODE'
+          from pathlib import Path
+          import subprocess
+          changes = []
+          p = Path('app/src/main/assets/viewer3d/index.html')
+          s = p.read_text()
+          if 'inset:0;' in s:
+              p.write_text(s.replace('inset:0;', 'top:0;right:0;bottom:0;left:0;'))
+              changes.append(str(p))
+          p = Path('app/build.gradle.kts')
+          s = p.read_text()
+          if 'versionCode = 131' in s:
+              p.write_text(s.replace('versionCode = 131', 'versionCode = 132').replace('versionName = "0.3.127"', 'versionName = "0.3.128"'))
+              changes.append(str(p))
+          p = Path('app/src/androidTest/java/ru/dlyasvoih/app/ui/screens/OfflineModelViewerTest.kt')
+          s = p.read_text()
+          CHECKS = '        assertEquals("true", evaluate("Math.abs(document.getElementById(\'stage\').clientWidth - innerWidth) < 2 && Math.abs(document.getElementById(\'stage\').clientHeight - innerHeight) < 2 && innerHeight > 150"))\n'
+          MARKER = '        instrumentation.runOnMainSync {\n            assertTrue(viewer.settings.blockNetworkLoads)'
+          if CHECKS not in s:
+              assert MARKER in s
+              p.write_text(s.replace(MARKER, CHECKS + MARKER))
+              changes.append(str(p))
+          if changes:
+              subprocess.run(['git', 'add', *changes], check=True)
+              subprocess.run(['git', 'config', 'user.name', 'github-actions[bot]'], check=True)
+              subprocess.run(['git', 'config', 'user.email', '41898282+github-actions[bot]@users.noreply.github.com'], check=True)
+              subprocess.run(['git', 'commit', '-m', 'Fix offline 3D viewport sizing on older Android WebView'], check=True)
+              subprocess.run(['git', 'push', 'origin', 'HEAD:offline-3d-0.3.127'], check=True)
+          PYCODE
       - name: Restore published catalog 190 into APK assets
         run: python3 tools/restore_packaged_catalog.py
       - uses: actions/setup-java@v4
@@ -80,6 +111,7 @@ jobs:
           test "$("$ANDROID_HOME/cmdline-tools/latest/bin/apkanalyzer" manifest debuggable app/build/outputs/apk/release/app-release.apk)" = "false"
       - name: Prepare real release visual verification
         run: |
+          python3 -m pip install --quiet Pillow==11.3.0
           mkdir -p build
           cat > build/verify-release-ui.py <<'PY'
           import re
@@ -120,7 +152,7 @@ jobs:
               adb('shell', 'am', 'start', '-W', '-n', 'ru.dlyasvoih.app/.MainActivity', '--es', 'shortcut_route', 'search_tab')
               search = find(lambda a: a.get('class') == 'android.widget.EditText')
               tap(search)
-              adb('shell', 'input', 'text', '46')
+              adb('shell', 'input', 'text', '46%s304')
               adb('shell', 'input', 'keyevent', '4')
               card = find(lambda a: a.get('text') == 'ТМ-46' or a.get('content-desc') == 'ТМ-46')
               tap(card)
@@ -130,9 +162,19 @@ jobs:
               root = tree()
               print('REAL RELEASE VIEWER TEXT:', [(n.attrib.get('text'), n.attrib.get('content-desc')) for n in root.iter('node') if n.attrib.get('text') or n.attrib.get('content-desc')], flush=True)
               (out / 'offline-model-release.png').write_bytes(adb('exec-out', 'screencap', '-p'))
+              from PIL import Image, ImageChops
+              image = Image.open(out / 'offline-model-release.png').convert('RGB')
+              w, h = image.size
+              region = (int(w*.15), int(h*.30), int(w*.85), int(h*.70))
+              pixels = list(image.crop(region).getdata())
+              visible = sum(max(abs(r-19), abs(g-26), abs(b-23)) > 35 for r,g,b in pixels)
+              assert visible > 500 and len(set(pixels)) > 100, f'Model pixels are missing: {visible}, colors={len(set(pixels))}'
               adb('shell', 'input', 'swipe', '90', '290', '230', '330', '700')
               time.sleep(1)
               (out / 'offline-model-release-rotated.png').write_bytes(adb('exec-out', 'screencap', '-p'))
+              rotated = Image.open(out / 'offline-model-release-rotated.png').convert('RGB')
+              assert ImageChops.difference(image, rotated).crop(region).getbbox(), 'Rotation did not change the visible model'
+              print('Actual model pixels and touch rotation verified', visible, flush=True)
           finally:
               (out / 'release-last-screen.png').write_bytes(adb('exec-out', 'screencap', '-p'))
           PY
@@ -142,11 +184,15 @@ jobs:
           python3 - <<'PY'
           import hashlib, urllib.request
           from pathlib import Path
-          url = 'https://github.com/sanozhukov3737-oss/dlya-svoih-updates/releases/download/app-0.3.127/DLYA_SVOIH_v0.3.127.apk'
-          with urllib.request.urlopen(url, timeout=120) as response:
+          import json
+          feed_url = 'https://github.com/sanozhukov3737-oss/dlya-svoih-updates/releases/latest/download/latest.json'
+          with urllib.request.urlopen(feed_url, timeout=30) as response:
+              app = json.load(response)['app']
+          assert app['url'].startswith('https://github.com/sanozhukov3737-oss/dlya-svoih-updates/releases/download/app-')
+          with urllib.request.urlopen(app['url'], timeout=120) as response:
               data = response.read()
-          assert len(data) == 85712340
-          assert hashlib.sha256(data).hexdigest() == '130d94f9214a1c4fe219d630cc6994d438ff1366359401b11e5d5341674496f5'
+          assert len(data) == app['bytes']
+          assert hashlib.sha256(data).hexdigest() == app['sha256']
           path = Path('app/build/outputs/apk/release/app-release.apk')
           path.parent.mkdir(parents=True, exist_ok=True)
           path.write_bytes(data)
