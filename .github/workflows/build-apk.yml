@@ -36,21 +36,30 @@ jobs:
       CI_SIGNING_KEYSTORE: ${{ github.workspace }}/dlya-svoih-debug.keystore
     steps:
       - uses: actions/checkout@v4
-      - name: Use actual release pixels for viewport verification
+      - name: Apply persistent offline 3D frame rendering
         run: |
           python3 - <<'PYCODE'
           from pathlib import Path
-          import subprocess
-          p = Path('app/src/androidTest/java/ru/dlyasvoih/app/ui/screens/OfflineModelViewerTest.kt')
-          s = p.read_text()
-          lines = s.splitlines(keepends=True)
-          updated = ''.join(line for line in lines if 'Math.abs(document.getElementById' not in line)
-          if updated != s:
-              p.write_text(updated)
-              subprocess.run(['git', 'add', str(p)], check=True)
+          import urllib.request, hashlib, io, zipfile, json, subprocess
+          url = 'https://github.com/sanozhukov3737-oss/dlya-svoih-updates/releases/download/catalog-190/DLYA_SVOIH_OFFLINE_3D_0.3.128_renderer_fix.zip'
+          with urllib.request.urlopen(url, timeout=60) as response:
+              raw = response.read(200000)
+          assert len(raw) == 158103
+          assert hashlib.sha256(raw).hexdigest() == '0c0cba2c850140d02ffad12454387d70b7dea36a9dfab42ad22a2e65b16fc547'
+          allowed = {'web-viewer/viewer.js', 'app/src/main/assets/viewer3d/viewer.bundle.js', 'app/src/main/java/ru/dlyasvoih/app/ui/screens/OfflineModelViewer.kt', 'app/src/androidTest/java/ru/dlyasvoih/app/ui/screens/OfflineModelViewerTest.kt'}
+          with zipfile.ZipFile(io.BytesIO(raw)) as patch:
+              manifest = json.loads(patch.read('patch-manifest.json'))
+              assert set(manifest) == allowed
+              assert set(patch.namelist()) == allowed | {'patch-manifest.json'}
+              for name, digest in manifest.items():
+                  data = patch.read(name)
+                  assert hashlib.sha256(data).hexdigest() == digest
+                  Path(name).write_bytes(data)
+          subprocess.run(['git', 'add', *sorted(allowed)], check=True)
+          if subprocess.run(['git', 'diff', '--cached', '--quiet']).returncode:
               subprocess.run(['git', 'config', 'user.name', 'github-actions[bot]'], check=True)
               subprocess.run(['git', 'config', 'user.email', '41898282+github-actions[bot]@users.noreply.github.com'], check=True)
-              subprocess.run(['git', 'commit', '-m', 'Validate visible viewport through the actual release UI'], check=True)
+              subprocess.run(['git', 'commit', '-m', 'Persist offline 3D frames across Android WebView composition'], check=True)
               subprocess.run(['git', 'push', 'origin', 'HEAD:offline-3d-0.3.127'], check=True)
           PYCODE
       - name: Restore published catalog 190 into APK assets
@@ -190,6 +199,9 @@ jobs:
               assert ImageChops.difference(image, rotated).crop(region).getbbox(), 'Rotation did not change the visible model'
               print('Actual model pixels and touch rotation verified', visible, flush=True)
           finally:
+              log = adb('logcat', '-d', '-s', 'OfflineModelViewer:I', 'chromium:E', '*:S')
+              (out / 'release-webview.log').write_bytes(log)
+              print(log.decode(errors='replace')[-5000:], flush=True)
               (out / 'release-last-screen.png').write_bytes(adb('exec-out', 'screencap', '-p'))
           PY
       - name: Load published APK for proof-only run
@@ -251,6 +263,7 @@ jobs:
           path: |
             build/offline-model*.png
             build/release-last-screen.png
+            build/release-webview.log
             build/release-ui.xml
             app/build/reports/androidTests/connected/debug
             app/build/outputs/androidTest-results/connected/debug
@@ -307,6 +320,7 @@ jobs:
             build/release-ui.xml
             build/offline-model*.png
             build/release-last-screen.png
+            build/release-webview.log
             build/release-ui.xml
             build/release-crash.log
             app/build/outputs/mapping/release/mapping.txt
