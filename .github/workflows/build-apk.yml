@@ -33,11 +33,11 @@ jobs:
           python3 - <<'PYCODE'
           from pathlib import Path
           import urllib.request, hashlib, io, zipfile, json, subprocess
-          url = 'https://github.com/sanozhukov3737-oss/dlya-svoih-updates/releases/download/catalog-190/DLYA_SVOIH_SEARCH_FIX_0.3.129.zip'
+          url = 'https://github.com/sanozhukov3737-oss/dlya-svoih-updates/releases/download/catalog-190/DLYA_SVOIH_SEARCH_FIX_0.3.129_r2.zip'
           with urllib.request.urlopen(url, timeout=60) as response:
               raw = response.read(200000)
-          assert len(raw) == 17789
-          assert hashlib.sha256(raw).hexdigest() == 'a554d0eda8ab0f3abb373c4f6691c7c3617e7686cdee835e665614088d6c7277'
+          assert len(raw) == 18282
+          assert hashlib.sha256(raw).hexdigest() == '8c1499347f3798e15050c1ca89207a554bc78dcb9ac7c8f65dee75ecb685707b'
           allowed = {'app/build.gradle.kts', 'test-common/HostSearchChecks.java', 'app/src/main/java/ru/dlyasvoih/app/data/SearchQuery.kt', 'tools/test_search.py', 'app/src/androidTest/java/ru/dlyasvoih/app/SearchRegressionTest.kt', 'tools/verify_release_ui.py', 'app/src/main/java/ru/dlyasvoih/app/data/CatalogSearch.java', 'app/src/main/java/ru/dlyasvoih/app/data/GuideRepository.kt'}
           with zipfile.ZipFile(io.BytesIO(raw)) as patch:
               manifest = json.loads(patch.read('patch-manifest.json'))
@@ -52,7 +52,7 @@ jobs:
           if subprocess.run(['git', 'diff', '--cached', '--quiet']).returncode:
               subprocess.run(['git', 'config', 'user.name', 'github-actions[bot]'], check=True)
               subprocess.run(['git', 'config', 'user.email', '41898282+github-actions[bot]@users.noreply.github.com'], check=True)
-              subprocess.run(['git', 'commit', '-m', 'Fix model search relevance, numeric matches and joined designations'], check=True)
+              subprocess.run(['git', 'commit', '-m', 'Use Android compatible FTS syntax for model and multiword searches'], check=True)
               subprocess.run(['git', 'push', 'origin', 'HEAD:fix-search-0.3.129'], check=True)
           PYCODE
       - name: Restore published catalog 190 into APK assets
@@ -150,7 +150,7 @@ jobs:
           reports = list(Path('app/build/outputs/androidTest-results/connected/debug').glob('TEST-*.xml'))
           assert reports, 'Android test reports are missing'
           suites = [ET.parse(path).getroot() for path in reports]
-          assert sum(int(s.attrib['tests']) for s in suites) >= 28
+          assert sum(int(s.attrib['tests']) for s in suites) >= 29
           assert sum(int(s.attrib.get('failures', 0)) + int(s.attrib.get('errors', 0)) + int(s.attrib.get('skipped', 0)) for s in suites) == 0
           PY
       - name: Upload Android visual proof
