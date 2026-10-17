@@ -55,6 +55,7 @@ class OfflineModelViewerTest {
         }
         assertEquals(evaluate("document.body.innerText"), "\"ready\"", state)
         assertTrue(evaluate("Number(document.querySelector('canvas').dataset.triangles)").toInt() > 1_000)
+        assertTrue(evaluate("Number(document.querySelector('canvas').dataset.colors)").toInt() > 100)
         instrumentation.runOnMainSync {
             assertTrue(viewer.settings.blockNetworkLoads)
             assertFalse(viewer.settings.allowFileAccess)

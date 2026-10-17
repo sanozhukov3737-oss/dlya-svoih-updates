@@ -4,7 +4,7 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 
 const status = document.getElementById('status');
 const stage = document.getElementById('stage');
-let renderer, controls, frame, disposed = false;
+let renderer, controls, frame, display, displayContext, diagnosticLogged = false, disposed = false;
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(38, 1, 0.01, 100);
 let model;
@@ -19,10 +19,22 @@ function render() {
   if (!disposed && renderer && !document.hidden) {
     controls.update();
     renderer.render(scene, camera);
+    displayContext.drawImage(renderer.domElement, 0, 0, display.width, display.height);
     if (model) {
       document.body.dataset.state = 'ready';
       status.hidden = true;
-      renderer.domElement.dataset.triangles = String(renderer.info.render.triangles);
+      display.dataset.triangles = String(renderer.info.render.triangles);
+      if (!diagnosticLogged) {
+        diagnosticLogged = true;
+        const pixels = displayContext.getImageData(0, 0, display.width, display.height).data;
+        const colors = new Set();
+        for (let i = 0; i < pixels.length; i += 64) colors.add((pixels[i] << 16) | (pixels[i+1] << 8) | pixels[i+2]);
+        display.dataset.colors = String(colors.size);
+        console.info('Offline model frame', JSON.stringify({colors: colors.size, triangles: renderer.info.render.triangles,
+          stage: [stage.clientWidth, stage.clientHeight], viewport: [innerWidth, innerHeight],
+          buffer: [display.width, display.height], camera: camera.position.toArray()}));
+        if (colors.size < 8) fail('Не удалось отрисовать модель. Закройте 3D-просмотр и попробуйте снова.');
+      }
     }
   }
 }
@@ -33,7 +45,12 @@ function resize() {
   if (!renderer) return;
   const width = stage.clientWidth, height = stage.clientHeight;
   if (!width || !height) return;
-  renderer.setSize(width, height, false);
+  const ratio = renderer.getPixelRatio();
+  if (renderer.domElement.width !== Math.floor(width * ratio) || renderer.domElement.height !== Math.floor(height * ratio)) {
+    renderer.setSize(width, height, false);
+    display.width = renderer.domElement.width;
+    display.height = renderer.domElement.height;
+  }
   camera.aspect = width / height;
   camera.updateProjectionMatrix();
   requestRender();
@@ -55,20 +72,25 @@ function cleanup() {
   renderer?.forceContextLoss();
 }
 try {
-  renderer = new THREE.WebGLRenderer({ antialias: true, alpha: false, powerPreference: 'low-power' });
-  renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 1.75));
+  renderer = new THREE.WebGLRenderer({ antialias: true, alpha: false, preserveDrawingBuffer: true, powerPreference: 'low-power' });
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 1.5));
   renderer.setClearColor(0x131a17);
   renderer.outputColorSpace = THREE.SRGBColorSpace;
   renderer.toneMapping = THREE.ACESFilmicToneMapping;
   renderer.toneMappingExposure = 1.15;
-  renderer.domElement.setAttribute('aria-label', 'Объёмная модель ТМ-46');
-  stage.appendChild(renderer.domElement);
+  // Copy each requested GPU frame to a persistent 2D canvas. Older Android WebView
+  // can discard or incorrectly composite an on-screen WebGL drawing buffer.
+  display = document.createElement('canvas');
+  display.setAttribute('aria-label', 'Объёмная модель ТМ-46');
+  displayContext = display.getContext('2d', { alpha: false });
+  if (!displayContext) throw new Error('Canvas display is unavailable');
+  stage.appendChild(display);
   scene.add(new THREE.HemisphereLight(0xf7f6e6, 0x61756a, 2.8));
   for (const [position, intensity] of [[[3, 5, 4], 3.1], [[-4, 2, -2], 1.8], [[0, -3, 1], 0.6]]) {
     const light = new THREE.DirectionalLight(0xffffff, intensity);
     light.position.set(...position); scene.add(light);
   }
-  controls = new OrbitControls(camera, renderer.domElement);
+  controls = new OrbitControls(camera, display);
   controls.enableDamping = false;
   controls.enablePan = false;
   controls.minDistance = 0.65;
@@ -78,6 +100,7 @@ try {
     event.preventDefault(); fail('Не удалось сохранить 3D-просмотр. Закройте его и откройте снова.');
   });
   window.addEventListener('resize', resize);
+  new ResizeObserver(resize).observe(stage);
   document.addEventListener('visibilitychange', () => {
     if (document.hidden) { cancelAnimationFrame(frame); frame = null; } else requestRender();
   });

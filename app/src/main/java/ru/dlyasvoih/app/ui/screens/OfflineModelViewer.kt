@@ -4,6 +4,9 @@ import android.annotation.SuppressLint
 import android.content.Context
 import android.net.Uri
 import android.view.ViewGroup
+import android.webkit.WebChromeClient
+import android.webkit.ConsoleMessage
+import android.util.Log
 import android.webkit.RenderProcessGoneDetail
 import android.webkit.WebResourceError
 import android.webkit.WebResourceRequest
@@ -16,6 +19,7 @@ import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clipToBounds
 import androidx.compose.ui.platform.LocalUriHandler
 import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.unit.dp
@@ -100,7 +104,7 @@ internal fun OfflineModelDialog(onViewerCreated: (WebView) -> Unit = {}, onDismi
                     if (failed) StatusPanel("Не удалось открыть 3D-просмотр. Попробуйте снова.", retry = {
                         failed = false; attempt++
                     }) else key(attempt) {
-                        AndroidView(modifier = Modifier.fillMaxSize().testTag("offline_3d_webview"),
+                        AndroidView(modifier = Modifier.fillMaxSize().clipToBounds().testTag("offline_3d_webview"),
                             factory = { context -> createOfflineModelWebView(context, onFailure = { failed = true },
                                 onRendererGone = { destroyed ->
                                     (destroyed.parent as? ViewGroup)?.removeView(destroyed)
@@ -132,8 +136,12 @@ internal fun OfflineModelDialog(onViewerCreated: (WebView) -> Unit = {}, onDismi
 @SuppressLint("SetJavaScriptEnabled")
 internal fun createOfflineModelWebView(context: Context, onFailure: () -> Unit,
     onRendererGone: (WebView) -> Unit): WebView = WebView(context).apply {
+    layoutParams = ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT)
     settings.apply {
         javaScriptEnabled = true
+        useWideViewPort = true
+        loadWithOverviewMode = true
+        setSupportZoom(false)
         domStorageEnabled = false
         allowFileAccess = false
         allowContentAccess = false
@@ -145,6 +153,12 @@ internal fun createOfflineModelWebView(context: Context, onFailure: () -> Unit,
         mediaPlaybackRequiresUserGesture = true
     }
     setBackgroundColor(android.graphics.Color.rgb(19, 26, 23))
+    webChromeClient = object : WebChromeClient() {
+        override fun onConsoleMessage(message: ConsoleMessage): Boolean {
+            Log.i("OfflineModelViewer", message.message())
+            return true
+        }
+    }
     webViewClient = object : WebViewClient() {
         override fun shouldInterceptRequest(view: WebView, request: WebResourceRequest): WebResourceResponse =
             OfflineModelFiles.response(context, request.url)
