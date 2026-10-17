@@ -11,14 +11,6 @@ on:
         description: 'What changed in this version'
         required: true
         type: string
-      reuse_apk:
-        description: 'Reuse the already built 0.3.128 APK for this verification run'
-        type: boolean
-        default: false
-      proof_only:
-        description: 'Run Android visual proof without publishing an APK'
-        type: boolean
-        default: false
 
 permissions:
   contents: write
@@ -36,17 +28,17 @@ jobs:
       CI_SIGNING_KEYSTORE: ${{ github.workspace }}/dlya-svoih-debug.keystore
     steps:
       - uses: actions/checkout@v4
-      - name: Apply persistent offline 3D frame rendering
+      - name: Apply and commit search correction
         run: |
           python3 - <<'PYCODE'
           from pathlib import Path
           import urllib.request, hashlib, io, zipfile, json, subprocess
-          url = 'https://github.com/sanozhukov3737-oss/dlya-svoih-updates/releases/download/catalog-190/DLYA_SVOIH_OFFLINE_3D_0.3.128_renderer_fix.zip'
+          url = 'https://github.com/sanozhukov3737-oss/dlya-svoih-updates/releases/download/catalog-190/DLYA_SVOIH_SEARCH_FIX_0.3.129.zip'
           with urllib.request.urlopen(url, timeout=60) as response:
               raw = response.read(200000)
-          assert len(raw) == 158103
-          assert hashlib.sha256(raw).hexdigest() == '0c0cba2c850140d02ffad12454387d70b7dea36a9dfab42ad22a2e65b16fc547'
-          allowed = {'web-viewer/viewer.js', 'app/src/main/assets/viewer3d/viewer.bundle.js', 'app/src/main/java/ru/dlyasvoih/app/ui/screens/OfflineModelViewer.kt', 'app/src/androidTest/java/ru/dlyasvoih/app/ui/screens/OfflineModelViewerTest.kt'}
+          assert len(raw) == 17789
+          assert hashlib.sha256(raw).hexdigest() == 'a554d0eda8ab0f3abb373c4f6691c7c3617e7686cdee835e665614088d6c7277'
+          allowed = {'app/build.gradle.kts', 'test-common/HostSearchChecks.java', 'app/src/main/java/ru/dlyasvoih/app/data/SearchQuery.kt', 'tools/test_search.py', 'app/src/androidTest/java/ru/dlyasvoih/app/SearchRegressionTest.kt', 'tools/verify_release_ui.py', 'app/src/main/java/ru/dlyasvoih/app/data/CatalogSearch.java', 'app/src/main/java/ru/dlyasvoih/app/data/GuideRepository.kt'}
           with zipfile.ZipFile(io.BytesIO(raw)) as patch:
               manifest = json.loads(patch.read('patch-manifest.json'))
               assert set(manifest) == allowed
@@ -54,13 +46,14 @@ jobs:
               for name, digest in manifest.items():
                   data = patch.read(name)
                   assert hashlib.sha256(data).hexdigest() == digest
+                  Path(name).parent.mkdir(parents=True, exist_ok=True)
                   Path(name).write_bytes(data)
           subprocess.run(['git', 'add', *sorted(allowed)], check=True)
           if subprocess.run(['git', 'diff', '--cached', '--quiet']).returncode:
               subprocess.run(['git', 'config', 'user.name', 'github-actions[bot]'], check=True)
               subprocess.run(['git', 'config', 'user.email', '41898282+github-actions[bot]@users.noreply.github.com'], check=True)
-              subprocess.run(['git', 'commit', '-m', 'Persist offline 3D frames across Android WebView composition'], check=True)
-              subprocess.run(['git', 'push', 'origin', 'HEAD:offline-3d-0.3.127'], check=True)
+              subprocess.run(['git', 'commit', '-m', 'Fix model search relevance, numeric matches and joined designations'], check=True)
+              subprocess.run(['git', 'push', 'origin', 'HEAD:fix-search-0.3.129'], check=True)
           PYCODE
       - name: Restore published catalog 190 into APK assets
         run: python3 tools/restore_packaged_catalog.py
@@ -96,132 +89,33 @@ jobs:
           printf 'sdk.dir=%s\n' "$ANDROID_HOME" > local.properties
       - name: Check reader behavior and compile Android regression tests
         run: |
+          python3 -m unittest discover -s tools -p 'test_search.py'
           python3 -m unittest discover -s tools -p 'test_offline_model.py'
           python3 -m unittest discover -s tools -p 'test_menu_images.py'
           python3 -m unittest discover -s tools -p 'test_reader_navigation.py'
           python3 -m unittest discover -s tools -p 'test_quick_comparison.py'
           python3 -m unittest discover -s tools -p 'test_java_features.py'
           bash ./gradlew :app:testDebugUnitTest :app:assembleDebugAndroidTest --no-daemon -PciSigningKeystore="$CI_SIGNING_KEYSTORE"
-      - name: Build or reuse APK
-        if: ${{ !inputs.proof_only }}
+      - name: Build APK
         id: build-apk
-        env:
-          GH_TOKEN: ${{ github.token }}
-          REUSE_APK: ${{ inputs.reuse_apk }}
         run: |
-          if [ "$REUSE_APK" = "true" ]; then
-            gh run download 39062754299 --name apk-and-update-feed --dir build/reused
-            mkdir -p app/build/outputs/apk/release app/build/outputs/mapping/release
-            cp build/reused/app/build/outputs/apk/release/app-release.apk app/build/outputs/apk/release/app-release.apk
-            cp build/reused/app/build/outputs/mapping/release/mapping.txt app/build/outputs/mapping/release/mapping.txt
-            python3 - <<'PY'
-          from pathlib import Path
-          import zipfile
-          with zipfile.ZipFile('app/build/outputs/apk/release/app-release.apk') as apk:
-              for name in ('index.html', 'viewer.bundle.js', 'tm-46.glb', 'model-credits.json'):
-                  path = 'assets/viewer3d/' + name
-                  assert apk.read(path) == Path('app/src/main/' + path).read_bytes(), path
-          PY
-            test "$("$ANDROID_HOME/cmdline-tools/latest/bin/apkanalyzer" manifest version-name app/build/outputs/apk/release/app-release.apk)" = "0.3.128"
-          else
-            bash ./gradlew :app:assembleRelease --no-daemon -PciSigningKeystore="$CI_SIGNING_KEYSTORE"
-          fi
+          bash ./gradlew :app:assembleRelease --no-daemon -PciSigningKeystore="$CI_SIGNING_KEYSTORE"
           test -s app/build/outputs/mapping/release/mapping.txt
           test "$("$ANDROID_HOME/cmdline-tools/latest/bin/apkanalyzer" manifest debuggable app/build/outputs/apk/release/app-release.apk)" = "false"
-      - name: Prepare real release visual verification
+      - name: Prepare release search and offline model verification
         run: |
           python3 -m pip install --quiet Pillow==11.3.0
           mkdir -p build
-          cat > build/verify-release-ui.py <<'PY'
-          import re
-          import subprocess
-          import time
-          import xml.etree.ElementTree as ET
-          from pathlib import Path
-          
-          out = Path('build')
-          
-          def adb(*args):
-              return subprocess.run(['adb', *args], capture_output=True, check=True).stdout
-          
-          def tree():
-              raw = adb('shell', 'uiautomator', 'dump', '/sdcard/offline-proof.xml')
-              raw = adb('exec-out', 'cat', '/sdcard/offline-proof.xml')
-              (out / 'release-ui.xml').write_bytes(raw)
-              return ET.fromstring(raw)
-          
-          def tap(node):
-              x1, y1, x2, y2 = map(int, re.findall(r'\d+', node.attrib['bounds']))
-              adb('shell', 'input', 'tap', str((x1+x2)//2), str((y1+y2)//2))
-          
-          def find(predicate, timeout=25, scroll=False):
-              deadline = time.monotonic() + timeout
-              while time.monotonic() < deadline:
-                  root = tree()
-                  for node in root.iter('node'):
-                      if predicate(node.attrib):
-                          return node
-                  if scroll:
-                      adb('shell', 'input', 'swipe', '160', '490', '160', '180', '350')
-                  time.sleep(.6)
-              texts = [n.attrib.get('text') or n.attrib.get('content-desc') for n in root.iter('node')]
-              raise AssertionError('UI element missing: ' + repr([t for t in texts if t]))
-          
-          try:
-              adb('shell', 'am', 'start', '-W', '-n', 'ru.dlyasvoih.app/.MainActivity', '--es', 'shortcut_route', 'search_tab')
-              search = find(lambda a: a.get('class') == 'android.widget.EditText')
-              tap(search)
-              adb('shell', 'input', 'text', '46')
-              adb('shell', 'input', 'keyevent', '4')
-              categories = find(lambda a: a.get('text') == 'Все категории' or a.get('resource-id', '').endswith('category_filter'))
-              tap(categories)
-              category = find(lambda a: a.get('text') == 'Противотанковые мины', timeout=45, scroll=True)
-              tap(category)
-              card = find(lambda a: a.get('text') == 'ТМ-46' or a.get('content-desc') == 'ТМ-46', timeout=80, scroll=True)
-              tap(card)
-              button = find(lambda a: '3D-модель' in (a.get('text', '') + a.get('content-desc', '')), scroll=True)
-              tap(button)
-              time.sleep(5)
-              root = tree()
-              print('REAL RELEASE VIEWER TEXT:', [(n.attrib.get('text'), n.attrib.get('content-desc')) for n in root.iter('node') if n.attrib.get('text') or n.attrib.get('content-desc')], flush=True)
-              (out / 'offline-model-release.png').write_bytes(adb('exec-out', 'screencap', '-p'))
-              from PIL import Image, ImageChops
-              image = Image.open(out / 'offline-model-release.png').convert('RGB')
-              w, h = image.size
-              region = (int(w*.15), int(h*.30), int(w*.85), int(h*.70))
-              pixels = list(image.crop(region).getdata())
-              visible = sum(max(abs(r-19), abs(g-26), abs(b-23)) > 35 for r,g,b in pixels)
-              assert visible > 500 and len(set(pixels)) > 100, f'Model pixels are missing: {visible}, colors={len(set(pixels))}'
-              adb('shell', 'input', 'swipe', '90', '290', '230', '330', '700')
-              time.sleep(1)
-              (out / 'offline-model-release-rotated.png').write_bytes(adb('exec-out', 'screencap', '-p'))
-              rotated = Image.open(out / 'offline-model-release-rotated.png').convert('RGB')
-              assert ImageChops.difference(image, rotated).crop(region).getbbox(), 'Rotation did not change the visible model'
-              print('Actual model pixels and touch rotation verified', visible, flush=True)
-          finally:
-              log = adb('logcat', '-d', '-s', 'OfflineModelViewer:I', 'chromium:E', '*:S')
-              (out / 'release-webview.log').write_bytes(log)
-              print(log.decode(errors='replace')[-5000:], flush=True)
-              (out / 'release-last-screen.png').write_bytes(adb('exec-out', 'screencap', '-p'))
-          PY
-      - name: Load published APK for proof-only run
-        if: ${{ inputs.proof_only }}
-        run: |
+          cp tools/verify_release_ui.py build/verify-release-ui.py
           python3 - <<'PY'
-          import hashlib, urllib.request
           from pathlib import Path
-          import json
-          feed_url = 'https://github.com/sanozhukov3737-oss/dlya-svoih-updates/releases/latest/download/latest.json'
-          with urllib.request.urlopen(feed_url, timeout=30) as response:
-              app = json.load(response)['app']
-          assert app['url'].startswith('https://github.com/sanozhukov3737-oss/dlya-svoih-updates/releases/download/app-')
-          with urllib.request.urlopen(app['url'], timeout=120) as response:
-              data = response.read()
-          assert len(data) == app['bytes']
-          assert hashlib.sha256(data).hexdigest() == app['sha256']
-          path = Path('app/build/outputs/apk/release/app-release.apk')
-          path.parent.mkdir(parents=True, exist_ok=True)
-          path.write_bytes(data)
+          import urllib.request, hashlib
+          url = 'https://github.com/sanozhukov3737-oss/dlya-svoih-updates/releases/download/app-0.3.128/DLYA_SVOIH_v0.3.128.apk'
+          with urllib.request.urlopen(url, timeout=120) as response:
+              raw = response.read()
+          assert len(raw) == 85712720
+          assert hashlib.sha256(raw).hexdigest() == 'a1fe9eee4dc0ba89f50208f21766f28cf9ebe525acc2b4be6e9bb2173f3c7efd'
+          Path('build/previous-release.apk').write_bytes(raw)
           PY
       - name: Enable emulator acceleration
         run: |
@@ -236,9 +130,13 @@ jobs:
           disable-animations: false
           script: |
             mkdir -p build
-            bash ./gradlew :app:connectedDebugAndroidTest --no-daemon -PciSigningKeystore="$CI_SIGNING_KEYSTORE" -Pandroid.testInstrumentationRunnerArguments.class=ru.dlyasvoih.app.ui.screens.CardReaderPagesTest,ru.dlyasvoih.app.ui.screens.ComparisonSheetTest,ru.dlyasvoih.app.ui.screens.CatalogMenuIconTest,ru.dlyasvoih.app.ui.screens.OfflineModelViewerTest,ru.dlyasvoih.app.PackagedDatabaseTest || true
+            bash ./gradlew :app:connectedDebugAndroidTest --no-daemon -PciSigningKeystore="$CI_SIGNING_KEYSTORE" -Pandroid.testInstrumentationRunnerArguments.class=ru.dlyasvoih.app.ui.screens.CardReaderPagesTest,ru.dlyasvoih.app.ui.screens.ComparisonSheetTest,ru.dlyasvoih.app.ui.screens.CatalogMenuIconTest,ru.dlyasvoih.app.ui.screens.OfflineModelViewerTest,ru.dlyasvoih.app.PackagedDatabaseTest,ru.dlyasvoih.app.SearchRegressionTest || true
             adb pull /data/local/tmp/offline-model-tm46.png build/offline-model-tm46.png || true
             adb logcat -c
+            adb install -r build/previous-release.apk
+            adb shell am start -W -n ru.dlyasvoih.app/.MainActivity --es shortcut_route search_tab
+            adb shell uiautomator dump /sdcard/before-update.xml
+            adb shell am force-stop ru.dlyasvoih.app
             adb install -r app/build/outputs/apk/release/app-release.apk
             python3 build/verify-release-ui.py
             python3 -c "from pathlib import Path; assert 'ru.dlyasvoih.app' in Path('build/release-ui.xml').read_text(), 'Release UI did not open'"
@@ -252,15 +150,16 @@ jobs:
           reports = list(Path('app/build/outputs/androidTest-results/connected/debug').glob('TEST-*.xml'))
           assert reports, 'Android test reports are missing'
           suites = [ET.parse(path).getroot() for path in reports]
-          assert sum(int(s.attrib['tests']) for s in suites) >= 22
+          assert sum(int(s.attrib['tests']) for s in suites) >= 28
           assert sum(int(s.attrib.get('failures', 0)) + int(s.attrib.get('errors', 0)) + int(s.attrib.get('skipped', 0)) for s in suites) == 0
           PY
       - name: Upload Android visual proof
         uses: actions/upload-artifact@v4
         if: ${{ always() && !cancelled() }}
         with:
-          name: offline-3d-visual-proof
+          name: search-and-offline-3d-proof
           path: |
+            build/search-*-release.*
             build/offline-model*.png
             build/release-last-screen.png
             build/release-webview.log
@@ -269,7 +168,6 @@ jobs:
             app/build/outputs/androidTest-results/connected/debug
           if-no-files-found: warn
       - name: Prepare versioned APK and preserve published catalog
-        if: ${{ !inputs.proof_only }}
         env:
           RELEASE_TAG: ${{ inputs.tag }}
           RELEASE_CHANGES: ${{ inputs.changes }}
@@ -318,6 +216,7 @@ jobs:
             app/build/outputs/apk/release/app-release.apk
             build/release/latest.json
             build/release-ui.xml
+            build/search-*-release.*
             build/offline-model*.png
             build/release-last-screen.png
             build/release-webview.log
@@ -328,7 +227,6 @@ jobs:
             app/build/outputs/androidTest-results/connected/debug
           if-no-files-found: error
       - name: Publish only after both files are uploaded
-        if: ${{ !inputs.proof_only }}
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
