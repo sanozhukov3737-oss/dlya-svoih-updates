@@ -36,7 +36,7 @@ class OfflineModelViewerTest {
 
     @Test fun packagedModelActuallyRendersWithNetworkAccessDisabled() {
         lateinit var viewer: WebView
-        compose.setContent { MaterialTheme { OfflineModelDialog(onViewerCreated = { viewer = it }, onDismiss = {}) } }
+        compose.setContent { MaterialTheme(colorScheme = androidx.compose.material3.darkColorScheme()) { OfflineModelDialog(onViewerCreated = { viewer = it }, onDismiss = {}) } }
         compose.waitForIdle()
         val instrumentation = InstrumentationRegistry.getInstrumentation()
         fun evaluate(script: String): String {
@@ -61,6 +61,16 @@ class OfflineModelViewerTest {
             assertFalse(viewer.settings.allowContentAccess)
         }
         // Gradle uninstalls the test app afterwards, so keep proof outside its data.
+        val visualFrame = CountDownLatch(1)
+        instrumentation.runOnMainSync {
+            viewer.postVisualStateCallback(1L, object : WebView.VisualStateCallback() {
+                override fun onComplete(requestId: Long) { visualFrame.countDown() }
+            })
+        }
+        assertTrue("WebView did not produce a composited frame", visualFrame.await(10, TimeUnit.SECONDS))
+        compose.waitForIdle()
+        Thread.sleep(750)
+        assertEquals("true", evaluate("document.getElementById('status').hidden"))
         val descriptor = instrumentation.uiAutomation.executeShellCommand(
             "screencap -p /data/local/tmp/offline-model-tm46.png")
         ParcelFileDescriptor.AutoCloseInputStream(descriptor).use { it.readBytes() }
