@@ -57,6 +57,7 @@ class CatalogSearchTests(unittest.TestCase):
         for query in ['ПМН-2','PMN2','РГД-5','RGD5','ПТАБ-2.5','PTAB2.5']:
             with self.subTest(query=query): self.assertTrue(self.results(query), query)
         self.assertIn('first-aid-burn',[r[0] for r in self.results('проточной')])
+        self.assertIn('first-aid-burn',[r[0] for r in self.results('проточной водой')])
 
     def test_title_search_survives_a_missing_fts_entry(self):
         row = self.db.execute("SELECT rowid FROM cards WHERE id='ref-v8-tm-46'").fetchone()[0]

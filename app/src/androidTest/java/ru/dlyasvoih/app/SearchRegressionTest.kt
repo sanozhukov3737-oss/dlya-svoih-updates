@@ -66,6 +66,9 @@ class SearchRegressionTest {
         val dao = db.guideDao()
         val version = dao.metadata("content_version")!!
         val row = dao.rowForId(target)!!
+        assertTrue("Seed index must contain TM-46", db.openHelper.readableDatabase.query(
+            "SELECT rowid FROM cards_fts WHERE cards_fts MATCH ? AND rowid = ?",
+            arrayOf(SearchQuery.match("ТМ-46")!!, row)).use { it.moveToFirst() })
         dao.addFavorite(FavoriteEntity(target, 120))
         dao.saveReading(ReadingEntity(target, 2, 37, 150, version.toLong()))
         db.openHelper.writableDatabase.execSQL("DELETE FROM cards_fts WHERE docid = ?", arrayOf(row))
@@ -75,11 +78,16 @@ class SearchRegressionTest {
         assertFalse(indexed())
         val repo = GuideRepository(db, context.getSharedPreferences(preferencesName, Context.MODE_PRIVATE))
         repo.initialize()
-        assertTrue(indexed())
+        assertEquals("2:" + version, dao.metadata("search_index_revision"))
+        assertTrue("Rebuilt index must contain TM-46", indexed())
         assertTrue(dao.isFavorite(target).first())
         assertEquals(37, dao.reading(target)!!.offset)
         assertEquals(version, dao.metadata("content_version"))
         assertEquals(target, ids(CatalogFilter(query = "46", favoritesOnly = true)).firstOrNull())
+    }
+    @Test fun severalWordsFindBodyTextWithThePlatformFtsParser() = runBlocking(Dispatchers.IO) {
+        assertTrue(ids(CatalogFilter(query = "проточной водой")).contains("first-aid-burn"))
+        assertTrue(ids(CatalogFilter(query = "ТМ 46")).contains(target))
     }
     @Test fun firstPageAndBookUseTheSameRelevantOrder() = runBlocking(Dispatchers.IO) {
         val filter = CatalogFilter(query = "46")

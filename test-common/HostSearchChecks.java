@@ -18,6 +18,12 @@ public final class HostSearchChecks {
                 long placeholders = (plan.whereSql + plan.rankSql).chars().filter(c -> c == '?').count();
                 if (placeholders != plan.whereArgs.size() + plan.rankArgs.size()) throw new AssertionError("Bindings " + query);
             }
+            if (!"\"тм*\" \"46\"".equals(CatalogSearch.match("ТМ-46"))) throw new AssertionError("Android FTS conjunction");
+            for (Object term : CatalogSearch.plan("ТМ46").whereArgs) {
+                String text = term.toString();
+                if (text.startsWith("\"") && (text.contains(" AND ") || text.contains(" OR ") || text.contains("(")))
+                    throw new AssertionError("Boolean logic must stay outside Android MATCH");
+            }
             System.out.println("Search checks passed");
             return;
         }

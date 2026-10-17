@@ -57,28 +57,41 @@ public final class CatalogSearch {
         result.remove("");
         return new ArrayList<>(result);
     }
-    private static String ftsTerm(String value, boolean model) {
-        List<String> terms = new ArrayList<>();
-        for (String variant : variants(value, model)) terms.add("\"" + variant + (numeric(variant) ? "" : "*") + "\"");
-        return terms.size() == 1 ? terms.get(0) : "(" + String.join(" OR ", terms) + ")";
+    private static String literalTerm(String value) {
+        return "\"" + value + (numeric(value) ? "" : "*") + "\"";
     }
     public static String match(String value) {
         String normalized = normalize(value.substring(0, Math.min(value.length(), MAX_LENGTH)));
         List<String> raw = words(normalized, WORD, 8);
         if (raw.isEmpty()) return null;
-        boolean model = normalized.codePoints().anyMatch(Character::isDigit);
         List<String> terms = new ArrayList<>();
-        for (String word : raw) {
+        for (String word : raw) terms.add(literalTerm(word));
+        // Implicit conjunction works with both Android's standard and enhanced FTS4 parser.
+        return String.join(" ", terms);
+    }
+    private static String ftsPredicate(String word, boolean model, List<Object> args) {
+        List<String> alternatives = new ArrayList<>();
+        for (String variant : variants(word, model)) {
+            alternatives.add("c.rowid IN (SELECT rowid FROM cards_fts WHERE cards_fts MATCH ?)");
+            args.add(literalTerm(variant));
+        }
+        return "(" + String.join(" OR ", alternatives) + ")";
+    }
+    private static String fullTextPredicate(String normalized, boolean model, List<Object> args) {
+        List<String> all = new ArrayList<>();
+        for (String word : words(normalized, WORD, 8)) {
+            String joined = ftsPredicate(word, model, args);
             List<String> parts = words(word, PART, 16);
-            String joined = ftsTerm(word, model);
             if (parts.size() > 1) {
                 List<String> split = new ArrayList<>();
-                for (String part : parts) split.add(ftsTerm(part, model));
+                for (String part : parts) split.add(ftsPredicate(part, model, args));
                 joined = "(" + joined + " OR (" + String.join(" AND ", split) + "))";
             }
-            terms.add(joined);
+            all.add(joined);
         }
-        return String.join(" AND ", terms);
+        // Keep boolean logic in SQL. Android does not enable FTS3_PARENTHESIS,
+        // so nested OR/AND inside a MATCH string can silently produce no results.
+        return "(" + String.join(" AND ", all) + ")";
     }
     public static final class Plan {
         public final String whereSql, rankSql;
@@ -110,8 +123,7 @@ public final class CatalogSearch {
         boolean model = normalized.codePoints().anyMatch(Character::isDigit);
         List<Object> whereArgs = new ArrayList<>();
         String title = titlePredicate(parts, model, false, whereArgs);
-        whereArgs.add(fullText);
-        String where = "(" + title + " OR c.rowid IN (SELECT rowid FROM cards_fts WHERE cards_fts MATCH ?))";
+        String where = "(" + title + " OR " + fullTextPredicate(normalized, model, whereArgs) + ")";
         String compactTitle = "c.sortTitle";
         for (String separator : new String[]{" ","-","‐","‑","–","—",".",",","_"})
             compactTitle = "replace(" + compactTitle + ",'" + separator + "','')";
