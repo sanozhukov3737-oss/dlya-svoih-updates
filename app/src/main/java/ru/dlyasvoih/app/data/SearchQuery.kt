@@ -1,21 +1,9 @@
 package ru.dlyasvoih.app.data
 
-import java.text.Normalizer
-import java.util.Locale
-
 object SearchQuery {
     const val MAX_LENGTH = 160
-    private val word = Regex("[\\p{L}\\p{N}]+")
-
-    fun normalize(value: String): String = Normalizer.normalize(value, Normalizer.Form.NFKC)
-        .lowercase(Locale.ROOT).replace('ё', 'е')
-
-    fun match(value: String): String? = word.findAll(normalize(value.take(MAX_LENGTH)))
-        .map { it.value }.take(8).distinct().toList().takeIf { it.isNotEmpty() }
-        // FTS4 requires '*' inside the quoted token. FTS5 examples differ here.
-        ?.joinToString(" AND ") { "\"$it*\"" }
-
-    // Deduplicate by the effective FTS expression, including case, ё/е and punctuation.
+    fun normalize(value: String): String = CatalogSearch.normalize(value)
+    fun match(value: String): String? = CatalogSearch.match(value)
     fun key(value: String): String = match(value) ?: if (value.isBlank()) "" else "!empty"
 }
 
@@ -63,11 +51,10 @@ object CatalogQuery {
         val args = mutableListOf<Any>()
         val conditions = mutableListOf<String>()
         val sql = StringBuilder(projection)
-        val match = SearchQuery.match(filter.query)
-        if (match != null) {
-            sql.append(" JOIN cards_fts ON cards_fts.rowid = c.rowid")
-            conditions += "cards_fts MATCH ?"
-            args += match
+        val search = CatalogSearch.plan(filter.query)
+        if (search != null) {
+            conditions += search.whereSql
+            args.addAll(search.whereArgs)
         } else if (filter.query.isNotBlank()) {
             conditions += "0 = 1"
         }
@@ -99,11 +86,15 @@ object CatalogQuery {
             PhotoSelection.WITHOUT_PHOTO -> conditions += "NOT EXISTS (SELECT 1 FROM images picture WHERE picture.cardId = c.id)"
         }
         if (conditions.isNotEmpty()) sql.append(" WHERE ").append(conditions.joinToString(" AND "))
-        sql.append(when {
-            filter.favoritesOnly -> " ORDER BY saved.savedAt DESC, c.rowid DESC"
-            filter.historyOnly -> " ORDER BY history.updatedAt DESC, c.rowid DESC"
-            else -> " ORDER BY c.sortTitle, c.rowid"
-        })
+        val order = when {
+            filter.favoritesOnly -> "saved.savedAt DESC, c.rowid DESC"
+            filter.historyOnly -> "history.updatedAt DESC, c.rowid DESC"
+            else -> "c.sortTitle, c.rowid"
+        }
+        if (search != null) {
+            sql.append(" ORDER BY ").append(search.rankSql).append(", ").append(order)
+            args.addAll(search.rankArgs)
+        } else sql.append(" ORDER BY ").append(order)
         return SqlRequest(sql.toString(), args)
     }
 }
