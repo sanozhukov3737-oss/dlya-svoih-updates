@@ -31,24 +31,6 @@ jobs:
       CI_SIGNING_KEYSTORE: ${{ github.workspace }}/dlya-svoih-debug.keystore
     steps:
       - uses: actions/checkout@v4
-      - name: Wait for the actual offline 3D visual frame
-        run: |
-          python3 - <<'PYCODE'
-          FRAME_WAIT = '        val visualFrame = CountDownLatch(1)\n        instrumentation.runOnMainSync {\n            viewer.postVisualStateCallback(1L, object : WebView.VisualStateCallback() {\n                override fun onComplete(requestId: Long) { visualFrame.countDown() }\n            })\n        }\n        assertTrue("WebView did not produce a composited frame", visualFrame.await(10, TimeUnit.SECONDS))\n        compose.waitForIdle()\n        Thread.sleep(750)\n        assertEquals("true", evaluate("document.getElementById(\'status\').hidden"))\n'
-          from pathlib import Path
-          import subprocess
-          p = Path('app/src/androidTest/java/ru/dlyasvoih/app/ui/screens/OfflineModelViewerTest.kt')
-          s = p.read_text()
-          if 'val visualFrame = CountDownLatch(1)' not in s:
-              s = s.replace('MaterialTheme { OfflineModelDialog(onViewerCreated', 'MaterialTheme(colorScheme = androidx.compose.material3.darkColorScheme()) { OfflineModelDialog(onViewerCreated')
-              s = s.replace('        val descriptor = instrumentation.uiAutomation.executeShellCommand(', FRAME_WAIT + '        val descriptor = instrumentation.uiAutomation.executeShellCommand(')
-              p.write_text(s)
-              subprocess.run(['git', 'add', str(p)], check=True)
-              subprocess.run(['git', 'config', 'user.name', 'github-actions[bot]'], check=True)
-              subprocess.run(['git', 'config', 'user.email', '41898282+github-actions[bot]@users.noreply.github.com'], check=True)
-              subprocess.run(['git', 'commit', '-m', 'Wait for the composited offline 3D frame before capture'], check=True)
-              subprocess.run(['git', 'push', 'origin', 'HEAD:offline-3d-0.3.127'], check=True)
-          PYCODE
       - name: Restore published catalog 190 into APK assets
         run: python3 tools/restore_packaged_catalog.py
       - uses: actions/setup-java@v4
@@ -96,6 +78,79 @@ jobs:
           bash ./gradlew :app:assembleRelease --no-daemon -PciSigningKeystore="$CI_SIGNING_KEYSTORE"
           test -s app/build/outputs/mapping/release/mapping.txt
           test "$("$ANDROID_HOME/cmdline-tools/latest/bin/apkanalyzer" manifest debuggable app/build/outputs/apk/release/app-release.apk)" = "false"
+      - name: Prepare real release visual verification
+        run: |
+          mkdir -p build
+          cat > build/verify-release-ui.py <<'PY'
+          import re
+          import subprocess
+          import time
+          import xml.etree.ElementTree as ET
+          from pathlib import Path
+          
+          out = Path('build')
+          
+          def adb(*args):
+              return subprocess.run(['adb', *args], capture_output=True, check=True).stdout
+          
+          def tree():
+              raw = adb('shell', 'uiautomator', 'dump', '/sdcard/offline-proof.xml')
+              raw = adb('exec-out', 'cat', '/sdcard/offline-proof.xml')
+              (out / 'release-ui.xml').write_bytes(raw)
+              return ET.fromstring(raw)
+          
+          def tap(node):
+              x1, y1, x2, y2 = map(int, re.findall(r'\d+', node.attrib['bounds']))
+              adb('shell', 'input', 'tap', str((x1+x2)//2), str((y1+y2)//2))
+          
+          def find(predicate, timeout=25, scroll=False):
+              deadline = time.monotonic() + timeout
+              while time.monotonic() < deadline:
+                  root = tree()
+                  for node in root.iter('node'):
+                      if predicate(node.attrib):
+                          return node
+                  if scroll:
+                      adb('shell', 'input', 'swipe', '160', '490', '160', '180', '350')
+                  time.sleep(.6)
+              texts = [n.attrib.get('text') or n.attrib.get('content-desc') for n in root.iter('node')]
+              raise AssertionError('UI element missing: ' + repr([t for t in texts if t]))
+          
+          try:
+              adb('shell', 'am', 'start', '-W', '-n', 'ru.dlyasvoih.app/.MainActivity', '--es', 'shortcut_route', 'search_tab')
+              search = find(lambda a: a.get('class') == 'android.widget.EditText')
+              tap(search)
+              adb('shell', 'input', 'text', '46')
+              adb('shell', 'input', 'keyevent', '4')
+              card = find(lambda a: a.get('text') == 'ТМ-46' or a.get('content-desc') == 'ТМ-46')
+              tap(card)
+              button = find(lambda a: '3D-модель' in (a.get('text', '') + a.get('content-desc', '')), scroll=True)
+              tap(button)
+              time.sleep(5)
+              root = tree()
+              print('REAL RELEASE VIEWER TEXT:', [(n.attrib.get('text'), n.attrib.get('content-desc')) for n in root.iter('node') if n.attrib.get('text') or n.attrib.get('content-desc')], flush=True)
+              (out / 'offline-model-release.png').write_bytes(adb('exec-out', 'screencap', '-p'))
+              adb('shell', 'input', 'swipe', '90', '290', '230', '330', '700')
+              time.sleep(1)
+              (out / 'offline-model-release-rotated.png').write_bytes(adb('exec-out', 'screencap', '-p'))
+          finally:
+              (out / 'release-last-screen.png').write_bytes(adb('exec-out', 'screencap', '-p'))
+          PY
+      - name: Load published APK for proof-only run
+        if: ${{ inputs.proof_only }}
+        run: |
+          python3 - <<'PY'
+          import hashlib, urllib.request
+          from pathlib import Path
+          url = 'https://github.com/sanozhukov3737-oss/dlya-svoih-updates/releases/download/app-0.3.127/DLYA_SVOIH_v0.3.127.apk'
+          with urllib.request.urlopen(url, timeout=120) as response:
+              data = response.read()
+          assert len(data) == 85712340
+          assert hashlib.sha256(data).hexdigest() == '130d94f9214a1c4fe219d630cc6994d438ff1366359401b11e5d5341674496f5'
+          path = Path('app/build/outputs/apk/release/app-release.apk')
+          path.parent.mkdir(parents=True, exist_ok=True)
+          path.write_bytes(data)
+          PY
       - name: Enable emulator acceleration
         run: |
           echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules
@@ -113,9 +168,7 @@ jobs:
             adb pull /data/local/tmp/offline-model-tm46.png build/offline-model-tm46.png
             adb logcat -c
             adb install -r app/build/outputs/apk/release/app-release.apk
-            adb shell am start -W -n ru.dlyasvoih.app/.MainActivity
-            adb shell uiautomator dump /sdcard/release-ui.xml
-            adb pull /sdcard/release-ui.xml build/release-ui.xml
+            python3 build/verify-release-ui.py
             python3 -c "from pathlib import Path; assert 'ru.dlyasvoih.app' in Path('build/release-ui.xml').read_text(), 'Release UI did not open'"
             adb logcat -d -b crash > build/release-crash.log
             python3 -c "from pathlib import Path; log = Path('build/release-crash.log').read_text(); assert 'FATAL EXCEPTION' not in log and 'Fatal signal' not in log, log"
@@ -125,7 +178,9 @@ jobs:
         with:
           name: offline-3d-visual-proof
           path: |
-            build/offline-model-tm46.png
+            build/offline-model*.png
+            build/release-last-screen.png
+            build/release-ui.xml
             app/build/reports/androidTests/connected/debug
             app/build/outputs/androidTest-results/connected/debug
           if-no-files-found: warn
@@ -179,7 +234,9 @@ jobs:
             app/build/outputs/apk/release/app-release.apk
             build/release/latest.json
             build/release-ui.xml
-            build/offline-model-tm46.png
+            build/offline-model*.png
+            build/release-last-screen.png
+            build/release-ui.xml
             build/release-crash.log
             app/build/outputs/mapping/release/mapping.txt
             app/build/reports/androidTests/connected/debug
