@@ -27,6 +27,9 @@ class OfflineModelTests(unittest.TestCase):
                 self.assertIn(source.hostname, ('sketchfab.com', 'www.printables.com'))
                 self.assertTrue(source.path.startswith('/3d-models/') if source.hostname == 'sketchfab.com' else source.path.startswith('/model/'))
                 self.assertTrue(item['author'] and item['modifications'])
+                self.assertIn(item.get('displayColorMode'), ('source', 'illustrative'))
+                if item['displayColorMode'] == 'illustrative':
+                    self.assertIn('Условная', item['displayNote'])
                 self.assertFalse(cards.intersection(item['cardIds']))
                 cards.update(item['cardIds'])
                 raw = (ASSETS / item['file']).read_bytes()
@@ -39,6 +42,22 @@ class OfflineModelTests(unittest.TestCase):
                 self.assertNotIn('uri', model['buffers'][0])
                 self.assertFalse(model.get('extensionsRequired'))
                 self.assertTrue(model['meshes'])
+                # A large untextured light default material is not an accepted finish.
+                visible_triangles, light_default_triangles = 0, 0
+                for mesh in model['meshes']:
+                    for primitive in mesh['primitives']:
+                        material = model.get('materials', [{}])[primitive.get('material', 0)]
+                        pbr = material.get('pbrMetallicRoughness', {})
+                        color = pbr.get('baseColorFactor', [1, 1, 1, 1])
+                        if color[3] <= 0.01:
+                            continue
+                        accessor = model['accessors'][primitive.get('indices', primitive['attributes']['POSITION'])]
+                        count = accessor['count'] // 3
+                        visible_triangles += count
+                        if 'baseColorTexture' not in pbr and 'COLOR_0' not in primitive['attributes'] and min(color[:3]) > .5:
+                            light_default_triangles += count
+                if visible_triangles and light_default_triangles / visible_triangles > .25:
+                    self.assertTrue(item.get('lightSurfaceReason'), 'Unreviewed white/default body: ' + item['id'])
                 for image in model.get('images', []):
                     self.assertNotIn('uri', image)
                     self.assertIn(image['mimeType'], ('image/png', 'image/jpeg'))

@@ -12,6 +12,20 @@ def visible_model_pixels(frame, region):
     visible = sum(max(abs(r-231), abs(g-233), abs(b-228)) > 35 for r,g,b in pixels)
     return visible, len(set(pixels))
 
+def check_illustrative_finish(frame, region, title):
+    pixels = [p for p in frame.crop(region).getdata()
+              if max(abs(p[0]-231), abs(p[1]-233), abs(p[2]-228)) > 35]
+    assert len(pixels) > 500, (title, 'Exterior is indistinguishable from its background')
+    colored = sum(max(p)-min(p) > 20 for p in pixels) / len(pixels)
+    luminance = sorted(.2126*r + .7152*g + .0722*b for r,g,b in pixels)
+    dark = sum(value < 30 for value in luminance) / len(luminance)
+    relief = luminance[int(len(luminance)*.90)] - luminance[int(len(luminance)*.10)]
+    assert colored > .65, (title, 'Default white/gray finish', colored)
+    assert dark < .35, (title, 'Exterior is crushed to black', dark)
+    assert relief > 15, (title, 'Surface shading is flat', relief)
+    print('Illustrative finish verified:', title, {'colored': round(colored, 3),
+          'dark': round(dark, 3), 'luminanceRange': round(relief, 1)}, flush=True)
+
 def adb(*args):
     return subprocess.run(['adb', *args], capture_output=True, check=True).stdout
 
@@ -87,7 +101,9 @@ try:
     tap(find(lambda a: a.get('text') == '3D-модели · офлайн'))
     find(lambda a: 'моделей · доступны без интернета' in a.get('text', ''))
     (out / 'offline-model-gallery-release.png').write_bytes(adb('exec-out', 'screencap', '-p'))
-    for title, slug in (('M18A1 Claymore', 'm18a1-claymore'), ('ПФМ-1', 'pfm-1'), ('ПМК-40', 'pmk-40'), ('S.Mi.35', 'smi-35'), ('M1A1 · противотранспортная', 'm1a1-at')):
+    for title, slug in (('ПФМ-1', 'pfm-1'), ('ПМК-40', 'pmk-40'),
+                        ('M1A1 · противотранспортная', 'm1a1-at'),
+                        ('ТМ-62 · семейство', 'tm-62-family'), ('Pignone mod.43', 'pignone-mod43')):
         tap(find(lambda a: a.get('text') == title, scroll=True))
         find(lambda a: a.get('text') == title + ' · 3D')
         time.sleep(6)
@@ -99,6 +115,8 @@ try:
         frame = Image.open(path).convert('RGB')
         visible, colors = visible_model_pixels(frame, region)
         assert visible > 500 and colors > 40, (title, visible, colors)
+        check_illustrative_finish(frame, region, title)
+        assert any('Условная' in text for text in texts), texts
         if slug == 'pfm-1':
             pixels = list(frame.crop(region).getdata())
             olive = sum(g > r * 1.05 and r > b * 1.15 and 35 < g < 220 for r,g,b in pixels)
@@ -112,6 +130,7 @@ try:
         rotated_path.write_bytes(adb('exec-out', 'screencap', '-p'))
         rotated = Image.open(rotated_path).convert('RGB')
         assert ImageChops.difference(frame, rotated).crop(region).getbbox(), title + ' did not rotate'
+        check_illustrative_finish(rotated, region, title + ' rotated')
         print('Release collection, attribution, pixels and rotation verified:', title, flush=True)
         tap(find(lambda a: a.get('content-desc') == 'Назад'))
 finally:

@@ -19,7 +19,8 @@
         "ref-v8-tm-46"
       ],
       "subtitle": "Внешний вид",
-      "displayNote": "Модель сохранена в приложении. Текстуры уменьшены для телефона."
+      "displayNote": "Модель сохранена в приложении. Текстуры уменьшены для телефона.",
+      "displayColorMode": "source"
     },
     {
       "id": "m18a1-claymore",
@@ -41,7 +42,8 @@
       "packagedSha256": "13da74e4c34e3fba640e335266f7e53167394a4cfb2b5aee6e331bc0043526d8",
       "bytes": 5010832,
       "resources": "All model buffers and textures are embedded; no remote resources.",
-      "sourceUid": "0ab9698d824b4c56a2728e5edea90aa4"
+      "sourceUid": "0ab9698d824b4c56a2728e5edea90aa4",
+      "displayColorMode": "source"
     },
     {
       "id": "pfm-1",
@@ -62,7 +64,8 @@
       "packagedSha256": "bd8f32704bfd74f59eabd18f0b0f9be46bae2e8fd71d206554705099d1488f2f",
       "bytes": 450912,
       "resources": "All model buffers and textures are embedded; no remote resources.",
-      "sourceUid": "7fb7df8631cc4b64b1cfacafec955390"
+      "sourceUid": "7fb7df8631cc4b64b1cfacafec955390",
+      "displayColorMode": "illustrative"
     },
     {
       "id": "tellermine-42",
@@ -83,7 +86,8 @@
       "packagedSha256": "d058f135bdfebf2f182be1f556a9b6f882ead3b246f1cd4b18b8ef5c6edc09f6",
       "bytes": 1788860,
       "resources": "All model buffers and textures are embedded; no remote resources.",
-      "sourceUid": "c51cd8b56e954fbfb53c43f50fe069d8"
+      "sourceUid": "c51cd8b56e954fbfb53c43f50fe069d8",
+      "displayColorMode": "source"
     },
     {
       "id": "prb-m409",
@@ -104,7 +108,8 @@
       "packagedSha256": "f2c4be9608483633c612f450672a1f543c163a40e6ba7c583d1b883931f8ba24",
       "bytes": 5799072,
       "resources": "All model buffers and textures are embedded; no remote resources.",
-      "sourceUid": "8a5fa351344440a98ac7f22a67d4e0b6"
+      "sourceUid": "8a5fa351344440a98ac7f22a67d4e0b6",
+      "displayColorMode": "source"
     },
     {
       "id": "tm-35",
@@ -125,7 +130,8 @@
       "packagedSha256": "365b51a70fc242addcc22dcefdf5cff2b9ab98ca5f0696c7204d1cbc66bde8e0",
       "bytes": 6615556,
       "resources": "All model buffers and textures are embedded; no remote resources.",
-      "sourceUid": "94717a6cc53b4f7e9d6d12e80d856df1"
+      "sourceUid": "94717a6cc53b4f7e9d6d12e80d856df1",
+      "displayColorMode": "source"
     },
     {
       "id": "tmrp-6",
@@ -146,7 +152,8 @@
       "packagedSha256": "249f49de8be3d8546b9f12b5763b5d39dfc1c43a28dc1657c7ac2e931052cdfe",
       "bytes": 2523532,
       "resources": "All model buffers and textures are embedded; no remote resources.",
-      "sourceUid": "1c41a2429c5a41b69afa4523bad2925c"
+      "sourceUid": "1c41a2429c5a41b69afa4523bad2925c",
+      "displayColorMode": "source"
     },
     {
       "id": "ptkm-1r",
@@ -167,7 +174,8 @@
       "packagedSha256": "71a394705256512edf6964f26b22c1680a6f67446fef116982bd42f896a47e07",
       "bytes": 8959240,
       "resources": "All model buffers and textures are embedded; no remote resources.",
-      "sourceUid": "d01fc5d1e42b4da0a7d60514d3b66577"
+      "sourceUid": "d01fc5d1e42b4da0a7d60514d3b66577",
+      "displayColorMode": "source"
     },
     {
       "id": "pignone-mod43",
@@ -180,13 +188,14 @@
       "source": "https://sketchfab.com/3d-models/ww2-italian-pignone-mod43-dca6456c8e624429a0b65439704567cf",
       "license": "CC BY 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
-      "modifications": "Display conversion to GLB supplied by Sketchfab. Textures reduced to at most 1024px; opaque base colors encoded as JPEG. Mesh buffers unchanged. Animations are not played.",
-      "displayNote": "Модель сохранена в приложении. Текстуры уменьшены для телефона.",
+      "modifications": "Display conversion to GLB supplied by Sketchfab. Textures reduced to at most 1024px; opaque base colors encoded as JPEG. Mesh buffers unchanged. Animations are not played. Exterior Plastic body base-colour and metallic/roughness texture references replaced with an illustrative matte brown material for relief visibility; source normal maps, rivet materials, geometry and all embedded buffers retained.",
+      "displayNote": "Условная коричневая окраска корпуса для лучшей видимости рельефа. Модель сохранена офлайн.",
       "originalSha256": "b470a6fda9e4b5ddf8d2dcc8e0ab69461038a06714d53e1ef02478f50664f592",
-      "packagedSha256": "77bcae953a4f8d12f755a1add8eabbdcdd10514c8ed94a34397075b072ea67f6",
-      "bytes": 3468156,
+      "packagedSha256": "e0e94e2d06b8574fd5740f018e3e4ed8019331fb154ccc96b3b642a1b18e770a",
+      "bytes": 3468204,
       "resources": "All model buffers and textures are embedded; no remote resources.",
-      "sourceUid": "dca6456c8e624429a0b65439704567cf"
+      "sourceUid": "dca6456c8e624429a0b65439704567cf",
+      "displayColorMode": "illustrative"
     },
     {
       "id": "tm-62-family",
@@ -199,13 +208,14 @@
       "source": "https://sketchfab.com/3d-models/tm62-3875a2ce6ce848b498df4241b799efdb",
       "license": "CC BY 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
-      "modifications": "Display conversion to GLB supplied by Sketchfab. Textures reduced to at most 1024px; opaque base colors encoded as JPEG. Mesh buffers unchanged. Animations are not played.",
-      "displayNote": "Модель сохранена в приложении. Текстуры уменьшены для телефона.",
+      "modifications": "Display conversion to GLB supplied by Sketchfab. Textures reduced to at most 1024px; opaque base colors encoded as JPEG. Mesh buffers unchanged. Animations are not played. Untextured neutral/white display material replaced with an illustrative matte olive colour; geometry and all embedded buffers unchanged.",
+      "displayNote": "Условная матовая оливковая окраска исходного неокрашенного макета. Модель сохранена офлайн.",
       "originalSha256": "30cc50270c0ab8378f1473a6f527ba652e4d4ede663264436bf162cc4e71226e",
-      "packagedSha256": "a95e46374d48644790ae6de9277f2b333d6d5ddcd7fdbd19bc41c4a445513c11",
-      "bytes": 364284,
+      "packagedSha256": "44df6c4182064bee5e9545330f6640ccb022976d451a3c5811bc01ed274e0904",
+      "bytes": 364356,
       "resources": "All model buffers and textures are embedded; no remote resources.",
-      "sourceUid": "3875a2ce6ce848b498df4241b799efdb"
+      "sourceUid": "3875a2ce6ce848b498df4241b799efdb",
+      "displayColorMode": "illustrative"
     },
     {
       "id": "goliath-303",
@@ -224,7 +234,8 @@
       "packagedSha256": "de22ae8dd0f5c7a55181c586984fc74ed88eb9d46337f44d2fb307a92a2d97bf",
       "bytes": 9574024,
       "resources": "All model buffers and textures are embedded; no remote resources.",
-      "sourceUid": "485d6513f80f451fa8a9c3e9b8b50923"
+      "sourceUid": "485d6513f80f451fa8a9c3e9b8b50923",
+      "displayColorMode": "source"
     },
     {
       "id": "lunge-mine",
@@ -243,7 +254,8 @@
       "packagedSha256": "57e584a9f3b878a5c54c9f6bb066045a8649e731122ad633cfb39ec2f28b34ee",
       "bytes": 1755380,
       "resources": "All model buffers and textures are embedded; no remote resources.",
-      "sourceUid": "859e251040be40a3a065081366a84d2a"
+      "sourceUid": "859e251040be40a3a065081366a84d2a",
+      "displayColorMode": "source"
     },
     {
       "id": "pmk-40",
@@ -258,14 +270,15 @@
       "source": "https://www.printables.com/model/366841-pmk-40-mine",
       "license": "CC BY 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
-      "modifications": "Source PMK-40 Solid v1.0 STL converted to GLB. Millimetres/Z-up converted to metres/Y-up; duplicate position/normal pairs indexed. Triangle geometry unchanged. Neutral grey display material added because the source STL has no textures or colour.",
-      "displayNote": "Исторический макет автора Catja. Нейтральный серый материал; окраска оригинала не воспроизводится. Модель сохранена в приложении.",
+      "modifications": "Source PMK-40 Solid v1.0 STL converted to GLB. Millimetres/Z-up converted to metres/Y-up; duplicate position/normal pairs indexed. Triangle geometry unchanged. Neutral grey display material added because the source STL has no textures or colour. Untextured neutral/white display material replaced with an illustrative matte brown colour; geometry and all embedded buffers unchanged.",
+      "displayNote": "Условная коричневая окраска для наглядности. Исходный макет автора Catja не содержит окраски. Модель сохранена офлайн.",
       "originalSha256": "c43bffef2f9598a9a37084f2a10ccb42c1069b37f8283da9caca8ec15ba837a4",
-      "packagedSha256": "6d164dd077bc63dc17b8c228cb9575cc70b62563e83ede99e149ce3f45a2fb0f",
-      "bytes": 5767576,
+      "packagedSha256": "d8a7b09a67fcc114ac64c4432222b6a9b89a9fd10afd1bb7c25bfecfd49e2c37",
+      "bytes": 5767572,
       "resources": "All geometry is embedded; no textures or remote resources.",
       "sourceFile": "PMK-40 Solid v1.0.stl",
-      "triangles": 74458
+      "triangles": 74458,
+      "displayColorMode": "illustrative"
     },
     {
       "id": "smi-35",
@@ -286,7 +299,8 @@
       "packagedSha256": "e62f607e9709db8eff62299280144772093a3394d9615dc69b696130e732d1eb",
       "bytes": 5575500,
       "resources": "All model buffers and textures are embedded; no remote resources.",
-      "sourceUid": "6434e08edd694d16957f830c4183220a"
+      "sourceUid": "6434e08edd694d16957f830c4183220a",
+      "displayColorMode": "source"
     },
     {
       "id": "m1a1-at",
@@ -301,14 +315,15 @@
       "source": "https://www.printables.com/model/198301-ww2-m1a1-anti-tank-mine",
       "license": "CC BY 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
-      "modifications": "Source M1A1_Mine_Complete STL converted to GLB. Millimetres/Z-up converted to metres/Y-up; duplicate position/normal pairs indexed. Triangle geometry unchanged. Neutral grey display material added because the source STL has no textures or colour. Only the complete exterior model is included, not separate parts.",
-      "displayNote": "Цельный внешний макет M1A1 автора Chris NZ. Нейтральный серый материал; окраска оригинала не воспроизводится. Модель сохранена в приложении.",
+      "modifications": "Source M1A1_Mine_Complete STL converted to GLB. Millimetres/Z-up converted to metres/Y-up; duplicate position/normal pairs indexed. Triangle geometry unchanged. Neutral grey display material added because the source STL has no textures or colour. Only the complete exterior model is included, not separate parts. Untextured neutral/white display material replaced with an illustrative matte olive colour; geometry and all embedded buffers unchanged.",
+      "displayNote": "Условная матовая оливковая окраска для наглядности. Исходный макет автора Chris NZ не содержит окраски. Модель сохранена офлайн.",
       "originalSha256": "6c1d7d0fcf68ccf08592639e0438e1962cfb67a521c1b9483d3d2af22a164914",
-      "packagedSha256": "6e186566b1eadaa8bf4c8ea9144bcfd81248f2c15190f7407bdd875b04a65b2d",
+      "packagedSha256": "51c1f8aa9d3890756148046179f42f5eccc6d199e67c5054aeddf0d730686dbb",
       "bytes": 854508,
       "resources": "All geometry is embedded; no textures or remote resources.",
       "sourceFile": "M1A1_Mine_Complete.stl",
-      "triangles": 17378
+      "triangles": 17378,
+      "displayColorMode": "illustrative"
     }
   ]
 }
