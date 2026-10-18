@@ -28,17 +28,17 @@ jobs:
       CI_SIGNING_KEYSTORE: ${{ github.workspace }}/dlya-svoih-debug.keystore
     steps:
       - uses: actions/checkout@v4
-      - name: Apply and commit search correction
+      - name: Apply and commit offline mine collection
         run: |
           python3 - <<'PYCODE'
           from pathlib import Path
           import urllib.request, hashlib, io, zipfile, json, subprocess
-          url = 'https://github.com/sanozhukov3737-oss/dlya-svoih-updates/releases/download/catalog-190/DLYA_SVOIH_SEARCH_FIX_0.3.129_r2.zip'
-          with urllib.request.urlopen(url, timeout=60) as response:
-              raw = response.read(200000)
-          assert len(raw) == 18282
-          assert hashlib.sha256(raw).hexdigest() == '8c1499347f3798e15050c1ca89207a554bc78dcb9ac7c8f65dee75ecb685707b'
-          allowed = {'app/build.gradle.kts', 'test-common/HostSearchChecks.java', 'app/src/main/java/ru/dlyasvoih/app/data/SearchQuery.kt', 'tools/test_search.py', 'app/src/androidTest/java/ru/dlyasvoih/app/SearchRegressionTest.kt', 'tools/verify_release_ui.py', 'app/src/main/java/ru/dlyasvoih/app/data/CatalogSearch.java', 'app/src/main/java/ru/dlyasvoih/app/data/GuideRepository.kt'}
+          url = 'https://github.com/sanozhukov3737-oss/dlya-svoih-updates/releases/download/catalog-190/DLYA_SVOIH_OFFLINE_MINES_0.3.130.zip'
+          with urllib.request.urlopen(url, timeout=120) as response:
+              raw = response.read(31701999)
+          assert len(raw) == 31701998
+          assert hashlib.sha256(raw).hexdigest() == '742458bf361287e493872b9376a39d84bace1c8bc1495f93c6026cac3eb7561d'
+          allowed = {'web-viewer/viewer.js', 'app/src/androidTest/java/ru/dlyasvoih/app/ui/screens/OfflineModelViewerTest.kt', 'research/mines-3d-search-2026-10-18.json', 'app/src/main/assets/viewer3d/lunge-mine.glb', 'app/src/main/assets/viewer3d/pignone-mod43.glb', 'app/src/main/assets/viewer3d/tellermine-42.glb', 'app/src/main/java/ru/dlyasvoih/app/ui/screens/OfflineModelViewer.kt', 'OFFLINE_3D.md', 'app/src/main/assets/viewer3d/goliath-303.glb', 'app/src/main/assets/viewer3d/index.html', 'tools/test_offline_model.py', 'app/src/main/assets/viewer3d/tm-35.glb', 'app/src/main/java/ru/dlyasvoih/app/ui/screens/OfflineModels.kt', 'app/src/main/assets/viewer3d/pfm-1.glb', 'app/build.gradle.kts', 'app/src/main/assets/viewer3d/viewer.bundle.js', 'app/src/main/assets/viewer3d/ptkm-1r.glb', 'app/src/main/assets/viewer3d/m18a1-claymore.glb', 'app/src/main/assets/viewer3d/tmrp-6.glb', 'app/src/main/assets/viewer3d/prb-m409.glb', 'tools/verify_release_ui.py', 'app/src/main/assets/viewer3d/models.json', 'app/src/main/assets/viewer3d/tm-62-family.glb', 'app/src/main/java/ru/dlyasvoih/app/ui/screens/OverviewScreen.kt'}
           with zipfile.ZipFile(io.BytesIO(raw)) as patch:
               manifest = json.loads(patch.read('patch-manifest.json'))
               assert set(manifest) == allowed
@@ -52,8 +52,8 @@ jobs:
           if subprocess.run(['git', 'diff', '--cached', '--quiet']).returncode:
               subprocess.run(['git', 'config', 'user.name', 'github-actions[bot]'], check=True)
               subprocess.run(['git', 'config', 'user.email', '41898282+github-actions[bot]@users.noreply.github.com'], check=True)
-              subprocess.run(['git', 'commit', '-m', 'Use Android compatible FTS syntax for model and multiword searches'], check=True)
-              subprocess.run(['git', 'push', 'origin', 'HEAD:fix-search-0.3.129'], check=True)
+              subprocess.run(['git', 'commit', '-m', 'Add twelve licensed offline mine models and searchable collection'], check=True)
+              subprocess.run(['git', 'push', 'origin', 'HEAD:offline-mines-0.3.130'], check=True)
           PYCODE
       - name: Restore published catalog 190 into APK assets
         run: python3 tools/restore_packaged_catalog.py
@@ -102,7 +102,7 @@ jobs:
           bash ./gradlew :app:assembleRelease --no-daemon -PciSigningKeystore="$CI_SIGNING_KEYSTORE"
           test -s app/build/outputs/mapping/release/mapping.txt
           test "$("$ANDROID_HOME/cmdline-tools/latest/bin/apkanalyzer" manifest debuggable app/build/outputs/apk/release/app-release.apk)" = "false"
-      - name: Prepare release search and offline model verification
+      - name: Prepare release collection and search verification
         run: |
           python3 -m pip install --quiet Pillow==11.3.0
           mkdir -p build
@@ -110,11 +110,11 @@ jobs:
           python3 - <<'PY'
           from pathlib import Path
           import urllib.request, hashlib
-          url = 'https://github.com/sanozhukov3737-oss/dlya-svoih-updates/releases/download/app-0.3.128/DLYA_SVOIH_v0.3.128.apk'
+          url = 'https://github.com/sanozhukov3737-oss/dlya-svoih-updates/releases/download/app-0.3.129/DLYA_SVOIH_v0.3.129.apk'
           with urllib.request.urlopen(url, timeout=120) as response:
               raw = response.read()
-          assert len(raw) == 85712720
-          assert hashlib.sha256(raw).hexdigest() == 'a1fe9eee4dc0ba89f50208f21766f28cf9ebe525acc2b4be6e9bb2173f3c7efd'
+          assert len(raw) == 85712724
+          assert hashlib.sha256(raw).hexdigest() == 'b272f1e58761f843d41dc96e5dcb595c84e21ed2a4264941a3cf4da178e771fe'
           Path('build/previous-release.apk').write_bytes(raw)
           PY
       - name: Enable emulator acceleration
@@ -132,6 +132,7 @@ jobs:
             mkdir -p build
             bash ./gradlew :app:connectedDebugAndroidTest --no-daemon -PciSigningKeystore="$CI_SIGNING_KEYSTORE" -Pandroid.testInstrumentationRunnerArguments.class=ru.dlyasvoih.app.ui.screens.CardReaderPagesTest,ru.dlyasvoih.app.ui.screens.ComparisonSheetTest,ru.dlyasvoih.app.ui.screens.CatalogMenuIconTest,ru.dlyasvoih.app.ui.screens.OfflineModelViewerTest,ru.dlyasvoih.app.PackagedDatabaseTest,ru.dlyasvoih.app.SearchRegressionTest || true
             adb pull /data/local/tmp/offline-model-tm46.png build/offline-model-tm46.png || true
+            python3 -c "import json,subprocess; models=json.load(open('app/src/main/assets/viewer3d/models.json'))['models']; [subprocess.run(['adb','pull','/data/local/tmp/offline-model-'+m['id']+'.png','build/offline-model-'+m['id']+'-debug.png'],check=False) for m in models]"
             adb logcat -c
             adb install -r build/previous-release.apk
             adb shell am start -W -n ru.dlyasvoih.app/.MainActivity --es shortcut_route search_tab
@@ -150,14 +151,14 @@ jobs:
           reports = list(Path('app/build/outputs/androidTest-results/connected/debug').glob('TEST-*.xml'))
           assert reports, 'Android test reports are missing'
           suites = [ET.parse(path).getroot() for path in reports]
-          assert sum(int(s.attrib['tests']) for s in suites) >= 29
+          assert sum(int(s.attrib['tests']) for s in suites) >= 31
           assert sum(int(s.attrib.get('failures', 0)) + int(s.attrib.get('errors', 0)) + int(s.attrib.get('skipped', 0)) for s in suites) == 0
           PY
       - name: Upload Android visual proof
         uses: actions/upload-artifact@v4
         if: ${{ always() && !cancelled() }}
         with:
-          name: search-and-offline-3d-proof
+          name: offline-mine-collection-proof
           path: |
             build/search-*-release.*
             build/offline-model*.png
