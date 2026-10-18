@@ -67,6 +67,34 @@ try:
     rotated = Image.open(out / 'offline-model-release-rotated.png').convert('RGB')
     assert ImageChops.difference(image, rotated).crop(region).getbbox(), 'Rotation did not change the visible model'
     print('Actual model pixels and touch rotation verified', visible, flush=True)
+    # Open the collection through the same menu exposed to users in the release APK.
+    tap(find(lambda a: a.get('content-desc') == 'Назад'))
+    adb('shell', 'am', 'start', '-W', '-n', 'ru.dlyasvoih.app/.MainActivity', '--es', 'shortcut_route', 'catalog')
+    tap(find(lambda a: a.get('content-desc') == 'Открыть меню'))
+    tap(find(lambda a: a.get('text') == '3D-модели · офлайн'))
+    find(lambda a: 'моделей · доступны без интернета' in a.get('text', ''))
+    (out / 'offline-model-gallery-release.png').write_bytes(adb('exec-out', 'screencap', '-p'))
+    for title, slug in (('M18A1 Claymore', 'm18a1-claymore'), ('ПФМ-1', 'pfm-1')):
+        tap(find(lambda a: a.get('text') == title, scroll=True))
+        find(lambda a: a.get('text') == title + ' · 3D')
+        time.sleep(6)
+        root = tree()
+        texts = [n.get('text', '') for n in root.iter('node')]
+        assert not any('Не удалось' in text or 'недоступен' in text for text in texts), texts
+        path = out / ('offline-model-' + slug + '-release.png')
+        path.write_bytes(adb('exec-out', 'screencap', '-p'))
+        frame = Image.open(path).convert('RGB')
+        pixels = list(frame.crop(region).getdata())
+        visible = sum(max(abs(r-19), abs(g-26), abs(b-23)) > 35 for r,g,b in pixels)
+        assert visible > 500 and len(set(pixels)) > 40, (title, visible, len(set(pixels)))
+        adb('shell', 'input', 'swipe', '90', '290', '230', '330', '700')
+        time.sleep(1)
+        rotated_path = out / ('offline-model-' + slug + '-release-rotated.png')
+        rotated_path.write_bytes(adb('exec-out', 'screencap', '-p'))
+        rotated = Image.open(rotated_path).convert('RGB')
+        assert ImageChops.difference(frame, rotated).crop(region).getbbox(), title + ' did not rotate'
+        print('Release collection, attribution, pixels and rotation verified:', title, flush=True)
+        tap(find(lambda a: a.get('content-desc') == 'Назад'))
 finally:
     log = adb('logcat', '-d', '-s', 'OfflineModelViewer:I', 'chromium:E', '*:S')
     (out / 'release-webview.log').write_bytes(log)

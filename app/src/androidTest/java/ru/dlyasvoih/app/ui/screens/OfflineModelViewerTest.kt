@@ -92,4 +92,52 @@ class OfflineModelViewerTest {
             blocked.data.close()
         }
     }
+
+    @Test fun galleryOpensTheChosenModelAndReturnsToTheList() {
+        compose.setContent { MaterialTheme { OfflineModelGallery {} } }
+        compose.onNodeWithTag("offline_3d_gallery").assertIsDisplayed()
+        compose.onNodeWithTag("offline_3d_gallery_list").performScrollToNode(hasTestTag("offline_model:m18a1-claymore"))
+        compose.onNodeWithTag("offline_model:m18a1-claymore").performClick()
+        compose.onNodeWithText("M18A1 Claymore · 3D").assertIsDisplayed()
+        compose.onNodeWithText("Charlie Tinley · CC BY 4.0").assertIsDisplayed()
+        compose.onNodeWithContentDescription("Назад").performClick()
+        compose.onNodeWithTag("offline_3d_gallery").assertIsDisplayed()
+    }
+
+    @Test fun everyPackagedModelRendersWithoutNetworkAndUsesItsOwnAsset() {
+        val context = ApplicationProvider.getApplicationContext<Context>()
+        val models = OfflineModelFiles.models(context)
+        assertTrue(models.size >= 12)
+        lateinit var viewer: WebView
+        compose.setContent { MaterialTheme { OfflineModelDialog(onViewerCreated = { viewer = it }, onDismiss = {}) } }
+        compose.waitForIdle()
+        val instrumentation = InstrumentationRegistry.getInstrumentation()
+        fun evaluate(script: String): String {
+            val answer = AtomicReference<String>()
+            val latch = CountDownLatch(1)
+            instrumentation.runOnMainSync { viewer.evaluateJavascript(script) { answer.set(it); latch.countDown() } }
+            check(latch.await(5, TimeUnit.SECONDS)) { "WebView did not respond" }
+            return answer.get()
+        }
+        for (model in models) {
+            instrumentation.runOnMainSync { viewer.loadUrl(OfflineModelFiles.entryUrl(model.id)) }
+            val deadline = System.currentTimeMillis() + 45_000
+            var state = ""
+            while (System.currentTimeMillis() < deadline) {
+                state = evaluate("document.body && document.body.dataset.state")
+                val current = evaluate("document.body && document.body.dataset.model")
+                if ((state == "\"ready\"" || state == "\"error\"") && current == "\"${model.id}\"") break
+                Thread.sleep(100)
+            }
+            assertEquals(model.title + ": " + evaluate("document.body.innerText"), "\"ready\"", state)
+            assertEquals("\"${model.id}\"", evaluate("document.body.dataset.model"))
+            assertTrue(model.title, evaluate("Number(document.querySelector('canvas').dataset.triangles)").toInt() > 0)
+            assertTrue(model.title, evaluate("Number(document.querySelector('canvas').dataset.colors)").toInt() > 8)
+            instrumentation.runOnMainSync { assertTrue(viewer.settings.blockNetworkLoads) }
+            Thread.sleep(350)
+            val descriptor = instrumentation.uiAutomation.executeShellCommand(
+                "screencap -p /data/local/tmp/offline-model-${model.id}.png")
+            ParcelFileDescriptor.AutoCloseInputStream(descriptor).use { it.readBytes() }
+        }
+    }
 }

@@ -15,12 +15,15 @@ import android.webkit.WebSettings
 import android.webkit.WebView
 import android.webkit.WebViewClient
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.items
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clipToBounds
 import androidx.compose.ui.platform.LocalUriHandler
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.viewinterop.AndroidView
@@ -29,40 +32,11 @@ import androidx.compose.ui.window.DialogProperties
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LifecycleEventObserver
 import androidx.lifecycle.compose.LocalLifecycleOwner
-import java.io.ByteArrayInputStream
-
-internal object OfflineModelFiles {
-    const val CARD_ID = "ref-v8-tm-46"
-    const val ENTRY_URL = "https://appassets.androidplatform.net/assets/viewer3d/index.html"
-    const val SOURCE = "https://sketchfab.com/3d-models/tm-46-anti-tank-landmine-3f3ef18d34764342934e96c508d488b0"
-    private val files = mapOf(
-        "index.html" to "text/html", "viewer.bundle.js" to "text/javascript",
-        "tm-46.glb" to "model/gltf-binary", "model-credits.json" to "application/json"
-    )
-
-    fun response(context: Context, uri: Uri): WebResourceResponse {
-        val prefix = "/assets/viewer3d/"
-        val path = uri.encodedPath.orEmpty()
-        val name = path.removePrefix(prefix)
-        val mime = files[name]
-        if (uri.scheme != "https" || uri.host != "appassets.androidplatform.net" || uri.port != -1 ||
-            uri.userInfo != null || uri.query != null || !path.startsWith(prefix) || mime == null) {
-            return blocked()
-        }
-        return try {
-            WebResourceResponse(mime, if (name.endsWith(".glb")) null else "UTF-8", 200, "OK",
-                mapOf("Cache-Control" to "no-store", "X-Content-Type-Options" to "nosniff"),
-                context.assets.open("viewer3d/$name"))
-        } catch (_: Exception) { blocked() }
-    }
-
-    private fun blocked() = WebResourceResponse("text/plain", "UTF-8", 403, "Forbidden",
-        emptyMap(), ByteArrayInputStream(byteArrayOf()))
-}
 
 @Composable
 internal fun OfflineModelAction(cardId: String, active: Boolean, modifier: Modifier = Modifier) {
-    if (cardId != OfflineModelFiles.CARD_ID) return
+    val context = LocalContext.current
+    val model = remember(cardId, context) { OfflineModelFiles.forCard(context, cardId) } ?: return
     var open by rememberSaveable(cardId) { mutableStateOf(false) }
     LaunchedEffect(active) { if (!active) open = false }
     FilledTonalButton(onClick = { open = true }, modifier = modifier.fillMaxWidth().testTag("open_offline_3d")) {
@@ -70,7 +44,42 @@ internal fun OfflineModelAction(cardId: String, active: Boolean, modifier: Modif
         Spacer(Modifier.weight(1f))
         Text("Офлайн", style = MaterialTheme.typography.labelMedium)
     }
-    if (open && active) OfflineModelDialog { open = false }
+    if (open && active) OfflineModelDialog(modelId = model.id) { open = false }
+}
+
+@Composable
+internal fun OfflineModelGallery(onDismiss: () -> Unit) {
+    val context = LocalContext.current
+    val models = remember(context) { OfflineModelFiles.models(context) }
+    var selected by rememberSaveable { mutableStateOf<String?>(null) }
+    val selectedId = selected
+    if (selectedId != null) {
+        OfflineModelDialog(modelId = selectedId) { selected = null }
+        return
+    }
+    Dialog(onDismissRequest = onDismiss, properties = DialogProperties(usePlatformDefaultWidth = false)) {
+        Surface(Modifier.fillMaxSize().windowInsetsPadding(WindowInsets.systemBars).testTag("offline_3d_gallery")) {
+            Column {
+                GuideBar("3D-модели · офлайн", onDismiss)
+                Text("${models.size} моделей · доступны без интернета", Modifier.padding(16.dp),
+                    style = MaterialTheme.typography.bodyMedium)
+                LazyColumn(modifier = Modifier.testTag("offline_3d_gallery_list"),
+                    contentPadding = PaddingValues(start = 16.dp, end = 16.dp, bottom = 24.dp),
+                    verticalArrangement = Arrangement.spacedBy(10.dp)) {
+                    items(models, key = { it.id }) { model ->
+                        OutlinedCard(onClick = { selected = model.id },
+                            modifier = Modifier.fillMaxWidth().testTag("offline_model:${model.id}")) {
+                            Column(Modifier.padding(16.dp), verticalArrangement = Arrangement.spacedBy(5.dp)) {
+                                Text(model.title, style = MaterialTheme.typography.titleMedium)
+                                Text(model.subtitle, style = MaterialTheme.typography.bodySmall,
+                                    color = MaterialTheme.colorScheme.onSurfaceVariant)
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 private class ViewerHolder {
@@ -78,7 +87,9 @@ private class ViewerHolder {
 }
 
 @Composable
-internal fun OfflineModelDialog(onViewerCreated: (WebView) -> Unit = {}, onDismiss: () -> Unit) {
+internal fun OfflineModelDialog(modelId: String = "tm-46", onViewerCreated: (WebView) -> Unit = {}, onDismiss: () -> Unit) {
+    val context = LocalContext.current
+    val model = remember(modelId, context) { OfflineModelFiles.models(context).first { it.id == modelId } }
     val uriHandler = LocalUriHandler.current
     val lifecycle = LocalLifecycleOwner.current.lifecycle
     val holder = remember { ViewerHolder() }
@@ -99,13 +110,13 @@ internal fun OfflineModelDialog(onViewerCreated: (WebView) -> Unit = {}, onDismi
         decorFitsSystemWindows = false)) {
         Surface(Modifier.fillMaxSize().windowInsetsPadding(WindowInsets.systemBars).testTag("offline_3d_dialog")) {
             Column(Modifier.fillMaxSize()) {
-                GuideBar("ТМ-46 · 3D", onDismiss)
+                GuideBar("${model.title} · 3D", onDismiss)
                 Box(Modifier.weight(1f).fillMaxWidth()) {
                     if (failed) StatusPanel("Не удалось открыть 3D-просмотр. Попробуйте снова.", retry = {
                         failed = false; attempt++
                     }) else key(attempt) {
                         AndroidView(modifier = Modifier.fillMaxSize().clipToBounds().testTag("offline_3d_webview"),
-                            factory = { context -> createOfflineModelWebView(context, onFailure = { failed = true },
+                            factory = { context -> createOfflineModelWebView(context, modelId = model.id, onFailure = { failed = true },
                                 onRendererGone = { destroyed ->
                                     (destroyed.parent as? ViewGroup)?.removeView(destroyed)
                                     if (holder.view === destroyed) holder.view = null
@@ -122,11 +133,15 @@ internal fun OfflineModelDialog(onViewerCreated: (WebView) -> Unit = {}, onDismi
                 }
                 HorizontalDivider()
                 Column(Modifier.padding(horizontal = 16.dp, vertical = 10.dp), verticalArrangement = Arrangement.spacedBy(3.dp)) {
-                    Text("Oscar Goldsworthy · CC BY 4.0", style = MaterialTheme.typography.labelMedium)
-                    Text("Текстуры уменьшены для телефона. Модель сохранена в приложении.",
+                    Text("${model.author} · ${model.license}", style = MaterialTheme.typography.labelMedium)
+                    Text(model.subtitle + ". " + model.displayNote,
                         style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
-                    TextButton(onClick = { uriHandler.openUri(OfflineModelFiles.SOURCE) },
-                        contentPadding = PaddingValues(0.dp)) { Text("Автор и источник · Sketchfab") }
+                    Row(horizontalArrangement = Arrangement.spacedBy(16.dp)) {
+                        TextButton(onClick = { uriHandler.openUri(model.source) },
+                            contentPadding = PaddingValues(0.dp)) { Text("Автор и источник") }
+                        TextButton(onClick = { uriHandler.openUri(model.licenseUrl) },
+                            contentPadding = PaddingValues(0.dp)) { Text("Лицензия") }
+                    }
                 }
             }
         }
@@ -134,7 +149,7 @@ internal fun OfflineModelDialog(onViewerCreated: (WebView) -> Unit = {}, onDismi
 }
 
 @SuppressLint("SetJavaScriptEnabled")
-internal fun createOfflineModelWebView(context: Context, onFailure: () -> Unit,
+internal fun createOfflineModelWebView(context: Context, modelId: String = "tm-46", onFailure: () -> Unit,
     onRendererGone: (WebView) -> Unit): WebView = WebView(context).apply {
     layoutParams = ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT)
     settings.apply {
@@ -164,7 +179,7 @@ internal fun createOfflineModelWebView(context: Context, onFailure: () -> Unit,
             OfflineModelFiles.response(context, request.url)
 
         override fun shouldOverrideUrlLoading(view: WebView, request: WebResourceRequest): Boolean =
-            request.url.toString() != OfflineModelFiles.ENTRY_URL
+            !OfflineModelFiles.isEntry(context, request.url)
 
         override fun onReceivedError(view: WebView, request: WebResourceRequest, error: WebResourceError) {
             if (request.isForMainFrame) onFailure()
@@ -175,5 +190,5 @@ internal fun createOfflineModelWebView(context: Context, onFailure: () -> Unit,
             return true
         }
     }
-    loadUrl(OfflineModelFiles.ENTRY_URL)
+    loadUrl(OfflineModelFiles.entryUrl(modelId))
 }

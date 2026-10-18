@@ -71,6 +71,7 @@ function cleanup() {
   renderer?.dispose();
   renderer?.forceContextLoss();
 }
+async function initialize() {
 try {
   renderer = new THREE.WebGLRenderer({ antialias: true, alpha: false, preserveDrawingBuffer: true, powerPreference: 'low-power' });
   renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 1.5));
@@ -81,7 +82,7 @@ try {
   // Copy each requested GPU frame to a persistent 2D canvas. Older Android WebView
   // can discard or incorrectly composite an on-screen WebGL drawing buffer.
   display = document.createElement('canvas');
-  display.setAttribute('aria-label', 'Объёмная модель ТМ-46');
+  display.setAttribute('aria-label', 'Объёмная модель');
   displayContext = display.getContext('2d', { alpha: false });
   if (!displayContext) throw new Error('Canvas display is unavailable');
   stage.appendChild(display);
@@ -108,15 +109,25 @@ try {
     if (!home) return;
     camera.position.copy(home); controls.target.set(0, 0, 0); controls.update(); requestRender();
   });
+  const manifestResponse = await fetch('./models.json');
+  if (!manifestResponse.ok) throw new Error('Model list is unavailable');
+  const manifest = await manifestResponse.json();
+  const modelId = location.hash.slice(1) || 'tm-46';
+  const selected = manifest.models.find(item => item.id === modelId);
+  if (!selected || !/^[a-z0-9-]+\.glb$/.test(selected.file)) throw new Error('Unknown packaged model');
+  document.title = selected.title + ' — офлайн 3D';
+  display.setAttribute('aria-label', 'Объёмная модель ' + selected.title);
+  document.body.dataset.model = selected.id;
+  const modelUrl = './' + selected.file;
   const manager = new THREE.LoadingManager();
   manager.setURLModifier(url => {
     // Only this packaged asset and GLB-embedded image blobs are permitted.
-    if (url.startsWith('blob:') || url === './tm-46.glb' || url === 'tm-46.glb') return url;
+    if (url.startsWith('blob:') || url === modelUrl || url === selected.file) return url;
     const parsed = new URL(url, window.location.href);
-    if (parsed.origin === window.location.origin && parsed.pathname === '/assets/viewer3d/tm-46.glb') return url;
+    if (parsed.origin === window.location.origin && parsed.pathname === '/assets/viewer3d/' + selected.file && !parsed.search) return url;
     throw new Error('External model resource is disabled');
   });
-  new GLTFLoader(manager).load('./tm-46.glb', gltf => {
+  new GLTFLoader(manager).load(modelUrl, gltf => {
     if (disposed) return;
     model = gltf.scene;
     const box = new THREE.Box3().setFromObject(model);
@@ -132,4 +143,6 @@ try {
 } catch (error) {
   fail('3D-просмотр недоступен. Обновите Android System WebView и откройте карточку снова.');
 }
+}
+initialize();
 window.addEventListener('pagehide', cleanup, { once: true });
