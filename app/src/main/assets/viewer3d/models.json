@@ -56,11 +56,11 @@
       "source": "https://sketchfab.com/3d-models/pfm-1-7fb7df8631cc4b64b1cfacafec955390",
       "license": "CC BY 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
-      "modifications": "Display conversion to GLB supplied by Sketchfab. Textures reduced to at most 1024px; opaque base colors encoded as JPEG. Mesh buffers unchanged. Animations are not played.",
-      "displayNote": "Модель сохранена в приложении. Текстуры уменьшены для телефона.",
+      "modifications": "Display conversion to GLB supplied by Sketchfab. Textures reduced to at most 1024px; opaque base colors encoded as JPEG. Mesh buffers unchanged. Animations are not played. Untextured white exterior material changed to illustrative matte olive for display; geometry and invisible material unchanged.",
+      "displayNote": "Условная оливковая окраска для наглядности: исходный макет не содержит цветной текстуры. Модель сохранена в приложении.",
       "originalSha256": "505f08190bc0f6f81cf103909e47b30634f122c933be25c941b99809b08fafc4",
-      "packagedSha256": "1b02b495338cadfe96b03527d723734f8a95545be20b082d28f96703a86a2bb0",
-      "bytes": 450856,
+      "packagedSha256": "bd8f32704bfd74f59eabd18f0b0f9be46bae2e8fd71d206554705099d1488f2f",
+      "bytes": 450912,
       "resources": "All model buffers and textures are embedded; no remote resources.",
       "sourceUid": "7fb7df8631cc4b64b1cfacafec955390"
     },
@@ -287,6 +287,28 @@
       "bytes": 5575500,
       "resources": "All model buffers and textures are embedded; no remote resources.",
       "sourceUid": "6434e08edd694d16957f830c4183220a"
+    },
+    {
+      "id": "m1a1-at",
+      "file": "m1a1-at.glb",
+      "title": "M1A1 · противотранспортная",
+      "cardIds": [
+        "eng-m1-m1a1-av-family"
+      ],
+      "subtitle": "Исторический макет M1A1 · внешний вид",
+      "author": "Chris NZ",
+      "authorUrl": "https://www.printables.com/@ChrisNZ",
+      "source": "https://www.printables.com/model/198301-ww2-m1a1-anti-tank-mine",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "modifications": "Source M1A1_Mine_Complete STL converted to GLB. Millimetres/Z-up converted to metres/Y-up; duplicate position/normal pairs indexed. Triangle geometry unchanged. Neutral grey display material added because the source STL has no textures or colour. Only the complete exterior model is included, not separate parts.",
+      "displayNote": "Цельный внешний макет M1A1 автора Chris NZ. Нейтральный серый материал; окраска оригинала не воспроизводится. Модель сохранена в приложении.",
+      "originalSha256": "6c1d7d0fcf68ccf08592639e0438e1962cfb67a521c1b9483d3d2af22a164914",
+      "packagedSha256": "6e186566b1eadaa8bf4c8ea9144bcfd81248f2c15190f7407bdd875b04a65b2d",
+      "bytes": 854508,
+      "resources": "All geometry is embedded; no textures or remote resources.",
+      "sourceFile": "M1A1_Mine_Complete.stl",
+      "triangles": 17378
     }
   ]
 }

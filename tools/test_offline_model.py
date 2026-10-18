@@ -13,7 +13,7 @@ ASSETS = ROOT / 'app/src/main/assets/viewer3d'
 class OfflineModelTests(unittest.TestCase):
     def test_every_manifest_model_is_self_contained_and_has_valid_credits(self):
         models = json.loads((ASSETS / 'models.json').read_text())['models']
-        self.assertGreaterEqual(len(models), 14)
+        self.assertGreaterEqual(len(models), 15)
         self.assertEqual(len(models), len({m['id'] for m in models}))
         self.assertEqual(len(models), len({m['file'] for m in models}))
         cards = set()

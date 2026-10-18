@@ -167,7 +167,7 @@ internal fun createOfflineModelWebView(context: Context, modelId: String = "tm-4
         cacheMode = WebSettings.LOAD_NO_CACHE
         mediaPlaybackRequiresUserGesture = true
     }
-    setBackgroundColor(android.graphics.Color.rgb(19, 26, 23))
+    setBackgroundColor(android.graphics.Color.rgb(231, 233, 228))
     webChromeClient = object : WebChromeClient() {
         override fun onConsoleMessage(message: ConsoleMessage): Boolean {
             Log.i("OfflineModelViewer", message.message())

@@ -6,6 +6,12 @@ from pathlib import Path
 
 out = Path('build')
 
+def visible_model_pixels(frame, region):
+    pixels = list(frame.crop(region).getdata())
+    # Match the flat light viewer background, not the app chrome or reset button.
+    visible = sum(max(abs(r-231), abs(g-233), abs(b-228)) > 35 for r,g,b in pixels)
+    return visible, len(set(pixels))
+
 def adb(*args):
     return subprocess.run(['adb', *args], capture_output=True, check=True).stdout
 
@@ -59,9 +65,8 @@ try:
     image = Image.open(out / 'offline-model-release.png').convert('RGB')
     w, h = image.size
     region = (int(w*.15), int(h*.30), int(w*.85), int(h*.70))
-    pixels = list(image.crop(region).getdata())
-    visible = sum(max(abs(r-19), abs(g-26), abs(b-23)) > 35 for r,g,b in pixels)
-    assert visible > 500 and len(set(pixels)) > 100, f'Model pixels are missing: {visible}, colors={len(set(pixels))}'
+    visible, colors = visible_model_pixels(image, region)
+    assert visible > 500 and colors > 100, f'Model pixels are missing: {visible}, colors={colors}'
     adb('shell', 'input', 'swipe', '90', '290', '230', '330', '700')
     time.sleep(1)
     (out / 'offline-model-release-rotated.png').write_bytes(adb('exec-out', 'screencap', '-p'))
@@ -82,7 +87,7 @@ try:
     tap(find(lambda a: a.get('text') == '3D-модели · офлайн'))
     find(lambda a: 'моделей · доступны без интернета' in a.get('text', ''))
     (out / 'offline-model-gallery-release.png').write_bytes(adb('exec-out', 'screencap', '-p'))
-    for title, slug in (('M18A1 Claymore', 'm18a1-claymore'), ('ПФМ-1', 'pfm-1'), ('ПМК-40', 'pmk-40'), ('S.Mi.35', 'smi-35')):
+    for title, slug in (('M18A1 Claymore', 'm18a1-claymore'), ('ПФМ-1', 'pfm-1'), ('ПМК-40', 'pmk-40'), ('S.Mi.35', 'smi-35'), ('M1A1 · противотранспортная', 'm1a1-at')):
         tap(find(lambda a: a.get('text') == title, scroll=True))
         find(lambda a: a.get('text') == title + ' · 3D')
         time.sleep(6)
@@ -92,9 +97,15 @@ try:
         path = out / ('offline-model-' + slug + '-release.png')
         path.write_bytes(adb('exec-out', 'screencap', '-p'))
         frame = Image.open(path).convert('RGB')
-        pixels = list(frame.crop(region).getdata())
-        visible = sum(max(abs(r-19), abs(g-26), abs(b-23)) > 35 for r,g,b in pixels)
-        assert visible > 500 and len(set(pixels)) > 40, (title, visible, len(set(pixels)))
+        visible, colors = visible_model_pixels(frame, region)
+        assert visible > 500 and colors > 40, (title, visible, colors)
+        if slug == 'pfm-1':
+            pixels = list(frame.crop(region).getdata())
+            olive = sum(g > r * 1.05 and r > b * 1.15 and 35 < g < 220 for r,g,b in pixels)
+            assert olive > 500, f'PFM-1 exterior is not visibly olive: {olive}'
+            corners = [frame.getpixel((int(w*.08), int(h*.30))), frame.getpixel((int(w*.92), int(h*.30)))]
+            assert all(max(abs(a-b) for a,b in zip(pixel, (231,233,228))) < 4 for pixel in corners), corners
+            assert any('Условная оливковая окраска' in text for text in texts), texts
         adb('shell', 'input', 'swipe', '90', '290', '230', '330', '700')
         time.sleep(1)
         rotated_path = out / ('offline-model-' + slug + '-release-rotated.png')

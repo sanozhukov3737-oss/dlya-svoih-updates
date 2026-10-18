@@ -109,7 +109,7 @@ class OfflineModelViewerTest {
     @Test fun everyPackagedModelRendersWithoutNetworkAndUsesItsOwnAsset() {
         val context = ApplicationProvider.getApplicationContext<Context>()
         val models = OfflineModelFiles.models(context)
-        assertTrue(models.size >= 14)
+        assertTrue(models.size >= 15)
         lateinit var viewer: WebView
         val selectedModel = mutableStateOf("tm-46")
         compose.setContent { MaterialTheme {
@@ -141,6 +141,8 @@ class OfflineModelViewerTest {
             assertEquals("\"${model.id}\"", evaluate("document.body.dataset.model"))
             assertTrue(model.title, evaluate("Number(document.querySelector('canvas').dataset.triangles)").toInt() > 0)
             assertTrue(model.title, evaluate("Number(document.querySelector('canvas').dataset.colors)").toInt() > 8)
+            val homeExtent = evaluate("Number(document.querySelector('canvas').dataset.homeExtent)").toDouble()
+            assertTrue(model.title + " starts outside the viewport: " + homeExtent, homeExtent > 0.05 && homeExtent <= 0.85)
             instrumentation.runOnMainSync { assertTrue(viewer.settings.blockNetworkLoads) }
             Thread.sleep(350)
             val descriptor = instrumentation.uiAutomation.executeShellCommand(

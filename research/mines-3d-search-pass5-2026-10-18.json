@@ -1,0 +1,100 @@
+{
+  "checkedAt": "2026-10-18T16:45:36.309695+00:00",
+  "scope": "Exterior visual references only; official public Sketchfab search pagination and a primary Printables candidate.",
+  "sketchfab": {
+    "queries": [
+      {
+        "q": "anti-personnel mine",
+        "pages": 1,
+        "next": null
+      },
+      {
+        "q": "butterfly mine",
+        "pages": 1,
+        "next": null
+      },
+      {
+        "q": "Sprengmine",
+        "pages": 1,
+        "next": null
+      },
+      {
+        "q": "Schuetzenmine",
+        "pages": 1,
+        "next": null
+      },
+      {
+        "q": "anti-tank mine",
+        "pages": 2,
+        "next": null
+      },
+      {
+        "q": "mines antipersonnel",
+        "pages": 1,
+        "next": null
+      },
+      {
+        "q": "OZM",
+        "pages": 1,
+        "next": null
+      },
+      {
+        "q": "minas terrestres",
+        "pages": 1,
+        "next": null
+      },
+      {
+        "q": "PMN",
+        "pages": 1,
+        "next": null
+      },
+      {
+        "q": "Valmara",
+        "pages": 1,
+        "next": null
+      },
+      {
+        "q": "PFM",
+        "pages": 1,
+        "next": null
+      },
+      {
+        "q": "landmine",
+        "pages": 6,
+        "next": "https://api.sketchfab.com/v3/search?count=24&cursor=144&downloadable=true&q=landmine&type=models"
+      }
+    ],
+    "responseCount": 18,
+    "uniqueUnfilteredResults": 211,
+    "errors": [],
+    "note": "Many later search pages contain fuzzy unrelated matches; raw result count is not a count of mine models. The landmine query stopped after six pages; not all search results exhausted."
+  },
+  "added": [
+    {
+      "id": "m1a1-at",
+      "title": "M1A1 · противотранспортная",
+      "author": "Chris NZ",
+      "source": "https://www.printables.com/model/198301-ww2-m1a1-anti-tank-mine",
+      "license": "CC BY 4.0",
+      "licenseVerifiedIn": "Live primary page, Creative Commons (4.0 International License) Attribution link; sharing/remixes/commercial use permitted.",
+      "sourceFile": "M1A1_Mine_Complete.stl",
+      "sourceBytes": 868984,
+      "sourceSha256": "6c1d7d0fcf68ccf08592639e0438e1962cfb67a521c1b9483d3d2af22a164914",
+      "review": "Complete exterior inspected from four views. Separate components not included. No textures in source STL; neutral grey display material added.",
+      "packagedBytes": 854508,
+      "packagedSha256": "6e186566b1eadaa8bf4c8ea9144bcfd81248f2c15190f7407bdd875b04a65b2d"
+    }
+  ],
+  "held": [
+    {
+      "source": "https://sketchfab.com/3d-models/de4753b9c00a446aa9bc18bc04fa82f6",
+      "title": "A-P mine",
+      "license": "CC BY 4.0",
+      "reason": "Author gives no exact designation; do not invent a card match."
+    }
+  ],
+  "presentationChange": {
+    "id": "pfm-1",
+    "description": "Illustrative matte olive exterior in place of untextured white; geometry buffers and invisible material unchanged. Light neutral viewer background, balanced lighting, aspect-aware framing for all models."
+  }
+}

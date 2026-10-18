@@ -9,6 +9,41 @@ const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(38, 1, 0.01, 100);
 let model;
 let home;
+let modelBounds;
+const homeDirection = new THREE.Vector3(1.35, 1.05, 1.75).normalize();
+function fitHome() {
+  if (!modelBounds) return;
+  camera.position.copy(homeDirection);
+  camera.lookAt(0, 0, 0);
+  camera.updateMatrixWorld();
+  const right = new THREE.Vector3().setFromMatrixColumn(camera.matrixWorld, 0);
+  const up = new THREE.Vector3().setFromMatrixColumn(camera.matrixWorld, 1);
+  const tanV = Math.tan(THREE.MathUtils.degToRad(camera.fov / 2));
+  let distance = 0;
+  for (const x of [modelBounds.min.x, modelBounds.max.x])
+    for (const y of [modelBounds.min.y, modelBounds.max.y])
+      for (const z of [modelBounds.min.z, modelBounds.max.z]) {
+        const corner = new THREE.Vector3(x, y, z);
+        const depth = corner.dot(homeDirection);
+        distance = Math.max(distance, depth + Math.abs(corner.dot(right)) / (tanV * camera.aspect * 0.84),
+          depth + Math.abs(corner.dot(up)) / (tanV * 0.80));
+      }
+  home = homeDirection.clone().multiplyScalar(distance);
+  controls.minDistance = Math.max(0.35, distance * 0.25);
+  controls.maxDistance = distance * 3.5;
+  camera.position.copy(home);
+  controls.target.set(0, 0, 0);
+  controls.update();
+  camera.updateMatrixWorld();
+  let extent = 0;
+  for (const x of [modelBounds.min.x, modelBounds.max.x])
+    for (const y of [modelBounds.min.y, modelBounds.max.y])
+      for (const z of [modelBounds.min.z, modelBounds.max.z]) {
+        const point = new THREE.Vector3(x, y, z).project(camera);
+        extent = Math.max(extent, Math.abs(point.x), Math.abs(point.y));
+      }
+  display.dataset.homeExtent = String(extent);
+}
 function fail(message) {
   document.body.dataset.state = 'error';
   status.hidden = false;
@@ -51,8 +86,10 @@ function resize() {
     display.width = renderer.domElement.width;
     display.height = renderer.domElement.height;
   }
+  const changedAspect = camera.aspect !== width / height;
   camera.aspect = width / height;
   camera.updateProjectionMatrix();
+  if (modelBounds && (!home || changedAspect)) fitHome();
   requestRender();
 }
 function cleanup() {
@@ -75,10 +112,10 @@ async function initialize() {
 try {
   renderer = new THREE.WebGLRenderer({ antialias: true, alpha: false, preserveDrawingBuffer: true, powerPreference: 'low-power' });
   renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 1.5));
-  renderer.setClearColor(0x131a17);
+  renderer.setClearColor(0xe7e9e4);
   renderer.outputColorSpace = THREE.SRGBColorSpace;
   renderer.toneMapping = THREE.ACESFilmicToneMapping;
-  renderer.toneMappingExposure = 1.15;
+  renderer.toneMappingExposure = 1.0;
   // Copy each requested GPU frame to a persistent 2D canvas. Older Android WebView
   // can discard or incorrectly composite an on-screen WebGL drawing buffer.
   display = document.createElement('canvas');
@@ -86,8 +123,8 @@ try {
   displayContext = display.getContext('2d', { alpha: false });
   if (!displayContext) throw new Error('Canvas display is unavailable');
   stage.appendChild(display);
-  scene.add(new THREE.HemisphereLight(0xf7f6e6, 0x61756a, 2.8));
-  for (const [position, intensity] of [[[3, 5, 4], 3.1], [[-4, 2, -2], 1.8], [[0, -3, 1], 0.6]]) {
+  scene.add(new THREE.HemisphereLight(0xffffff, 0x858c7c, 1.4));
+  for (const [position, intensity] of [[[3, 5, 4], 2.0], [[-4, 2, -2], 0.7], [[0, -3, 1], 0.25]]) {
     const light = new THREE.DirectionalLight(0xffffff, intensity);
     light.position.set(...position); scene.add(light);
   }
@@ -136,8 +173,8 @@ try {
     const scale = 1.4 / Math.max(size.x, size.y, size.z);
     const group = new THREE.Group();
     group.add(model); model.position.sub(center); group.scale.setScalar(scale); scene.add(group);
-    home = new THREE.Vector3(1.35, 1.05, 1.75);
-    camera.position.copy(home); controls.target.set(0, 0, 0); controls.update(); resize(); requestRender();
+    modelBounds = new THREE.Box3(box.min.clone().sub(center).multiplyScalar(scale), box.max.clone().sub(center).multiplyScalar(scale));
+    resize(); fitHome(); requestRender();
   }, undefined, () => fail('Не удалось открыть модель. Закройте 3D-просмотр и попробуйте снова.'));
   resize();
 } catch (error) {
