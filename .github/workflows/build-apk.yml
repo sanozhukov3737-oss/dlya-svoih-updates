@@ -28,17 +28,17 @@ jobs:
       CI_SIGNING_KEYSTORE: ${{ github.workspace }}/dlya-svoih-debug.keystore
     steps:
       - uses: actions/checkout@v4
-      - name: Apply and commit viewer presentation and M1A1 model
+      - name: Apply and commit model colour and contrast corrections
         run: |
           python3 - <<'PYCODE'
           from pathlib import Path
           import urllib.request, hashlib, io, zipfile, json, subprocess
-          url = 'https://github.com/sanozhukov3737-oss/dlya-svoih-updates/releases/download/catalog-190/DLYA_SVOIH_PRESENTATION_0.3.132_1792343500.zip'
+          url = 'https://github.com/sanozhukov3737-oss/dlya-svoih-updates/releases/download/catalog-190/DLYA_SVOIH_MODEL_COLORS_0.3.133_1792346268.zip'
           with urllib.request.urlopen(url, timeout=120) as response:
-              raw = response.read(483793)
-          assert len(raw) == 483792
-          assert hashlib.sha256(raw).hexdigest() == 'ac674940469f1991613c3daa784b2efa22d3129a4a9310486c396eb32f7a0fde'
-          allowed = {'app/build.gradle.kts', 'app/src/main/java/ru/dlyasvoih/app/ui/screens/OfflineModelViewer.kt', 'app/src/main/assets/viewer3d/m1a1-at.glb', 'OFFLINE_3D.md', 'research/mines-3d-search-pass5-2026-10-18.json', 'web-viewer/viewer.js', 'app/src/androidTest/java/ru/dlyasvoih/app/ui/screens/OfflineModelViewerTest.kt', 'app/src/main/assets/viewer3d/models.json', 'tools/test_offline_model.py', 'app/src/main/assets/viewer3d/viewer.bundle.js', 'app/src/main/assets/viewer3d/pfm-1.glb', 'tools/verify_release_ui.py', 'app/src/main/assets/viewer3d/index.html'}
+              raw = response.read(4088581)
+          assert len(raw) == 4088580
+          assert hashlib.sha256(raw).hexdigest() == 'c90efa19933a58bd52d7b44a5d1ce85caf17c7b42f75a1b6b6e5feb3b7ae3e6a'
+          allowed = {'app/src/main/assets/viewer3d/models.json', 'app/src/main/assets/viewer3d/pmk-40.glb', 'OFFLINE_3D.md', 'AGENTS.md', 'app/src/main/assets/viewer3d/pignone-mod43.glb', 'tools/verify_release_ui.py', 'tools/test_offline_model.py', 'app/src/main/assets/viewer3d/tm-62-family.glb', 'app/build.gradle.kts', 'app/src/main/assets/viewer3d/m1a1-at.glb'}
           with zipfile.ZipFile(io.BytesIO(raw)) as patch:
               manifest = json.loads(patch.read('patch-manifest.json'))
               assert set(manifest) == allowed
@@ -52,8 +52,8 @@ jobs:
           if subprocess.run(['git', 'diff', '--cached', '--quiet']).returncode:
               subprocess.run(['git', 'config', 'user.name', 'github-actions[bot]'], check=True)
               subprocess.run(['git', 'config', 'user.email', '41898282+github-actions[bot]@users.noreply.github.com'], check=True)
-              subprocess.run(['git', 'commit', '-m', 'Improve model presentation and add M1A1 exterior'], check=True)
-              subprocess.run(['git', 'push', 'origin', 'HEAD:offline-mines-0.3.132'], check=True)
+              subprocess.run(['git', 'commit', '-m', 'Correct four mine display materials and enforce visual contrast'], check=True)
+              subprocess.run(['git', 'push', 'origin', 'HEAD:model-colors-0.3.133'], check=True)
           PYCODE
       - name: Restore published catalog 190 into APK assets
         run: python3 tools/restore_packaged_catalog.py
@@ -110,11 +110,11 @@ jobs:
           python3 - <<'PY'
           from pathlib import Path
           import urllib.request, hashlib
-          url = 'https://github.com/sanozhukov3737-oss/dlya-svoih-updates/releases/download/app-0.3.131/DLYA_SVOIH_v0.3.131.apk'
+          url = 'https://github.com/sanozhukov3737-oss/dlya-svoih-updates/releases/download/app-0.3.132/DLYA_SVOIH_v0.3.132.apk'
           with urllib.request.urlopen(url, timeout=120) as response:
               raw = response.read()
-          assert len(raw) == 120822395
-          assert hashlib.sha256(raw).hexdigest() == '9307fb9d995b708e84da88c45784d3c3a614404e88f5a94e84c59a79faf0d2bb'
+          assert len(raw) == 121073848
+          assert hashlib.sha256(raw).hexdigest() == 'c2e238a0c86087a4a0cbd7b8519e87734ddf42281512fbc29466bbdff2709b06'
           Path('build/previous-release.apk').write_bytes(raw)
           PY
       - name: Enable emulator acceleration
