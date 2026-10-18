@@ -33,12 +33,12 @@ jobs:
           python3 - <<'PYCODE'
           from pathlib import Path
           import urllib.request, hashlib, io, zipfile, json, subprocess
-          url = 'https://github.com/sanozhukov3737-oss/dlya-svoih-updates/releases/download/catalog-190/DLYA_SVOIH_OFFLINE_MINES_0.3.131.zip'
+          url = 'https://github.com/sanozhukov3737-oss/dlya-svoih-updates/releases/download/catalog-190/DLYA_SVOIH_OFFLINE_MINES_0.3.131_r2.zip'
           with urllib.request.urlopen(url, timeout=120) as response:
-              raw = response.read(3597499)
-          assert len(raw) == 3597498
-          assert hashlib.sha256(raw).hexdigest() == '3ffc28b1ff3d51be5ef4cfa0182495dcdc4866598758ff836706cda7c3b425f1'
-          allowed = {'app/src/main/assets/viewer3d/pmk-40.glb', 'tools/test_offline_model.py', 'app/src/main/assets/viewer3d/smi-35.glb', 'app/build.gradle.kts', 'tools/convert_display_stl.py', 'research/mines-3d-search-pass4-2026-10-18.json', 'OFFLINE_3D.md', 'app/src/main/assets/viewer3d/models.json', 'app/src/androidTest/java/ru/dlyasvoih/app/ui/screens/OfflineModelViewerTest.kt', 'tools/verify_release_ui.py'}
+              raw = response.read(3604784)
+          assert len(raw) == 3604783
+          assert hashlib.sha256(raw).hexdigest() == '1ec0e54f6117913346dce4e91c79b6835d9789817386726e5d640e622ad6d2c8'
+          allowed = {'app/src/androidTest/java/ru/dlyasvoih/app/ui/screens/OfflineModelViewerTest.kt', 'app/src/main/assets/viewer3d/pmk-40.glb', 'app/build.gradle.kts', 'app/src/main/assets/viewer3d/models.json', 'tools/convert_display_stl.py', 'app/src/androidTest/java/ru/dlyasvoih/app/SearchRegressionTest.kt', 'tools/test_search.py', 'tools/test_offline_model.py', 'app/src/main/assets/viewer3d/smi-35.glb', 'research/mines-3d-search-pass4-2026-10-18.json', 'OFFLINE_3D.md', 'tools/verify_release_ui.py', 'app/src/main/java/ru/dlyasvoih/app/data/CatalogSearch.java'}
           with zipfile.ZipFile(io.BytesIO(raw)) as patch:
               manifest = json.loads(patch.read('patch-manifest.json'))
               assert set(manifest) == allowed
@@ -52,7 +52,7 @@ jobs:
           if subprocess.run(['git', 'diff', '--cached', '--quiet']).returncode:
               subprocess.run(['git', 'config', 'user.name', 'github-actions[bot]'], check=True)
               subprocess.run(['git', 'config', 'user.email', '41898282+github-actions[bot]@users.noreply.github.com'], check=True)
-              subprocess.run(['git', 'commit', '-m', 'Add licensed offline PMK-40 and S.Mi.35 exterior models'], check=True)
+              subprocess.run(['git', 'commit', '-m', 'Extend mine collection and match punctuated model names'], check=True)
               subprocess.run(['git', 'push', 'origin', 'HEAD:offline-mines-0.3.131'], check=True)
           PYCODE
       - name: Restore published catalog 190 into APK assets
@@ -151,7 +151,7 @@ jobs:
           reports = list(Path('app/build/outputs/androidTest-results/connected/debug').glob('TEST-*.xml'))
           assert reports, 'Android test reports are missing'
           suites = [ET.parse(path).getroot() for path in reports]
-          assert sum(int(s.attrib['tests']) for s in suites) >= 31
+          assert sum(int(s.attrib['tests']) for s in suites) >= 32
           assert sum(int(s.attrib.get('failures', 0)) + int(s.attrib.get('errors', 0)) + int(s.attrib.get('skipped', 0)) for s in suites) == 0
           PY
       - name: Upload Android visual proof
