@@ -28,17 +28,17 @@ jobs:
       CI_SIGNING_KEYSTORE: ${{ github.workspace }}/dlya-svoih-debug.keystore
     steps:
       - uses: actions/checkout@v4
-      - name: Apply and commit additional exterior mine models
+      - name: Apply and commit viewer presentation and M1A1 model
         run: |
           python3 - <<'PYCODE'
           from pathlib import Path
           import urllib.request, hashlib, io, zipfile, json, subprocess
-          url = 'https://github.com/sanozhukov3737-oss/dlya-svoih-updates/releases/download/catalog-190/DLYA_SVOIH_OFFLINE_MINES_0.3.131_r2.zip'
+          url = 'https://github.com/sanozhukov3737-oss/dlya-svoih-updates/releases/download/catalog-190/DLYA_SVOIH_PRESENTATION_0.3.132_1792343500.zip'
           with urllib.request.urlopen(url, timeout=120) as response:
-              raw = response.read(3604784)
-          assert len(raw) == 3604783
-          assert hashlib.sha256(raw).hexdigest() == '1ec0e54f6117913346dce4e91c79b6835d9789817386726e5d640e622ad6d2c8'
-          allowed = {'app/src/androidTest/java/ru/dlyasvoih/app/ui/screens/OfflineModelViewerTest.kt', 'app/src/main/assets/viewer3d/pmk-40.glb', 'app/build.gradle.kts', 'app/src/main/assets/viewer3d/models.json', 'tools/convert_display_stl.py', 'app/src/androidTest/java/ru/dlyasvoih/app/SearchRegressionTest.kt', 'tools/test_search.py', 'tools/test_offline_model.py', 'app/src/main/assets/viewer3d/smi-35.glb', 'research/mines-3d-search-pass4-2026-10-18.json', 'OFFLINE_3D.md', 'tools/verify_release_ui.py', 'app/src/main/java/ru/dlyasvoih/app/data/CatalogSearch.java'}
+              raw = response.read(483793)
+          assert len(raw) == 483792
+          assert hashlib.sha256(raw).hexdigest() == 'ac674940469f1991613c3daa784b2efa22d3129a4a9310486c396eb32f7a0fde'
+          allowed = {'app/build.gradle.kts', 'app/src/main/java/ru/dlyasvoih/app/ui/screens/OfflineModelViewer.kt', 'app/src/main/assets/viewer3d/m1a1-at.glb', 'OFFLINE_3D.md', 'research/mines-3d-search-pass5-2026-10-18.json', 'web-viewer/viewer.js', 'app/src/androidTest/java/ru/dlyasvoih/app/ui/screens/OfflineModelViewerTest.kt', 'app/src/main/assets/viewer3d/models.json', 'tools/test_offline_model.py', 'app/src/main/assets/viewer3d/viewer.bundle.js', 'app/src/main/assets/viewer3d/pfm-1.glb', 'tools/verify_release_ui.py', 'app/src/main/assets/viewer3d/index.html'}
           with zipfile.ZipFile(io.BytesIO(raw)) as patch:
               manifest = json.loads(patch.read('patch-manifest.json'))
               assert set(manifest) == allowed
@@ -52,8 +52,8 @@ jobs:
           if subprocess.run(['git', 'diff', '--cached', '--quiet']).returncode:
               subprocess.run(['git', 'config', 'user.name', 'github-actions[bot]'], check=True)
               subprocess.run(['git', 'config', 'user.email', '41898282+github-actions[bot]@users.noreply.github.com'], check=True)
-              subprocess.run(['git', 'commit', '-m', 'Extend mine collection and match punctuated model names'], check=True)
-              subprocess.run(['git', 'push', 'origin', 'HEAD:offline-mines-0.3.131'], check=True)
+              subprocess.run(['git', 'commit', '-m', 'Improve model presentation and add M1A1 exterior'], check=True)
+              subprocess.run(['git', 'push', 'origin', 'HEAD:offline-mines-0.3.132'], check=True)
           PYCODE
       - name: Restore published catalog 190 into APK assets
         run: python3 tools/restore_packaged_catalog.py
@@ -110,11 +110,11 @@ jobs:
           python3 - <<'PY'
           from pathlib import Path
           import urllib.request, hashlib
-          url = 'https://github.com/sanozhukov3737-oss/dlya-svoih-updates/releases/download/app-0.3.130/DLYA_SVOIH_v0.3.130.apk'
+          url = 'https://github.com/sanozhukov3737-oss/dlya-svoih-updates/releases/download/app-0.3.131/DLYA_SVOIH_v0.3.131.apk'
           with urllib.request.urlopen(url, timeout=120) as response:
               raw = response.read()
-          assert len(raw) == 117243931
-          assert hashlib.sha256(raw).hexdigest() == '486dde2561199fcd8aed7f02d9b8e6846d7edd20b041e5c5de29720bae484b2c'
+          assert len(raw) == 120822395
+          assert hashlib.sha256(raw).hexdigest() == '9307fb9d995b708e84da88c45784d3c3a614404e88f5a94e84c59a79faf0d2bb'
           Path('build/previous-release.apk').write_bytes(raw)
           PY
       - name: Enable emulator acceleration
