@@ -69,7 +69,14 @@ try:
     print('Actual model pixels and touch rotation verified', visible, flush=True)
     # Open the collection through the same menu exposed to users in the release APK.
     tap(find(lambda a: a.get('content-desc') == 'Назад'))
-    adb('shell', 'am', 'start', '-W', '-n', 'ru.dlyasvoih.app/.MainActivity', '--es', 'shortcut_route', 'catalog')
+    tap(find(lambda a: a.get('text') == 'Каталог'))
+    for _ in range(6):
+        current = tree()
+        if any(n.get('content-desc') == 'Открыть меню' for n in current.iter('node')):
+            break
+        back = next((n for n in current.iter('node') if n.get('content-desc') == 'Назад'), None)
+        assert back is not None, 'Catalog root cannot be reached from the current screen'
+        tap(back)
     tap(find(lambda a: a.get('content-desc') == 'Открыть меню'))
     tap(find(lambda a: a.get('text') == '3D-модели · офлайн'))
     find(lambda a: 'моделей · доступны без интернета' in a.get('text', ''))

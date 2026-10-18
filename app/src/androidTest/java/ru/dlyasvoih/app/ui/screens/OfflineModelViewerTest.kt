@@ -4,6 +4,8 @@ import android.content.Context
 import android.net.Uri
 import android.webkit.WebView
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.runtime.key
+import androidx.compose.runtime.mutableStateOf
 import androidx.compose.ui.test.*
 import androidx.compose.ui.test.junit4.createComposeRule
 import androidx.test.core.app.ApplicationProvider
@@ -109,7 +111,12 @@ class OfflineModelViewerTest {
         val models = OfflineModelFiles.models(context)
         assertTrue(models.size >= 12)
         lateinit var viewer: WebView
-        compose.setContent { MaterialTheme { OfflineModelDialog(onViewerCreated = { viewer = it }, onDismiss = {}) } }
+        val selectedModel = mutableStateOf("tm-46")
+        compose.setContent { MaterialTheme {
+            key(selectedModel.value) {
+                OfflineModelDialog(modelId = selectedModel.value, onViewerCreated = { viewer = it }, onDismiss = {})
+            }
+        } }
         compose.waitForIdle()
         val instrumentation = InstrumentationRegistry.getInstrumentation()
         fun evaluate(script: String): String {
@@ -120,7 +127,8 @@ class OfflineModelViewerTest {
             return answer.get()
         }
         for (model in models) {
-            instrumentation.runOnMainSync { viewer.loadUrl(OfflineModelFiles.entryUrl(model.id)) }
+            compose.runOnIdle { selectedModel.value = model.id }
+            compose.waitForIdle()
             val deadline = System.currentTimeMillis() + 45_000
             var state = ""
             while (System.currentTimeMillis() < deadline) {
