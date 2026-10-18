@@ -28,17 +28,17 @@ jobs:
       CI_SIGNING_KEYSTORE: ${{ github.workspace }}/dlya-svoih-debug.keystore
     steps:
       - uses: actions/checkout@v4
-      - name: Apply and commit offline mine collection
+      - name: Apply and commit additional exterior mine models
         run: |
           python3 - <<'PYCODE'
           from pathlib import Path
           import urllib.request, hashlib, io, zipfile, json, subprocess
-          url = 'https://github.com/sanozhukov3737-oss/dlya-svoih-updates/releases/download/catalog-190/DLYA_SVOIH_OFFLINE_MINES_0.3.130.zip'
+          url = 'https://github.com/sanozhukov3737-oss/dlya-svoih-updates/releases/download/catalog-190/DLYA_SVOIH_OFFLINE_MINES_0.3.131.zip'
           with urllib.request.urlopen(url, timeout=120) as response:
-              raw = response.read(31701999)
-          assert len(raw) == 31701998
-          assert hashlib.sha256(raw).hexdigest() == '742458bf361287e493872b9376a39d84bace1c8bc1495f93c6026cac3eb7561d'
-          allowed = {'web-viewer/viewer.js', 'app/src/androidTest/java/ru/dlyasvoih/app/ui/screens/OfflineModelViewerTest.kt', 'research/mines-3d-search-2026-10-18.json', 'app/src/main/assets/viewer3d/lunge-mine.glb', 'app/src/main/assets/viewer3d/pignone-mod43.glb', 'app/src/main/assets/viewer3d/tellermine-42.glb', 'app/src/main/java/ru/dlyasvoih/app/ui/screens/OfflineModelViewer.kt', 'OFFLINE_3D.md', 'app/src/main/assets/viewer3d/goliath-303.glb', 'app/src/main/assets/viewer3d/index.html', 'tools/test_offline_model.py', 'app/src/main/assets/viewer3d/tm-35.glb', 'app/src/main/java/ru/dlyasvoih/app/ui/screens/OfflineModels.kt', 'app/src/main/assets/viewer3d/pfm-1.glb', 'app/build.gradle.kts', 'app/src/main/assets/viewer3d/viewer.bundle.js', 'app/src/main/assets/viewer3d/ptkm-1r.glb', 'app/src/main/assets/viewer3d/m18a1-claymore.glb', 'app/src/main/assets/viewer3d/tmrp-6.glb', 'app/src/main/assets/viewer3d/prb-m409.glb', 'tools/verify_release_ui.py', 'app/src/main/assets/viewer3d/models.json', 'app/src/main/assets/viewer3d/tm-62-family.glb', 'app/src/main/java/ru/dlyasvoih/app/ui/screens/OverviewScreen.kt'}
+              raw = response.read(3597499)
+          assert len(raw) == 3597498
+          assert hashlib.sha256(raw).hexdigest() == '3ffc28b1ff3d51be5ef4cfa0182495dcdc4866598758ff836706cda7c3b425f1'
+          allowed = {'app/src/main/assets/viewer3d/pmk-40.glb', 'tools/test_offline_model.py', 'app/src/main/assets/viewer3d/smi-35.glb', 'app/build.gradle.kts', 'tools/convert_display_stl.py', 'research/mines-3d-search-pass4-2026-10-18.json', 'OFFLINE_3D.md', 'app/src/main/assets/viewer3d/models.json', 'app/src/androidTest/java/ru/dlyasvoih/app/ui/screens/OfflineModelViewerTest.kt', 'tools/verify_release_ui.py'}
           with zipfile.ZipFile(io.BytesIO(raw)) as patch:
               manifest = json.loads(patch.read('patch-manifest.json'))
               assert set(manifest) == allowed
@@ -48,24 +48,12 @@ jobs:
                   assert hashlib.sha256(data).hexdigest() == digest
                   Path(name).parent.mkdir(parents=True, exist_ok=True)
                   Path(name).write_bytes(data)
-          with urllib.request.urlopen('https://github.com/sanozhukov3737-oss/dlya-svoih-updates/releases/download/catalog-190/DLYA_SVOIH_MODEL_CHECKS_0.3.130_r2.zip', timeout=30) as response:
-              correction = response.read(5088)
-          assert len(correction) == 5087
-          assert hashlib.sha256(correction).hexdigest() == '7b707e402ada702aa3fcf842ad39178f77b40b6269f27cad78eceb719eb9a260'
-          with zipfile.ZipFile(io.BytesIO(correction)) as patch:
-              correction_manifest = json.loads(patch.read('patch-manifest.json'))
-              assert set(correction_manifest) == {'app/src/androidTest/java/ru/dlyasvoih/app/ui/screens/OfflineModelViewerTest.kt', 'tools/verify_release_ui.py'}
-              assert set(patch.namelist()) == set(correction_manifest) | {'patch-manifest.json'}
-              for name, digest in correction_manifest.items():
-                  value = patch.read(name)
-                  assert hashlib.sha256(value).hexdigest() == digest
-                  Path(name).write_bytes(value)
           subprocess.run(['git', 'add', *sorted(allowed)], check=True)
           if subprocess.run(['git', 'diff', '--cached', '--quiet']).returncode:
               subprocess.run(['git', 'config', 'user.name', 'github-actions[bot]'], check=True)
               subprocess.run(['git', 'config', 'user.email', '41898282+github-actions[bot]@users.noreply.github.com'], check=True)
-              subprocess.run(['git', 'commit', '-m', 'Verify each offline model in a fresh viewer window'], check=True)
-              subprocess.run(['git', 'push', 'origin', 'HEAD:offline-mines-0.3.130'], check=True)
+              subprocess.run(['git', 'commit', '-m', 'Add licensed offline PMK-40 and S.Mi.35 exterior models'], check=True)
+              subprocess.run(['git', 'push', 'origin', 'HEAD:offline-mines-0.3.131'], check=True)
           PYCODE
       - name: Restore published catalog 190 into APK assets
         run: python3 tools/restore_packaged_catalog.py
@@ -122,11 +110,11 @@ jobs:
           python3 - <<'PY'
           from pathlib import Path
           import urllib.request, hashlib
-          url = 'https://github.com/sanozhukov3737-oss/dlya-svoih-updates/releases/download/app-0.3.129/DLYA_SVOIH_v0.3.129.apk'
+          url = 'https://github.com/sanozhukov3737-oss/dlya-svoih-updates/releases/download/app-0.3.130/DLYA_SVOIH_v0.3.130.apk'
           with urllib.request.urlopen(url, timeout=120) as response:
               raw = response.read()
-          assert len(raw) == 85712724
-          assert hashlib.sha256(raw).hexdigest() == 'b272f1e58761f843d41dc96e5dcb595c84e21ed2a4264941a3cf4da178e771fe'
+          assert len(raw) == 117243931
+          assert hashlib.sha256(raw).hexdigest() == '486dde2561199fcd8aed7f02d9b8e6846d7edd20b041e5c5de29720bae484b2c'
           Path('build/previous-release.apk').write_bytes(raw)
           PY
       - name: Enable emulator acceleration
