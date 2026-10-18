@@ -34,19 +34,20 @@ def find(predicate, timeout=25, scroll=False):
 
 try:
     adb('shell', 'am', 'start', '-W', '-n', 'ru.dlyasvoih.app/.MainActivity', '--es', 'shortcut_route', 'search_tab')
-    for query in ('46', 'TM-46', 'TM46'):
+    for query, expected_title in (('SMi35', 'S.Mi.35'), ('PMK40', 'ПМК-40'),
+                                  ('46', 'ТМ-46'), ('TM-46', 'ТМ-46'), ('TM46', 'ТМ-46')):
         search = find(lambda a: a.get('class') == 'android.widget.EditText')
         tap(search)
         adb('shell', 'input', 'keyevent', 'KEYCODE_MOVE_END', *(['KEYCODE_DEL'] * 20))
         adb('shell', 'input', 'text', query)
         adb('shell', 'input', 'keyevent', '4')
-        card = find(lambda a: a.get('text') == 'ТМ-46' or a.get('content-desc') == 'ТМ-46', timeout=35)
+        card = find(lambda a: a.get('text') == expected_title or a.get('content-desc') == expected_title, timeout=35)
         root = tree()
         assert any(n.attrib.get('class') == 'android.widget.EditText' and n.attrib.get('text') == query for n in root.iter('node')), 'Search query did not change'
         assert any(n.attrib.get('text') == 'Все категории' for n in root.iter('node')), 'Search unexpectedly restricted to a category'
         (out / ('search-' + query + '-release.xml')).write_bytes(ET.tostring(root, encoding='utf-8'))
         (out / ('search-' + query + '-release.png')).write_bytes(adb('exec-out', 'screencap', '-p'))
-        print('Unfiltered release search found ТМ-46 on the first screen:', query, flush=True)
+        print('Unfiltered release search found the exact card on the first screen:', query, expected_title, flush=True)
     tap(card)
     button = find(lambda a: '3D-модель' in (a.get('text', '') + a.get('content-desc', '')), scroll=True)
     tap(button)

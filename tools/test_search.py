@@ -53,6 +53,13 @@ class CatalogSearchTests(unittest.TestCase):
         self.assertLess(target[0], 3)
         print('46 first results:', rows[:5])
 
+    def test_punctuated_designations_work_without_dots(self):
+        for query in ['S.Mi.35', 'SMi35', 'smi-35']:
+            with self.subTest(query=query):
+                self.assertEqual('eng-pdf-v7-125', self.results(query)[0][0])
+        self.assertEqual('mine-audit-v25-su-pmk-40', self.results('PMK40')[0][0])
+        self.assertNotIn('eng-pdf-v7-125', [r[0] for r in self.results('SMi350')])
+
     def test_other_model_names_and_full_text_continue_to_work(self):
         for query in ['ПМН-2','PMN2','РГД-5','RGD5','ПТАБ-2.5','PTAB2.5']:
             with self.subTest(query=query): self.assertTrue(self.results(query), query)

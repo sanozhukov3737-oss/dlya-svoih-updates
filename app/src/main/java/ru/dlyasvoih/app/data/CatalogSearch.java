@@ -131,6 +131,12 @@ public final class CatalogSearch {
         List<String> exact = variants(compactQuery, model);
         List<Object> rankArgs = new ArrayList<>(exact);
         String exactMatch = compactTitle + " IN (" + String.join(",", Collections.nCopies(exact.size(), "?")) + ")";
+        // A compact designation such as SMi35 must reach ranking even when its
+        // stored title splits the letters with dots (S.Mi.35).
+        if (model) {
+            where = "(" + exactMatch + " OR " + where + ")";
+            whereArgs.addAll(0, exact);
+        }
         String strictTitle = titlePredicate(parts, model, true, rankArgs);
         String broadTitle = titlePredicate(parts, model, false, rankArgs);
         // Titles have at most 200 characters. Short, exact model names precede longer variants.

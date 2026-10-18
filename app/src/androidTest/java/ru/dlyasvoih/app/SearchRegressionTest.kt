@@ -49,6 +49,13 @@ class SearchRegressionTest {
         assertFalse(ids(CatalogFilter(query = "46", section = "ATGM")).contains(target))
         assertFalse(ids(CatalogFilter(query = "46", country = "us")).contains(target))
     }
+    @Test fun punctuatedModelNamesWorkWithoutDots() = runBlocking(Dispatchers.IO) {
+        for (query in listOf("S.Mi.35", "SMi35", "smi-35")) {
+            assertEquals(query, "eng-pdf-v7-125", ids(CatalogFilter(query = query)).firstOrNull())
+        }
+        assertEquals("mine-audit-v25-su-pmk-40", ids(CatalogFilter(query = "PMK40")).firstOrNull())
+        assertFalse(ids(CatalogFilter(query = "SMi350")).contains("eng-pdf-v7-125"))
+    }
     @Test fun numericTermsDoNotMatchDifferentModelNumbers() = runBlocking(Dispatchers.IO) {
         val original = db.guideDao().card(target).first()!!
         db.guideDao().putCard(original.copy(rowId = 2_000_001, id = "search-probe-460", title = "Probe-460",
