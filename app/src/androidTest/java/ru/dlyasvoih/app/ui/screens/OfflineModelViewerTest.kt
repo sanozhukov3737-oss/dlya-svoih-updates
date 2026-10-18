@@ -109,7 +109,7 @@ class OfflineModelViewerTest {
     @Test fun everyPackagedModelRendersWithoutNetworkAndUsesItsOwnAsset() {
         val context = ApplicationProvider.getApplicationContext<Context>()
         val models = OfflineModelFiles.models(context)
-        assertTrue(models.size >= 12)
+        assertTrue(models.size >= 14)
         lateinit var viewer: WebView
         val selectedModel = mutableStateOf("tm-46")
         compose.setContent { MaterialTheme {

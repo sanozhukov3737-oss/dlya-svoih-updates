@@ -81,7 +81,7 @@ try:
     tap(find(lambda a: a.get('text') == '3D-модели · офлайн'))
     find(lambda a: 'моделей · доступны без интернета' in a.get('text', ''))
     (out / 'offline-model-gallery-release.png').write_bytes(adb('exec-out', 'screencap', '-p'))
-    for title, slug in (('M18A1 Claymore', 'm18a1-claymore'), ('ПФМ-1', 'pfm-1')):
+    for title, slug in (('M18A1 Claymore', 'm18a1-claymore'), ('ПФМ-1', 'pfm-1'), ('ПМК-40', 'pmk-40'), ('S.Mi.35', 'smi-35')):
         tap(find(lambda a: a.get('text') == title, scroll=True))
         find(lambda a: a.get('text') == title + ' · 3D')
         time.sleep(6)

@@ -1,0 +1,588 @@
+{
+  "date": "2026-10-18",
+  "appVersion": "0.3.131",
+  "publicSketchfabSearchResponses": 24,
+  "uniqueSketchfabResultsBeforeReview": 139,
+  "searchErrors": [],
+  "queries": [
+    {
+      "q": "противопехотная",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=%D0%BF%D1%80%D0%BE%D1%82%D0%B8%D0%B2%D0%BE%D0%BF%D0%B5%D1%85%D0%BE%D1%82%D0%BD%D0%B0%D1%8F&downloadable=true",
+      "uids": [
+        "a8eec96df18b49bb8ce53ac67075957a",
+        "cb82ca56bae4406c961222578e6d500f",
+        "f767ac79fd644cd484e802f1f14484f9",
+        "4e34a837d8c24f2a9571bdf34eb6c943",
+        "6434e08edd694d16957f830c4183220a"
+      ],
+      "next": null
+    },
+    {
+      "q": "мины",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=%D0%BC%D0%B8%D0%BD%D1%8B&downloadable=true",
+      "uids": [
+        "94717a6cc53b4f7e9d6d12e80d856df1",
+        "3894c7b3780d497c8049da031f1b9895"
+      ],
+      "next": null
+    },
+    {
+      "q": "мина",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=%D0%BC%D0%B8%D0%BD%D0%B0&downloadable=true",
+      "uids": [
+        "bfd427474f224131bf0473009a5fc397",
+        "ed1940dfa18d43728a86b7dfcab7faee",
+        "6434e08edd694d16957f830c4183220a",
+        "d5ff9ce330e843db8cb8c6a9ad4e8764",
+        "b9f4f00e76e44b9fbf0913ee8cdc249c",
+        "94717a6cc53b4f7e9d6d12e80d856df1",
+        "e8f0aa63b28c4902a437c252f8756ee8",
+        "e7a295177c084d62be1dea5268c10e0b"
+      ],
+      "next": null
+    },
+    {
+      "q": "противотанковая",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=%D0%BF%D1%80%D0%BE%D1%82%D0%B8%D0%B2%D0%BE%D1%82%D0%B0%D0%BD%D0%BA%D0%BE%D0%B2%D0%B0%D1%8F&downloadable=true",
+      "uids": [
+        "136d4f298ed342e187fb171788a78b95",
+        "5d7e0e1282cd4514a9256297be963522",
+        "a1e9f5f381a44e548ecf2a824a4d60ab",
+        "886c6873ac1e4c61a1c5e6847bf91afa",
+        "5c2a722418a9455d942665a2e44ff393",
+        "c723456aac8b4eb7a1a4b0a1a94edd1d",
+        "34970ce5260d434a988bca8273e771ca",
+        "94717a6cc53b4f7e9d6d12e80d856df1"
+      ],
+      "next": null
+    },
+    {
+      "q": "mina anticarro",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=mina+anticarro&downloadable=true",
+      "uids": [],
+      "next": null
+    },
+    {
+      "q": "морская мина",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=%D0%BC%D0%BE%D1%80%D1%81%D0%BA%D0%B0%D1%8F+%D0%BC%D0%B8%D0%BD%D0%B0&downloadable=true",
+      "uids": [],
+      "next": null
+    },
+    {
+      "q": "mina antipersona",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=mina+antipersona&downloadable=true",
+      "uids": [],
+      "next": null
+    },
+    {
+      "q": "mina terrestre",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=mina+terrestre&downloadable=true",
+      "uids": [
+        "2434093fcf434fd9a2dae89ef4fc1ede",
+        "6b2157d03ab445d29306daadb4d407c5",
+        "7f7decd9d2454b3b9405c0827fcab72c",
+        "dc533d9955ff42e2878acd7b45e0232d"
+      ],
+      "next": null
+    },
+    {
+      "q": "mine antipersonnel",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=mine+antipersonnel&downloadable=true",
+      "uids": [
+        "8a5fa351344440a98ac7f22a67d4e0b6"
+      ],
+      "next": null
+    },
+    {
+      "q": "panzermine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=panzermine&downloadable=true",
+      "uids": [],
+      "next": null
+    },
+    {
+      "q": "mine antichar",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=mine+antichar&downloadable=true",
+      "uids": [],
+      "next": null
+    },
+    {
+      "q": "mina naval",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=mina+naval&downloadable=true",
+      "uids": [],
+      "next": null
+    },
+    {
+      "q": "miina",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=miina&downloadable=true",
+      "uids": [
+        "0eabe5b441584b1a8a84d00b40aaf421",
+        "0a105cb7c84a4abf9e3f0f8f3a8d9a31"
+      ],
+      "next": null
+    },
+    {
+      "q": "springmine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=springmine&downloadable=true",
+      "uids": [
+        "f0b7628f862a4ce7b3d3f7a5978b70cb",
+        "6434e08edd694d16957f830c4183220a"
+      ],
+      "next": null
+    },
+    {
+      "q": "merimiina",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=merimiina&downloadable=true",
+      "uids": [],
+      "next": null
+    },
+    {
+      "q": "landmin",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=landmin&downloadable=true",
+      "uids": [
+        "b6f3166625ab42349e1bd4df8d6e8df9",
+        "1c89cb9f2c224b78b6fea50f82e042c3",
+        "9f7e0a0b3801427a90d5084883b3d9c3",
+        "739047d878d749faa7a2911663e6b3b3",
+        "266a00c1653449a78c1fbc8da2ed49df",
+        "ae9b8e182f144c569860ad120b3cb386",
+        "135749dbd7ec4e9ab1a80888cf509ba6",
+        "d0d63bfd117c40e4938473caf5333847",
+        "374bb13b716844ecba21a33e30ba1af5",
+        "ccbf72c31f0f4b1fafaee274860cb0c3",
+        "225d7087769344b08d38118ffc405e02",
+        "0cb14e0dfc2d4c50abb695a40c96ee57",
+        "d310d9fdcdea40f99cd52e0f6ce9c984",
+        "9ebd80d2ea12441dae8e41ad695d939d",
+        "321846131db24cd88614fc30f6ae0f53",
+        "c51cd8b56e954fbfb53c43f50fe069d8",
+        "d60b5edcd83040d5b980e41c65be8017",
+        "6ae1d0bf6bb34086a8e8fc05bca87677",
+        "a2fbc758bbd54a4ba2f679c2624d891e",
+        "e5dc18bebe58444995d5f4e2aff04a64",
+        "49ab3dbdfa6347dfb6e2b633c9c7f1c2",
+        "e67a406e48534b24a0c8e26846b231e2",
+        "5b52f43648df4a5cb977ce07f88443ee",
+        "bc12397f9e444684a383a9b9889bb294"
+      ],
+      "next": "https://api.sketchfab.com/v3/search?count=24&cursor=24&downloadable=true&q=landmin&type=models"
+    },
+    {
+      "q": "bodenmine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=bodenmine&downloadable=true",
+      "uids": [],
+      "next": null
+    },
+    {
+      "q": "landmines",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=landmines&downloadable=true",
+      "uids": [
+        "374bb13b716844ecba21a33e30ba1af5",
+        "ccbf72c31f0f4b1fafaee274860cb0c3",
+        "ae9b8e182f144c569860ad120b3cb386",
+        "266a00c1653449a78c1fbc8da2ed49df",
+        "d0d63bfd117c40e4938473caf5333847",
+        "e5dc18bebe58444995d5f4e2aff04a64",
+        "225d7087769344b08d38118ffc405e02",
+        "321846131db24cd88614fc30f6ae0f53",
+        "d60b5edcd83040d5b980e41c65be8017",
+        "003ecc6b7b194fa5b17a117ebc1c7a36",
+        "0cb14e0dfc2d4c50abb695a40c96ee57",
+        "e67a406e48534b24a0c8e26846b231e2",
+        "c01b44a660ca4f25ae5d42e16f3731f8",
+        "d310d9fdcdea40f99cd52e0f6ce9c984",
+        "0f60f407a88f477daeb57ad760ae73dd",
+        "fcaa108001374635971836c972e1dd11",
+        "c2c72e9ccdc0469695f017e6f6aa04b1",
+        "0445f3809f1a43a48131bd118e4367ca",
+        "a2fbc758bbd54a4ba2f679c2624d891e",
+        "a9ccc4aacabf45bc86bc9e892d0a11a8",
+        "3c2f80e5a17a4cbe80d54a40d467f672",
+        "2c100a32fdab45ee9870371d053894a0",
+        "b79fd3172d4946c6a18c3a4ca3c27e33",
+        "3f3ef18d34764342934e96c508d488b0"
+      ],
+      "next": "https://api.sketchfab.com/v3/search?count=24&cursor=24&downloadable=true&q=landmines&type=models"
+    },
+    {
+      "q": "anti personnel",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=anti+personnel&downloadable=true",
+      "uids": [
+        "e47685a48cdb4e14883976fe1bf85ced",
+        "ab5417c63f29402b865016afd2ed2891",
+        "c71439ebd823432683e5b125d5c24840",
+        "05ddbb49800b4cd48e415f50d2077990",
+        "17a4fa0d9ad94b2598b7b63fdc127a5b",
+        "886637c9482b4cc4960d0112684baac6",
+        "279b3bb5bdbc4ab0b87cad0ce98a0e56",
+        "09a34665e3424873bad60b1edbdd4f8e",
+        "9dcb976d61ea49ac939fa14134846d83",
+        "d9a1e6eab24649ffac12d9e3b79af114",
+        "237ed710fbec45faa594d5205161c1ca",
+        "7a21d05397584e948aa03c4678d8f9a3",
+        "5a6ac636b99d406eaefbe954145fe8d7",
+        "ea3c95ab634146d28e89c8776e3bb4c3",
+        "dee441215c2846a5af1f81047e2abc28",
+        "22964edbae1547a389b90ba660147dae",
+        "3db9ca9fb8704e12a4fe4380f5f73365",
+        "dee7a6bf6fca40ab8e0ca82567a39cf2",
+        "be283b2480aa4469a8c7ee90ece9a0e8",
+        "60b650446cb546bdbe58789b92193f03",
+        "0ab9698d824b4c56a2728e5edea90aa4",
+        "a8eec96df18b49bb8ce53ac67075957a",
+        "98b90b7e7f574a4b9b586c010bea35bc",
+        "a8732f7d593741faa12a4059f923c66c"
+      ],
+      "next": "https://api.sketchfab.com/v3/search?count=24&cursor=24&downloadable=true&q=anti+personnel&type=models"
+    },
+    {
+      "q": "tellerminen",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=tellerminen&downloadable=true",
+      "uids": [
+        "c51cd8b56e954fbfb53c43f50fe069d8",
+        "a2fbc758bbd54a4ba2f679c2624d891e"
+      ],
+      "next": null
+    },
+    {
+      "q": "mine replica",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=mine+replica&downloadable=true",
+      "uids": [
+        "7d07407b636c4c22b3eb88522adffb89",
+        "ec803c38ccb24e9684a301c7f11e738b",
+        "2c5bdd2a41f646db93dd0357c40aa8e5",
+        "b2c9b2b982584ffbbf4c0a7bbf5dfbfe",
+        "08f9975f1fa9416a918e610ebc2e2638",
+        "f9a1f778d9fe42f78f1249d56e0d9266",
+        "93493da9115d478799a4fbc395e61fe6",
+        "d0c843167e134ecaa8d197a2691fa148",
+        "6e9154517695466b83ad4ff3d51110fd",
+        "a0c7a3266d3f4a73924cde577cda0c47",
+        "2f4547c78da441198867c319cdbd6122",
+        "fba285b954a849efa49d590fe0b498fc",
+        "956e4040807948129fbb46a06ab7c3e4",
+        "8603b2ea16284429a1b54dadfd648067",
+        "6837bbe9a0cd466d91c99e3e4c720bcb",
+        "dd6271b995e2442da9c4cd32565b393e",
+        "e8777b7056fe4414a03d4c27d0e7d30f",
+        "d1c99ed190e04bf6beec12eea2d21c38",
+        "ffb2cf930d4840329b664e1fb0bcd7f9",
+        "4d8f7547d8b74a669073ff2b0082d3be",
+        "f6c9f02866764f90a72c09a3cec4c491",
+        "5807d0c2f5e148f6adb3485cb9aa051d",
+        "2b34c5aac74a4e00a7bb9a10c165570c",
+        "cea496baddea4ddf8292b5326823797c"
+      ],
+      "next": "https://api.sketchfab.com/v3/search?count=24&cursor=24&downloadable=true&q=mine+replica&type=models"
+    },
+    {
+      "q": "mine prop",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=mine+prop&downloadable=true",
+      "uids": [
+        "84f1cd8c378249d981ba485a63b906f3",
+        "c0daef164c554114980e2ffc19baf518",
+        "486238027ee340f68fb4c4c973734458",
+        "b27301917e5d42ea87212f521139ef8a",
+        "e5ec93d8646e4c01b72ea9d88471a0d4",
+        "bdfb5479927b43a88a55a87985f345ad",
+        "1cf5a1647a364374b2492673344d4f5a",
+        "963b49152ad840e896917791740b6491",
+        "5b776f76e0c94b3bb2571802a3614ced",
+        "21a8d6323f59446a86bb9a8fefe9e6d9",
+        "b34df05c2c854e53a300e13f042281db",
+        "44edd9911b4140ff90fb6d62e1825e22",
+        "4d32050eebe34a669963f55dad08ebca",
+        "b25c0bf08f05474787c8441675bb58a8",
+        "f1aaf6d037414a179fb544a853c89b39",
+        "3610d41ccd0e4b8e834ec73cb61a70f6",
+        "c27f6841bfe74678a7a20138407d4c4c",
+        "e1c3b268c0fc41ff87f7cf168cef30bb",
+        "c63a465fc3fc4b5dac6bf385bd954c2c",
+        "0e249864d1df49818ef2c03c336a934c",
+        "f67a90e04da5487db0a7d067c3e982ad",
+        "fe1e8b16f7c74f5ea2838eabe91ae92b",
+        "f8548acffc8747718037ad5ae5f724f8",
+        "b56e56b3ec9a4f51943729c68517c87a"
+      ],
+      "next": "https://api.sketchfab.com/v3/search?count=24&cursor=24&downloadable=true&q=mine+prop&type=models"
+    },
+    {
+      "q": "bounding landmine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=bounding+landmine&downloadable=true",
+      "uids": [],
+      "next": null
+    },
+    {
+      "q": "minimum metal mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=minimum+metal+mine&downloadable=true",
+      "uids": [
+        "d701121f4c564cb0b4de821d5806987e",
+        "2abf041c8d974b1295999a6f45bc86b0",
+        "6f0d0406c5b44b7bbb50d57d8c27a39b",
+        "9e9ae73327614b96919e977af95b281a",
+        "8e6600f5eb8b43dab6932a56d1ed7095"
+      ],
+      "next": null
+    }
+  ],
+  "printablesTagResults": 41,
+  "printablesCandidates": [
+    {
+      "title": "PFM - 1 (Antipersonnel Landmine)",
+      "url": "https://www.printables.com/model/888145-pfm-1-antipersonnel-landmine"
+    },
+    {
+      "title": "⊗ Land Mine Replica ⊗",
+      "url": "https://www.printables.com/model/570008-land-mine-replica"
+    },
+    {
+      "title": "PMN - 3 (Antipersonnel Landmine)",
+      "url": "https://www.printables.com/model/886911-pmn-3-antipersonnel-landmine"
+    },
+    {
+      "title": "land mine   M14 AP Mine",
+      "url": "https://www.printables.com/model/335791-land-mine-m14-ap-mine"
+    },
+    {
+      "title": "GLD-112 (Antipersonnel Landmine)",
+      "url": "https://www.printables.com/model/738431-gld-112-antipersonnel-landmine"
+    },
+    {
+      "title": "PMN - 4 (Antipersonnel Landmine)",
+      "url": "https://www.printables.com/model/881608-pmn-4-antipersonnel-landmine"
+    },
+    {
+      "title": "BLU-43 (Antipersonnel Landmine)",
+      "url": "https://www.printables.com/model/910283-blu-43-antipersonnel-landmine"
+    },
+    {
+      "title": "Caltrops Collection - Fun things to not step on",
+      "url": "https://www.printables.com/model/285716-caltrops-collection-fun-things-to-not-step-on"
+    },
+    {
+      "title": "PROM - 1 (Antipersonnel Landmine)",
+      "url": "https://www.printables.com/model/886924-prom-1-antipersonnel-landmine"
+    },
+    {
+      "title": "PMK-40 Mine",
+      "url": "https://www.printables.com/model/366841-pmk-40-mine"
+    },
+    {
+      "title": "M35 (Anti-personnel Landmine)",
+      "url": "https://www.printables.com/model/723284-m35-anti-personnel-landmine"
+    },
+    {
+      "title": "T-AB-1 (Anti-personnel Landmine)",
+      "url": "https://www.printables.com/model/724286-t-ab-1-anti-personnel-landmine"
+    },
+    {
+      "title": "MAI-75 (Anti-personnel Landmine)",
+      "url": "https://www.printables.com/model/723211-mai-75-anti-personnel-landmine"
+    },
+    {
+      "title": "OZM-72 (Antipersonnel Landmine)",
+      "url": "https://www.printables.com/model/793474-ozm-72-antipersonnel-landmine"
+    },
+    {
+      "title": "Trip Wire Boobytrap",
+      "url": "https://www.printables.com/model/585242-trip-wire-boobytrap"
+    },
+    {
+      "title": "Trip Wire Landmine",
+      "url": "https://www.printables.com/model/593032-trip-wire-landmine"
+    },
+    {
+      "title": "Russian PMN4 APERS Mine ordnance replica",
+      "url": "https://www.printables.com/model/546343-russian-pmn4-apers-mine-ordnance-replica"
+    },
+    {
+      "title": "PMA-1 (Antipersonnel Landmine)",
+      "url": "https://www.printables.com/model/738667-pma-1-antipersonnel-landmine"
+    },
+    {
+      "title": "Barbell Landmine",
+      "url": "https://www.printables.com/model/941310-barbell-landmine"
+    },
+    {
+      "title": "DM-11 (Antipersonnel Landmine)",
+      "url": "https://www.printables.com/model/747806-dm-11-antipersonnel-landmine"
+    },
+    {
+      "title": "PK14 off route landmine",
+      "url": "https://www.printables.com/model/805956-pk14-off-route-landmine"
+    },
+    {
+      "title": "TM-200 TNT Demolition Block (Landmine)",
+      "url": "https://www.printables.com/model/1057799-tm-200-tnt-demolition-block-landmine"
+    },
+    {
+      "title": "GORAZDE (Antipersonnel Landmine)",
+      "url": "https://www.printables.com/model/814690-gorazde-antipersonnel-landmine"
+    },
+    {
+      "title": "FMK - 1 (Antipersonnel Landmine)",
+      "url": "https://www.printables.com/model/814908-fmk-1-antipersonnel-landmine"
+    },
+    {
+      "title": "Land Mine",
+      "url": "https://www.printables.com/model/23688-land-mine"
+    },
+    {
+      "title": "P-40 (Antipersonnel Landmine)",
+      "url": "https://www.printables.com/model/938595-p-40-antipersonnel-landmine"
+    },
+    {
+      "title": "MAPT 78-F2 (Antipersonnel Landmine)",
+      "url": "https://www.printables.com/model/801129-mapt-78-f2-antipersonnel-landmine"
+    },
+    {
+      "title": "PP Mi-Ba (Antipersonnel Landmine)",
+      "url": "https://www.printables.com/model/746557-pp-mi-ba-antipersonnel-landmine"
+    },
+    {
+      "title": "Landmine - Czech PP-Mi-Na-1 APERS Mine",
+      "url": "https://www.printables.com/model/477409-landmine-czech-pp-mi-na-1-apers-mine"
+    },
+    {
+      "title": "MGP - 31 (Anti-personnel Landmine)",
+      "url": "https://www.printables.com/model/866350-mgp-31-anti-personnel-landmine"
+    },
+    {
+      "title": "Original PP Mi-Ba (Antipersonnel Landmine)",
+      "url": "https://www.printables.com/model/746564-original-pp-mi-ba-antipersonnel-landmine"
+    },
+    {
+      "title": "PP Mi-Na 1 (Anti-personnel Landmine)",
+      "url": "https://www.printables.com/model/745517-pp-mi-na-1-anti-personnel-landmine"
+    },
+    {
+      "title": "No 10 (Antipersonnel Landmine)",
+      "url": "https://www.printables.com/model/889189-no-10-antipersonnel-landmine"
+    },
+    {
+      "title": "Landmine T-Bar Handle",
+      "url": "https://www.printables.com/model/930017-landmine-t-bar-handle"
+    },
+    {
+      "title": "MAPP 78-F2 (Antipersonnel Landmine)",
+      "url": "https://www.printables.com/model/806155-mapp-78-f2-antipersonnel-landmine"
+    },
+    {
+      "title": "Barbell Landmine Attachment",
+      "url": "https://www.printables.com/model/1238171-barbell-landmine-attachment"
+    },
+    {
+      "title": "AUPS (Anti-personnel Landmine)",
+      "url": "https://www.printables.com/model/725677-aups-anti-personnel-landmine"
+    },
+    {
+      "title": "Multiple Barbell T Holder",
+      "url": "https://www.printables.com/model/1098344-multiple-barbell-t-holder"
+    },
+    {
+      "title": "Landmine keycap",
+      "url": "https://www.printables.com/model/397772-landmine-keycap"
+    },
+    {
+      "title": "Olympic Barbell Landmine Attachment",
+      "url": "https://www.printables.com/model/1611509-olympic-barbell-landmine-attachment"
+    },
+    {
+      "title": "Landmine Fidget Clicker",
+      "url": "https://www.printables.com/model/1857914-landmine-fidget-clicker"
+    }
+  ],
+  "addedModels": [
+    {
+      "id": "pmk-40",
+      "title": "ПМК-40",
+      "author": "Catja",
+      "source": "https://www.printables.com/model/366841-pmk-40-mine",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "cardIds": [
+        "mine-audit-v25-su-pmk-40"
+      ],
+      "sourceFile": "PMK-40 Solid v1.0.stl",
+      "originalSha256": "c43bffef2f9598a9a37084f2a10ccb42c1069b37f8283da9caca8ec15ba837a4",
+      "packagedSha256": "6d164dd077bc63dc17b8c228cb9575cc70b62563e83ede99e149ce3f45a2fb0f",
+      "bytes": 5767576,
+      "modifications": "Source PMK-40 Solid v1.0 STL converted to GLB. Millimetres/Z-up converted to metres/Y-up; duplicate position/normal pairs indexed. Triangle geometry unchanged. Neutral grey display material added because the source STL has no textures or colour."
+    },
+    {
+      "id": "smi-35",
+      "title": "S.Mi.35",
+      "author": "GSPI",
+      "source": "https://sketchfab.com/3d-models/sprengmine-35-6434e08edd694d16957f830c4183220a",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "cardIds": [
+        "eng-pdf-v7-125"
+      ],
+      "sourceUid": "6434e08edd694d16957f830c4183220a",
+      "originalSha256": "8815df49bc39c52a3f6a212e86b1a531d31f0d1104b8d6b4b4fdcaa1dc7980c0",
+      "packagedSha256": "e62f607e9709db8eff62299280144772093a3394d9615dc69b696130e732d1eb",
+      "bytes": 5575500,
+      "modifications": "Display conversion to GLB supplied by Sketchfab. Textures reduced to at most 1024px; opaque base colors encoded as JPEG. Mesh buffers unchanged. Animations are not played."
+    }
+  ],
+  "decisions": [
+    {
+      "title": "PMN-2 by _-HB-_",
+      "source": "https://www.thingiverse.com/thing:5777217",
+      "license": "CC BY 4.0",
+      "status": "held-download-failed",
+      "reason": "Official download buttons for STL and STEP returned Error downloading file; official ZIP dialog returned Unable to prepare ZIP."
+    },
+    {
+      "title": "M14 AP Mine (Historical Prop), mussy",
+      "source": "https://www.thingiverse.com/thing:3107238",
+      "license": "CC BY-NC-ND 4.0",
+      "status": "held-license-restrictions"
+    },
+    {
+      "title": "M14 AP Mine, Bubutech",
+      "source": "https://www.printables.com/model/335791-land-mine-m14-ap-mine",
+      "status": "held-conflicting-origin-license",
+      "reason": "Page marks remix of mussy NC-ND model while declaring CC0."
+    },
+    {
+      "title": "PMN-4 by Mumiell",
+      "source": "https://www.printables.com/model/881608-pmn-4-antipersonnel-landmine",
+      "status": "excluded-personal-use-only",
+      "reason": "Standard Digital File License expressly prohibits redistribution and derivatives. Other models of this author were found in search but not individually licensed or downloaded."
+    },
+    {
+      "title": "Czech PP-Mi-Na-1 by tlkinn025",
+      "source": "https://www.printables.com/model/477409-landmine-czech-pp-mi-na-1-apers-mine",
+      "license": "CC BY-NC-SA 4.0",
+      "status": "held-license-restrictions"
+    },
+    {
+      "title": "German S-Mine by Chris NZ",
+      "source": "https://www.printables.com/model/198442-german-s-mine",
+      "license": "CC BY-NC 4.0",
+      "status": "held-license-restrictions"
+    },
+    {
+      "title": "Mine (PMN), josephcan232",
+      "source": "https://sketchfab.com/3d-models/mine-4d4033efc0074338926b059a4ac9f889",
+      "license": "Free Standard",
+      "status": "held-standalone-redistribution-terms",
+      "licenseTermsSource": "https://sketchfab.com/licenses",
+      "reason": "Repository distributes the display GLB as a standalone source asset; standard licence restricts standalone access/redistribution."
+    },
+    {
+      "title": "First time bake - Mine / Мина",
+      "sourceUids": [
+        "3894c7b3780d497c8049da031f1b9895",
+        "ed1940dfa18d43728a86b7dfcab7faee"
+      ],
+      "status": "held-unknown-designation"
+    },
+    {
+      "title": "Brander HD",
+      "sourceUid": "d5ff9ce330e843db8cb8c6a9ad4e8764",
+      "status": "excluded-game-fiction-and-extracted-origin"
+    }
+  ]
+}

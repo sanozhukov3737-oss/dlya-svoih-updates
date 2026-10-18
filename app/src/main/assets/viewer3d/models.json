@@ -244,6 +244,49 @@
       "bytes": 1755380,
       "resources": "All model buffers and textures are embedded; no remote resources.",
       "sourceUid": "859e251040be40a3a065081366a84d2a"
+    },
+    {
+      "id": "pmk-40",
+      "file": "pmk-40.glb",
+      "title": "ПМК-40",
+      "cardIds": [
+        "mine-audit-v25-su-pmk-40"
+      ],
+      "subtitle": "Исторический макет · внешний вид",
+      "author": "Catja",
+      "authorUrl": "https://www.printables.com/@Catja",
+      "source": "https://www.printables.com/model/366841-pmk-40-mine",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "modifications": "Source PMK-40 Solid v1.0 STL converted to GLB. Millimetres/Z-up converted to metres/Y-up; duplicate position/normal pairs indexed. Triangle geometry unchanged. Neutral grey display material added because the source STL has no textures or colour.",
+      "displayNote": "Исторический макет автора Catja. Нейтральный серый материал; окраска оригинала не воспроизводится. Модель сохранена в приложении.",
+      "originalSha256": "c43bffef2f9598a9a37084f2a10ccb42c1069b37f8283da9caca8ec15ba837a4",
+      "packagedSha256": "6d164dd077bc63dc17b8c228cb9575cc70b62563e83ede99e149ce3f45a2fb0f",
+      "bytes": 5767576,
+      "resources": "All geometry is embedded; no textures or remote resources.",
+      "sourceFile": "PMK-40 Solid v1.0.stl",
+      "triangles": 74458
+    },
+    {
+      "id": "smi-35",
+      "file": "smi-35.glb",
+      "title": "S.Mi.35",
+      "cardIds": [
+        "eng-pdf-v7-125"
+      ],
+      "subtitle": "Исторический образец · внешний вид",
+      "author": "GSPI",
+      "authorUrl": "https://sketchfab.com/syrmank",
+      "source": "https://sketchfab.com/3d-models/sprengmine-35-6434e08edd694d16957f830c4183220a",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "modifications": "Display conversion to GLB supplied by Sketchfab. Textures reduced to at most 1024px; opaque base colors encoded as JPEG. Mesh buffers unchanged. Animations are not played.",
+      "displayNote": "Внешний вид исторического образца, опубликованного автором GSPI. Модель и текстуры сохранены в приложении.",
+      "originalSha256": "8815df49bc39c52a3f6a212e86b1a531d31f0d1104b8d6b4b4fdcaa1dc7980c0",
+      "packagedSha256": "e62f607e9709db8eff62299280144772093a3394d9615dc69b696130e732d1eb",
+      "bytes": 5575500,
+      "resources": "All model buffers and textures are embedded; no remote resources.",
+      "sourceUid": "6434e08edd694d16957f830c4183220a"
     }
   ]
 }

@@ -5,6 +5,7 @@ from pathlib import Path
 import sqlite3
 import struct
 import unittest
+from urllib.parse import urlparse
 
 ROOT = Path(__file__).resolve().parents[1]
 ASSETS = ROOT / 'app/src/main/assets/viewer3d'
@@ -12,7 +13,7 @@ ASSETS = ROOT / 'app/src/main/assets/viewer3d'
 class OfflineModelTests(unittest.TestCase):
     def test_every_manifest_model_is_self_contained_and_has_valid_credits(self):
         models = json.loads((ASSETS / 'models.json').read_text())['models']
-        self.assertGreaterEqual(len(models), 12)
+        self.assertGreaterEqual(len(models), 14)
         self.assertEqual(len(models), len({m['id'] for m in models}))
         self.assertEqual(len(models), len({m['file'] for m in models}))
         cards = set()
@@ -21,7 +22,10 @@ class OfflineModelTests(unittest.TestCase):
                 self.assertRegex(item['file'], r'^[a-z0-9-]+\.glb$')
                 self.assertEqual('CC BY 4.0', item['license'])
                 self.assertEqual('https://creativecommons.org/licenses/by/4.0/', item['licenseUrl'])
-                self.assertTrue(item['source'].startswith('https://sketchfab.com/3d-models/'))
+                source = urlparse(item['source'])
+                self.assertEqual('https', source.scheme)
+                self.assertIn(source.hostname, ('sketchfab.com', 'www.printables.com'))
+                self.assertTrue(source.path.startswith('/3d-models/') if source.hostname == 'sketchfab.com' else source.path.startswith('/model/'))
                 self.assertTrue(item['author'] and item['modifications'])
                 self.assertFalse(cards.intersection(item['cardIds']))
                 cards.update(item['cardIds'])
@@ -56,6 +60,8 @@ class OfflineModelTests(unittest.TestCase):
         self.assertNotIn('ref-v8-tmn-46', ids)
         self.assertNotIn('mine-audit-v25-su-pfm-1s', ids)
         self.assertFalse(next(m for m in models if m['id'] == 'tm-62-family')['cardIds'])
+        self.assertEqual(['mine-audit-v25-su-pmk-40'], next(m for m in models if m['id'] == 'pmk-40')['cardIds'])
+        self.assertEqual(['eng-pdf-v7-125'], next(m for m in models if m['id'] == 'smi-35')['cardIds'])
 
     def test_packaged_glb_is_self_contained_and_all_buffers_are_valid(self):
         raw = (ASSETS / 'tm-46.glb').read_bytes()
