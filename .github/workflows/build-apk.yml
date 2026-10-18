@@ -48,13 +48,13 @@ jobs:
                   assert hashlib.sha256(data).hexdigest() == digest
                   Path(name).parent.mkdir(parents=True, exist_ok=True)
                   Path(name).write_bytes(data)
-          with urllib.request.urlopen('https://github.com/sanozhukov3737-oss/dlya-svoih-updates/releases/download/catalog-190/DLYA_SVOIH_MODEL_TEST_FIX_0.3.130.zip', timeout=30) as response:
-              correction = response.read(2720)
-          assert len(correction) == 2719
-          assert hashlib.sha256(correction).hexdigest() == '0d9770f77061c52b4cf9da31eec22b2b0a37edffe669bedf531b0c737b539204'
+          with urllib.request.urlopen('https://github.com/sanozhukov3737-oss/dlya-svoih-updates/releases/download/catalog-190/DLYA_SVOIH_MODEL_CHECKS_0.3.130_r2.zip', timeout=30) as response:
+              correction = response.read(5088)
+          assert len(correction) == 5087
+          assert hashlib.sha256(correction).hexdigest() == '7b707e402ada702aa3fcf842ad39178f77b40b6269f27cad78eceb719eb9a260'
           with zipfile.ZipFile(io.BytesIO(correction)) as patch:
               correction_manifest = json.loads(patch.read('patch-manifest.json'))
-              assert set(correction_manifest) == {'app/src/androidTest/java/ru/dlyasvoih/app/ui/screens/OfflineModelViewerTest.kt'}
+              assert set(correction_manifest) == {'app/src/androidTest/java/ru/dlyasvoih/app/ui/screens/OfflineModelViewerTest.kt', 'tools/verify_release_ui.py'}
               assert set(patch.namelist()) == set(correction_manifest) | {'patch-manifest.json'}
               for name, digest in correction_manifest.items():
                   value = patch.read(name)
