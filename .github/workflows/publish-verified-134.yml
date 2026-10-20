@@ -29,6 +29,10 @@ jobs:
           java-version: '17'
       - name: Install signature verification tools
         run: '"$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" "build-tools;36.0.0"'
+      - name: Install catalog image validation dependency
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y python3-pil
       - name: Publish only the exact signed and Android-checked recovery APK
         run: /usr/bin/python3 tools/publish_verified_134.py --work build/publication-0.3.134 --sdk "$ANDROID_HOME"
       - name: Save preparation and publication verification
