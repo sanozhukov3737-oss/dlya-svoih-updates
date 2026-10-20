@@ -17,7 +17,7 @@ UNSIGNED_SHA = "43ffc8b8d8ba2a632d3d13a5f287a4fb6a6a43bddf008122026186aa2a0197f4
 PREVIOUS_SHA = "8cff50f9d76dbeec261ca928603277bdf540d0d0b42913bde919a82ce8d5d49f"
 BUNDLE_SHA = "17f54a6770eb980241edd5fd2ac356b93cda4785bac3b708bcda9c6d8d078104"
 DB_SHA = "937b641c3296fb7ea381674d5854e514b7ea84d604060fcc6b52ee9890b4ed8b"
-REPAIRED_DB_SHA = "cf90d4a8374adb2e0e941e5140f047796e0cefb64775f40ce523a5af0b898424"
+REPAIRED_DB_SHA = "fbbb7a38d77b09b963520011ef64b8111991e03ed1b2ae6277ec335761a107ed"
 MANIFEST_SHA = "11402c11a9f2ac1ad95770ced7f5d25073c8016ba5d4fa0c33b1e943ccd797f4"
 SOURCE_COMMIT = "e5eb15076c4727ec0deb32a4f7b2ac43b1e3b812"
 DB_ASSET = "assets/database/guide-v29.db"
@@ -143,6 +143,8 @@ def main():
         print(json.dumps(report, ensure_ascii=False, indent=2))
         return
     require(args.repaired_unsigned is not None, "The Android-discovered search repair is required")
+    require(sha(args.repaired_unsigned) == "f7f7d1034c5dba4117629e384833f5ade7545a3aae617b5b3b9da6f53b36b07f",
+            "Repaired unsigned APK differs from the reproducible SQLite 3.45.1 result")
     with zipfile.ZipFile(unsigned) as original, zipfile.ZipFile(args.repaired_unsigned) as fixed:
         require(original.namelist() == fixed.namelist(), "Repaired APK entry set changed")
         changed = [n for n in original.namelist() if original.read(n) != fixed.read(n)]

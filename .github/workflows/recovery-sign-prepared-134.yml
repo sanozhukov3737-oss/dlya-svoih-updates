@@ -86,7 +86,7 @@ jobs:
           git fetch build/recovery-work/DLYA_SVOIH_0.3.134.bundle refs/heads/feature-uav-reference-20261019:refs/remotes/recovery/input134
           test "$(git rev-parse refs/remotes/recovery/input134)" = e5eb15076c4727ec0deb32a4f7b2ac43b1e3b812
           git worktree add --detach build/recovery-source e5eb15076c4727ec0deb32a4f7b2ac43b1e3b812
-          python3 tools/recovery_repair_search_134.py --apk build/recovery-work/DLYA_SVOIH_v0.3.134-unsigned.apk --source-tree build/recovery-source --out build/recovery-repaired
+          /usr/bin/python3 tools/recovery_repair_search_134.py --apk build/recovery-work/DLYA_SVOIH_v0.3.134-unsigned.apk --source-tree build/recovery-source --out build/recovery-repaired
           cp build/recovery-repaired/search-repair-verification.json build/recovery-signed/
       - name: Restore the existing signing key without exposing it
         env:

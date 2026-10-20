@@ -45,6 +45,7 @@ def sha(raw):
 
 
 def repair(apk, source_tree, output):
+    assert sqlite3.sqlite_version == '3.45.1', 'Use Ubuntu 24.04 /usr/bin/python3 with SQLite 3.45.1'
     assert sha(apk.read_bytes()) == ORIGINAL_APK_SHA, 'Original candidate changed'
     output.mkdir(parents=True, exist_ok=True)
     with zipfile.ZipFile(apk) as original, tempfile.TemporaryDirectory(prefix='search134-') as tmp:
@@ -94,7 +95,8 @@ def repair(apk, source_tree, output):
             changed = [n for n in original.namelist() if original.read(n) != target.read(n)]
             assert changed == [DB_ASSET], changed
         (output/'guide-v29.db').write_bytes(fixed)
-        report = {'originalUnsignedApkSha256':ORIGINAL_APK_SHA, 'originalDatabaseSha256':ORIGINAL_DB_SHA,
+        report = {'sqliteVersion':sqlite3.sqlite_version,
+                  'originalUnsignedApkSha256':ORIGINAL_APK_SHA, 'originalDatabaseSha256':ORIGINAL_DB_SHA,
                   'repairedUnsignedApkSha256':sha(repaired.read_bytes()),'repairedDatabaseSha256':sha(fixed),
                   'validatedCardSearchFields':len(rows),'repairedCardIds':sorted(EXPECTED),
                   'rootCause':'Stored searchText retained middle-dot tag separators rejected by ContentUpdater.validate',
