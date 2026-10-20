@@ -1,0 +1,45 @@
+name: Publish verified 0.3.134
+
+on:
+  push:
+    branches: ['recovery/android-0.3.134-stage2-20261019']
+    paths:
+      - '.github/workflows/publish-verified-134.yml'
+      - 'tools/publish_verified_134.py'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish-app
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - name: Install signature verification tools
+        run: '"$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" "build-tools;36.0.0"'
+      - name: Publish only the exact signed and Android-checked recovery APK
+        run: /usr/bin/python3 tools/publish_verified_134.py --work build/publication-0.3.134 --sdk "$ANDROID_HOME"
+      - name: Save preparation and publication verification
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: published-0.3.134-verification
+          path: |
+            build/publication-0.3.134/prepared-publication.json
+            build/publication-0.3.134/publication-result.json
+            build/publication-0.3.134/latest-0.3.133.json
+            build/publication-0.3.134/release
+          if-no-files-found: warn
+          retention-days: 30
