@@ -1,4 +1,4 @@
-name: Recovery 0.3.134 - actual Android upgrade and offline UI
+name: Recovery 0.3.134 - in-app update and bounded Android QA
 
 on:
   push:
@@ -6,6 +6,8 @@ on:
     paths:
       - '.github/workflows/recovery-android-signed-134.yml'
       - 'tools/recovery_android_stage3.py'
+      - 'tools/recovery_app_update_134.py'
+      - 'tools/run_android_emulator.py'
       - 'tools/verify_release_ui.py'
       - 'tools/recovery_probe_render_134.py'
   workflow_dispatch:
@@ -65,16 +67,18 @@ jobs:
           test -r /dev/kvm
           test -w /dev/kvm
           "$ANDROID_HOME/emulator/emulator" -accel-check > build/recovery-android/acceleration.txt
-      - name: Check the actual release APK offline on Android
-        uses: reactivecircus/android-emulator-runner@v2
-        with:
-          api-level: 30
-          target: google_apis
-          arch: x86_64
-          profile: pixel_2
-          disable-animations: true
-          emulator-options: -no-window -gpu swiftshader_indirect -noaudio -no-boot-anim -no-snapshot -accel on -memory 4096 -cores 4 -partition-size 8192 -camera-back none -camera-front none
-          script: python3 tools/recovery_android_stage3.py --previous build/recovery-android/previous-0.3.133.apk --signed build/recovery-signed/DLYA_SVOIH_v0.3.134.apk --out build/recovery-android/proof --models build/recovery-android/models.json --viewer-script tools/verify_release_ui.py
+      - name: Prepare fresh accelerated Android 11 device
+        run: |
+          "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" 'system-images;android-30;google_apis;x86_64'
+          echo no | "$ANDROID_HOME/cmdline-tools/latest/bin/avdmanager" create avd --force --name recovery134 --package 'system-images;android-30;google_apis;x86_64' --device pixel_2
+      - name: Verify public in-app update and full offline Android UI
+        run: >-
+          python3 tools/run_android_emulator.py --out build/recovery-android/emulator --timeout 1200 --
+          python3 tools/recovery_android_stage3.py --update-via-app
+          --previous build/recovery-android/previous-0.3.133.apk
+          --signed build/recovery-signed/DLYA_SVOIH_v0.3.134.apk
+          --out build/recovery-android/proof --models build/recovery-android/models.json
+          --viewer-script tools/verify_release_ui.py
       - uses: actions/upload-artifact@v4
         if: always()
         with:
@@ -83,6 +87,7 @@ jobs:
             build/recovery-android/acceleration.txt
             build/recovery-android/models.json
             build/recovery-android/proof/
+            build/recovery-android/emulator/
             build/recovery-signed/stage-3-signature-verification.json
           if-no-files-found: warn
           retention-days: 30

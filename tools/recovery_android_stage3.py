@@ -233,6 +233,7 @@ def main():
     parser.add_argument('--out',type=Path,required=True)
     parser.add_argument('--viewer-script',type=Path,required=True)
     parser.add_argument('--models',type=Path,required=True)
+    parser.add_argument('--update-via-app', action='store_true')
     args=parser.parse_args();out=args.out.resolve();out.mkdir(parents=True,exist_ok=True)
     assert sha(args.previous)==OLD_SHA and sha(args.signed)==SIGNED_SHA
     assert not adb('shell','pm','list','packages',PACKAGE).strip(), 'Requires a fresh dedicated emulator'
@@ -261,8 +262,14 @@ def main():
     assert before['appearance'].get('theme_mode')=='2' and before['appearance'].get('large_mode')=='true'
     assert len(before['cards'])==1426 and before['metadata'].get('content_version')=='190'
     print('Baseline favorites, dark theme, large mode and catalog 190 recorded',flush=True)
-    upgrade=adb('install','--no-streaming','-r',args.signed).decode()
-    (out/'install-over-0.3.133.txt').write_text(upgrade);assert 'Success' in upgrade
+    if args.update_via_app:
+        # Import this very module instance (also when run as __main__).
+        sys.modules['recovery_android_stage3'] = sys.modules[__name__]
+        from recovery_app_update_134 import update_through_app
+        update_through_app()
+    else:
+        upgrade=adb('install','--no-streaming','-r',args.signed).decode()
+        (out/'install-over-0.3.133.txt').write_text(upgrade);assert 'Success' in upgrade
     print('Android PackageManager accepted signed 0.3.134 over published 0.3.133',flush=True)
     package=adb('shell','dumpsys','package',PACKAGE).decode(errors='replace')
     (out/'installed-package.txt').write_text(package)
@@ -277,7 +284,8 @@ def main():
     assert all(after['cards'].get(k)==v for k,v in before['cards'].items()),'Published cards/rowids were lost'
     start('favorites_tab');text('ТМ-46');text('ПМК-40');capture('after-favorites')
     report={'apkSha256':SIGNED_SHA,'packageName':PACKAGE,'versionName':'0.3.134','versionCode':138,
-            'upgradeInstallation':'passed-actual-adb-install-r-over-published-0.3.133',
+            'upgradeInstallation':('passed-actual-in-app-download-and-Android-PackageInstaller-over-published-0.3.133'
+                if args.update_via_app else 'passed-actual-adb-install-r-over-published-0.3.133'),
             'favoritesPreserved':True,'favoriteIds':sorted(expected_favorites),'settingsPreserved':True,
             'preservedAppearance':before['appearance'],'fullCatalogOnAndroid':True,'contentVersion':195,
             'cards':1697,'images':1600,'preservedPublishedCardIdsAndRowids':1426,
