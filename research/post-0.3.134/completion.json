@@ -41,5 +41,9 @@
       "item": "exact-exterior-images-for-eight-handbook-cards",
       "reason": "Exact variant and permitted image source not confirmed; search and rejected candidates recorded"
     }
-  ]
+  ],
+  "codeAndEvidenceMainCommit": "331e36472d62489825f75415b9ee3a25092dd295",
+  "codeAndEvidenceTree": "8be1f0c9a66053c070dfd10cf3ff219bb9acde67",
+  "localEquivalentCommit": "00f8d4ceaad7a82a8620c4e5626f05cfa33a7648",
+  "workspaceRoot": "/workspace/scratch/a8009b11e95e/source134"
 }
