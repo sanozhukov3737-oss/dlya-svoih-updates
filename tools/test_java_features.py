@@ -72,8 +72,9 @@ class JavaFeatureTests(unittest.TestCase):
             self.assertEqual(0, checked.returncode, checked.stdout + checked.stderr)
             self.assertIn('checks passed', checked.stdout)
 
-            # Compare actual Android reader projection against the DB builder's
-            # article boundary for every model, including family and medical cards.
+            # Check both editorial boundaries used by this catalog, including
+            # source notes introduced in 196. The Java fixture above also tests
+            # all supported headings and transitions back to article sections.
             cards = json.loads((ROOT / 'content/catalog.json').read_text())['cards']
             payload = Path(directory) / 'cards.txt'
             payload.write_text('\n'.join(base64.b64encode(c['body'].encode()).decode() for c in cards) + '\n')
@@ -83,7 +84,9 @@ class JavaFeatureTests(unittest.TestCase):
             actual = [base64.b64decode(line).decode() for line in projected.stdout.splitlines()]
             self.assertEqual(len(cards), len(actual))
             for c, text in zip(cards, actual):
-                self.assertEqual(c['body'].split('\n\n## Служебные сведения', 1)[0], text, c['id'])
+                expected = c['body'].split('\n\n## Служебные сведения', 1)[0]
+                expected = expected.split('\n\n## Примечания к источнику', 1)[0]
+                self.assertEqual(expected, text, c['id'])
 
 
 if __name__ == '__main__':

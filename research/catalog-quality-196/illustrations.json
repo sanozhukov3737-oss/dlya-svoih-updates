@@ -1,0 +1,99 @@
+{
+  "source": "https://www.bulletpicker.com/pdf/TM-43-0001-28-1994.pdf",
+  "sourceSha256": "4b249477726e7d95e5b63da2e62e35c9df274ed5b792ee052664476ba7545026",
+  "sourceBytes": 9986183,
+  "author": "U.S. Department of the Army",
+  "rights": "U.S. federal government work, public domain under 17 USC 105. The manual also carries Distribution Statement A. Extracted exterior drawings only; no reconstruction or generated detail.",
+  "figures": [
+    {
+      "cardId": "ordnance-v29-ga-0289",
+      "pdfPage": 448,
+      "printedPage": "4-39",
+      "clip": [
+        145,
+        90,
+        230,
+        350
+      ],
+      "label": "81-мм учебный M68, внешний вид в сборе",
+      "localPath": "images/quality196-tm28-448.webp",
+      "thumbnailPath": "thumbs/quality196-tm28-448.webp",
+      "width": 213,
+      "height": 650,
+      "sha256": "3def867cae368cd3ee9d530f3920b7b4ffb8a77dbe66a491e7f1c08377727e06",
+      "thumbnailSha256": "440c53c41de545e4d6ad3014389fb61e6324145506ea75a0dcb8bdadda7b281e"
+    },
+    {
+      "cardId": "ordnance-v29-ga-0217",
+      "pdfPage": 522,
+      "printedPage": "4-109",
+      "clip": [
+        88,
+        175,
+        536,
+        273
+      ],
+      "label": "120-мм дымовой M68, внешний вид",
+      "localPath": "images/quality196-tm28-522.webp",
+      "thumbnailPath": "thumbs/quality196-tm28-522.webp",
+      "width": 1120,
+      "height": 246,
+      "sha256": "bcd4d9585ffaad58c157d0a7b0a49f5eca2889ce9b28e7936d617fda82f55fa4",
+      "thumbnailSha256": "f82dfcf2af72d3786753ca62d4643671ee23bf0f99c10482aa23c2112ff28d7f"
+    },
+    {
+      "cardId": "ordnance-v29-ga-0029",
+      "pdfPage": 270,
+      "printedPage": "3-65",
+      "clip": [
+        145,
+        129,
+        432,
+        190
+      ],
+      "label": "105-мм M913, внешний вид",
+      "localPath": "images/quality196-tm28-270.webp",
+      "thumbnailPath": "thumbs/quality196-tm28-270.webp",
+      "width": 718,
+      "height": 153,
+      "sha256": "ca16e4b1bc24a01c06483282ee03acc795040c6e4fc7d339c51ec6499bf99424",
+      "thumbnailSha256": "5ad55723d85783b9045a0ca85f3400bfd098680cbc8e37b11cf46cb7d54a570e"
+    },
+    {
+      "cardId": "ordnance-v29-ga-0030",
+      "pdfPage": 274,
+      "printedPage": "3-68.1",
+      "clip": [
+        145,
+        126,
+        435,
+        180
+      ],
+      "label": "105-мм M927, внешний вид",
+      "localPath": "images/quality196-tm28-274.webp",
+      "thumbnailPath": "thumbs/quality196-tm28-274.webp",
+      "width": 726,
+      "height": 135,
+      "sha256": "ba17141afa9d4beb57f341e9bd91fe1916470dcf337d86c859b59f5fecc804ed",
+      "thumbnailSha256": "cf30f022af6f8f20bb3ff2a2f5e486e9bc1f63de9d3eaaaaaea78950bc32d5df"
+    },
+    {
+      "cardId": "ordnance-v29-ga-0046",
+      "pdfPage": 230,
+      "printedPage": "3-25",
+      "clip": [
+        133,
+        116,
+        477,
+        172
+      ],
+      "label": "105-мм дымовой M84 series, внешний вид",
+      "localPath": "images/quality196-tm28-230.webp",
+      "thumbnailPath": "thumbs/quality196-tm28-230.webp",
+      "width": 861,
+      "height": 140,
+      "sha256": "7716b296d179f736843ace36a8454b570822fed824cba73d62b9536424cce7a5",
+      "thumbnailSha256": "dd73773d68901403a4a05408681759f5d387a3ec92be73299ac84879efcf35e5"
+    }
+  ]
+}
