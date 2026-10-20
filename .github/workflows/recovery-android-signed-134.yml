@@ -7,6 +7,7 @@ on:
       - '.github/workflows/recovery-android-signed-134.yml'
       - 'tools/recovery_android_stage3.py'
       - 'tools/verify_release_ui.py'
+      - 'tools/recovery_probe_render_134.py'
   workflow_dispatch:
 
 permissions:

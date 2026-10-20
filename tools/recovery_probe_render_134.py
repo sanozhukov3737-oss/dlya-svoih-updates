@@ -10,6 +10,9 @@ def main():
     assert ui.sha(a.signed)==ui.SIGNED_SHA
     ui.adb('root');ui.adb('wait-for-device')
     for service in ('wifi','data'):ui.adb('shell','svc',service,'disable')
+    ui.adb('shell','settings','put','global','airplane_mode_on','1')
+    ui.adb('shell','am','broadcast','-a','android.intent.action.AIRPLANE_MODE','--ez','state','true')
+    time.sleep(2)
     ui.offline('probe')
     assert 'Success' in ui.adb('install','--no-streaming',a.signed).decode()
     ui.catalog_root();ui.tap(ui.description('Открыть меню'));ui.tap(ui.text('3D-модели · офлайн'))
