@@ -1,0 +1,14 @@
+--------- beginning of main
+--------- beginning of system
+--------- beginning of kernel
+10-20 12:53:25.048  8771  8771 E chromium: [ERROR:filesystem_posix.cc(62)] mkdir /data/user/0/ru.dlyasvoih.app/cache/WebView/Crashpad: No such file or directory (2)
+10-20 12:53:27.343  8771  8771 I OfflineModelViewer: Offline model frame {"colors":1812,"triangles":3563,"stage":[412,471],"viewport":[412,471],"buffer":[618,706],"camera":[2.1266167268991856,1.6540352320326999,2.7567253867211665]}
+10-20 12:53:39.773  8771  8771 E chromium: [ERROR:aw_browser_terminator.cc(125)] Renderer process (11080) crash detected (code -1).
+10-20 12:54:07.750  8771  8771 I OfflineModelViewer: Offline model frame {"colors":2141,"triangles":49823,"stage":[412,451],"viewport":[412,451],"buffer":[618,676],"camera":[2.0945077200392217,1.6290615600305058,2.7151026000508427]}
+10-20 12:54:24.356  8771  8771 E chromium: [ERROR:aw_browser_terminator.cc(125)] Renderer process (11683) crash detected (code -1).
+10-20 12:54:36.845  8771  8771 I OfflineModelViewer: Offline model frame {"colors":243,"triangles":2276,"stage":[412,451],"viewport":[412,451],"buffer":[618,676],"camera":[2.2315404900434044,1.7356426033670926,2.8927376722784874]}
+10-20 12:54:53.622  8771  8771 E chromium: [ERROR:aw_browser_terminator.cc(125)] Renderer process (12017) crash detected (code -1).
+10-20 12:55:06.219  8771  8771 I OfflineModelViewer: Offline model frame {"colors":342,"triangles":34414,"stage":[412,451],"viewport":[412,451],"buffer":[618,676],"camera":[1.9929627773502006,1.550082160161267,2.5834702669354455]}
+10-20 12:55:22.804  8771  8771 E chromium: [ERROR:aw_browser_terminator.cc(125)] Renderer process (12354) crash detected (code -1).
+10-20 12:55:38.689  8771  8771 I OfflineModelViewer: Offline model frame {"colors":295,"triangles":13550,"stage":[412,451],"viewport":[412,451],"buffer":[618,676],"camera":[1.7896220758732873,1.391928281234779,2.319880468724632]}
+10-20 12:55:55.138  8771  8771 E chromium: [ERROR:aw_browser_terminator.cc(125)] Renderer process (12724) crash detected (code -1).

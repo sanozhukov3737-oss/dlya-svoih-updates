@@ -1,0 +1,15 @@
+{
+  "serial": "emulator-5554",
+  "acceleration": "required-KVM",
+  "testPassed": false,
+  "bootSeconds": 26.19,
+  "testExitCode": 1,
+  "adbKill": {
+    "returncode": 0,
+    "stdout": "OK: killing emulator, bye bye\nOK\n",
+    "stderr": ""
+  },
+  "emulatorExitCode": 0,
+  "shutdownSeconds": 1.67,
+  "totalSeconds": 211.38
+}
