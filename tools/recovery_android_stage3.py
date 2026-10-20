@@ -79,7 +79,19 @@ def start(route='catalog'):
 
 def search(query, title):
     start('search_tab')
-    tap(find(lambda a: a.get('class') == 'android.widget.EditText'))
+    # Launcher shortcuts restore a tab's saved reader stack. Navigate visibly
+    # back to its list instead of assuming that the shortcut clears that stack.
+    for _ in range(8):
+        root = tree()
+        field = next((n for n in root.iter('node') if n.get('class') == 'android.widget.EditText'), None)
+        if field is not None:
+            tap(field)
+            break
+        back = next((n for n in root.iter('node') if n.get('content-desc') == 'Назад'), None)
+        assert back is not None, 'Search tab has no visible field or back navigation'
+        tap(back)
+    else:
+        raise AssertionError('Search tab list could not be reached')
     adb('shell', 'input', 'keyevent', 'KEYCODE_MOVE_END', *(['KEYCODE_DEL'] * 50))
     adb('shell', 'input', 'text', query)
     adb('shell', 'input', 'keyevent', '4')
@@ -115,8 +127,20 @@ def snapshot(label):
     return result
 
 
-def appearance_dialog():
+def catalog_root():
     start('catalog')
+    for _ in range(8):
+        root=tree()
+        if any(n.get('content-desc')=='Открыть меню' for n in root.iter('node')):
+            return
+        back=next((n for n in root.iter('node') if n.get('content-desc')=='Назад'),None)
+        assert back is not None,'Catalog root has no visible back navigation'
+        tap(back)
+    raise AssertionError('Catalog root could not be reached')
+
+
+def appearance_dialog():
+    catalog_root()
     tap(description('Открыть меню'))
     tap(text('Тема и размер текста'))
     text('Вид приложения')
@@ -151,7 +175,12 @@ def verify_photo_and_navigation():
     assert ImageChops.difference(initial,second).crop(region).getbbox(), 'Second photograph did not change'
     tap(description('Назад'))
     tap(description('Назад'))
-    tap(search('46', 'ТМ-46'))
+    # The search tab opens a single card. The book reader belongs to the
+    # category/country navigation, so enter it through its actual menu.
+    catalog_root()
+    tap(text('Инженерные боеприпасы'))
+    tap(text('Противопехотные мины'))
+    tap(text('Все страны'))
     def position():
         node=description('Перейти к карточке')
         label=' '.join(n.get('text','') for n in node.iter('node'))
@@ -196,9 +225,11 @@ def main():
     time.sleep(2);offline('before-install');adb('logcat','-c')
     install=adb('install','--no-streaming',args.previous).decode()
     (out/'install-0.3.133.txt').write_text(install);assert 'Success' in install
+    print('Published 0.3.133 installed on offline Android',flush=True)
     for query,title in [('TM46','ТМ-46'),('PMK40','ПМК-40')]:
         tap(search(query,title));tap(description('В избранное'));description('Убрать из избранного')
         capture('before-favorite-'+query)
+        print('Favorite prepared through UI:',title,flush=True)
     appearance_dialog();tap(text('Тёмная'))
     switch=find(lambda a:a.get('class')=='android.widget.Switch')
     if switch.get('checked')!='true': tap(switch)
@@ -208,8 +239,10 @@ def main():
     assert set(before['favorites'])==expected_favorites,before['favorites']
     assert before['appearance'].get('theme_mode')=='2' and before['appearance'].get('large_mode')=='true'
     assert len(before['cards'])==1426 and before['metadata'].get('content_version')=='190'
+    print('Baseline favorites, dark theme, large mode and catalog 190 recorded',flush=True)
     upgrade=adb('install','--no-streaming','-r',args.signed).decode()
     (out/'install-over-0.3.133.txt').write_text(upgrade);assert 'Success' in upgrade
+    print('Android PackageManager accepted signed 0.3.134 over published 0.3.133',flush=True)
     package=adb('shell','dumpsys','package',PACKAGE).decode(errors='replace')
     (out/'installed-package.txt').write_text(package)
     assert 'versionCode=138' in package and 'versionName=0.3.134' in package
@@ -223,18 +256,22 @@ def main():
     assert all(after['cards'].get(k)==v for k,v in before['cards'].items()),'Published cards/rowids were lost'
     start('favorites_tab');text('ТМ-46');text('ПМК-40');capture('after-favorites')
     appearance_dialog();tap(text('Готово'));capture('after-appearance')
-    verify_photo_and_navigation()
     report={'apkSha256':SIGNED_SHA,'packageName':PACKAGE,'versionName':'0.3.134','versionCode':138,
             'upgradeInstallation':'passed-actual-adb-install-r-over-published-0.3.133',
             'favoritesPreserved':True,'favoriteIds':sorted(expected_favorites),'settingsPreserved':True,
             'preservedAppearance':before['appearance'],'fullCatalogOnAndroid':True,'contentVersion':195,
             'cards':1697,'images':1600,'preservedPublishedCardIdsAndRowids':1426,
-            'galleryZoomAndSecondPhoto':True,'cardButtonsAndSwipes':True,'offline':True,
+            'galleryZoomAndSecondPhoto':False,'cardButtonsAndSwipes':False,'offline':True,
             'androidVersion':adb('shell','getprop','ro.build.version.release').decode().strip(),
             'androidApi':adb('shell','getprop','ro.build.version.sdk').decode().strip(),
             'androidModel':adb('shell','getprop','ro.product.model').decode().strip(),
             'modelVisualChecks':'pending-viewer-script'}
     (out/'upgrade-verification.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
+    print('Upgrade, favorites, appearance and full catalog 195 verified on Android',flush=True)
+    verify_photo_and_navigation()
+    report.update(galleryZoomAndSecondPhoto=True,cardButtonsAndSwipes=True)
+    (out/'upgrade-verification.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
+    search('TM46','ТМ-46')
     env=dict(os.environ,RECOVERY_UI_OUT=str(out/'viewer'),RECOVERY_MODELS_MANIFEST=str(args.models.resolve()))
     subprocess.run([sys.executable,str(args.viewer_script.resolve())],check=True,env=env)
     offline('after-viewers')
