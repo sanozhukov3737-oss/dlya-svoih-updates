@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "createdAtUtc": "2026-10-20T10:30:07.439956+00:00",
+  "packageName": "ru.dlyasvoih.app",
+  "versionName": "0.3.134",
+  "versionCode": 138,
+  "debuggable": false,
+  "certificateSha256": "2f0a0908f269bc039311edb58fca8863347f1e4c3a7cfaddd909991cf1f0b509",
+  "signedApk": {
+    "file": "DLYA_SVOIH_v0.3.134.apk",
+    "bytes": 144646769,
+    "sha256": "300b77deaee3348e05a0135bf0079414c07dc2e15a7dcfd9b1239a8cef99298f"
+  },
+  "signedArchive": {
+    "file": "DLYA_SVOIH_0.3.134_SIGNED_SHADER_FIXED.zip",
+    "bytes": 143924779,
+    "sha256": "03ae0c9421380986e43d7ae7d4d2f112466edfa53b2379c3b3d19f01a89af80a"
+  },
+  "originalAndroidProofArchive": {
+    "file": "DLYA_SVOIH_0.3.134_ANDROID_VERIFICATION.zip",
+    "bytes": 16958294,
+    "sha256": "6ffd6fcf71f845df5ebcba120ae2bdfd4051b67e42bbf8efaf6f3583fd401208"
+  },
+  "sourceBundle": {
+    "file": "DLYA_SVOIH_0.3.134_RECOVERED_SOURCE.bundle",
+    "bytes": 180073560,
+    "sha256": "00323f8d1ce7232d2c033b17f5f6b4bee2690187feab77beaa82221c1a6c70cb"
+  },
+  "source": {
+    "auditCommit": "57423514a9946cbbfa1b8e182a14fc9ac9c1d4c6",
+    "treeSha": "5e9889be28c0e03288b82baae67cb56f665a2c62",
+    "portableSourceCommit": "9971bd151d5bc3fd49399cadf7019540b497c3f8",
+    "portableBranch": "recovery/source-snapshot-0.3.134-20261020",
+    "appSourceCommit": "a8c3b76f8921ffe05e4beaad7b6ba33891200642",
+    "sameTreeAsAuditCommit": true,
+    "snapshotParentCount": 0,
+    "bundleRestoredIntoEmptyDirectory": true,
+    "requiresNoOtherRepositoryOrPrerequisiteCommit": true,
+    "gitFsck": "passed",
+    "packagedProductionAssetsByteIdenticalToFinalApk": 3640,
+    "appCodeUnchangedSinceTestedSourceCommit": true
+  },
+  "catalog": {
+    "contentVersion": 195,
+    "cards": 1697,
+    "images": 1600,
+    "offlineModels": 19,
+    "published133CardIdsAndRowidsPreserved": 1426
+  },
+  "verification": {
+    "signature": "passed-original-certificate-matches-published-0.3.133",
+    "upgradeInstallation": "passed-actual-Android-adb-install-r-over-0.3.133-without-data-clear",
+    "favoritesAndSettingsPreserved": true,
+    "searchCardsPhotosNavigationOffline": "passed",
+    "fourModelsInitialAndRotatedViews": "passed-actual-Android-screenshots-inspected",
+    "signingRun": 39403888993,
+    "androidRun": 39404271107,
+    "androidQaCommit": "4cb8edf5bf6f5923455720522048b57fb4f1ee5e",
+    "androidWorkflowConclusion": "cancelled-after-all-app-checks-at-Terminate-Emulator",
+    "androidProofUpload": "success",
+    "physicalDeviceTested": false,
+    "testedAndroidApi": 30
+  },
+  "durableBackup": {
+    "repository": "sanozhukov3737-oss/dlya-svoih-updates",
+    "draftReleaseId": 418146995,
+    "signedArchiveAssetId": 658954242,
+    "publication": "not-performed"
+  },
+  "privateKeyIncluded": false,
+  "historyScope": "Portable bundle is a root snapshot of the exact complete source/reports tree, not a claim of complete old shallow history. Original app/audit commits are recorded as provenance. Clone from empty directory and all 3640 production asset matches verified.",
+  "reports": {
+    "RECOVERY-STAGE-1.md": {
+      "file": "RECOVERY-STAGE-1.md",
+      "bytes": 6976,
+      "sha256": "d76926c790b1e475f6f7a5cb65b2d654bdd8acbbc647404f745642e339a9b12d"
+    },
+    "RECOVERY-STAGE-2.md": {
+      "file": "RECOVERY-STAGE-2.md",
+      "bytes": 7651,
+      "sha256": "4d12e79fbf0b4ced06ac8fa91bcd4dcee20d77ec704a7b111d8856a860a3acb2"
+    },
+    "RECOVERY-STAGE-3.md": {
+      "file": "RECOVERY-STAGE-3.md",
+      "bytes": 18421,
+      "sha256": "92261f42d3208fa2ed9f5fa43f30f8e208f6edfc55897fde5562c56778a5fe27"
+    }
+  },
+  "completeArchive": {
+    "file": "DLYA_SVOIH_0.3.134_RECOVERY_COMPLETE.zip",
+    "bytes": 196306677,
+    "sha256": "fd6ee8a047a341bd589721675c43fe54e31bf85cfe517a0367157e029e9a0646"
+  }
+}
