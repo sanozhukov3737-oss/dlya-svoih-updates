@@ -1,0 +1,131 @@
+{
+  "apkSha256": "300b77deaee3348e05a0135bf0079414c07dc2e15a7dcfd9b1239a8cef99298f",
+  "androidRun": 39404271107,
+  "reviewedAtUtc": "2026-10-20T10:23:55.289240+00:00",
+  "reviewer": "Codex visual inspection of actual Android screenshots; no browser preview substituted",
+  "result": "passed",
+  "modelCount": 4,
+  "reviewedFrames": 8,
+  "models": [
+    {
+      "id": "m14-complete",
+      "title": "M14",
+      "authorVisible": "FilipDeCooman",
+      "licenseVisible": "CC BY 4.0",
+      "displayColorMode": "illustrative",
+      "conditionalColorNoticeVisible": true,
+      "wholeModelFits": true,
+      "background": "Contrasting light grey",
+      "reliefReadableInBothViews": true,
+      "touchRotationChangesModelView": true,
+      "geometryAndOriginalGlbBytesPreserved": true,
+      "notes": "Читаемы верхние и боковые рёбра; матовая оливковая поверхность.",
+      "frames": [
+        {
+          "view": "initial",
+          "file": "android-final/viewer/offline-model-m14-complete-release.png",
+          "sha256": "96332be1c2663e12841b0e7842447e793acf42612ff510221de7b086b11a102f",
+          "visuallyInspected": true,
+          "result": "passed"
+        },
+        {
+          "view": "rotated",
+          "file": "android-final/viewer/offline-model-m14-complete-release-rotated.png",
+          "sha256": "a112c517e340a8d7ac4c5dd38ddfb23767acc5ee292cb7b006f8e2bd2c6fc0cd",
+          "visuallyInspected": true,
+          "result": "passed"
+        }
+      ]
+    },
+    {
+      "id": "pmn-2-complete",
+      "title": "ПМН-2",
+      "authorVisible": "_-HB-_",
+      "licenseVisible": "CC BY 4.0",
+      "displayColorMode": "illustrative",
+      "conditionalColorNoticeVisible": true,
+      "wholeModelFits": true,
+      "background": "Contrasting light grey",
+      "reliefReadableInBothViews": true,
+      "touchRotationChangesModelView": true,
+      "geometryAndOriginalGlbBytesPreserved": true,
+      "notes": "Различимы оливковый корпус, тёмная крышка, коричневая деталь, кольца и выступы.",
+      "frames": [
+        {
+          "view": "initial",
+          "file": "android-final/viewer/offline-model-pmn-2-complete-release.png",
+          "sha256": "b0565369b8a452efb6f1248bdb8da974e63324182850e77a148db7c24efcce61",
+          "visuallyInspected": true,
+          "result": "passed"
+        },
+        {
+          "view": "rotated",
+          "file": "android-final/viewer/offline-model-pmn-2-complete-release-rotated.png",
+          "sha256": "e7bb39fc2ff66fa6ebf46c6737c701edaa2d8fd57de3b48e662f2497cf4603db",
+          "visuallyInspected": true,
+          "result": "passed"
+        }
+      ]
+    },
+    {
+      "id": "m16-complete",
+      "title": "M16 · семейство",
+      "authorVisible": "FilipDeCooman",
+      "licenseVisible": "CC BY 4.0",
+      "displayColorMode": "illustrative",
+      "conditionalColorNoticeVisible": true,
+      "wholeModelFits": true,
+      "background": "Contrasting light grey",
+      "reliefReadableInBothViews": true,
+      "touchRotationChangesModelView": true,
+      "geometryAndOriginalGlbBytesPreserved": true,
+      "notes": "Различимы кольцевой рельеф, верхняя часть, боковой выступ и изменение ракурса.",
+      "frames": [
+        {
+          "view": "initial",
+          "file": "android-final/viewer/offline-model-m16-complete-release.png",
+          "sha256": "f78245ce9e7213591f7493be990bf51d47fb7aca10f497cb2e8f0725da59aa69",
+          "visuallyInspected": true,
+          "result": "passed"
+        },
+        {
+          "view": "rotated",
+          "file": "android-final/viewer/offline-model-m16-complete-release-rotated.png",
+          "sha256": "35d08b180d32e170ca9bfa5d0813c5d3078f5b27d25d56adadc9faabe16d98e8",
+          "visuallyInspected": true,
+          "result": "passed"
+        }
+      ]
+    },
+    {
+      "id": "british-drifting-mine",
+      "title": "Британская дрейфующая мина",
+      "authorVisible": "German Maritime Museum",
+      "licenseVisible": "CC BY 4.0",
+      "displayColorMode": "source",
+      "conditionalColorNoticeVisible": false,
+      "wholeModelFits": true,
+      "background": "Contrasting light grey",
+      "reliefReadableInBothViews": true,
+      "touchRotationChangesModelView": true,
+      "geometryAndOriginalGlbBytesPreserved": true,
+      "notes": "Сохранена исходная тёмная музейная текстура; читаются шов, горловина, отверстия и неоднородность поверхности с двух ракурсов.",
+      "frames": [
+        {
+          "view": "initial",
+          "file": "android-final/viewer/offline-model-british-drifting-mine-release.png",
+          "sha256": "1dc63e3e56e21ad0fa1b729cf10f75163c476f6e2b1f853a7ece752809c3111d",
+          "visuallyInspected": true,
+          "result": "passed"
+        },
+        {
+          "view": "rotated",
+          "file": "android-final/viewer/offline-model-british-drifting-mine-release-rotated.png",
+          "sha256": "c2310d3f4a9a4dfa68e53a54bbd88f776b226221c5d915d238871aba32dd1d02",
+          "visuallyInspected": true,
+          "result": "passed"
+        }
+      ]
+    }
+  ]
+}
