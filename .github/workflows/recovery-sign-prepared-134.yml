@@ -32,7 +32,7 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           mkdir -p build/recovery-input
-          gh release download recovery-inputs-0.3.134-20261020 --repo "$GITHUB_REPOSITORY" --pattern DLYA_SVOIH_COMBINED_0.3.134_CANDIDATE.zip --dir build/recovery-input
+          gh api --method GET -H 'Accept: application/octet-stream' "repos/$GITHUB_REPOSITORY/releases/assets/658689251" > build/recovery-input/DLYA_SVOIH_COMBINED_0.3.134_CANDIDATE.zip
           python3 - <<'PY'
           import urllib.request
           from pathlib import Path
