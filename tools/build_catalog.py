@@ -1,4 +1,4 @@
-"""Validate developer JSON and build the bundled SQLite asset, using only Python 3.
+"""Validate developer JSON and build the bundled SQLite asset with Python 3 and JDK.
 The output is used by fresh installations and versioned offline update packs. Schema/Room validation is
 additionally covered by PackagedDatabaseTest on Android.
 """
@@ -11,6 +11,7 @@ import sqlite3
 import tempfile
 import unicodedata
 from PIL import Image
+from catalog_projection import search_fields
 
 ROOT = Path(__file__).resolve().parents[1]
 ASSETS = ROOT / 'app/src/main/assets'
@@ -59,6 +60,13 @@ def validate(data):
             raise ValueError(f'Invalid content status: {card["id"]}')
         if card.get('verifiedAt') is not None and (not isinstance(card['verifiedAt'], str) or len(card['verifiedAt']) > 40):
             raise ValueError(f'Invalid verification date: {card["id"]}')
+        if card.get('searchProjection', 'reader') not in {'legacy', 'reader'}:
+            raise ValueError(f'Invalid search projection: {card["id"]}')
+        if card.get('archived', 0) not in (0, 1):
+            raise ValueError(f'Invalid archived flag: {card["id"]}')
+        if card.get('thumbnailPath') is not None and card['thumbnailPath'] not in {
+                picture['thumbnailPath'] for picture in card['images']}:
+            raise ValueError(f'Card thumbnail is not attached to an image: {card["id"]}')
         if len(card['countries']) != len(set(card['countries'])) or not set(card['countries']) <= countries:
             raise ValueError('Invalid card country')
         if len(card['images']) > 12:
@@ -93,6 +101,7 @@ def validate(data):
 def build(source, output):
     data = json.loads(Path(source).read_text(encoding='utf-8'))
     validate(data)
+    search = search_fields(data['cards'])
     output = Path(output)
     if output.resolve() == PRODUCTION_DATABASE.resolve() and sqlite3.sqlite_version_info > (3, 45, 1):
         raise RuntimeError('Production database generation is pinned to SQLite 3.45.1 or older')
@@ -114,8 +123,8 @@ def build(source, output):
                 fields = {k: card[k] for k in ['rowid','id','section','categoryId','title','summary','body','contentStatus','reviewedAt',
                     'modelStatus','sourceGrade','verifiedAt']}
                 fields.update(tags=' · '.join(card['tags']), sortTitle=normalize(card['title']),
-                    searchText=normalize(' '.join([card['title'], card['summary'], card['body'].split('\n\n## Служебные сведения', 1)[0], *card['tags']])),
-                    thumbnailPath=card['images'][0]['thumbnailPath'] if card['images'] else None)
+                    searchText=search[card['id']], archived=card.get('archived', 0),
+                    thumbnailPath=card.get('thumbnailPath', card['images'][0]['thumbnailPath'] if card['images'] else None))
                 db.execute('INSERT INTO cards ('+','.join(fields)+') VALUES ('+','.join(':'+key for key in fields)+')', fields)
                 db.executemany('INSERT INTO card_countries VALUES (?,?)', [(card['id'], country) for country in card['countries']])
                 db.executemany('INSERT INTO images VALUES (:id,:cardId,:localPath,:caption,:width,:height,:position)',
