@@ -231,7 +231,8 @@ def main():
         capture('before-favorite-'+query)
         print('Favorite prepared through UI:',title,flush=True)
     appearance_dialog();tap(text('Тёмная'))
-    switch=find(lambda a:a.get('class')=='android.widget.Switch')
+    # Compose exposes this Material switch as a checkable android.view.View.
+    switch=find(lambda a:a.get('checkable')=='true' and a.get('clickable')=='true')
     if switch.get('checked')!='true': tap(switch)
     tap(text('Готово'));capture('before-appearance')
     before=snapshot('before-upgrade')
