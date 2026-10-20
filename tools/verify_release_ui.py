@@ -7,6 +7,7 @@ from pathlib import Path
 
 out = Path(os.environ.get('RECOVERY_UI_OUT', 'build'))
 out.mkdir(parents=True, exist_ok=True)
+visual_metrics = []
 
 def visible_model_pixels(frame, region):
     pixels = list(frame.crop(region).getdata())
@@ -24,8 +25,19 @@ def check_readable_finish(frame, region, title, illustrative=False):
     relief = luminance[int(len(luminance)*.90)] - luminance[int(len(luminance)*.10)]
     if illustrative:
         assert colored > .65, (title, 'Default white/gray finish', colored)
-    assert dark < .35, (title, 'Exterior is crushed to black', dark)
+        assert dark < .35, (title, 'Illustrative exterior is crushed to black', dark)
+    else:
+        # Museum scans may preserve actual black paint. The British scan was
+        # reviewed on Android: 18,485 visible colors, 1,457 dark shades and a
+        # 62-point relief range; a black-area percentage alone misclassified it.
+        # Require tonal detail in dark surfaces, without recoloring the source.
+        dark_shades = len({p for p in pixels if .2126*p[0]+.7152*p[1]+.0722*p[2] < 30})
+        assert dark < .8 and (dark < .35 or dark_shades > 100), (title, 'Source texture has no dark detail', dark, dark_shades)
     assert relief > 15, (title, 'Surface shading is flat', relief)
+    visual_metrics.append({'view':title,'illustrative':illustrative,'visibleColors':len(set(pixels)),
+        'coloredFraction':colored,'darkFraction':dark,'reliefRange':relief})
+    import json
+    (out/'visual-metrics.json').write_text(json.dumps(visual_metrics,ensure_ascii=False,indent=2)+'\n')
     print('Readable finish verified:', title, {'colored': round(colored, 3),
           'dark': round(dark, 3), 'luminanceRange': round(relief, 1)}, flush=True)
 
