@@ -16,9 +16,41 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  fetch-input:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    # GitHub draft releases require push access (GitHub REST releases docs).
+    # The read-only job returned HTTP 403 for this exact draft asset in run
+    # 39392735774. This job executes no repository/input code and reads no key.
+    permissions:
+      contents: write
+    steps:
+      - name: Fetch and hash-check only the pinned draft asset
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p recovery-input
+          gh api --method GET -H 'Accept: application/octet-stream' "repos/$GITHUB_REPOSITORY/releases/assets/658689251" > recovery-input/DLYA_SVOIH_COMBINED_0.3.134_CANDIDATE.zip
+          python3 - <<'PY'
+          from pathlib import Path
+          import hashlib
+          p = Path('recovery-input/DLYA_SVOIH_COMBINED_0.3.134_CANDIDATE.zip')
+          assert p.stat().st_size == 154986054
+          with p.open('rb') as stream:
+              assert hashlib.file_digest(stream, 'sha256').hexdigest() == '4d4ea41cf03a341f7def67fda7d9238440fd9947b0a2b03cf403890577b0e8c1'
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: recovery134-pinned-input
+          path: recovery-input/DLYA_SVOIH_COMBINED_0.3.134_CANDIDATE.zip
+          if-no-files-found: error
+          retention-days: 7
   sign:
+    needs: fetch-input
     runs-on: ubuntu-24.04
     timeout-minutes: 20
+    permissions:
+      contents: read
     env:
       CI_SIGNING_KEYSTORE: ${{ github.workspace }}/recovery134-existing.keystore
     steps:
@@ -27,12 +59,13 @@ jobs:
         with:
           distribution: temurin
           java-version: '17'
-      - name: Download the exact recovered input and published reference
-        env:
-          GH_TOKEN: ${{ github.token }}
+      - uses: actions/download-artifact@v4
+        with:
+          name: recovery134-pinned-input
+          path: build/recovery-input
+      - name: Download the published reference APK
         run: |
           mkdir -p build/recovery-input
-          gh api --method GET -H 'Accept: application/octet-stream' "repos/$GITHUB_REPOSITORY/releases/assets/658689251" > build/recovery-input/DLYA_SVOIH_COMBINED_0.3.134_CANDIDATE.zip
           python3 - <<'PY'
           import urllib.request
           from pathlib import Path
