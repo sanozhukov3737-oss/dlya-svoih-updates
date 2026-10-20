@@ -1,0 +1,357 @@
+﻿2026-10-20T10:57:33.2318877Z Current runner version: '2.337.0'
+2026-10-20T10:57:33.2345828Z ##[group]Runner Image Provisioner
+2026-10-20T10:57:33.2346861Z Hosted Compute Agent
+2026-10-20T10:57:33.2347515Z Version: 20261012.601
+2026-10-20T10:57:33.2348217Z Commit: f3dc54e1fb89da6852db922499a0233137369e1d
+2026-10-20T10:57:33.2348986Z Build Date: 2026-10-12T17:48:21Z
+2026-10-20T10:57:33.2349682Z Worker ID: {76453645-21aa-4d4e-80e1-7afb3e972467}
+2026-10-20T10:57:33.2350491Z Region: westus3
+2026-10-20T10:57:33.2351093Z Cloud: Azure
+2026-10-20T10:57:33.2351685Z ##[endgroup]
+2026-10-20T10:57:33.2353820Z ##[group]Operating System
+2026-10-20T10:57:33.2354515Z Ubuntu
+2026-10-20T10:57:33.2355141Z 24.04.5
+2026-10-20T10:57:33.2355708Z LTS
+2026-10-20T10:57:33.2356231Z ##[endgroup]
+2026-10-20T10:57:33.2356880Z ##[group]Runner Image
+2026-10-20T10:57:33.2357509Z Image: ubuntu-24.04
+2026-10-20T10:57:33.2358192Z Version: 20261012.334.1
+2026-10-20T10:57:33.2359487Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261012.334/images/ubuntu/Ubuntu2404-Readme.md
+2026-10-20T10:57:33.2361621Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261012.334
+2026-10-20T10:57:33.2362909Z ##[endgroup]
+2026-10-20T10:57:33.2364214Z ##[group]GITHUB_TOKEN Permissions
+2026-10-20T10:57:33.2366531Z Contents: write
+2026-10-20T10:57:33.2367267Z Metadata: read
+2026-10-20T10:57:33.2367863Z ##[endgroup]
+2026-10-20T10:57:33.2370058Z Secret source: Actions
+2026-10-20T10:57:33.2371242Z Cache mode: write
+2026-10-20T10:57:33.2371966Z Prepare workflow directory
+2026-10-20T10:57:33.2924679Z Prepare all required actions
+2026-10-20T10:57:33.2973155Z Getting action download info
+2026-10-20T10:57:33.5916398Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+2026-10-20T10:57:33.6852515Z Download action repository 'actions/setup-java@v4' (SHA:cf277c60eb25467037889841efdb72551f06f6c3)
+2026-10-20T10:57:34.6775378Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+2026-10-20T10:57:34.8922998Z Complete job name: publish
+2026-10-20T10:57:34.9705792Z ##[group]Run actions/checkout@v4
+2026-10-20T10:57:34.9706783Z with:
+2026-10-20T10:57:34.9707364Z   repository: sanozhukov3737-oss/dlya-svoih-updates
+2026-10-20T10:57:34.9711758Z   token: ***
+2026-10-20T10:57:34.9712229Z   ssh-strict: true
+2026-10-20T10:57:34.9713031Z   ssh-user: git
+2026-10-20T10:57:34.9713534Z   persist-credentials: true
+2026-10-20T10:57:34.9714063Z   clean: true
+2026-10-20T10:57:34.9714549Z   sparse-checkout-cone-mode: true
+2026-10-20T10:57:34.9715164Z   fetch-depth: 1
+2026-10-20T10:57:34.9715631Z   fetch-tags: false
+2026-10-20T10:57:34.9716123Z   show-progress: true
+2026-10-20T10:57:34.9716617Z   lfs: false
+2026-10-20T10:57:34.9717085Z   submodules: false
+2026-10-20T10:57:34.9717581Z   set-safe-directory: true
+2026-10-20T10:57:34.9718134Z   allow-unsafe-pr-checkout: false
+2026-10-20T10:57:34.9719015Z env:
+2026-10-20T10:57:34.9723501Z   GH_TOKEN: ***
+2026-10-20T10:57:34.9724002Z ##[endgroup]
+2026-10-20T10:57:35.0788478Z Syncing repository: sanozhukov3737-oss/dlya-svoih-updates
+2026-10-20T10:57:35.0791508Z ##[group]Getting Git version info
+2026-10-20T10:57:35.0793084Z Working directory is '/home/runner/work/dlya-svoih-updates/dlya-svoih-updates'
+2026-10-20T10:57:35.0794991Z [command]/usr/bin/git version
+2026-10-20T10:57:35.0881959Z git version 2.55.0
+2026-10-20T10:57:35.0911943Z ##[endgroup]
+2026-10-20T10:57:35.0937142Z Temporarily overriding HOME='/home/runner/work/_temp/9ff4030a-0cd6-4d2b-a2a8-dafc469506d7' before making global git config changes
+2026-10-20T10:57:35.0940217Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-20T10:57:35.0945163Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/dlya-svoih-updates/dlya-svoih-updates
+2026-10-20T10:57:35.1027909Z Deleting the contents of '/home/runner/work/dlya-svoih-updates/dlya-svoih-updates'
+2026-10-20T10:57:35.1035044Z ##[group]Initializing the repository
+2026-10-20T10:57:35.1037909Z [command]/usr/bin/git init /home/runner/work/dlya-svoih-updates/dlya-svoih-updates
+2026-10-20T10:57:35.1171449Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-10-20T10:57:35.1174217Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-10-20T10:57:35.1177128Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-10-20T10:57:35.1178786Z hint: call:
+2026-10-20T10:57:35.1179655Z hint:
+2026-10-20T10:57:35.1180746Z hint: 	git config --global init.defaultBranch <name>
+2026-10-20T10:57:35.1181968Z hint:
+2026-10-20T10:57:35.1183381Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-10-20T10:57:35.1185223Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-10-20T10:57:35.1186779Z hint:
+2026-10-20T10:57:35.1187754Z hint: 	git branch -m <name>
+2026-10-20T10:57:35.1188803Z hint:
+2026-10-20T10:57:35.1189872Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-10-20T10:57:35.1191780Z Initialized empty Git repository in /home/runner/work/dlya-svoih-updates/dlya-svoih-updates/.git/
+2026-10-20T10:57:35.1196329Z [command]/usr/bin/git remote add origin https://github.com/sanozhukov3737-oss/dlya-svoih-updates
+2026-10-20T10:57:35.1257309Z ##[endgroup]
+2026-10-20T10:57:35.1259288Z ##[group]Disabling automatic garbage collection
+2026-10-20T10:57:35.1261356Z [command]/usr/bin/git config --local gc.auto 0
+2026-10-20T10:57:35.1305686Z ##[endgroup]
+2026-10-20T10:57:35.1307914Z ##[group]Setting up auth
+2026-10-20T10:57:35.1314802Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-20T10:57:35.1357522Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-20T10:57:35.1765019Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-20T10:57:35.1807400Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-20T10:57:35.2076962Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-20T10:57:35.2132276Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-20T10:57:35.2402895Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-10-20T10:57:35.2451276Z ##[endgroup]
+2026-10-20T10:57:35.2452263Z ##[group]Fetching the repository
+2026-10-20T10:57:35.2463432Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +f7c4d7bc77bf5fa7d25acfb58b0e9b399210359a:refs/remotes/origin/recovery/android-0.3.134-stage2-20261019
+2026-10-20T10:57:37.2972476Z From https://github.com/sanozhukov3737-oss/dlya-svoih-updates
+2026-10-20T10:57:37.2977763Z  * [new ref]         f7c4d7bc77bf5fa7d25acfb58b0e9b399210359a -> origin/recovery/android-0.3.134-stage2-20261019
+2026-10-20T10:57:37.2984010Z ##[endgroup]
+2026-10-20T10:57:37.2986024Z ##[group]Determining the checkout info
+2026-10-20T10:57:37.2988221Z ##[endgroup]
+2026-10-20T10:57:37.2989793Z [command]/usr/bin/git sparse-checkout disable
+2026-10-20T10:57:37.3045568Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-10-20T10:57:37.3079100Z ##[group]Checking out the ref
+2026-10-20T10:57:37.3087275Z [command]/usr/bin/git checkout --progress --force -B recovery/android-0.3.134-stage2-20261019 refs/remotes/origin/recovery/android-0.3.134-stage2-20261019
+2026-10-20T10:57:37.5700773Z Switched to a new branch 'recovery/android-0.3.134-stage2-20261019'
+2026-10-20T10:57:37.5705674Z branch 'recovery/android-0.3.134-stage2-20261019' set up to track 'origin/recovery/android-0.3.134-stage2-20261019'.
+2026-10-20T10:57:37.5729785Z ##[endgroup]
+2026-10-20T10:57:37.5778002Z [command]/usr/bin/git log -1 --format=%H
+2026-10-20T10:57:37.5806160Z f7c4d7bc77bf5fa7d25acfb58b0e9b399210359a
+2026-10-20T10:57:37.6211954Z ##[group]Run actions/setup-java@v4
+2026-10-20T10:57:37.6212349Z with:
+2026-10-20T10:57:37.6212889Z   distribution: temurin
+2026-10-20T10:57:37.6213261Z   java-version: 17
+2026-10-20T10:57:37.6213491Z   java-package: jdk
+2026-10-20T10:57:37.6213740Z   check-latest: false
+2026-10-20T10:57:37.6213971Z   server-id: github
+2026-10-20T10:57:37.6214208Z   server-username: GITHUB_ACTOR
+2026-10-20T10:57:37.6214492Z   server-password: GITHUB_TOKEN
+2026-10-20T10:57:37.6214759Z   overwrite-settings: true
+2026-10-20T10:57:37.6215005Z   job-status: success
+2026-10-20T10:57:37.6217665Z   token: ***
+2026-10-20T10:57:37.6217885Z env:
+2026-10-20T10:57:37.6220411Z   GH_TOKEN: ***
+2026-10-20T10:57:37.6220639Z ##[endgroup]
+2026-10-20T10:57:37.8076890Z ##[warning]setup-java v4 is deprecated and will no longer receive updates. Please migrate to actions/setup-java@v5.
+2026-10-20T10:57:37.8087091Z ##[group]Installed distributions
+2026-10-20T10:57:37.8252658Z Resolved Java 17.0.20+1 from tool-cache
+2026-10-20T10:57:37.8253688Z Setting Java 17.0.20+1 as the default
+2026-10-20T10:57:37.8265611Z (node:2283) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-20T10:57:37.8266883Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-20T10:57:37.8269753Z Creating toolchains.xml for JDK version 17 from temurin
+2026-10-20T10:57:37.8351405Z Writing to /home/runner/.m2/toolchains.xml
+2026-10-20T10:57:37.8352025Z 
+2026-10-20T10:57:37.8352261Z Java configuration:
+2026-10-20T10:57:37.8353103Z   Distribution: temurin
+2026-10-20T10:57:37.8353458Z   Version: 17.0.20+1
+2026-10-20T10:57:37.8353904Z   Path: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.20-1/x64
+2026-10-20T10:57:37.8354296Z 
+2026-10-20T10:57:37.8354886Z ##[endgroup]
+2026-10-20T10:57:37.8385511Z Creating settings.xml with server-id: github
+2026-10-20T10:57:37.8411476Z Writing to /home/runner/.m2/settings.xml
+2026-10-20T10:57:37.8604600Z ##[group]Run "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" "build-tools;36.0.0"
+2026-10-20T10:57:37.8605386Z [36;1m"$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" "build-tools;36.0.0"[0m
+2026-10-20T10:57:37.8909477Z shell: /usr/bin/bash -e {0}
+2026-10-20T10:57:37.8909834Z env:
+2026-10-20T10:57:37.8912836Z   GH_TOKEN: ***
+2026-10-20T10:57:37.8913225Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.20-1/x64
+2026-10-20T10:57:37.8913750Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.20-1/x64
+2026-10-20T10:57:37.8914150Z ##[endgroup]
+2026-10-20T10:57:42.6772859Z Loading package information...                                                  
+2026-10-20T10:57:42.7590437Z Loading local repository...                                                     
+2026-10-20T10:57:42.7593400Z [                                       ] 3% Loading local repository...        
+2026-10-20T10:57:44.4186697Z [                                       ] 3% Fetch remote repository...         
+2026-10-20T10:57:45.2972479Z [=                                      ] 3% Fetch remote repository...         
+2026-10-20T10:57:45.3537778Z [=                                      ] 4% Fetch remote repository...         
+2026-10-20T10:57:45.4020227Z [=                                      ] 5% Fetch remote repository...         
+2026-10-20T10:57:45.5218845Z [==                                     ] 5% Fetch remote repository...         
+2026-10-20T10:57:45.5634869Z [==                                     ] 6% Fetch remote repository...         
+2026-10-20T10:57:45.6684099Z [==                                     ] 7% Fetch remote repository...         
+2026-10-20T10:57:45.6724957Z [==                                     ] 7% Computing updates...               
+2026-10-20T10:57:45.6817663Z [===                                    ] 8% Computing updates...               
+2026-10-20T10:57:45.6863966Z [===                                    ] 10% Computing updates...              
+2026-10-20T10:57:45.6864983Z [=======================================] 100% Computing updates...             
+2026-10-20T10:57:45.6865573Z 
+2026-10-20T10:57:45.7195958Z ##[group]Run sudo apt-get update -qq
+2026-10-20T10:57:45.7196341Z [36;1msudo apt-get update -qq[0m
+2026-10-20T10:57:45.7196646Z [36;1msudo apt-get install -y python3-pil[0m
+2026-10-20T10:57:45.7261173Z shell: /usr/bin/bash -e {0}
+2026-10-20T10:57:45.7261445Z env:
+2026-10-20T10:57:45.7264500Z   GH_TOKEN: ***
+2026-10-20T10:57:45.7264856Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.20-1/x64
+2026-10-20T10:57:45.7265382Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.20-1/x64
+2026-10-20T10:57:45.7265787Z ##[endgroup]
+2026-10-20T10:57:53.1755887Z Reading package lists...
+2026-10-20T10:57:53.4485338Z Building dependency tree...
+2026-10-20T10:57:53.4493201Z Reading state information...
+2026-10-20T10:57:53.6814645Z The following additional packages will be installed:
+2026-10-20T10:57:53.6827246Z   libimagequant0 libraqm0 python3-olefile
+2026-10-20T10:57:53.6827970Z Suggested packages:
+2026-10-20T10:57:53.6838784Z   python-pil-doc
+2026-10-20T10:57:53.7238572Z The following NEW packages will be installed:
+2026-10-20T10:57:53.7245072Z   libimagequant0 libraqm0 python3-olefile python3-pil
+2026-10-20T10:57:53.7431705Z 0 upgraded, 4 newly installed, 0 to remove and 81 not upgraded.
+2026-10-20T10:57:53.7432766Z Need to get 537 kB of archives.
+2026-10-20T10:57:53.7433702Z After this operation, 2098 kB of additional disk space will be used.
+2026-10-20T10:57:53.7434179Z Get:1 file:/etc/apt/apt-mirrors.txt Mirrorlist [144 B]
+2026-10-20T10:57:53.8847351Z Get:2 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 libimagequant0 amd64 2.18.0-1build1 [36.3 kB]
+2026-10-20T10:57:54.0391634Z Get:3 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 libraqm0 amd64 0.10.1-1build1 [15.0 kB]
+2026-10-20T10:57:54.1184556Z Get:4 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 python3-olefile all 0.46-3 [33.8 kB]
+2026-10-20T10:57:54.2253846Z Get:5 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 python3-pil amd64 10.2.0-1ubuntu1.3 [452 kB]
+2026-10-20T10:57:54.7849958Z Fetched 537 kB in 1s (733 kB/s)
+2026-10-20T10:57:54.8212866Z Selecting previously unselected package libimagequant0:amd64.
+2026-10-20T10:57:54.8745452Z (Reading database ... 
+2026-10-20T10:57:54.8745898Z (Reading database ... 5%
+2026-10-20T10:57:54.8746520Z (Reading database ... 10%
+2026-10-20T10:57:54.8746993Z (Reading database ... 15%
+2026-10-20T10:57:54.8747491Z (Reading database ... 20%
+2026-10-20T10:57:54.8748006Z (Reading database ... 25%
+2026-10-20T10:57:54.8748529Z (Reading database ... 30%
+2026-10-20T10:57:54.8749882Z (Reading database ... 35%
+2026-10-20T10:57:54.8750444Z (Reading database ... 40%
+2026-10-20T10:57:54.8750919Z (Reading database ... 45%
+2026-10-20T10:57:54.8751427Z (Reading database ... 50%
+2026-10-20T10:57:54.9042245Z (Reading database ... 55%
+2026-10-20T10:57:55.1862339Z (Reading database ... 60%
+2026-10-20T10:57:55.4508525Z (Reading database ... 65%
+2026-10-20T10:57:55.7226584Z (Reading database ... 70%
+2026-10-20T10:57:56.0110672Z (Reading database ... 75%
+2026-10-20T10:57:56.2740767Z (Reading database ... 80%
+2026-10-20T10:57:56.6900917Z (Reading database ... 85%
+2026-10-20T10:57:57.1711512Z (Reading database ... 90%
+2026-10-20T10:57:57.6273520Z (Reading database ... 95%
+2026-10-20T10:57:57.6274012Z (Reading database ... 100%
+2026-10-20T10:57:57.6274585Z (Reading database ... 203540 files and directories currently installed.)
+2026-10-20T10:57:57.6324008Z Preparing to unpack .../libimagequant0_2.18.0-1build1_amd64.deb ...
+2026-10-20T10:57:57.6368962Z Unpacking libimagequant0:amd64 (2.18.0-1build1) ...
+2026-10-20T10:57:57.6623667Z Selecting previously unselected package libraqm0:amd64.
+2026-10-20T10:57:57.6757605Z Preparing to unpack .../libraqm0_0.10.1-1build1_amd64.deb ...
+2026-10-20T10:57:57.6766657Z Unpacking libraqm0:amd64 (0.10.1-1build1) ...
+2026-10-20T10:57:57.6972273Z Selecting previously unselected package python3-olefile.
+2026-10-20T10:57:57.7108215Z Preparing to unpack .../python3-olefile_0.46-3_all.deb ...
+2026-10-20T10:57:57.7117108Z Unpacking python3-olefile (0.46-3) ...
+2026-10-20T10:57:57.7359296Z Selecting previously unselected package python3-pil:amd64.
+2026-10-20T10:57:57.7495580Z Preparing to unpack .../python3-pil_10.2.0-1ubuntu1.3_amd64.deb ...
+2026-10-20T10:57:57.7509158Z Unpacking python3-pil:amd64 (10.2.0-1ubuntu1.3) ...
+2026-10-20T10:57:57.8204817Z Setting up python3-olefile (0.46-3) ...
+2026-10-20T10:57:57.9637241Z Setting up libraqm0:amd64 (0.10.1-1build1) ...
+2026-10-20T10:57:57.9658952Z Setting up libimagequant0:amd64 (2.18.0-1build1) ...
+2026-10-20T10:57:57.9680991Z Setting up python3-pil:amd64 (10.2.0-1ubuntu1.3) ...
+2026-10-20T10:57:58.2581616Z Processing triggers for libc-bin (2.39-0ubuntu8.9) ...
+2026-10-20T10:57:59.4542360Z 
+2026-10-20T10:57:59.4543486Z Running kernel seems to be up-to-date.
+2026-10-20T10:57:59.4544079Z 
+2026-10-20T10:57:59.4544304Z No services need to be restarted.
+2026-10-20T10:57:59.4544677Z 
+2026-10-20T10:57:59.4544874Z No containers need to be restarted.
+2026-10-20T10:57:59.4545243Z 
+2026-10-20T10:57:59.4545457Z No user sessions are running outdated binaries.
+2026-10-20T10:57:59.4545750Z 
+2026-10-20T10:57:59.4546018Z No VM guests are running outdated hypervisor (qemu) binaries on this host.
+2026-10-20T10:58:00.6464049Z ##[group]Run /usr/bin/python3 tools/publish_verified_134.py --work build/publication-0.3.134 --sdk "$ANDROID_HOME"
+2026-10-20T10:58:00.6464931Z [36;1m/usr/bin/python3 tools/publish_verified_134.py --work build/publication-0.3.134 --sdk "$ANDROID_HOME"[0m
+2026-10-20T10:58:00.6539183Z shell: /usr/bin/bash -e {0}
+2026-10-20T10:58:00.6539631Z env:
+2026-10-20T10:58:00.6545057Z   GH_TOKEN: ***
+2026-10-20T10:58:00.6545626Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.20-1/x64
+2026-10-20T10:58:00.6546498Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.20-1/x64
+2026-10-20T10:58:00.6547190Z ##[endgroup]
+2026-10-20T10:58:21.5914226Z Repairing the exact initial GitHub publication: 0.3.116 uses the confirmed PC installation signing key.
+2026-10-20T10:58:21.6058646Z Repairing the exact initial GitHub publication: 0.3.116 uses the confirmed PC installation signing key.
+2026-10-20T10:58:21.6126712Z ...............
+2026-10-20T10:58:21.6127393Z ----------------------------------------------------------------------
+2026-10-20T10:58:21.6128165Z Ran 15 tests in 0.028s
+2026-10-20T10:58:21.6128455Z 
+2026-10-20T10:58:21.6128617Z OK
+2026-10-20T10:58:34.0847104Z .....
+2026-10-20T10:58:34.0847661Z ----------------------------------------------------------------------
+2026-10-20T10:58:34.0848384Z Ran 5 tests in 12.373s
+2026-10-20T10:58:34.0848661Z 
+2026-10-20T10:58:34.0848825Z OK
+2026-10-20T10:58:47.1171652Z From /home/runner/work/dlya-svoih-updates/dlya-svoih-updates/build/publication-0.3.134/source.bundle
+2026-10-20T10:58:47.1172450Z  * [new branch]      recovery/source-snapshot-0.3.134-20261020 -> recovery/publish134
+2026-10-20T10:58:54.7511312Z To https://github.com/sanozhukov3737-oss/dlya-svoih-updates
+2026-10-20T10:58:54.7513260Z  ! [remote rejected] 9971bd151d5bc3fd49399cadf7019540b497c3f8 -> recovery/source-snapshot-0.3.134-20261020 (refusing to allow a GitHub App to create or update workflow `.github/workflows/build-apk.yml` without `workflows` permission)
+2026-10-20T10:58:54.7514892Z error: failed to push some refs to 'https://github.com/sanozhukov3737-oss/dlya-svoih-updates'
+2026-10-20T10:58:54.8258047Z Traceback (most recent call last):
+2026-10-20T10:58:54.8259236Z   File "/home/runner/work/dlya-svoih-updates/dlya-svoih-updates/tools/publish_verified_134.py", line 200, in <module>
+2026-10-20T10:58:54.8260248Z     main()
+2026-10-20T10:58:54.8264356Z   File "/home/runner/work/dlya-svoih-updates/dlya-svoih-updates/tools/publish_verified_134.py", line 161, in main
+2026-10-20T10:58:54.8265513Z     run('git', 'push', 'origin', f'{SOURCE}:refs/heads/{BRANCH}')
+2026-10-20T10:58:54.8267083Z   File "/home/runner/work/dlya-svoih-updates/dlya-svoih-updates/tools/publish_verified_134.py", line 27, in run
+2026-10-20T10:58:54.8268049Z     return subprocess.run([str(a) for a in args], check=True, **kwargs)
+2026-10-20T10:58:54.8268537Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-10-20T10:58:54.8268992Z   File "/usr/lib/python3.12/subprocess.py", line 571, in run
+2026-10-20T10:58:54.8269445Z     raise CalledProcessError(retcode, process.args,
+2026-10-20T10:58:54.8270497Z subprocess.CalledProcessError: Command '['git', 'push', 'origin', '9971bd151d5bc3fd49399cadf7019540b497c3f8:refs/heads/recovery/source-snapshot-0.3.134-20261020']' returned non-zero exit status 1.
+2026-10-20T10:58:54.8597873Z ##[error]Process completed with exit code 1.
+2026-10-20T10:58:54.8664868Z ##[group]Run actions/upload-artifact@v4
+2026-10-20T10:58:54.8665193Z with:
+2026-10-20T10:58:54.8665415Z   name: published-0.3.134-verification
+2026-10-20T10:58:54.8666244Z   path: build/publication-0.3.134/prepared-publication.json
+build/publication-0.3.134/publication-result.json
+build/publication-0.3.134/latest-0.3.133.json
+build/publication-0.3.134/release
+
+2026-10-20T10:58:54.8667040Z   if-no-files-found: warn
+2026-10-20T10:58:54.8667274Z   retention-days: 30
+2026-10-20T10:58:54.8667493Z   compression-level: 6
+2026-10-20T10:58:54.8667723Z   overwrite: false
+2026-10-20T10:58:54.8667946Z   include-hidden-files: false
+2026-10-20T10:58:54.8668178Z env:
+2026-10-20T10:58:54.8670754Z   GH_TOKEN: ***
+2026-10-20T10:58:54.8671098Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.20-1/x64
+2026-10-20T10:58:54.8671611Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.20-1/x64
+2026-10-20T10:58:54.8672020Z ##[endgroup]
+2026-10-20T10:58:55.0481274Z (node:3355) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-20T10:58:55.0482032Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-20T10:58:55.0577823Z Multiple search paths detected. Calculating the least common ancestor of all paths
+2026-10-20T10:58:55.0582466Z The least common ancestor is /home/runner/work/dlya-svoih-updates/dlya-svoih-updates/build/publication-0.3.134. This will be the root directory of the artifact
+2026-10-20T10:58:55.0584793Z With the provided path, there will be 7 files uploaded
+2026-10-20T10:58:55.0590035Z Artifact name is valid!
+2026-10-20T10:58:55.0591062Z Root directory input is valid!
+2026-10-20T10:58:55.4100034Z Beginning upload of artifact content to blob storage
+2026-10-20T10:58:55.6950274Z (node:3355) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+2026-10-20T10:58:56.3360406Z Uploaded bytes 8388608
+2026-10-20T10:58:56.5852183Z Uploaded bytes 16777216
+2026-10-20T10:58:56.6803495Z Uploaded bytes 25165824
+2026-10-20T10:58:56.9144803Z Uploaded bytes 33554432
+2026-10-20T10:58:56.9643851Z Uploaded bytes 41943040
+2026-10-20T10:58:57.2319574Z Uploaded bytes 50331648
+2026-10-20T10:58:57.4560606Z Uploaded bytes 58720256
+2026-10-20T10:58:57.7201620Z Uploaded bytes 67108864
+2026-10-20T10:58:57.9703260Z Uploaded bytes 75497472
+2026-10-20T10:58:58.2243532Z Uploaded bytes 83886080
+2026-10-20T10:58:58.4743743Z Uploaded bytes 92274688
+2026-10-20T10:58:58.7095817Z Uploaded bytes 100663296
+2026-10-20T10:58:58.9793288Z Uploaded bytes 109051904
+2026-10-20T10:58:59.2488219Z Uploaded bytes 117440512
+2026-10-20T10:58:59.5137406Z Uploaded bytes 125829120
+2026-10-20T10:58:59.7291678Z Uploaded bytes 134217728
+2026-10-20T10:58:59.9972366Z Uploaded bytes 142606336
+2026-10-20T10:59:00.2903964Z Uploaded bytes 150994944
+2026-10-20T10:59:00.5166943Z Uploaded bytes 159383552
+2026-10-20T10:59:00.7468909Z Uploaded bytes 167772160
+2026-10-20T10:59:01.0003869Z Uploaded bytes 176160768
+2026-10-20T10:59:01.2619158Z Uploaded bytes 184549376
+2026-10-20T10:59:01.5227060Z Uploaded bytes 192937984
+2026-10-20T10:59:01.8080044Z Uploaded bytes 201326592
+2026-10-20T10:59:02.1472728Z Uploaded bytes 209715200
+2026-10-20T10:59:02.3726366Z Uploaded bytes 218103808
+2026-10-20T10:59:02.6658469Z Uploaded bytes 226492416
+2026-10-20T10:59:02.8391654Z Uploaded bytes 231254573
+2026-10-20T10:59:02.8996734Z Finished uploading artifact content to blob storage!
+2026-10-20T10:59:02.9000535Z SHA256 digest of uploaded artifact zip is 6e06805160e72c19994a48232373339348d262d569da204b9ce4047842feb411
+2026-10-20T10:59:02.9003049Z Finalizing artifact upload
+2026-10-20T10:59:03.2764723Z Artifact published-0.3.134-verification.zip successfully finalized. Artifact ID 12260305054
+2026-10-20T10:59:03.2766849Z Artifact published-0.3.134-verification has been successfully uploaded! Final size is 231254573 bytes. Artifact ID is 12260305054
+2026-10-20T10:59:03.2773888Z Artifact download URL: https://github.com/sanozhukov3737-oss/dlya-svoih-updates/actions/runs/39411561984/artifacts/12260305054
+2026-10-20T10:59:03.3035129Z Post job cleanup.
+2026-10-20T10:59:03.4646632Z (node:3368) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-20T10:59:03.4648474Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-20T10:59:03.4927968Z Post job cleanup.
+2026-10-20T10:59:03.6292962Z [command]/usr/bin/git version
+2026-10-20T10:59:03.6380946Z git version 2.55.0
+2026-10-20T10:59:03.6460607Z Temporarily overriding HOME='/home/runner/work/_temp/6dfdbc8f-debe-421d-b00a-b3e15d89930e' before making global git config changes
+2026-10-20T10:59:03.6462283Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-20T10:59:03.6468333Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/dlya-svoih-updates/dlya-svoih-updates
+2026-10-20T10:59:03.6523886Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-20T10:59:03.6568880Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-20T10:59:03.6893572Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-20T10:59:03.6927288Z http.https://github.com/.extraheader
+2026-10-20T10:59:03.6943372Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-10-20T10:59:03.6990694Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-20T10:59:03.7296763Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-20T10:59:03.7354637Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-20T10:59:03.7866595Z Cleaning up orphan processes
+2026-10-20T10:59:03.8354884Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-java@v4, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

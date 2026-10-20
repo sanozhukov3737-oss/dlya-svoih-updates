@@ -1,0 +1,66 @@
+{
+  "published": true,
+  "tag": "app-0.3.134",
+  "releaseId": 418300116,
+  "publishedAtUtc": "2026-10-20T11:01:56Z",
+  "releaseUrl": "https://github.com/sanozhukov3737-oss/dlya-svoih-updates/releases/tag/app-0.3.134",
+  "apkUrl": "https://github.com/sanozhukov3737-oss/dlya-svoih-updates/releases/download/app-0.3.134/DLYA_SVOIH_v0.3.134.apk",
+  "latestChannelUrl": "https://github.com/sanozhukov3737-oss/dlya-svoih-updates/releases/latest/download/latest.json",
+  "publicDownloadsVerified": true,
+  "latestChannelVerified": true,
+  "workflowRun": 39411561984,
+  "workflowJob": 118591422833,
+  "workflowConclusion": "success",
+  "workflowCommit": "f7c4d7bc77bf5fa7d25acfb58b0e9b399210359a",
+  "sourceCommit": "9971bd151d5bc3fd49399cadf7019540b497c3f8",
+  "sourceTree": "5e9889be28c0e03288b82baae67cb56f665a2c62",
+  "appSourceCommit": "a8c3b76f8921ffe05e4beaad7b6ba33891200642",
+  "signingCertificateSha256": "2f0a0908f269bc039311edb58fca8863347f1e4c3a7cfaddd909991cf1f0b509",
+  "files": [
+    {
+      "name": "catalog-195.zip",
+      "bytes": 88811182,
+      "sha256": "e9aea777a9d4af1d4ceba130ffc75af91a439c2dfdfd991331cfc065913cebbc",
+      "url": "https://github.com/sanozhukov3737-oss/dlya-svoih-updates/releases/download/app-0.3.134/catalog-195.zip"
+    },
+    {
+      "name": "DLYA_SVOIH_v0.3.134.apk",
+      "bytes": 144646769,
+      "sha256": "300b77deaee3348e05a0135bf0079414c07dc2e15a7dcfd9b1239a8cef99298f",
+      "url": "https://github.com/sanozhukov3737-oss/dlya-svoih-updates/releases/download/app-0.3.134/DLYA_SVOIH_v0.3.134.apk"
+    },
+    {
+      "name": "latest.json",
+      "bytes": 3236,
+      "sha256": "4abf4eacc772281251519074581d0c65b340f69cf34a17e1f7a0a72df5677f81",
+      "url": "https://github.com/sanozhukov3737-oss/dlya-svoih-updates/releases/download/app-0.3.134/latest.json"
+    },
+    {
+      "name": "release-verification.json",
+      "bytes": 956,
+      "sha256": "c0b8a6168d66c2075ff8ac68d2740089bee9058827bc2ea52679e7c81b5e072f",
+      "url": "https://github.com/sanozhukov3737-oss/dlya-svoih-updates/releases/download/app-0.3.134/release-verification.json"
+    },
+    {
+      "name": "SHA256SUMS.txt",
+      "bytes": 342,
+      "sha256": "9628b2f740a2a87c62e1baae92d3a3c896dadb4dc7f047387dd68a173462d144",
+      "url": "https://github.com/sanozhukov3737-oss/dlya-svoih-updates/releases/download/app-0.3.134/SHA256SUMS.txt"
+    }
+  ],
+  "catalog": {
+    "contentVersion": 195,
+    "minAppCode": 138,
+    "cards": 1697,
+    "images": 1600,
+    "offlineModels": 19,
+    "preservedPublished133CardIdsAndRowids": 1426
+  },
+  "feedTests": 20,
+  "finalVerificationArtifactId": 12259741290,
+  "signaturePrivateKeyUsedForPublication": false,
+  "sourceBranchCreatedThroughExistingAuthorizedGitHubConnector": true,
+  "priorAndroidEvidence": "research/recovery-stage-3/android-final/release-readiness.json",
+  "ruStoreUploadPerformed": false,
+  "defaultBranchNote": "Publication did not modify the default branch. Use tag app-0.3.134 or recovery/source-snapshot-0.3.134-20261020 for the full released application sources."
+}
