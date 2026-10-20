@@ -23,7 +23,7 @@ SOURCE_COMMIT = "e5eb15076c4727ec0deb32a4f7b2ac43b1e3b812"
 DB_ASSET = "assets/database/guide-v29.db"
 MODELS_ASSET = "assets/viewer3d/models.json"
 VIEWER_ASSET = "assets/viewer3d/viewer.bundle.js"
-VIEWER_SHA = "8495bc95f464c432c364a8551bbfad89d8e27663555737651b5a2105f2f70878"
+VIEWER_SHA = "4a9cb38da18262a7c6c31faf6360ad8d356fb8ba866dba799360d2ab40e5c713"
 
 
 def sha(path):
@@ -145,7 +145,7 @@ def main():
         print(json.dumps(report, ensure_ascii=False, indent=2))
         return
     require(args.repaired_unsigned is not None, "The Android-discovered search repair is required")
-    require(sha(args.repaired_unsigned) == "ee7f1165af361b970ba6915c34799cb7112dbeccb9ce08853ee08e5c57cb62a4",
+    require(sha(args.repaired_unsigned) == "dd49b40f181544b3966a3725a8f21872cf1b7dc65f98215424da809cdafcf9d5",
             "Repaired unsigned APK differs from the reproducible catalog and renderer result")
     with zipfile.ZipFile(unsigned) as original, zipfile.ZipFile(args.repaired_unsigned) as fixed:
         require(original.namelist() == fixed.namelist(), "Repaired APK entry set changed")

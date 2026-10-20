@@ -5,7 +5,6 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 const status = document.getElementById('status');
 const stage = document.getElementById('stage');
 let renderer, controls, frame, display, displayContext, diagnosticLogged = false, disposed = false;
-let recoveryEmptyFrameRetries = 0;
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(38, 1, 0.01, 100);
 let model;
@@ -55,25 +54,16 @@ function render() {
   if (!disposed && renderer && !document.hidden) {
     controls.update();
     renderer.render(scene, camera);
-    // Complete the GPU frame before Android WebView copies the detached canvas.
-    renderer.getContext().finish();
     displayContext.drawImage(renderer.domElement, 0, 0, display.width, display.height);
     if (model) {
       document.body.dataset.state = 'ready';
       status.hidden = true;
       display.dataset.triangles = String(renderer.info.render.triangles);
       if (!diagnosticLogged) {
+        diagnosticLogged = true;
         const pixels = displayContext.getImageData(0, 0, display.width, display.height).data;
         const colors = new Set();
         for (let i = 0; i < pixels.length; i += 64) colors.add((pixels[i] << 16) | (pixels[i+1] << 8) | pixels[i+2]);
-        if (colors.size < 8 && recoveryEmptyFrameRetries < 8) {
-          recoveryEmptyFrameRetries++;
-          document.body.dataset.state = 'loading';
-          status.hidden = false;
-          requestRender();
-          return;
-        }
-        diagnosticLogged = true;
         display.dataset.colors = String(colors.size);
         console.info('Offline model frame', JSON.stringify({colors: colors.size, triangles: renderer.info.render.triangles,
           stage: [stage.clientWidth, stage.clientHeight], viewport: [innerWidth, innerHeight],
@@ -177,6 +167,16 @@ try {
   new GLTFLoader(manager).load(modelUrl, gltf => {
     if (disposed) return;
     model = gltf.scene;
+    // Three.js embeds material.name in GLSL's SHADER_NAME. Android WebGL rejects
+    // non-ASCII shader source. Keep Russian source/credit/UI metadata intact;
+    // replace only the transient renderer's debug name, never its material data.
+    let materialIndex = 0;
+    model.traverse(object => {
+      const materials = Array.isArray(object.material) ? object.material : [object.material];
+      for (const material of materials) if (material && /[^\x20-\x7E]/.test(material.name)) {
+        material.name = 'offline_material_' + materialIndex++;
+      }
+    });
     const box = new THREE.Box3().setFromObject(model);
     const center = box.getCenter(new THREE.Vector3());
     const size = box.getSize(new THREE.Vector3());
