@@ -148,11 +148,11 @@ def appearance_dialog():
     text('Вид приложения')
 
 
-def verify_photo_and_navigation():
+def verify_photo_and_navigation(report):
     # Two different photographs, native gallery zoom and reset, all offline.
     tap(search('PMN2', 'ПМН-2'))
-    hero = find(lambda a: a.get('class') == 'android.widget.ImageView' and
-                (lambda b: b[2]-b[0] > 180 and b[3]-b[1] > 120)(tuple(map(int, re.findall(r'\d+', a.get('bounds',''))))))
+    # Coil's Compose image exposes its actual caption, not an ImageView class.
+    hero = find(lambda a: a.get('content-desc','').startswith('Сравнительный наружный вид:'))
     tap(hero)
     text('Изображения')
     description('Увеличить изображение')
@@ -175,6 +175,9 @@ def verify_photo_and_navigation():
     assert len(set(initial.crop(region).getdata())) > 100, 'Photo did not produce visible pixels'
     assert ImageChops.difference(initial,zoomed).crop(region).getbbox(), 'Zoom did not change photo pixels'
     assert ImageChops.difference(initial,second).crop(region).getbbox(), 'Second photograph did not change'
+    report['galleryZoomAndSecondPhoto']=True
+    (out/'upgrade-verification.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
+    print('Two actual Android gallery photos, zoom and reset verified offline',flush=True)
     tap(description('Назад'))
     tap(description('Назад'))
     # The search tab opens a single card. The book reader belongs to the
@@ -272,7 +275,7 @@ def main():
     print('Upgrade, favorites, appearance and full catalog 195 verified on Android',flush=True)
     appearance_dialog();capture('after-appearance-dialog');tap(text('Готово'));capture('after-appearance')
     try:
-        verify_photo_and_navigation()
+        verify_photo_and_navigation(report)
         report.update(galleryZoomAndSecondPhoto=True,cardButtonsAndSwipes=True)
     except Exception as error:
         report['photoNavigationError']=str(error)
