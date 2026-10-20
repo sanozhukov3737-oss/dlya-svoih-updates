@@ -1,0 +1,4195 @@
+{
+  "checkedAt": "2026-10-19",
+  "range": [
+    451,
+    500
+  ],
+  "cards": [
+    {
+      "id": "mine-audit-v26-su-ugm",
+      "title": "УГМ",
+      "number": 451,
+      "apiQueries": [
+        "UGM naval mine",
+        "УГМ мина"
+      ],
+      "status": "none",
+      "note": "Проверены обозначение и варианты написания в публичном каталоге Sketchfab и веб-поиске. Наружный файл с подтверждённым соответствием карточке и правом включения в приложение в этом проходе не получен.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не получен в этом проходе"
+    },
+    {
+      "id": "mine-audit-v26-su-kam",
+      "title": "КАМ",
+      "number": 452,
+      "apiQueries": [
+        "KAM naval mine",
+        "КАМ мина"
+      ],
+      "status": "none",
+      "note": "Проверены обозначение и варианты написания в публичном каталоге Sketchfab и веб-поиске. Наружный файл с подтверждённым соответствием карточке и правом включения в приложение в этом проходе не получен.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не получен в этом проходе"
+    },
+    {
+      "id": "mine-audit-v26-su-lira",
+      "title": "Лира",
+      "number": 453,
+      "apiQueries": [
+        "Lira naval mine",
+        "Лира мина"
+      ],
+      "status": "none",
+      "note": "Проверены обозначение и варианты написания в публичном каталоге Sketchfab и веб-поиске. Наружный файл с подтверждённым соответствием карточке и правом включения в приложение в этом проходе не получен.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не получен в этом проходе"
+    },
+    {
+      "id": "mine-audit-v26-su-ml-7",
+      "title": "МЛ-7",
+      "number": 454,
+      "apiQueries": [
+        "ML-7 mine",
+        "МЛ-7",
+        "ML7"
+      ],
+      "status": "lead",
+      "note": "В поисковом индексе Yeggi есть упоминание ML-7. Первичный автор, наружный файл и лицензия не установлены: страница агрегатора не стала подтверждением скачиваемого STL. Дополнительные запросы ML7 и ML-7 не разрешили это упоминание.",
+      "sources": [
+        {
+          "title": "Упоминание ML-7 в индексе Yeggi",
+          "url": "https://www.yeggi.com/q/anti%2Bpersonnel%2Bmine/",
+          "author": "Yeggi · поисковый агрегатор",
+          "license": "Автор исходника и лицензия не установлены",
+          "verification": "Название видно в поисковом индексе. При открытии страница потребовала проверку человека; индивидуальный первичный файл не установлен. Ограничение не обходилось."
+        }
+      ],
+      "downloadedThisPass": false,
+      "statusLabel": "Направление поиска · конкретный файл не подтверждён"
+    },
+    {
+      "id": "mine-audit-v26-su-ml-8",
+      "title": "МЛ-8",
+      "number": 455,
+      "apiQueries": [
+        "ML-8 mine",
+        "МЛ-8"
+      ],
+      "status": "none",
+      "note": "Проверены обозначение и варианты написания в публичном каталоге Sketchfab и веб-поиске. Наружный файл с подтверждённым соответствием карточке и правом включения в приложение в этом проходе не получен.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не получен в этом проходе"
+    },
+    {
+      "id": "mine-audit-v26-su-ms-2",
+      "title": "МС-2",
+      "number": 456,
+      "apiQueries": [
+        "MS-2 mine",
+        "МС-2 мина"
+      ],
+      "status": "none",
+      "note": "Проверены обозначение и варианты написания в публичном каталоге Sketchfab и веб-поиске. Наружный файл с подтверждённым соответствием карточке и правом включения в приложение в этом проходе не получен.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не получен в этом проходе"
+    },
+    {
+      "id": "mine-audit-v26-su-ms-3",
+      "title": "МС-3",
+      "number": 457,
+      "apiQueries": [
+        "MS-3 mine",
+        "МС-3 мина",
+        "MS3 mine"
+      ],
+      "status": "excluded",
+      "note": "В веб-выдаче найдено предложение MS-3 / MC-3 с разрезной моделью. Оно исключено из подборки; самостоятельный цельный наружный файл и его лицензия не подтверждены. Похожая PTM-3 и безымянная Land mine на Sketchfab не являются подтверждением МС-3.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Найденное предложение исключено"
+    },
+    {
+      "id": "mine-audit-v26-su-pmd-57",
+      "title": "ПМД-57",
+      "number": 458,
+      "apiQueries": [
+        "PMD-57",
+        "ПМД-57"
+      ],
+      "status": "none",
+      "note": "Проверены обозначение и варианты написания в публичном каталоге Sketchfab и веб-поиске. Наружный файл с подтверждённым соответствием карточке и правом включения в приложение в этом проходе не получен.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не получен в этом проходе"
+    },
+    {
+      "id": "mine-audit-v26-us-hammerhead-encapsulated-effector",
+      "title": "Hammerhead Encapsulated Effector",
+      "number": 459,
+      "apiQueries": [
+        "Hammerhead naval mine",
+        "Hammerhead encapsulated effector"
+      ],
+      "status": "none",
+      "note": "Проверены обозначение и варианты написания в публичном каталоге Sketchfab и веб-поиске. Наружный файл с подтверждённым соответствием карточке и правом включения в приложение в этом проходе не получен.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не получен в этом проходе"
+    },
+    {
+      "id": "mine-audit-v26-us-mk-68-clandestine-delivered-mine",
+      "title": "Mk 68 Clandestine Delivered Mine",
+      "number": 460,
+      "apiQueries": [
+        "Mk68 mine",
+        "Mark 68 naval mine"
+      ],
+      "status": "none",
+      "note": "Проверены обозначение и варианты написания в публичном каталоге Sketchfab и веб-поиске. Наружный файл с подтверждённым соответствием карточке и правом включения в приложение в этом проходе не получен.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не получен в этом проходе"
+    },
+    {
+      "id": "mine-audit-v26-su-pkm-100",
+      "title": "ПКМ-100",
+      "number": 461,
+      "apiQueries": [
+        "PKM-100 mine",
+        "ПКМ-100"
+      ],
+      "status": "none",
+      "note": "Проверены обозначение и варианты написания в публичном каталоге Sketchfab и веб-поиске. Наружный файл с подтверждённым соответствием карточке и правом включения в приложение в этом проходе не получен.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не получен в этом проходе"
+    },
+    {
+      "id": "mine-audit-v26-su-mds-1-omul",
+      "title": "МДС-1 «Омуль»",
+      "number": 462,
+      "apiQueries": [
+        "MDS-1 Omul",
+        "МДС-1 Омуль"
+      ],
+      "status": "none",
+      "note": "Проверены обозначение и варианты написания в публичном каталоге Sketchfab и веб-поиске. Наружный файл с подтверждённым соответствием карточке и правом включения в приложение в этом проходе не получен.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не получен в этом проходе"
+    },
+    {
+      "id": "mine-audit-v26-su-tum-500",
+      "title": "ТУМ-500",
+      "number": 463,
+      "apiQueries": [
+        "TUM-500",
+        "ТУМ-500"
+      ],
+      "status": "none",
+      "note": "Проверены обозначение и варианты написания в публичном каталоге Sketchfab и веб-поиске. Наружный файл с подтверждённым соответствием карточке и правом включения в приложение в этом проходе не получен.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не получен в этом проходе"
+    },
+    {
+      "id": "mine-audit-v26-su-tum-1000",
+      "title": "ТУМ-1000",
+      "number": 464,
+      "apiQueries": [
+        "TUM-1000",
+        "ТУМ-1000"
+      ],
+      "status": "none",
+      "note": "Проверены обозначение и варианты написания в публичном каталоге Sketchfab и веб-поиске. Наружный файл с подтверждённым соответствием карточке и правом включения в приложение в этом проходе не получен.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не получен в этом проходе"
+    },
+    {
+      "id": "ordnance-v27-m131-mopms-sistema-rasseivaniya-min",
+      "title": "M131 MOPMS — система рассеивания мин",
+      "number": 465,
+      "apiQueries": [
+        "M131 MOPMS",
+        "MOPMS dispenser"
+      ],
+      "status": "none",
+      "note": "Система M131 MOPMS проверена отдельно от её мин. Фотографии, описания и результаты по одноимённым предметам не считаются 3D-исходником. Подходящий наружный файл не получен.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не получен в этом проходе"
+    },
+    {
+      "id": "ordnance-v27-m131-mopms-ap-mine",
+      "title": "M131 MOPMS AP Mine",
+      "number": 466,
+      "apiQueries": [
+        "MOPMS AP mine",
+        "M77 landmine"
+      ],
+      "status": "none",
+      "note": "Кроме M131 MOPMS AP проверено обозначение M77, подтверждённое справочником ODIN. Поиск M77 landmine не дал подходящего файла. Модель контейнера системы не подставлялась вместо отдельной мины.",
+      "sources": [
+        {
+          "title": "M131 MOPMS · обозначения M77 AP и M78 AT",
+          "url": "https://odin.t2com.army.mil/WEG/Asset/9f88922779ffe76536807fadaf306608",
+          "author": "U.S. Army ODIN",
+          "license": "Это справочная страница; 3D-файл и лицензия на него не заявлены",
+          "verification": "Первичный справочник использован только для проверки названий вариантов поиска. Наличие 3D-файла не подтверждает."
+        }
+      ],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не получен в этом проходе"
+    },
+    {
+      "id": "ordnance-v27-m131-mopms-at-mine",
+      "title": "M131 MOPMS AT Mine",
+      "number": 467,
+      "apiQueries": [
+        "MOPMS AT mine",
+        "M78 mine"
+      ],
+      "status": "none",
+      "note": "Кроме M131 MOPMS AT проверено обозначение M78, подтверждённое справочником ODIN. Поиск M78 mine не дал подходящего файла. Найденная модель винтовки Valmet M78 исключена.",
+      "sources": [
+        {
+          "title": "M131 MOPMS · обозначения M77 AP и M78 AT",
+          "url": "https://odin.t2com.army.mil/WEG/Asset/9f88922779ffe76536807fadaf306608",
+          "author": "U.S. Army ODIN",
+          "license": "Это справочная страница; 3D-файл и лицензия на него не заявлены",
+          "verification": "Первичный справочник использован только для проверки названий вариантов поиска. Наличие 3D-файла не подтверждает."
+        }
+      ],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не получен в этом проходе"
+    },
+    {
+      "id": "ordnance-v27-m139-volcano-sistema-rasseivaniya-min",
+      "title": "M139 Volcano — система рассеивания мин",
+      "number": 468,
+      "apiQueries": [
+        "M139 Volcano",
+        "Volcano mine dispenser"
+      ],
+      "status": "restricted",
+      "note": "Подтверждены две записи MVRsimulation: M139 на паллете и M977 с системой M139. Обе доступны клиентам VRSG в собственном формате. Открытый GLB и разрешение на распространение внутри приложения не получены. Эти модели относятся к системе, а не к отдельным минам AP/AT.",
+      "sources": [
+        {
+          "title": "M139-4x10-pallet.US.green",
+          "url": "https://www.mvrsimulation.com/model/m139-4x10-palletusgreen",
+          "author": "MVRsimulation",
+          "license": "Для клиентов VRSG; собственный формат MVRsimulation. Открытая лицензия на включение в приложение не подтверждена.",
+          "designationConfidence": "source-labelled-system-only",
+          "verification": "Индивидуальная первичная страница прочитана: прямо указан M-139 Volcano и доступ для клиентов VRSG."
+        },
+        {
+          "title": "M977-M139.US.green",
+          "url": "https://www.mvrsimulation.com/model/m977-m139usgreen",
+          "author": "MVRsimulation",
+          "license": "Для клиентов VRSG; собственный формат MVRsimulation. Открытая лицензия на включение в приложение не подтверждена.",
+          "designationConfidence": "source-labelled-carrier-with-system",
+          "verification": "Индивидуальная первичная страница прочитана: M977 HEMTT с M-139 Volcano. Отдельные мины этим не подтверждены."
+        }
+      ],
+      "downloadedThisPass": false,
+      "statusLabel": "Закрытая библиотека · файл не получен"
+    },
+    {
+      "id": "ordnance-v27-m139-volcano-ap-mine",
+      "title": "M139 Volcano AP Mine",
+      "number": 469,
+      "apiQueries": [
+        "Volcano AP mine"
+      ],
+      "status": "none",
+      "note": "Проверена отдельная мина AP/AT системы M139 Volcano. Найденная 3D-модель системы или её носителя не подтверждает наличие отдельной модели мины. Файл для этой карточки не получен.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не получен в этом проходе"
+    },
+    {
+      "id": "ordnance-v27-m139-volcano-at-mine",
+      "title": "M139 Volcano AT Mine",
+      "number": 470,
+      "apiQueries": [
+        "Volcano AT mine"
+      ],
+      "status": "none",
+      "note": "Проверена отдельная мина AP/AT системы M139 Volcano. Найденная 3D-модель системы или её носителя не подтверждает наличие отдельной модели мины. Файл для этой карточки не получен.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не получен в этом проходе"
+    },
+    {
+      "id": "ordnance-v27-ms-4",
+      "title": "МС-4",
+      "number": 471,
+      "apiQueries": [
+        "MS-4 mine",
+        "МС-4 мина"
+      ],
+      "status": "none",
+      "note": "Проверены обозначение и варианты написания в публичном каталоге Sketchfab и веб-поиске. Наружный файл с подтверждённым соответствием карточке и правом включения в приложение в этом проходе не получен.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не получен в этом проходе"
+    },
+    {
+      "id": "ordnance-v27-sm-320",
+      "title": "СМ-320",
+      "number": 472,
+      "apiQueries": [
+        "SM-320 mine",
+        "СМ-320"
+      ],
+      "status": "none",
+      "note": "Проверены обозначение и варианты написания в публичном каталоге Sketchfab и веб-поиске. Наружный файл с подтверждённым соответствием карточке и правом включения в приложение в этом проходе не получен.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не получен в этом проходе"
+    },
+    {
+      "id": "ordnance-v27-pmfc-1-kuba",
+      "title": "PMFC-1 (Куба)",
+      "number": 473,
+      "apiQueries": [
+        "PMFC-1",
+        "PMFC1"
+      ],
+      "status": "none",
+      "note": "Проверены обозначение и варианты написания в публичном каталоге Sketchfab и веб-поиске. Наружный файл с подтверждённым соответствием карточке и правом включения в приложение в этом проходе не получен.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не получен в этом проходе"
+    },
+    {
+      "id": "ordnance-v27-pmfh-1-kuba",
+      "title": "PMFH-1 (Куба)",
+      "number": 474,
+      "apiQueries": [
+        "PMFH-1",
+        "PMFH1"
+      ],
+      "status": "none",
+      "note": "Проверены обозначение и варианты написания в публичном каталоге Sketchfab и веб-поиске. Наружный файл с подтверждённым соответствием карточке и правом включения в приложение в этом проходе не получен.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не получен в этом проходе"
+    },
+    {
+      "id": "ordnance-v27-pmm-1-kuba",
+      "title": "PMM-1 (Куба)",
+      "number": 475,
+      "apiQueries": [
+        "PMM-1 Cuba mine",
+        "PMM1 mine"
+      ],
+      "status": "none",
+      "note": "Проверены обозначение и варианты написания в публичном каталоге Sketchfab и веб-поиске. Наружный файл с подтверждённым соответствием карточке и правом включения в приложение в этом проходе не получен.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не получен в этом проходе"
+    },
+    {
+      "id": "ordnance-v27-m57-app-m57-kuba",
+      "title": "M57 (Куба)",
+      "number": 476,
+      "apiQueries": [
+        "M57 Cuban mine",
+        "M57 landmine Cuba"
+      ],
+      "status": "none",
+      "note": "Проверены обозначение и варианты написания в публичном каталоге Sketchfab и веб-поиске. Наружный файл с подтверждённым соответствием карточке и правом включения в приложение в этом проходе не получен.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не получен в этом проходе"
+    },
+    {
+      "id": "ordnance-v30-app-m57-kndr",
+      "title": "APP M57 (КНДР)",
+      "number": 477,
+      "apiQueries": [
+        "APP M57",
+        "APP-M57"
+      ],
+      "status": "none",
+      "note": "Проверены обозначение и варианты написания в публичном каталоге Sketchfab и веб-поиске. Наружный файл с подтверждённым соответствием карточке и правом включения в приложение в этом проходе не получен.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не получен в этом проходе"
+    },
+    {
+      "id": "ordnance-v27-mm1-myanma",
+      "title": "MM1 (Мьянма)",
+      "number": 478,
+      "apiQueries": [
+        "MM1 Myanmar mine",
+        "MM-1 Burma mine"
+      ],
+      "status": "variant",
+      "note": "Проверена мьянманская модель MM и варианты написания с указанием страны. Модели зарубежных прототипов не считались точным совпадением с местным исполнением. Самостоятельный подходящий наружный файл не получен.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Соответствие варианту не подтверждено"
+    },
+    {
+      "id": "ordnance-v27-mm2-myanma",
+      "title": "MM2 (Мьянма)",
+      "number": 479,
+      "apiQueries": [
+        "MM2 Myanmar mine",
+        "MM-2 Burma mine"
+      ],
+      "status": "variant",
+      "note": "Проверена мьянманская модель MM и варианты написания с указанием страны. Модели зарубежных прототипов не считались точным совпадением с местным исполнением. Самостоятельный подходящий наружный файл не получен.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Соответствие варианту не подтверждено"
+    },
+    {
+      "id": "ordnance-v27-mm5-myanma",
+      "title": "MM5 (Мьянма)",
+      "number": 480,
+      "apiQueries": [
+        "MM5 Myanmar mine",
+        "MM-5 Burma mine"
+      ],
+      "status": "variant",
+      "note": "Проверена мьянманская модель MM и варианты написания с указанием страны. Модели зарубежных прототипов не считались точным совпадением с местным исполнением. Самостоятельный подходящий наружный файл не получен.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Соответствие варианту не подтверждено"
+    },
+    {
+      "id": "ordnance-v27-mm6-myanma",
+      "title": "MM6 (Мьянма)",
+      "number": 481,
+      "apiQueries": [
+        "MM6 Myanmar mine",
+        "MM-6 Burma mine"
+      ],
+      "status": "variant",
+      "note": "Проверена мьянманская модель MM и варианты написания с указанием страны. Модели зарубежных прототипов не считались точным совпадением с местным исполнением. Самостоятельный подходящий наружный файл не получен.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Соответствие варианту не подтверждено"
+    },
+    {
+      "id": "ordnance-v27-alcm-82-alcm-83-kndr",
+      "title": "ALCM-82 / ALCM-83 (КНДР)",
+      "number": 482,
+      "apiQueries": [
+        "ALCM-82",
+        "ALCM-83"
+      ],
+      "status": "identity",
+      "note": "В карточке совместно указаны ALCM-82 / ALCM-83; описание и название используют разные индексы. Это расхождение сохранено для отдельной проверки каталога. Родственная ПДМ-1М не назначалась автоматически как точная 3D-модель этой карточки.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Обозначение требует отдельной проверки"
+    },
+    {
+      "id": "ordnance-v27-atm-41-kndr",
+      "title": "ATM-41 (КНДР)",
+      "number": 483,
+      "apiQueries": [
+        "ATM-41 mine",
+        "ATM41 mine"
+      ],
+      "status": "variant",
+      "note": "Проверено северокорейское обозначение. Сходство с советскими семействами ТМ/ТМД не подтверждает точное исполнение. Модели ТМ-46 не привязывались к ATM-46, ATM-46N или ATM-72; новый файл для этой карточки не получен.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Соответствие варианту не подтверждено"
+    },
+    {
+      "id": "ordnance-v27-atm-44-kndr",
+      "title": "ATM-44 (КНДР)",
+      "number": 484,
+      "apiQueries": [
+        "ATM-44 mine",
+        "ATM44 mine"
+      ],
+      "status": "variant",
+      "note": "Проверено северокорейское обозначение. Сходство с советскими семействами ТМ/ТМД не подтверждает точное исполнение. Модели ТМ-46 не привязывались к ATM-46, ATM-46N или ATM-72; новый файл для этой карточки не получен.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Соответствие варианту не подтверждено"
+    },
+    {
+      "id": "ordnance-v27-atm-46-kndr",
+      "title": "ATM-46 (КНДР)",
+      "number": 485,
+      "apiQueries": [
+        "ATM-46 mine",
+        "ATM46 mine"
+      ],
+      "status": "variant",
+      "note": "Проверено северокорейское обозначение. Сходство с советскими семействами ТМ/ТМД не подтверждает точное исполнение. Модели ТМ-46 не привязывались к ATM-46, ATM-46N или ATM-72; новый файл для этой карточки не получен.",
+      "sources": [
+        {
+          "title": "Soviet TM-46 Anti Tank Blast Mine",
+          "url": "https://sketchfab.com/3d-models/none-63ecc5f460f94db09fac7d458ab53fb2",
+          "author": "David Phoenix",
+          "license": "Открытая лицензия не указана; скачивание отключено",
+          "uid": "63ecc5f460f94db09fac7d458ab53fb2",
+          "isDownloadable": false,
+          "verification": "Проверены первичные публичные метаданные Sketchfab. Соответствие конкретному национальному варианту не подтверждено."
+        }
+      ],
+      "downloadedThisPass": false,
+      "statusLabel": "Соответствие варианту не подтверждено"
+    },
+    {
+      "id": "ordnance-v27-atm-46n-kndr",
+      "title": "ATM-46N (КНДР)",
+      "number": 486,
+      "apiQueries": [
+        "ATM-46N"
+      ],
+      "status": "variant",
+      "note": "Проверено северокорейское обозначение. Сходство с советскими семействами ТМ/ТМД не подтверждает точное исполнение. Модели ТМ-46 не привязывались к ATM-46, ATM-46N или ATM-72; новый файл для этой карточки не получен.",
+      "sources": [
+        {
+          "title": "Soviet TM-46 Anti Tank Blast Mine",
+          "url": "https://sketchfab.com/3d-models/none-63ecc5f460f94db09fac7d458ab53fb2",
+          "author": "David Phoenix",
+          "license": "Открытая лицензия не указана; скачивание отключено",
+          "uid": "63ecc5f460f94db09fac7d458ab53fb2",
+          "isDownloadable": false,
+          "verification": "Проверены первичные публичные метаданные Sketchfab. Соответствие конкретному национальному варианту не подтверждено."
+        }
+      ],
+      "downloadedThisPass": false,
+      "statusLabel": "Соответствие варианту не подтверждено"
+    },
+    {
+      "id": "ordnance-v27-atm-72-kndr",
+      "title": "ATM-72 (КНДР)",
+      "number": 487,
+      "apiQueries": [
+        "ATM-72 mine",
+        "ATM72 mine"
+      ],
+      "status": "variant",
+      "note": "Проверено северокорейское обозначение. Сходство с советскими семействами ТМ/ТМД не подтверждает точное исполнение. Модели ТМ-46 не привязывались к ATM-46, ATM-46N или ATM-72; новый файл для этой карточки не получен.",
+      "sources": [
+        {
+          "title": "Soviet TM-46 Anti Tank Blast Mine",
+          "url": "https://sketchfab.com/3d-models/none-63ecc5f460f94db09fac7d458ab53fb2",
+          "author": "David Phoenix",
+          "license": "Открытая лицензия не указана; скачивание отключено",
+          "uid": "63ecc5f460f94db09fac7d458ab53fb2",
+          "isDownloadable": false,
+          "verification": "Проверены первичные публичные метаданные Sketchfab. Соответствие конкретному национальному варианту не подтверждено."
+        }
+      ],
+      "downloadedThisPass": false,
+      "statusLabel": "Соответствие варианту не подтверждено"
+    },
+    {
+      "id": "ordnance-v27-atm-6-kndr",
+      "title": "ATM-6 (Австрия)",
+      "number": 488,
+      "apiQueries": [
+        "ATM-6 mine",
+        "ATM6 mine"
+      ],
+      "status": "none",
+      "note": "Проверена именно австрийская ATM-6 / ATM-7, как указано в текущем названии карточки. Старое слово kndr в техническом ID не использовалось как страна. Игровые Battletech ATM-6 исключены; подходящий файл не получен.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не получен в этом проходе"
+    },
+    {
+      "id": "ordnance-v27-atm-7-kndr",
+      "title": "ATM-7 (Австрия)",
+      "number": 489,
+      "apiQueries": [
+        "ATM-7 mine",
+        "ATM7 mine"
+      ],
+      "status": "none",
+      "note": "Проверена именно австрийская ATM-6 / ATM-7, как указано в текущем названии карточки. Старое слово kndr в техническом ID не использовалось как страна. Игровые Battletech ATM-6 исключены; подходящий файл не получен.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не получен в этом проходе"
+    },
+    {
+      "id": "ordnance-v27-100-mm-at-mine-vetnam",
+      "title": "100-mm AT Mine (Вьетнам)",
+      "number": 490,
+      "apiQueries": [
+        "100 mm Vietnam mine"
+      ],
+      "status": "lead",
+      "note": "Проверены обозначение и вьетнамские варианты поиска. Найдена виртуальная библиотека VNMAC с 2D/3D-экспозицией, но именно эта карточка и отдельный скачиваемый файл в ней не подтверждены. Домашняя страница доступна; тур в текущем браузере не открылся из-за ошибки соединения. В подборку файл не добавлен.",
+      "sources": [
+        {
+          "title": "Национальная электронная библиотека VNMAC",
+          "url": "https://thuviendientu.vnmac.gov.vn/",
+          "author": "VNMAC",
+          "license": "На домашней странице указан copyright VNMAC; разрешение распространять 3D-файлы в другом приложении не установлено",
+          "verification": "Публичная домашняя страница прочитана. Виртуальный тур в браузере дважды завершился ошибкой соединения upstream. Конкретные экспонаты, файлы и условия скачивания не подтверждены.",
+          "status": "collection-lead-only"
+        }
+      ],
+      "downloadedThisPass": false,
+      "statusLabel": "Направление поиска · конкретный файл не подтверждён"
+    },
+    {
+      "id": "ordnance-v27-150-mm-at-mine-vetnam",
+      "title": "150-mm AT Mine (Вьетнам)",
+      "number": 491,
+      "apiQueries": [
+        "150 mm Vietnam mine"
+      ],
+      "status": "lead",
+      "note": "Проверены обозначение и вьетнамские варианты поиска. Найдена виртуальная библиотека VNMAC с 2D/3D-экспозицией, но именно эта карточка и отдельный скачиваемый файл в ней не подтверждены. Домашняя страница доступна; тур в текущем браузере не открылся из-за ошибки соединения. В подборку файл не добавлен.",
+      "sources": [
+        {
+          "title": "Национальная электронная библиотека VNMAC",
+          "url": "https://thuviendientu.vnmac.gov.vn/",
+          "author": "VNMAC",
+          "license": "На домашней странице указан copyright VNMAC; разрешение распространять 3D-файлы в другом приложении не установлено",
+          "verification": "Публичная домашняя страница прочитана. Виртуальный тур в браузере дважды завершился ошибкой соединения upstream. Конкретные экспонаты, файлы и условия скачивания не подтверждены.",
+          "status": "collection-lead-only"
+        }
+      ],
+      "downloadedThisPass": false,
+      "statusLabel": "Направление поиска · конкретный файл не подтверждён"
+    },
+    {
+      "id": "ordnance-v27-200-mm-at-mine-vetnam",
+      "title": "200-mm AT Mine (Вьетнам)",
+      "number": 492,
+      "apiQueries": [
+        "200 mm Vietnam mine"
+      ],
+      "status": "lead",
+      "note": "Проверены обозначение и вьетнамские варианты поиска. Найдена виртуальная библиотека VNMAC с 2D/3D-экспозицией, но именно эта карточка и отдельный скачиваемый файл в ней не подтверждены. Домашняя страница доступна; тур в текущем браузере не открылся из-за ошибки соединения. В подборку файл не добавлен.",
+      "sources": [
+        {
+          "title": "Национальная электронная библиотека VNMAC",
+          "url": "https://thuviendientu.vnmac.gov.vn/",
+          "author": "VNMAC",
+          "license": "На домашней странице указан copyright VNMAC; разрешение распространять 3D-файлы в другом приложении не установлено",
+          "verification": "Публичная домашняя страница прочитана. Виртуальный тур в браузере дважды завершился ошибкой соединения upstream. Конкретные экспонаты, файлы и условия скачивания не подтверждены.",
+          "status": "collection-lead-only"
+        }
+      ],
+      "downloadedThisPass": false,
+      "statusLabel": "Направление поиска · конкретный файл не подтверждён"
+    },
+    {
+      "id": "ordnance-v27-model-1948-ap-mine-vetnam",
+      "title": "Model 1948 AP Mine (Вьетнам)",
+      "number": 493,
+      "apiQueries": [
+        "Model 1948 Vietnam mine",
+        "Vietnamese 1948 mine"
+      ],
+      "status": "lead",
+      "note": "Проверены обозначение и вьетнамские варианты поиска. Найдена виртуальная библиотека VNMAC с 2D/3D-экспозицией, но именно эта карточка и отдельный скачиваемый файл в ней не подтверждены. Домашняя страница доступна; тур в текущем браузере не открылся из-за ошибки соединения. В подборку файл не добавлен.",
+      "sources": [
+        {
+          "title": "Национальная электронная библиотека VNMAC",
+          "url": "https://thuviendientu.vnmac.gov.vn/",
+          "author": "VNMAC",
+          "license": "На домашней странице указан copyright VNMAC; разрешение распространять 3D-файлы в другом приложении не установлено",
+          "verification": "Публичная домашняя страница прочитана. Виртуальный тур в браузере дважды завершился ошибкой соединения upstream. Конкретные экспонаты, файлы и условия скачивания не подтверждены.",
+          "status": "collection-lead-only"
+        }
+      ],
+      "downloadedThisPass": false,
+      "statusLabel": "Направление поиска · конкретный файл не подтверждён"
+    },
+    {
+      "id": "ordnance-v27-min-grenade-shaped-vetnam",
+      "title": "MIN grenade-shaped (Вьетнам)",
+      "number": 494,
+      "apiQueries": [
+        "MIN grenade shaped mine",
+        "Vietnam MIN mine"
+      ],
+      "status": "lead",
+      "note": "Проверены обозначение и вьетнамские варианты поиска. Найдена виртуальная библиотека VNMAC с 2D/3D-экспозицией, но именно эта карточка и отдельный скачиваемый файл в ней не подтверждены. Домашняя страница доступна; тур в текущем браузере не открылся из-за ошибки соединения. В подборку файл не добавлен.",
+      "sources": [
+        {
+          "title": "Национальная электронная библиотека VNMAC",
+          "url": "https://thuviendientu.vnmac.gov.vn/",
+          "author": "VNMAC",
+          "license": "На домашней странице указан copyright VNMAC; разрешение распространять 3D-файлы в другом приложении не установлено",
+          "verification": "Публичная домашняя страница прочитана. Виртуальный тур в браузере дважды завершился ошибкой соединения upstream. Конкретные экспонаты, файлы и условия скачивания не подтверждены.",
+          "status": "collection-lead-only"
+        }
+      ],
+      "downloadedThisPass": false,
+      "statusLabel": "Направление поиска · конкретный файл не подтверждён"
+    },
+    {
+      "id": "ordnance-v27-ym-ii-iran",
+      "title": "YM-II (Иран)",
+      "number": 495,
+      "apiQueries": [
+        "YM-II mine",
+        "YM2 mine"
+      ],
+      "status": "none",
+      "note": "Проверены обозначение и варианты написания в публичном каталоге Sketchfab и веб-поиске. Наружный файл с подтверждённым соответствием карточке и правом включения в приложение в этом проходе не получен.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не получен в этом проходе"
+    },
+    {
+      "id": "ordnance-v27-ym-iii-ym-3-iran",
+      "title": "YM-III / YM-3 (Иран)",
+      "number": 496,
+      "apiQueries": [
+        "YM-III mine",
+        "YM3 mine"
+      ],
+      "status": "excluded",
+      "note": "Найдено предложение, объединяющее китайскую Type 84 / GLD-220 и обозначение YM-III с разрезной моделью. Оно исключено. Совпадение иранского варианта, отдельный закрытый наружный файл и право распространения не подтверждены; файл не скачивался.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Найденное предложение исключено"
+    },
+    {
+      "id": "ordnance-v27-ym-4-iran",
+      "title": "YM-4 (Иран)",
+      "number": 497,
+      "apiQueries": [
+        "YM-4 mine",
+        "YM4 mine"
+      ],
+      "status": "none",
+      "note": "Проверены обозначение и варианты написания в публичном каталоге Sketchfab и веб-поиске. Наружный файл с подтверждённым соответствием карточке и правом включения в приложение в этом проходе не получен.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не получен в этом проходе"
+    },
+    {
+      "id": "ordnance-v27-km14-respublika-koreya",
+      "title": "KM14 (Республика Корея)",
+      "number": 498,
+      "apiQueries": [
+        "KM14",
+        "KM-14 mine"
+      ],
+      "status": "variant",
+      "note": "Проверен корейский вариант KM, включая указанное в карточке учебное исполнение Koryo Pyrotechnics. Американские M14/M16/M18A1 и ранее собранные файлы не подтверждают корейского изготовителя и исполнение. Новый файл не получен.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Соответствие варианту не подтверждено"
+    },
+    {
+      "id": "ordnance-v27-km16-respublika-koreya",
+      "title": "KM16 (Республика Корея)",
+      "number": 499,
+      "apiQueries": [
+        "KM16",
+        "KM-16 mine"
+      ],
+      "status": "variant",
+      "note": "Проверен корейский вариант KM, включая указанное в карточке учебное исполнение Koryo Pyrotechnics. Американские M14/M16/M18A1 и ранее собранные файлы не подтверждают корейского изготовителя и исполнение. Новый файл не получен.",
+      "sources": [
+        {
+          "title": "M16 Mine",
+          "url": "https://sketchfab.com/3d-models/none-c77a7a14521d4bdfa1eb88870c9ccdbf",
+          "author": "Z.E.P.H.Y.R",
+          "license": "Открытая лицензия не указана; скачивание отключено",
+          "uid": "c77a7a14521d4bdfa1eb88870c9ccdbf",
+          "isDownloadable": false,
+          "verification": "Проверены первичные публичные метаданные Sketchfab. Соответствие конкретному национальному варианту не подтверждено."
+        }
+      ],
+      "downloadedThisPass": false,
+      "statusLabel": "Соответствие варианту не подтверждено"
+    },
+    {
+      "id": "ordnance-v27-km18a1-respublika-koreya",
+      "title": "KM18A1 (Республика Корея)",
+      "number": 500,
+      "apiQueries": [
+        "KM18A1",
+        "KM-18A1"
+      ],
+      "status": "variant",
+      "note": "Проверен корейский вариант KM, включая указанное в карточке учебное исполнение Koryo Pyrotechnics. Американские M14/M16/M18A1 и ранее собранные файлы не подтверждают корейского изготовителя и исполнение. Новый файл не получен.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Соответствие варианту не подтверждено"
+    }
+  ],
+  "queries": [
+    {
+      "query": "UGM naval mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=UGM+naval+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.17
+    },
+    {
+      "query": "УГМ мина",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=%D0%A3%D0%93%D0%9C+%D0%BC%D0%B8%D0%BD%D0%B0&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.4
+    },
+    {
+      "query": "KAM naval mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=KAM+naval+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.19
+    },
+    {
+      "query": "КАМ мина",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=%D0%9A%D0%90%D0%9C+%D0%BC%D0%B8%D0%BD%D0%B0&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.4
+    },
+    {
+      "query": "Lira naval mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=Lira+naval+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 5.81
+    },
+    {
+      "query": "Лира мина",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=%D0%9B%D0%B8%D1%80%D0%B0+%D0%BC%D0%B8%D0%BD%D0%B0&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 5.75
+    },
+    {
+      "query": "ML-7 mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=ML-7+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 5.33
+    },
+    {
+      "query": "МЛ-7",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=%D0%9C%D0%9B-7&count=24",
+      "ok": true,
+      "models": [
+        {
+          "uid": "5214279f0d254bdda667a525d29545ef",
+          "name": "Стеклоформующая машина ВВ-7",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-5214279f0d254bdda667a525d29545ef",
+          "isDownloadable": true,
+          "license": {
+            "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+            "label": "CC Attribution"
+          },
+          "faceCount": 4256,
+          "vertexCount": 2216,
+          "author": "GSPI",
+          "authorProfile": "https://sketchfab.com/syrmank"
+        }
+      ],
+      "hasNext": false,
+      "seconds": 5.67
+    },
+    {
+      "query": "ML-8 mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=ML-8+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.2
+    },
+    {
+      "query": "МЛ-8",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=%D0%9C%D0%9B-8&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 3.8
+    },
+    {
+      "query": "MS-2 mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=MS-2+mine&count=24",
+      "ok": true,
+      "models": [
+        {
+          "uid": "4acfad30508041378cbfd29e9adf4dcd",
+          "name": "land mine",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-4acfad30508041378cbfd29e9adf4dcd",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 1156,
+          "vertexCount": 1242,
+          "author": "ms",
+          "authorProfile": "https://sketchfab.com/miroslavsimic"
+        }
+      ],
+      "hasNext": false,
+      "seconds": 3.95
+    },
+    {
+      "query": "МС-2 мина",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=%D0%9C%D0%A1-2+%D0%BC%D0%B8%D0%BD%D0%B0&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 3.88
+    },
+    {
+      "query": "MS-3 mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=MS-3+mine&count=24",
+      "ok": true,
+      "models": [
+        {
+          "uid": "1e10cba7628146f1acff5ba1a6291c90",
+          "name": "PTM-3 Landmine",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-1e10cba7628146f1acff5ba1a6291c90",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 113113,
+          "vertexCount": 63130,
+          "author": "CAT-UXO",
+          "authorProfile": "https://sketchfab.com/CAT-UXO"
+        }
+      ],
+      "hasNext": false,
+      "seconds": 4.29
+    },
+    {
+      "query": "МС-3 мина",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=%D0%9C%D0%A1-3+%D0%BC%D0%B8%D0%BD%D0%B0&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.1
+    },
+    {
+      "query": "PMD-57",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=PMD-57&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.14
+    },
+    {
+      "query": "ПМД-57",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=%D0%9F%D0%9C%D0%94-57&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.3
+    },
+    {
+      "query": "Hammerhead naval mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=Hammerhead+naval+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.6
+    },
+    {
+      "query": "Hammerhead encapsulated effector",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=Hammerhead+encapsulated+effector&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.65
+    },
+    {
+      "query": "Mk68 mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=Mk68+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.5
+    },
+    {
+      "query": "Mark 68 naval mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=Mark+68+naval+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.56
+    },
+    {
+      "query": "PKM-100 mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=PKM-100+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 5.29
+    },
+    {
+      "query": "ПКМ-100",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=%D0%9F%D0%9A%D0%9C-100&count=24",
+      "ok": true,
+      "models": [
+        {
+          "uid": "acb6845e77f944258d1be1cdc8c87cd0",
+          "name": "Жуков Георгий Константинович",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-acb6845e77f944258d1be1cdc8c87cd0",
+          "isDownloadable": true,
+          "license": {
+            "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+            "label": "CC Attribution"
+          },
+          "faceCount": 824907,
+          "vertexCount": 425369,
+          "author": "Boban__Velike",
+          "authorProfile": "https://sketchfab.com/Boban__Velike"
+        },
+        {
+          "uid": "c81ccce3b50644f889da07c937f5ff9c",
+          "name": "СБМ_101_00_000_ШУ_4_ПК_350х350х300_Вводы_BH25Мр2",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-c81ccce3b50644f889da07c937f5ff9c",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 224248,
+          "vertexCount": 111088,
+          "author": "mary_kuzn",
+          "authorProfile": "https://sketchfab.com/mary_kuzn"
+        },
+        {
+          "uid": "b54b7a96ae04487081662e4ff5383956",
+          "name": "Клавиатура Keyboard A4Tech Bloody B800",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-b54b7a96ae04487081662e4ff5383956",
+          "isDownloadable": true,
+          "license": {
+            "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+            "label": "CC Attribution"
+          },
+          "faceCount": 9244,
+          "vertexCount": 6320,
+          "author": "Duginov",
+          "authorProfile": "https://sketchfab.com/xepacexakep"
+        }
+      ],
+      "hasNext": false,
+      "seconds": 5.35
+    },
+    {
+      "query": "MDS-1 Omul",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=MDS-1+Omul&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 5.26
+    },
+    {
+      "query": "МДС-1 Омуль",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=%D0%9C%D0%94%D0%A1-1+%D0%9E%D0%BC%D1%83%D0%BB%D1%8C&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 5.29
+    },
+    {
+      "query": "TUM-500",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=TUM-500&count=24",
+      "ok": true,
+      "models": [
+        {
+          "uid": "f139edcc7b764f6ebde27be77ce53eca",
+          "name": "Valley of the Kings Tombs – Luxor, Egypt",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-f139edcc7b764f6ebde27be77ce53eca",
+          "isDownloadable": true,
+          "license": {
+            "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+            "label": "CC Attribution"
+          },
+          "faceCount": 8192,
+          "vertexCount": 4225,
+          "author": "Nate Loper  🗺️ ⛏🏺",
+          "authorProfile": "https://sketchfab.com/arizonaguide"
+        },
+        {
+          "uid": "204c992ab27c4c1cad6a60b7c20b8c01",
+          "name": "Russian X-555 air-launched cruise missile",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-204c992ab27c4c1cad6a60b7c20b8c01",
+          "isDownloadable": true,
+          "license": {
+            "uid": "bbfe3f7dbcdd4122b966b85b9786a989",
+            "label": "CC Attribution-NonCommercial"
+          },
+          "faceCount": 19282,
+          "vertexCount": 10428,
+          "author": "Siberia",
+          "authorProfile": "https://sketchfab.com/LtxxwSibeRia"
+        },
+        {
+          "uid": "7edd76fc859942b3b544fbceb82fb3b6",
+          "name": "Cámara deportiva sumergible full HD | CAM-500",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-7edd76fc859942b3b544fbceb82fb3b6",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 313509,
+          "vertexCount": 157635,
+          "author": "Steren3D",
+          "authorProfile": "https://sketchfab.com/steren3D"
+        },
+        {
+          "uid": "f0c78933ccc04a51b60a23fd45828c0f",
+          "name": "Bokoni - Blaauwboschkraal - Enclosure B",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-f0c78933ccc04a51b60a23fd45828c0f",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 957259,
+          "vertexCount": 513425,
+          "author": "Zamani Project-UCT",
+          "authorProfile": "https://sketchfab.com/zamaniproject"
+        },
+        {
+          "uid": "97e70fa9bce24257adb8db6b7ddb8bba",
+          "name": "Ke duc lo 4 tang",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-97e70fa9bce24257adb8db6b7ddb8bba",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 275330,
+          "vertexCount": 137667,
+          "author": "Ke inox cong nghiep",
+          "authorProfile": "https://sketchfab.com/keinoxcongnghiep"
+        },
+        {
+          "uid": "8349c4f5c7e3475fa6cf7edebd9596e9",
+          "name": "Tủ hóa chất bằng thép - LSSK",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-8349c4f5c7e3475fa6cf7edebd9596e9",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 299755,
+          "vertexCount": 148428,
+          "author": "Ly Son Sa Ky Lab",
+          "authorProfile": "https://sketchfab.com/doanluanlab"
+        },
+        {
+          "uid": "05e542566fc24224bf6dea7c9511ad27",
+          "name": "Hilton - Riverside, Kuching, Sarawak, MYS #OSS",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-05e542566fc24224bf6dea7c9511ad27",
+          "isDownloadable": true,
+          "license": {
+            "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+            "label": "CC Attribution"
+          },
+          "faceCount": 156999,
+          "vertexCount": 80867,
+          "author": "JFN",
+          "authorProfile": "https://sketchfab.com/db4"
+        },
+        {
+          "uid": "ada9ccb689014b0ba6844ce0d49c23c6",
+          "name": "スピーカー（ブックシェルフ型）",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-ada9ccb689014b0ba6844ce0d49c23c6",
+          "isDownloadable": true,
+          "license": {
+            "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+            "label": "CC Attribution"
+          },
+          "faceCount": 5712,
+          "vertexCount": 3315,
+          "author": "tuma_youzyo/T_Y",
+          "authorProfile": "https://sketchfab.com/tumayouzi"
+        },
+        {
+          "uid": "11202b81b0654681bef62e3086937279",
+          "name": "241 - Air - Avion DO 27 - Josselin",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-11202b81b0654681bef62e3086937279",
+          "isDownloadable": true,
+          "license": {
+            "uid": "bbfe3f7dbcdd4122b966b85b9786a989",
+            "label": "CC Attribution-NonCommercial"
+          },
+          "faceCount": 174962,
+          "vertexCount": 88045,
+          "author": "cdg",
+          "authorProfile": "https://sketchfab.com/cdg"
+        },
+        {
+          "uid": "97b124f9318845ea820aab89d0557b06",
+          "name": "Ottoman - Lò rang cà phê",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-97b124f9318845ea820aab89d0557b06",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 8653,
+          "vertexCount": 4562,
+          "author": "Bảo tàng Thế giới Cà phê",
+          "authorProfile": "https://sketchfab.com/BaotangTheGioiCaPhe"
+        },
+        {
+          "uid": "1d3a7aae364c4ea78f907581ba341340",
+          "name": "SMIT DAMIETTA",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-1d3a7aae364c4ea78f907581ba341340",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 222725,
+          "vertexCount": 56999,
+          "author": "ahmad adel mostafa",
+          "authorProfile": "https://sketchfab.com/ahmadamostafa"
+        },
+        {
+          "uid": "4ad06e0ae1044b9694939f3729cdb7d3",
+          "name": "Seehof Memmelsdorf - Turmzwiebel",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-4ad06e0ae1044b9694939f3729cdb7d3",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 3275848,
+          "vertexCount": 1638709,
+          "author": "illustrated architecture",
+          "authorProfile": "https://sketchfab.com/illustrated-architecture"
+        },
+        {
+          "uid": "d4a72fc0be7b4dab8f040de40b3bb3bb",
+          "name": "Gun-mp7",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-d4a72fc0be7b4dab8f040de40b3bb3bb",
+          "isDownloadable": true,
+          "license": {
+            "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+            "label": "CC Attribution"
+          },
+          "faceCount": 970,
+          "vertexCount": 644,
+          "author": "Reivaj",
+          "authorProfile": "https://sketchfab.com/Reivaj"
+        },
+        {
+          "uid": "9d31111d05f04af9934e3b17ed209b2e",
+          "name": "Thần Hộ Pháp Dravapala | Bảo vật quốc gia",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-9d31111d05f04af9934e3b17ed209b2e",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 530704,
+          "vertexCount": 265354,
+          "author": "Atlantic Truong | Vietnam 3D",
+          "authorProfile": "https://sketchfab.com/atlantictruong19"
+        },
+        {
+          "uid": "e195a8f833b54fa8a7ba1fb8caeeb6a5",
+          "name": "Kralzfiller Authocollecto LT XSR Hyperspecialeé",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-e195a8f833b54fa8a7ba1fb8caeeb6a5",
+          "isDownloadable": true,
+          "license": {
+            "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+            "label": "CC Attribution"
+          },
+          "faceCount": 984385,
+          "vertexCount": 528029,
+          "author": "Qwertyazzertyx",
+          "authorProfile": "https://sketchfab.com/Qwertyazzertyx"
+        },
+        {
+          "uid": "b75b96a7e48044bf8eb820396add28ed",
+          "name": "MARGARINE 250g & 500g Spread Tub 3D File",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-b75b96a7e48044bf8eb820396add28ed",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 49973,
+          "vertexCount": 22916,
+          "author": "packreate",
+          "authorProfile": "https://sketchfab.com/packreate"
+        },
+        {
+          "uid": "e5511705c9e74fd0be037024f0546c82",
+          "name": "Jacuzzi 50B BLEND",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-e5511705c9e74fd0be037024f0546c82",
+          "isDownloadable": false,
+          "license": {
+            "uid": "783b685da9bf457d81e829fa283f3567",
+            "label": "Standard"
+          },
+          "faceCount": 149066,
+          "vertexCount": 81818,
+          "author": "HiQ3D",
+          "authorProfile": "https://sketchfab.com/HiQ3D"
+        },
+        {
+          "uid": "b52758e5551b4a9baa0d7f1f8f47dfd3",
+          "name": "Tugboat",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-b52758e5551b4a9baa0d7f1f8f47dfd3",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 132440,
+          "vertexCount": 80589,
+          "author": "Crack Sparrow Capt.",
+          "authorProfile": "https://sketchfab.com/VR.GOD"
+        },
+        {
+          "uid": "28972f3f3f344167ac45f47fdddac430",
+          "name": "Myšia Hôrka, Spišský Štvrtok",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-28972f3f3f344167ac45f47fdddac430",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 481912,
+          "vertexCount": 240782,
+          "author": "spisart",
+          "authorProfile": "https://sketchfab.com/spisart"
+        },
+        {
+          "uid": "d82401ad2db74c5dab5672ed8e53d7cd",
+          "name": "Lia Fàil",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-d82401ad2db74c5dab5672ed8e53d7cd",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 218918,
+          "vertexCount": 109441,
+          "author": "Historic Environment Scotland",
+          "authorProfile": "https://sketchfab.com/HistoricEnvironmentScotland"
+        },
+        {
+          "uid": "f2ae886d6aee4c36b6735db079a740fe",
+          "name": "Tu inox cong nghiep 2 canh",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-f2ae886d6aee4c36b6735db079a740fe",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 414220,
+          "vertexCount": 207112,
+          "author": "Tu inox cong nghiep",
+          "authorProfile": "https://sketchfab.com/tuinoxcongnghiep"
+        },
+        {
+          "uid": "fb43bd1f663b4e06813b40452b85add0",
+          "name": "Lemon(1)",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-fb43bd1f663b4e06813b40452b85add0",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 41601,
+          "vertexCount": 21483,
+          "author": "ddubrovska150",
+          "authorProfile": "https://sketchfab.com/ddubrovska150"
+        },
+        {
+          "uid": "3d4b36cf82294eb4bc7cb0aef185c0ef",
+          "name": "Van Hai cho thue xe cuoi hoi gia re",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-3d4b36cf82294eb4bc7cb0aef185c0ef",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 1471772,
+          "vertexCount": 753254,
+          "author": "Cho thuê xe du lịch uy tín nhất tại Hà Nội",
+          "authorProfile": "https://sketchfab.com/dichvuchothuexevanhai"
+        },
+        {
+          "uid": "e3e11f133df74c2194f15c6eaf46787f",
+          "name": "帶卜辭龜腹甲 Inscribed Tortoise Plastron",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-e3e11f133df74c2194f15c6eaf46787f",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 2452316,
+          "vertexCount": 1226143,
+          "author": "ihparchaeologydata",
+          "authorProfile": "https://sketchfab.com/ihparchaeologydata"
+        }
+      ],
+      "hasNext": true,
+      "seconds": 4.65
+    },
+    {
+      "query": "ТУМ-500",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=%D0%A2%D0%A3%D0%9C-500&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.14
+    },
+    {
+      "query": "TUM-1000",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=TUM-1000&count=24",
+      "ok": true,
+      "models": [
+        {
+          "uid": "ba675a81537745eea0095e7d2d08d6dd",
+          "name": "Harbour Tug 1:1000",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-ba675a81537745eea0095e7d2d08d6dd",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 59618,
+          "vertexCount": 29791,
+          "author": "vandragon_de",
+          "authorProfile": "https://sketchfab.com/vandragon_de"
+        },
+        {
+          "uid": "d3be8fed96eb48be88b47bbe8d2951e1",
+          "name": "Lowpoly Fruits & Vegetables",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-d3be8fed96eb48be88b47bbe8d2951e1",
+          "isDownloadable": true,
+          "license": {
+            "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+            "label": "CC Attribution"
+          },
+          "faceCount": 99889,
+          "vertexCount": 49746,
+          "author": "Loïc Norgeot",
+          "authorProfile": "https://sketchfab.com/norgeotloic"
+        },
+        {
+          "uid": "dfcd54c92f6b43adb6c72fd7fb9f0c0d",
+          "name": "Lowpoly Fruits",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-dfcd54c92f6b43adb6c72fd7fb9f0c0d",
+          "isDownloadable": true,
+          "license": {
+            "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+            "label": "CC Attribution"
+          },
+          "faceCount": 23929,
+          "vertexCount": 12049,
+          "author": "Loïc Norgeot",
+          "authorProfile": "https://sketchfab.com/norgeotloic"
+        },
+        {
+          "uid": "0bafa5fd4e754305b01e67510143fdc8",
+          "name": "2010 Bugatti Veyron 16.4 Super Sport 431 km/h",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-0bafa5fd4e754305b01e67510143fdc8",
+          "isDownloadable": true,
+          "license": {
+            "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+            "label": "CC Attribution"
+          },
+          "faceCount": 200581,
+          "vertexCount": 123341,
+          "author": "Ddiaz Design",
+          "authorProfile": "https://sketchfab.com/ddiaz-design"
+        },
+        {
+          "uid": "22e3b3c24d10459e96e18cef7adac838",
+          "name": "Cabin showers Radaway - Arta set 100",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-22e3b3c24d10459e96e18cef7adac838",
+          "isDownloadable": false,
+          "license": {
+            "uid": "783b685da9bf457d81e829fa283f3567",
+            "label": "Standard"
+          },
+          "faceCount": 3476153,
+          "vertexCount": 1754441,
+          "author": "madMIX",
+          "authorProfile": "https://sketchfab.com/madmix"
+        },
+        {
+          "uid": "7c3a9faba4e84fa49d8575a698fc5f27",
+          "name": "1000 zło TU JEST POLSKA",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-7c3a9faba4e84fa49d8575a698fc5f27",
+          "isDownloadable": true,
+          "license": {
+            "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+            "label": "CC Attribution"
+          },
+          "faceCount": 10086,
+          "vertexCount": 5045,
+          "author": "caddri",
+          "authorProfile": "https://sketchfab.com/caddri"
+        },
+        {
+          "uid": "4bf6c82b9ecb4344aaaf69f6f1318e6f",
+          "name": "Shower cabins Radaway CLASSIC",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-4bf6c82b9ecb4344aaaf69f6f1318e6f",
+          "isDownloadable": false,
+          "license": {
+            "uid": "783b685da9bf457d81e829fa283f3567",
+            "label": "Standard"
+          },
+          "faceCount": 2371929,
+          "vertexCount": 1222556,
+          "author": "madMIX",
+          "authorProfile": "https://sketchfab.com/madmix"
+        },
+        {
+          "uid": "1916113540414d45b4fe76fdd071c806",
+          "name": "Cabin showers Radaway | Arta set 101",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-1916113540414d45b4fe76fdd071c806",
+          "isDownloadable": false,
+          "license": {
+            "uid": "783b685da9bf457d81e829fa283f3567",
+            "label": "Standard"
+          },
+          "faceCount": 3024332,
+          "vertexCount": 1537489,
+          "author": "madMIX",
+          "authorProfile": "https://sketchfab.com/madmix"
+        },
+        {
+          "uid": "b52c40ac4af047d79550f903a7cfa308",
+          "name": "Cabin showers Radaway - Arta set 99",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-b52c40ac4af047d79550f903a7cfa308",
+          "isDownloadable": false,
+          "license": {
+            "uid": "783b685da9bf457d81e829fa283f3567",
+            "label": "Standard"
+          },
+          "faceCount": 2763048,
+          "vertexCount": 1403246,
+          "author": "madMIX",
+          "authorProfile": "https://sketchfab.com/madmix"
+        },
+        {
+          "uid": "58bba9e7e77f4c24909e07f5b4644073",
+          "name": "Cabin showers Radaway | NES 2",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-58bba9e7e77f4c24909e07f5b4644073",
+          "isDownloadable": false,
+          "license": {
+            "uid": "783b685da9bf457d81e829fa283f3567",
+            "label": "Standard"
+          },
+          "faceCount": 1977006,
+          "vertexCount": 1002705,
+          "author": "madMIX",
+          "authorProfile": "https://sketchfab.com/madmix"
+        },
+        {
+          "uid": "21e80109bcc842939960ad7d5e60a6b1",
+          "name": "Shower cabins Radaway CLASSIC",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-21e80109bcc842939960ad7d5e60a6b1",
+          "isDownloadable": false,
+          "license": {
+            "uid": "783b685da9bf457d81e829fa283f3567",
+            "label": "Standard"
+          },
+          "faceCount": 2435953,
+          "vertexCount": 1254571,
+          "author": "madMIX",
+          "authorProfile": "https://sketchfab.com/madmix"
+        },
+        {
+          "uid": "e061842872cf4f0a8a98fae414b0f283",
+          "name": "Pista de Motocross Racetrack - Drone Mapping",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-e061842872cf4f0a8a98fae414b0f283",
+          "isDownloadable": true,
+          "license": {
+            "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+            "label": "CC Attribution"
+          },
+          "faceCount": 208484,
+          "vertexCount": 105853,
+          "author": "RTR Academy",
+          "authorProfile": "https://sketchfab.com/RTRacademy"
+        },
+        {
+          "uid": "7f684acf5d654dba8f343d9e34945d28",
+          "name": "Cabin showers Radaway | NES 1",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-7f684acf5d654dba8f343d9e34945d28",
+          "isDownloadable": false,
+          "license": {
+            "uid": "783b685da9bf457d81e829fa283f3567",
+            "label": "Standard"
+          },
+          "faceCount": 3522941,
+          "vertexCount": 1812585,
+          "author": "madMIX",
+          "authorProfile": "https://sketchfab.com/madmix"
+        },
+        {
+          "uid": "e39f2ae5e8614d1aa66bb1767822d388",
+          "name": "SML-02 With Tug",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-e39f2ae5e8614d1aa66bb1767822d388",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 94616,
+          "vertexCount": 14435,
+          "author": "Runescope",
+          "authorProfile": "https://sketchfab.com/Runescope"
+        },
+        {
+          "uid": "53e08febb8654ea99a7bbe2b988843cc",
+          "name": "Kiddie Play Patrulha Canina",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-53e08febb8654ea99a7bbe2b988843cc",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 275866,
+          "vertexCount": 139723,
+          "author": "Play Park Brinquedos",
+          "authorProfile": "https://sketchfab.com/projetos1"
+        },
+        {
+          "uid": "c6bd525ec09a4f3e9bfb5930d906425a",
+          "name": "Washbasin RAVAK | Ceramic O",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-c6bd525ec09a4f3e9bfb5930d906425a",
+          "isDownloadable": false,
+          "license": {
+            "uid": "783b685da9bf457d81e829fa283f3567",
+            "label": "Standard"
+          },
+          "faceCount": 429056,
+          "vertexCount": 215782,
+          "author": "madMIX",
+          "authorProfile": "https://sketchfab.com/madmix"
+        },
+        {
+          "uid": "4ee6d832c7834ad18a26a49cce0bb8b7",
+          "name": "Romexpo Central Pavilion",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-4ee6d832c7834ad18a26a49cce0bb8b7",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 279973,
+          "vertexCount": 168691,
+          "author": "Patrudoizero Design",
+          "authorProfile": "https://sketchfab.com/patrudoizero"
+        },
+        {
+          "uid": "cbfb2574c4ca402fa2accca9f63c487e",
+          "name": "Mô hình lego khủng long",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-cbfb2574c4ca402fa2accca9f63c487e",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 25124,
+          "vertexCount": 7596,
+          "author": "Linatoysdochoitreem",
+          "authorProfile": "https://sketchfab.com/Linatoysdochoitreem"
+        },
+        {
+          "uid": "dbc61cba36544f3caff3306b1c841bbb",
+          "name": "TUI HOUSE",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-dbc61cba36544f3caff3306b1c841bbb",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 44700,
+          "vertexCount": 512024,
+          "author": "THE SILVER FRAMES COMPANY",
+          "authorProfile": "https://sketchfab.com/PictonITM"
+        },
+        {
+          "uid": "8979ea3b0c2c493baef56f04829dcf7a",
+          "name": "The Old Axes with Blood",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-8979ea3b0c2c493baef56f04829dcf7a",
+          "isDownloadable": true,
+          "license": {
+            "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+            "label": "CC Attribution"
+          },
+          "faceCount": 1864,
+          "vertexCount": 1028,
+          "author": "3T",
+          "authorProfile": "https://sketchfab.com/tangtamtuan091001"
+        },
+        {
+          "uid": "97e70fa9bce24257adb8db6b7ddb8bba",
+          "name": "Ke duc lo 4 tang",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-97e70fa9bce24257adb8db6b7ddb8bba",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 275330,
+          "vertexCount": 137667,
+          "author": "Ke inox cong nghiep",
+          "authorProfile": "https://sketchfab.com/keinoxcongnghiep"
+        },
+        {
+          "uid": "16c5656d86c74d8da220a65e8b63ed44",
+          "name": "Hope Baptist Chapel Bridgend",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-16c5656d86c74d8da220a65e8b63ed44",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 1764271,
+          "vertexCount": 917052,
+          "author": "CBHC_RCAHMW",
+          "authorProfile": "https://sketchfab.com/CBHC_RCAHMW"
+        },
+        {
+          "uid": "637eabd0ec864274b678e78e6892fb8d",
+          "name": "TUC 3d 1001",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-637eabd0ec864274b678e78e6892fb8d",
+          "isDownloadable": true,
+          "license": {
+            "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+            "label": "CC Attribution"
+          },
+          "faceCount": 2760,
+          "vertexCount": 1384,
+          "author": "appache95",
+          "authorProfile": "https://sketchfab.com/appache95"
+        },
+        {
+          "uid": "9acdd0f6e0474e0fa3a9c7b316ec2abc",
+          "name": "Washbasin RAVAK | Ceramic R",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-9acdd0f6e0474e0fa3a9c7b316ec2abc",
+          "isDownloadable": false,
+          "license": {
+            "uid": "783b685da9bf457d81e829fa283f3567",
+            "label": "Standard"
+          },
+          "faceCount": 351844,
+          "vertexCount": 182282,
+          "author": "madMIX",
+          "authorProfile": "https://sketchfab.com/madmix"
+        }
+      ],
+      "hasNext": true,
+      "seconds": 4.56
+    },
+    {
+      "query": "ТУМ-1000",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=%D0%A2%D0%A3%D0%9C-1000&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 3.96
+    },
+    {
+      "query": "M131 MOPMS",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=M131+MOPMS&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.06
+    },
+    {
+      "query": "MOPMS dispenser",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=MOPMS+dispenser&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.29
+    },
+    {
+      "query": "MOPMS AP mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=MOPMS+AP+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 3.82
+    },
+    {
+      "query": "MOPMS AT mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=MOPMS+AT+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 3.8
+    },
+    {
+      "query": "M139 Volcano",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=M139+Volcano&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 3.98
+    },
+    {
+      "query": "Volcano mine dispenser",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=Volcano+mine+dispenser&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 3.73
+    },
+    {
+      "query": "Volcano AP mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=Volcano+AP+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 3.75
+    },
+    {
+      "query": "Volcano AT mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=Volcano+AT+mine&count=24",
+      "ok": true,
+      "models": [
+        {
+          "uid": "8c2ec8baf3d548fc93a0987291d7afe6",
+          "name": "Climb",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-8c2ec8baf3d548fc93a0987291d7afe6",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 7287,
+          "vertexCount": 3436,
+          "author": "CallumHarwood3D",
+          "authorProfile": "https://sketchfab.com/CallumHarwood3D"
+        },
+        {
+          "uid": "cb0728c7a29f451e879eec4391fb0d3f",
+          "name": "The Mines of the Snake Lord",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-cb0728c7a29f451e879eec4391fb0d3f",
+          "isDownloadable": true,
+          "license": {
+            "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+            "label": "CC Attribution"
+          },
+          "faceCount": 4538397,
+          "vertexCount": 2284516,
+          "author": "CGIME06",
+          "authorProfile": "https://sketchfab.com/CGIME06"
+        },
+        {
+          "uid": "f04e043485f6460baf194cdbfd38c081",
+          "name": "SP Crater Volcano - Flagstaff, Arizona",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-f04e043485f6460baf194cdbfd38c081",
+          "isDownloadable": true,
+          "license": {
+            "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+            "label": "CC Attribution"
+          },
+          "faceCount": 8192,
+          "vertexCount": 4225,
+          "author": "Nate Loper  🗺️ ⛏🏺",
+          "authorProfile": "https://sketchfab.com/arizonaguide"
+        },
+        {
+          "uid": "6d87442eb3e746b1835d6e8ecf417e58",
+          "name": "Mount Shasta Volcano - California",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-6d87442eb3e746b1835d6e8ecf417e58",
+          "isDownloadable": true,
+          "license": {
+            "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+            "label": "CC Attribution"
+          },
+          "faceCount": 8192,
+          "vertexCount": 4225,
+          "author": "Nate Loper  🗺️ ⛏🏺",
+          "authorProfile": "https://sketchfab.com/arizonaguide"
+        },
+        {
+          "uid": "1a543059a680439d9e70b9c188b8dd35",
+          "name": "Newberry Volcano, Oregon - LiDAR Surface Model",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-1a543059a680439d9e70b9c188b8dd35",
+          "isDownloadable": false,
+          "license": {
+            "uid": "5b54cf13b1a4422ca439696eb152070d",
+            "label": "Editorial"
+          },
+          "faceCount": 1793876,
+          "vertexCount": 898880,
+          "author": "smartmAPPS",
+          "authorProfile": "https://sketchfab.com/smartmAPPS"
+        },
+        {
+          "uid": "9aa286c6adf748798daa4fee37178b68",
+          "name": "Newberry Volcano, Oregon (1:50,000 scale)",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-9aa286c6adf748798daa4fee37178b68",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 1846162,
+          "vertexCount": 931195,
+          "author": "smartmAPPS",
+          "authorProfile": "https://sketchfab.com/smartmAPPS"
+        },
+        {
+          "uid": "ad963c670afe401dba896859565ce212",
+          "name": "Piparo Mud Volcano",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-ad963c670afe401dba896859565ce212",
+          "isDownloadable": true,
+          "license": {
+            "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+            "label": "CC Attribution"
+          },
+          "faceCount": 0,
+          "vertexCount": 7080162,
+          "author": "Josh Lu",
+          "authorProfile": "https://sketchfab.com/joshlu"
+        },
+        {
+          "uid": "04d3089a6c804da9b2a5e722cf6f7203",
+          "name": "Volcano 2",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-04d3089a6c804da9b2a5e722cf6f7203",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 199182,
+          "vertexCount": 100492,
+          "author": "William",
+          "authorProfile": "https://sketchfab.com/wtmiv"
+        },
+        {
+          "uid": "a80a91227cc04b7ba0205066f366358c",
+          "name": "Mount St. Helens 1:50,000 Scale",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-a80a91227cc04b7ba0205066f366358c",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 1660216,
+          "vertexCount": 830110,
+          "author": "smartmAPPS",
+          "authorProfile": "https://sketchfab.com/smartmAPPS"
+        },
+        {
+          "uid": "1e30f4a38edc45f5b280fc10744571d9",
+          "name": "Mount St Helens - Washington, USA",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-1e30f4a38edc45f5b280fc10744571d9",
+          "isDownloadable": true,
+          "license": {
+            "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+            "label": "CC Attribution"
+          },
+          "faceCount": 97797,
+          "vertexCount": 49129,
+          "author": "Rafael Kenji Horota",
+          "authorProfile": "https://sketchfab.com/Rafael.Kenji.Horota"
+        },
+        {
+          "uid": "c176a93bc10542c4891d35a4a78389aa",
+          "name": "L'ux - Mt Edgecumbe Lowpoly",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-c176a93bc10542c4891d35a4a78389aa",
+          "isDownloadable": true,
+          "license": {
+            "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+            "label": "CC Attribution"
+          },
+          "faceCount": 1662,
+          "vertexCount": 848,
+          "author": "sleepyjoshua",
+          "authorProfile": "https://sketchfab.com/sleepyjoshua"
+        },
+        {
+          "uid": "3c4d405cc69a41738e4b6fd6d9596a82",
+          "name": "Three Sisters Volcanos, Oregon (1:75,000 Scale)",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-3c4d405cc69a41738e4b6fd6d9596a82",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 1650406,
+          "vertexCount": 833448,
+          "author": "smartmAPPS",
+          "authorProfile": "https://sketchfab.com/smartmAPPS"
+        },
+        {
+          "uid": "7b2ebb4478d543efa0eeeafbbcbe728b",
+          "name": "Mount Damavand (دماوند) Map (1:125,000 Scale)",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-7b2ebb4478d543efa0eeeafbbcbe728b",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 1661620,
+          "vertexCount": 838406,
+          "author": "smartmAPPS",
+          "authorProfile": "https://sketchfab.com/smartmAPPS"
+        },
+        {
+          "uid": "3516bdefb66a457c81a60bd3ec7c6bb0",
+          "name": "Mini Volcano",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-3516bdefb66a457c81a60bd3ec7c6bb0",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 752,
+          "vertexCount": 396,
+          "author": "Nivava",
+          "authorProfile": "https://sketchfab.com/Nivava"
+        },
+        {
+          "uid": "3af9b4470ec74799a11ca81cdc2a94b1",
+          "name": "Hot Bottle - Potion/SWC1",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-3af9b4470ec74799a11ca81cdc2a94b1",
+          "isDownloadable": true,
+          "license": {
+            "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+            "label": "CC Attribution"
+          },
+          "faceCount": 80588,
+          "vertexCount": 40312,
+          "author": "🎀 ★彡[ꜰᴇʟɪx ʏᴀᴅᴏᴍɪ]彡★ 🎀",
+          "authorProfile": "https://sketchfab.com/felixyadomi"
+        },
+        {
+          "uid": "d7607cf1b63b4b289c1bcd6717266320",
+          "name": "Mount St. Helens Pre-1980 Surface, False Color",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-d7607cf1b63b4b289c1bcd6717266320",
+          "isDownloadable": false,
+          "license": {
+            "uid": "5b54cf13b1a4422ca439696eb152070d",
+            "label": "Editorial"
+          },
+          "faceCount": 1280000,
+          "vertexCount": 641601,
+          "author": "smartmAPPS",
+          "authorProfile": "https://sketchfab.com/smartmAPPS"
+        },
+        {
+          "uid": "ea064130dfce41a28a5917a5577f07a1",
+          "name": "Mud volcano Mt. Karabetov, Taman Peninsula",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-ea064130dfce41a28a5917a5577f07a1",
+          "isDownloadable": true,
+          "license": {
+            "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+            "label": "CC Attribution"
+          },
+          "faceCount": 4341999,
+          "vertexCount": 2179090,
+          "author": "alexandr.sysolin",
+          "authorProfile": "https://sketchfab.com/alexandr.sysolin"
+        },
+        {
+          "uid": "f716bf88cda74e9bbd0e3cdbf4cd572f",
+          "name": "LBA Famous Section (Greece)",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-f716bf88cda74e9bbd0e3cdbf4cd572f",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 2064465,
+          "vertexCount": 1047465,
+          "author": "GeoVires Lab",
+          "authorProfile": "https://sketchfab.com/GeoViresLab"
+        },
+        {
+          "uid": "c582e21ec3c6439ebde0d469a4ffe4d9",
+          "name": "Mount St. Helens - Contour Map (10 Meter) - Lg",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-c582e21ec3c6439ebde0d469a4ffe4d9",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 725582,
+          "vertexCount": 362793,
+          "author": "smartmAPPS",
+          "authorProfile": "https://sketchfab.com/smartmAPPS"
+        },
+        {
+          "uid": "bf6f10f09bec4efc8a8b8ed5cae401f1",
+          "name": "Mud volcano Mt. Karabetov, 3.08.2021. 80 m",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-bf6f10f09bec4efc8a8b8ed5cae401f1",
+          "isDownloadable": true,
+          "license": {
+            "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+            "label": "CC Attribution"
+          },
+          "faceCount": 1294798,
+          "vertexCount": 648681,
+          "author": "alexandr.sysolin",
+          "authorProfile": "https://sketchfab.com/alexandr.sysolin"
+        },
+        {
+          "uid": "68ddcc0a6c0148caafcbc978af4449f9",
+          "name": "Volcán Turrialba, Santa Cruz, Costa Rica",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-68ddcc0a6c0148caafcbc978af4449f9",
+          "isDownloadable": true,
+          "license": {
+            "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+            "label": "CC Attribution"
+          },
+          "faceCount": 182462,
+          "vertexCount": 93046,
+          "author": "CMPLab",
+          "authorProfile": "https://sketchfab.com/secad"
+        },
+        {
+          "uid": "48bd225e2a804b2ebc373d097ba5d26d",
+          "name": "Mount St. Helens B&W, Pre-1980 (1:40K Scale)",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-48bd225e2a804b2ebc373d097ba5d26d",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 1319536,
+          "vertexCount": 666617,
+          "author": "smartmAPPS",
+          "authorProfile": "https://sketchfab.com/smartmAPPS"
+        },
+        {
+          "uid": "fcee45fdca1f4bf9a75c4ae396fad25a",
+          "name": "Mount St. Helens Color IR,Pre-1980 (1:50K Scale)",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-fcee45fdca1f4bf9a75c4ae396fad25a",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 1072792,
+          "vertexCount": 542664,
+          "author": "smartmAPPS",
+          "authorProfile": "https://sketchfab.com/smartmAPPS"
+        },
+        {
+          "uid": "f9acd806d2384fc5b0ffb2fef5e6091b",
+          "name": "Mount Hood, USA",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-f9acd806d2384fc5b0ffb2fef5e6091b",
+          "isDownloadable": false,
+          "license": {
+            "uid": "783b685da9bf457d81e829fa283f3567",
+            "label": "Standard"
+          },
+          "faceCount": 204765,
+          "vertexCount": 103380,
+          "author": "LibanCiel",
+          "authorProfile": "https://sketchfab.com/LibanCiel"
+        }
+      ],
+      "hasNext": true,
+      "seconds": 4.24
+    },
+    {
+      "query": "MS-4 mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=MS-4+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 7.29
+    },
+    {
+      "query": "МС-4 мина",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=%D0%9C%D0%A1-4+%D0%BC%D0%B8%D0%BD%D0%B0&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 7.2
+    },
+    {
+      "query": "SM-320 mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=SM-320+mine&count=24",
+      "ok": true,
+      "models": [
+        {
+          "uid": "662e94278c284a9982dced0f08745ed9",
+          "name": "SM-320",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-662e94278c284a9982dced0f08745ed9",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 556,
+          "vertexCount": 582,
+          "author": "Festival",
+          "authorProfile": "https://sketchfab.com/Festival"
+        }
+      ],
+      "hasNext": false,
+      "seconds": 7.25
+    },
+    {
+      "query": "СМ-320",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=%D0%A1%D0%9C-320&count=24",
+      "ok": true,
+      "models": [
+        {
+          "uid": "e79d794878364409a64747d096f00979",
+          "name": "Бусина стеклянная. X – XI вв. Введенское, 1989.",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-e79d794878364409a64747d096f00979",
+          "isDownloadable": true,
+          "license": {
+            "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+            "label": "CC Attribution"
+          },
+          "faceCount": 440232,
+          "vertexCount": 220151,
+          "author": "Dem.Arch",
+          "authorProfile": "https://sketchfab.com/Dem.Arch"
+        }
+      ],
+      "hasNext": false,
+      "seconds": 6.81
+    },
+    {
+      "query": "PMFC-1",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=PMFC-1&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.38
+    },
+    {
+      "query": "PMFC1",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=PMFC1&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.46
+    },
+    {
+      "query": "PMFH-1",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=PMFH-1&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.3
+    },
+    {
+      "query": "PMFH1",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=PMFH1&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.25
+    },
+    {
+      "query": "PMM-1 Cuba mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=PMM-1+Cuba+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 5.2
+    },
+    {
+      "query": "PMM1 mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=PMM1+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 5.36
+    },
+    {
+      "query": "M57 Cuban mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=M57+Cuban+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 5.31
+    },
+    {
+      "query": "M57 landmine Cuba",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=M57+landmine+Cuba&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 5.08
+    },
+    {
+      "query": "APP M57",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=APP+M57&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.21
+    },
+    {
+      "query": "APP-M57",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=APP-M57&count=24",
+      "ok": true,
+      "models": [
+        {
+          "uid": "62db26d85d3749fd9d7db1842d6587b9",
+          "name": "Chopped wood | 3DF vs Reality Scan android app",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-62db26d85d3749fd9d7db1842d6587b9",
+          "isDownloadable": true,
+          "license": {
+            "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+            "label": "CC Attribution"
+          },
+          "faceCount": 594778,
+          "vertexCount": 297413,
+          "author": "PGSimulation",
+          "authorProfile": "https://sketchfab.com/lama99"
+        },
+        {
+          "uid": "234d45d1579040198eddd54ecc35a3c3",
+          "name": "SAS M33 Mine Carrier Bag",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-234d45d1579040198eddd54ecc35a3c3",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 6095735,
+          "vertexCount": 3048338,
+          "author": "Combined Military Services Museum",
+          "authorProfile": "https://sketchfab.com/cmsm"
+        },
+        {
+          "uid": "3cce07f8acd84e84a44f7249b07e249f",
+          "name": "M577 Armored Personel Carrier APC",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-3cce07f8acd84e84a44f7249b07e249f",
+          "isDownloadable": false,
+          "license": {
+            "uid": "783b685da9bf457d81e829fa283f3567",
+            "label": "Standard"
+          },
+          "faceCount": 436323,
+          "vertexCount": 230773,
+          "author": "SQUIR3D",
+          "authorProfile": "https://sketchfab.com/SQUIR3D"
+        },
+        {
+          "uid": "73542d592ea5499daa3ecf2e309d1298",
+          "name": "APC M577 (Aliens)",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-73542d592ea5499daa3ecf2e309d1298",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 62173,
+          "vertexCount": 64891,
+          "author": "BAA Design",
+          "authorProfile": "https://sketchfab.com/baa_design"
+        },
+        {
+          "uid": "861f557a66d84bffa264dab7b3393fb9",
+          "name": "M577 command vehicle",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-861f557a66d84bffa264dab7b3393fb9",
+          "isDownloadable": true,
+          "license": {
+            "uid": "bbfe3f7dbcdd4122b966b85b9786a989",
+            "label": "CC Attribution-NonCommercial"
+          },
+          "faceCount": 15212,
+          "vertexCount": 9242,
+          "author": "42manako",
+          "authorProfile": "https://sketchfab.com/42manako"
+        },
+        {
+          "uid": "848407e184044fa9b562402fbc81cce6",
+          "name": "M577 Armored Personnel Carrier",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-848407e184044fa9b562402fbc81cce6",
+          "isDownloadable": false,
+          "license": {
+            "uid": "5b54cf13b1a4422ca439696eb152070d",
+            "label": "Editorial"
+          },
+          "faceCount": 27247,
+          "vertexCount": 15004,
+          "author": "generalista3D",
+          "authorProfile": "https://sketchfab.com/adelin"
+        },
+        {
+          "uid": "ef6ef22cb94d4f369167526836a20034",
+          "name": "M577 Armored Personnel Carrier 3D Printable",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-ef6ef22cb94d4f369167526836a20034",
+          "isDownloadable": false,
+          "license": {
+            "uid": "5b54cf13b1a4422ca439696eb152070d",
+            "label": "Editorial"
+          },
+          "faceCount": 962889,
+          "vertexCount": 480178,
+          "author": "generalista3D",
+          "authorProfile": "https://sketchfab.com/adelin"
+        },
+        {
+          "uid": "64233d29a5874cba90d1943bd9164b2a",
+          "name": "M577 APC (ALIENS)",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-64233d29a5874cba90d1943bd9164b2a",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 47744,
+          "vertexCount": 17178,
+          "author": "sanchiesp",
+          "authorProfile": "https://sketchfab.com/sanchiesp"
+        },
+        {
+          "uid": "adff860e7db9478e8123ae892966ab21",
+          "name": "M577 APC Roof turret (Aliens movie)",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-adff860e7db9478e8123ae892966ab21",
+          "isDownloadable": true,
+          "license": {
+            "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+            "label": "CC Attribution"
+          },
+          "faceCount": 450248,
+          "vertexCount": 225873,
+          "author": "Ostap.Sopivnyk",
+          "authorProfile": "https://sketchfab.com/Ostap.Sopivnyk"
+        },
+        {
+          "uid": "e935fb29c4cf43d5832858c35bdc66eb",
+          "name": "M113A2 APC armored personnel carrier",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-e935fb29c4cf43d5832858c35bdc66eb",
+          "isDownloadable": false,
+          "license": {
+            "uid": "5b54cf13b1a4422ca439696eb152070d",
+            "label": "Editorial"
+          },
+          "faceCount": 92679,
+          "vertexCount": 52515,
+          "author": "luisbcompany",
+          "authorProfile": "https://sketchfab.com/luisbcompany"
+        },
+        {
+          "uid": "1b51eac0a7604a21a326954d3396fcfe",
+          "name": "Alien APC M577 Armored Personnel Carrier",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-1b51eac0a7604a21a326954d3396fcfe",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 20606,
+          "vertexCount": 11471,
+          "author": "JKnight",
+          "authorProfile": "https://sketchfab.com/JKnight"
+        },
+        {
+          "uid": "a4b89af8a91a48b98eb464e1b5493e35",
+          "name": "Bmw M5",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-a4b89af8a91a48b98eb464e1b5493e35",
+          "isDownloadable": true,
+          "license": {
+            "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+            "label": "CC Attribution"
+          },
+          "faceCount": 15038,
+          "vertexCount": 8425,
+          "author": "asset_garden",
+          "authorProfile": "https://sketchfab.com/asset_garden"
+        },
+        {
+          "uid": "183235fd4e004cf7b34aae4252825629",
+          "name": "Blockbench M113 Remodel",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-183235fd4e004cf7b34aae4252825629",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 6924,
+          "vertexCount": 4616,
+          "author": "play_w",
+          "authorProfile": "https://sketchfab.com/play_w"
+        },
+        {
+          "uid": "84a4f5dbc89e4de4a39b92329e4b8914",
+          "name": "APC M757 city version",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-84a4f5dbc89e4de4a39b92329e4b8914",
+          "isDownloadable": false,
+          "license": {
+            "uid": "5b54cf13b1a4422ca439696eb152070d",
+            "label": "Editorial"
+          },
+          "faceCount": 102966,
+          "vertexCount": 57691,
+          "author": "Akinaro",
+          "authorProfile": "https://sketchfab.com/Akinaro"
+        },
+        {
+          "uid": "e64e16b9fcb04c92ba0932e2a37ff706",
+          "name": "Ceramic pot 3DF vs  Reality Scan Android",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-e64e16b9fcb04c92ba0932e2a37ff706",
+          "isDownloadable": true,
+          "license": {
+            "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+            "label": "CC Attribution"
+          },
+          "faceCount": 280424,
+          "vertexCount": 140214,
+          "author": "PGSimulation",
+          "authorProfile": "https://sketchfab.com/lama99"
+        },
+        {
+          "uid": "8cff438d563348bd80d5dea86be9ff0e",
+          "name": "Adobe Effects MacOS Download Latest update",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-8cff438d563348bd80d5dea86be9ff0e",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 319532,
+          "vertexCount": 159768,
+          "author": "DaringTape4188",
+          "authorProfile": "https://sketchfab.com/DaringTape4188"
+        },
+        {
+          "uid": "4e4614b972b34a72b6fbe640c5ca7b8f",
+          "name": "Adobe Media Encoder Download Latest update 2026",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-4e4614b972b34a72b6fbe640c5ca7b8f",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 319532,
+          "vertexCount": 159768,
+          "author": "DaringTape4188",
+          "authorProfile": "https://sketchfab.com/DaringTape4188"
+        },
+        {
+          "uid": "8e1f1849f5ef4cfbb495c4b2277e24f3",
+          "name": "APECS AP euro cylinder lock packaging",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-8e1f1849f5ef4cfbb495c4b2277e24f3",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 1158,
+          "vertexCount": 1010,
+          "author": "apecshardware",
+          "authorProfile": "https://sketchfab.com/apecshardware"
+        },
+        {
+          "uid": "48ba41ac41f74146bd0c53d370697754",
+          "name": "M577 Vehicle",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-48ba41ac41f74146bd0c53d370697754",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 54534,
+          "vertexCount": 28997,
+          "author": "FernandoLavado",
+          "authorProfile": "https://sketchfab.com/FernandoLavado"
+        },
+        {
+          "uid": "5a3ac63113934fdf8a44c6d63ac0e57b",
+          "name": "M567-M890- Stringer AP Rocket",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-5a3ac63113934fdf8a44c6d63ac0e57b",
+          "isDownloadable": true,
+          "license": {
+            "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+            "label": "CC Attribution"
+          },
+          "faceCount": 708,
+          "vertexCount": 356,
+          "author": "Cartoon Siren Head",
+          "authorProfile": "https://sketchfab.com/CartoonSirenHead"
+        },
+        {
+          "uid": "d2b0f9b2b5d4489581e0a48effa65e24",
+          "name": "Y-connector xTool P2/P2S and F1/F1 Lite on AP2",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-d2b0f9b2b5d4489581e0a48effa65e24",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 244013,
+          "vertexCount": 122154,
+          "author": "Sitetechno.fr",
+          "authorProfile": "https://sketchfab.com/sitetechno.fr"
+        }
+      ],
+      "hasNext": false,
+      "seconds": 4.42
+    },
+    {
+      "query": "MM1 Myanmar mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=MM1+Myanmar+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.03
+    },
+    {
+      "query": "MM-1 Burma mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=MM-1+Burma+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.01
+    },
+    {
+      "query": "MM2 Myanmar mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=MM2+Myanmar+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.12
+    },
+    {
+      "query": "MM-2 Burma mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=MM-2+Burma+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 3.98
+    },
+    {
+      "query": "MM5 Myanmar mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=MM5+Myanmar+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.06
+    },
+    {
+      "query": "MM-5 Burma mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=MM-5+Burma+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 3.74
+    },
+    {
+      "query": "MM6 Myanmar mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=MM6+Myanmar+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 3.67
+    },
+    {
+      "query": "MM-6 Burma mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=MM-6+Burma+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 3.7
+    },
+    {
+      "query": "ALCM-82",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=ALCM-82&count=24",
+      "ok": true,
+      "models": [
+        {
+          "uid": "cc7ebac862ef4634859d8583f0187fdc",
+          "name": "Casa 82 m² - Sulfibra Paredes Inteligentes",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-cc7ebac862ef4634859d8583f0187fdc",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 208866,
+          "vertexCount": 200131,
+          "author": "Sulfibra Paredes Inteligentes",
+          "authorProfile": "https://sketchfab.com/projetossulfibra"
+        }
+      ],
+      "hasNext": false,
+      "seconds": 3.76
+    },
+    {
+      "query": "ALCM-83",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=ALCM-83&count=24",
+      "ok": true,
+      "models": [
+        {
+          "uid": "c8cefe2dd60a4bfa9cc3bda194dbcca1",
+          "name": "Condomínio Riviera Del Mare",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-c8cefe2dd60a4bfa9cc3bda194dbcca1",
+          "isDownloadable": true,
+          "license": {
+            "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+            "label": "CC Attribution"
+          },
+          "faceCount": 1097012,
+          "vertexCount": 409439,
+          "author": "emuchoa",
+          "authorProfile": "https://sketchfab.com/emuchoa"
+        }
+      ],
+      "hasNext": false,
+      "seconds": 3.85
+    },
+    {
+      "query": "ATM-41 mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=ATM-41+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 5.14
+    },
+    {
+      "query": "ATM41 mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=ATM41+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.83
+    },
+    {
+      "query": "ATM-44 mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=ATM-44+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.88
+    },
+    {
+      "query": "ATM44 mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=ATM44+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.67
+    },
+    {
+      "query": "ATM-46 mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=ATM-46+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.17
+    },
+    {
+      "query": "ATM46 mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=ATM46+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.33
+    },
+    {
+      "query": "ATM-46N",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=ATM-46N&count=24",
+      "ok": true,
+      "models": [
+        {
+          "uid": "8c1339f88fb249a0b8932aaf22c83b48",
+          "name": "Lifted ATV/ Quad/ Fourwheeler",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-8c1339f88fb249a0b8932aaf22c83b48",
+          "isDownloadable": true,
+          "license": {
+            "uid": "72eb2b1960364637901eacce19283624",
+            "label": "Free Standard"
+          },
+          "faceCount": 114146,
+          "vertexCount": 59031,
+          "author": "✮𝖀𝖓𝖋𝖔𝖗𝖌𝖊𝖙𝖙𝖆𝖇𝖑𝖊 𝕹𝖆𝖒𝖊✮",
+          "authorProfile": "https://sketchfab.com/UnforgettableName"
+        },
+        {
+          "uid": "a9cd2dd987a7435e9c1440398f732069",
+          "name": "Ковш для силосу 1,0 м³ Dieci Zeus, тм «А.ТОМ»",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-a9cd2dd987a7435e9c1440398f732069",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 58316,
+          "vertexCount": 36773,
+          "author": "Ihor Humeniuk",
+          "authorProfile": "https://sketchfab.com/gin_z"
+        },
+        {
+          "uid": "4cc4ecb4771d4e54b4512b541c461a60",
+          "name": "T90A",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-4cc4ecb4771d4e54b4512b541c461a60",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 752012,
+          "vertexCount": 404923,
+          "author": "LM3D",
+          "authorProfile": "https://sketchfab.com/lm9241221"
+        },
+        {
+          "uid": "c1b729eed26f464fbba4322e6425ce24",
+          "name": "gaming pc корпус Jonsbo TR03-A Silver",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-c1b729eed26f464fbba4322e6425ce24",
+          "isDownloadable": true,
+          "license": {
+            "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+            "label": "CC Attribution"
+          },
+          "faceCount": 1557369,
+          "vertexCount": 803064,
+          "author": "ismogilovilxom",
+          "authorProfile": "https://sketchfab.com/ismogilovilxom"
+        },
+        {
+          "uid": "51ef005fa1f54d1483f2f1414b270fde",
+          "name": "Eucryptite crystal structure",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-51ef005fa1f54d1483f2f1414b270fde",
+          "isDownloadable": true,
+          "license": {
+            "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+            "label": "CC Attribution"
+          },
+          "faceCount": 286130,
+          "vertexCount": 140867,
+          "author": "Wieslaw Kruczala",
+          "authorProfile": "https://sketchfab.com/Wieslaw_Kruczala"
+        },
+        {
+          "uid": "d60b4760d49d45de9c20098ba748999a",
+          "name": "Jan24 Roof Inspection",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-d60b4760d49d45de9c20098ba748999a",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 38005,
+          "vertexCount": 19051,
+          "author": "marioborrero",
+          "authorProfile": "https://sketchfab.com/marioborrero"
+        },
+        {
+          "uid": "ac363200e2a948aca6a1df67b967d3b3",
+          "name": "Yuval Noah Harari",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-ac363200e2a948aca6a1df67b967d3b3",
+          "isDownloadable": true,
+          "license": {
+            "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+            "label": "CC Attribution"
+          },
+          "faceCount": 59874,
+          "vertexCount": 30108,
+          "author": "Headsketch.xyz",
+          "authorProfile": "https://sketchfab.com/headsketch"
+        },
+        {
+          "uid": "56d3c5c3c972412f8b9e3a2118636670",
+          "name": "Hexane 3D Molecular Model — CAS 110-54-3",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-56d3c5c3c972412f8b9e3a2118636670",
+          "isDownloadable": true,
+          "license": {
+            "uid": "b9ddc40b93e34cdca1fc152f39b9f375",
+            "label": "CC Attribution-ShareAlike"
+          },
+          "faceCount": 210644,
+          "vertexCount": 105324,
+          "author": "MolGod.org",
+          "authorProfile": "https://sketchfab.com/MolGod.org"
+        },
+        {
+          "uid": "785c3ff70c9e4ad886a96191db0889fb",
+          "name": "Download DARK SOULS First Sin v1.03 + OnLine",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-785c3ff70c9e4ad886a96191db0889fb",
+          "isDownloadable": true,
+          "license": {
+            "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+            "label": "CC Attribution"
+          },
+          "faceCount": 32238,
+          "vertexCount": 17112,
+          "author": "EverydayFile7829",
+          "authorProfile": "https://sketchfab.com/EverydayFile7829"
+        },
+        {
+          "uid": "d917ee844bd14274b3a82a665ef380c3",
+          "name": "Grav 46 (A), Os Petrosa, Tuna, Badelunda",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-d917ee844bd14274b3a82a665ef380c3",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 12103,
+          "vertexCount": 6126,
+          "author": "Christian T. Goldring",
+          "authorProfile": "https://sketchfab.com/Chrilloow"
+        },
+        {
+          "uid": "7f2555b1251f401f9349f31762b1f7e9",
+          "name": "Benzyl Chloride 3D Model — CAS 100-44-7",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-7f2555b1251f401f9349f31762b1f7e9",
+          "isDownloadable": true,
+          "license": {
+            "uid": "b9ddc40b93e34cdca1fc152f39b9f375",
+            "label": "CC Attribution-ShareAlike"
+          },
+          "faceCount": 195514,
+          "vertexCount": 97751,
+          "author": "MolGod.org",
+          "authorProfile": "https://sketchfab.com/MolGod.org"
+        },
+        {
+          "uid": "1fcb9b86ce5749f2944d2b407a8340d3",
+          "name": "1-Phenethylamine 3D Model — CAS 618-36-0",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-1fcb9b86ce5749f2944d2b407a8340d3",
+          "isDownloadable": true,
+          "license": {
+            "uid": "b9ddc40b93e34cdca1fc152f39b9f375",
+            "label": "CC Attribution-ShareAlike"
+          },
+          "faceCount": 237598,
+          "vertexCount": 118793,
+          "author": "MolGod.org",
+          "authorProfile": "https://sketchfab.com/MolGod.org"
+        },
+        {
+          "uid": "920c5baf2ec840fab200eecbe2e6b225",
+          "name": "Cham-Villette, Weisstannenstrunk im Flachwasser",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-920c5baf2ec840fab200eecbe2e6b225",
+          "isDownloadable": true,
+          "license": {
+            "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+            "label": "CC Attribution"
+          },
+          "faceCount": 149999,
+          "vertexCount": 77204,
+          "author": "ADA ZG",
+          "authorProfile": "https://sketchfab.com/ADA-ZG"
+        },
+        {
+          "uid": "bfd7f96d905a4f20af7e25ad5b67e983",
+          "name": "4,4'-Diaminodiphenyl Ether — CAS 101-80-4",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-bfd7f96d905a4f20af7e25ad5b67e983",
+          "isDownloadable": true,
+          "license": {
+            "uid": "b9ddc40b93e34cdca1fc152f39b9f375",
+            "label": "CC Attribution-ShareAlike"
+          },
+          "faceCount": 353638,
+          "vertexCount": 176805,
+          "author": "MolGod.org",
+          "authorProfile": "https://sketchfab.com/MolGod.org"
+        }
+      ],
+      "hasNext": false,
+      "seconds": 4.44
+    },
+    {
+      "query": "ATM-72 mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=ATM-72+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 3.89
+    },
+    {
+      "query": "ATM72 mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=ATM72+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 5.05
+    },
+    {
+      "query": "ATM-6 mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=ATM-6+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 5.15
+    },
+    {
+      "query": "ATM6 mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=ATM6+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.79
+    },
+    {
+      "query": "ATM-7 mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=ATM-7+mine&count=24",
+      "ok": true,
+      "models": [
+        {
+          "uid": "839b95a01b144c37a4dd80ed5821684a",
+          "name": "Wiertarka udarowa mechaniczna",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-839b95a01b144c37a4dd80ed5821684a",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 1931483,
+          "vertexCount": 965731,
+          "author": "Muzeum Górnictwa Węglowego w Zabrzu",
+          "authorProfile": "https://sketchfab.com/digitalizacja_MGW"
+        }
+      ],
+      "hasNext": false,
+      "seconds": 4.61
+    },
+    {
+      "query": "ATM7 mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=ATM7+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.03
+    },
+    {
+      "query": "100 mm Vietnam mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=100+mm+Vietnam+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.22
+    },
+    {
+      "query": "150 mm Vietnam mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=150+mm+Vietnam+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.21
+    },
+    {
+      "query": "200 mm Vietnam mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=200+mm+Vietnam+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 3.87
+    },
+    {
+      "query": "Model 1948 Vietnam mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=Model+1948+Vietnam+mine&count=24",
+      "ok": true,
+      "models": [
+        {
+          "uid": "cb9c28e85f9a4770a899d7f032b56111",
+          "name": "North Vietnam Flag",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-cb9c28e85f9a4770a899d7f032b56111",
+          "isDownloadable": false,
+          "license": {
+            "uid": "783b685da9bf457d81e829fa283f3567",
+            "label": "Standard"
+          },
+          "faceCount": 18432,
+          "vertexCount": 9409,
+          "author": "KangaroOz 3D",
+          "authorProfile": "https://sketchfab.com/KangaroOz-3D"
+        }
+      ],
+      "hasNext": false,
+      "seconds": 7.01
+    },
+    {
+      "query": "Vietnamese 1948 mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=Vietnamese+1948+mine&count=24",
+      "ok": true,
+      "models": [
+        {
+          "uid": "d7e61ab73dab4a08ab3538bc9667b496",
+          "name": "Magpie Mine Powder House",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-d7e61ab73dab4a08ab3538bc9667b496",
+          "isDownloadable": true,
+          "license": {
+            "uid": "2628dbe5140a4e9592126c8df566c0b7",
+            "label": "CC Attribution-NonCommercial-ShareAlike"
+          },
+          "faceCount": 255269,
+          "vertexCount": 128216,
+          "author": "Shiro Morturn",
+          "authorProfile": "https://sketchfab.com/morturn"
+        },
+        {
+          "uid": "83da20f3e2dd435f9e4b9eadeaf4ba77",
+          "name": "Tráp đựng trầu/ Bộ sưu tập tục ăn trầu",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-83da20f3e2dd435f9e4b9eadeaf4ba77",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 707819,
+          "vertexCount": 353920,
+          "author": "Vietnamese Women's Museum",
+          "authorProfile": "https://sketchfab.com/vietnamesewomensmuseum"
+        },
+        {
+          "uid": "6fb869318d05499cb736fb19a4b7f9f8",
+          "name": "Ho Chi Minh City University of Technology-HUTECH",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-6fb869318d05499cb736fb19a4b7f9f8",
+          "isDownloadable": true,
+          "license": {
+            "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+            "label": "CC Attribution"
+          },
+          "faceCount": 2271002,
+          "vertexCount": 1135344,
+          "author": "ARCHI_HUTECH",
+          "authorProfile": "https://sketchfab.com/ARCHI_HUTECH"
+        },
+        {
+          "uid": "cb9c28e85f9a4770a899d7f032b56111",
+          "name": "North Vietnam Flag",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-cb9c28e85f9a4770a899d7f032b56111",
+          "isDownloadable": false,
+          "license": {
+            "uid": "783b685da9bf457d81e829fa283f3567",
+            "label": "Standard"
+          },
+          "faceCount": 18432,
+          "vertexCount": 9409,
+          "author": "KangaroOz 3D",
+          "authorProfile": "https://sketchfab.com/KangaroOz-3D"
+        },
+        {
+          "uid": "f082fc9c3a0a4907afc41ccfd97c3b87",
+          "name": "Ho Chi Minh with Children",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-f082fc9c3a0a4907afc41ccfd97c3b87",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 730000,
+          "vertexCount": 365000,
+          "author": "michelon_e",
+          "authorProfile": "https://sketchfab.com/michelon_e"
+        },
+        {
+          "uid": "0a70a67ca1da4a8084001df1611ae593",
+          "name": "VI BON STORE DESIGN",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-0a70a67ca1da4a8084001df1611ae593",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 1399569,
+          "vertexCount": 703453,
+          "author": "ductruonghoai3107",
+          "authorProfile": "https://sketchfab.com/ductruonghoai3107"
+        },
+        {
+          "uid": "df3ab73cceb148c49175e1852f8e4c84",
+          "name": "Gậy mây",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-df3ab73cceb148c49175e1852f8e4c84",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 197115,
+          "vertexCount": 98582,
+          "author": "anhtu.ct43",
+          "authorProfile": "https://sketchfab.com/anhtu.ct43"
+        },
+        {
+          "uid": "14e394ae0a2340b8be7b7f1764e0f5b6",
+          "name": "Bornite, Covellite, Malachite et Chalcopyrite",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-14e394ae0a2340b8be7b7f1764e0f5b6",
+          "isDownloadable": true,
+          "license": {
+            "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+            "label": "CC Attribution"
+          },
+          "faceCount": 451370,
+          "vertexCount": 225687,
+          "author": "SorbonNum",
+          "authorProfile": "https://sketchfab.com/SorbonNum"
+        },
+        {
+          "uid": "387b6277358d490aafcbe0af0c2ccfdc",
+          "name": "Mũ Che Mặt Của Nữ Chiến Sĩ Tình Báo",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-387b6277358d490aafcbe0af0c2ccfdc",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 152043,
+          "vertexCount": 76703,
+          "author": "Vietnamese Women's Museum",
+          "authorProfile": "https://sketchfab.com/vietnamesewomensmuseum"
+        },
+        {
+          "uid": "17f2cc71bbac434fa21676e534174d1f",
+          "name": "Thư của chủ tịch HCM và Tuyên cáo",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-17f2cc71bbac434fa21676e534174d1f",
+          "isDownloadable": true,
+          "license": {
+            "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+            "label": "CC Attribution"
+          },
+          "faceCount": 40,
+          "vertexCount": 48,
+          "author": "seawitch.vn",
+          "authorProfile": "https://sketchfab.com/seawitch.vn"
+        },
+        {
+          "uid": "6158830391794fcfa8ac805dbb035d25",
+          "name": "Charles Frerichs",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-6158830391794fcfa8ac805dbb035d25",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 255790,
+          "vertexCount": 128151,
+          "author": "Panorama",
+          "authorProfile": "https://sketchfab.com/panorama"
+        },
+        {
+          "uid": "318aea3b03fb4b7f8a4cc9cf97c0278c",
+          "name": "Tượng AHLS Kim Đồng (1929 – 1943)",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-318aea3b03fb4b7f8a4cc9cf97c0278c",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 814364,
+          "vertexCount": 410428,
+          "author": "SEAP VR",
+          "authorProfile": "https://sketchfab.com/seapvisualization"
+        },
+        {
+          "uid": "907f6dbaf2cb49b58b9b7d9298a9b143",
+          "name": "Commando Memorial",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-907f6dbaf2cb49b58b9b7d9298a9b143",
+          "isDownloadable": true,
+          "license": {
+            "uid": "2628dbe5140a4e9592126c8df566c0b7",
+            "label": "CC Attribution-NonCommercial-ShareAlike"
+          },
+          "faceCount": 344133,
+          "vertexCount": 172669,
+          "author": "crlnvl",
+          "authorProfile": "https://sketchfab.com/crlnvl"
+        },
+        {
+          "uid": "c6ed2b59fea44ad58b5e85d03d4bbaac",
+          "name": "Kỷ vật 1C: Kẹp Bồ Câu",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-c6ed2b59fea44ad58b5e85d03d4bbaac",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 23662,
+          "vertexCount": 11831,
+          "author": "Số Hoá 1C",
+          "authorProfile": "https://sketchfab.com/sohoa.1c"
+        },
+        {
+          "uid": "d2d03c91ec8249458414cbc1cc3cd30c",
+          "name": "Bird River Bridge",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-d2d03c91ec8249458414cbc1cc3cd30c",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 2000000,
+          "vertexCount": 1244515,
+          "author": "PeterPWS",
+          "authorProfile": "https://sketchfab.com/PeterPWS"
+        },
+        {
+          "uid": "dc7752096a194ccdada87808826ca761",
+          "name": "Script on Newton Stone",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-dc7752096a194ccdada87808826ca761",
+          "isDownloadable": true,
+          "license": {
+            "uid": "bbfe3f7dbcdd4122b966b85b9786a989",
+            "label": "CC Attribution-NonCommercial"
+          },
+          "faceCount": 873550,
+          "vertexCount": 437692,
+          "author": "Douglas Ledingham",
+          "authorProfile": "https://sketchfab.com/Douglas.Ledingham"
+        },
+        {
+          "uid": "a010fa60c40e44e3858e9e18b9aa1ffb",
+          "name": "Newton House Ogham Stone",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-a010fa60c40e44e3858e9e18b9aa1ffb",
+          "isDownloadable": true,
+          "license": {
+            "uid": "bbfe3f7dbcdd4122b966b85b9786a989",
+            "label": "CC Attribution-NonCommercial"
+          },
+          "faceCount": 1899721,
+          "vertexCount": 950810,
+          "author": "Douglas Ledingham",
+          "authorProfile": "https://sketchfab.com/Douglas.Ledingham"
+        },
+        {
+          "uid": "cd0f5bfe1eba4dc69ca6029a37efbe6a",
+          "name": "Montipora danae: Detail View",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-cd0f5bfe1eba4dc69ca6029a37efbe6a",
+          "isDownloadable": true,
+          "license": {
+            "uid": "7c23a1ba438d4306920229c12afcb5f9",
+            "label": "CC0 Public Domain"
+          },
+          "faceCount": 99997,
+          "vertexCount": 60522,
+          "author": "The Smithsonian Institution",
+          "authorProfile": "https://sketchfab.com/Smithsonian"
+        },
+        {
+          "uid": "44a81e840cd94bbfb002d61fecb71083",
+          "name": "Montipora danae",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-44a81e840cd94bbfb002d61fecb71083",
+          "isDownloadable": true,
+          "license": {
+            "uid": "7c23a1ba438d4306920229c12afcb5f9",
+            "label": "CC0 Public Domain"
+          },
+          "faceCount": 99998,
+          "vertexCount": 49994,
+          "author": "The Smithsonian Institution",
+          "authorProfile": "https://sketchfab.com/Smithsonian"
+        },
+        {
+          "uid": "3855cf93e8a64815b2a7560cd44b9de7",
+          "name": "Ogham Script on Newton Stone",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-3855cf93e8a64815b2a7560cd44b9de7",
+          "isDownloadable": true,
+          "license": {
+            "uid": "bbfe3f7dbcdd4122b966b85b9786a989",
+            "label": "CC Attribution-NonCommercial"
+          },
+          "faceCount": 1070446,
+          "vertexCount": 536409,
+          "author": "Douglas Ledingham",
+          "authorProfile": "https://sketchfab.com/Douglas.Ledingham"
+        },
+        {
+          "uid": "72b73721d34f4541a4414a355dbf10fa",
+          "name": "WEST HESLERTON POST-HOLE MODEL area G",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-72b73721d34f4541a4414a355dbf10fa",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 500000,
+          "vertexCount": 253256,
+          "author": "Professor Dominic Powlesland",
+          "authorProfile": "https://sketchfab.com/d.powlesland"
+        },
+        {
+          "uid": "b037c81dabd14bcca2849dfbe68cd3ec",
+          "name": "Princesse Diana v2",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-b037c81dabd14bcca2849dfbe68cd3ec",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 8240,
+          "vertexCount": 4122,
+          "author": "Art-Conan",
+          "authorProfile": "https://sketchfab.com/Art-Conan"
+        },
+        {
+          "uid": "19c198bc271d4012b326bff4809655da",
+          "name": "Princesse Diana v1",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-19c198bc271d4012b326bff4809655da",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 8240,
+          "vertexCount": 4122,
+          "author": "Art-Conan",
+          "authorProfile": "https://sketchfab.com/Art-Conan"
+        },
+        {
+          "uid": "3c7e877ae1f943d085d1a67e00836296",
+          "name": "Thùng đạn TNXP trong kháng chiến",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-3c7e877ae1f943d085d1a67e00836296",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 66894,
+          "vertexCount": 33449,
+          "author": "SEAP VR",
+          "authorProfile": "https://sketchfab.com/seapvisualization"
+        }
+      ],
+      "hasNext": true,
+      "seconds": 7.65
+    },
+    {
+      "query": "MIN grenade shaped mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=MIN+grenade+shaped+mine&count=24",
+      "ok": true,
+      "models": [
+        {
+          "uid": "444c8bb4819c46dea84b6108c496f396",
+          "name": "Sci-Fi Explosive Mine",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-444c8bb4819c46dea84b6108c496f396",
+          "isDownloadable": true,
+          "license": {
+            "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+            "label": "CC Attribution"
+          },
+          "faceCount": 1090992,
+          "vertexCount": 547141,
+          "author": "Atrin",
+          "authorProfile": "https://sketchfab.com/itsatrin"
+        },
+        {
+          "uid": "3df86c1a99aa49e98da92726c70916e4",
+          "name": "M61 Grenade",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-3df86c1a99aa49e98da92726c70916e4",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 2490,
+          "vertexCount": 1266,
+          "author": "Vert-Candy",
+          "authorProfile": "https://sketchfab.com/VertCandy"
+        },
+        {
+          "uid": "0f5a238f9cb14631889a65343db67bbc",
+          "name": "VARTA Armored Personnel Carrier",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-0f5a238f9cb14631889a65343db67bbc",
+          "isDownloadable": false,
+          "license": {
+            "uid": "5b54cf13b1a4422ca439696eb152070d",
+            "label": "Editorial"
+          },
+          "faceCount": 89110,
+          "vertexCount": 48415,
+          "author": "Tim Samedov",
+          "authorProfile": "https://sketchfab.com/citizensnip"
+        },
+        {
+          "uid": "979a17f2572141c7a5fde3817a60088f",
+          "name": "Ejder ACV",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-979a17f2572141c7a5fde3817a60088f",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 54008,
+          "vertexCount": 27470,
+          "author": "zakirakil",
+          "authorProfile": "https://sketchfab.com/zakirakil"
+        },
+        {
+          "uid": "cac512869a5348f39b792277e33f7e32",
+          "name": "Bazooka",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-cac512869a5348f39b792277e33f7e32",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 6147,
+          "vertexCount": 3173,
+          "author": "Pitur",
+          "authorProfile": "https://sketchfab.com/Pitur"
+        },
+        {
+          "uid": "b07550eddfa0408681dcf2c7bb2f75bb",
+          "name": "Ugly Mini Pumpkin",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-b07550eddfa0408681dcf2c7bb2f75bb",
+          "isDownloadable": false,
+          "license": {
+            "uid": "783b685da9bf457d81e829fa283f3567",
+            "label": "Standard"
+          },
+          "faceCount": 80000,
+          "vertexCount": 40002,
+          "author": "kanistra",
+          "authorProfile": "https://sketchfab.com/kanistra"
+        }
+      ],
+      "hasNext": false,
+      "seconds": 7.15
+    },
+    {
+      "query": "Vietnam MIN mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=Vietnam+MIN+mine&count=24",
+      "ok": true,
+      "models": [
+        {
+          "uid": "703adb8138314218a64142dd73d3c06f",
+          "name": "Isometric Room",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-703adb8138314218a64142dd73d3c06f",
+          "isDownloadable": false,
+          "license": {
+            "uid": "5b54cf13b1a4422ca439696eb152070d",
+            "label": "Editorial"
+          },
+          "faceCount": 106323,
+          "vertexCount": 59332,
+          "author": "AVR Creative",
+          "authorProfile": "https://sketchfab.com/avrcreative"
+        },
+        {
+          "uid": "a3e012cce63642b0adfe2408d4c9a96e",
+          "name": "Stygian Zinogre - Fan Art",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-a3e012cce63642b0adfe2408d4c9a96e",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 313598,
+          "vertexCount": 190088,
+          "author": "AVR Creative",
+          "authorProfile": "https://sketchfab.com/avrcreative"
+        },
+        {
+          "uid": "889724d2f9784cb8ace08df14747d2d7",
+          "name": "Ship In A Bottle",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-889724d2f9784cb8ace08df14747d2d7",
+          "isDownloadable": false,
+          "license": {
+            "uid": "5b54cf13b1a4422ca439696eb152070d",
+            "label": "Editorial"
+          },
+          "faceCount": 855672,
+          "vertexCount": 442775,
+          "author": "AVR Creative",
+          "authorProfile": "https://sketchfab.com/avrcreative"
+        },
+        {
+          "uid": "ada518f9ccaa4d879293a9e88e23e2f4",
+          "name": "Space Vehicle",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-ada518f9ccaa4d879293a9e88e23e2f4",
+          "isDownloadable": false,
+          "license": {
+            "uid": "5b54cf13b1a4422ca439696eb152070d",
+            "label": "Editorial"
+          },
+          "faceCount": 1365833,
+          "vertexCount": 703037,
+          "author": "AVR Creative",
+          "authorProfile": "https://sketchfab.com/avrcreative"
+        },
+        {
+          "uid": "07ef091d1aab4a63803175a9992e7080",
+          "name": "Hover Bike - The Rider",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-07ef091d1aab4a63803175a9992e7080",
+          "isDownloadable": false,
+          "license": {
+            "uid": "5b54cf13b1a4422ca439696eb152070d",
+            "label": "Editorial"
+          },
+          "faceCount": 886437,
+          "vertexCount": 451045,
+          "author": "AVR Creative",
+          "authorProfile": "https://sketchfab.com/avrcreative"
+        },
+        {
+          "uid": "84851e970a6a4c82a12456e1791f8758",
+          "name": "Bulldozer",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-84851e970a6a4c82a12456e1791f8758",
+          "isDownloadable": false,
+          "license": {
+            "uid": "5b54cf13b1a4422ca439696eb152070d",
+            "label": "Editorial"
+          },
+          "faceCount": 924159,
+          "vertexCount": 475422,
+          "author": "AVR Creative",
+          "authorProfile": "https://sketchfab.com/avrcreative"
+        },
+        {
+          "uid": "63ecc5f460f94db09fac7d458ab53fb2",
+          "name": "Soviet TM-46 Anti Tank Blast Mine",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-63ecc5f460f94db09fac7d458ab53fb2",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 4986,
+          "vertexCount": 2507,
+          "author": "David Phoenix",
+          "authorProfile": "https://sketchfab.com/daphoeno"
+        },
+        {
+          "uid": "c77a7a14521d4bdfa1eb88870c9ccdbf",
+          "name": "M16 Mine",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-c77a7a14521d4bdfa1eb88870c9ccdbf",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 3670,
+          "vertexCount": 1862,
+          "author": "Z.E.P.H.Y.R",
+          "authorProfile": "https://sketchfab.com/Z.E.P.H.Y.R"
+        },
+        {
+          "uid": "5a464663750747b987253cf713fb59fa",
+          "name": "Male Buffalo in Vietnam 3D model",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-5a464663750747b987253cf713fb59fa",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 19756,
+          "vertexCount": 10010,
+          "author": "Đào Minh Đức",
+          "authorProfile": "https://sketchfab.com/dmd_hn"
+        },
+        {
+          "uid": "cb9c28e85f9a4770a899d7f032b56111",
+          "name": "North Vietnam Flag",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-cb9c28e85f9a4770a899d7f032b56111",
+          "isDownloadable": false,
+          "license": {
+            "uid": "783b685da9bf457d81e829fa283f3567",
+            "label": "Standard"
+          },
+          "faceCount": 18432,
+          "vertexCount": 9409,
+          "author": "KangaroOz 3D",
+          "authorProfile": "https://sketchfab.com/KangaroOz-3D"
+        },
+        {
+          "uid": "e3f271ecf1574403919a3ed3261aa1ef",
+          "name": "Intracopallet Vietnam",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-e3f271ecf1574403919a3ed3261aa1ef",
+          "isDownloadable": true,
+          "license": {
+            "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+            "label": "CC Attribution"
+          },
+          "faceCount": 50696,
+          "vertexCount": 25471,
+          "author": "Intracopallet Vietnam",
+          "authorProfile": "https://sketchfab.com/Intracopalletvietnam"
+        },
+        {
+          "uid": "163e34affff64ebb85dd9619695ef480",
+          "name": "Lava Golem",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-163e34affff64ebb85dd9619695ef480",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 20382,
+          "vertexCount": 10506,
+          "author": "AVR Creative",
+          "authorProfile": "https://sketchfab.com/avrcreative"
+        },
+        {
+          "uid": "30cbc2a6b7984e66b12b08be9f287927",
+          "name": "VIETNAM DA NANG - 5 DISTRICT MUSUEM SCULPTURE",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-30cbc2a6b7984e66b12b08be9f287927",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 142033,
+          "vertexCount": 71420,
+          "author": "Bart Sakwerda - 3d models and research",
+          "authorProfile": "https://sketchfab.com/bart.sakwerda"
+        },
+        {
+          "uid": "f8626a5278724cae8f173480288dbfe4",
+          "name": "Tank 843 Ho Chi Minh, mobile phone capture",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-f8626a5278724cae8f173480288dbfe4",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 904774,
+          "vertexCount": 452289,
+          "author": "Al",
+          "authorProfile": "https://sketchfab.com/alrawlinson"
+        },
+        {
+          "uid": "8ab2d765fe5545d0a4bf11be0f938c51",
+          "name": "Tree Sword Stylized",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-8ab2d765fe5545d0a4bf11be0f938c51",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 9780,
+          "vertexCount": 5213,
+          "author": "TommyM",
+          "authorProfile": "https://sketchfab.com/tommym2910"
+        },
+        {
+          "uid": "1fb2a0e5325e4edb9da24567692a337e",
+          "name": "Vietnam - my homeland/Việt Nam - quê hương tôi",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-1fb2a0e5325e4edb9da24567692a337e",
+          "isDownloadable": true,
+          "license": {
+            "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+            "label": "CC Attribution"
+          },
+          "faceCount": 2760,
+          "vertexCount": 1390,
+          "author": "Trần Minh Đức",
+          "authorProfile": "https://sketchfab.com/minhductran5h"
+        },
+        {
+          "uid": "869731ecd5204425bb138ec2e7012e86",
+          "name": "Ghe Biển - VietNam Sea Boat",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-869731ecd5204425bb138ec2e7012e86",
+          "isDownloadable": true,
+          "license": {
+            "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+            "label": "CC Attribution"
+          },
+          "faceCount": 69516,
+          "vertexCount": 35108,
+          "author": "Mây",
+          "authorProfile": "https://sketchfab.com/amelia.thienkim"
+        },
+        {
+          "uid": "e99f884d29b84f35a339a049723144e9",
+          "name": "TM-46 Mine",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-e99f884d29b84f35a339a049723144e9",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 4034,
+          "vertexCount": 2132,
+          "author": "sheheryar_noor",
+          "authorProfile": "https://sketchfab.com/sheheryar_noor"
+        },
+        {
+          "uid": "012fddc4d53b4fb5860e53e6578e54c3",
+          "name": "The Ho Chi Minh Communist Youth Union",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-012fddc4d53b4fb5860e53e6578e54c3",
+          "isDownloadable": true,
+          "license": {
+            "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+            "label": "CC Attribution"
+          },
+          "faceCount": 40733,
+          "vertexCount": 28730,
+          "author": "Khoa Nguyen",
+          "authorProfile": "https://sketchfab.com/ngdkh"
+        },
+        {
+          "uid": "dd8ed74dd6e64875b9065c7254e4efaa",
+          "name": "M48A3 Mod.B Patton Australian Variant",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-dd8ed74dd6e64875b9065c7254e4efaa",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 226409,
+          "vertexCount": 127564,
+          "author": "Curtis",
+          "authorProfile": "https://sketchfab.com/nortoncmn"
+        },
+        {
+          "uid": "2c4905c6a1fd4fb18981886a77ba4fa9",
+          "name": "Dinh Doc Lap Independence Palace",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-2c4905c6a1fd4fb18981886a77ba4fa9",
+          "isDownloadable": true,
+          "license": {
+            "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+            "label": "CC Attribution"
+          },
+          "faceCount": 148496,
+          "vertexCount": 73772,
+          "author": "Hoàng Huy",
+          "authorProfile": "https://sketchfab.com/danghoanghuy69"
+        },
+        {
+          "uid": "94a5c0da9381435188cd9d40d31d45bf",
+          "name": "Bitexco Financial Tower",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-94a5c0da9381435188cd9d40d31d45bf",
+          "isDownloadable": true,
+          "license": {
+            "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+            "label": "CC Attribution"
+          },
+          "faceCount": 692255,
+          "vertexCount": 357416,
+          "author": "Dave Love SketchFab",
+          "authorProfile": "https://sketchfab.com/Tyler_Dave"
+        },
+        {
+          "uid": "634b57b9a0eb4c17ac0d2061f71f9680",
+          "name": "Cessna U17B Skywagon 3D model",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-634b57b9a0eb4c17ac0d2061f71f9680",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 8212,
+          "vertexCount": 4329,
+          "author": "Đào Minh Đức",
+          "authorProfile": "https://sketchfab.com/dmd_hn"
+        },
+        {
+          "uid": "6254aee0d56f472eb4d116a5111482ee",
+          "name": "Old Piano",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-6254aee0d56f472eb4d116a5111482ee",
+          "isDownloadable": false,
+          "license": {
+            "uid": "5b54cf13b1a4422ca439696eb152070d",
+            "label": "Editorial"
+          },
+          "faceCount": 240114,
+          "vertexCount": 150603,
+          "author": "AVR Creative",
+          "authorProfile": "https://sketchfab.com/avrcreative"
+        }
+      ],
+      "hasNext": true,
+      "seconds": 7.19
+    },
+    {
+      "query": "YM-II mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=YM-II+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.87
+    },
+    {
+      "query": "YM2 mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=YM2+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.29
+    },
+    {
+      "query": "YM-III mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=YM-III+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.22
+    },
+    {
+      "query": "YM3 mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=YM3+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.03
+    },
+    {
+      "query": "YM-4 mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=YM-4+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 5.86
+    },
+    {
+      "query": "YM4 mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=YM4+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 6.01
+    },
+    {
+      "query": "KM14",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=KM14&count=24",
+      "ok": true,
+      "models": [
+        {
+          "uid": "7c6295a909014459abf53edf2641c7c1",
+          "name": "Milestone Confine Italia-Indemini-Vira Km 14",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-7c6295a909014459abf53edf2641c7c1",
+          "isDownloadable": true,
+          "license": {
+            "uid": "2628dbe5140a4e9592126c8df566c0b7",
+            "label": "CC Attribution-NonCommercial-ShareAlike"
+          },
+          "faceCount": 97849,
+          "vertexCount": 49813,
+          "author": "clwacker",
+          "authorProfile": "https://sketchfab.com/clwacker"
+        }
+      ],
+      "hasNext": false,
+      "seconds": 5.92
+    },
+    {
+      "query": "KM-14 mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=KM-14+mine&count=24",
+      "ok": true,
+      "models": [
+        {
+          "uid": "a614b2ff897745ce8cf9e95b8b05f6b0",
+          "name": "Fateh and Kúseh class Submarines",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-a614b2ff897745ce8cf9e95b8b05f6b0",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 221352,
+          "vertexCount": 122428,
+          "author": "KillCaptureDestroy",
+          "authorProfile": "https://sketchfab.com/jloiacono82"
+        }
+      ],
+      "hasNext": false,
+      "seconds": 6.63
+    },
+    {
+      "query": "KM16",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=KM16&count=24",
+      "ok": true,
+      "models": [
+        {
+          "uid": "11103879683f4cddb19f9f84096deaee",
+          "name": "KINCHO KM16",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-11103879683f4cddb19f9f84096deaee",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 26946,
+          "vertexCount": 9607,
+          "author": "GandzaEngenharia",
+          "authorProfile": "https://sketchfab.com/GandzaEngenharia"
+        },
+        {
+          "uid": "0b0f0f029f2645bab87e5498385e1a04",
+          "name": "Milestone Confine Italia-Indemini-Vira Km 16",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-0b0f0f029f2645bab87e5498385e1a04",
+          "isDownloadable": true,
+          "license": {
+            "uid": "2628dbe5140a4e9592126c8df566c0b7",
+            "label": "CC Attribution-NonCommercial-ShareAlike"
+          },
+          "faceCount": 245800,
+          "vertexCount": 124048,
+          "author": "clwacker",
+          "authorProfile": "https://sketchfab.com/clwacker"
+        }
+      ],
+      "hasNext": false,
+      "seconds": 4.05
+    },
+    {
+      "query": "KM-16 mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=KM-16+mine&count=24",
+      "ok": true,
+      "models": [
+        {
+          "uid": "1d8324822bbe4e9494cd262d322e1b4a",
+          "name": "Wreck of Cesare Rossarol 1914-1918 (Stern)",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-1d8324822bbe4e9494cd262d322e1b4a",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 2268274,
+          "vertexCount": 1130208,
+          "author": "holger.buss",
+          "authorProfile": "https://sketchfab.com/holger.buss"
+        },
+        {
+          "uid": "7d32ee2860eb4942994020ef45a5520d",
+          "name": "Wreck of Cesare Rossarol 1914-1918 (Bow)",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-7d32ee2860eb4942994020ef45a5520d",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 2027188,
+          "vertexCount": 1009286,
+          "author": "holger.buss",
+          "authorProfile": "https://sketchfab.com/holger.buss"
+        }
+      ],
+      "hasNext": false,
+      "seconds": 4.23
+    },
+    {
+      "query": "KM18A1",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=KM18A1&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 3.9
+    },
+    {
+      "query": "KM-18A1",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=KM-18A1&count=24",
+      "ok": true,
+      "models": [
+        {
+          "uid": "5e010b5eb6e2489e8f73c6353e078584",
+          "name": "Lighthouse 't Hoge Licht Westkapelle",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-5e010b5eb6e2489e8f73c6353e078584",
+          "isDownloadable": true,
+          "license": {
+            "uid": "bbfe3f7dbcdd4122b966b85b9786a989",
+            "label": "CC Attribution-NonCommercial"
+          },
+          "faceCount": 1795116,
+          "vertexCount": 897149,
+          "author": "netgis",
+          "authorProfile": "https://sketchfab.com/netgis"
+        },
+        {
+          "uid": "9044462ffcac434c94868ae4de74206b",
+          "name": "Milestone Brig - Furkapass km 07",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-9044462ffcac434c94868ae4de74206b",
+          "isDownloadable": true,
+          "license": {
+            "uid": "2628dbe5140a4e9592126c8df566c0b7",
+            "label": "CC Attribution-NonCommercial-ShareAlike"
+          },
+          "faceCount": 136913,
+          "vertexCount": 69528,
+          "author": "clwacker",
+          "authorProfile": "https://sketchfab.com/clwacker"
+        },
+        {
+          "uid": "2274f2b11d184487b20dee14ab51204e",
+          "name": "1998 Alpina B12 6.0",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-2274f2b11d184487b20dee14ab51204e",
+          "isDownloadable": true,
+          "license": {
+            "uid": "2628dbe5140a4e9592126c8df566c0b7",
+            "label": "CC Attribution-NonCommercial-ShareAlike"
+          },
+          "faceCount": 1202298,
+          "vertexCount": 623932,
+          "author": "OUTPISTON",
+          "authorProfile": "https://sketchfab.com/outpiston"
+        },
+        {
+          "uid": "4aa34e22718b48b79530dcb96fd8af56",
+          "name": "Avenida Paulista",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-4aa34e22718b48b79530dcb96fd8af56",
+          "isDownloadable": true,
+          "license": {
+            "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+            "label": "CC Attribution"
+          },
+          "faceCount": 0,
+          "vertexCount": 3278899,
+          "author": "Philipp Urech (Topostudio)",
+          "authorProfile": "https://sketchfab.com/prwurech"
+        },
+        {
+          "uid": "fe5da7d5202a4bfaa6b48e0096d4c6fd",
+          "name": "Passage Grave - Øm Jættestue, Denmark",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-fe5da7d5202a4bfaa6b48e0096d4c6fd",
+          "isDownloadable": true,
+          "license": {
+            "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+            "label": "CC Attribution"
+          },
+          "faceCount": 99999,
+          "vertexCount": 48879,
+          "author": "Azad Balabanian",
+          "authorProfile": "https://sketchfab.com/azadbal"
+        },
+        {
+          "uid": "7afdcd0f0db8497c97f652b7c6f4689b",
+          "name": "Ehrengrab Carl Ritter von Ghega",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-7afdcd0f0db8497c97f652b7c6f4689b",
+          "isDownloadable": true,
+          "license": {
+            "uid": "bbfe3f7dbcdd4122b966b85b9786a989",
+            "label": "CC Attribution-NonCommercial"
+          },
+          "faceCount": 761448,
+          "vertexCount": 384505,
+          "author": "noe-3d.at",
+          "authorProfile": "https://sketchfab.com/www.noe-3d.at"
+        },
+        {
+          "uid": "cc2c62f56cd94a7c8b2c586515b378e7",
+          "name": "Boeing767",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-cc2c62f56cd94a7c8b2c586515b378e7",
+          "isDownloadable": true,
+          "license": {
+            "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+            "label": "CC Attribution"
+          },
+          "faceCount": 32690,
+          "vertexCount": 17312,
+          "author": "manilov.ap",
+          "authorProfile": "https://sketchfab.com/manilov.ap"
+        },
+        {
+          "uid": "99cc98090b03484f9e70b9470cb53b36",
+          "name": "Egmont National Park, NZ",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-99cc98090b03484f9e70b9470cb53b36",
+          "isDownloadable": true,
+          "license": {
+            "uid": "2628dbe5140a4e9592126c8df566c0b7",
+            "label": "CC Attribution-NonCommercial-ShareAlike"
+          },
+          "faceCount": 1343748,
+          "vertexCount": 673530,
+          "author": "DamienMansell",
+          "authorProfile": "https://sketchfab.com/DamienMansell"
+        },
+        {
+          "uid": "f5f4b5dbb4f24e579d90a8547f07e284",
+          "name": "Milestone Chiasso-Gottardo Km 10",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-f5f4b5dbb4f24e579d90a8547f07e284",
+          "isDownloadable": true,
+          "license": {
+            "uid": "2628dbe5140a4e9592126c8df566c0b7",
+            "label": "CC Attribution-NonCommercial-ShareAlike"
+          },
+          "faceCount": 67410,
+          "vertexCount": 34214,
+          "author": "clwacker",
+          "authorProfile": "https://sketchfab.com/clwacker"
+        },
+        {
+          "uid": "9045a32e3c1244248509ef2c23cb10a9",
+          "name": "Milestone Chiasso-Gottardo Km 97",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-9045a32e3c1244248509ef2c23cb10a9",
+          "isDownloadable": true,
+          "license": {
+            "uid": "2628dbe5140a4e9592126c8df566c0b7",
+            "label": "CC Attribution-NonCommercial-ShareAlike"
+          },
+          "faceCount": 111726,
+          "vertexCount": 56735,
+          "author": "clwacker",
+          "authorProfile": "https://sketchfab.com/clwacker"
+        },
+        {
+          "uid": "73dd8d3b64314cac82400c603cb1cd20",
+          "name": "Milestone Chiasso-Gottardo Km 1",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-73dd8d3b64314cac82400c603cb1cd20",
+          "isDownloadable": true,
+          "license": {
+            "uid": "2628dbe5140a4e9592126c8df566c0b7",
+            "label": "CC Attribution-NonCommercial-ShareAlike"
+          },
+          "faceCount": 47805,
+          "vertexCount": 24424,
+          "author": "clwacker",
+          "authorProfile": "https://sketchfab.com/clwacker"
+        },
+        {
+          "uid": "e86581708c42499a9068d66bf9bf81e9",
+          "name": "Milestone Brig - Furkapass km 29",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-e86581708c42499a9068d66bf9bf81e9",
+          "isDownloadable": true,
+          "license": {
+            "uid": "2628dbe5140a4e9592126c8df566c0b7",
+            "label": "CC Attribution-NonCommercial-ShareAlike"
+          },
+          "faceCount": 196503,
+          "vertexCount": 99254,
+          "author": "clwacker",
+          "authorProfile": "https://sketchfab.com/clwacker"
+        },
+        {
+          "uid": "64090717233749b18ed061ada7fd66a5",
+          "name": "Milestone Brig - Furkapass km 55",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-64090717233749b18ed061ada7fd66a5",
+          "isDownloadable": true,
+          "license": {
+            "uid": "2628dbe5140a4e9592126c8df566c0b7",
+            "label": "CC Attribution-NonCommercial-ShareAlike"
+          },
+          "faceCount": 138159,
+          "vertexCount": 69951,
+          "author": "clwacker",
+          "authorProfile": "https://sketchfab.com/clwacker"
+        },
+        {
+          "uid": "bb33ac5e36554959b20566aa55bd6aef",
+          "name": "Water tower of Former Artillery Station",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-bb33ac5e36554959b20566aa55bd6aef",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 999926,
+          "vertexCount": 698340,
+          "author": "Saulius.Zaura",
+          "authorProfile": "https://sketchfab.com/Saulius.Zaura"
+        },
+        {
+          "uid": "c8af03038261416fada70065f98ebd3f",
+          "name": "Milestone Chiasso-Gottardo Km 104",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-c8af03038261416fada70065f98ebd3f",
+          "isDownloadable": true,
+          "license": {
+            "uid": "2628dbe5140a4e9592126c8df566c0b7",
+            "label": "CC Attribution-NonCommercial-ShareAlike"
+          },
+          "faceCount": 65839,
+          "vertexCount": 33538,
+          "author": "clwacker",
+          "authorProfile": "https://sketchfab.com/clwacker"
+        },
+        {
+          "uid": "5a8d13b3a9d743ba975d77169a1dbfdc",
+          "name": "Vn. San José, Chile",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-5a8d13b3a9d743ba975d77169a1dbfdc",
+          "isDownloadable": true,
+          "license": {
+            "uid": "2628dbe5140a4e9592126c8df566c0b7",
+            "label": "CC Attribution-NonCommercial-ShareAlike"
+          },
+          "faceCount": 1301542,
+          "vertexCount": 652420,
+          "author": "David Stuardo",
+          "authorProfile": "https://sketchfab.com/d.stuardo"
+        },
+        {
+          "uid": "1709760801f04494bdee0831eb0ad3c6",
+          "name": "Milestone Oberalppass Km 42 von Altdorf",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-1709760801f04494bdee0831eb0ad3c6",
+          "isDownloadable": true,
+          "license": {
+            "uid": "2628dbe5140a4e9592126c8df566c0b7",
+            "label": "CC Attribution-NonCommercial-ShareAlike"
+          },
+          "faceCount": 164946,
+          "vertexCount": 83219,
+          "author": "clwacker",
+          "authorProfile": "https://sketchfab.com/clwacker"
+        },
+        {
+          "uid": "7383aecb658d42aa8e85c1d540d8d56d",
+          "name": "Milestone Gotthardpass Km 24 von Altdorf",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-7383aecb658d42aa8e85c1d540d8d56d",
+          "isDownloadable": true,
+          "license": {
+            "uid": "2628dbe5140a4e9592126c8df566c0b7",
+            "label": "CC Attribution-NonCommercial-ShareAlike"
+          },
+          "faceCount": 108981,
+          "vertexCount": 55089,
+          "author": "clwacker",
+          "authorProfile": "https://sketchfab.com/clwacker"
+        },
+        {
+          "uid": "e6371bf537b3447291b7124c2178c5c4",
+          "name": "Milestone Oberalppass Km 44 von Altdorf",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-e6371bf537b3447291b7124c2178c5c4",
+          "isDownloadable": true,
+          "license": {
+            "uid": "2628dbe5140a4e9592126c8df566c0b7",
+            "label": "CC Attribution-NonCommercial-ShareAlike"
+          },
+          "faceCount": 123145,
+          "vertexCount": 62301,
+          "author": "clwacker",
+          "authorProfile": "https://sketchfab.com/clwacker"
+        },
+        {
+          "uid": "9ca24b92d8fd4e63b7c8de2c713b5d4e",
+          "name": "Milestone Gotthardpass Km 14 von Altdorf",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-9ca24b92d8fd4e63b7c8de2c713b5d4e",
+          "isDownloadable": true,
+          "license": {
+            "uid": "2628dbe5140a4e9592126c8df566c0b7",
+            "label": "CC Attribution-NonCommercial-ShareAlike"
+          },
+          "faceCount": 110114,
+          "vertexCount": 55618,
+          "author": "clwacker",
+          "authorProfile": "https://sketchfab.com/clwacker"
+        },
+        {
+          "uid": "d88614fa6a9b4592b0267b4e7327d500",
+          "name": "Kryžių kalnas / Hill of Crosses",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-d88614fa6a9b4592b0267b4e7327d500",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 1038321,
+          "vertexCount": 721431,
+          "author": "Saulius.Zaura",
+          "authorProfile": "https://sketchfab.com/Saulius.Zaura"
+        },
+        {
+          "uid": "ab30cfe882404a9ba2d016d7d11332e6",
+          "name": "Fustanella Costume – Chrisso Museum",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-ab30cfe882404a9ba2d016d7d11332e6",
+          "isDownloadable": true,
+          "license": {
+            "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+            "label": "CC Attribution"
+          },
+          "faceCount": 899990,
+          "vertexCount": 449965,
+          "author": "iedu360.eu",
+          "authorProfile": "https://sketchfab.com/iedu360.eu"
+        },
+        {
+          "uid": "963f1a70987b42b693ccf36c4484b61c",
+          "name": "Monte Taranaki, isla Norte de Nueva Zelanda",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-963f1a70987b42b693ccf36c4484b61c",
+          "isDownloadable": true,
+          "license": {
+            "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+            "label": "CC Attribution"
+          },
+          "faceCount": 1450788,
+          "vertexCount": 732624,
+          "author": "CMPLab",
+          "authorProfile": "https://sketchfab.com/secad"
+        },
+        {
+          "uid": "160f16f9509145cba8a0aa012f70a0a1",
+          "name": "Letterpress Block Stamp",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-160f16f9509145cba8a0aa012f70a0a1",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 279248,
+          "vertexCount": 139626,
+          "author": "University of South Florida Libraries",
+          "authorProfile": "https://sketchfab.com/USF_digital"
+        }
+      ],
+      "hasNext": true,
+      "seconds": 3.7
+    },
+    {
+      "query": "M77 landmine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=M77+landmine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false
+    },
+    {
+      "query": "M78 mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=M78+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false
+    },
+    {
+      "query": "ML7",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=ML7&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false
+    },
+    {
+      "query": "MS3 mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=MS3+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false
+    }
+  ]
+}

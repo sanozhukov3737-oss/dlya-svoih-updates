@@ -1,0 +1,30 @@
+{
+  "apkSha256": "300b77deaee3348e05a0135bf0079414c07dc2e15a7dcfd9b1239a8cef99298f",
+  "packageName": "ru.dlyasvoih.app",
+  "versionName": "0.3.134",
+  "versionCode": 138,
+  "upgradeInstallation": "passed-actual-adb-install-r-over-published-0.3.133",
+  "favoritesPreserved": true,
+  "favoriteIds": [
+    "mine-audit-v25-su-pmk-40",
+    "ref-v8-tm-46"
+  ],
+  "settingsPreserved": true,
+  "preservedAppearance": {
+    "theme_mode": "2",
+    "large_mode": "true"
+  },
+  "fullCatalogOnAndroid": true,
+  "contentVersion": 195,
+  "cards": 1697,
+  "images": 1600,
+  "preservedPublishedCardIdsAndRowids": 1426,
+  "galleryZoomAndSecondPhoto": true,
+  "cardButtonsAndSwipes": true,
+  "offline": true,
+  "androidVersion": "11",
+  "androidApi": "30",
+  "androidModel": "sdk_gphone_x86_64",
+  "modelVisualChecks": "passed-pixel-contrast-relief-and-touch-rotation-on-Android",
+  "humanVisualReview": "pending-review-of-actual-Android-frames"
+}

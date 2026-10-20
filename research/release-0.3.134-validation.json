@@ -1,0 +1,33 @@
+{
+  "status": "compiled-candidate-not-signed-not-published",
+  "appVersion": "0.3.134",
+  "versionCode": 138,
+  "contentVersion": 195,
+  "cards": 1697,
+  "addedCards": 271,
+  "images": 1600,
+  "addedImages": 267,
+  "preservedPublishedCards": 1426,
+  "preservedPublishedMedia": 2624,
+  "packageBytes": 87181324,
+  "packageSha256": "462726cf773154068571f97a5bba8f4ed9f1a00e4d2532052350c074d6742c34",
+  "hostTestsPassed": 50,
+  "androidBuild": "passed-assembleDebug-assembleDebugAndroidTest-assembleRelease",
+  "publication": "blocked-GitHub-integration-403",
+  "fullRestoredSearchRegression": "passed",
+  "offlineModels": 19,
+  "addedOfflineModels": 4,
+  "releaseUnsignedApkBytes": 144614177,
+  "releaseUnsignedApkSha256": "43ffc8b8d8ba2a632d3d13a5f287a4fb6a6a43bddf008122026186aa2a0197f4",
+  "actualApkCatalogAndModelHashes": "passed",
+  "androidRuntimeChecks": "not-completed-software-emulator-install-failed-package-service-broken-pipe-32",
+  "signatureCompatibility": "pending-original-key",
+  "expectedSignerSha256": "2f0a0908f269bc039311edb58fca8863347f1e4c3a7cfaddd909991cf1f0b509",
+  "windowsSigningHelper": "provided-not-executed-on-this-Linux-host",
+  "hostTestGroups": {
+    "catalogSearchModelsReaderAndReferences": 27,
+    "appFeedCatalogFeedAndMenuCache": 23
+  },
+  "androidVisualReview": "required-on-accelerated-Android-before-publication",
+  "androidEmulatorBootSeconds": 470
+}

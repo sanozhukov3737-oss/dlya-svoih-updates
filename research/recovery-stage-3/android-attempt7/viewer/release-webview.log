@@ -1,0 +1,23 @@
+--------- beginning of main
+--------- beginning of system
+--------- beginning of kernel
+10-20 09:26:09.811  6343  6343 E chromium: [ERROR:filesystem_posix.cc(62)] mkdir /data/user/0/ru.dlyasvoih.app/cache/WebView/Crashpad: No such file or directory (2)
+10-20 09:26:13.302  6343  6343 I OfflineModelViewer: Offline model frame {"colors":1812,"triangles":3563,"stage":[412,471],"viewport":[412,471],"buffer":[618,706],"camera":[2.1266167268991856,1.6540352320326999,2.7567253867211665]}
+10-20 09:26:24.857  6343  6343 E chromium: [ERROR:aw_browser_terminator.cc(125)] Renderer process (8497) crash detected (code -1).
+10-20 09:26:53.651  6343  6343 I OfflineModelViewer: Offline model frame {"colors":2141,"triangles":49823,"stage":[412,451],"viewport":[412,451],"buffer":[618,676],"camera":[2.0945077200392217,1.6290615600305058,2.7151026000508427]}
+10-20 09:27:10.882  6343  6343 E chromium: [ERROR:aw_browser_terminator.cc(125)] Renderer process (9093) crash detected (code -1).
+10-20 09:27:23.706  6343  6343 I OfflineModelViewer: WebGL: INVALID_VALUE: shaderSource: string not ASCII
+10-20 09:27:23.706  6343  6343 I OfflineModelViewer: WebGL: INVALID_VALUE: shaderSource: string not ASCII
+10-20 09:27:23.706  6343  6343 I OfflineModelViewer: THREE.WebGLProgram: Shader Error 1281 - VALIDATE_STATUS false
+10-20 09:27:23.706  6343  6343 I OfflineModelViewer: 
+10-20 09:27:23.706  6343  6343 I OfflineModelViewer: Material Name: Условная матовая оливковая окраска
+10-20 09:27:23.706  6343  6343 I OfflineModelViewer: Material Type: MeshStandardMaterial
+10-20 09:27:23.706  6343  6343 I OfflineModelViewer: 
+10-20 09:27:23.706  6343  6343 I OfflineModelViewer: Program Info Log: invalid shaders��
+10-20 09:27:23.706  6343  6343 I OfflineModelViewer: ERROR: 1:1: '' : syntax error
+10-20 09:27:23.706  6343  6343 I OfflineModelViewer: ��
+10-20 09:27:23.706  6343  6343 I OfflineModelViewer: ERROR: 1:1: '' : syntax error
+10-20 09:27:23.706  6343  6343 I OfflineModelViewer: ��
+10-20 09:27:23.706  6343  6343 I OfflineModelViewer: WebGL: INVALID_OPERATION: useProgram: program not valid
+10-20 09:27:23.706  6343  6343 I OfflineModelViewer: WebGL: INVALID_OPERATION: drawElements: no valid shader program in use
+10-20 09:27:23.713  6343  6343 I OfflineModelViewer: Offline model frame {"colors":1,"triangles":2276,"stage":[412,451],"viewport":[412,451],"buffer":[618,676],"camera":[2.2315404900434044,1.7356426033670926,2.8927376722784874]}

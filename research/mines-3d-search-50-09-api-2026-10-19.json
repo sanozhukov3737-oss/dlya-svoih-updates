@@ -1,0 +1,2278 @@
+{
+  "checkedAt": "2026-10-19",
+  "range": [
+    401,
+    450
+  ],
+  "cards": [
+    {
+      "id": "mine-audit-v25-us-mk-57",
+      "title": "Mk 57",
+      "number": 401,
+      "apiQueries": [
+        "Mk 57 naval mine",
+        "Mark 57 mine"
+      ],
+      "status": "excluded",
+      "note": "Это система управления корабельным огнём и вертикальная пусковая установка, а не морская мина Mk 57.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Совпадение исключено после проверки"
+    },
+    {
+      "id": "mine-audit-v25-us-mk-64-mod-5-quickstrike-er",
+      "title": "Mk 64 Mod 5 Quickstrike-ER",
+      "number": 402,
+      "apiQueries": [
+        "Mk 64 Quickstrike ER",
+        "Quickstrike ER mine"
+      ],
+      "status": "variant",
+      "note": "Найдена обычная Mk-64 Quickstrike в библиотеке MVRsimulation. На первичной странице нет подтверждения исполнения Mod 5 Quickstrike-ER. Доступ предоставляется клиентам VRSG в собственном формате. К карточке Mod 5 ER модель не привязана, открытого GLB не получено.",
+      "sources": [
+        {
+          "title": "Mk-64 Quickstrike · MVRsimulation",
+          "url": "https://www.mvrsimulation.com/index.php/model/mk-64usgrey",
+          "author": "MVRsimulation",
+          "license": "Для клиентов VRSG, собственный формат; открытая лицензия не подтверждена",
+          "verification": "Первичная страница прямо указывает Mk-64 Quickstrike, но не Mod 5 и не ER."
+        }
+      ],
+      "downloadedThisPass": false,
+      "statusLabel": "Родственное название · точная модификация не подтверждена"
+    },
+    {
+      "id": "mine-audit-v25-fr-lance",
+      "title": "Lance",
+      "number": 403,
+      "apiQueries": [
+        "Lance French mine",
+        "Lance naval mine"
+      ],
+      "status": "none",
+      "note": "Проверены Lance и GIAT Lance с уточнением типа объекта. Копья, страйкбольные устройства и изделия с тем же словом в названии не считались моделью французской мины. Подходящий наружный файл не получен.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не найден в этом проходе"
+    },
+    {
+      "id": "mine-audit-v25-fr-m-51",
+      "title": "M-51",
+      "number": 404,
+      "apiQueries": [
+        "M-51 French mine",
+        "M51 landmine"
+      ],
+      "status": "excluded",
+      "note": "Модели танка с индексом M-51 не соответствуют французской мине M-51.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Совпадение исключено после проверки"
+    },
+    {
+      "id": "mine-audit-v25-fr-m-52",
+      "title": "M-52",
+      "number": 405,
+      "apiQueries": [
+        "M-52 French mine",
+        "M52 landmine"
+      ],
+      "status": "none",
+      "note": "Проверены M-52, Model 1952 и дополнительное название M 52 MACI. Скутеры, самоходные орудия и другие предметы с индексом M52 исключены. Подходящий наружный файл в этом проходе не получен.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не найден в этом проходе"
+    },
+    {
+      "id": "mine-audit-v25-fr-mle-1951",
+      "title": "Mle 1951",
+      "number": 406,
+      "apiQueries": [
+        "Mle 1951 mine",
+        "Modele 1951 mine"
+      ],
+      "status": "excluded",
+      "note": "В индексаторе найдено предложение нажимной MI APID 51. В нашей базе Mle 1951 и Mle 1955 относятся к осколочному семейству Model 1951/55. Совпадения года недостаточно: эту модель не подставляли к данным карточкам. Индивидуальный файл и лицензия предложения не подтверждены.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Совпадение исключено после проверки"
+    },
+    {
+      "id": "mine-audit-v25-fr-mle-1955",
+      "title": "Mle 1955",
+      "number": 407,
+      "apiQueries": [
+        "Mle 1955 mine",
+        "Modele 1955 mine"
+      ],
+      "status": "none",
+      "note": "Проверены Mle 1955, семейство 1951/55 и MI AP MB 51-55. Найденная в индексаторе нажимная MI APID 51 к этой осколочной карточке не относится. Подходящий наружный файл не получен.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не найден в этом проходе"
+    },
+    {
+      "id": "mine-audit-v25-fr-model-1953",
+      "title": "Model 1953",
+      "number": 408,
+      "apiQueries": [
+        "Model 1953 French mine",
+        "Mle 1953 mine"
+      ],
+      "status": "none",
+      "note": "Проверены обозначение и варианты написания в публичном каталоге Sketchfab и веб-поиске. Подходящая наружная модель именно этой карточки с подтверждённым правом включения в приложение в этом проходе не получена.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не найден в этом проходе"
+    },
+    {
+      "id": "mine-audit-v25-fr-model-1954",
+      "title": "Model 1954",
+      "number": 409,
+      "apiQueries": [
+        "Model 1954 French mine",
+        "Mle 1954 mine"
+      ],
+      "status": "none",
+      "note": "Проверены обозначение и варианты написания в публичном каталоге Sketchfab и веб-поиске. Подходящая наружная модель именно этой карточки с подтверждённым правом включения в приложение в этом проходе не получена.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не найден в этом проходе"
+    },
+    {
+      "id": "mine-audit-v25-us-m23",
+      "title": "M23",
+      "number": 410,
+      "apiQueries": [
+        "M23 chemical mine",
+        "M23 landmine"
+      ],
+      "status": "excluded",
+      "note": "Найдены упоминания технических разрезных макетов. Они исключены из подбора цельных наружных визуальных моделей; исходники и внутренние детали не скачивались.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Совпадение исключено после проверки"
+    },
+    {
+      "id": "mine-audit-v26-su-pm-1",
+      "title": "ПМ-1",
+      "number": 411,
+      "apiQueries": [
+        "PM-1 naval mine",
+        "ПМ-1 морская мина"
+      ],
+      "status": "none",
+      "note": "Проверены обозначение и варианты написания в публичном каталоге Sketchfab и веб-поиске. Подходящая наружная модель именно этой карточки с подтверждённым правом включения в приложение в этом проходе не получена.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не найден в этом проходе"
+    },
+    {
+      "id": "mine-audit-v26-su-ksm",
+      "title": "КСМ",
+      "number": 412,
+      "apiQueries": [
+        "KSM naval mine",
+        "КСМ мина"
+      ],
+      "status": "none",
+      "note": "Проверены обозначение и варианты написания в публичном каталоге Sketchfab и веб-поиске. Подходящая наружная модель именно этой карточки с подтверждённым правом включения в приложение в этом проходе не получена.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не найден в этом проходе"
+    },
+    {
+      "id": "mine-audit-v26-su-pm-2",
+      "title": "ПМ-2",
+      "number": 413,
+      "apiQueries": [
+        "PM-2 naval mine",
+        "ПМ-2 морская мина"
+      ],
+      "status": "excluded",
+      "note": "Объект на странице обозначен как отдельное устройство PM-2, а не советская морская мина ПМ-2. Файл не скачивался.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Совпадение исключено после проверки"
+    },
+    {
+      "id": "mine-audit-v26-su-pkm-25",
+      "title": "ПКМ-25",
+      "number": 414,
+      "apiQueries": [
+        "PKM-25 mine",
+        "ПКМ-25"
+      ],
+      "status": "none",
+      "note": "Проверены обозначение и варианты написания в публичном каталоге Sketchfab и веб-поиске. Подходящая наружная модель именно этой карточки с подтверждённым правом включения в приложение в этом проходе не получена.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не найден в этом проходе"
+    },
+    {
+      "id": "mine-audit-v26-su-dm-1",
+      "title": "ДМ-1",
+      "number": 415,
+      "apiQueries": [
+        "DM-1 naval mine",
+        "ДМ-1 мина"
+      ],
+      "status": "excluded",
+      "note": "Это авиационный объект, не советская морская мина ДМ-1.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Совпадение исключено после проверки"
+    },
+    {
+      "id": "mine-audit-v26-su-udm",
+      "title": "УДМ / УДМ-Э",
+      "number": 416,
+      "apiQueries": [
+        "UDM naval mine",
+        "УДМ мина"
+      ],
+      "status": "none",
+      "note": "Проверены обозначение и варианты написания в публичном каталоге Sketchfab и веб-поиске. Подходящая наружная модель именно этой карточки с подтверждённым правом включения в приложение в этом проходе не получена.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не найден в этом проходе"
+    },
+    {
+      "id": "mine-audit-v26-su-udm-2",
+      "title": "УДМ-2",
+      "number": 417,
+      "apiQueries": [
+        "UDM-2 mine",
+        "УДМ-2"
+      ],
+      "status": "none",
+      "note": "Проверены обозначение и варианты написания в публичном каталоге Sketchfab и веб-поиске. Подходящая наружная модель именно этой карточки с подтверждённым правом включения в приложение в этом проходе не получена.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не найден в этом проходе"
+    },
+    {
+      "id": "mine-audit-v26-su-udm-500",
+      "title": "УДМ-500",
+      "number": 418,
+      "apiQueries": [
+        "UDM-500",
+        "УДМ-500"
+      ],
+      "status": "none",
+      "note": "Проверены УДМ-500 и UDM-500. Найденные фотографии музейных экспонатов и упоминания в списке желаемых моделей не являются распространяемым 3D-файлом. Точное соответствие общего морского резерва этой карточке не заявляется.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не найден в этом проходе"
+    },
+    {
+      "id": "mine-audit-v26-su-udm-m",
+      "title": "УДМ-М",
+      "number": 419,
+      "apiQueries": [
+        "UDM-M mine",
+        "УДМ-М мина"
+      ],
+      "status": "none",
+      "note": "Проверены обозначение и варианты написания в публичном каталоге Sketchfab и веб-поиске. Подходящая наружная модель именно этой карточки с подтверждённым правом включения в приложение в этом проходе не получена.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не найден в этом проходе"
+    },
+    {
+      "id": "mine-audit-v26-su-amd-2-1000",
+      "title": "АМД-2-1000",
+      "number": 420,
+      "apiQueries": [
+        "AMD-2-1000",
+        "АМД-2-1000"
+      ],
+      "status": "none",
+      "note": "Проверены обозначение и варианты написания в публичном каталоге Sketchfab и веб-поиске. Подходящая наружная модель именно этой карточки с подтверждённым правом включения в приложение в этом проходе не получена.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не найден в этом проходе"
+    },
+    {
+      "id": "mine-audit-v26-su-amd-2-500",
+      "title": "АМД-2-500",
+      "number": 421,
+      "apiQueries": [
+        "AMD-2-500",
+        "АМД-2-500"
+      ],
+      "status": "none",
+      "note": "Проверены обозначение и варианты написания в публичном каталоге Sketchfab и веб-поиске. Подходящая наружная модель именно этой карточки с подтверждённым правом включения в приложение в этом проходе не получена.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не найден в этом проходе"
+    },
+    {
+      "id": "mine-audit-v26-su-amd-2m",
+      "title": "АМД-2М",
+      "number": 422,
+      "apiQueries": [
+        "AMD-2M mine",
+        "АМД-2М"
+      ],
+      "status": "none",
+      "note": "Проверены обозначение и варианты написания в публичном каталоге Sketchfab и веб-поиске. Подходящая наружная модель именно этой карточки с подтверждённым правом включения в приложение в этом проходе не получена.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не найден в этом проходе"
+    },
+    {
+      "id": "mine-audit-v26-su-amd-4-1000",
+      "title": "АМД-4-1000",
+      "number": 423,
+      "apiQueries": [
+        "AMD-4-1000",
+        "АМД-4-1000"
+      ],
+      "status": "none",
+      "note": "Проверены обозначение и варианты написания в публичном каталоге Sketchfab и веб-поиске. Подходящая наружная модель именно этой карточки с подтверждённым правом включения в приложение в этом проходе не получена.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не найден в этом проходе"
+    },
+    {
+      "id": "mine-audit-v26-su-amd-4-500",
+      "title": "АМД-4-500",
+      "number": 424,
+      "apiQueries": [
+        "AMD-4-500",
+        "АМД-4-500"
+      ],
+      "status": "none",
+      "note": "Проверены обозначение и варианты написания в публичном каталоге Sketchfab и веб-поиске. Подходящая наружная модель именно этой карточки с подтверждённым правом включения в приложение в этом проходе не получена.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не найден в этом проходе"
+    },
+    {
+      "id": "mine-audit-v26-su-gm",
+      "title": "ГМ",
+      "number": 425,
+      "apiQueries": [
+        "GM Soviet naval mine",
+        "ГМ морская мина"
+      ],
+      "status": "none",
+      "note": "Проверены обозначение и варианты написания в публичном каталоге Sketchfab и веб-поиске. Подходящая наружная модель именно этой карточки с подтверждённым правом включения в приложение в этом проходе не получена.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не найден в этом проходе"
+    },
+    {
+      "id": "mine-audit-v26-su-plt-6",
+      "title": "ПЛТ-6 (опытная)",
+      "number": 426,
+      "apiQueries": [
+        "PLT-6 mine",
+        "ПЛТ-6"
+      ],
+      "status": "none",
+      "note": "Проверено полное обозначение опытного образца. Исторические упоминания и похожие сокращения не считались доступной наружной 3D-моделью. Подходящий файл в этом проходе не получен.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не найден в этом проходе"
+    },
+    {
+      "id": "mine-audit-v26-su-pmr-1",
+      "title": "ПМР-1",
+      "number": 427,
+      "apiQueries": [
+        "PMR-1 naval mine",
+        "ПМР-1 морская мина"
+      ],
+      "status": "none",
+      "note": "Поиск выполнен с уточнением «морская мина», чтобы отделить советские ПМР от одноимённых югославских наземных мин и минных заградителей. Иные индексы и учебное исполнение не объединялись. Подходящий файл именно этой карточки не получен.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не найден в этом проходе"
+    },
+    {
+      "id": "mine-audit-v26-su-pmr-2",
+      "title": "ПМР-2",
+      "number": 428,
+      "apiQueries": [
+        "PMR-2 naval mine",
+        "ПМР-2 морская мина"
+      ],
+      "status": "none",
+      "note": "Поиск выполнен с уточнением «морская мина», чтобы отделить советские ПМР от одноимённых югославских наземных мин и минных заградителей. Иные индексы и учебное исполнение не объединялись. Подходящий файл именно этой карточки не получен.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не найден в этом проходе"
+    },
+    {
+      "id": "mine-audit-v26-su-pmr-2m",
+      "title": "ПМР-2М",
+      "number": 429,
+      "apiQueries": [
+        "PMR-2M mine",
+        "ПМР-2М"
+      ],
+      "status": "none",
+      "note": "Поиск выполнен с уточнением «морская мина», чтобы отделить советские ПМР от одноимённых югославских наземных мин и минных заградителей. Иные индексы и учебное исполнение не объединялись. Подходящий файл именно этой карточки не получен.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не найден в этом проходе"
+    },
+    {
+      "id": "mine-audit-v26-su-pmr-2u",
+      "title": "ПМР-2У (учебная)",
+      "number": 430,
+      "apiQueries": [
+        "PMR-2U mine",
+        "ПМР-2У"
+      ],
+      "status": "none",
+      "note": "Поиск выполнен с уточнением «морская мина», чтобы отделить советские ПМР от одноимённых югославских наземных мин и минных заградителей. Иные индексы и учебное исполнение не объединялись. Подходящий файл именно этой карточки не получен.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не найден в этом проходе"
+    },
+    {
+      "id": "mine-audit-v26-su-pmt-1",
+      "title": "ПМТ-1",
+      "number": 431,
+      "apiQueries": [
+        "PMT-1 mine",
+        "ПМТ-1"
+      ],
+      "status": "none",
+      "note": "Проверены обозначение и варианты написания в публичном каталоге Sketchfab и веб-поиске. Подходящая наружная модель именно этой карточки с подтверждённым правом включения в приложение в этом проходе не получена.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не найден в этом проходе"
+    },
+    {
+      "id": "mine-audit-v26-su-apm",
+      "title": "АПМ",
+      "number": 432,
+      "apiQueries": [
+        "APM naval mine",
+        "АПМ мина"
+      ],
+      "status": "none",
+      "note": "Проверены обозначение и варианты написания в публичном каталоге Sketchfab и веб-поиске. Подходящая наружная модель именно этой карточки с подтверждённым правом включения в приложение в этом проходе не получена.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не найден в этом проходе"
+    },
+    {
+      "id": "mine-audit-v26-su-plt-4m",
+      "title": "ПЛТ-4М (опытная)",
+      "number": 433,
+      "apiQueries": [
+        "PLT-4M",
+        "ПЛТ-4М"
+      ],
+      "status": "none",
+      "note": "Проверено полное обозначение опытного образца. Исторические упоминания и похожие сокращения не считались доступной наружной 3D-моделью. Подходящий файл в этом проходе не получен.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не найден в этом проходе"
+    },
+    {
+      "id": "mine-audit-v26-su-plt-5",
+      "title": "ПЛТ-5 (опытная)",
+      "number": 434,
+      "apiQueries": [
+        "PLT-5 mine",
+        "ПЛТ-5"
+      ],
+      "status": "none",
+      "note": "Проверено полное обозначение опытного образца. Исторические упоминания и похожие сокращения не считались доступной наружной 3D-моделью. Подходящий файл в этом проходе не получен.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не найден в этом проходе"
+    },
+    {
+      "id": "mine-audit-v26-su-mnp",
+      "title": "МНП",
+      "number": 435,
+      "apiQueries": [
+        "MNP naval mine",
+        "МНП мина"
+      ],
+      "status": "none",
+      "note": "Проверены обозначение и варианты написания в публичном каталоге Sketchfab и веб-поиске. Подходящая наружная модель именно этой карточки с подтверждённым правом включения в приложение в этом проходе не получена.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не найден в этом проходе"
+    },
+    {
+      "id": "mine-audit-v26-su-apdm",
+      "title": "АПДМ",
+      "number": 436,
+      "apiQueries": [
+        "APDM mine",
+        "АПДМ"
+      ],
+      "status": "none",
+      "note": "Проверены обозначение и варианты написания в публичном каталоге Sketchfab и веб-поиске. Подходящая наружная модель именно этой карточки с подтверждённым правом включения в приложение в этом проходе не получена.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не найден в этом проходе"
+    },
+    {
+      "id": "mine-audit-v26-su-pdm-3ya",
+      "title": "ПДМ-3Я",
+      "number": 437,
+      "apiQueries": [
+        "PDM-3Ya",
+        "ПДМ-3Я"
+      ],
+      "status": "none",
+      "note": "Проверены ПДМ-3Я, PDM-3Ya и STL. Справочные фотографии, рисунки и текстовые руководства не считались доступным цифровым наружным макетом. Точный распространяемый файл не получен.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не найден в этом проходе"
+    },
+    {
+      "id": "mine-audit-v26-su-krm",
+      "title": "КРМ",
+      "number": 438,
+      "apiQueries": [
+        "KRM naval mine",
+        "КРМ морская мина"
+      ],
+      "status": "none",
+      "note": "Проверены обозначение и варианты написания в публичном каталоге Sketchfab и веб-поиске. Подходящая наружная модель именно этой карточки с подтверждённым правом включения в приложение в этом проходе не получена.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не найден в этом проходе"
+    },
+    {
+      "id": "mine-audit-v26-su-prm",
+      "title": "ПРМ",
+      "number": 439,
+      "apiQueries": [
+        "PRM naval mine",
+        "ПРМ мина"
+      ],
+      "status": "none",
+      "note": "Проверены обозначение и варианты написания в публичном каталоге Sketchfab и веб-поиске. Подходящая наружная модель именно этой карточки с подтверждённым правом включения в приложение в этом проходе не получена.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не найден в этом проходе"
+    },
+    {
+      "id": "mine-audit-v26-su-rm-1",
+      "title": "РМ-1",
+      "number": 440,
+      "apiQueries": [
+        "RM-1 naval mine",
+        "РМ-1 мина"
+      ],
+      "status": "none",
+      "note": "Проверены обозначение и варианты написания в публичном каталоге Sketchfab и веб-поиске. Подходящая наружная модель именно этой карточки с подтверждённым правом включения в приложение в этом проходе не получена.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не найден в этом проходе"
+    },
+    {
+      "id": "mine-audit-v26-su-rm-2",
+      "title": "РМ-2",
+      "number": 441,
+      "apiQueries": [
+        "RM-2 naval mine",
+        "РМ-2 мина"
+      ],
+      "status": "none",
+      "note": "Проверены обозначение и варианты написания в публичном каталоге Sketchfab и веб-поиске. Подходящая наружная модель именно этой карточки с подтверждённым правом включения в приложение в этом проходе не получена.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не найден в этом проходе"
+    },
+    {
+      "id": "mine-audit-v26-su-rm-2g",
+      "title": "РМ-2Г",
+      "number": 442,
+      "apiQueries": [
+        "RM-2G",
+        "РМ-2Г"
+      ],
+      "status": "none",
+      "note": "Проверены обозначение и варианты написания в публичном каталоге Sketchfab и веб-поиске. Подходящая наружная модель именно этой карточки с подтверждённым правом включения в приложение в этом проходе не получена.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не найден в этом проходе"
+    },
+    {
+      "id": "mine-audit-v26-su-smdm-1",
+      "title": "СМДМ-1",
+      "number": 443,
+      "apiQueries": [
+        "SMDM-1",
+        "СМДМ-1"
+      ],
+      "status": "none",
+      "note": "Проверены обозначение и варианты написания в публичном каталоге Sketchfab и веб-поиске. Подходящая наружная модель именно этой карточки с подтверждённым правом включения в приложение в этом проходе не получена.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не найден в этом проходе"
+    },
+    {
+      "id": "mine-audit-v26-su-smdm-2",
+      "title": "СМДМ-2",
+      "number": 444,
+      "apiQueries": [
+        "SMDM-2",
+        "СМДМ-2"
+      ],
+      "status": "none",
+      "note": "Проверены обозначение и варианты написания в публичном каталоге Sketchfab и веб-поиске. Подходящая наружная модель именно этой карточки с подтверждённым правом включения в приложение в этом проходе не получена.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не найден в этом проходе"
+    },
+    {
+      "id": "mine-audit-v26-su-mdt",
+      "title": "МДТ",
+      "number": 445,
+      "apiQueries": [
+        "MDT naval mine",
+        "МДТ мина"
+      ],
+      "status": "none",
+      "note": "Проверены обозначение и варианты написания в публичном каталоге Sketchfab и веб-поиске. Подходящая наружная модель именно этой карточки с подтверждённым правом включения в приложение в этом проходе не получена.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не найден в этом проходе"
+    },
+    {
+      "id": "mine-audit-v26-su-mtpk-1",
+      "title": "МТПК-1",
+      "number": 446,
+      "apiQueries": [
+        "MTPK-1",
+        "МТПК-1"
+      ],
+      "status": "none",
+      "note": "Проверены обозначение и варианты написания в публичном каталоге Sketchfab и веб-поиске. Подходящая наружная модель именно этой карточки с подтверждённым правом включения в приложение в этом проходе не получена.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не найден в этом проходе"
+    },
+    {
+      "id": "mine-audit-v26-su-mtpk-2",
+      "title": "МТПК-2",
+      "number": 447,
+      "apiQueries": [
+        "MTPK-2",
+        "МТПК-2"
+      ],
+      "status": "none",
+      "note": "Проверены обозначение и варианты написания в публичном каталоге Sketchfab и веб-поиске. Подходящая наружная модель именно этой карточки с подтверждённым правом включения в приложение в этом проходе не получена.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не найден в этом проходе"
+    },
+    {
+      "id": "mine-audit-v26-su-mshm",
+      "title": "МШМ",
+      "number": 448,
+      "apiQueries": [
+        "MShM mine",
+        "МШМ морская мина"
+      ],
+      "status": "none",
+      "note": "Проверены обозначение и варианты написания в публичном каталоге Sketchfab и веб-поиске. Подходящая наружная модель именно этой карточки с подтверждённым правом включения в приложение в этом проходе не получена.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не найден в этом проходе"
+    },
+    {
+      "id": "mine-audit-v26-su-kpm",
+      "title": "КПМ",
+      "number": 449,
+      "apiQueries": [
+        "KPM naval mine",
+        "КПМ мина"
+      ],
+      "status": "none",
+      "note": "Проверены обозначение и варианты написания в публичном каталоге Sketchfab и веб-поиске. Подходящая наружная модель именно этой карточки с подтверждённым правом включения в приложение в этом проходе не получена.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не найден в этом проходе"
+    },
+    {
+      "id": "mine-audit-v26-su-uksm",
+      "title": "УКСМ",
+      "number": 450,
+      "apiQueries": [
+        "UKSM mine",
+        "УКСМ"
+      ],
+      "status": "none",
+      "note": "Проверены обозначение и варианты написания в публичном каталоге Sketchfab и веб-поиске. Подходящая наружная модель именно этой карточки с подтверждённым правом включения в приложение в этом проходе не получена.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не найден в этом проходе"
+    }
+  ],
+  "queries": [
+    {
+      "query": "Mk 57 naval mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=Mk+57+naval+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 7.48
+    },
+    {
+      "query": "Mark 57 mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=Mark+57+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 7.55
+    },
+    {
+      "query": "Mk 64 Quickstrike ER",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=Mk+64+Quickstrike+ER&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 7.31
+    },
+    {
+      "query": "Quickstrike ER mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=Quickstrike+ER+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 7.25
+    },
+    {
+      "query": "Lance French mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=Lance+French+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 5.15
+    },
+    {
+      "query": "Lance naval mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=Lance+naval+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.83
+    },
+    {
+      "query": "M-51 French mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=M-51+French+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.99
+    },
+    {
+      "query": "M51 landmine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=M51+landmine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.62
+    },
+    {
+      "query": "M-52 French mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=M-52+French+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 5.07
+    },
+    {
+      "query": "M52 landmine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=M52+landmine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 5.14
+    },
+    {
+      "query": "Mle 1951 mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=Mle+1951+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 5.03
+    },
+    {
+      "query": "Modele 1951 mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=Modele+1951+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.66
+    },
+    {
+      "query": "Mle 1955 mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=Mle+1955+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.7
+    },
+    {
+      "query": "Modele 1955 mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=Modele+1955+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.64
+    },
+    {
+      "query": "Model 1953 French mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=Model+1953+French+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.81
+    },
+    {
+      "query": "Mle 1953 mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=Mle+1953+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.64
+    },
+    {
+      "query": "Model 1954 French mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=Model+1954+French+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 5.13
+    },
+    {
+      "query": "Mle 1954 mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=Mle+1954+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.87
+    },
+    {
+      "query": "M23 chemical mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=M23+chemical+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.75
+    },
+    {
+      "query": "M23 landmine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=M23+landmine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.85
+    },
+    {
+      "query": "PM-1 naval mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=PM-1+naval+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 5.07
+    },
+    {
+      "query": "ПМ-1 морская мина",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=%D0%9F%D0%9C-1+%D0%BC%D0%BE%D1%80%D1%81%D0%BA%D0%B0%D1%8F+%D0%BC%D0%B8%D0%BD%D0%B0&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 5.08
+    },
+    {
+      "query": "KSM naval mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=KSM+naval+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.78
+    },
+    {
+      "query": "КСМ мина",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=%D0%9A%D0%A1%D0%9C+%D0%BC%D0%B8%D0%BD%D0%B0&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 5.05
+    },
+    {
+      "query": "PM-2 naval mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=PM-2+naval+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 5.2
+    },
+    {
+      "query": "ПМ-2 морская мина",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=%D0%9F%D0%9C-2+%D0%BC%D0%BE%D1%80%D1%81%D0%BA%D0%B0%D1%8F+%D0%BC%D0%B8%D0%BD%D0%B0&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.93
+    },
+    {
+      "query": "PKM-25 mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=PKM-25+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.82
+    },
+    {
+      "query": "ПКМ-25",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=%D0%9F%D0%9A%D0%9C-25&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 5.5
+    },
+    {
+      "query": "DM-1 naval mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=DM-1+naval+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.8
+    },
+    {
+      "query": "ДМ-1 мина",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=%D0%94%D0%9C-1+%D0%BC%D0%B8%D0%BD%D0%B0&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.8
+    },
+    {
+      "query": "UDM naval mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=UDM+naval+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.58
+    },
+    {
+      "query": "УДМ мина",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=%D0%A3%D0%94%D0%9C+%D0%BC%D0%B8%D0%BD%D0%B0&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.06
+    },
+    {
+      "query": "UDM-2 mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=UDM-2+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 5.18
+    },
+    {
+      "query": "УДМ-2",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=%D0%A3%D0%94%D0%9C-2&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.76
+    },
+    {
+      "query": "UDM-500",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=UDM-500&count=24",
+      "ok": true,
+      "models": [
+        {
+          "uid": "2beb09a2a17f4c9190f2002a38906071",
+          "name": "Peugeot 504 WIP",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-2beb09a2a17f4c9190f2002a38906071",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 152665,
+          "vertexCount": 84779,
+          "author": "x4fab",
+          "authorProfile": "https://sketchfab.com/x4fab"
+        },
+        {
+          "uid": "331e6d578bd34b6a828c821d1ab5863e",
+          "name": "Ringling Bros and Barnum & Bailey Big Top (1920)",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-331e6d578bd34b6a828c821d1ab5863e",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 103504,
+          "vertexCount": 58783,
+          "author": "Devin Jernigan",
+          "authorProfile": "https://sketchfab.com/devin.jernigan"
+        },
+        {
+          "uid": "4455a00178744d2783d0fc7002432fea",
+          "name": "Sankey Military Communications Trailer Scan",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-4455a00178744d2783d0fc7002432fea",
+          "isDownloadable": false,
+          "license": {
+            "uid": "783b685da9bf457d81e829fa283f3567",
+            "label": "Standard"
+          },
+          "faceCount": 200016,
+          "vertexCount": 102667,
+          "author": "Kieron Helsdon",
+          "authorProfile": "https://sketchfab.com/ronski"
+        },
+        {
+          "uid": "b6be81226e1843f2afde62f5c9853373",
+          "name": "BMX Track",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-b6be81226e1843f2afde62f5c9853373",
+          "isDownloadable": false,
+          "license": {
+            "uid": "783b685da9bf457d81e829fa283f3567",
+            "label": "Standard"
+          },
+          "faceCount": 199871,
+          "vertexCount": 118488,
+          "author": "Kieron Helsdon",
+          "authorProfile": "https://sketchfab.com/ronski"
+        },
+        {
+          "uid": "85f9f416aba74161aed48c4f7908e13f",
+          "name": "Le Marchand de Masques - Zacharie Astruc (1883)",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-85f9f416aba74161aed48c4f7908e13f",
+          "isDownloadable": true,
+          "license": {
+            "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+            "label": "CC Attribution"
+          },
+          "faceCount": 497902,
+          "vertexCount": 250098,
+          "author": "TRIANGLESCAN",
+          "authorProfile": "https://sketchfab.com/TRIANGLESCAN"
+        },
+        {
+          "uid": "1fc6f91c22a043ce8d71159b697035ca",
+          "name": "Fallen Tree Stump Scan",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-1fc6f91c22a043ce8d71159b697035ca",
+          "isDownloadable": false,
+          "license": {
+            "uid": "783b685da9bf457d81e829fa283f3567",
+            "label": "Standard"
+          },
+          "faceCount": 200798,
+          "vertexCount": 114700,
+          "author": "Kieron Helsdon",
+          "authorProfile": "https://sketchfab.com/ronski"
+        },
+        {
+          "uid": "78e06b1fd42b4a8b94e3a767ccec4345",
+          "name": "High quality Tree Stump Split",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-78e06b1fd42b4a8b94e3a767ccec4345",
+          "isDownloadable": false,
+          "license": {
+            "uid": "783b685da9bf457d81e829fa283f3567",
+            "label": "Standard"
+          },
+          "faceCount": 200572,
+          "vertexCount": 101666,
+          "author": "Kieron Helsdon",
+          "authorProfile": "https://sketchfab.com/ronski"
+        },
+        {
+          "uid": "ee73b358cf2548ef862f225cadd5c7d8",
+          "name": "Victorian Folly Photogrammetry",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-ee73b358cf2548ef862f225cadd5c7d8",
+          "isDownloadable": false,
+          "license": {
+            "uid": "783b685da9bf457d81e829fa283f3567",
+            "label": "Standard"
+          },
+          "faceCount": 200888,
+          "vertexCount": 102986,
+          "author": "Kieron Helsdon",
+          "authorProfile": "https://sketchfab.com/ronski"
+        },
+        {
+          "uid": "419735850f414ff98c8d417b508585da",
+          "name": "High Quality Mulberry Tree Scan",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-419735850f414ff98c8d417b508585da",
+          "isDownloadable": false,
+          "license": {
+            "uid": "783b685da9bf457d81e829fa283f3567",
+            "label": "Standard"
+          },
+          "faceCount": 200835,
+          "vertexCount": 109969,
+          "author": "Kieron Helsdon",
+          "authorProfile": "https://sketchfab.com/ronski"
+        },
+        {
+          "uid": "fec3712407ee4139bb75dc57b80b0f53",
+          "name": "High Quality Split Tree Stump Scan",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-fec3712407ee4139bb75dc57b80b0f53",
+          "isDownloadable": false,
+          "license": {
+            "uid": "783b685da9bf457d81e829fa283f3567",
+            "label": "Standard"
+          },
+          "faceCount": 200697,
+          "vertexCount": 110558,
+          "author": "Kieron Helsdon",
+          "authorProfile": "https://sketchfab.com/ronski"
+        },
+        {
+          "uid": "3c4b0f9934b94327b4ad306de9fa5fae",
+          "name": "High Quality Tree Stump with Ivy",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-3c4b0f9934b94327b4ad306de9fa5fae",
+          "isDownloadable": false,
+          "license": {
+            "uid": "783b685da9bf457d81e829fa283f3567",
+            "label": "Standard"
+          },
+          "faceCount": 200561,
+          "vertexCount": 103933,
+          "author": "Kieron Helsdon",
+          "authorProfile": "https://sketchfab.com/ronski"
+        },
+        {
+          "uid": "bd354dbfe6da46c99a830cc7718e3be5",
+          "name": "Photogrammetry Library",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-bd354dbfe6da46c99a830cc7718e3be5",
+          "isDownloadable": false,
+          "license": {
+            "uid": "783b685da9bf457d81e829fa283f3567",
+            "label": "Standard"
+          },
+          "faceCount": 200851,
+          "vertexCount": 105104,
+          "author": "Kieron Helsdon",
+          "authorProfile": "https://sketchfab.com/ronski"
+        },
+        {
+          "uid": "4f0e53795aa845da92f00de199857b51",
+          "name": "Abandoned Pub",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-4f0e53795aa845da92f00de199857b51",
+          "isDownloadable": false,
+          "license": {
+            "uid": "783b685da9bf457d81e829fa283f3567",
+            "label": "Standard"
+          },
+          "faceCount": 200039,
+          "vertexCount": 115233,
+          "author": "Kieron Helsdon",
+          "authorProfile": "https://sketchfab.com/ronski"
+        },
+        {
+          "uid": "cd2f3eb2c3eb4188a5f1c7a8ebf28ff6",
+          "name": "High Quality Dead Oak Cut Scan",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-cd2f3eb2c3eb4188a5f1c7a8ebf28ff6",
+          "isDownloadable": false,
+          "license": {
+            "uid": "783b685da9bf457d81e829fa283f3567",
+            "label": "Standard"
+          },
+          "faceCount": 200412,
+          "vertexCount": 111711,
+          "author": "Kieron Helsdon",
+          "authorProfile": "https://sketchfab.com/ronski"
+        },
+        {
+          "uid": "46f37b9c93cd44b9980c10fe103ee10c",
+          "name": "High Quality Tree Stump Low Scan",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-46f37b9c93cd44b9980c10fe103ee10c",
+          "isDownloadable": false,
+          "license": {
+            "uid": "783b685da9bf457d81e829fa283f3567",
+            "label": "Standard"
+          },
+          "faceCount": 200578,
+          "vertexCount": 106820,
+          "author": "Kieron Helsdon",
+          "authorProfile": "https://sketchfab.com/ronski"
+        },
+        {
+          "uid": "a5695cc2ad2e46dbb77c10f3ccc79e92",
+          "name": "Long Span Shelving",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-a5695cc2ad2e46dbb77c10f3ccc79e92",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 810776,
+          "vertexCount": 403823,
+          "author": "markurion",
+          "authorProfile": "https://sketchfab.com/markurion"
+        },
+        {
+          "uid": "28c270c6a405436ba7ba39044b8517dc",
+          "name": "Photogrammetry Model of Headless Statue",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-28c270c6a405436ba7ba39044b8517dc",
+          "isDownloadable": false,
+          "license": {
+            "uid": "783b685da9bf457d81e829fa283f3567",
+            "label": "Standard"
+          },
+          "faceCount": 200624,
+          "vertexCount": 101073,
+          "author": "Kieron Helsdon",
+          "authorProfile": "https://sketchfab.com/ronski"
+        },
+        {
+          "uid": "1d9989beecc34fdd96f4f114e030941c",
+          "name": "High Quality Dawn Red Wood Tree Scan",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-1d9989beecc34fdd96f4f114e030941c",
+          "isDownloadable": false,
+          "license": {
+            "uid": "783b685da9bf457d81e829fa283f3567",
+            "label": "Standard"
+          },
+          "faceCount": 200790,
+          "vertexCount": 111963,
+          "author": "Kieron Helsdon",
+          "authorProfile": "https://sketchfab.com/ronski"
+        },
+        {
+          "uid": "6c9f07c1e4e440e19e866de0409136ee",
+          "name": "Nintendo 64 High Resolution Model",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-6c9f07c1e4e440e19e866de0409136ee",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 96878,
+          "vertexCount": 49620,
+          "author": "Bruno.De.Coninck",
+          "authorProfile": "https://sketchfab.com/Bruno.De.Coninck"
+        },
+        {
+          "uid": "fa703927622b4bd48840426bd6a07ae3",
+          "name": "Joseph Paxton Bust",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-fa703927622b4bd48840426bd6a07ae3",
+          "isDownloadable": false,
+          "license": {
+            "uid": "783b685da9bf457d81e829fa283f3567",
+            "label": "Standard"
+          },
+          "faceCount": 200427,
+          "vertexCount": 102615,
+          "author": "Kieron Helsdon",
+          "authorProfile": "https://sketchfab.com/ronski"
+        },
+        {
+          "uid": "b5bcda35898244ac9296311de185daee",
+          "name": "Photogrammetry Fallen Tree with a split branch",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-b5bcda35898244ac9296311de185daee",
+          "isDownloadable": false,
+          "license": {
+            "uid": "783b685da9bf457d81e829fa283f3567",
+            "label": "Standard"
+          },
+          "faceCount": 200648,
+          "vertexCount": 103902,
+          "author": "Kieron Helsdon",
+          "authorProfile": "https://sketchfab.com/ronski"
+        },
+        {
+          "uid": "74a14c1f28aa4682a23ec544eeab8d2f",
+          "name": "Photogrammetry Model of a Statue Pacific God",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-74a14c1f28aa4682a23ec544eeab8d2f",
+          "isDownloadable": false,
+          "license": {
+            "uid": "783b685da9bf457d81e829fa283f3567",
+            "label": "Standard"
+          },
+          "faceCount": 200234,
+          "vertexCount": 110896,
+          "author": "Kieron Helsdon",
+          "authorProfile": "https://sketchfab.com/ronski"
+        },
+        {
+          "uid": "51bb0fe18b8441829a0898d2acadde50",
+          "name": "Headless Nymph Statue",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-51bb0fe18b8441829a0898d2acadde50",
+          "isDownloadable": false,
+          "license": {
+            "uid": "783b685da9bf457d81e829fa283f3567",
+            "label": "Standard"
+          },
+          "faceCount": 200632,
+          "vertexCount": 113266,
+          "author": "Kieron Helsdon",
+          "authorProfile": "https://sketchfab.com/ronski"
+        },
+        {
+          "uid": "5a3a6795aba746c6bc28ed6857189f10",
+          "name": "River Pool Footbridge",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-5a3a6795aba746c6bc28ed6857189f10",
+          "isDownloadable": false,
+          "license": {
+            "uid": "783b685da9bf457d81e829fa283f3567",
+            "label": "Standard"
+          },
+          "faceCount": 201056,
+          "vertexCount": 103459,
+          "author": "Kieron Helsdon",
+          "authorProfile": "https://sketchfab.com/ronski"
+        }
+      ],
+      "hasNext": true,
+      "seconds": 5.08
+    },
+    {
+      "query": "УДМ-500",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=%D0%A3%D0%94%D0%9C-500&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.77
+    },
+    {
+      "query": "UDM-M mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=UDM-M+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 5.09
+    },
+    {
+      "query": "УДМ-М мина",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=%D0%A3%D0%94%D0%9C-%D0%9C+%D0%BC%D0%B8%D0%BD%D0%B0&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.8
+    },
+    {
+      "query": "AMD-2-1000",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=AMD-2-1000&count=24",
+      "ok": true,
+      "models": [
+        {
+          "uid": "e67d3c8b133c446d821d001fbd3b058e",
+          "name": "1000 Sunny, One Piece",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-e67d3c8b133c446d821d001fbd3b058e",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 447629,
+          "vertexCount": 535967,
+          "author": "dark-minaz",
+          "authorProfile": "https://sketchfab.com/dark-minaz"
+        },
+        {
+          "uid": "f52a98ff46c44a0cae5232e026d5c265",
+          "name": "1k Sunny, One Piece",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-f52a98ff46c44a0cae5232e026d5c265",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 440693,
+          "vertexCount": 529031,
+          "author": "dark-minaz",
+          "authorProfile": "https://sketchfab.com/dark-minaz"
+        },
+        {
+          "uid": "ec0bd6f9d06843a4aa18a2621a7c81e7",
+          "name": "Widelite F-series Flood Light",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-ec0bd6f9d06843a4aa18a2621a7c81e7",
+          "isDownloadable": true,
+          "license": {
+            "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+            "label": "CC Attribution"
+          },
+          "faceCount": 1445660,
+          "vertexCount": 722489,
+          "author": "Mercuri-sodyum",
+          "authorProfile": "https://sketchfab.com/-French-toast"
+        },
+        {
+          "uid": "4f64d28b187f4dadbff2aa271b7d2134",
+          "name": "JMT-2026-2",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-4f64d28b187f4dadbff2aa271b7d2134",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 271010,
+          "vertexCount": 135728,
+          "author": "sergipuig",
+          "authorProfile": "https://sketchfab.com/sergipuig"
+        }
+      ],
+      "hasNext": false,
+      "seconds": 4.7
+    },
+    {
+      "query": "АМД-2-1000",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=%D0%90%D0%9C%D0%94-2-1000&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.68
+    },
+    {
+      "query": "AMD-2-500",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=AMD-2-500&count=24",
+      "ok": true,
+      "models": [
+        {
+          "uid": "50193a9ce14143d280ed484ddf9a17a3",
+          "name": "AMD Radeon RX 6900XT | Low Poly",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-50193a9ce14143d280ed484ddf9a17a3",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 33158,
+          "vertexCount": 22124,
+          "author": "M E U",
+          "authorProfile": "https://sketchfab.com/meu9MM98"
+        },
+        {
+          "uid": "e5aa367adb0e41129ccd34a5dc5e6b4e",
+          "name": "508 Amd 2",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-e5aa367adb0e41129ccd34a5dc5e6b4e",
+          "isDownloadable": true,
+          "license": {
+            "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+            "label": "CC Attribution"
+          },
+          "faceCount": 152858,
+          "vertexCount": 76042,
+          "author": "AVZ",
+          "authorProfile": "https://sketchfab.com/micropalaeontology"
+        },
+        {
+          "uid": "ad24ba28718049fc85b50125dc31dae6",
+          "name": "Altars - Game asset",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-ad24ba28718049fc85b50125dc31dae6",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 3270,
+          "vertexCount": 1762,
+          "author": "Bento",
+          "authorProfile": "https://sketchfab.com/gostbento"
+        },
+        {
+          "uid": "3d3383cc333741c582eb293bdd0a0121",
+          "name": "daewoo nexia 2",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-3d3383cc333741c582eb293bdd0a0121",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 907228,
+          "vertexCount": 478448,
+          "author": "amir_designn",
+          "authorProfile": "https://sketchfab.com/amir_designn"
+        },
+        {
+          "uid": "c29a84f14a3f45cdaf1166cd15756a6e",
+          "name": "Colorado River - Grand Canyon (Video to Mesh)",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-c29a84f14a3f45cdaf1166cd15756a6e",
+          "isDownloadable": true,
+          "license": {
+            "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+            "label": "CC Attribution"
+          },
+          "faceCount": 180000,
+          "vertexCount": 90482,
+          "author": "dtmcnamara",
+          "authorProfile": "https://sketchfab.com/dtmcnamara"
+        },
+        {
+          "uid": "eaf2abeac0784c9d99e883596851b899",
+          "name": "Glas Steele Eleganz",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-eaf2abeac0784c9d99e883596851b899",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 13567,
+          "vertexCount": 8162,
+          "author": "werbetechnikmigde",
+          "authorProfile": "https://sketchfab.com/werbetechnikmigde"
+        },
+        {
+          "uid": "d96de0c970de47228dc19396eab202e0",
+          "name": "Jägerdenkmal",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-d96de0c970de47228dc19396eab202e0",
+          "isDownloadable": false,
+          "license": {
+            "uid": "783b685da9bf457d81e829fa283f3567",
+            "label": "Standard"
+          },
+          "faceCount": 2000423,
+          "vertexCount": 1058659,
+          "author": "Deluva",
+          "authorProfile": "https://sketchfab.com/deluva"
+        },
+        {
+          "uid": "eec0800e04d64b449597756ac2057f3b",
+          "name": "Glas- Steele Eleganz",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-eec0800e04d64b449597756ac2057f3b",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 136845,
+          "vertexCount": 73153,
+          "author": "werbetechnikmigde",
+          "authorProfile": "https://sketchfab.com/werbetechnikmigde"
+        },
+        {
+          "uid": "e195a8f833b54fa8a7ba1fb8caeeb6a5",
+          "name": "Kralzfiller Authocollecto LT XSR Hyperspecialeé",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-e195a8f833b54fa8a7ba1fb8caeeb6a5",
+          "isDownloadable": true,
+          "license": {
+            "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+            "label": "CC Attribution"
+          },
+          "faceCount": 984385,
+          "vertexCount": 528029,
+          "author": "Qwertyazzertyx",
+          "authorProfile": "https://sketchfab.com/Qwertyazzertyx"
+        },
+        {
+          "uid": "701ba87d1faf492b9d7bbf960ac3cef8",
+          "name": "Glas- Steele Eleganz",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-701ba87d1faf492b9d7bbf960ac3cef8",
+          "isDownloadable": true,
+          "license": {
+            "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+            "label": "CC Attribution"
+          },
+          "faceCount": 136869,
+          "vertexCount": 70266,
+          "author": "aldikiller",
+          "authorProfile": "https://sketchfab.com/aldikiller"
+        },
+        {
+          "uid": "69c46e19e50f4fd8be5af8924d8443b6",
+          "name": "Grounded BNC shield with two CF40 flanges",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-69c46e19e50f4fd8be5af8924d8443b6",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 6724,
+          "vertexCount": 3356,
+          "author": "radium_llc",
+          "authorProfile": "https://sketchfab.com/radium_llc"
+        },
+        {
+          "uid": "6b213055e9414c56b596ff747afe4247",
+          "name": "Assembly SCRIM GYM",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-6b213055e9414c56b596ff747afe4247",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 123038,
+          "vertexCount": 60479,
+          "author": "AAA Metal and Design",
+          "authorProfile": "https://sketchfab.com/aaametal"
+        },
+        {
+          "uid": "ff3d01d12ea64e05ae00b356ef215ee8",
+          "name": "AAP-AM-120+775",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-ff3d01d12ea64e05ae00b356ef215ee8",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 2180666,
+          "vertexCount": 1090334,
+          "author": "Athienou Archaeological Project",
+          "authorProfile": "https://sketchfab.com/AthienouArchaeologicalProject"
+        },
+        {
+          "uid": "4242a1a4135f418481e394a7d3c97efd",
+          "name": "Bàn thí nghiệm chậu rửa - Laboratory Sink bench",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-4242a1a4135f418481e394a7d3c97efd",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 80126,
+          "vertexCount": 38801,
+          "author": "Ly Son Sa Ky Lab",
+          "authorProfile": "https://sketchfab.com/doanluanlab"
+        }
+      ],
+      "hasNext": false,
+      "seconds": 4.15
+    },
+    {
+      "query": "АМД-2-500",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=%D0%90%D0%9C%D0%94-2-500&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 3.75
+    },
+    {
+      "query": "AMD-2M mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=AMD-2M+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 3.69
+    },
+    {
+      "query": "АМД-2М",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=%D0%90%D0%9C%D0%94-2%D0%9C&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 3.88
+    },
+    {
+      "query": "AMD-4-1000",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=AMD-4-1000&count=24",
+      "ok": true,
+      "models": [
+        {
+          "uid": "e67d3c8b133c446d821d001fbd3b058e",
+          "name": "1000 Sunny, One Piece",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-e67d3c8b133c446d821d001fbd3b058e",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 447629,
+          "vertexCount": 535967,
+          "author": "dark-minaz",
+          "authorProfile": "https://sketchfab.com/dark-minaz"
+        },
+        {
+          "uid": "dfe149dd2c7340b590ac1eab8c7e2e6d",
+          "name": "Poppy Playtime Chapter 4 - Grab Handle",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-dfe149dd2c7340b590ac1eab8c7e2e6d",
+          "isDownloadable": true,
+          "license": {
+            "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+            "label": "CC Attribution"
+          },
+          "faceCount": 3664,
+          "vertexCount": 2098,
+          "author": "Party",
+          "authorProfile": "https://sketchfab.com/Party_"
+        },
+        {
+          "uid": "33da16dacdb34d8088324a24645a1802",
+          "name": "2009 Bugatti Veyron 16.4",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-33da16dacdb34d8088324a24645a1802",
+          "isDownloadable": true,
+          "license": {
+            "uid": "2628dbe5140a4e9592126c8df566c0b7",
+            "label": "CC Attribution-NonCommercial-ShareAlike"
+          },
+          "faceCount": 790458,
+          "vertexCount": 447697,
+          "author": "Ddiaz Design",
+          "authorProfile": "https://sketchfab.com/ddiaz-design"
+        },
+        {
+          "uid": "97a848965a68483aa05c84bd3ec4ff88",
+          "name": "Poppy Playtime Chapter 4 - Omni- Hand",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-97a848965a68483aa05c84bd3ec4ff88",
+          "isDownloadable": true,
+          "license": {
+            "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+            "label": "CC Attribution"
+          },
+          "faceCount": 26492,
+          "vertexCount": 14167,
+          "author": "Party",
+          "authorProfile": "https://sketchfab.com/Party_"
+        },
+        {
+          "uid": "f52a98ff46c44a0cae5232e026d5c265",
+          "name": "1k Sunny, One Piece",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-f52a98ff46c44a0cae5232e026d5c265",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 440693,
+          "vertexCount": 529031,
+          "author": "dark-minaz",
+          "authorProfile": "https://sketchfab.com/dark-minaz"
+        },
+        {
+          "uid": "ee3f59b987534092acd69f25b965f364",
+          "name": "ENHYPEN 'MANIFESTO' in BANGKOK [3D SEAT MAP]",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-ee3f59b987534092acd69f25b965f364",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 138454,
+          "vertexCount": 95554,
+          "author": "bambamism",
+          "authorProfile": "https://sketchfab.com/bambamism"
+        }
+      ],
+      "hasNext": false,
+      "seconds": 5.05
+    },
+    {
+      "query": "АМД-4-1000",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=%D0%90%D0%9C%D0%94-4-1000&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.8
+    },
+    {
+      "query": "AMD-4-500",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=AMD-4-500&count=24",
+      "ok": true,
+      "models": [
+        {
+          "uid": "b2e81881e8e441a0bf26610fdc5cc1d6",
+          "name": "2003 Dodge Viper SRT10",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-b2e81881e8e441a0bf26610fdc5cc1d6",
+          "isDownloadable": true,
+          "license": {
+            "uid": "2628dbe5140a4e9592126c8df566c0b7",
+            "label": "CC Attribution-NonCommercial-ShareAlike"
+          },
+          "faceCount": 180120,
+          "vertexCount": 105657,
+          "author": "Ddiaz Design",
+          "authorProfile": "https://sketchfab.com/ddiaz-design"
+        },
+        {
+          "uid": "b51f518f12b440b5b3bd6843ef18a5f2",
+          "name": "508 Amd 4",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-b51f518f12b440b5b3bd6843ef18a5f2",
+          "isDownloadable": true,
+          "license": {
+            "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+            "label": "CC Attribution"
+          },
+          "faceCount": 90270,
+          "vertexCount": 44999,
+          "author": "AVZ",
+          "authorProfile": "https://sketchfab.com/micropalaeontology"
+        },
+        {
+          "uid": "43c1d87e2b1342aeb3362eabf77d27ec",
+          "name": "25 Low Poly Car Models: Electric Revolution",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-43c1d87e2b1342aeb3362eabf77d27ec",
+          "isDownloadable": false,
+          "license": {
+            "uid": "5b54cf13b1a4422ca439696eb152070d",
+            "label": "Editorial"
+          },
+          "faceCount": 35296,
+          "vertexCount": 18406,
+          "author": "slowpoly",
+          "authorProfile": "https://sketchfab.com/slowpoly"
+        },
+        {
+          "uid": "c29a84f14a3f45cdaf1166cd15756a6e",
+          "name": "Colorado River - Grand Canyon (Video to Mesh)",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-c29a84f14a3f45cdaf1166cd15756a6e",
+          "isDownloadable": true,
+          "license": {
+            "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+            "label": "CC Attribution"
+          },
+          "faceCount": 180000,
+          "vertexCount": 90482,
+          "author": "dtmcnamara",
+          "authorProfile": "https://sketchfab.com/dtmcnamara"
+        },
+        {
+          "uid": "39334c10593d4e8eae047b00c46e1802",
+          "name": "2005 Mercedes-Benz AMG C-Class W203 DTM",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-39334c10593d4e8eae047b00c46e1802",
+          "isDownloadable": true,
+          "license": {
+            "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+            "label": "CC Attribution"
+          },
+          "faceCount": 97817,
+          "vertexCount": 51899,
+          "author": "Dave Love SketchFab",
+          "authorProfile": "https://sketchfab.com/Tyler_Dave"
+        },
+        {
+          "uid": "1bf32a0df58e45b597ef1e4e8edbaeb1",
+          "name": "NEXTER VCO Vipère",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-1bf32a0df58e45b597ef1e4e8edbaeb1",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 22792,
+          "vertexCount": 12464,
+          "author": "Kahzmat",
+          "authorProfile": "https://sketchfab.com/Kahzmat"
+        },
+        {
+          "uid": "6b564f04ac274528a64320b84204bc4c",
+          "name": "Ps4_feira_de_ciências",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-6b564f04ac274528a64320b84204bc4c",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 5945,
+          "vertexCount": 3560,
+          "author": "muriaelmonteiro5",
+          "authorProfile": "https://sketchfab.com/muriaelmonteiro5"
+        },
+        {
+          "uid": "26bb6f96a5f14ce695378e17beaac8c9",
+          "name": "MotherBoard MSI B550M-A-Pro",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-26bb6f96a5f14ce695378e17beaac8c9",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 4856,
+          "vertexCount": 2648,
+          "author": "MaksimGusev",
+          "authorProfile": "https://sketchfab.com/MaksimGusev"
+        }
+      ],
+      "hasNext": false,
+      "seconds": 5.08
+    },
+    {
+      "query": "АМД-4-500",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=%D0%90%D0%9C%D0%94-4-500&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.54
+    },
+    {
+      "query": "GM Soviet naval mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=GM+Soviet+naval+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 5.1
+    },
+    {
+      "query": "ГМ морская мина",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=%D0%93%D0%9C+%D0%BC%D0%BE%D1%80%D1%81%D0%BA%D0%B0%D1%8F+%D0%BC%D0%B8%D0%BD%D0%B0&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.86
+    },
+    {
+      "query": "PLT-6 mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=PLT-6+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.61
+    },
+    {
+      "query": "ПЛТ-6",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=%D0%9F%D0%9B%D0%A2-6&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.42
+    },
+    {
+      "query": "PMR-1 naval mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=PMR-1+naval+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.8
+    },
+    {
+      "query": "ПМР-1 морская мина",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=%D0%9F%D0%9C%D0%A0-1+%D0%BC%D0%BE%D1%80%D1%81%D0%BA%D0%B0%D1%8F+%D0%BC%D0%B8%D0%BD%D0%B0&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.8
+    },
+    {
+      "query": "PMR-2 naval mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=PMR-2+naval+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 5.12
+    },
+    {
+      "query": "ПМР-2 морская мина",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=%D0%9F%D0%9C%D0%A0-2+%D0%BC%D0%BE%D1%80%D1%81%D0%BA%D0%B0%D1%8F+%D0%BC%D0%B8%D0%BD%D0%B0&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.86
+    },
+    {
+      "query": "PMR-2M mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=PMR-2M+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.74
+    },
+    {
+      "query": "ПМР-2М",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=%D0%9F%D0%9C%D0%A0-2%D0%9C&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.93
+    },
+    {
+      "query": "PMR-2U mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=PMR-2U+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.42
+    },
+    {
+      "query": "ПМР-2У",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=%D0%9F%D0%9C%D0%A0-2%D0%A3&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.63
+    },
+    {
+      "query": "PMT-1 mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=PMT-1+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.77
+    },
+    {
+      "query": "ПМТ-1",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=%D0%9F%D0%9C%D0%A2-1&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.76
+    },
+    {
+      "query": "APM naval mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=APM+naval+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.54
+    },
+    {
+      "query": "АПМ мина",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=%D0%90%D0%9F%D0%9C+%D0%BC%D0%B8%D0%BD%D0%B0&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.72
+    },
+    {
+      "query": "PLT-4M",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=PLT-4M&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 5.08
+    },
+    {
+      "query": "ПЛТ-4М",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=%D0%9F%D0%9B%D0%A2-4%D0%9C&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.97
+    },
+    {
+      "query": "PLT-5 mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=PLT-5+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.76
+    },
+    {
+      "query": "ПЛТ-5",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=%D0%9F%D0%9B%D0%A2-5&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.82
+    },
+    {
+      "query": "MNP naval mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=MNP+naval+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 5.36
+    },
+    {
+      "query": "МНП мина",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=%D0%9C%D0%9D%D0%9F+%D0%BC%D0%B8%D0%BD%D0%B0&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 5.35
+    },
+    {
+      "query": "APDM mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=APDM+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 5.25
+    },
+    {
+      "query": "АПДМ",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=%D0%90%D0%9F%D0%94%D0%9C&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 5.39
+    },
+    {
+      "query": "PDM-3Ya",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=PDM-3Ya&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.93
+    },
+    {
+      "query": "ПДМ-3Я",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=%D0%9F%D0%94%D0%9C-3%D0%AF&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.91
+    },
+    {
+      "query": "KRM naval mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=KRM+naval+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.69
+    },
+    {
+      "query": "КРМ морская мина",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=%D0%9A%D0%A0%D0%9C+%D0%BC%D0%BE%D1%80%D1%81%D0%BA%D0%B0%D1%8F+%D0%BC%D0%B8%D0%BD%D0%B0&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.74
+    },
+    {
+      "query": "PRM naval mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=PRM+naval+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 5.45
+    },
+    {
+      "query": "ПРМ мина",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=%D0%9F%D0%A0%D0%9C+%D0%BC%D0%B8%D0%BD%D0%B0&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 5.08
+    },
+    {
+      "query": "RM-1 naval mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=RM-1+naval+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.74
+    },
+    {
+      "query": "РМ-1 мина",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=%D0%A0%D0%9C-1+%D0%BC%D0%B8%D0%BD%D0%B0&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.76
+    },
+    {
+      "query": "RM-2 naval mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=RM-2+naval+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 6.92
+    },
+    {
+      "query": "РМ-2 мина",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=%D0%A0%D0%9C-2+%D0%BC%D0%B8%D0%BD%D0%B0&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 6.66
+    },
+    {
+      "query": "RM-2G",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=RM-2G&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 6.71
+    },
+    {
+      "query": "РМ-2Г",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=%D0%A0%D0%9C-2%D0%93&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 6.2
+    },
+    {
+      "query": "SMDM-1",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=SMDM-1&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.84
+    },
+    {
+      "query": "СМДМ-1",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=%D0%A1%D0%9C%D0%94%D0%9C-1&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 5.01
+    },
+    {
+      "query": "SMDM-2",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=SMDM-2&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.62
+    },
+    {
+      "query": "СМДМ-2",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=%D0%A1%D0%9C%D0%94%D0%9C-2&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.86
+    },
+    {
+      "query": "MDT naval mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=MDT+naval+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 5.19
+    },
+    {
+      "query": "МДТ мина",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=%D0%9C%D0%94%D0%A2+%D0%BC%D0%B8%D0%BD%D0%B0&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.86
+    },
+    {
+      "query": "MTPK-1",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=MTPK-1&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.86
+    },
+    {
+      "query": "МТПК-1",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=%D0%9C%D0%A2%D0%9F%D0%9A-1&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.83
+    },
+    {
+      "query": "MTPK-2",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=MTPK-2&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 5.07
+    },
+    {
+      "query": "МТПК-2",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=%D0%9C%D0%A2%D0%9F%D0%9A-2&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.64
+    },
+    {
+      "query": "MShM mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=MShM+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.61
+    },
+    {
+      "query": "МШМ морская мина",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=%D0%9C%D0%A8%D0%9C+%D0%BC%D0%BE%D1%80%D1%81%D0%BA%D0%B0%D1%8F+%D0%BC%D0%B8%D0%BD%D0%B0&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.52
+    },
+    {
+      "query": "KPM naval mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=KPM+naval+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 5.07
+    },
+    {
+      "query": "КПМ мина",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=%D0%9A%D0%9F%D0%9C+%D0%BC%D0%B8%D0%BD%D0%B0&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 5.07
+    },
+    {
+      "query": "UKSM mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=UKSM+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.81
+    },
+    {
+      "query": "УКСМ",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=%D0%A3%D0%9A%D0%A1%D0%9C&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.59
+    }
+  ],
+  "supplementalModelMetadataLookups": [
+    {
+      "uid": "0eabe5b441584b1a8a84d00b40aaf421",
+      "name": "HIGH Venäläinen M/12 miina - Russian M/12 Mine",
+      "viewerUrl": "https://sketchfab.com/3d-models/high-venalainen-m12-miina-russian-m12-mine-0eabe5b441584b1a8a84d00b40aaf421",
+      "isDownloadable": true,
+      "license": {
+        "uri": "https://api.sketchfab.com/v3/licenses/bbfe3f7dbcdd4122b966b85b9786a989",
+        "label": "CC Attribution-NonCommercial",
+        "fullName": "Creative Commons Attribution-NonCommercial",
+        "requirements": "Author must be credited. No commercial use.",
+        "url": "http://creativecommons.org/licenses/by-nc/4.0/",
+        "slug": "by-nc"
+      },
+      "faceCount": 499986,
+      "vertexCount": 249685,
+      "author": "Traffic Museums Association / Trafiikki-museot"
+    },
+    {
+      "uid": "15a9f5d74f474cdbba3716cd3aeea419",
+      "name": "Old Sea Mine",
+      "viewerUrl": "https://sketchfab.com/3d-models/old-sea-mine-15a9f5d74f474cdbba3716cd3aeea419",
+      "isDownloadable": true,
+      "license": {
+        "uri": "https://api.sketchfab.com/v3/licenses/322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution",
+        "fullName": "Creative Commons Attribution",
+        "requirements": "Author must be credited. Commercial use is allowed.",
+        "url": "http://creativecommons.org/licenses/by/4.0/",
+        "slug": "by"
+      },
+      "faceCount": 10116,
+      "vertexCount": 5377,
+      "author": "Jorma Rysky"
+    }
+  ]
+}

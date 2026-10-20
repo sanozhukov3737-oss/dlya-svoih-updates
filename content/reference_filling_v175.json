@@ -1,0 +1,631 @@
+{
+  "filling": {
+    "mine-audit-v25-us-mk-36": {
+      "rows": [
+        [
+          "Mk 36 Mod 1: опубликованные полные массы сборок",
+          "1080, 1115, 1155, 1130 lb; отдельные исполнения, не непрерывный диапазон"
+        ],
+        [
+          "Mk 36 Mod 1: основное ВВ и его масса",
+          "HBX-1, 580 lb (≈263,08 кг)"
+        ],
+        [
+          "Mk 36 Mod 2: опубликованные полные массы сборок",
+          "1070, 1105, 1145, 1120 lb; отдельные исполнения, не непрерывный диапазон"
+        ],
+        [
+          "Mk 36 Mod 2: основное ВВ и его масса",
+          "HBX-1, 580 lb (≈263,08 кг)"
+        ],
+        [
+          "Mk 36 Mod 3: опубликованные полные массы сборок",
+          "1095, 1130, 1170, 1145 lb; отдельные исполнения, не непрерывный диапазон"
+        ],
+        [
+          "Mk 36 Mod 3: основное ВВ и его масса",
+          "HBX-1, 580 lb (≈263,08 кг)"
+        ]
+      ],
+      "note": "ORD 696(B), 1959: Mod 1–3 разделены. Номинальный класс 1000 lb не равен полной массе. Пересчёт приблизительный; сведения других Mod не переносились.",
+      "sources": [
+        {
+          "id": "reference-v175-mk36-87-mine-audit-v25-us-mk-36",
+          "title": "U.S. Navy — ORD 696(B), 1959, печатная стр. 87: Mk 36 Mod 1",
+          "url": "https://maritime.org/doc/mines-usn/img/pg087.jpg",
+          "accessedAt": "2026-10-05"
+        },
+        {
+          "id": "reference-v175-mk36-91-mine-audit-v25-us-mk-36",
+          "title": "U.S. Navy — ORD 696(B), 1959, печатная стр. 91: Mk 36 Mod 2",
+          "url": "https://maritime.org/doc/mines-usn/img/pg091.jpg",
+          "accessedAt": "2026-10-05"
+        },
+        {
+          "id": "reference-v175-mk36-95-mine-audit-v25-us-mk-36",
+          "title": "U.S. Navy — ORD 696(B), 1959, печатная стр. 95: Mk 36 Mod 3",
+          "url": "https://maritime.org/doc/mines-usn/img/pg095.jpg",
+          "accessedAt": "2026-10-05"
+        }
+      ],
+      "create_heading": true
+    },
+    "mine-audit-v25-us-mk-52": {
+      "rows": [
+        [
+          "Mk 52 Mod 0: полная масса сборки",
+          "1095 lb (≈496,68 кг)"
+        ],
+        [
+          "Mk 52 Mod 0: основное ВВ и его масса",
+          "HBX-1, 625 lb (≈283,50 кг)"
+        ],
+        [
+          "Mk 52 Mod 1: полная масса сборки",
+          "1130 lb (≈512,56 кг)"
+        ],
+        [
+          "Mk 52 Mod 1: основное ВВ и его масса",
+          "HBX-1, 625 lb (≈283,50 кг)"
+        ],
+        [
+          "Mk 52 Mod 2: полная масса сборки",
+          "1170 lb (≈530,70 кг)"
+        ],
+        [
+          "Mk 52 Mod 2: основное ВВ и его масса",
+          "HBX-1, 625 lb (≈283,50 кг)"
+        ],
+        [
+          "Mk 52 Mod 3: полная масса сборки",
+          "1190 lb (≈539,77 кг)"
+        ],
+        [
+          "Mk 52 Mod 3: основное ВВ и его масса",
+          "HBX-1, 625 lb (≈283,50 кг)"
+        ],
+        [
+          "Mk 52 Mod 4: полная масса сборки",
+          "1150 lb (≈521,63 кг)"
+        ],
+        [
+          "Mk 52 Mod 4: основное ВВ и его масса",
+          "HBX-1, 625 lb (≈283,50 кг)"
+        ],
+        [
+          "Mk 52 Mod 5: полная масса сборки",
+          "1200 lb (≈544,31 кг)"
+        ],
+        [
+          "Mk 52 Mod 5: основное ВВ и его масса",
+          "HBX-1, 625 lb (≈283,50 кг)"
+        ],
+        [
+          "Mk 52 Mod 6: полная масса сборки",
+          "1235 lb (≈560,19 кг)"
+        ],
+        [
+          "Mk 52 Mod 6: основное ВВ и его масса",
+          "HBX-1, 625 lb (≈283,50 кг)"
+        ]
+      ],
+      "note": "ORD 696(B), 1959: семь Mod имеют разные полные массы. Класс 1000 lb не заменяет эти значения. Метрические значения рассчитаны отдельно.",
+      "sources": [
+        {
+          "id": "reference-v175-mk52-127-mine-audit-v25-us-mk-52",
+          "title": "U.S. Navy — ORD 696(B), 1959, печатная стр. 127: Mk 52 Mod 0",
+          "url": "https://maritime.org/doc/mines-usn/img/pg127.jpg",
+          "accessedAt": "2026-10-05"
+        },
+        {
+          "id": "reference-v175-mk52-131-mine-audit-v25-us-mk-52",
+          "title": "U.S. Navy — ORD 696(B), 1959, печатная стр. 131: Mk 52 Mod 1",
+          "url": "https://maritime.org/doc/mines-usn/img/pg131.jpg",
+          "accessedAt": "2026-10-05"
+        },
+        {
+          "id": "reference-v175-mk52-135-mine-audit-v25-us-mk-52",
+          "title": "U.S. Navy — ORD 696(B), 1959, печатная стр. 135: Mk 52 Mod 2",
+          "url": "https://maritime.org/doc/mines-usn/img/pg135.jpg",
+          "accessedAt": "2026-10-05"
+        },
+        {
+          "id": "reference-v175-mk52-139-mine-audit-v25-us-mk-52",
+          "title": "U.S. Navy — ORD 696(B), 1959, печатная стр. 139: Mk 52 Mod 3",
+          "url": "https://maritime.org/doc/mines-usn/img/pg139.jpg",
+          "accessedAt": "2026-10-05"
+        },
+        {
+          "id": "reference-v175-mk52-143-mine-audit-v25-us-mk-52",
+          "title": "U.S. Navy — ORD 696(B), 1959, печатная стр. 143: Mk 52 Mod 4",
+          "url": "https://maritime.org/doc/mines-usn/img/pg143.jpg",
+          "accessedAt": "2026-10-05"
+        },
+        {
+          "id": "reference-v175-mk52-147-mine-audit-v25-us-mk-52",
+          "title": "U.S. Navy — ORD 696(B), 1959, печатная стр. 147: Mk 52 Mod 5",
+          "url": "https://maritime.org/doc/mines-usn/img/pg147.jpg",
+          "accessedAt": "2026-10-05"
+        },
+        {
+          "id": "reference-v175-mk52-151-mine-audit-v25-us-mk-52",
+          "title": "U.S. Navy — ORD 696(B), 1959, печатная стр. 151: Mk 52 Mod 6",
+          "url": "https://maritime.org/doc/mines-usn/img/pg151.jpg",
+          "accessedAt": "2026-10-05"
+        }
+      ],
+      "create_heading": true
+    },
+    "mine-audit-v25-us-mk-56": {
+      "rows": [
+        [
+          "Основное ВВ по All Hands",
+          "HBX-3"
+        ],
+        [
+          "Масса основного наполнения",
+          "360 lb (≈163,29 кг)"
+        ]
+      ],
+      "note": "Историческое значение; номер Mod не указан.",
+      "sources": [
+        {
+          "id": "reference-v175-allhands-mine-audit-v25-us-mk-56",
+          "title": "U.S. Navy — All Hands, January 2002, №1017, MINES, стр. 46–47: текст публичной копии",
+          "url": "https://device.report/m/c18e2bbd12afe027d2a4b03b449fb40db25017ab56a868d77500f33b839dc71e",
+          "accessedAt": "2026-10-05"
+        }
+      ],
+      "create_heading": true
+    },
+    "mine-audit-v25-us-mk-57": {
+      "rows": [
+        [
+          "Основное ВВ по All Hands",
+          "HBX-3"
+        ],
+        [
+          "Масса основного наполнения",
+          "340 lb (≈154,22 кг)"
+        ]
+      ],
+      "note": "Историческое значение; номер Mod не указан.",
+      "sources": [
+        {
+          "id": "reference-v175-allhands-mine-audit-v25-us-mk-57",
+          "title": "U.S. Navy — All Hands, January 2002, №1017, MINES, стр. 46–47: текст публичной копии",
+          "url": "https://device.report/m/c18e2bbd12afe027d2a4b03b449fb40db25017ab56a868d77500f33b839dc71e",
+          "accessedAt": "2026-10-05"
+        }
+      ],
+      "create_heading": true
+    },
+    "eng-pdf-v7-095": {
+      "rows": [
+        [
+          "Captor: полная масса авиационного / корабельного исполнения по All Hands",
+          "2370 lb (≈1075,01 кг)"
+        ],
+        [
+          "Captor: полная масса лодочного исполнения по All Hands",
+          "2056 lb (≈932,59 кг)"
+        ],
+        [
+          "Captor: длина авиационного / корабельного исполнения",
+          "12 ft (≈3657,6 мм)"
+        ],
+        [
+          "Captor: длина лодочного исполнения",
+          "11 ft (≈3352,8 мм)"
+        ],
+        [
+          "Основное ВВ торпеды Mk 46 в составе Captor",
+          "PBXN-103, 96 lb (≈43,54 кг)"
+        ]
+      ],
+      "note": "Масса наполнения относится к торпеде, не к контейнеру. Прежние 1184 / 1075 кг сохранены отдельно; комплектации источников расходятся.",
+      "sources": [
+        {
+          "id": "reference-v175-allhands-eng-pdf-v7-095",
+          "title": "U.S. Navy — All Hands, January 2002, №1017, MINES, стр. 46–47: текст публичной копии",
+          "url": "https://device.report/m/c18e2bbd12afe027d2a4b03b449fb40db25017ab56a868d77500f33b839dc71e",
+          "accessedAt": "2026-10-05"
+        }
+      ],
+      "create_heading": true
+    },
+    "eng-pdf-v7-096": {
+      "rows": [
+        [
+          "Масса основного наполнения Mk 67 по All Hands",
+          "330 lb (≈149,69 кг); в публикации также 150 кг"
+        ],
+        [
+          "Марка основного ВВ",
+          "Не названа"
+        ],
+        [
+          "Проверка полной массы и размеров",
+          "1658 lb (≈752,06 кг); публикация даёт 754 кг; длина 13,4 ft, диаметр 19 in"
+        ]
+      ],
+      "note": "Пара полной массы в публикации расходится: 1658 lb ≈752,06 кг, а не 754 кг. Для основного наполнения 330 lb ≈149,69 кг; опубликованные 150 кг округлены. 13,4 ft ≈4084,3 мм; 19 in =482,6 мм. Прежние 4090 / 485 мм сохранены по своему источнику.",
+      "sources": [
+        {
+          "id": "reference-v175-allhands-eng-pdf-v7-096",
+          "title": "U.S. Navy — All Hands, January 2002, №1017, MINES, стр. 46–47: текст публичной копии",
+          "url": "https://device.report/m/c18e2bbd12afe027d2a4b03b449fb40db25017ab56a868d77500f33b839dc71e",
+          "accessedAt": "2026-10-05"
+        }
+      ],
+      "create_heading": true
+    },
+    "mine-audit-v25-gb-l14": {
+      "rows": [
+        [
+          "Конкретное обозначение в WEG",
+          "L14A1, в строке MIACAH F1"
+        ],
+        [
+          "L14A1: полная масса по этой строке",
+          "12 кг"
+        ],
+        [
+          "L14A1: основное ВВ и масса по этой строке",
+          "Hexolite, 7 кг"
+        ],
+        [
+          "Размерные поля той же строки",
+          "L: 260 мм; D: 200 мм; комплектация не уточнена"
+        ]
+      ],
+      "note": "Историческая сводная строка, не отдельный британский заводской паспорт. Значения не назначены всем вариантам L14.",
+      "sources": [
+        {
+          "id": "reference-v175-l14-mine-audit-v25-gb-l14",
+          "title": "U.S. Army / TRADOC — WEG 2015, Vol. 1, PDF-стр. 463: MIACAH F1 / L14A1",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/1/1f/WorldwideEquipmentGuide_2015_Ground_Systems.pdf",
+          "accessedAt": "2026-10-05"
+        }
+      ],
+      "create_heading": true
+    },
+    "ref-v8-za-type72-at": {
+      "rows": [
+        [
+          "Строка исторического справочника",
+          "Type 72 AT; страны China / S. Africa"
+        ],
+        [
+          "Полная масса общей строки WEG",
+          "6,5 кг"
+        ],
+        [
+          "Основное ВВ общей строки WEG",
+          "TNT/RDX, 5,4 кг"
+        ],
+        [
+          "Габариты общей строки WEG",
+          "Диаметр 270 мм; высота 100 мм"
+        ]
+      ],
+      "note": "WEG объединяет страны в одну строку. Независимый паспорт именно южноафриканского исполнения не установлен; эти числа не являются его отдельной заводской аттестацией. Type 72 AP отделена.",
+      "sources": [
+        {
+          "id": "reference-v175-type72-ref-v8-za-type72-at",
+          "title": "U.S. Army / TRADOC — WEG 2015, Vol. 1, PDF-стр. 457–458: Type 72 AT",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/1/1f/WorldwideEquipmentGuide_2015_Ground_Systems.pdf",
+          "accessedAt": "2026-10-05"
+        }
+      ],
+      "create_heading": true
+    },
+    "ref-v10-artillery-smart-155": {
+      "rows": [
+        [
+          "Материал корпуса по заводской брошюре",
+          "Кованая сталь"
+        ],
+        [
+          "Основное наполнение: исходная строка производителя",
+          "High Explosive; 9,7 lb и 4,2 kg в одной строке"
+        ],
+        [
+          "Сверка единиц массы наполнения",
+          "9,7 lb ≈4,400 кг; с 4,2 кг не совпадает. Точное значение требует сверки"
+        ]
+      ],
+      "note": "Не выбрано одно число вместо другого. Марка ВВ и распределение массы между суббоеприпасами не раскрыты. В той же брошюре 35 in и 898 мм также не совпадают: 35 in =889 мм; прежние 898 мм сохранены как метрическое поле источника.",
+      "sources": [
+        {
+          "id": "reference-v175-smart-ref-v10-artillery-smart-155",
+          "title": "GD-OTS — SMArt 155, заводская брошюра, стр. 2, Characteristics",
+          "url": "https://www.gdots.com/wp-content/uploads/2017/11/SMArt155.pdf",
+          "accessedAt": "2026-10-05"
+        }
+      ],
+      "create_heading": true
+    },
+    "ref-v10-artillery-k307": {
+      "rows": [
+        [
+          "Длина K307 со взрывателем по каталогу Poongsan",
+          "945 мм"
+        ],
+        [
+          "Сверка полной массы по тому же каталогу",
+          "46,4 кг; отдельная масса наполнения не указана"
+        ]
+      ],
+      "note": "Длина явно дана со взрывателем. Поле Weight не поясняет включение взрывателя в массу; прежнее ограничение сохранено.",
+      "sources": [
+        {
+          "id": "reference-v175-k307-ref-v10-artillery-k307",
+          "title": "KOTRA — Korea Defense Products Guide 2019, Poongsan, печатная стр. 46 / PDF-стр. 44",
+          "url": "https://www.kotra.or.kr/kodits/upload_file/promotion/2019%20Korea%20Defense%20Products%20Guide.pdf",
+          "accessedAt": "2026-10-05"
+        }
+      ],
+      "create_heading": true
+    },
+    "ref-v10-artillery-m395": {
+      "rows": [
+        [
+          "M395: обозначение в Annex A",
+          "CL3109"
+        ],
+        [
+          "Количество суббоеприпасов M85 по исследованию",
+          "63"
+        ],
+        [
+          "Полная масса, длина и отдельная масса ВВ",
+          "В таблице Annex A не опубликованы"
+        ]
+      ],
+      "note": "Это сведения о снаряде-носителе. Масса отдельного M85 не умножалась для получения массы всего снаряда или наполнения.",
+      "sources": [
+        {
+          "id": "reference-v175-ffi85-ref-v10-artillery-m395",
+          "title": "King, Dullum, Østern — M85: an analysis of reliability, 2007, Annex A, стр. 44 / PDF-стр. 44",
+          "url": "https://www.clusterconvention.org/files/external_publications/m85.pdf",
+          "accessedAt": "2026-10-05"
+        }
+      ],
+      "create_heading": true
+    },
+    "ref-v10-artillery-m396": {
+      "rows": [
+        [
+          "M396: обозначение в Annex A",
+          "CL3013-G-A2"
+        ],
+        [
+          "Количество суббоеприпасов M85 по исследованию",
+          "49"
+        ],
+        [
+          "Полная масса, длина и отдельная масса ВВ",
+          "В таблице Annex A не опубликованы"
+        ]
+      ],
+      "note": "Это сведения о снаряде-носителе. Масса отдельного M85 не умножалась для получения массы всего снаряда или наполнения.",
+      "sources": [
+        {
+          "id": "reference-v175-ffi85-ref-v10-artillery-m396",
+          "title": "King, Dullum, Østern — M85: an analysis of reliability, 2007, Annex A, стр. 44 / PDF-стр. 44",
+          "url": "https://www.clusterconvention.org/files/external_publications/m85.pdf",
+          "accessedAt": "2026-10-05"
+        }
+      ],
+      "create_heading": true
+    },
+    "ordnance-v27-m139-volcano-sistema-rasseivaniya-min": {
+      "rows": [
+        [
+          "Масса контейнера M87 по GICHD",
+          "13 600 г; не масса всей системы M139"
+        ],
+        [
+          "Основное наполнение противопехотной мины из описанного контейнера",
+          "420 г Composition B"
+        ],
+        [
+          "Основное наполнение противотранспортной мины из описанного контейнера",
+          "605 г RDX"
+        ]
+      ],
+      "note": "Разделены система, контейнер и две категории мин. Масса наполнения не заменяет полную массу; числа не назначены всем вариантам M87.",
+      "sources": [
+        {
+          "id": "reference-v175-volcano-ordnance-v27-m139-volcano-sistema-rasseivaniya-min",
+          "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition, 2025, стр. 45",
+          "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD_-_Third_edition__v06_WEB.pdf",
+          "accessedAt": "2026-10-05"
+        }
+      ],
+      "create_heading": true
+    },
+    "ordnance-v29-ga-0293": {
+      "rows": [
+        [
+          "Материал корпуса E1 по ARDEC",
+          "Сталь повышенного осколочного дробления; вместо литого корпуса исходной модели"
+        ],
+        [
+          "Отдельная масса и марка основного наполнения E1",
+          "На странице ARDEC не опубликованы"
+        ]
+      ],
+      "note": "ARDEC прямо различает E1 и исходную модель. В оглавлении открытой копии TM 43-0001-28 встречается E1, но соответствующий лист подписан A1; его числа не перенесены на E1.",
+      "sources": [
+        {
+          "id": "reference-v175-ardec-e1-ordnance-v29-ga-0293",
+          "title": "U.S. Army ARDEC — Circular 70-1, M821E1 / M889E1, печатная стр. 15 / PDF-стр. 26",
+          "url": "https://www.bulletpicker.com/pdf/ARDEC-Circular-70-1.pdf",
+          "accessedAt": "2026-10-05"
+        },
+        {
+          "id": "reference-v175-tm-e1-check-ordnance-v29-ga-0293",
+          "title": "U.S. Army — TM 43-0001-28, листы 4-75–76 и 4-81: разграничение E1 в оглавлении и A1 в заголовке",
+          "url": "https://www.bulletpicker.com/pdf/TM-43-0001-28-1994.pdf",
+          "accessedAt": "2026-10-05"
+        }
+      ],
+      "create_heading": true
+    },
+    "ordnance-v29-ga-0298": {
+      "rows": [
+        [
+          "Материал корпуса E1 по ARDEC",
+          "Сталь повышенного осколочного дробления; вместо литого корпуса исходной модели"
+        ],
+        [
+          "Отдельная масса и марка основного наполнения E1",
+          "На странице ARDEC не опубликованы"
+        ]
+      ],
+      "note": "ARDEC прямо различает E1 и исходную модель. В оглавлении открытой копии TM 43-0001-28 встречается E1, но соответствующий лист подписан A1; его числа не перенесены на E1.",
+      "sources": [
+        {
+          "id": "reference-v175-ardec-e1-ordnance-v29-ga-0298",
+          "title": "U.S. Army ARDEC — Circular 70-1, M821E1 / M889E1, печатная стр. 15 / PDF-стр. 26",
+          "url": "https://www.bulletpicker.com/pdf/ARDEC-Circular-70-1.pdf",
+          "accessedAt": "2026-10-05"
+        },
+        {
+          "id": "reference-v175-tm-e1-check-ordnance-v29-ga-0298",
+          "title": "U.S. Army — TM 43-0001-28, листы 4-75–76 и 4-81: разграничение E1 в оглавлении и A1 в заголовке",
+          "url": "https://www.bulletpicker.com/pdf/TM-43-0001-28-1994.pdf",
+          "accessedAt": "2026-10-05"
+        }
+      ],
+      "create_heading": true
+    },
+    "ordnance-v29-ga-0223": {
+      "rows": [
+        [
+          "Поздний M930: полная масса по TM",
+          "31,2 lb (≈14,153 кг); не назначена автоматически раннему XM930"
+        ],
+        [
+          "Поздний M930: длина в исходной таблице",
+          "27,85 in и 703 мм"
+        ],
+        [
+          "Проверка пары единиц длины M930",
+          "27,85 in =707,39 мм; 703 мм требует независимой сверки"
+        ],
+        [
+          "Поздний M930: масса основного осветительного наполнения",
+          "2,65 lb; в источнике 1200 г. Не масса ВВ осколочно-фугасной мины"
+        ]
+      ],
+      "note": "Лист Change 11 подписан M930, а не XM930. Данные позднего исполнения выделены отдельно; не заменяют паспорт раннего XM930. Внутренние инициирующие элементы не добавлялись.",
+      "sources": [
+        {
+          "id": "reference-v175-m930-ordnance-v29-ga-0223",
+          "title": "U.S. Army — TM 43-0001-28, Change 11, лист 4-115 / PDF-стр. 530: M930",
+          "url": "https://www.bulletpicker.com/pdf/TM-43-0001-28-1994.pdf",
+          "accessedAt": "2026-10-05"
+        }
+      ],
+      "create_heading": true
+    },
+    "ordnance-v27-avu": {
+      "rows": [
+        [
+          "Сверка массы семейства AVU по GICHD",
+          "1970 г; прежнее значение подтверждено"
+        ],
+        [
+          "Наружные размеры конкретного отдельного исполнения",
+          "Независимо не подтверждены"
+        ]
+      ],
+      "note": "Таблица GICHD содержит общий размерный блок 658×598×191 мм без пояснения комплектации; он не принят за размеры отдельного металлического взрывателя.",
+      "sources": [
+        {
+          "id": "reference-v175-avu-ordnance-v27-avu",
+          "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition, 2025, стр. 245",
+          "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD_-_Third_edition__v06_WEB.pdf",
+          "accessedAt": "2026-10-05"
+        }
+      ],
+      "create_heading": true
+    },
+    "ordnance-v27-9e246m": {
+      "rows": [
+        [
+          "Полная масса отдельного изделия по GICHD",
+          "Unknown: не опубликована"
+        ],
+        [
+          "Наружные размеры по GICHD",
+          "Unknown: не опубликованы"
+        ]
+      ],
+      "note": "Поля Unknown не заменены нулём. Масса и размеры соседнего взрывателя или суббоеприпаса не переносились.",
+      "sources": [
+        {
+          "id": "reference-v175-9e246m-ordnance-v27-9e246m",
+          "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition, 2025, стр. 248",
+          "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD_-_Third_edition__v06_WEB.pdf",
+          "accessedAt": "2026-10-05"
+        }
+      ],
+      "create_heading": true
+    },
+    "ordnance-v27-9e272": {
+      "rows": [
+        [
+          "Полная масса отдельного изделия по GICHD",
+          "Unknown: не опубликована"
+        ],
+        [
+          "Наружные размеры по GICHD",
+          "Unknown: не опубликованы"
+        ]
+      ],
+      "note": "Поля Unknown не заменены нулём. Масса и размеры соседнего взрывателя или суббоеприпаса не переносились.",
+      "sources": [
+        {
+          "id": "reference-v175-9e272-ordnance-v27-9e272",
+          "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition, 2025, стр. 249",
+          "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD_-_Third_edition__v06_WEB.pdf",
+          "accessedAt": "2026-10-05"
+        }
+      ],
+      "create_heading": true
+    },
+    "ref-v10-artillery-m999": {
+      "rows": [
+        [
+          "Исполнение первичного армейского перечня 2025",
+          "XM1208 (Israeli M999)"
+        ],
+        [
+          "Количество M99 в описанном XM1208",
+          "9"
+        ],
+        [
+          "Полная масса, длина, отдельная масса наполнения",
+          "В доступном индексированном фрагменте не опубликованы"
+        ]
+      ],
+      "note": "Доступен индексированный фрагмент первичного Portfolio Book; полный PDF в текущем сеансе не открылся. Это атрибуция конкретного XM1208, не паспорт всех изделий с названием M999.",
+      "sources": [
+        {
+          "id": "reference-v175-m999-ref-v10-artillery-m999",
+          "title": "U.S. Army JPEO A&A — Portfolio Book 2025, CAS-24: XM1208 (Israeli M999), доступный индексированный фрагмент",
+          "url": "https://www.cpeae.army.mil/Portals/94/Documents/JPEOAAPortfolioBook_2025.pdf",
+          "accessedAt": "2026-10-05"
+        }
+      ],
+      "create_heading": true
+    }
+  },
+  "text_corrections": {},
+  "source_corrections": {},
+  "field_corrections": {}
+}

@@ -1,0 +1,871 @@
+{
+  "eng-pdf-v7-077": [
+    {
+      "field": "Компании",
+      "old": "Forcit Defense; AD Group",
+      "new": "FORCIT Defence; DA-Group",
+      "url": "https://www.da-group.fi/client/da2020/userfiles/forcit-da-group-naval-mine-systems-brochure-2022-web.pdf"
+    }
+  ],
+  "eng-pdf-v7-078": [
+    {
+      "field": "Компании",
+      "old": "Forcit Defense; AD Group",
+      "new": "FORCIT Defence; DA-Group",
+      "url": "https://www.da-group.fi/client/da2020/userfiles/forcit-da-group-naval-mine-systems-brochure-2022-web.pdf"
+    },
+    {
+      "field": "Класс",
+      "old": "Морская придонная мина",
+      "new": "Морская якорная мина",
+      "url": "https://www.da-group.fi/client/da2020/userfiles/forcit-da-group-naval-mine-systems-brochure-2022-web.pdf"
+    }
+  ],
+  "eng-pdf-v7-079": [
+    {
+      "field": "Изготовитель",
+      "old": "Forcit Defense",
+      "new": "FORCIT Defence",
+      "url": "https://www.da-group.fi/client/da2020/userfiles/forcit-da-group-naval-mine-systems-brochure-2022-web.pdf"
+    }
+  ],
+  "ref-v8-ar-fmk1": [
+    {
+      "field": "Противоречие формы H.2",
+      "old": "В строке наполнения FMK-1 указано TNT, 296 г; не согласуется с H.1",
+      "new": "TNT, 296 г — расходится с основным значением",
+      "url": "https://doczz.net/doc/8458181/add.1---department-of-conferences-and-meetings-management",
+      "reason": "Редакторская формулировка сокращена; альтернативное число296г, TNT и сам факт расхождения сохранены."
+    }
+  ],
+  "ref-v8-pdm-2": [
+    {
+      "field": "Полная масса",
+      "newField": "Масса основного ВВ",
+      "old": "15 кг",
+      "new": "15 кг",
+      "url": "https://ru.djvu.online/file/gfvkfSoH5rj8W",
+      "reason": "В руководстве 1976 года, раздел 7.4, 15 кг указаны как масса тротилового заряда. Полная масса сборки — 135 кг на высокой и 100 кг на низкой подставке. Исправлена классификация прежнего числового значения, а не само число."
+    }
+  ],
+  "mine-audit-v25-gb-l14": [
+    {
+      "field": "Конкретное обозначение в WEG",
+      "newField": "Соответствие национальных обозначений",
+      "old": "L14A1, в строке MIACAH F1",
+      "new": "L14A1 / MIACAH F1",
+      "url": "https://www.scribd.com/document/397312831/WEG-2015",
+      "reason": "WEG2015 прямо связывает французскую MIACAH F1 с британским L14A1. Убрана редакционная отсылка к строке, связь моделей сохранена."
+    }
+  ],
+  "ordnance-v29-ga-0117": [
+    {
+      "field": "Краситель",
+      "old": "Жёлтый краситель, inert",
+      "new": "Жёлтый краситель",
+      "url": "https://www.bulletpicker.com/pdf/TM-43-0001-28-1994.pdf",
+      "reason": "Concise reader label for the already documented substance class; original qualification retained in service evidence; no specific formula inferred."
+    }
+  ],
+  "ordnance-v29-ga-0131": [
+    {
+      "field": "Картечные элементы",
+      "old": "Металлическое наполнение; не основное ВВ",
+      "new": "Металлическая картечь",
+      "url": "https://www.bulletpicker.com/pdf/TM-43-0001-28-1994.pdf",
+      "reason": "Concise reader label for the already documented substance class; original qualification retained in service evidence; no specific formula inferred."
+    }
+  ],
+  "ordnance-v29-ga-0132": [
+    {
+      "field": "Сигнальный состав",
+      "old": "Осветительный состав (Illum comp); точная марка не дана",
+      "new": "Осветительный состав",
+      "url": "https://www.bulletpicker.com/pdf/TM-43-0001-28-1994.pdf",
+      "reason": "Concise reader label for the already documented substance class; original qualification retained in service evidence; no specific formula inferred."
+    }
+  ],
+  "ordnance-v29-ga-0133": [
+    {
+      "field": "Сигнальный состав",
+      "old": "Осветительный состав (Illum); точная марка не дана",
+      "new": "Осветительный состав",
+      "url": "https://www.bulletpicker.com/pdf/TM-43-0001-28-1994.pdf",
+      "reason": "Concise reader label for the already documented substance class; original qualification retained in service evidence; no specific formula inferred."
+    }
+  ],
+  "ordnance-v29-ga-0134": [
+    {
+      "field": "Сигнальный состав",
+      "old": "Осветительный состав (Illum comp); точная марка не дана",
+      "new": "Осветительный состав",
+      "url": "https://www.bulletpicker.com/pdf/TM-43-0001-28-1994.pdf",
+      "reason": "Concise reader label for the already documented substance class; original qualification retained in service evidence; no specific formula inferred."
+    }
+  ],
+  "ordnance-v29-ga-0135": [
+    {
+      "field": "Сигнальный состав",
+      "old": "Осветительный состав (Illum comp); точная марка не дана",
+      "new": "Осветительный состав",
+      "url": "https://www.bulletpicker.com/pdf/TM-43-0001-28-1994.pdf",
+      "reason": "Concise reader label for the already documented substance class; original qualification retained in service evidence; no specific formula inferred."
+    }
+  ],
+  "ordnance-v29-ga-0136": [
+    {
+      "field": "Дымовой состав",
+      "old": "Жёлтое дымовое наполнение; точная марка не дана",
+      "new": "Дымовой состав жёлтого цвета",
+      "url": "https://www.bulletpicker.com/pdf/TM-43-0001-28-1994.pdf",
+      "reason": "Concise reader label for the already documented substance class; original qualification retained in service evidence; no specific formula inferred."
+    }
+  ],
+  "ordnance-v29-ga-0137": [
+    {
+      "field": "Основное ВВ",
+      "old": "Cyclotol — основное ВВ M677",
+      "new": "Cyclotol",
+      "url": "https://www.bulletpicker.com/pdf/TM-43-0001-28-1994.pdf",
+      "reason": "Concise reader label for the already documented substance class; original qualification retained in service evidence; no specific formula inferred."
+    }
+  ],
+  "ordnance-v29-ga-0139": [
+    {
+      "field": "Дымовой состав",
+      "old": "Красное дымовое наполнение; точная марка не дана",
+      "new": "Дымовой состав красного цвета",
+      "url": "https://www.bulletpicker.com/pdf/TM-43-0001-28-1994.pdf",
+      "reason": "Concise reader label for the already documented substance class; original qualification retained in service evidence; no specific formula inferred."
+    }
+  ],
+  "ordnance-v29-ga-0141": [
+    {
+      "field": "Дымовой состав",
+      "old": "Дымовое наполнение, красное; точная марка не дана",
+      "new": "Дымовой состав красного цвета",
+      "url": "https://www.bulletpicker.com/pdf/TM-43-0001-28-1994.pdf",
+      "reason": "Concise reader label for the already documented substance class; original qualification retained in service evidence; no specific formula inferred."
+    }
+  ],
+  "ordnance-v29-ga-0142": [
+    {
+      "field": "Дымовой состав",
+      "old": "Дымовое наполнение, зелёное; точная марка не дана",
+      "new": "Дымовой состав зелёного цвета",
+      "url": "https://www.bulletpicker.com/pdf/TM-43-0001-28-1994.pdf",
+      "reason": "Concise reader label for the already documented substance class; original qualification retained in service evidence; no specific formula inferred."
+    }
+  ],
+  "ordnance-v29-ga-0143": [
+    {
+      "field": "Дымовой состав",
+      "old": "Дымовое наполнение, жёлтое; точная марка не дана",
+      "new": "Дымовой состав жёлтого цвета",
+      "url": "https://www.bulletpicker.com/pdf/TM-43-0001-28-1994.pdf",
+      "reason": "Concise reader label for the already documented substance class; original qualification retained in service evidence; no specific formula inferred."
+    }
+  ],
+  "ordnance-v29-ga-0145": [
+    {
+      "field": "Сигнальный состав",
+      "old": "Пиротехнический состав (Flash charge composition); точная марка не дана",
+      "new": "Пиротехнический сигнальный состав",
+      "url": "https://www.bulletpicker.com/pdf/TM-43-0001-28-1994.pdf",
+      "reason": "Concise reader label for the already documented substance class; original qualification retained in service evidence; no specific formula inferred."
+    }
+  ],
+  "ordnance-v29-ga-0034": [
+    {
+      "field": "Осветительный состав",
+      "old": "Осветительный состав (Illum); точная марка не дана",
+      "new": "Осветительный состав",
+      "url": "https://www.bulletpicker.com/pdf/TM-43-0001-28-1994.pdf",
+      "reason": "Concise documented class or substance already present in the original record; no new formula. Original full article retained in service evidence."
+    }
+  ],
+  "ordnance-v29-ga-0035": [
+    {
+      "field": "Осветительный состав",
+      "old": "Осветительный состав (Illum); точная марка не дана",
+      "new": "Осветительный состав",
+      "url": "https://www.bulletpicker.com/pdf/TM-43-0001-28-1994.pdf",
+      "reason": "Concise documented class or substance already present in the original record; no new formula. Original full article retained in service evidence."
+    }
+  ],
+  "ordnance-v29-ga-0040": [
+    {
+      "field": "Стреловидные элементы",
+      "old": "Металлическое наполнение; не основное ВВ",
+      "new": "Металлические стреловидные элементы",
+      "url": "https://www.bulletpicker.com/pdf/TM-43-0001-28-1994.pdf",
+      "reason": "Concise documented class or substance already present in the original record; no new formula. Original full article retained in service evidence."
+    }
+  ],
+  "ordnance-v29-ga-0056": [
+    {
+      "field": "Осветительный состав",
+      "old": "Осветительный состав (Illum Compound); точная марка не дана",
+      "new": "Осветительный состав",
+      "url": "https://www.bulletpicker.com/pdf/TM-43-0001-28-1994.pdf",
+      "reason": "Concise documented class or substance already present in the original record; no new formula. Original full article retained in service evidence."
+    }
+  ],
+  "ordnance-v29-ga-0066": [
+    {
+      "field": "Осветительный состав",
+      "old": "Осветительный состав (Illuminum composition); точная марка не дана",
+      "new": "Осветительный состав",
+      "url": "https://www.bulletpicker.com/pdf/TM-43-0001-28-1994.pdf",
+      "reason": "Concise documented class or substance already present in the original record; no new formula. Original full article retained in service evidence."
+    }
+  ],
+  "ordnance-v29-ga-0070": [
+    {
+      "field": "Осветительный состав",
+      "old": "Осветительный состав (Illum Compound); точная марка не дана",
+      "new": "Осветительный состав",
+      "url": "https://www.bulletpicker.com/pdf/TM-43-0001-28-1994.pdf",
+      "reason": "Concise documented class or substance already present in the original record; no new formula. Original full article retained in service evidence."
+    }
+  ],
+  "ordnance-v29-ga-0081": [
+    {
+      "field": "Дымовой маркер",
+      "old": "Дымовое наполнение отдельного контейнера; точная марка не дана",
+      "new": "Дымовой состав",
+      "url": "https://www.bulletpicker.com/pdf/TM-43-0001-28-1994.pdf",
+      "reason": "Concise documented class or substance already present in the original record; no new formula. Original full article retained in service evidence."
+    }
+  ],
+  "ordnance-v29-ga-0082": [
+    {
+      "field": "Дымовой маркер",
+      "old": "Дымовое наполнение отдельного контейнера; точная марка не дана",
+      "new": "Дымовой состав",
+      "url": "https://www.bulletpicker.com/pdf/TM-43-0001-28-1994.pdf",
+      "reason": "Concise documented class or substance already present in the original record; no new formula. Original full article retained in service evidence."
+    }
+  ],
+  "ordnance-v29-ga-0114": [
+    {
+      "field": "Снаряд",
+      "old": "None — отдельное наполнение снаряда не предусмотрено",
+      "new": "Снаряд с резиновой головной частью",
+      "url": "https://www.bulletpicker.com/pdf/TM-43-0001-28-1994.pdf",
+      "reason": "Concise documented class or substance already present in the original record; no new formula. Original full article retained in service evidence."
+    }
+  ],
+  "ordnance-v29-ga-0115": [
+    {
+      "field": "Резиновые элементы",
+      "old": "Резиновые элементы; не ВВ",
+      "new": "Резиновые элементы",
+      "url": "https://www.bulletpicker.com/pdf/TM-43-0001-28-1994.pdf",
+      "reason": "Concise documented class or substance already present in the original record; no new formula. Original full article retained in service evidence."
+    }
+  ],
+  "ordnance-v29-ga-0170": [
+    {
+      "field": "Осветительный состав",
+      "old": "Осветительный пиротехнический состав; точная марка не дана",
+      "new": "Осветительный состав",
+      "url": "https://www.bulletpicker.com/pdf/TM-43-0001-29.pdf",
+      "reason": "Concise documented class or substance already present in the original record; no new formula. Original full article retained in service evidence."
+    }
+  ],
+  "ordnance-v29-ga-0187": [
+    {
+      "field": "Учебное исполнение",
+      "old": "Основное боевое наполнение отсутствует в учебном M101",
+      "new": "Инертное учебное изделие",
+      "url": "https://www.bulletpicker.com/pdf/TM-43-0001-29.pdf",
+      "reason": "Concise documented class or substance already present in the original record; no new formula. Original full article retained in service evidence."
+    }
+  ],
+  "ordnance-v29-ga-0188": [
+    {
+      "field": "Учебное исполнение",
+      "old": "Основной боевой заряд отсутствует в учебном M29",
+      "new": "Инертное учебное изделие",
+      "url": "https://www.bulletpicker.com/pdf/TM-43-0001-29.pdf",
+      "reason": "Concise documented class or substance already present in the original record; no new formula. Original full article retained in service evidence."
+    }
+  ],
+  "ordnance-v29-ga-0189": [
+    {
+      "field": "Сигнальный состав",
+      "old": "Чёрный порох — учебное сигнальное наполнение",
+      "new": "Чёрный порох",
+      "url": "https://www.bulletpicker.com/pdf/TM-43-0001-29.pdf",
+      "reason": "Concise documented class or substance already present in the original record; no new formula. Original full article retained in service evidence."
+    }
+  ],
+  "ordnance-v29-ga-0190": [
+    {
+      "field": "Сигнальный состав",
+      "old": "Чёрный порох — учебное сигнальное наполнение",
+      "new": "Чёрный порох",
+      "url": "https://www.bulletpicker.com/pdf/TM-43-0001-29.pdf",
+      "reason": "Concise documented class or substance already present in the original record; no new formula. Original full article retained in service evidence."
+    }
+  ],
+  "ordnance-v29-ga-0192": [
+    {
+      "field": "Дымовой состав",
+      "old": "Дымовое наполнение на основе терефталевой кислоты (TA)",
+      "new": "Дымовой состав на основе терефталевой кислоты (TA)",
+      "url": "https://www.bulletpicker.com/pdf/TM-43-0001-29.pdf",
+      "reason": "Concise documented class or substance already present in the original record; no new formula. Original full article retained in service evidence."
+    }
+  ],
+  "ordnance-v29-ga-0193": [
+    {
+      "field": "Учебное исполнение",
+      "old": "Основное боевое наполнение отсутствует",
+      "new": "Инертный учебный макет",
+      "url": "https://www.bulletpicker.com/pdf/TM-43-0001-29.pdf",
+      "reason": "Concise documented class or substance already present in the original record; no new formula. Original full article retained in service evidence."
+    }
+  ],
+  "ref-v10-artillery-lu220": [
+    {
+      "field": "Основное ВВ",
+      "old": "Малочувствительное ВВ XF 13 333 — описание отдельной страницы LU220",
+      "new": "Малочувствительное ВВ XF 13 333",
+      "url": "https://knds.com/en/products/ammunition/155-lu-220",
+      "reason": "Concise descriptive class, retaining variants and original provenance in service notes."
+    }
+  ],
+  "ref-v10-artillery-er-g3-105": [
+    {
+      "field": "Наполнение семейства",
+      "old": "HE BB: осколочно-фугасное наполнение, точная марка на текущей странице не дана; SMK BB: дымовое",
+      "new": "HE BB: осколочно-фугасное наполнение; SMK BB: дымовой состав",
+      "url": "https://knds.com/en/subsidiaries/knds-ammo-france",
+      "reason": "Concise descriptive class, retaining variants and original provenance in service notes."
+    }
+  ],
+  "ordnance-v27-dm121-155-mm-snaryad": [
+    {
+      "field": "Основное ВВ",
+      "old": "Малочувствительное ВВ — публикация Rheinmetall; точная марка в ней не дана",
+      "new": "Малочувствительное ВВ",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "reason": "Concise descriptive class, retaining variants and original provenance in service notes."
+    }
+  ],
+  "ordnance-v27-dm105-smoke-155-mm-snaryad": [
+    {
+      "field": "Дымовой состав",
+      "old": "Дымовое целевое наполнение HCE; отдельные энергетические компоненты отдельно",
+      "new": "Дымовой состав HCE",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "reason": "Concise descriptive class, retaining variants and original provenance in service notes."
+    }
+  ],
+  "ordnance-v27-dm106-illuminating-155-mm-snaryad": [
+    {
+      "field": "Осветительный состав",
+      "old": "Осветительный состав на основе магния; точная марка не дана",
+      "new": "Осветительный состав на основе магния",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "reason": "Concise descriptive class, retaining variants and original provenance in service notes."
+    }
+  ],
+  "ordnance-v29-ga-0009": [
+    {
+      "field": "Дымовой состав",
+      "old": "HC — целевое дымовое наполнение M150",
+      "new": "Дымовой состав HC",
+      "url": "https://www.elbitsystems.com/sites/default/files/2026-06/m150_web.pdf",
+      "reason": "Concise descriptive class, retaining variants and original provenance in service notes."
+    }
+  ],
+  "ordnance-v29-ga-0028": [
+    {
+      "field": "Основное ВВ",
+      "old": "PBX-4 — основное малочувствительное ВВ; вольфрамовые элементы отдельно",
+      "new": "PBX-4; отдельно сформированные осколки",
+      "url": "https://jpeoaa.army.mil/Portals/94/Documents/JPEOAAPortfolioBook_2025.pdf",
+      "reason": "Concise descriptive class, retaining variants and original provenance in service notes."
+    }
+  ],
+  "ordnance-v29-ga-0031": [
+    {
+      "field": "Основное ВВ",
+      "old": "Composition B — по текстовому описанию PGU-44/B",
+      "new": "Composition B",
+      "url": "https://jpeoaa.army.mil/Portals/94/Documents/JPEOAAPortfolioBook_2025.pdf",
+      "reason": "Concise descriptive class, retaining variants and original provenance in service notes."
+    }
+  ],
+  "ordnance-v29-ga-0032": [
+    {
+      "field": "Основное ВВ",
+      "old": "Composition B — по текстовому описанию PGU-45/B",
+      "new": "Composition B",
+      "url": "https://jpeoaa.army.mil/Portals/94/Documents/JPEOAAPortfolioBook_2025.pdf",
+      "reason": "Concise descriptive class, retaining variants and original provenance in service notes."
+    }
+  ],
+  "ordnance-v29-ga-0052": [
+    {
+      "field": "Дымовой состав",
+      "old": "Белый фосфор — целевое дымовое наполнение (WP)",
+      "new": "Белый фосфор (WP)",
+      "url": "https://www.asafm.army.mil/Portals/72/Documents/BudgetMaterial/2022/Base%20Budget/Procurement/AMMO_FY_2022_PB_Procurement_of_Ammunition_Army.pdf",
+      "reason": "Concise descriptive class, retaining variants and original provenance in service notes."
+    }
+  ],
+  "ordnance-v29-ga-0084": [
+    {
+      "field": "Дымовой состав",
+      "old": "Белый фосфор (WP), в составе дымовой полезной нагрузки",
+      "new": "Белый фосфор (WP)",
+      "url": "https://www.bulletpicker.com/pdf/TM-43-0001-28-1994.pdf",
+      "reason": "Concise descriptive class, retaining variants and original provenance in service notes."
+    }
+  ],
+  "ordnance-v29-ga-0085": [
+    {
+      "field": "Дымовой состав",
+      "old": "Белый фосфор (WP), в составе дымовой полезной нагрузки",
+      "new": "Белый фосфор (WP)",
+      "url": "https://www.bulletpicker.com/pdf/TM-43-0001-28-1994.pdf",
+      "reason": "Concise descriptive class, retaining variants and original provenance in service notes."
+    }
+  ],
+  "ordnance-v29-ga-0090": [
+    {
+      "field": "Наполнение семейства",
+      "old": "HE BB: осколочно-фугасное наполнение, точная марка на текущей странице не дана; SMK BB: дымовое",
+      "new": "HE BB: осколочно-фугасное наполнение; SMK BB: дымовой состав",
+      "url": "https://knds.com/en/products/ammunition/105-mm-er-g3",
+      "reason": "Concise descriptive class, retaining variants and original provenance in service notes."
+    }
+  ],
+  "ordnance-v29-ga-0092": [
+    {
+      "field": "Основное ВВ",
+      "old": "Малочувствительное ВВ XF 13 333 — описание отдельной страницы LU220",
+      "new": "Малочувствительное ВВ XF 13 333",
+      "url": "https://knds.com/en/products/ammunition/155-lu-220",
+      "reason": "Concise descriptive class, retaining variants and original provenance in service notes."
+    }
+  ],
+  "ordnance-v29-ga-0093": [
+    {
+      "field": "Боевые элементы",
+      "old": "Два отдельных боевых элемента; единая марка их ВВ на странице не дана",
+      "new": "Два отдельных сенсорных боевых элемента",
+      "url": "https://knds.com/en/products/ammunition/155mm-bonus",
+      "reason": "Concise descriptive class, retaining variants and original provenance in service notes."
+    }
+  ],
+  "ordnance-v29-ga-0150": [
+    {
+      "field": "Дымовой состав",
+      "old": "Цветной дымовой состав; точная марка не дана",
+      "new": "Цветной дымовой состав",
+      "url": "https://www.bulletpicker.com/pdf/TM-43-0001-29.pdf",
+      "reason": "Concise descriptive class, retaining variants and original provenance in service notes."
+    }
+  ],
+  "ordnance-v29-ga-0151": [
+    {
+      "field": "Дымовой состав",
+      "old": "Цветной дымовой состав; точная марка не дана",
+      "new": "Цветной дымовой состав",
+      "url": "https://www.bulletpicker.com/pdf/TM-43-0001-29.pdf",
+      "reason": "Concise descriptive class, retaining variants and original provenance in service notes."
+    }
+  ],
+  "ordnance-v29-ga-0152": [
+    {
+      "field": "Дымовой состав",
+      "old": "Цветной дымовой состав; точная марка не дана",
+      "new": "Цветной дымовой состав",
+      "url": "https://www.bulletpicker.com/pdf/TM-43-0001-29.pdf",
+      "reason": "Concise descriptive class, retaining variants and original provenance in service notes."
+    }
+  ],
+  "ordnance-v29-ga-0153": [
+    {
+      "field": "Дымовой состав",
+      "old": "Цветной дымовой состав; точная марка не дана",
+      "new": "Цветной дымовой состав",
+      "url": "https://www.bulletpicker.com/pdf/TM-43-0001-29.pdf",
+      "reason": "Concise descriptive class, retaining variants and original provenance in service notes."
+    }
+  ],
+  "ordnance-v29-ga-0161": [
+    {
+      "field": "Раздражающий состав",
+      "old": "Раздражающее целевое наполнение; не основной осколочно-фугасный заряд",
+      "new": "Раздражающий состав CN1",
+      "url": "https://www.bulletpicker.com/pdf/TM-43-0001-29.pdf",
+      "reason": "Concise descriptive class, retaining variants and original provenance in service notes."
+    }
+  ],
+  "ordnance-v29-ga-0162": [
+    {
+      "field": "Раздражающий состав",
+      "old": "Раздражающее целевое наполнение; несколько исполнений источника",
+      "new": "Раздражающий состав — несколько исполнений",
+      "url": "https://www.bulletpicker.com/pdf/TM-43-0001-29.pdf",
+      "reason": "Concise descriptive class, retaining variants and original provenance in service notes."
+    }
+  ],
+  "ordnance-v29-ga-0164": [
+    {
+      "field": "Раздражающий состав",
+      "old": "Раздражающее пиротехническое целевое наполнение",
+      "new": "Раздражающий состав CS",
+      "url": "https://www.bulletpicker.com/pdf/TM-43-0001-29.pdf",
+      "reason": "Concise descriptive class, retaining variants and original provenance in service notes."
+    }
+  ],
+  "ordnance-v29-ga-0165": [
+    {
+      "field": "Раздражающий состав",
+      "old": "Раздражающее пиротехническое целевое наполнение",
+      "new": "Раздражающий состав CS",
+      "url": "https://www.bulletpicker.com/pdf/TM-43-0001-29.pdf",
+      "reason": "Concise descriptive class, retaining variants and original provenance in service notes."
+    }
+  ],
+  "ordnance-v29-ga-0166": [
+    {
+      "field": "Раздражающий состав",
+      "old": "Раздражающее пиротехническое целевое наполнение",
+      "new": "Раздражающий состав CN",
+      "url": "https://www.bulletpicker.com/pdf/TM-43-0001-29.pdf",
+      "reason": "Concise descriptive class, retaining variants and original provenance in service notes."
+    }
+  ],
+  "ordnance-v29-ga-0167": [
+    {
+      "field": "Раздражающий состав",
+      "old": "Раздражающее пиротехническое целевое наполнение",
+      "new": "Раздражающий состав CN",
+      "url": "https://www.bulletpicker.com/pdf/TM-43-0001-29.pdf",
+      "reason": "Concise descriptive class, retaining variants and original provenance in service notes."
+    }
+  ],
+  "ordnance-v29-ga-0168": [
+    {
+      "field": "Раздражающий состав",
+      "old": "Раздражающее целевое наполнение",
+      "new": "Раздражающий состав CS",
+      "url": "https://www.bulletpicker.com/pdf/TM-43-0001-29.pdf",
+      "reason": "Concise descriptive class, retaining variants and original provenance in service notes."
+    }
+  ],
+  "ordnance-v29-ga-0459": [
+    {
+      "field": "Учебное наполнение",
+      "old": "Учебное маркерное наполнение; оранжевая сигнатура, точная марка состава не дана",
+      "new": "Учебный маркерный состав — оранжевый сигнал",
+      "url": "https://www.nammo.com/products/ammunition/40-mm-products/40mm-x-53-tpm/",
+      "reason": "Concise descriptive class, retaining variants and original provenance in service notes."
+    }
+  ],
+  "ref-v10-artillery-s463": [
+    {
+      "field": "Осветительный состав",
+      "old": "Осветительное целевое наполнение; марка в статье не дана",
+      "new": "Осветительный состав",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "reason": "Concise substance/class label. Full original retained in service evidence; no new recipe or formula."
+    }
+  ],
+  "ordnance-v29-ga-0196": [
+    {
+      "field": "Тип",
+      "old": "Историческая запись о разработке семейства; текущий отдельный паспорт 120 мм не установлен",
+      "new": "Программа разработки 120-мм миномётного семейства",
+      "url": "https://www.baesystems.com/en-uk/uk-businesses/land/munitions",
+      "reason": "Current original BAE paragraph explicitly confirms developing HE,practice,smoke andilluminating120mm products; no unsupported numeric specifications."
+    }
+  ],
+  "ordnance-v29-ga-0211": [
+    {
+      "field": "Осветительный состав",
+      "old": "Осветительное целевое наполнение; марка не дана",
+      "new": "Осветительный состав",
+      "url": "https://www.bulletpicker.com/pdf/TM-43-0001-28-1994.pdf",
+      "reason": "Concise substance/class label. Full original retained in service evidence; no new recipe or formula."
+    }
+  ],
+  "ordnance-v29-ga-0215": [
+    {
+      "field": "Осветительный состав",
+      "old": "Инфракрасное осветительное целевое наполнение; марка не дана",
+      "new": "Инфракрасный осветительный состав",
+      "url": "https://www.bulletpicker.com/pdf/TM-43-0001-28-1994.pdf",
+      "reason": "Concise substance/class label. Full original retained in service evidence; no new recipe or formula."
+    }
+  ],
+  "ordnance-v29-ga-0218": [
+    {
+      "field": "Осветительный состав",
+      "old": "Осветительное целевое наполнение M91; марка не дана",
+      "new": "Осветительный состав",
+      "url": "https://www.bulletpicker.com/pdf/TM-43-0001-28-1994.pdf",
+      "reason": "Concise substance/class label. Full original retained in service evidence; no new recipe or formula."
+    }
+  ],
+  "ordnance-v29-ga-0238": [
+    {
+      "field": "Основное ВВ",
+      "old": "PBXN-110 — основное ВВ M1061",
+      "new": "PBXN-110",
+      "url": "https://www.cpeae.army.mil/Project-Offices/PM-CAS/Organizations/CONVENTIONAL-AMMUNITION/Products/MORTAR-AMMO/",
+      "reason": "Concise substance/class label. Full original retained in service evidence; no new recipe or formula."
+    }
+  ],
+  "ordnance-v29-ga-0240": [
+    {
+      "field": "Осветительный состав",
+      "old": "Осветительное целевое наполнение; марка не дана",
+      "new": "Осветительный состав",
+      "url": "https://www.bulletpicker.com/pdf/TM-43-0001-28-1994.pdf",
+      "reason": "Concise substance/class label. Full original retained in service evidence; no new recipe or formula."
+    }
+  ],
+  "ordnance-v29-ga-0241": [
+    {
+      "field": "Дымовой состав",
+      "old": "Белый фосфор — целевое дымовое наполнение",
+      "new": "Белый фосфор (WP)",
+      "url": "https://www.bulletpicker.com/pdf/TM-43-0001-28-1994.pdf",
+      "reason": "Concise substance/class label. Full original retained in service evidence; no new recipe or formula."
+    }
+  ],
+  "ordnance-v29-ga-0242": [
+    {
+      "field": "Осветительный состав",
+      "old": "Инфракрасное осветительное наполнение; марка не дана",
+      "new": "Инфракрасный осветительный состав",
+      "url": "https://www.bulletpicker.com/pdf/TM-43-0001-28-1994.pdf",
+      "reason": "Concise substance/class label. Full original retained in service evidence; no new recipe or formula."
+    }
+  ],
+  "ordnance-v29-ga-0253": [
+    {
+      "field": "Учебное наполнение",
+      "old": "Инертное; в описании — гипсовый наполнитель",
+      "new": "Инертный гипсовый наполнитель",
+      "url": "https://www.bulletpicker.com/pdf/TM-43-0001-28-1994.pdf",
+      "reason": "Concise substance/class label. Full original retained in service evidence; no new recipe or formula."
+    }
+  ],
+  "ordnance-v29-ga-0263": [
+    {
+      "field": "Осветительный состав",
+      "old": "Инфракрасное осветительное наполнение; точная марка не дана",
+      "new": "Инфракрасный осветительный состав",
+      "url": "https://www.bulletpicker.com/pdf/TM-43-0001-28-1994.pdf",
+      "reason": "Concise substance/class label. Full original retained in service evidence; no new recipe or formula."
+    }
+  ],
+  "ordnance-v29-ga-0267": [
+    {
+      "field": "Осветительный состав",
+      "old": "Осветительное целевое наполнение; точная марка не дана",
+      "new": "Осветительный состав",
+      "url": "https://www.bulletpicker.com/pdf/TM-43-0001-28-1994.pdf",
+      "reason": "Concise substance/class label. Full original retained in service evidence; no new recipe or formula."
+    }
+  ],
+  "ordnance-v29-ga-0270": [
+    {
+      "field": "Основное ВВ",
+      "old": "Composition B — отдельно CA43 M889A2",
+      "new": "Composition B — CA43 M889A2",
+      "url": "https://ndia.dtic.mil/wp-content/uploads/2012/IMEM/13857zaloga1A.pdf",
+      "reason": "Concise substance/class label. Full original retained in service evidence; no new recipe or formula."
+    }
+  ],
+  "ordnance-v29-ga-0276": [
+    {
+      "field": "Дымовой состав",
+      "old": "Белый фосфор — целевое дымовое наполнение",
+      "new": "Белый фосфор (WP)",
+      "url": "https://www.bulletpicker.com/pdf/TM-43-0001-28-1994.pdf",
+      "reason": "Concise substance/class label. Full original retained in service evidence; no new recipe or formula."
+    }
+  ],
+  "ordnance-v29-ga-0286": [
+    {
+      "field": "Учебное наполнение",
+      "old": "Инертный стальной балласт учебного M445",
+      "new": "Инертный стальной балласт",
+      "url": "https://www.bulletpicker.com/pdf/TM-43-0001-28-1994.pdf",
+      "reason": "Concise substance/class label. Full original retained in service evidence; no new recipe or formula."
+    }
+  ],
+  "ordnance-v27-82-mm-o-832": [
+    {
+      "field": "Основное ВВ",
+      "old": "TNT либо TG-42 — альтернативы строки источника",
+      "new": "TNT либо TG-42 — по исполнениям",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "reason": "Replace reader-facing bibliographic filler with the already documented substance or class; original wording archived in full."
+    }
+  ],
+  "ordnance-v27-3ubr6-30-165-mm": [
+    {
+      "field": "Материал снаряда",
+      "old": "Стальное кинетическое тело снаряда; отдельное основное ВВ не предусмотрено по описанию",
+      "new": "Сталь",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "reason": "Replace reader-facing bibliographic filler with the already documented substance or class; original wording archived in full."
+    }
+  ],
+  "ordnance-v29-ga-0201": [
+    {
+      "field": "Учебное наполнение",
+      "old": "Учебно-практическое изделие с пиротехнической сигнатурой; точная марка состава не дана",
+      "new": "Учебный снаряд с пиротехнической отметкой",
+      "url": "https://www.nammo.com/wp-content/uploads/2024/09/Nammo-Handbook-2024_08_Web.cleaned.pdf",
+      "reason": "Replace reader-facing bibliographic filler with the already documented substance or class; original wording archived in full."
+    }
+  ],
+  "ordnance-v29-ga-0202": [
+    {
+      "field": "Учебное наполнение",
+      "old": "Учебно-практическое изделие с пиротехнической сигнатурой; точная марка состава не дана",
+      "new": "Учебный снаряд с пиротехнической отметкой",
+      "url": "https://www.nammo.com/wp-content/uploads/2024/09/Nammo-Handbook-2024_08_Web.cleaned.pdf",
+      "reason": "Replace reader-facing bibliographic filler with the already documented substance or class; original wording archived in full."
+    }
+  ],
+  "ordnance-v29-ga-0206": [
+    {
+      "field": "Учебное наполнение",
+      "old": "Учебно-практическое изделие с пиротехнической сигнатурой; точная марка состава не дана",
+      "new": "Учебный снаряд с пиротехнической отметкой",
+      "url": "https://www.nammo.com/wp-content/uploads/2024/09/Nammo-Handbook-2024_08_Web.cleaned.pdf",
+      "reason": "Replace reader-facing bibliographic filler with the already documented substance or class; original wording archived in full."
+    }
+  ],
+  "ordnance-v29-ga-0408": [
+    {
+      "field": "Учебное наполнение",
+      "old": "Инертный учебный снаряд (по описанию); энергетические компоненты полной сборки отдельно",
+      "new": "Инертное основное наполнение учебного снаряда",
+      "url": "https://www.nammo.com/wp-content/uploads/2024/09/Nammo-Handbook-2024_08_Web.cleaned.pdf",
+      "reason": "Replace reader-facing bibliographic filler with the already documented substance or class; original wording archived in full."
+    }
+  ],
+  "ordnance-v29-ga-0409": [
+    {
+      "field": "Учебное наполнение",
+      "old": "Кинетический снаряд; отдельное основное ВВ на странице не указано",
+      "new": "Кинетический учебный снаряд",
+      "url": "https://www.nammo.com/wp-content/uploads/2024/09/Nammo-Handbook-2024_08_Web.cleaned.pdf",
+      "reason": "Replace reader-facing bibliographic filler with the already documented substance or class; original wording archived in full."
+    }
+  ],
+  "ordnance-v29-ga-0435": [
+    {
+      "field": "Материал снаряда",
+      "old": "Кинетический снаряд; отдельное основное ВВ на странице не указано",
+      "new": "Кинетический бронебойный снаряд",
+      "url": "https://www.nammo.com/wp-content/uploads/2024/09/Nammo-Handbook-2024_08_Web.cleaned.pdf",
+      "reason": "Replace reader-facing bibliographic filler with the already documented substance or class; original wording archived in full."
+    }
+  ],
+  "ordnance-v29-ga-0436": [
+    {
+      "field": "Материал снаряда",
+      "old": "Кинетический снаряд; отдельное основное ВВ на странице не указано",
+      "new": "Кинетический бронебойный снаряд",
+      "url": "https://www.nammo.com/wp-content/uploads/2024/09/Nammo-Handbook-2024_08_Web.cleaned.pdf",
+      "reason": "Replace reader-facing bibliographic filler with the already documented substance or class; original wording archived in full."
+    }
+  ],
+  "ordnance-v29-ga-0444": [
+    {
+      "field": "Учебное наполнение",
+      "old": "Кинетический снаряд; отдельное основное ВВ на странице не указано",
+      "new": "Кинетический учебный снаряд",
+      "url": "https://www.nammo.com/wp-content/uploads/2024/09/Nammo-Handbook-2024_08_Web.cleaned.pdf",
+      "reason": "Replace reader-facing bibliographic filler with the already documented substance or class; original wording archived in full."
+    }
+  ],
+  "ordnance-v29-ga-0486": [
+    {
+      "field": "Материал сердечника",
+      "old": "Сердечник из обеднённого урана; снаряд описан как inert",
+      "new": "Сердечник из обеднённого урана",
+      "url": "https://www.bulletpicker.com/pdf/TM-43-0001-28-1994.pdf",
+      "reason": "Use the model-specific material established by its original primary description; preserve old wording in service archive."
+    }
+  ],
+  "ordnance-v29-ga-0503": [
+    {
+      "field": "Материал сердечника",
+      "old": "Кинетический снаряд со стальным/карбид-вольфрамовым телом; отдельное основное ВВ не указано",
+      "new": "Карбид вольфрама",
+      "url": "https://www.bulletpicker.com/pdf/TM-43-0001-28-1994.pdf",
+      "reason": "Use the model-specific material established by its original primary description; preserve old wording in service archive."
+    }
+  ],
+  "ordnance-v29-ga-0514": [
+    {
+      "field": "Материал сердечника",
+      "old": "Кинетический стальной снаряд; отдельное основное ВВ не указано",
+      "new": "Закалённая сталь",
+      "url": "https://www.bulletpicker.com/pdf/TM-43-0001-28-1994.pdf",
+      "reason": "Use the model-specific material established by its original primary description; preserve old wording in service archive."
+    }
+  ],
+  "ordnance-v29-ga-0515": [
+    {
+      "field": "Материал сердечника",
+      "old": "Кинетический стальной снаряд; отдельное основное ВВ не указано",
+      "new": "Закалённая сталь",
+      "url": "https://www.bulletpicker.com/pdf/TM-43-0001-28-1994.pdf",
+      "reason": "Use the model-specific material established by its original primary description; preserve old wording in service archive."
+    }
+  ],
+  "ordnance-v29-ga-0538": [
+    {
+      "field": "Материал сердечника",
+      "old": "Кинетический вольфрамовый сердечник; основное ВВ тела неприменимо",
+      "new": "Вольфрамовый сплав",
+      "url": "https://knds.com/en/products/ammunition/120mm-shard",
+      "reason": "Use the model-specific material established by its original primary description; preserve old wording in service archive."
+    }
+  ],
+  "ref-v9-mve72": [
+    {
+      "field": "Класс",
+      "old": "Минный взрыватель",
+      "new": "Электронный прибор инициирования",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "reason": "Original GICHD276classifies MVE72 as firing device; distinguish equipment from mechanical fuze."
+    }
+  ],
+  "ordnance-v27-s-8ko-80-mm-raketa": [
+    {
+      "field": "Основное ВВ",
+      "old": "A-IX-10 — марка по таблице GICHD",
+      "new": "A-IX-10",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "reason": "Retain documented material; archive bibliographic suffix."
+    }
+  ],
+  "ordnance-v27-avu": [
+    {
+      "field": "АВУ: масса описанного исполнения",
+      "old": "1970 г; прежнее значение подтверждено",
+      "new": "1970 г",
+      "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+      "reason": "Retain quantity; remove verification commentary from reader-facing value."
+    }
+  ]
+}

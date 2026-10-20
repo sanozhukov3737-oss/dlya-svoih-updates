@@ -1,0 +1,125 @@
+{
+  "formatVersion": 1,
+  "preparedAt": "2026-10-19",
+  "targetContentVersion": 195,
+  "enrichments": [
+    {
+      "cardId": "handbookref-av-23u",
+      "imageKind": "exact-exterior-drawing",
+      "images": [
+        {
+          "id": "handbookref-av-23u-external-outline",
+          "localPath": "images/handbookref-av-23u-external-outline.webp",
+          "thumbnailPath": "thumbs/handbookref-av-23u-external-outline.webp",
+          "caption": "Внешний габаритный рисунок АВ-23У из предоставленного справочника, с. 2. Это наружный вид без внутреннего разреза.",
+          "width": 376,
+          "height": 312,
+          "position": 0
+        }
+      ],
+      "sources": [
+        {
+          "id": "handbookref-av-23u-external-outline-source",
+          "title": "Справочные данные: боеприпасы и взрыватели для БПЛА ВСУ (перевод), с. 2 — внешний вид АВ-23У",
+          "url": null,
+          "accessedAt": "2026-10-19"
+        }
+      ]
+    },
+    {
+      "cardId": "handbookref-moa-60-13",
+      "imageKind": "labelled-related-variant",
+      "images": [
+        {
+          "id": "handbookref-moa-60-13-fpv-labelled-exterior",
+          "localPath": "images/handbookref-moa-60-13-fpv-labelled-exterior.webp",
+          "thumbnailPath": "thumbs/handbookref-moa-60-13-fpv-labelled-exterior.webp",
+          "caption": "Родственное исполнение с маркировкой «МОА-FPV 60/13». Фото наружного корпуса из публикации Seán Moorhouse. Точное соответствие исполнению из PDF не подтверждено.",
+          "width": 640,
+          "height": 480,
+          "position": 0
+        }
+      ],
+      "sources": [
+        {
+          "id": "handbookref-moa-60-13-fpv-labelled-exterior-source",
+          "title": "Seán Moorhouse — публикация с фотографией наружного корпуса с маркировкой МОА-FPV 60/13",
+          "url": "https://www.linkedin.com/posts/se%C3%A1n-moorhouse-b037562_ukrainewar-osint-eod-activity-7431401977613279233-AxvU",
+          "accessedAt": "2026-10-19"
+        }
+      ]
+    }
+  ],
+  "assetFiles": [
+    {
+      "path": "images/handbookref-av-23u-external-outline.webp",
+      "bytes": 6040,
+      "sha256": "59058bda3a7ed896c5939545e94018c8bdacbf075d7ca7a4300be617b6615569"
+    },
+    {
+      "path": "thumbs/handbookref-av-23u-external-outline.webp",
+      "bytes": 3194,
+      "sha256": "7fae9a5df1e734c1585d714cbae1044c813ca3187bf3821749d30bff65f578af"
+    },
+    {
+      "path": "images/handbookref-moa-60-13-fpv-labelled-exterior.webp",
+      "bytes": 46266,
+      "sha256": "9f1e359b5157b03c3a9f723fdd298a7de6f0f8a42d1503df0d7331307ba107a1"
+    },
+    {
+      "path": "thumbs/handbookref-moa-60-13-fpv-labelled-exterior.webp",
+      "bytes": 7326,
+      "sha256": "d460693e20a1b9b85426743ce498ac692fb8f209ae34e550db5875adbe3076b7"
+    }
+  ],
+  "fieldCorrections": [
+    {
+      "cardId": "handbookref-pb-1u",
+      "reason": "Исправление ошибки переноса по визуально проверенной строке PDF, с. 2",
+      "before": {
+        "body": "## Описание\n\nПБ-1У — взрыватель, указанный в переводном справочнике боеприпасов для БПЛА. На фотографии показан металлический корпус со светлой нижней частью и коническим верхом.\n\n## Происхождение\n\nУкраина — по предоставленному справочнику. Указанный в нём изготовитель: Иннатекс.\n\n## Обозначение\n\nОбозначение в таблице: ПБ-1У.",
+        "tags": [
+          "ПБ-1У",
+          "pb-1u",
+          "Иннатекс",
+          "БПЛА",
+          "взрыватель"
+        ]
+      },
+      "after": {
+        "body": "## Описание\n\nПБ-1У — взрыватель, указанный в переводном справочнике боеприпасов для БПЛА. На фотографии показан металлический корпус со светлой нижней частью и коническим верхом.\n\n## Происхождение\n\nУкраина — по предоставленному справочнику. Указанный в нём изготовитель: Промэнерго.\n\n## Обозначение\n\nОбозначение в таблице: ПБ-1У.",
+        "tags": [
+          "ПБ-1У",
+          "pb-1u",
+          "Промэнерго",
+          "БПЛА",
+          "взрыватель"
+        ]
+      }
+    },
+    {
+      "cardId": "handbookref-pni-1",
+      "reason": "Исправление ошибки переноса по визуально проверенной строке PDF, с. 2",
+      "before": {
+        "body": "## Описание\n\nПНИ-1 — взрыватель, указанный в переводном справочнике боеприпасов для БПЛА.\n\n## Происхождение\n\nУкраина — по предоставленному справочнику. Указанный в нём изготовитель: Промэнерго.\n\n## Обозначение\n\nОбозначение в таблице: ПНИ-1.",
+        "tags": [
+          "ПНИ-1",
+          "pni-1",
+          "Промэнерго",
+          "БПЛА",
+          "взрыватель"
+        ]
+      },
+      "after": {
+        "body": "## Описание\n\nПНИ-1 — взрыватель, указанный в переводном справочнике боеприпасов для БПЛА.\n\n## Происхождение\n\nУкраина — по предоставленному справочнику. Указанный в нём изготовитель: ПИИ «Интервзрывпром».\n\n## Обозначение\n\nОбозначение в таблице: ПНИ-1.",
+        "tags": [
+          "ПНИ-1",
+          "pni-1",
+          "ПИИ «Интервзрывпром»",
+          "БПЛА",
+          "взрыватель"
+        ]
+      }
+    }
+  ]
+}

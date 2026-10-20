@@ -1,0 +1,178 @@
+{
+  "date": "2026-10-19",
+  "preparedContentVersion": 195,
+  "originalTargetCards": 10,
+  "addedIllustrations": 2,
+  "exactExteriorDrawingsAdded": 1,
+  "relatedVariantPhotographsAdded": 1,
+  "remainingWithoutAnyIllustration": 8,
+  "remainingWithoutConfirmedExactExterior": 9,
+  "cardCount": 1697,
+  "imageCount": 1600,
+  "publication": {
+    "apkBuilt": false,
+    "githubPublished": false
+  },
+  "methods": [
+    "Точные обозначения на русском, украинском и латиницей",
+    "Варианты с точками, запятыми, дефисами, дробной чертой и без них",
+    "Поиск по изготовителям и каталожным идентификаторам",
+    "Два поисковых индекса, отдельный поиск изображений и проверка доступных страниц изготовителей",
+    "Проверка местной полной базы и повторная визуальная проверка исходного PDF"
+  ],
+  "checkedSources": [
+    {
+      "url": "https://adron.ua/portfolio/",
+      "finding": "На странице изготовителя упомянут АВ-26У. Он не приравнен к АВ-23У; чужое исполнение не использовано."
+    },
+    {
+      "url": "https://www.mayak.com.ua/",
+      "finding": "Открытие сайта вернуло HTTP 503; получение внешних фото ОФБЧ и ВОФБЧ не подтверждено."
+    },
+    {
+      "url": "https://www.scribd.com/document/1062668676/",
+      "finding": "Другой экземпляр каталога подтверждает наличие названий, но не даёт подтверждённых новых внешних фотографий."
+    },
+    {
+      "url": "https://www.scribd.com/document/1075604464/",
+      "finding": "В открытом тексте встречается полное название МОА-FPV 45/9. Это не подтверждает тождество всех вариантов с другими индексами; извлечение скрытых страниц не выполнялось."
+    },
+    {
+      "url": "https://www.linkedin.com/posts/se%C3%A1n-moorhouse-b037562_ukrainewar-osint-eod-activity-7431401977613279233-AxvU",
+      "finding": "В публичной публикации просмотрены пять иллюстраций. Использован только наружный корпус с читаемой маркировкой МОА-FPV 60/13; остальные относятся к МОА-Композит 61 или показывают разобранные компоненты и не добавлены."
+    }
+  ],
+  "cards": [
+    {
+      "cardId": "handbookref-pni-1",
+      "title": "ПНИ-1",
+      "queries": [
+        "ПНИ-1",
+        "pni-1"
+      ],
+      "status": "not-found",
+      "exactExteriorStillMissing": true,
+      "explanation": "По точному индексу и вариантам написания подходящий внешний снимок не подтверждён. Схожие изделия и внутренние разрезы не добавлены."
+    },
+    {
+      "cardId": "handbookref-pnu-1-1-2",
+      "title": "ПНУ-1-1/2",
+      "queries": [
+        "ПНУ-1-1/2",
+        "pnu-1-1/2"
+      ],
+      "status": "not-found",
+      "exactExteriorStillMissing": true,
+      "explanation": "По точному индексу и вариантам написания подходящий внешний снимок не подтверждён. Схожие изделия и внутренние разрезы не добавлены."
+    },
+    {
+      "cardId": "handbookref-pnu-1-36",
+      "title": "ПНУ-1-36",
+      "queries": [
+        "ПНУ-1-36",
+        "pnu-1-36"
+      ],
+      "status": "not-found",
+      "exactExteriorStillMissing": true,
+      "explanation": "По точному индексу и вариантам написания подходящий внешний снимок не подтверждён. Схожие изделия и внутренние разрезы не добавлены."
+    },
+    {
+      "cardId": "handbookref-av-23u",
+      "title": "АВ-23У",
+      "queries": [
+        "АВ-23У",
+        "av-23u"
+      ],
+      "status": "exact-exterior-drawing",
+      "exactExteriorStillMissing": false,
+      "source": "Предоставленный PDF, с. 2, строка 5",
+      "crop": [
+        128,
+        344,
+        222,
+        422
+      ],
+      "explanation": "Повторная визуальная проверка показала, что рисунок наружный, без внутреннего разреза. В первом проходе он был исключён вместе с разрезами."
+    },
+    {
+      "cardId": "handbookref-ofbch-2-5-mayak-perspektiva",
+      "title": "ОФБЧ-2.5 («Маяк-Перспектива»)",
+      "queries": [
+        "ОФБЧ-2.5 («Маяк-Перспектива»)",
+        "ОФБЧ-2,5 («Маяк-Перспектива»)"
+      ],
+      "status": "not-found",
+      "exactExteriorStillMissing": true,
+      "explanation": "По точному индексу и вариантам написания подходящий внешний снимок не подтверждён. Схожие изделия и внутренние разрезы не добавлены."
+    },
+    {
+      "cardId": "handbookref-vofbch-2-5",
+      "title": "ВОФБЧ-2.5",
+      "queries": [
+        "ВОФБЧ-2.5",
+        "ВОФБЧ-2,5"
+      ],
+      "status": "not-found",
+      "exactExteriorStillMissing": true,
+      "explanation": "По точному индексу и вариантам написания подходящий внешний снимок не подтверждён. Схожие изделия и внутренние разрезы не добавлены."
+    },
+    {
+      "cardId": "handbookref-moa-45-9",
+      "title": "МОА 45/9",
+      "queries": [
+        "МОА 45/9",
+        "moa 45/9"
+      ],
+      "status": "not-found",
+      "exactExteriorStillMissing": true,
+      "explanation": "По точному индексу и вариантам написания подходящий внешний снимок не подтверждён. Схожие изделия и внутренние разрезы не добавлены."
+    },
+    {
+      "cardId": "handbookref-moa-45-13",
+      "title": "МОА 45/13",
+      "queries": [
+        "МОА 45/13",
+        "moa 45/13"
+      ],
+      "status": "not-found",
+      "exactExteriorStillMissing": true,
+      "explanation": "По точному индексу и вариантам написания подходящий внешний снимок не подтверждён. Схожие изделия и внутренние разрезы не добавлены."
+    },
+    {
+      "cardId": "handbookref-moa-60-9",
+      "title": "МОА 60/9",
+      "queries": [
+        "МОА 60/9",
+        "moa 60/9"
+      ],
+      "status": "not-found",
+      "exactExteriorStillMissing": true,
+      "explanation": "По точному индексу и вариантам написания подходящий внешний снимок не подтверждён. Схожие изделия и внутренние разрезы не добавлены."
+    },
+    {
+      "cardId": "handbookref-moa-60-13",
+      "title": "МОА 60/13",
+      "queries": [
+        "МОА 60/13",
+        "moa 60/13"
+      ],
+      "status": "labelled-related-variant",
+      "exactExteriorStillMissing": true,
+      "source": "https://www.linkedin.com/posts/se%C3%A1n-moorhouse-b037562_ukrainewar-osint-eod-activity-7431401977613279233-AxvU",
+      "explanation": "На фотографии читается МОА-FPV 60/13. Добавлен наружный корпус родственного исполнения с явной подписью. Тождество исполнению МОА 60/13 из PDF и изготовитель показанного экземпляра не подтверждены.",
+      "imageCredit": "Публикация Seán Moorhouse; исходный фотограф в публикации не указан",
+      "imageLicense": "Не установлена",
+      "originalImageSha256": "dc4b6ed9ea1365da94df8d29838d5c9ef226b95688c77b924c2c09b6ccca0533"
+    }
+  ],
+  "transcriptionCorrections": [
+    {
+      "cardId": "handbookref-pb-1u",
+      "reason": "Исправление ошибки переноса по визуально проверенной строке PDF, с. 2"
+    },
+    {
+      "cardId": "handbookref-pni-1",
+      "reason": "Исправление ошибки переноса по визуально проверенной строке PDF, с. 2"
+    }
+  ]
+}

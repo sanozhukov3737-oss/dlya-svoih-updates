@@ -1,0 +1,81 @@
+{
+  "ref-v9-vn-mn79": {
+    "rows": [
+      [
+        "Габариты по общей таблице M14 / MN79",
+        "5,6 × 4 см (56 × 40 мм)"
+      ]
+    ],
+    "source": {
+      "id": "ref-v9-vn-mn79-specs-v152",
+      "title": "HALO Trust — Land Mines Identification Guide, edited by Itamar Levy (August 2005), стр. 16",
+      "url": "https://www.bulletpicker.com/pdf/HALO-Land-Mines-Identification-Guide.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Общая таблица M14 / MN79 описывает совпадающую форму корпуса. Это не отдельная спецификация всех вариантов MN79; другие значения M14 сюда не перенесены. Полная масса изделия в выбранной таблице не приведена. Колонка NEQ не использована вместо полной массы."
+  },
+  "mine-audit-v25-yu-pmr-3": {
+    "rows": [
+      [
+        "Размеры PMR-3 по таблице",
+        "7,8 × 13,4 см (78 × 134 мм)"
+      ]
+    ],
+    "source": {
+      "id": "mine-audit-v25-yu-pmr-3-specs-v152",
+      "title": "HALO Trust — Land Mines Identification Guide, edited by Itamar Levy (August 2005), стр. 54",
+      "url": "https://www.bulletpicker.com/pdf/HALO-Land-Mines-Identification-Guide.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Использована только отдельная строка PMR-3. Включение выступающих деталей в эти размеры таблица отдельно не уточняет; значения PMR-1, PMR-2A и PROM-1 сюда не перенесены. Полная масса изделия в выбранной таблице не приведена. Колонка NEQ не использована вместо полной массы."
+  },
+  "mine-audit-v25-su-pom-2s": {
+    "rows": [
+      [
+        "Размеры ПОМ-2С по таблице",
+        "18 × 6,3 см (180 × 63 мм)"
+      ]
+    ],
+    "source": {
+      "id": "mine-audit-v25-su-pom-2s-specs-v152",
+      "title": "HALO Trust — Land Mines Identification Guide, edited by Itamar Levy (August 2005), стр. 58",
+      "url": "https://www.bulletpicker.com/pdf/HALO-Land-Mines-Identification-Guide.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Источник подписывает модель POM 2S. Эти размеры не объявлены общим габаритом изделия с разложенными опорами; их полный размах отдельно не подтверждён. Полная масса изделия в выбранной таблице не приведена. Колонка NEQ не использована вместо полной массы."
+  },
+  "ref-v9-vn-mbv78a1-a2": {
+    "rows": [
+      [
+        "Размеры только MBV78A2 по таблице",
+        "8 × 5,3 см (80 × 53 мм)"
+      ]
+    ],
+    "source": {
+      "id": "ref-v9-vn-mbv78a1-a2-specs-v152",
+      "title": "HALO Trust — Land Mines Identification Guide, edited by Itamar Levy (August 2005), стр. 60",
+      "url": "https://www.bulletpicker.com/pdf/HALO-Land-Mines-Identification-Guide.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Таблица относится к MBV78A2. Размеры и масса MBV78A1 остаются неподтверждёнными выбранным источником; размеры A2 не распространены на A1. Полная масса изделия в выбранной таблице не приведена. Колонка NEQ не использована вместо полной массы."
+  },
+  "ref-v8-za-no8-at": {
+    "rows": [
+      [
+        "Диаметр южноафриканской No. 8 AT",
+        "259 мм"
+      ],
+      [
+        "Высота по схеме",
+        "175 мм"
+      ]
+    ],
+    "source": {
+      "id": "ref-v8-za-no8-at-specs-v152",
+      "title": "HALO Trust — Land Mines Identification Guide, edited by Itamar Levy (August 2005), стр. 73",
+      "url": "https://www.bulletpicker.com/pdf/HALO-Land-Mines-Identification-Guide.pdf",
+      "accessedAt": "2026-10-04"
+    },
+    "note": "Страница маркирована No 8, RSA. Диаметр и высота прочитаны с размерной схемы; китайские изделия с похожими обозначениями не использованы. Полная масса изделия в выбранной таблице не приведена. Колонка NEQ не использована вместо полной массы."
+  }
+}

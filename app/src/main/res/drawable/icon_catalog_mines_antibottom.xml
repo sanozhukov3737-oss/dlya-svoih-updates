@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Decorative vehicle-and-ground category symbol; no model or mechanism is illustrated. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android" android:width="80dp" android:height="80dp" android:viewportWidth="80" android:viewportHeight="80">
+    <path android:pathData="M16,26 H25 V47 Q25,50 22,50 H16 Q13,50 13,47 V29 Q13,26 16,26 Z M55,26 H64 Q67,26 67,29 V47 Q67,50 64,50 H58 Q55,50 55,47 Z" android:fillColor="#A7B5AE" android:strokeColor="#27382E" android:strokeWidth="2.4" android:strokeLineJoin="round" />
+    <path android:pathData="M21,32 L26,16 H54 L59,32 V42 H21 Z" android:fillColor="#7D8C5A" android:strokeColor="#27382E" android:strokeWidth="2.4" android:strokeLineJoin="round" />
+    <path android:pathData="M28,32 H52 L49,43 H31 Z" android:fillColor="#E9DEBE" android:strokeColor="#27382E" android:strokeWidth="2.4" android:strokeLineJoin="round" />
+    <path android:pathData="M32,23 H48 M14,36 H20 M14,42 H20 M60,36 H66 M60,42 H66" android:fillColor="#00000000" android:strokeColor="#27382E" android:strokeWidth="2" android:strokeLineCap="round" />
+    <path android:pathData="M27,63 C27,56 53,56 53,63 V66 C53,73 27,73 27,66 Z" android:fillColor="#C3A164" android:strokeColor="#27382E" android:strokeWidth="2.4" android:strokeLineJoin="round" />
+    <path android:pathData="M28,62 C31,67 49,67 52,62 M10,70 H22 M58,70 H70" android:fillColor="#00000000" android:strokeColor="#27382E" android:strokeWidth="2" android:strokeLineCap="round" />
+</vector>

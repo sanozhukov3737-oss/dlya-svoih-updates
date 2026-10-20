@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Decorative wire-reel symbol; not an illustration of a particular product. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android" android:width="80dp" android:height="80dp" android:viewportWidth="80" android:viewportHeight="80">
+    <path android:pathData="M18,22 H50 V56 H18 Z" android:fillColor="#7D8C5A" android:strokeColor="#27382E" android:strokeWidth="2.4" android:strokeLineJoin="round" />
+    <path android:pathData="M24,25 V53 M30,25 V53 M36,25 V53 M42,25 V53" android:fillColor="#00000000" android:strokeColor="#E9DEBE" android:strokeWidth="3" android:strokeLineCap="round" />
+    <path android:pathData="M14,15 H21 V62 H14 Z M47,15 H54 V62 H47 Z" android:fillColor="#A7B5AE" android:strokeColor="#27382E" android:strokeWidth="2.4" android:strokeLineJoin="round" />
+    <path android:pathData="M54,37 H62 C72,37 72,53 62,53 C53,53 54,68 64,68 H71" android:fillColor="#00000000" android:strokeColor="#27382E" android:strokeWidth="3.2" android:strokeLineCap="round" />
+    <path android:pathData="M8,38 H14 M54,38 H59" android:fillColor="#00000000" android:strokeColor="#27382E" android:strokeWidth="3.2" android:strokeLineCap="round" />
+</vector>

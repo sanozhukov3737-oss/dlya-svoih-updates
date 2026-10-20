@@ -1,0 +1,63 @@
+name: Publish checked catalog update
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish-app
+  cancel-in-progress: false
+
+jobs:
+  catalog:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - name: Install image validation dependency
+        run: sudo apt-get update && sudo apt-get install -y python3-pil
+      - name: Check cards, medical exceptions and reader compatibility
+        run: |
+          /usr/bin/python3 -m unittest discover -s tools -p 'test_reader_catalog_152.py'
+          /usr/bin/python3 -m unittest discover -s tools -p 'test_medical_reader_revision.py'
+          /usr/bin/python3 -m unittest discover -s tools -p 'test_java_features.py'
+      - name: Prepare exact catalog and preserve current APK offer
+        run: |
+          mkdir -p build/catalog-release
+          curl --fail --location --retry 3 --max-time 90 'https://github.com/sanozhukov3737-oss/dlya-svoih-updates/releases/latest/download/latest.json' --output build/catalog-release/latest-before.json
+          /usr/bin/python3 tools/prepare_catalog_release.py --request docs/releases/catalog-release.json --previous-feed build/catalog-release/latest-before.json --output build/catalog-release
+      - uses: actions/upload-artifact@v4
+        with:
+          name: checked-catalog-update
+          path: |
+            build/catalog-release/catalog-*.zip
+            build/catalog-release/latest.json
+          if-no-files-found: error
+      - name: Upload and verify draft before publication
+        run: |
+          VERSION="$(/usr/bin/python3 -c 'import json; print(json.load(open("docs/releases/catalog-release.json"))["contentVersion"])')"
+          TAG="catalog-$VERSION"
+          gh release create "$TAG" "build/catalog-release/catalog-$VERSION.zip" build/catalog-release/latest.json --draft --target "$GITHUB_SHA" --title "ДЛЯ СВОИХ — каталог №$VERSION" --notes-file build/catalog-release/notes.txt
+          mkdir -p build/catalog-release/download-check
+          gh release download "$TAG" --pattern "catalog-$VERSION.zip" --pattern latest.json --dir build/catalog-release/download-check
+          /usr/bin/python3 - <<'PY'
+          import hashlib,json
+          from pathlib import Path
+          root=Path('build/catalog-release');check=root/'download-check'
+          feed=json.loads((check/'latest.json').read_text())
+          pack=check/f'catalog-{feed["contentVersion"]}.zip'
+          assert pack.stat().st_size==feed['bytes']
+          assert hashlib.sha256(pack.read_bytes()).hexdigest()==feed['sha256']
+          assert (check/'latest.json').read_bytes()==(root/'latest.json').read_bytes()
+          assert pack.read_bytes()==(root/pack.name).read_bytes()
+          print('Uploaded release files verified')
+          PY
+          gh release edit "$TAG" --draft=false --latest

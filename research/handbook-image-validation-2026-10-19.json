@@ -1,0 +1,29 @@
+{
+  "preparedContentVersion": 195,
+  "cardsPreserved": 1697,
+  "imageCount": 1600,
+  "addedImages": 2,
+  "exactExteriorDrawings": 1,
+  "relatedVariantPhotos": 1,
+  "remainingWithoutIllustration": 8,
+  "exactVariantExteriorStillNeeded": 9,
+  "addedImageAssetBytes": 62826,
+  "integrity": "ok",
+  "foreignKeys": "ok",
+  "fts": "ok",
+  "idempotence": "ok",
+  "favoritesAndReading": "preserved",
+  "existingTextAndSearch": "unchanged except two manufacturer transcription corrections",
+  "manufacturerTranscriptionCorrections": 2,
+  "apkBuilt": false,
+  "published": false,
+  "search": {
+    "regressionTests": 10,
+    "designationQueries": 470,
+    "failures": []
+  },
+  "coverageTests": {
+    "tests": 4,
+    "result": "passed"
+  }
+}

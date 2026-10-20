@@ -1,0 +1,28 @@
+{
+  "sourceCommit": "e5eb15076c4727ec0deb32a4f7b2ac43b1e3b812",
+  "archiveSha256": "4d4ea41cf03a341f7def67fda7d9238440fd9947b0a2b03cf403890577b0e8c1",
+  "unsignedApkSha256": "43ffc8b8d8ba2a632d3d13a5f287a4fb6a6a43bddf008122026186aa2a0197f4",
+  "reference133ApkSha256": "8cff50f9d76dbeec261ca928603277bdf540d0d0b42913bde919a82ce8d5d49f",
+  "expectedCertificateSha256": "2f0a0908f269bc039311edb58fca8863347f1e4c3a7cfaddd909991cf1f0b509",
+  "catalog": {
+    "contentVersion": 195,
+    "cards": 1697,
+    "images": 1600,
+    "offlineModels": 19,
+    "databaseSha256": "937b641c3296fb7ea381674d5854e514b7ea84d604060fcc6b52ee9890b4ed8b",
+    "modelManifestSha256": "11402c11a9f2ac1ad95770ced7f5d25073c8016ba5d4fa0c33b1e943ccd797f4",
+    "preservedPublishedCardIdsAndRowids": 1426,
+    "preservedPublishedMedia": 2624,
+    "referencedMediaPresent": 3106,
+    "integrityCheck": "ok",
+    "foreignKeyViolations": 0
+  },
+  "signatureVerified": false,
+  "signedApkPath": null,
+  "signedApkSha256": null,
+  "upgradeInstallation": "pending-Android",
+  "favoritesPreserved": null,
+  "settingsPreserved": null,
+  "fullCatalogOnAndroid": null,
+  "androidVisualReview": "pending-actual-initial-and-rotated-frames"
+}

@@ -1,0 +1,88 @@
+name: Recovery 0.3.134 - actual Android upgrade and offline UI
+
+on:
+  push:
+    branches: ['recovery/android-0.3.134-stage2-20261019']
+    paths:
+      - '.github/workflows/recovery-android-signed-134.yml'
+      - 'tools/recovery_android_stage3.py'
+      - 'tools/verify_release_ui.py'
+      - 'tools/recovery_probe_render_134.py'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: read
+
+concurrency:
+  group: recovery-android-signed-134
+  cancel-in-progress: false
+
+jobs:
+  android:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: actions/download-artifact@v4
+        with:
+          name: recovery134-signed-apk
+          run-id: 39403888993
+          github-token: ${{ github.token }}
+          path: build/recovery-signed
+      - name: Verify the signed artifact and obtain the published baseline
+        run: |
+          python3 -m pip install --quiet Pillow==11.3.0
+          mkdir -p build/recovery-android
+          python3 - <<'PY'
+          import hashlib,json,urllib.request,zipfile
+          from pathlib import Path
+          p=Path('build/recovery-signed/DLYA_SVOIH_v0.3.134.apk')
+          assert p.stat().st_size==144646769
+          with p.open('rb') as stream:
+              assert hashlib.file_digest(stream,'sha256').hexdigest()=='300b77deaee3348e05a0135bf0079414c07dc2e15a7dcfd9b1239a8cef99298f'
+          report=json.loads(Path('build/recovery-signed/stage-3-signature-verification.json').read_text())
+          assert report['signatureVerified'] and report['certificateSha256']=='2f0a0908f269bc039311edb58fca8863347f1e4c3a7cfaddd909991cf1f0b509'
+          with zipfile.ZipFile(p) as z:
+              Path('build/recovery-android/models.json').write_bytes(z.read('assets/viewer3d/models.json'))
+          url='https://github.com/sanozhukov3737-oss/dlya-svoih-updates/releases/download/app-0.3.133/DLYA_SVOIH_v0.3.133.apk'
+          with urllib.request.urlopen(url,timeout=120) as response:
+              Path('build/recovery-android/previous-0.3.133.apk').write_bytes(response.read())
+          PY
+      - name: Require KVM acceleration
+        run: |
+          "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" 'platform-tools' 'emulator'
+          echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules
+          sudo udevadm control --reload-rules
+          sudo udevadm trigger --name-match=kvm
+          sudo udevadm settle
+          ls -l /dev/kvm
+          sudo chmod 0666 /dev/kvm
+          test -r /dev/kvm
+          test -w /dev/kvm
+          "$ANDROID_HOME/emulator/emulator" -accel-check > build/recovery-android/acceleration.txt
+      - name: Check the actual release APK offline on Android
+        uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: 30
+          target: google_apis
+          arch: x86_64
+          profile: pixel_2
+          disable-animations: true
+          emulator-options: -no-window -gpu swiftshader_indirect -noaudio -no-boot-anim -no-snapshot -accel on -memory 4096 -cores 4 -partition-size 8192 -camera-back none -camera-front none
+          script: python3 tools/recovery_android_stage3.py --previous build/recovery-android/previous-0.3.133.apk --signed build/recovery-signed/DLYA_SVOIH_v0.3.134.apk --out build/recovery-android/proof --models build/recovery-android/models.json --viewer-script tools/verify_release_ui.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: recovery134-actual-android-proof
+          path: |
+            build/recovery-android/acceleration.txt
+            build/recovery-android/models.json
+            build/recovery-android/proof/
+            build/recovery-signed/stage-3-signature-verification.json
+          if-no-files-found: warn
+          retention-days: 30

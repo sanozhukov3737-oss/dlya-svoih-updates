@@ -1,0 +1,126 @@
+name: Recovery 0.3.134 - sign prepared APK
+
+on:
+  push:
+    branches: ['recovery/android-0.3.134-stage2-20261019']
+    paths:
+      - '.github/workflows/recovery-sign-prepared-134.yml'
+      - 'tools/recovery_sign_prepared_134.py'
+      - 'tools/recovery_repair_search_134.py'
+      - 'tools/recovery_patch_renderer_134.py'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: recovery-sign-prepared-134
+  cancel-in-progress: false
+
+jobs:
+  fetch-input:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    # GitHub draft releases require push access (GitHub REST releases docs).
+    # The read-only job returned HTTP 403 for this exact draft asset in run
+    # 39392735774. This job executes no repository/input code and reads no key.
+    permissions:
+      contents: write
+    steps:
+      - name: Fetch and hash-check only the pinned draft asset
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p recovery-input
+          gh api --method GET -H 'Accept: application/octet-stream' "repos/$GITHUB_REPOSITORY/releases/assets/658689251" > recovery-input/DLYA_SVOIH_COMBINED_0.3.134_CANDIDATE.zip
+          python3 - <<'PY'
+          from pathlib import Path
+          import hashlib
+          p = Path('recovery-input/DLYA_SVOIH_COMBINED_0.3.134_CANDIDATE.zip')
+          assert p.stat().st_size == 154986054
+          with p.open('rb') as stream:
+              assert hashlib.file_digest(stream, 'sha256').hexdigest() == '4d4ea41cf03a341f7def67fda7d9238440fd9947b0a2b03cf403890577b0e8c1'
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: recovery134-pinned-input
+          path: recovery-input/DLYA_SVOIH_COMBINED_0.3.134_CANDIDATE.zip
+          if-no-files-found: error
+          retention-days: 7
+  sign:
+    needs: fetch-input
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    permissions:
+      contents: read
+    env:
+      CI_SIGNING_KEYSTORE: ${{ github.workspace }}/recovery134-existing.keystore
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: actions/download-artifact@v4
+        with:
+          name: recovery134-pinned-input
+          path: build/recovery-input
+      - name: Download the published reference APK
+        run: |
+          mkdir -p build/recovery-input
+          python3 - <<'PY'
+          import urllib.request
+          from pathlib import Path
+          url = 'https://github.com/sanozhukov3737-oss/dlya-svoih-updates/releases/download/app-0.3.133/DLYA_SVOIH_v0.3.133.apk'
+          with urllib.request.urlopen(url, timeout=120) as response:
+              Path('build/recovery-input/previous-0.3.133.apk').write_bytes(response.read())
+          PY
+      - name: Verify input hashes, catalog, models and preserved published cards
+        run: |
+          python3 tools/recovery_sign_prepared_134.py --preflight-only --archive build/recovery-input/DLYA_SVOIH_COMBINED_0.3.134_CANDIDATE.zip --previous build/recovery-input/previous-0.3.133.apk --work build/recovery-work --out build/recovery-signed
+      - name: Install Android signature verification tools
+        run: '"$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" "build-tools;36.0.0"'
+      - name: Repair only five derived search fields using verified production Java
+        run: |
+          git fetch --depth=1 origin tag app-0.3.133
+          git bundle verify build/recovery-work/DLYA_SVOIH_0.3.134.bundle
+          git fetch build/recovery-work/DLYA_SVOIH_0.3.134.bundle refs/heads/feature-uav-reference-20261019:refs/remotes/recovery/input134
+          test "$(git rev-parse refs/remotes/recovery/input134)" = e5eb15076c4727ec0deb32a4f7b2ac43b1e3b812
+          git worktree add --detach build/recovery-source e5eb15076c4727ec0deb32a4f7b2ac43b1e3b812
+          /usr/bin/python3 tools/recovery_repair_search_134.py --apk build/recovery-work/DLYA_SVOIH_v0.3.134-unsigned.apk --source-tree build/recovery-source --out build/recovery-repaired
+          cp build/recovery-repaired/search-repair-verification.json build/recovery-signed/
+          /usr/bin/python3 tools/recovery_patch_renderer_134.py --apk build/recovery-repaired/DLYA_SVOIH_v0.3.134-search-fixed-unsigned.apk --out build/recovery-render-fixed
+          cp build/recovery-render-fixed/renderer-repair-verification.json build/recovery-signed/
+      - name: Restore the existing signing key without exposing it
+        env:
+          ANDROID_DEBUG_KEYSTORE_BASE64: ${{ secrets.ANDROID_DEBUG_KEYSTORE_BASE64 }}
+        run: |
+          python3 - <<'PY'
+          import base64, os
+          from pathlib import Path
+          value = ''.join(os.environ.get('ANDROID_DEBUG_KEYSTORE_BASE64', '').split())
+          if not value:
+              raise SystemExit('Existing signing secret is unavailable; no new key will be created.')
+          path = Path(os.environ['CI_SIGNING_KEYSTORE'])
+          path.write_bytes(base64.b64decode(value, validate=True))
+          path.chmod(0o600)
+          PY
+      - name: Sign the prepared APK and require the published 0.3.133 certificate
+        id: sign
+        run: |
+          python3 tools/recovery_sign_prepared_134.py --archive build/recovery-input/DLYA_SVOIH_COMBINED_0.3.134_CANDIDATE.zip --previous build/recovery-input/previous-0.3.133.apk --work build/recovery-work --out build/recovery-signed --repaired-unsigned build/recovery-render-fixed/DLYA_SVOIH_v0.3.134-render-fixed-unsigned.apk --sdk "$ANDROID_HOME" --keystore "$CI_SIGNING_KEYSTORE"
+      - uses: actions/upload-artifact@v4
+        if: ${{ steps.sign.outcome == 'success' }}
+        with:
+          name: recovery134-signed-apk
+          path: build/recovery-signed/
+          if-no-files-found: error
+          retention-days: 30
+      - name: Remove temporary signing key
+        if: always()
+        run: |
+          python3 - <<'PY'
+          import os
+          from pathlib import Path
+          Path(os.environ['CI_SIGNING_KEYSTORE']).unlink(missing_ok=True)
+          PY

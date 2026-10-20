@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Static launcher shortcuts (long-press the app icon). Each jumps straight to one bottom tab;
+     routes match the top-level nav-graph route names in DlyaSvoihApp.kt (Tab.route), read by
+     MainActivity via the "shortcut_route" intent extra. Icons reuse the existing toolbar glyphs;
+     a dedicated monochrome shortcut icon set would look sharper but isn't required to function. -->
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:shortcutId="search"
+        android:enabled="true"
+        android:icon="@drawable/icon_ui_search"
+        android:shortcutShortLabel="@string/shortcut_search_short"
+        android:shortcutLongLabel="@string/shortcut_search_long">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="ru.dlyasvoih.app"
+            android:targetClass="ru.dlyasvoih.app.MainActivity">
+            <extra android:name="shortcut_route" android:value="search_tab" />
+        </intent>
+    </shortcut>
+    <shortcut
+        android:shortcutId="favorites"
+        android:enabled="true"
+        android:icon="@drawable/icon_ui_star"
+        android:shortcutShortLabel="@string/shortcut_favorites_short"
+        android:shortcutLongLabel="@string/shortcut_favorites_long">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="ru.dlyasvoih.app"
+            android:targetClass="ru.dlyasvoih.app.MainActivity">
+            <extra android:name="shortcut_route" android:value="favorites_tab" />
+        </intent>
+    </shortcut>
+    <shortcut
+        android:shortcutId="history"
+        android:enabled="true"
+        android:icon="@drawable/icon_ui_history"
+        android:shortcutShortLabel="@string/shortcut_history_short"
+        android:shortcutLongLabel="@string/shortcut_history_long">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="ru.dlyasvoih.app"
+            android:targetClass="ru.dlyasvoih.app.MainActivity">
+            <extra android:name="shortcut_route" android:value="history_tab" />
+        </intent>
+    </shortcut>
+</shortcuts>

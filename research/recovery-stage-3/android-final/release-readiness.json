@@ -1,0 +1,67 @@
+{
+  "packageName": "ru.dlyasvoih.app",
+  "versionName": "0.3.134",
+  "versionCode": 138,
+  "apkSha256": "300b77deaee3348e05a0135bf0079414c07dc2e15a7dcfd9b1239a8cef99298f",
+  "apkBytes": 144646769,
+  "certificateSha256": "2f0a0908f269bc039311edb58fca8863347f1e4c3a7cfaddd909991cf1f0b509",
+  "sameCertificateAsPublished133": true,
+  "signatureVerified": true,
+  "zipalign": "passed",
+  "appSourceCommit": "a8c3b76f8921ffe05e4beaad7b6ba33891200642",
+  "androidRuntimeChecks": "passed",
+  "visualInspection": "passed-8-actual-Android-frames",
+  "evidence": {
+    "runtime": "android-final/upgrade-verification.json",
+    "visualReview": "android-final/visual-review.json",
+    "signature": "final/stage-3-signature-verification.json",
+    "sourceAssets": "source-apk-assets-comparison.json"
+  },
+  "runtime": {
+    "apkSha256": "300b77deaee3348e05a0135bf0079414c07dc2e15a7dcfd9b1239a8cef99298f",
+    "packageName": "ru.dlyasvoih.app",
+    "versionName": "0.3.134",
+    "versionCode": 138,
+    "upgradeInstallation": "passed-actual-adb-install-r-over-published-0.3.133",
+    "favoritesPreserved": true,
+    "favoriteIds": [
+      "mine-audit-v25-su-pmk-40",
+      "ref-v8-tm-46"
+    ],
+    "settingsPreserved": true,
+    "preservedAppearance": {
+      "theme_mode": "2",
+      "large_mode": "true"
+    },
+    "fullCatalogOnAndroid": true,
+    "contentVersion": 195,
+    "cards": 1697,
+    "images": 1600,
+    "preservedPublishedCardIdsAndRowids": 1426,
+    "galleryZoomAndSecondPhoto": true,
+    "cardButtonsAndSwipes": true,
+    "offline": true,
+    "androidVersion": "11",
+    "androidApi": "30",
+    "androidModel": "sdk_gphone_x86_64",
+    "modelVisualChecks": "passed-pixel-contrast-relief-and-touch-rotation-on-Android",
+    "humanVisualReview": "pending-review-of-actual-Android-frames"
+  },
+  "androidWorkflow": {
+    "runId": 39404271107,
+    "jobId": 118566260685,
+    "qaCommit": "4cb8edf5bf6f5923455720522048b57fb4f1ee5e",
+    "conclusion": "cancelled",
+    "applicationChecksCompletedAtUtc": "2026-10-20T10:03:08Z",
+    "reason": "All application checks completed and proof files were captured; action hung during Terminate Emulator; normal cancellation unblocked successful always() artifact upload. Whole workflow is not claimed successful.",
+    "proofUpload": "success",
+    "artifactId": 12257790754,
+    "artifactBytes": 16958294,
+    "artifactSha256": "6ffd6fcf71f845df5ebcba120ae2bdfd4051b67e42bbf8efaf6f3583fd401208"
+  },
+  "releasePublication": "not-performed",
+  "remainingApplicationRecoveryTasks": [],
+  "remainingInfrastructureTask": "Resolve emulator shutdown hang in future CI; actual app QA and proof upload are complete.",
+  "scope": "One accelerated Android 11/API30 x86_64 emulator; no physical-device or other-API claim",
+  "rawPendingFields": "Raw Actions signature and runtime reports are preserved unchanged; pending post-run review fields are superseded by this separate completed visual review."
+}

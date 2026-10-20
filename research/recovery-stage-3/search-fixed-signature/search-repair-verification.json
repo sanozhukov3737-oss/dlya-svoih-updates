@@ -1,0 +1,21 @@
+{
+  "sqliteVersion": "3.45.1",
+  "originalUnsignedApkSha256": "43ffc8b8d8ba2a632d3d13a5f287a4fb6a6a43bddf008122026186aa2a0197f4",
+  "originalDatabaseSha256": "937b641c3296fb7ea381674d5854e514b7ea84d604060fcc6b52ee9890b4ed8b",
+  "repairedUnsignedApkSha256": "f7f7d1034c5dba4117629e384833f5ade7545a3aae617b5b3b9da6f53b36b07f",
+  "repairedDatabaseSha256": "fbbb7a38d77b09b963520011ef64b8111991e03ed1b2ae6277ec335761a107ed",
+  "validatedCardSearchFields": 1697,
+  "repairedCardIds": [
+    "eng-pdf-v7-116",
+    "handbookref-pb-1u",
+    "handbookref-pni-1",
+    "ordnance-v27-m-12-vzryvatel",
+    "ordnance-v27-m-6-vzryvatel"
+  ],
+  "rootCause": "Stored searchText retained middle-dot tag separators rejected by ContentUpdater.validate",
+  "onlyChangedApkEntry": "assets/database/guide-v29.db",
+  "allOtherCardColumnsUnchanged": true,
+  "allOtherLogicalTablesUnchanged": true,
+  "integrityCheck": "ok",
+  "foreignKeyViolations": 0
+}

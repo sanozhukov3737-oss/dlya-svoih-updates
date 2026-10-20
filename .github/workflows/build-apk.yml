@@ -1,0 +1,234 @@
+name: Build and publish APK
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: 'Release tag (leave empty for app-VERSION)'
+        required: false
+        type: string
+      changes:
+        description: 'What changed in this version'
+        required: true
+        type: string
+
+permissions:
+  contents: write
+  actions: read
+
+concurrency:
+  group: publish-app
+  cancel-in-progress: false
+
+jobs:
+  apk:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    env:
+      CI_SIGNING_KEYSTORE: ${{ github.workspace }}/dlya-svoih-debug.keystore
+    steps:
+      - uses: actions/checkout@v4
+      - name: Restore catalog 190 and apply prepared reference corrections
+        run: python3 tools/restore_packaged_catalog.py
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: gradle/actions/setup-gradle@v4
+      - name: Restore the same debug signing key as the installed app
+        env:
+          ANDROID_DEBUG_KEYSTORE_BASE64: ${{ secrets.ANDROID_DEBUG_KEYSTORE_BASE64 }}
+        run: |
+          python3 - <<'PY'
+          import base64, os
+          from pathlib import Path
+          value = ''.join(os.environ.get('ANDROID_DEBUG_KEYSTORE_BASE64', '').split())
+          if not value:
+              raise SystemExit('Add the ANDROID_DEBUG_KEYSTORE_BASE64 Actions secret from your build PC first.')
+          path = Path(os.environ['CI_SIGNING_KEYSTORE'])
+          path.parent.mkdir(parents=True, exist_ok=True)
+          path.write_bytes(base64.b64decode(value, validate=True))
+          path.chmod(0o600)
+          PY
+          python3 - <<'PY'
+          import hashlib, os, subprocess
+          certificate = subprocess.run(['keytool', '-exportcert', '-keystore', os.environ['CI_SIGNING_KEYSTORE'],
+              '-storepass', 'android', '-alias', 'androiddebugkey'], capture_output=True, check=True).stdout
+          print('Restored signing certificate SHA-256:', hashlib.sha256(certificate).hexdigest(), flush=True)
+          PY
+      - name: Install Android SDK components
+        run: |
+          "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" 'platforms;android-36' 'build-tools;36.0.0'
+          printf 'sdk.dir=%s\n' "$ANDROID_HOME" > local.properties
+      - name: Check reader behavior and compile Android regression tests
+        run: |
+          python3 -m unittest discover -s tools -p 'test_search.py'
+          python3 -m unittest discover -s tools -p 'test_offline_model.py'
+          python3 -m unittest discover -s tools -p 'test_menu_images.py'
+          python3 -m unittest discover -s tools -p 'test_reader_navigation.py'
+          python3 -m unittest discover -s tools -p 'test_quick_comparison.py'
+          python3 -m unittest discover -s tools -p 'test_java_features.py'
+          python3 -m unittest discover -s tools -p 'test_demz_catalog.py'
+          python3 -m unittest discover -s tools -p 'test_uav_handbook.py'
+          bash ./gradlew :app:testDebugUnitTest :app:assembleDebugAndroidTest --no-daemon -PciSigningKeystore="$CI_SIGNING_KEYSTORE"
+      - name: Build APK
+        id: build-apk
+        run: |
+          bash ./gradlew :app:assembleRelease --no-daemon -PciSigningKeystore="$CI_SIGNING_KEYSTORE"
+          test -s app/build/outputs/mapping/release/mapping.txt
+          test "$("$ANDROID_HOME/cmdline-tools/latest/bin/apkanalyzer" manifest debuggable app/build/outputs/apk/release/app-release.apk)" = "false"
+      - name: Prepare release collection and search verification
+        run: |
+          python3 -m pip install --quiet Pillow==11.3.0
+          mkdir -p build
+          cp tools/verify_release_ui.py build/verify-release-ui.py
+          python3 - <<'PY'
+          from pathlib import Path
+          import urllib.request, hashlib
+          url = 'https://github.com/sanozhukov3737-oss/dlya-svoih-updates/releases/download/app-0.3.133/DLYA_SVOIH_v0.3.133.apk'
+          with urllib.request.urlopen(url, timeout=120) as response:
+              raw = response.read()
+          assert len(raw) == 121074164
+          assert hashlib.sha256(raw).hexdigest() == '8cff50f9d76dbeec261ca928603277bdf540d0d0b42913bde919a82ce8d5d49f'
+          Path('build/previous-release.apk').write_bytes(raw)
+          PY
+      - name: Enable emulator acceleration
+        run: |
+          echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules
+          sudo udevadm control --reload-rules
+          sudo udevadm trigger --name-match=kvm
+      - name: Exercise reader and packaged database on Android
+        uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: 30
+          arch: x86_64
+          disable-animations: false
+          script: |
+            mkdir -p build
+            bash ./gradlew :app:connectedDebugAndroidTest --no-daemon -PciSigningKeystore="$CI_SIGNING_KEYSTORE" -Pandroid.testInstrumentationRunnerArguments.class=ru.dlyasvoih.app.ui.screens.CardReaderPagesTest,ru.dlyasvoih.app.ui.screens.ComparisonSheetTest,ru.dlyasvoih.app.ui.screens.CatalogMenuIconTest,ru.dlyasvoih.app.ui.screens.OfflineModelViewerTest,ru.dlyasvoih.app.PackagedDatabaseTest,ru.dlyasvoih.app.SearchRegressionTest || true
+            adb pull /data/local/tmp/offline-model-tm46.png build/offline-model-tm46.png || true
+            python3 -c "import json,subprocess; models=json.load(open('app/src/main/assets/viewer3d/models.json'))['models']; [subprocess.run(['adb','pull','/data/local/tmp/offline-model-'+m['id']+suffix+'.png','build/offline-model-'+m['id']+suffix+'-debug.png'],check=False) for m in models for suffix in ('','-rotated') if not suffix or m['id'] in ('m14-complete','pmn-2-complete','m16-complete','british-drifting-mine')]"
+            adb logcat -c
+            adb install -r build/previous-release.apk
+            adb shell am start -W -n ru.dlyasvoih.app/.MainActivity --es shortcut_route search_tab
+            adb shell uiautomator dump /sdcard/before-update.xml
+            adb shell am force-stop ru.dlyasvoih.app
+            adb install -r app/build/outputs/apk/release/app-release.apk
+            python3 build/verify-release-ui.py
+            python3 -c "from pathlib import Path; assert 'ru.dlyasvoih.app' in Path('build/release-ui.xml').read_text(), 'Release UI did not open'"
+            adb logcat -d -b crash > build/release-crash.log
+            python3 -c "from pathlib import Path; log = Path('build/release-crash.log').read_text(); assert 'FATAL EXCEPTION' not in log and 'Fatal signal' not in log, log"
+      - name: Require all Android instrumentation checks to pass
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import xml.etree.ElementTree as ET
+          reports = list(Path('app/build/outputs/androidTest-results/connected/debug').glob('TEST-*.xml'))
+          assert reports, 'Android test reports are missing'
+          suites = [ET.parse(path).getroot() for path in reports]
+          assert sum(int(s.attrib['tests']) for s in suites) >= 32
+          assert sum(int(s.attrib.get('failures', 0)) + int(s.attrib.get('errors', 0)) + int(s.attrib.get('skipped', 0)) for s in suites) == 0
+          PY
+      - name: Upload Android visual proof
+        uses: actions/upload-artifact@v4
+        if: ${{ always() && !cancelled() }}
+        with:
+          name: offline-mine-collection-proof
+          path: |
+            build/search-*-release.*
+            build/offline-model*.png
+            build/release-last-screen.png
+            build/release-webview.log
+            build/release-ui.xml
+            app/build/reports/androidTests/connected/debug
+            app/build/outputs/androidTest-results/connected/debug
+          if-no-files-found: warn
+      - name: Prepare versioned APK and full restored catalog
+        env:
+          RELEASE_TAG: ${{ inputs.tag }}
+          RELEASE_CHANGES: ${{ inputs.changes }}
+        run: |
+          mkdir -p build/release
+          python3 - <<'PY'
+          import json, os, re, sys, urllib.request
+          from pathlib import Path
+          sys.path.insert(0, 'tools')
+          from build_app_feed import apk_metadata, write_app_feed
+          from build_update_feed import write_feed
+          from pack_restored_catalog import make_pack
+          apk = Path('app/build/outputs/apk/release/app-release.apk')
+          # Use the exact Build Tools version installed above, not a newer runner tool.
+          signer = str(Path(os.environ['ANDROID_HOME']) / 'build-tools/36.0.0/apksigner')
+          analyzer = str(Path(os.environ['ANDROID_HOME']) / 'cmdline-tools/latest/bin/apkanalyzer')
+          metadata = apk_metadata(apk, analyzer=analyzer, signer=signer)
+          print('Built APK identity:', metadata, flush=True)
+          request = json.loads(Path('content/releases/app-' + metadata['versionName'] + '.json').read_text())
+          assert (metadata['versionName'], metadata['versionCode']) == (request['versionName'], request['versionCode'])
+          tag = os.environ.get('RELEASE_TAG') or 'app-' + metadata['versionName']
+          if not re.fullmatch(r'app-[a-zA-Z0-9._-]+', tag):
+              raise SystemExit('Use a unique tag beginning with app-, for example app-0.3.114')
+          base = Path('build/release')
+          name = 'DLYA_SVOIH_v' + metadata['versionName'] + '.apk'
+          if not re.fullmatch(r'DLYA_SVOIH_v[0-9A-Za-z._-]+\.apk', name):
+              raise SystemExit('Invalid APK version name')
+          target = base / name
+          target.write_bytes(apk.read_bytes())
+          address = 'https://github.com/sanozhukov3737-oss/dlya-svoih-updates/releases/latest/download/latest.json'
+          with urllib.request.urlopen(address, timeout=30) as response:
+              data = response.read(65537)
+          if len(data) > 65536:
+              raise SystemExit('Published feed exceeds limits')
+          previous = base / 'latest-before.json'
+          previous.write_bytes(data)
+          changes = os.environ.get('RELEASE_CHANGES') or request['changes']
+          version = request['contentVersion']
+          current_catalog = json.loads(data)['contentVersion']
+          assert current_catalog < version, 'Published catalog is newer; prepare a new combined release'
+          pack = base / ('catalog-' + str(version) + '.zip')
+          make_pack(Path('app/src/main/assets'), pack, version, request['cards'], request['images'])
+          catalog_feed = base / 'catalog-feed.json'
+          write_feed(pack,
+              'https://github.com/sanozhukov3737-oss/dlya-svoih-updates/releases/download/' + tag + '/' + pack.name,
+              catalog_feed, request['changes'], request['minAppCode'], previous)
+          write_app_feed(target, catalog_feed,
+              'https://github.com/sanozhukov3737-oss/dlya-svoih-updates/releases/download/' + tag + '/' + name,
+              base / 'latest.json', changes, analyzer=analyzer, signer=signer,
+              repair_initial_publication=True)
+          (base / 'tag.txt').write_text(tag, encoding='utf-8')
+          (base / 'notes.txt').write_text(changes, encoding='utf-8')
+          PY
+      - uses: actions/upload-artifact@v4
+        if: ${{ always() && !cancelled() && steps.build-apk.outcome == 'success' }}
+        with:
+          name: apk-and-update-feed
+          path: |
+            app/build/outputs/apk/release/app-release.apk
+            build/release/latest.json
+            build/release/catalog-*.zip
+            build/release/notes.txt
+            build/release-ui.xml
+            build/search-*-release.*
+            build/offline-model*.png
+            build/release-last-screen.png
+            build/release-webview.log
+            build/release-ui.xml
+            build/release-crash.log
+            app/build/outputs/mapping/release/mapping.txt
+            app/build/reports/androidTests/connected/debug
+            app/build/outputs/androidTest-results/connected/debug
+          if-no-files-found: error
+      - name: Publish only after APK, catalog and feed are uploaded
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          RELEASE_TAG="$(cat build/release/tag.txt)"
+          gh release create "$RELEASE_TAG" build/release/*.apk build/release/catalog-*.zip build/release/latest.json --target "$(git rev-parse HEAD)" --draft --title "$RELEASE_TAG" --notes-file build/release/notes.txt
+          gh release edit "$RELEASE_TAG" --draft=false --latest
+      - name: Remove temporary signing key
+        if: always()
+        run: |
+          python3 - <<'PY'
+          import os
+          from pathlib import Path
+          Path(os.environ['CI_SIGNING_KEYSTORE']).unlink(missing_ok=True)
+          PY

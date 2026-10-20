@@ -1,0 +1,625 @@
+{
+  "filling": {
+    "ref-v8-ptm-4": {
+      "rows": [
+        [
+          "Масса ВВ по GICHD",
+          "1 400 г (1,4 кг)"
+        ],
+        [
+          "Тип ВВ по GICHD",
+          "На выбранной странице не указан"
+        ]
+      ],
+      "note": "Наполнение относится к самой ПТМ-4, отдельно от её полной массы 3,25 кг и от транспортной кассеты КПТМ-4. Обозначение ВВ не добавлено догадкой.",
+      "sources": [
+        {
+          "id": "ref-v8-ptm-4-filling-v160",
+          "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 39: наполнение",
+          "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+          "accessedAt": "2026-10-04"
+        }
+      ]
+    },
+    "eng-tm-62m": {
+      "rows": [
+        [
+          "Тип ВВ по GICHD 2025 — ТМ-62М",
+          "TNT"
+        ],
+        [
+          "Масса ВВ по GICHD 2025 — ТМ-62М",
+          "7 500 г (7,5 кг)"
+        ]
+      ],
+      "note": "Строки внесены в раздел GICHD, отдельно от данных ESAG. Масса наполнения не подменяет различающиеся полные массы разных источников. Значения других корпусов семейства ТМ-62 не перенесены.",
+      "sources": [
+        {
+          "id": "eng-tm-62m-filling-v160",
+          "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 20: наполнение",
+          "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+          "accessedAt": "2026-10-04"
+        }
+      ],
+      "heading_occurrence": 1
+    },
+    "ref-v8-tm-62p3": {
+      "rows": [
+        [
+          "Тип ВВ по GICHD 2025 — ТМ-62П3",
+          "TNT"
+        ],
+        [
+          "Масса ВВ по GICHD 2025 — ТМ-62П3",
+          "6 500 г (6,5 кг)"
+        ],
+        [
+          "Полная масса по GICHD 2025 — ТМ-62П3",
+          "8 000 г (8,0 кг)"
+        ],
+        [
+          "Габариты по GICHD 2025 — ТМ-62П3",
+          "310 × 85 мм; оси и комплектация в таблице не подписаны"
+        ]
+      ],
+      "note": "Размеры и полная масса GICHD подписаны отдельно от ранее приведённых данных украинского руководства. Расхождения не усреднены; не установлено, описывают ли источники одну комплектацию. Строки не относятся к ТМ-62П / П2 или другим корпусам.",
+      "sources": [
+        {
+          "id": "ref-v8-tm-62p3-filling-v160",
+          "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 22: наполнение",
+          "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+          "accessedAt": "2026-10-04"
+        }
+      ]
+    },
+    "eng-pom-2-family": {
+      "rows": [
+        [
+          "Тип ВВ по GICHD 2025 — ПОМ-2",
+          "TNT"
+        ],
+        [
+          "Масса ВВ по GICHD 2025 — ПОМ-2",
+          "140 г"
+        ]
+      ],
+      "note": "Строки внесены в отдельный раздел ПОМ-2 по GICHD. Они не объявлены характеристиками ПОМ-2С, описанной выше по ESAG, или всех модификаций семейства.",
+      "sources": [
+        {
+          "id": "eng-pom-2-family-filling-v160",
+          "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 35: наполнение",
+          "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+          "accessedAt": "2026-10-04"
+        }
+      ],
+      "heading_occurrence": 1
+    },
+    "ref-v8-pom-3": {
+      "rows": [
+        [
+          "Тип ВВ по GICHD 2025",
+          "A-IX-1"
+        ],
+        [
+          "Масса ВВ по GICHD 2025",
+          "100 г"
+        ],
+        [
+          "Полная масса по GICHD 2025",
+          "1 200 г (1,2 кг)"
+        ],
+        [
+          "Габариты по GICHD 2025",
+          "183 × 60 мм; оси и комплектация в таблице не подписаны"
+        ]
+      ],
+      "note": "Полная масса и размеры GICHD сохранены отдельно от значений ARES. Различия между источниками не усреднены; комплектация для табличных габаритов GICHD не уточнена.",
+      "sources": [
+        {
+          "id": "ref-v8-pom-3-filling-v160",
+          "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 36: наполнение",
+          "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+          "accessedAt": "2026-10-04"
+        }
+      ]
+    },
+    "mine-audit-v25-su-tm-83": {
+      "rows": [
+        [
+          "Тип ВВ по GICHD — ТМ-83",
+          "TG-40"
+        ],
+        [
+          "Масса ВВ по GICHD — ТМ-83",
+          "9 600 г (9,6 кг)"
+        ]
+      ],
+      "note": "Масса наполнения отделена от полной массы изделия и от ранее указанной высоты на подставке. Обозначение состава приведено без рецептуры и пропорций.",
+      "sources": [
+        {
+          "id": "mine-audit-v25-su-tm-83-filling-v160",
+          "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 24: наполнение",
+          "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+          "accessedAt": "2026-10-04"
+        }
+      ]
+    },
+    "eng-pdf-v7-023": {
+      "rows": [
+        [
+          "Тип ВВ по GICHD — только HPD-2A2",
+          "Composition B"
+        ],
+        [
+          "Масса ВВ по GICHD — только HPD-2A2",
+          "2 800 г (2,8 кг)"
+        ],
+        [
+          "Полная масса по GICHD — HPD-2A2",
+          "7 000 г (7,0 кг)"
+        ],
+        [
+          "Габариты по GICHD — HPD-2A2",
+          "278 × 189 × 104 мм; оси в таблице не подписаны"
+        ]
+      ],
+      "note": "Дополнение относится к обозначению HPD-2A2 в заголовке страницы. Значения не перенесены на HPD1 / HPD1A / HPD2 / HPD3 и не заменяют подписанные ранее значения других справочников.",
+      "sources": [
+        {
+          "id": "eng-pdf-v7-023-filling-v160",
+          "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 28: наполнение",
+          "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+          "accessedAt": "2026-10-04"
+        }
+      ],
+      "replacements": [
+        [
+          "Сведения перенесены из предоставленного справочника; текущее производство и независимая проверка характеристик не подтверждены.",
+          "Первоначальные сведения перенесены из предоставленных справочников. Для HPD-2A2 отдельно добавлены данные GICHD 2025; текущее производство и независимая сверка остальных вариантов этой партии не подтверждены."
+        ]
+      ]
+    },
+    "eng-dm-31-at": {
+      "rows": [
+        [
+          "Тип ВВ по GICHD — противотанковая DM-31",
+          "TNT/RDX"
+        ],
+        [
+          "Масса ВВ по GICHD — противотанковая DM-31",
+          "3 900–4 000 г (3,9–4,0 кг)"
+        ]
+      ],
+      "note": "Диапазон сохранён без усреднения. Данные относятся к противотанковой DM-31; они не перенесены на одноимённую противопехотную мину или учебную DM70.",
+      "sources": [
+        {
+          "id": "eng-dm-31-at-filling-v160",
+          "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 27: наполнение",
+          "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+          "accessedAt": "2026-10-04"
+        }
+      ]
+    },
+    "eng-tmrp-6": {
+      "rows": [
+        [
+          "Тип основного ВВ по GICHD",
+          "TNT"
+        ],
+        [
+          "Масса основного ВВ по GICHD",
+          "5 000 г (5,0 кг)"
+        ],
+        [
+          "Дополнительное пиротехническое наполнение по GICHD",
+          "Чёрный порох (black powder)"
+        ],
+        [
+          "Масса дополнительного пиротехнического наполнения по GICHD",
+          "25 г"
+        ],
+        [
+          "Полная масса по GICHD",
+          "7 800 г (7,8 кг)"
+        ],
+        [
+          "Высота со взрывателем по GICHD",
+          "140 мм; без добавочной штанги"
+        ]
+      ],
+      "note": "Основное и дополнительное наполнение записаны отдельно. Полная масса 7,8 кг сохранена отдельно от 7,2 кг первоначального справочника. Высота со взрывателем не подменяет высоту корпуса; комплектация указана по подписи таблицы.",
+      "sources": [
+        {
+          "id": "eng-tmrp-6-filling-v160",
+          "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 25: наполнение",
+          "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+          "accessedAt": "2026-10-04"
+        }
+      ]
+    },
+    "eng-c-3-b-av": {
+      "rows": [
+        [
+          "Тип ВВ по GICHD",
+          "TNT/RDX/aluminium"
+        ],
+        [
+          "Масса ВВ по GICHD",
+          "5 000 г (5,0 кг)"
+        ],
+        [
+          "Полная масса по GICHD",
+          "5 700 г (5,7 кг)"
+        ],
+        [
+          "Высота со взрывателем по GICHD",
+          "109 мм"
+        ]
+      ],
+      "note": "Полная масса 5,7 кг GICHD не усреднена с 5,2 / 6 кг первоначального справочника. Высота со взрывателем отделена от высоты корпуса без него. Обозначение состава приведено без пропорций.",
+      "sources": [
+        {
+          "id": "eng-c-3-b-av-filling-v160",
+          "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 29: наполнение",
+          "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+          "accessedAt": "2026-10-04"
+        }
+      ]
+    },
+    "eng-pfm-1": {
+      "rows": [
+        [
+          "Тип ВВ по GICHD — ПФМ-1",
+          "VS-6D"
+        ],
+        [
+          "Масса ВВ по GICHD — ПФМ-1",
+          "37 г"
+        ],
+        [
+          "Полная масса по GICHD — ПФМ-1",
+          "75 г"
+        ],
+        [
+          "Габариты по GICHD — ПФМ-1",
+          "120 × 61 × 20 мм; оси в таблице не подписаны"
+        ]
+      ],
+      "note": "Строки относятся к ПФМ-1, а не к ПФМ-1С или всему семейству. Полная масса 75 г и габариты GICHD подписаны отдельно от значений ESAG; различия не усреднены.",
+      "sources": [
+        {
+          "id": "eng-pfm-1-filling-v160",
+          "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 34: наполнение",
+          "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+          "accessedAt": "2026-10-04"
+        }
+      ]
+    },
+    "ref-v8-pmn-4": {
+      "rows": [
+        [
+          "Тип ВВ по GICHD — ПМН-4",
+          "TNT; TG-40 упомянут как альтернативные сведения"
+        ],
+        [
+          "Масса ВВ по GICHD — ПМН-4",
+          "52–60 г"
+        ]
+      ],
+      "note": "Диапазон сохранён как в таблице. Описание называет 60 г TNT и отдельно отмечает сообщения о TG-40; конкретное наполнение каждого исполнения и его связь с концами диапазона не установлены. Альтернативные сведения не представлены как единая смесь.",
+      "sources": [
+        {
+          "id": "ref-v8-pmn-4-filling-v160",
+          "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 17: наполнение",
+          "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+          "accessedAt": "2026-10-04"
+        }
+      ]
+    },
+    "ordnance-v27-rbk-250-rbk-275": {
+      "rows": [
+        [
+          "Масса ВВ единого наполнения по GICHD",
+          "Not applicable — поле неприменимо к носителю"
+        ],
+        [
+          "Суммарное ВВ полезного наполнения",
+          "Зависит от исполнения и содержимого; единое число не приведено"
+        ]
+      ],
+      "note": "Пометка Not applicable не означает нулевую массу ВВ или инертность. Она не учитывает единым числом опасное содержимое и дополнительные элементы носителя; их значения не вычислены по неподтверждённой комплектации.",
+      "sources": [
+        {
+          "id": "ordnance-v27-rbk-250-rbk-275-filling-v160",
+          "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 158: наполнение",
+          "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+          "accessedAt": "2026-10-04"
+        }
+      ]
+    },
+    "ordnance-v27-rbk-500": {
+      "rows": [
+        [
+          "Масса ВВ единого наполнения по GICHD",
+          "Not applicable — поле неприменимо к носителю"
+        ],
+        [
+          "Суммарное ВВ полезного наполнения",
+          "Зависит от исполнения и содержимого; единое число не приведено"
+        ]
+      ],
+      "note": "Пометка Not applicable не означает отсутствие взрывчатого вещества. РБК-500 объединяет разные исполнения; массу наполнения одного варианта нельзя переносить на всё семейство.",
+      "sources": [
+        {
+          "id": "ordnance-v27-rbk-500-filling-v160",
+          "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 159: наполнение",
+          "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+          "accessedAt": "2026-10-04"
+        }
+      ]
+    },
+    "ordnance-v27-fab-500-m-62": {
+      "rows": [
+        [
+          "Тип ВВ табличного исполнения по GICHD",
+          "TNT"
+        ],
+        [
+          "Масса ВВ табличного исполнения по GICHD",
+          "209 кг"
+        ],
+        [
+          "Другие варианты наполнения, упомянутые GICHD",
+          "Для некоторых поздних исполнений возможен TGAF; отдельная масса в статье не дана"
+        ]
+      ],
+      "note": "209 кг относятся к табличной записи с TNT, отдельно от полной массы 497 кг. Упоминание других вариантов не устанавливает наполнение конкретной бомбы. Рецептура и массовые доли состава не перенесены.",
+      "sources": [
+        {
+          "id": "ordnance-v27-fab-500-m-62-filling-v160",
+          "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 160: наполнение",
+          "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+          "accessedAt": "2026-10-04"
+        }
+      ]
+    },
+    "ordnance-v27-ofzab-500": {
+      "rows": [
+        [
+          "Тип ВВ по GICHD",
+          "EXPL — точное обозначение не установлено"
+        ],
+        [
+          "Масса взрывчатого наполнения по GICHD",
+          "37,5 кг"
+        ],
+        [
+          "Тип зажигательного наполнения по GICHD",
+          "OM-100MI-3L"
+        ],
+        [
+          "Масса зажигательного наполнения по GICHD",
+          "250 кг"
+        ]
+      ],
+      "note": "Взрывчатое и зажигательное наполнение разделены как в таблице. Обозначение EXPL не превращено догадкой в TNT или иной конкретный состав; 250 кг не названы массой основного ВВ.",
+      "sources": [
+        {
+          "id": "ordnance-v27-ofzab-500-filling-v160",
+          "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 161: наполнение",
+          "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+          "accessedAt": "2026-10-04"
+        }
+      ]
+    },
+    "ordnance-v27-s-5ko-57-mm-raketa": {
+      "rows": [
+        [
+          "Тип ВВ по GICHD — С-5КО",
+          "A-IX-1"
+        ],
+        [
+          "Масса ВВ по GICHD — С-5КО",
+          "330 г"
+        ]
+      ],
+      "note": "Масса ВВ отделена от полной массы ракеты. Данные других вариантов С-5 и массы двигателя не перенесены.",
+      "sources": [
+        {
+          "id": "ordnance-v27-s-5ko-57-mm-raketa-filling-v160",
+          "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 162: наполнение",
+          "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+          "accessedAt": "2026-10-04"
+        }
+      ]
+    },
+    "ordnance-v27-s-24-240-mm-raketa": {
+      "rows": [
+        [
+          "Тип основного ВВ по GICHD",
+          "TNT"
+        ],
+        [
+          "Масса основного ВВ по GICHD",
+          "29 кг"
+        ],
+        [
+          "Дополнительное ВВ по описанию GICHD",
+          "Tetryl"
+        ],
+        [
+          "Масса дополнительного ВВ по описанию GICHD",
+          "150 г"
+        ]
+      ],
+      "note": "Табличные 29 кг TNT и отдельно названные в описании 150 г Tetryl не объединены. Это не полная масса ракеты и не масса наполнения двигателя. Значения не распространяются на другие семейства ракет.",
+      "sources": [
+        {
+          "id": "ordnance-v27-s-24-240-mm-raketa-filling-v160",
+          "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 164: наполнение",
+          "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+          "accessedAt": "2026-10-04"
+        }
+      ]
+    },
+    "ordnance-v27-umpb-d-30sn": {
+      "rows": [
+        [
+          "Тип ВВ по GICHD",
+          "Неизвестен"
+        ],
+        [
+          "Масса ВВ по GICHD — reported",
+          "100 кг; сообщаемое значение, независимо не подтверждённое"
+        ]
+      ],
+      "note": "Квалификатор reported сохранён. Значение не представлено как проверенное измерение или паспорт изготовителя; прежняя оценочная полная масса также остаётся оценкой источника.",
+      "sources": [
+        {
+          "id": "ordnance-v27-umpb-d-30sn-filling-v160",
+          "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 166: наполнение",
+          "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+          "accessedAt": "2026-10-04"
+        }
+      ]
+    },
+    "ordnance-v27-umpk-modul-planirovaniya-i-korrektsii": {
+      "rows": [
+        [
+          "Тип ВВ боеприпаса с УМПК",
+          "Зависит от базовой бомбы"
+        ],
+        [
+          "Масса ВВ боеприпаса с УМПК",
+          "Munition-dependent; общего числового значения нет"
+        ]
+      ],
+      "note": "УМПК — обозначение навесного модуля, а не одной бомбы. Поле наполнения относится к базовому боеприпасу; масса одной ФАБ не приписана всем изделиям с УМПК. Отсутствие общего числа не означает инертность модуля или сборки.",
+      "sources": [
+        {
+          "id": "ordnance-v27-umpk-modul-planirovaniya-i-korrektsii-filling-v160",
+          "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 167: наполнение",
+          "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+          "accessedAt": "2026-10-04"
+        }
+      ]
+    },
+    "ordnance-v27-brimstone": {
+      "rows": [
+        [
+          "Тип ВВ по GICHD",
+          "LX-14"
+        ],
+        [
+          "Масса ВВ по GICHD",
+          "6,5 кг"
+        ]
+      ],
+      "note": "В описании указаны разные части боевого наполнения; табличные 6,5 кг сохранены как показатель всей записи, а не полной массы ракеты. Обозначение состава приведено без рецептуры. Отдельные исполнения Brimstone этой статьёй не разделены.",
+      "sources": [
+        {
+          "id": "ordnance-v27-brimstone-filling-v160",
+          "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 169: наполнение",
+          "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+          "accessedAt": "2026-10-04"
+        }
+      ]
+    },
+    "ordnance-v27-gbu-39-sdb": {
+      "rows": [
+        [
+          "Тип ВВ по GICHD",
+          "AFX-757 PBX"
+        ],
+        [
+          "Масса ВВ по GICHD",
+          "16,5 кг"
+        ]
+      ],
+      "note": "Масса наполнения отделена от полной массы изделия 130 кг. Название состава сохранено без рецептуры. Значения не перенесены на GBU-53 или другие модели с названием Small Diameter Bomb.",
+      "sources": [
+        {
+          "id": "ordnance-v27-gbu-39-sdb-filling-v160",
+          "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 170: наполнение",
+          "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+          "accessedAt": "2026-10-04"
+        }
+      ]
+    },
+    "ordnance-v27-mk-80-semeistvo-aviatsionnyh-bomb": {
+      "rows": [
+        [
+          "Тип ВВ, варианты по GICHD",
+          "Tritonal или H-6 — разные исполнения"
+        ],
+        [
+          "Масса ВВ по GICHD — Mk 81",
+          "45 кг"
+        ],
+        [
+          "Масса ВВ по GICHD — Mk 82",
+          "87 кг"
+        ],
+        [
+          "Масса ВВ по GICHD — Mk 83",
+          "202 кг"
+        ],
+        [
+          "Масса ВВ по GICHD — Mk 84",
+          "429 кг"
+        ]
+      ],
+      "note": "Четыре модели разделены; тип конкретного исполнения требуется устанавливать отдельно. В статье JDAM того же справочника приведены 430 кг для GBU-31 с Mk 84. Разница 429 / 430 кг сохранена по разным записям, без усреднения или вывода о замене наполнения.",
+      "sources": [
+        {
+          "id": "ordnance-v27-mk-80-semeistvo-aviatsionnyh-bomb-filling-v160",
+          "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 171: наполнение",
+          "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+          "accessedAt": "2026-10-04"
+        }
+      ]
+    },
+    "ordnance-v27-jdam": {
+      "rows": [
+        [
+          "Тип ВВ по GICHD — GBU-31 с Mk 84",
+          "Tritonal"
+        ],
+        [
+          "Масса ВВ по GICHD — GBU-31 с Mk 84",
+          "430 кг"
+        ],
+        [
+          "Масса ВВ других вариантов JDAM",
+          "Зависит от базовой бомбы; в выбранной таблице не приведена"
+        ]
+      ],
+      "note": "430 кг относятся только к приведённой комбинации GBU-31 / Mk 84. Это не характеристика всех JDAM, GBU-32 / GBU-38 или GBU-31 с BLU-109. В статье Mk 80 приведены 429 кг для Mk 84; значения разных записей не усреднены.",
+      "sources": [
+        {
+          "id": "ordnance-v27-jdam-filling-v160",
+          "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 172: наполнение",
+          "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+          "accessedAt": "2026-10-04"
+        }
+      ]
+    }
+  },
+  "text_corrections": {
+    "mine-audit-v25-su-ptm-1": [
+      [
+        "| Размеры по источнику, мм | 310×85 |",
+        "| Внешние размеры ПТМ-1 | Требуют независимого подтверждения |"
+      ],
+      [
+        "Строка массы в GICHD требует независимой сверки и пока не перенесена.",
+        "В GICHD 2025, стр. 37, приведены размеры 310 × 85 мм. Они совпадают с записью ТМ-62П3 на стр. 22; модель и комплектация для этой строки требуют независимой сверки. Эти числа не представлены в таблице как подтверждённые габариты ПТМ-1. Строка полной массы того же источника также требует сверки и не перенесена."
+      ],
+      [
+        "В базе есть ПТМ-3 и ПТМ-4, но ветвь ПТМ-1 отсутствует.",
+        "Обозначение ПТМ-1 подтверждено сравнительной таблицей военного руководства; характеристики ПТМ-3 и ПТМ-4 ему не приписаны."
+      ]
+    ]
+  },
+  "source_corrections": {}
+}

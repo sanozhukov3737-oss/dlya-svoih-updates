@@ -1,0 +1,704 @@
+{
+  "artillery-m795": {
+    "rows": [
+      [
+        "Тип основного ВВ — варианты M795",
+        "TNT или IMX-101"
+      ],
+      [
+        "Масса основного ВВ — вариант TNT",
+        "23,8 lb (≈ 10,80 кг)"
+      ],
+      [
+        "Масса основного ВВ — вариант IMX-101",
+        "23,8 lb (≈ 10,80 кг)"
+      ]
+    ],
+    "note": "Варианты наполнения сохранены раздельно. Подготовка варианта Composition B, упомянутая в издании, не подтверждает для него такую же массу. Метрический пересчёт приблизительный.",
+    "sources": [
+      {
+        "id": "artillery-m795-filling-v156",
+        "title": "US Army — JPEOAA Portfolio Book 2025, CAS-28, лист PDF 55",
+        "url": "https://jpeoaa.army.mil/Portals/94/Documents/JPEOAAPortfolioBook_2025.pdf",
+        "accessedAt": "2026-10-04"
+      }
+    ]
+  },
+  "ref-v10-artillery-m107-family": {
+    "rows": [
+      [
+        "Тип ВВ — американский M107",
+        "TNT или Composition B"
+      ],
+      [
+        "Масса ВВ — M107, вариант TNT",
+        "14,6 lb (≈ 6,62 кг)"
+      ],
+      [
+        "Масса ВВ — M107, вариант Composition B",
+        "15,4 lb (≈ 6,99 кг)"
+      ],
+      [
+        "Тип и масса ВВ — KM107",
+        "В выбранном дополнении не подтверждены"
+      ]
+    ],
+    "note": "Дополнение относится к американскому M107. Данные не перенесены на корейский KM107; его ранее указанная полная масса сохранена отдельно. Метрический пересчёт приблизительный.",
+    "sources": [
+      {
+        "id": "ref-v10-artillery-m107-family-filling-v156",
+        "title": "US Army — JPEOAA Portfolio Book 2025, CAS-33, лист PDF 60",
+        "url": "https://jpeoaa.army.mil/Portals/94/Documents/JPEOAAPortfolioBook_2025.pdf",
+        "accessedAt": "2026-10-04"
+      }
+    ]
+  },
+  "ordnance-v29-ga-0030": {
+    "rows": [
+      [
+        "Тип основного ВВ",
+        "TNT"
+      ],
+      [
+        "Масса основного ВВ",
+        "5,8 lb (≈ 2,63 кг)"
+      ]
+    ],
+    "note": "Масса наполнения боевой части; ракетное топливо и метательный заряд в неё не включены. Заголовок страницы источника обозначает M927, хотя в первом предложении описания есть опечатка M97. Метрический пересчёт приблизительный.",
+    "sources": [
+      {
+        "id": "ordnance-v29-ga-0030-filling-v156",
+        "title": "US Army — JPEOAA Portfolio Book 2025, CAS-14, лист PDF 41",
+        "url": "https://jpeoaa.army.mil/Portals/94/Documents/JPEOAAPortfolioBook_2025.pdf",
+        "accessedAt": "2026-10-04"
+      }
+    ]
+  },
+  "ordnance-v29-ga-0036": {
+    "rows": [
+      [
+        "Тип осветительного наполнения",
+        "Пиротехнический осветительный состав видимого света; марка не приведена"
+      ],
+      [
+        "Масса осветительного наполнения",
+        "1,67 lb (≈ 0,758 кг)"
+      ],
+      [
+        "Масса ВВ вспомогательных зарядов",
+        "В выбранном разделе не приведена"
+      ]
+    ],
+    "note": "Показатель illuminant не обозначен как масса ВВ или полная масса изделия. Метрический пересчёт приблизительный.",
+    "sources": [
+      {
+        "id": "ordnance-v29-ga-0036-filling-v156",
+        "title": "US Army — JPEOAA Portfolio Book 2025, CAS-10, лист PDF 37",
+        "url": "https://jpeoaa.army.mil/Portals/94/Documents/JPEOAAPortfolioBook_2025.pdf",
+        "accessedAt": "2026-10-04"
+      }
+    ]
+  },
+  "ordnance-v29-ga-0072": {
+    "rows": [
+      [
+        "Тип основного ВВ — M549A1",
+        "TNT"
+      ],
+      [
+        "Масса основного ВВ — M549A1",
+        "15 lb (≈ 6,80 кг)"
+      ]
+    ],
+    "note": "Масса наполнения боевой части; ракетное топливо и метательный заряд отдельно и сюда не включены. На M549 данные автоматически не перенесены. Метрический пересчёт приблизительный.",
+    "sources": [
+      {
+        "id": "ordnance-v29-ga-0072-filling-v156",
+        "title": "US Army — JPEOAA Portfolio Book 2025, CAS-27, лист PDF 54",
+        "url": "https://jpeoaa.army.mil/Portals/94/Documents/JPEOAAPortfolioBook_2025.pdf",
+        "accessedAt": "2026-10-04"
+      }
+    ]
+  },
+  "ordnance-v29-ga-0051": {
+    "rows": [
+      [
+        "Тип дымового наполнения",
+        "Белый фосфор (WP)"
+      ],
+      [
+        "Масса дымового наполнения",
+        "15,6 lb (≈ 7,08 кг)"
+      ],
+      [
+        "Масса ВВ отдельного вспомогательного заряда",
+        "В выбранном разделе не приведена"
+      ]
+    ],
+    "note": "Белый фосфор указан как дымовое наполнение, не как масса ВВ. Характеристики M1121 из списка заменяющих изделий сюда не перенесены. Метрический пересчёт приблизительный.",
+    "sources": [
+      {
+        "id": "ordnance-v29-ga-0051-filling-v156",
+        "title": "US Army — JPEOAA Portfolio Book 2025, CAS-34, лист PDF 61",
+        "url": "https://jpeoaa.army.mil/Portals/94/Documents/JPEOAAPortfolioBook_2025.pdf",
+        "accessedAt": "2026-10-04"
+      }
+    ]
+  },
+  "ordnance-v29-ga-0074": {
+    "rows": [
+      [
+        "Тип основного ВВ",
+        "Composition B"
+      ],
+      [
+        "Масса основного ВВ",
+        "14,75 lb (≈ 6,69 кг)"
+      ]
+    ],
+    "note": "Табличное значение Filler and weight относится к наполнению M712. Это не полная масса снаряда и не масса транспортного контейнера. Метрический пересчёт приблизительный.",
+    "sources": [
+      {
+        "id": "ordnance-v29-ga-0074-filling-v156",
+        "title": "US Army — TM 43-0001-28, табличные характеристики M712, стр. 3-132",
+        "url": "https://archive.org/download/milmanual-tm-43-0001-28-army-ammunition-data-sheets/tm_43-0001-28_army_ammunition_data_sheets.pdf",
+        "accessedAt": "2026-10-04"
+      }
+    ]
+  },
+  "ordnance-v29-ga-0103": {
+    "rows": [
+      [
+        "Тип ВВ — варианты",
+        "Composition B или PBXN-11"
+      ],
+      [
+        "Масса ВВ — вариант Composition B",
+        "50 г"
+      ],
+      [
+        "Масса ВВ — вариант PBXN-11",
+        "42 г"
+      ]
+    ],
+    "note": "Варианты наполнения не смешаны и не усреднены; масса ВВ отделена от полной массы изделия.",
+    "sources": [
+      {
+        "id": "ordnance-v29-ga-0103-filling-v156",
+        "title": "Nammo — Ammunition Handbook, Edition 7 (August 2024), стр. 141, HGO50-3.5",
+        "url": "https://www.nammo.com/wp-content/uploads/2024/09/Nammo-Handbook-2024_08_Web.cleaned.pdf",
+        "accessedAt": "2026-10-04"
+      }
+    ]
+  },
+  "ordnance-v29-ga-0102": {
+    "rows": [
+      [
+        "Тип ВВ — варианты",
+        "Composition B или PBXN-11"
+      ],
+      [
+        "Масса ВВ — вариант Composition B",
+        "225 г"
+      ],
+      [
+        "Масса ВВ — вариант PBXN-11",
+        "260 г"
+      ]
+    ],
+    "note": "Варианты наполнения не смешаны и не усреднены; масса ВВ отделена от полной массы изделия.",
+    "sources": [
+      {
+        "id": "ordnance-v29-ga-0102-filling-v156",
+        "title": "Nammo — Ammunition Handbook, Edition 7 (August 2024), стр. 142, HGO225-3.5",
+        "url": "https://www.nammo.com/wp-content/uploads/2024/09/Nammo-Handbook-2024_08_Web.cleaned.pdf",
+        "accessedAt": "2026-10-04"
+      }
+    ]
+  },
+  "ordnance-v29-ga-0101": {
+    "rows": [
+      [
+        "Тип ВВ — варианты",
+        "Composition B или PBXN-110"
+      ],
+      [
+        "Масса ВВ — вариант PBXN-110",
+        "165 г"
+      ],
+      [
+        "Масса ВВ — вариант Composition B",
+        "Отдельное значение для этого варианта в выбранной строке не приведено"
+      ]
+    ],
+    "note": "Варианты наполнения не смешаны и не усреднены; масса ВВ отделена от полной массы изделия. Значение 165 г сохранено только для явно указанного варианта PBXN-110.",
+    "sources": [
+      {
+        "id": "ordnance-v29-ga-0101-filling-v156",
+        "title": "Nammo — Ammunition Handbook, Edition 7 (August 2024), стр. 145, HGF165-3.5",
+        "url": "https://www.nammo.com/wp-content/uploads/2024/09/Nammo-Handbook-2024_08_Web.cleaned.pdf",
+        "accessedAt": "2026-10-04"
+      }
+    ]
+  },
+  "ordnance-v29-ga-0106": {
+    "rows": [
+      [
+        "Тип ВВ — варианты",
+        "Composition B или PBXN-11"
+      ],
+      [
+        "Масса ВВ — Composition B, один модуль",
+        "115 г"
+      ],
+      [
+        "Масса ВВ — PBXN-11, один модуль",
+        "130 г"
+      ]
+    ],
+    "note": "Варианты наполнения не смешаны и не усреднены; масса ВВ отделена от полной массы изделия. Значения относятся к одному модулю, не к произвольной сборке.",
+    "sources": [
+      {
+        "id": "ordnance-v29-ga-0106-filling-v156",
+        "title": "Nammo — Ammunition Handbook, Edition 7 (August 2024), стр. 140, SOHG",
+        "url": "https://www.nammo.com/wp-content/uploads/2024/09/Nammo-Handbook-2024_08_Web.cleaned.pdf",
+        "accessedAt": "2026-10-04"
+      }
+    ]
+  },
+  "ordnance-v29-ga-0112": {
+    "rows": [
+      [
+        "Тип ВВ",
+        "RDX (гексоген)"
+      ],
+      [
+        "Масса ВВ",
+        "60 г"
+      ]
+    ],
+    "note": "Масса ВВ сохранена отдельно от ранее внесённой массы изделия с транспортной пробкой.",
+    "sources": [
+      {
+        "id": "ordnance-v29-ga-0112-filling-v156",
+        "title": "Dezamet — каталог производителя, стр. 2, таблица ручных гранат, RGO-88",
+        "url": "https://dezamet.com.pl/static/upload/store/ONASPLIKIDOPOBRANIA/katalog_PL_www_2.pdf",
+        "accessedAt": "2026-10-04"
+      }
+    ]
+  },
+  "ordnance-v29-ga-0113": {
+    "rows": [
+      [
+        "Тип ВВ",
+        "RDX (гексоген)"
+      ],
+      [
+        "Масса ВВ",
+        "106 г"
+      ]
+    ],
+    "note": "Масса ВВ сохранена отдельно от ранее внесённой массы изделия с транспортной пробкой.",
+    "sources": [
+      {
+        "id": "ordnance-v29-ga-0113-filling-v156",
+        "title": "Dezamet — каталог производителя, стр. 2, таблица ручных гранат, RGZ-89",
+        "url": "https://dezamet.com.pl/static/upload/store/ONASPLIKIDOPOBRANIA/katalog_PL_www_2.pdf",
+        "accessedAt": "2026-10-04"
+      }
+    ]
+  },
+  "eng-pmn": {
+    "rows": [
+      [
+        "Взрывчатое наполнение — NEQ по HALO",
+        "240 г"
+      ],
+      [
+        "Тип ВВ по таблице HALO",
+        "Не указан"
+      ]
+    ],
+    "note": "Показатель NEQ из строки PMN сохранён под обозначением источника; он не подменяет полную массу изделия, массу только основного заряда или тротиловый эквивалент.",
+    "sources": [
+      {
+        "id": "eng-pmn-filling-v156",
+        "title": "HALO Trust — Land Mines Identification Guide, Itamar Levy, August 2005, стр. 4, PMN",
+        "url": "https://www.bulletpicker.com/pdf/HALO-Land-Mines-Identification-Guide.pdf",
+        "accessedAt": "2026-10-04"
+      }
+    ]
+  },
+  "eng-pmn-2": {
+    "rows": [
+      [
+        "Взрывчатое наполнение — NEQ по HALO",
+        "100 г"
+      ],
+      [
+        "Тип ВВ по таблице HALO",
+        "Не указан"
+      ]
+    ],
+    "note": "Показатель NEQ из строки PMN2 сохранён под обозначением источника; он не подменяет полную массу изделия, массу только основного заряда или тротиловый эквивалент.",
+    "sources": [
+      {
+        "id": "eng-pmn-2-filling-v156",
+        "title": "HALO Trust — Land Mines Identification Guide, Itamar Levy, August 2005, стр. 6, PMN2",
+        "url": "https://www.bulletpicker.com/pdf/HALO-Land-Mines-Identification-Guide.pdf",
+        "accessedAt": "2026-10-04"
+      }
+    ]
+  },
+  "eng-ozm-72": {
+    "rows": [
+      [
+        "Взрывчатое наполнение — NEQ по HALO",
+        "500 г"
+      ],
+      [
+        "Тип ВВ по таблице HALO",
+        "Не указан"
+      ]
+    ],
+    "note": "Показатель NEQ из строки OZM-72 сохранён под обозначением источника; он не подменяет полную массу изделия, массу только основного заряда или тротиловый эквивалент.",
+    "sources": [
+      {
+        "id": "eng-ozm-72-filling-v156",
+        "title": "HALO Trust — Land Mines Identification Guide, Itamar Levy, August 2005, стр. 39, OZM-72",
+        "url": "https://www.bulletpicker.com/pdf/HALO-Land-Mines-Identification-Guide.pdf",
+        "accessedAt": "2026-10-04"
+      }
+    ]
+  },
+  "eng-mai-75": {
+    "rows": [
+      [
+        "Взрывчатое наполнение — NEQ по HALO",
+        "120 г"
+      ],
+      [
+        "Тип ВВ по таблице HALO",
+        "Не указан"
+      ]
+    ],
+    "note": "Показатель NEQ из строки MAI 75 сохранён под обозначением источника; он не подменяет полную массу изделия, массу только основного заряда или тротиловый эквивалент.",
+    "sources": [
+      {
+        "id": "eng-mai-75-filling-v156",
+        "title": "HALO Trust — Land Mines Identification Guide, Itamar Levy, August 2005, стр. 7, MAI 75",
+        "url": "https://www.bulletpicker.com/pdf/HALO-Land-Mines-Identification-Guide.pdf",
+        "accessedAt": "2026-10-04"
+      }
+    ]
+  },
+  "eng-ppm-2-dd": {
+    "rows": [
+      [
+        "Взрывчатое наполнение — NEQ по HALO",
+        "110 г"
+      ],
+      [
+        "Тип ВВ по таблице HALO",
+        "Не указан"
+      ],
+      [
+        "Размеры по HALO",
+        "13,4 × 6 см (134 × 60 мм); оси в таблице не подписаны"
+      ]
+    ],
+    "note": "Показатель NEQ из строки PPM-2 сохранён под обозначением источника; он не подменяет полную массу изделия, массу только основного заряда или тротиловый эквивалент. Размеры добавлены отдельной строкой, без переименования осей в диаметр и высоту.",
+    "sources": [
+      {
+        "id": "eng-ppm-2-dd-filling-v156",
+        "title": "HALO Trust — Land Mines Identification Guide, Itamar Levy, August 2005, стр. 10, PPM-2",
+        "url": "https://www.bulletpicker.com/pdf/HALO-Land-Mines-Identification-Guide.pdf",
+        "accessedAt": "2026-10-04"
+      }
+    ],
+    "replacements": [
+      [
+        "Числовые диаметр и высота PPM-2 в статье не приведены.",
+        "В первоначальной статье числовые диаметр и высота PPM-2 не приведены. В таблице HALO добавлены размеры 13,4 × 6 см; оси в ней отдельно не подписаны."
+      ]
+    ]
+  },
+  "eng-pma-1a": {
+    "rows": [
+      [
+        "Взрывчатое наполнение — NEQ по HALO",
+        "200 г"
+      ],
+      [
+        "Тип ВВ по таблице HALO",
+        "Не указан"
+      ]
+    ],
+    "note": "Показатель NEQ из строки PMA 1 A сохранён под обозначением источника; он не подменяет полную массу изделия, массу только основного заряда или тротиловый эквивалент.",
+    "sources": [
+      {
+        "id": "eng-pma-1a-filling-v156",
+        "title": "HALO Trust — Land Mines Identification Guide, Itamar Levy, August 2005, стр. 28, PMA 1 A",
+        "url": "https://www.bulletpicker.com/pdf/HALO-Land-Mines-Identification-Guide.pdf",
+        "accessedAt": "2026-10-04"
+      }
+    ]
+  },
+  "eng-pma-2": {
+    "rows": [
+      [
+        "Взрывчатое наполнение — NEQ по HALO",
+        "100 г"
+      ],
+      [
+        "Тип ВВ по таблице HALO",
+        "Не указан"
+      ]
+    ],
+    "note": "Показатель NEQ из строки PMA 2 сохранён под обозначением источника; он не подменяет полную массу изделия, массу только основного заряда или тротиловый эквивалент.",
+    "sources": [
+      {
+        "id": "eng-pma-2-filling-v156",
+        "title": "HALO Trust — Land Mines Identification Guide, Itamar Levy, August 2005, стр. 29, PMA 2",
+        "url": "https://www.bulletpicker.com/pdf/HALO-Land-Mines-Identification-Guide.pdf",
+        "accessedAt": "2026-10-04"
+      }
+    ]
+  },
+  "eng-pma-3": {
+    "rows": [
+      [
+        "Взрывчатое наполнение — NEQ по HALO",
+        "35 г"
+      ],
+      [
+        "Тип ВВ по таблице HALO",
+        "Не указан"
+      ]
+    ],
+    "note": "Показатель NEQ из строки PMA 3 сохранён под обозначением источника; он не подменяет полную массу изделия, массу только основного заряда или тротиловый эквивалент.",
+    "sources": [
+      {
+        "id": "eng-pma-3-filling-v156",
+        "title": "HALO Trust — Land Mines Identification Guide, Itamar Levy, August 2005, стр. 30, PMA 3",
+        "url": "https://www.bulletpicker.com/pdf/HALO-Land-Mines-Identification-Guide.pdf",
+        "accessedAt": "2026-10-04"
+      }
+    ]
+  },
+  "eng-pdf-v7-128": {
+    "rows": [
+      [
+        "Взрывчатое наполнение — NEQ по HALO",
+        "300 г"
+      ],
+      [
+        "Тип ВВ по таблице HALO",
+        "Не указан"
+      ]
+    ],
+    "note": "Показатель NEQ из строки GYATA 64 сохранён под обозначением источника; он не подменяет полную массу изделия, массу только основного заряда или тротиловый эквивалент.",
+    "sources": [
+      {
+        "id": "eng-pdf-v7-128-filling-v156",
+        "title": "HALO Trust — Land Mines Identification Guide, Itamar Levy, August 2005, стр. 24, GYATA 64",
+        "url": "https://www.bulletpicker.com/pdf/HALO-Land-Mines-Identification-Guide.pdf",
+        "accessedAt": "2026-10-04"
+      }
+    ]
+  },
+  "ref-v8-pomz-2m": {
+    "rows": [
+      [
+        "Взрывчатое наполнение — NEQ по HALO",
+        "75 г"
+      ],
+      [
+        "Тип ВВ по таблице HALO",
+        "Не указан"
+      ]
+    ],
+    "note": "Показатель NEQ из строки POMZ-2M сохранён под обозначением источника; он не подменяет полную массу изделия, массу только основного заряда или тротиловый эквивалент.",
+    "sources": [
+      {
+        "id": "ref-v8-pomz-2m-filling-v156",
+        "title": "HALO Trust — Land Mines Identification Guide, Itamar Levy, August 2005, стр. 53, POMZ-2M",
+        "url": "https://www.bulletpicker.com/pdf/HALO-Land-Mines-Identification-Guide.pdf",
+        "accessedAt": "2026-10-04"
+      }
+    ]
+  },
+  "ref-v8-pomz-2": {
+    "rows": [
+      [
+        "Взрывчатое наполнение — NEQ по HALO",
+        "75 г"
+      ],
+      [
+        "Тип ВВ по таблице HALO",
+        "Не указан"
+      ]
+    ],
+    "note": "Показатель NEQ из строки POMZ-2 сохранён под обозначением источника; он не подменяет полную массу изделия, массу только основного заряда или тротиловый эквивалент.",
+    "sources": [
+      {
+        "id": "ref-v8-pomz-2-filling-v156",
+        "title": "HALO Trust — Land Mines Identification Guide, Itamar Levy, August 2005, стр. 53, POMZ-2",
+        "url": "https://www.bulletpicker.com/pdf/HALO-Land-Mines-Identification-Guide.pdf",
+        "accessedAt": "2026-10-04"
+      }
+    ]
+  },
+  "ref-v8-pmd-6": {
+    "rows": [
+      [
+        "Взрывчатое наполнение — NEQ по HALO",
+        "200 г"
+      ],
+      [
+        "Тип ВВ по таблице HALO",
+        "Не указан"
+      ]
+    ],
+    "note": "Показатель NEQ из строки PMD 6 сохранён под обозначением источника; он не подменяет полную массу изделия, массу только основного заряда или тротиловый эквивалент.",
+    "sources": [
+      {
+        "id": "ref-v8-pmd-6-filling-v156",
+        "title": "HALO Trust — Land Mines Identification Guide, Itamar Levy, August 2005, стр. 5, PMD 6",
+        "url": "https://www.bulletpicker.com/pdf/HALO-Land-Mines-Identification-Guide.pdf",
+        "accessedAt": "2026-10-04"
+      }
+    ]
+  },
+  "ref-v9-su-ozm3": {
+    "rows": [
+      [
+        "Взрывчатое наполнение — NEQ по HALO",
+        "75 г"
+      ],
+      [
+        "Тип ВВ по таблице HALO",
+        "Не указан"
+      ]
+    ],
+    "note": "Показатель NEQ из строки OZM-3 сохранён под обозначением источника; он не подменяет полную массу изделия, массу только основного заряда или тротиловый эквивалент.",
+    "sources": [
+      {
+        "id": "ref-v9-su-ozm3-filling-v156",
+        "title": "HALO Trust — Land Mines Identification Guide, Itamar Levy, August 2005, стр. 37, OZM-3",
+        "url": "https://www.bulletpicker.com/pdf/HALO-Land-Mines-Identification-Guide.pdf",
+        "accessedAt": "2026-10-04"
+      }
+    ]
+  },
+  "ref-v9-su-ozm4": {
+    "rows": [
+      [
+        "Взрывчатое наполнение — NEQ по HALO",
+        "170 г"
+      ],
+      [
+        "Тип ВВ по таблице HALO",
+        "Не указан"
+      ]
+    ],
+    "note": "Показатель NEQ из строки OZM-4 сохранён под обозначением источника; он не подменяет полную массу изделия, массу только основного заряда или тротиловый эквивалент.",
+    "sources": [
+      {
+        "id": "ref-v9-su-ozm4-filling-v156",
+        "title": "HALO Trust — Land Mines Identification Guide, Itamar Levy, August 2005, стр. 38, OZM-4",
+        "url": "https://www.bulletpicker.com/pdf/HALO-Land-Mines-Identification-Guide.pdf",
+        "accessedAt": "2026-10-04"
+      }
+    ]
+  },
+  "ref-v8-tm-46": {
+    "rows": [
+      [
+        "Взрывчатое наполнение — NEQ по HALO",
+        "5,7 кг"
+      ],
+      [
+        "Тип ВВ по таблице HALO",
+        "Не указан"
+      ]
+    ],
+    "note": "Показатель NEQ из строки TM46 / TMN46 сохранён под обозначением источника; он не подменяет полную массу изделия, массу только основного заряда или тротиловый эквивалент. Источник даёт общую таблицу TM46 / TMN46; на другие модификации значение не перенесено.",
+    "sources": [
+      {
+        "id": "ref-v8-tm-46-filling-v156",
+        "title": "HALO Trust — Land Mines Identification Guide, Itamar Levy, August 2005, стр. 62, TM46 / TMN46",
+        "url": "https://www.bulletpicker.com/pdf/HALO-Land-Mines-Identification-Guide.pdf",
+        "accessedAt": "2026-10-04"
+      }
+    ]
+  },
+  "ref-v8-tm-57": {
+    "rows": [
+      [
+        "Взрывчатое наполнение — NEQ по HALO",
+        "6,3 кг"
+      ],
+      [
+        "Тип ВВ по таблице HALO",
+        "Не указан"
+      ]
+    ],
+    "note": "Показатель NEQ из строки TM57 сохранён под обозначением источника; он не подменяет полную массу изделия, массу только основного заряда или тротиловый эквивалент.",
+    "sources": [
+      {
+        "id": "ref-v8-tm-57-filling-v156",
+        "title": "HALO Trust — Land Mines Identification Guide, Itamar Levy, August 2005, стр. 63, TM57",
+        "url": "https://www.bulletpicker.com/pdf/HALO-Land-Mines-Identification-Guide.pdf",
+        "accessedAt": "2026-10-04"
+      }
+    ]
+  },
+  "eng-m14-ap-mine": {
+    "rows": [
+      [
+        "Полная масса — TM 43-0001-36",
+        "4,5 oz (≈ 127,6 г)"
+      ],
+      [
+        "Высота — TM 43-0001-36",
+        "1 9/16 in (≈ 39,69 мм)"
+      ],
+      [
+        "Максимальный диаметр — TM 43-0001-36",
+        "2 3/16 in (≈ 55,56 мм)"
+      ],
+      [
+        "Тип ВВ основного заряда",
+        "Tetryl (тетрил)"
+      ],
+      [
+        "Масса ВВ основного заряда",
+        "28,35 г"
+      ]
+    ],
+    "note": "По армейской таблице отдельно подтверждены полная масса, размеры и основной заряд. Показатель HALO NEQ 29 г не подставлен вместо массы основного заряда. Размеры старой статьи сохранены с её терминологией и происхождением; расхождения источников не усреднены. Метрический пересчёт унций и дюймов приблизительный.",
+    "sources": [
+      {
+        "id": "eng-m14-ap-mine-filling-v156",
+        "title": "US Army — TM 43-0001-36, Change 2, стр. 3-7–3-8, M14",
+        "url": "https://www.militarynewbie.com/wp-content/uploads/2013/11/TM-43-0001-36-Ammunition-Data-Sheets-for-Land-Mines.pdf",
+        "accessedAt": "2026-10-04"
+      }
+    ],
+    "replacements": [
+      [
+        "До проверки независимым источником ни одно из них нельзя выдавать за однозначно подтверждённую полную массу.",
+        "Полная масса по независимому армейскому руководству TM 43-0001-36 приведена отдельной строкой в ТТХ."
+      ],
+      [
+        "| Полная масса | Требует проверки: в источнике несовместимые значения «3,5 унции» и «приблизительно 85 г» (PDF-стр. 52.) |",
+        "| Масса в первоначальной статье — противоречие источника | Несовместимые значения «3,5 унции» и «приблизительно 85 г»; не использованы как подтверждённая полная масса (PDF-стр. 52.) |"
+      ],
+      [
+        "Полную массу нельзя показывать без оговорки о внутреннем противоречии источника.",
+        "Полная масса подтверждена отдельной строкой по TM 43-0001-36. Противоречивые значения первоначальной статьи сохранены только как замечание к этому источнику."
+      ]
+    ]
+  }
+}

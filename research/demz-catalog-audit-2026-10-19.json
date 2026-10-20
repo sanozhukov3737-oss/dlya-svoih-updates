@@ -1,0 +1,2907 @@
+{
+  "preparedAt": "2026-10-19",
+  "state": "prepared-not-published",
+  "baseline": "published 190 plus prepared UPM-O and UAV references (192)",
+  "targetContentVersion": 193,
+  "coverage": {
+    "sourceFile": "Каталог_2026_на_русском(2).pdf",
+    "sourceSha256": "2482f01e4ff43be8e87d8164be438af502a162ea2cc2b2f75a8b03df5fd7a8d0",
+    "totalPages": 92,
+    "productPages": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88
+    ],
+    "nonProductPages": [
+      {
+        "page": 1,
+        "role": "Обложка"
+      },
+      {
+        "page": 2,
+        "role": "О компании"
+      },
+      {
+        "page": 89,
+        "role": "Производственные участки"
+      },
+      {
+        "page": 90,
+        "role": "Итоги развития"
+      },
+      {
+        "page": 91,
+        "role": "Производственные мощности"
+      },
+      {
+        "page": 92,
+        "role": "Задняя обложка"
+      }
+    ],
+    "pageObservations": 103,
+    "referenceEntries": 91,
+    "existingMappings": 10,
+    "addedCards": 81,
+    "enrichedCards": 4,
+    "imagesAdded": 85,
+    "imageAssetBytes": 1593696,
+    "products": [
+      {
+        "key": "mortar-hull-120",
+        "title": "Корпуса 120-мм миномётных мин (ДЕМЗ)",
+        "pages": [
+          3
+        ],
+        "category": "munition-components",
+        "kind": "Корпуса боеприпасов",
+        "box": [
+          0.05,
+          0.21,
+          0.19,
+          0.85
+        ],
+        "aliases": [],
+        "existingCardId": null,
+        "extraBoxes": [
+          [
+            0.26,
+            0.21,
+            0.38,
+            0.85
+          ]
+        ],
+        "occurrences": 2,
+        "mappedCardId": "demzref-mortar-hull-120"
+      },
+      {
+        "key": "mortar-hull-82",
+        "title": "Корпус 82-мм миномётной мины (ДЕМЗ)",
+        "pages": [
+          3
+        ],
+        "category": "munition-components",
+        "kind": "Корпус боеприпаса",
+        "box": [
+          0.49,
+          0.54,
+          0.57,
+          0.85
+        ],
+        "aliases": [],
+        "existingCardId": null,
+        "extraBoxes": [],
+        "occurrences": 1,
+        "mappedCardId": "demzref-mortar-hull-82"
+      },
+      {
+        "key": "mortar-hull-81",
+        "title": "Корпус 81-мм миномётной мины (ДЕМЗ)",
+        "pages": [
+          3
+        ],
+        "category": "munition-components",
+        "kind": "Корпус боеприпаса",
+        "box": [
+          0.67,
+          0.47,
+          0.75,
+          0.85
+        ],
+        "aliases": [],
+        "existingCardId": null,
+        "extraBoxes": [],
+        "occurrences": 1,
+        "mappedCardId": "demzref-mortar-hull-81"
+      },
+      {
+        "key": "mortar-hull-60",
+        "title": "Корпус 60-мм миномётной мины (ДЕМЗ)",
+        "pages": [
+          3
+        ],
+        "category": "munition-components",
+        "kind": "Корпус боеприпаса",
+        "box": [
+          0.87,
+          0.56,
+          0.95,
+          0.85
+        ],
+        "aliases": [],
+        "existingCardId": null,
+        "extraBoxes": [],
+        "occurrences": 1,
+        "mappedCardId": "demzref-mortar-hull-60"
+      },
+      {
+        "key": "shell-hull-122",
+        "title": "Корпус 122-мм осколочно-фугасного снаряда (ДЕМЗ)",
+        "pages": [
+          4
+        ],
+        "category": "munition-components",
+        "kind": "Корпус артиллерийского боеприпаса",
+        "box": [
+          0.18,
+          0.42,
+          0.25,
+          0.9
+        ],
+        "aliases": [],
+        "existingCardId": null,
+        "extraBoxes": [],
+        "occurrences": 1,
+        "mappedCardId": "demzref-shell-hull-122"
+      },
+      {
+        "key": "shell-hull-125",
+        "title": "Корпус 125-мм танкового снаряда (ДЕМЗ)",
+        "pages": [
+          4
+        ],
+        "category": "munition-components",
+        "kind": "Корпус артиллерийского боеприпаса",
+        "box": [
+          0.405,
+          0.38,
+          0.485,
+          0.9
+        ],
+        "aliases": [],
+        "existingCardId": null,
+        "extraBoxes": [],
+        "occurrences": 1,
+        "mappedCardId": "demzref-shell-hull-125"
+      },
+      {
+        "key": "shell-hull-130",
+        "title": "Корпус 130-мм осколочно-фугасного снаряда (ДЕМЗ)",
+        "pages": [
+          4
+        ],
+        "category": "munition-components",
+        "kind": "Корпус артиллерийского боеприпаса",
+        "box": [
+          0.65,
+          0.38,
+          0.73,
+          0.92
+        ],
+        "aliases": [],
+        "existingCardId": null,
+        "extraBoxes": [],
+        "occurrences": 1,
+        "mappedCardId": "demzref-shell-hull-130"
+      },
+      {
+        "key": "shell-hull-152",
+        "title": "Корпус 152-мм осколочно-фугасного снаряда (ДЕМЗ)",
+        "pages": [
+          4
+        ],
+        "category": "munition-components",
+        "kind": "Корпус артиллерийского боеприпаса",
+        "box": [
+          0.875,
+          0.37,
+          0.995,
+          0.91
+        ],
+        "aliases": [],
+        "existingCardId": null,
+        "extraBoxes": [],
+        "occurrences": 1,
+        "mappedCardId": "demzref-shell-hull-152"
+      },
+      {
+        "key": "shell-hull-m107m1",
+        "title": "Корпус 155-мм снаряда М107М1 (ДЕМЗ)",
+        "pages": [
+          5
+        ],
+        "category": "munition-components",
+        "kind": "Корпус артиллерийского боеприпаса",
+        "box": [
+          0.25,
+          0.29,
+          0.35,
+          0.88
+        ],
+        "aliases": [
+          "М107М1",
+          "M107M1"
+        ],
+        "existingCardId": null,
+        "extraBoxes": [],
+        "occurrences": 1,
+        "mappedCardId": "demzref-shell-hull-m107m1"
+      },
+      {
+        "key": "shell-hull-m795",
+        "title": "Корпус 155-мм снаряда М795 (ДЕМЗ)",
+        "pages": [
+          5
+        ],
+        "category": "munition-components",
+        "kind": "Корпус артиллерийского боеприпаса",
+        "box": [
+          0.58,
+          0.25,
+          0.68,
+          0.87
+        ],
+        "aliases": [
+          "М795",
+          "M795"
+        ],
+        "existingCardId": null,
+        "extraBoxes": [],
+        "occurrences": 1,
+        "mappedCardId": "demzref-shell-hull-m795"
+      },
+      {
+        "key": "shell-hull-ofd155",
+        "title": "Корпус 155-мм снаряда ОФД 155 (ДЕМЗ)",
+        "pages": [
+          5
+        ],
+        "category": "munition-components",
+        "kind": "Корпус артиллерийского боеприпаса",
+        "box": [
+          0.88,
+          0.22,
+          0.98,
+          0.87
+        ],
+        "aliases": [
+          "ОФД 155",
+          "ОФД 155"
+        ],
+        "existingCardId": null,
+        "extraBoxes": [],
+        "occurrences": 1,
+        "mappedCardId": "demzref-shell-hull-ofd155"
+      },
+      {
+        "key": "shell-hull-105",
+        "title": "Корпус 105-мм снаряда (ДЕМЗ)",
+        "pages": [
+          6
+        ],
+        "category": "munition-components",
+        "kind": "Корпус артиллерийского боеприпаса",
+        "box": [
+          0.31,
+          0.27,
+          0.45,
+          0.9
+        ],
+        "aliases": [
+          "105 мм"
+        ],
+        "existingCardId": null,
+        "extraBoxes": [],
+        "occurrences": 1,
+        "mappedCardId": "demzref-shell-hull-105"
+      },
+      {
+        "key": "shell-hull-155-he-m1",
+        "title": "Корпус снаряда 155 HE M1 (ДЕМЗ)",
+        "pages": [
+          6
+        ],
+        "category": "munition-components",
+        "kind": "Корпус артиллерийского боеприпаса",
+        "box": [
+          0.55,
+          0.24,
+          0.65,
+          0.8
+        ],
+        "aliases": [
+          "155 HE M1"
+        ],
+        "existingCardId": null,
+        "extraBoxes": [],
+        "occurrences": 1,
+        "mappedCardId": "demzref-shell-hull-155-he-m1"
+      },
+      {
+        "key": "shell-hull-l15a1",
+        "title": "Корпус снаряда L15A1 (ДЕМЗ)",
+        "pages": [
+          6
+        ],
+        "category": "munition-components",
+        "kind": "Корпус артиллерийского боеприпаса",
+        "box": [
+          0.77,
+          0.25,
+          0.87,
+          0.81
+        ],
+        "aliases": [
+          "L15A1"
+        ],
+        "existingCardId": null,
+        "extraBoxes": [],
+        "occurrences": 1,
+        "mappedCardId": "demzref-shell-hull-l15a1"
+      },
+      {
+        "key": "m6",
+        "title": "М-6 — взрыватель",
+        "pages": [
+          7
+        ],
+        "category": "artillery-fuzes",
+        "kind": "Миномётный взрыватель",
+        "box": [
+          0.04,
+          0.44,
+          0.15,
+          0.77
+        ],
+        "aliases": [],
+        "existingCardId": "ordnance-v27-m-6-vzryvatel",
+        "extraBoxes": [],
+        "occurrences": 1,
+        "mappedCardId": "ordnance-v27-m-6-vzryvatel"
+      },
+      {
+        "key": "m12",
+        "title": "М-12 — взрыватель",
+        "pages": [
+          7
+        ],
+        "category": "artillery-fuzes",
+        "kind": "Миномётный взрыватель",
+        "box": [
+          0.175,
+          0.27,
+          0.29,
+          0.77
+        ],
+        "aliases": [],
+        "existingCardId": "ordnance-v27-m-12-vzryvatel",
+        "extraBoxes": [],
+        "occurrences": 1,
+        "mappedCardId": "ordnance-v27-m-12-vzryvatel"
+      },
+      {
+        "key": "mortar-case-120",
+        "title": "Гильза вышибного заряда 120-мм мины (ДЕМЗ)",
+        "pages": [
+          7
+        ],
+        "category": "munition-components",
+        "kind": "Гильза миномётного боеприпаса",
+        "box": [
+          0.32,
+          0.24,
+          0.43,
+          0.77
+        ],
+        "aliases": [],
+        "existingCardId": null,
+        "extraBoxes": [],
+        "occurrences": 1,
+        "mappedCardId": "demzref-mortar-case-120"
+      },
+      {
+        "key": "mortar-case-unindexed",
+        "title": "Гильза миномётного заряда без индекса (ДЕМЗ)",
+        "pages": [
+          7
+        ],
+        "category": "munition-components",
+        "kind": "Гильза миномётного боеприпаса",
+        "box": [
+          0.495,
+          0.44,
+          0.575,
+          0.76
+        ],
+        "aliases": [],
+        "existingCardId": null,
+        "extraBoxes": [],
+        "occurrences": 1,
+        "mappedCardId": "demzref-mortar-case-unindexed"
+      },
+      {
+        "key": "primer-m82",
+        "title": "Праймер M82 (ДЕМЗ)",
+        "pages": [
+          7
+        ],
+        "category": "munition-components",
+        "kind": "Компонент артиллерийского боеприпаса",
+        "box": [
+          0.65,
+          0.51,
+          0.71,
+          0.74
+        ],
+        "aliases": [
+          "M82",
+          "М82"
+        ],
+        "existingCardId": null,
+        "extraBoxes": [],
+        "occurrences": 1,
+        "mappedCardId": "demzref-primer-m82"
+      },
+      {
+        "key": "kv4",
+        "title": "Капсюльная втулка КВ-4 (ДЕМЗ)",
+        "pages": [
+          7
+        ],
+        "category": "munition-components",
+        "kind": "Компонент боеприпаса",
+        "box": [
+          0.88,
+          0.64,
+          0.95,
+          0.75
+        ],
+        "aliases": [
+          "КВ-4",
+          "KV-4"
+        ],
+        "existingCardId": null,
+        "extraBoxes": [],
+        "occurrences": 1,
+        "mappedCardId": "demzref-kv4"
+      },
+      {
+        "key": "mortar-round-120",
+        "title": "120-мм миномётный выстрел (ДЕМЗ)",
+        "pages": [
+          8
+        ],
+        "category": "mortars",
+        "kind": "Миномётный выстрел",
+        "box": [
+          0.72,
+          0.2,
+          0.95,
+          0.95
+        ],
+        "aliases": [],
+        "existingCardId": null,
+        "extraBoxes": [],
+        "occurrences": 1,
+        "mappedCardId": "demzref-mortar-round-120"
+      },
+      {
+        "key": "mortar-round-82",
+        "title": "82-мм миномётный выстрел (ДЕМЗ)",
+        "pages": [
+          9
+        ],
+        "category": "mortars",
+        "kind": "Миномётный выстрел",
+        "box": [
+          0.74,
+          0.3,
+          0.95,
+          0.91
+        ],
+        "aliases": [],
+        "existingCardId": null,
+        "extraBoxes": [],
+        "occurrences": 1,
+        "mappedCardId": "demzref-mortar-round-82"
+      },
+      {
+        "key": "tm2025",
+        "title": "ТМ-2025",
+        "pages": [
+          10
+        ],
+        "category": "mines-antitank",
+        "kind": "Противотанковая мина",
+        "box": [
+          0.61,
+          0.55,
+          0.995,
+          0.95
+        ],
+        "aliases": [],
+        "existingCardId": "eng-pdf-v7-118",
+        "extraBoxes": [],
+        "occurrences": 1,
+        "mappedCardId": "eng-pdf-v7-118"
+      },
+      {
+        "key": "mvch62d",
+        "title": "МВЧ-62Д",
+        "pages": [
+          11
+        ],
+        "category": "mine-fuzes",
+        "kind": "Минный взрыватель",
+        "box": [
+          0.56,
+          0.31,
+          0.98,
+          0.91
+        ],
+        "aliases": [
+          "MVCh-62D",
+          "MVCH62D"
+        ],
+        "existingCardId": null,
+        "extraBoxes": [],
+        "occurrences": 1,
+        "mappedCardId": "demzref-mvch62d"
+      },
+      {
+        "key": "mpem1",
+        "title": "МПЕМ-1",
+        "pages": [
+          12
+        ],
+        "category": "mine-fuzes",
+        "kind": "Минный взрыватель",
+        "box": [
+          0.61,
+          0.3,
+          0.97,
+          0.8
+        ],
+        "aliases": [
+          "MPEM-1",
+          "MPEM1"
+        ],
+        "existingCardId": null,
+        "extraBoxes": [],
+        "occurrences": 1,
+        "mappedCardId": "demzref-mpem1"
+      },
+      {
+        "key": "uzrgm2e",
+        "title": "УЗРГМ-2Е",
+        "pages": [
+          7,
+          13
+        ],
+        "category": "grenade-fuzes",
+        "kind": "Запал ручной гранаты",
+        "box": [
+          0.72,
+          0.25,
+          0.94,
+          0.93
+        ],
+        "aliases": [
+          "UZRGM-2E",
+          "UZRGM2E"
+        ],
+        "existingCardId": null,
+        "extraBoxes": [],
+        "occurrences": 1,
+        "imagePage": 13,
+        "mappedCardId": "demzref-uzrgm2e"
+      },
+      {
+        "key": "rgo-f1-d",
+        "title": "РГО-Ф1-Д",
+        "pages": [
+          14
+        ],
+        "category": "grenades",
+        "kind": "Ручная осколочная граната",
+        "box": [
+          0.7,
+          0.27,
+          0.94,
+          0.95
+        ],
+        "aliases": [
+          "RGO-F1-D",
+          "RGOF1D"
+        ],
+        "existingCardId": null,
+        "extraBoxes": [],
+        "occurrences": 1,
+        "mappedCardId": "demzref-rgo-f1-d"
+      },
+      {
+        "key": "rgd5e",
+        "title": "РГД-5Е",
+        "pages": [
+          15
+        ],
+        "category": "grenades",
+        "kind": "Ручная осколочно-фугасная граната",
+        "box": [
+          0.62,
+          0.24,
+          0.9,
+          0.96
+        ],
+        "aliases": [
+          "RGD-5E",
+          "RGD5E"
+        ],
+        "existingCardId": null,
+        "extraBoxes": [],
+        "occurrences": 1,
+        "mappedCardId": "demzref-rgd5e"
+      },
+      {
+        "key": "ibm-3",
+        "title": "ИБМ-3",
+        "pages": [
+          16,
+          17,
+          18
+        ],
+        "category": "uav-drop-munitions",
+        "kind": "Боеприпас БПЛА",
+        "box": null,
+        "aliases": [],
+        "existingCardId": "uavref-ibm-3",
+        "extraBoxes": [],
+        "occurrences": 1,
+        "mappedCardId": "uavref-ibm-3"
+      },
+      {
+        "key": "ibm-1",
+        "title": "ИБМ-1",
+        "pages": [
+          19
+        ],
+        "category": "uav-drop-munitions",
+        "kind": "Боеприпас БПЛА",
+        "box": null,
+        "aliases": [],
+        "existingCardId": "uavref-ibm-1",
+        "extraBoxes": [],
+        "occurrences": 1,
+        "mappedCardId": "uavref-ibm-1"
+      },
+      {
+        "key": "ibm-05",
+        "title": "ИБМ-0,5",
+        "pages": [
+          20
+        ],
+        "category": "uav-drop-munitions",
+        "kind": "Боеприпас БПЛА",
+        "box": null,
+        "aliases": [],
+        "existingCardId": "uavref-ibm-05",
+        "extraBoxes": [],
+        "occurrences": 1,
+        "mappedCardId": "uavref-ibm-05"
+      },
+      {
+        "key": "ibm-02",
+        "title": "ИБМ-0,2",
+        "pages": [
+          21
+        ],
+        "category": "uav-drop-munitions",
+        "kind": "Боеприпас БПЛА",
+        "box": null,
+        "aliases": [],
+        "existingCardId": "uavref-ibm-02",
+        "extraBoxes": [],
+        "occurrences": 1,
+        "mappedCardId": "uavref-ibm-02"
+      },
+      {
+        "key": "ss-02",
+        "title": "СС-0,2",
+        "pages": [
+          22
+        ],
+        "category": "uav-release-systems",
+        "kind": "Система сброса",
+        "box": null,
+        "aliases": [],
+        "existingCardId": "uavref-ss-02",
+        "extraBoxes": [],
+        "occurrences": 1,
+        "mappedCardId": "uavref-ss-02"
+      },
+      {
+        "key": "ss-05",
+        "title": "СС-0,5",
+        "pages": [
+          23
+        ],
+        "category": "uav-release-systems",
+        "kind": "Система сброса",
+        "box": null,
+        "aliases": [],
+        "existingCardId": "uavref-ss-05",
+        "extraBoxes": [],
+        "occurrences": 1,
+        "mappedCardId": "uavref-ss-05"
+      },
+      {
+        "key": "ss-mpp-3",
+        "title": "СС-МПП-3",
+        "pages": [
+          30
+        ],
+        "category": "uav-release-systems",
+        "kind": "Система сброса",
+        "box": null,
+        "aliases": [],
+        "existingCardId": "uavref-ss-mpp-3",
+        "extraBoxes": [],
+        "occurrences": 1,
+        "mappedCardId": "uavref-ss-mpp-3"
+      },
+      {
+        "key": "mon50-2m",
+        "title": "МОН-50-2М",
+        "pages": [
+          24
+        ],
+        "category": "mines-antipersonnel",
+        "kind": "Противопехотная осколочная мина",
+        "box": [
+          0.035,
+          0.39,
+          0.35,
+          0.76
+        ],
+        "aliases": [
+          "MON-50-2M",
+          "MON502M"
+        ],
+        "existingCardId": null,
+        "extraBoxes": [],
+        "occurrences": 1,
+        "mappedCardId": "demzref-mon50-2m"
+      },
+      {
+        "key": "k-didlisovyk",
+        "title": "К-ДІДЛІСОВИК",
+        "pages": [
+          25
+        ],
+        "category": "mines-antivehicle",
+        "kind": "Кассетная противотранспортная мина",
+        "box": [
+          0.03,
+          0.14,
+          0.22,
+          0.79
+        ],
+        "aliases": [
+          "К-ДИДЛИСОВИК",
+          "K-DIDLISOVYK",
+          "ДІДЛІСОВИК"
+        ],
+        "existingCardId": null,
+        "extraBoxes": [],
+        "occurrences": 1,
+        "mappedCardId": "demzref-k-didlisovyk"
+      },
+      {
+        "key": "hydra",
+        "title": "HYDRA",
+        "pages": [
+          26
+        ],
+        "category": "mines-antivehicle",
+        "kind": "Инженерный боеприпас",
+        "box": [
+          0.05,
+          0.3,
+          0.3,
+          0.83
+        ],
+        "aliases": [
+          "Гідра",
+          "Гидра"
+        ],
+        "existingCardId": null,
+        "extraBoxes": [],
+        "occurrences": 1,
+        "mappedCardId": "demzref-hydra"
+      },
+      {
+        "key": "babai",
+        "title": "БАБАЙ",
+        "pages": [
+          27
+        ],
+        "category": "mines-antivehicle",
+        "kind": "Инженерный боеприпас",
+        "box": [
+          0.05,
+          0.3,
+          0.3,
+          0.83
+        ],
+        "aliases": [
+          "BABAI",
+          "BABAY"
+        ],
+        "existingCardId": null,
+        "extraBoxes": [],
+        "occurrences": 1,
+        "mappedCardId": "demzref-babai"
+      },
+      {
+        "key": "didbabai",
+        "title": "ДІДБАБАЙ",
+        "pages": [
+          28
+        ],
+        "category": "mines-antivehicle",
+        "kind": "Инженерный боеприпас",
+        "box": [
+          0.035,
+          0.12,
+          0.245,
+          0.96
+        ],
+        "aliases": [
+          "ДИДБАБАЙ",
+          "DIDBABAI",
+          "DIDBABAY"
+        ],
+        "existingCardId": null,
+        "extraBoxes": [],
+        "occurrences": 1,
+        "mappedCardId": "demzref-didbabai"
+      },
+      {
+        "key": "mpp3",
+        "title": "МПП-3",
+        "pages": [
+          29
+        ],
+        "category": "mines-special",
+        "kind": "Инженерный боеприпас",
+        "box": [
+          0.215,
+          0.31,
+          0.335,
+          0.85
+        ],
+        "aliases": [
+          "MPP-3",
+          "MPP3"
+        ],
+        "existingCardId": null,
+        "extraBoxes": [],
+        "occurrences": 1,
+        "mappedCardId": "demzref-mpp3"
+      },
+      {
+        "key": "mm82",
+        "title": "ММ-82",
+        "pages": [
+          31
+        ],
+        "category": "uav-drop-munitions",
+        "kind": "Осколочно-фугасный боеприпас БПЛА",
+        "box": [
+          0.02,
+          0.17,
+          0.31,
+          0.95
+        ],
+        "aliases": [
+          "MM-82"
+        ],
+        "existingCardId": null,
+        "extraBoxes": [],
+        "occurrences": 1,
+        "mappedCardId": "demzref-mm82"
+      },
+      {
+        "key": "mm120s",
+        "title": "ММ-120С",
+        "pages": [
+          32,
+          33
+        ],
+        "category": "uav-drop-munitions",
+        "kind": "Осколочно-фугасный боеприпас БПЛА",
+        "box": [
+          0.02,
+          0.17,
+          0.31,
+          0.95
+        ],
+        "aliases": [
+          "MM-120S"
+        ],
+        "existingCardId": null,
+        "extraBoxes": [],
+        "occurrences": 1,
+        "mappedCardId": "demzref-mm120s"
+      },
+      {
+        "key": "mm120st",
+        "title": "ММ-120СТ",
+        "pages": [
+          34,
+          35
+        ],
+        "category": "uav-drop-munitions",
+        "kind": "Осколочно-фугасный боеприпас БПЛА",
+        "box": [
+          0.02,
+          0.17,
+          0.31,
+          0.95
+        ],
+        "aliases": [
+          "MM-120ST"
+        ],
+        "existingCardId": null,
+        "extraBoxes": [],
+        "occurrences": 1,
+        "mappedCardId": "demzref-mm120st"
+      },
+      {
+        "key": "mm120ch",
+        "title": "ММ-120Ч",
+        "pages": [
+          36,
+          37
+        ],
+        "category": "uav-drop-munitions",
+        "kind": "Осколочно-фугасный боеприпас БПЛА",
+        "box": [
+          0.02,
+          0.17,
+          0.31,
+          0.95
+        ],
+        "aliases": [
+          "MM-120Ch"
+        ],
+        "existingCardId": null,
+        "extraBoxes": [],
+        "occurrences": 1,
+        "mappedCardId": "demzref-mm120ch"
+      },
+      {
+        "key": "ozm72ms",
+        "title": "ОЗМ-72МС",
+        "pages": [
+          38
+        ],
+        "category": "mines-antipersonnel",
+        "kind": "Осколочная заградительная мина",
+        "box": [
+          0.06,
+          0.15,
+          0.245,
+          0.95
+        ],
+        "aliases": [
+          "OZM-72MS",
+          "OZM72MS"
+        ],
+        "existingCardId": null,
+        "extraBoxes": [],
+        "occurrences": 1,
+        "mappedCardId": "demzref-ozm72ms"
+      },
+      {
+        "key": "moa-spg",
+        "title": "МОА-СПГ",
+        "pages": [
+          39
+        ],
+        "category": "uav-drop-munitions",
+        "kind": "Авиационный осколочный боеприпас",
+        "box": [
+          0.055,
+          0.16,
+          0.178,
+          0.95
+        ],
+        "aliases": [
+          "MOA-SPG",
+          "MOASPG"
+        ],
+        "existingCardId": null,
+        "extraBoxes": [],
+        "occurrences": 1,
+        "mappedCardId": "demzref-moa-spg"
+      },
+      {
+        "key": "moa-viy-900",
+        "title": "МОА-VIY-900",
+        "pages": [
+          40,
+          41
+        ],
+        "category": "uav-drop-munitions",
+        "kind": "Авиационный осколочный боеприпас",
+        "box": [
+          0.04,
+          0.18,
+          0.137,
+          0.96
+        ],
+        "aliases": [
+          "MOA-VIY-900",
+          "МОА-ВИЙ-900"
+        ],
+        "existingCardId": null,
+        "extraBoxes": [],
+        "occurrences": 1,
+        "mappedCardId": "demzref-moa-viy-900"
+      },
+      {
+        "key": "moa-viy-400",
+        "title": "МОА-VIY-400",
+        "pages": [
+          42,
+          43
+        ],
+        "category": "uav-drop-munitions",
+        "kind": "Авиационный осколочный боеприпас",
+        "box": [
+          0.04,
+          0.18,
+          0.137,
+          0.96
+        ],
+        "aliases": [
+          "MOA-VIY-400",
+          "МОА-ВИЙ-400"
+        ],
+        "existingCardId": null,
+        "extraBoxes": [],
+        "occurrences": 1,
+        "mappedCardId": "demzref-moa-viy-400"
+      },
+      {
+        "key": "moa-viy-120",
+        "title": "МОА-VIY-120",
+        "pages": [
+          44
+        ],
+        "category": "uav-drop-munitions",
+        "kind": "Авиационный осколочный боеприпас",
+        "box": [
+          0.04,
+          0.18,
+          0.205,
+          0.96
+        ],
+        "aliases": [
+          "MOA-VIY-120",
+          "МОА-ВИЙ-120"
+        ],
+        "existingCardId": null,
+        "extraBoxes": [],
+        "occurrences": 1,
+        "mappedCardId": "demzref-moa-viy-120"
+      },
+      {
+        "key": "viy-05",
+        "title": "VIY-0,5",
+        "pages": [
+          45
+        ],
+        "category": "uav-drop-munitions",
+        "kind": "Авиационный боеприпас",
+        "box": [
+          0.065,
+          0.145,
+          0.235,
+          0.94
+        ],
+        "aliases": [
+          "VIY-0.5",
+          "ВИЙ-0,5"
+        ],
+        "existingCardId": null,
+        "extraBoxes": [],
+        "occurrences": 1,
+        "mappedCardId": "demzref-viy-05"
+      },
+      {
+        "key": "viy-06",
+        "title": "VIY-0,6",
+        "pages": [
+          46
+        ],
+        "category": "uav-drop-munitions",
+        "kind": "Авиационный боеприпас",
+        "box": [
+          0.065,
+          0.145,
+          0.235,
+          0.94
+        ],
+        "aliases": [
+          "VIY-0.6",
+          "ВИЙ-0,6"
+        ],
+        "existingCardId": null,
+        "extraBoxes": [],
+        "occurrences": 1,
+        "mappedCardId": "demzref-viy-06"
+      },
+      {
+        "key": "viy-9",
+        "title": "VIY-9",
+        "pages": [
+          47
+        ],
+        "category": "uav-drop-munitions",
+        "kind": "Авиационный боеприпас",
+        "box": [
+          0.045,
+          0.15,
+          0.175,
+          0.94
+        ],
+        "aliases": [
+          "VIY-9",
+          "ВИЙ-9"
+        ],
+        "existingCardId": null,
+        "extraBoxes": [],
+        "occurrences": 1,
+        "mappedCardId": "demzref-viy-9"
+      },
+      {
+        "key": "holka-9000",
+        "title": "ГОЛКА 9000",
+        "pages": [
+          48,
+          49
+        ],
+        "category": "uav-drop-munitions",
+        "kind": "Фугасно-осколочный боеприпас БПЛА",
+        "box": [
+          0.035,
+          0.19,
+          0.155,
+          0.94
+        ],
+        "aliases": [
+          "HOLKA 9000",
+          "GOLKA 9000"
+        ],
+        "existingCardId": null,
+        "extraBoxes": [],
+        "occurrences": 1,
+        "mappedCardId": "demzref-holka-9000"
+      },
+      {
+        "key": "holka-12000",
+        "title": "ГОЛКА 12000",
+        "pages": [
+          50,
+          51
+        ],
+        "category": "uav-drop-munitions",
+        "kind": "Фугасно-осколочный боеприпас БПЛА",
+        "box": [
+          0.035,
+          0.19,
+          0.155,
+          0.94
+        ],
+        "aliases": [
+          "HOLKA 12000",
+          "GOLKA 12000"
+        ],
+        "existingCardId": null,
+        "extraBoxes": [],
+        "occurrences": 1,
+        "mappedCardId": "demzref-holka-12000"
+      },
+      {
+        "key": "holka-15000",
+        "title": "ГОЛКА 15000",
+        "pages": [
+          52,
+          53
+        ],
+        "category": "uav-drop-munitions",
+        "kind": "Фугасно-осколочный боеприпас БПЛА",
+        "box": [
+          0.035,
+          0.19,
+          0.155,
+          0.94
+        ],
+        "aliases": [
+          "HOLKA 15000",
+          "GOLKA 15000"
+        ],
+        "existingCardId": null,
+        "extraBoxes": [],
+        "occurrences": 1,
+        "mappedCardId": "demzref-holka-15000"
+      },
+      {
+        "key": "moa-viy-600-ns",
+        "title": "МОА-VIY-600 нС",
+        "pages": [
+          54
+        ],
+        "category": "uav-drop-munitions",
+        "kind": "Боеприпас БПЛА",
+        "box": [
+          0.055,
+          0.13,
+          0.16,
+          0.865
+        ],
+        "aliases": [
+          "MOA-VIY-600 NS",
+          "МОА-VIY-600нС",
+          "МОА-ВИЙ-600нС"
+        ],
+        "existingCardId": null,
+        "extraBoxes": [],
+        "occurrences": 1,
+        "mappedCardId": "demzref-moa-viy-600-ns"
+      },
+      {
+        "key": "moa-viy-800-ns",
+        "title": "МОА-VIY-800 нС",
+        "pages": [
+          55
+        ],
+        "category": "uav-drop-munitions",
+        "kind": "Боеприпас БПЛА",
+        "box": [
+          0.055,
+          0.13,
+          0.16,
+          0.865
+        ],
+        "aliases": [
+          "MOA-VIY-800 NS",
+          "МОА-VIY-800нС",
+          "МОА-ВИЙ-800нС"
+        ],
+        "existingCardId": null,
+        "extraBoxes": [],
+        "occurrences": 1,
+        "mappedCardId": "demzref-moa-viy-800-ns"
+      },
+      {
+        "key": "moa-viy-1200-ns",
+        "title": "МОА-VIY-1200 нС",
+        "pages": [
+          56
+        ],
+        "category": "uav-drop-munitions",
+        "kind": "Боеприпас БПЛА",
+        "box": [
+          0.055,
+          0.13,
+          0.16,
+          0.865
+        ],
+        "aliases": [
+          "MOA-VIY-1200 NS",
+          "МОА-VIY-1200нС",
+          "МОА-ВИЙ-1200нС"
+        ],
+        "existingCardId": null,
+        "extraBoxes": [],
+        "occurrences": 1,
+        "mappedCardId": "demzref-moa-viy-1200-ns"
+      },
+      {
+        "key": "moa-viy-1600-ns",
+        "title": "МОА-VIY-1600 нС",
+        "pages": [
+          57
+        ],
+        "category": "uav-drop-munitions",
+        "kind": "Боеприпас БПЛА",
+        "box": [
+          0.055,
+          0.13,
+          0.16,
+          0.865
+        ],
+        "aliases": [
+          "MOA-VIY-1600 NS",
+          "МОА-VIY-1600нС",
+          "МОА-ВИЙ-1600нС"
+        ],
+        "existingCardId": null,
+        "extraBoxes": [],
+        "occurrences": 1,
+        "mappedCardId": "demzref-moa-viy-1600-ns"
+      },
+      {
+        "key": "moa-viy-600-s",
+        "title": "МОА-VIY-600 С",
+        "pages": [
+          58
+        ],
+        "category": "uav-drop-munitions",
+        "kind": "Боеприпас БПЛА",
+        "box": [
+          0.055,
+          0.13,
+          0.16,
+          0.865
+        ],
+        "aliases": [
+          "MOA-VIY-600 S",
+          "МОА-VIY-600С",
+          "МОА-ВИЙ-600С"
+        ],
+        "existingCardId": null,
+        "extraBoxes": [],
+        "occurrences": 1,
+        "mappedCardId": "demzref-moa-viy-600-s"
+      },
+      {
+        "key": "moa-viy-800-s",
+        "title": "МОА-VIY-800 С",
+        "pages": [
+          59
+        ],
+        "category": "uav-drop-munitions",
+        "kind": "Боеприпас БПЛА",
+        "box": [
+          0.055,
+          0.13,
+          0.16,
+          0.865
+        ],
+        "aliases": [
+          "MOA-VIY-800 S",
+          "МОА-VIY-800С",
+          "МОА-ВИЙ-800С"
+        ],
+        "existingCardId": null,
+        "extraBoxes": [],
+        "occurrences": 1,
+        "mappedCardId": "demzref-moa-viy-800-s"
+      },
+      {
+        "key": "moa-viy-1200-s",
+        "title": "МОА-VIY-1200 С",
+        "pages": [
+          60
+        ],
+        "category": "uav-drop-munitions",
+        "kind": "Боеприпас БПЛА",
+        "box": [
+          0.055,
+          0.13,
+          0.16,
+          0.865
+        ],
+        "aliases": [
+          "MOA-VIY-1200 S",
+          "МОА-VIY-1200С",
+          "МОА-ВИЙ-1200С"
+        ],
+        "existingCardId": null,
+        "extraBoxes": [],
+        "occurrences": 1,
+        "mappedCardId": "demzref-moa-viy-1200-s"
+      },
+      {
+        "key": "moa-viy-1600-s",
+        "title": "МОА-VIY-1600 С",
+        "pages": [
+          61
+        ],
+        "category": "uav-drop-munitions",
+        "kind": "Боеприпас БПЛА",
+        "box": [
+          0.055,
+          0.13,
+          0.16,
+          0.865
+        ],
+        "aliases": [
+          "MOA-VIY-1600 S",
+          "МОА-VIY-1600С",
+          "МОА-ВИЙ-1600С"
+        ],
+        "existingCardId": null,
+        "extraBoxes": [],
+        "occurrences": 1,
+        "mappedCardId": "demzref-moa-viy-1600-s"
+      },
+      {
+        "key": "moa-viy-600-nk",
+        "title": "МОА-VIY-600 нК",
+        "pages": [
+          62
+        ],
+        "category": "uav-warheads",
+        "kind": "Боевая часть БПЛА",
+        "box": [
+          0.06,
+          0.14,
+          0.275,
+          0.8
+        ],
+        "aliases": [
+          "MOA-VIY-600 NK",
+          "МОА-VIY-600нК",
+          "МОА-ВИЙ-600нК"
+        ],
+        "existingCardId": null,
+        "extraBoxes": [],
+        "occurrences": 1,
+        "mappedCardId": "demzref-moa-viy-600-nk"
+      },
+      {
+        "key": "moa-viy-800-nk",
+        "title": "МОА-VIY-800 нК",
+        "pages": [
+          63
+        ],
+        "category": "uav-warheads",
+        "kind": "Боевая часть БПЛА",
+        "box": [
+          0.06,
+          0.14,
+          0.275,
+          0.8
+        ],
+        "aliases": [
+          "MOA-VIY-800 NK",
+          "МОА-VIY-800нК",
+          "МОА-ВИЙ-800нК"
+        ],
+        "existingCardId": null,
+        "extraBoxes": [],
+        "occurrences": 1,
+        "mappedCardId": "demzref-moa-viy-800-nk"
+      },
+      {
+        "key": "moa-viy-1200-nk",
+        "title": "МОА-VIY-1200 нК",
+        "pages": [
+          64
+        ],
+        "category": "uav-warheads",
+        "kind": "Боевая часть БПЛА",
+        "box": [
+          0.06,
+          0.14,
+          0.275,
+          0.8
+        ],
+        "aliases": [
+          "MOA-VIY-1200 NK",
+          "МОА-VIY-1200нК",
+          "МОА-ВИЙ-1200нК"
+        ],
+        "existingCardId": null,
+        "extraBoxes": [],
+        "occurrences": 1,
+        "mappedCardId": "demzref-moa-viy-1200-nk"
+      },
+      {
+        "key": "moa-viy-1600-nk",
+        "title": "МОА-VIY-1600 нК",
+        "pages": [
+          65
+        ],
+        "category": "uav-warheads",
+        "kind": "Боевая часть БПЛА",
+        "box": [
+          0.06,
+          0.14,
+          0.275,
+          0.8
+        ],
+        "aliases": [
+          "MOA-VIY-1600 NK",
+          "МОА-VIY-1600нК",
+          "МОА-ВИЙ-1600нК"
+        ],
+        "existingCardId": null,
+        "extraBoxes": [],
+        "occurrences": 1,
+        "mappedCardId": "demzref-moa-viy-1600-nk"
+      },
+      {
+        "key": "moa-viy-600-k",
+        "title": "МОА-VIY-600 К",
+        "pages": [
+          66
+        ],
+        "category": "uav-warheads",
+        "kind": "Боевая часть БПЛА",
+        "box": [
+          0.06,
+          0.14,
+          0.275,
+          0.8
+        ],
+        "aliases": [
+          "MOA-VIY-600 K",
+          "МОА-VIY-600К",
+          "МОА-ВИЙ-600К"
+        ],
+        "existingCardId": null,
+        "extraBoxes": [],
+        "occurrences": 1,
+        "mappedCardId": "demzref-moa-viy-600-k"
+      },
+      {
+        "key": "moa-viy-800-k",
+        "title": "МОА-VIY-800 К",
+        "pages": [
+          67
+        ],
+        "category": "uav-warheads",
+        "kind": "Боевая часть БПЛА",
+        "box": [
+          0.06,
+          0.14,
+          0.275,
+          0.8
+        ],
+        "aliases": [
+          "MOA-VIY-800 K",
+          "МОА-VIY-800К",
+          "МОА-ВИЙ-800К"
+        ],
+        "existingCardId": null,
+        "extraBoxes": [],
+        "occurrences": 1,
+        "mappedCardId": "demzref-moa-viy-800-k"
+      },
+      {
+        "key": "moa-viy-1200-k",
+        "title": "МОА-VIY-1200 К",
+        "pages": [
+          68
+        ],
+        "category": "uav-warheads",
+        "kind": "Боевая часть БПЛА",
+        "box": [
+          0.06,
+          0.14,
+          0.275,
+          0.8
+        ],
+        "aliases": [
+          "MOA-VIY-1200 K",
+          "МОА-VIY-1200К",
+          "МОА-ВИЙ-1200К"
+        ],
+        "existingCardId": null,
+        "extraBoxes": [],
+        "occurrences": 1,
+        "mappedCardId": "demzref-moa-viy-1200-k"
+      },
+      {
+        "key": "moa-viy-1600-k",
+        "title": "МОА-VIY-1600 К",
+        "pages": [
+          69
+        ],
+        "category": "uav-warheads",
+        "kind": "Боевая часть БПЛА",
+        "box": [
+          0.06,
+          0.14,
+          0.275,
+          0.8
+        ],
+        "aliases": [
+          "MOA-VIY-1600 K",
+          "МОА-VIY-1600К",
+          "МОА-ВИЙ-1600К"
+        ],
+        "existingCardId": null,
+        "extraBoxes": [],
+        "occurrences": 1,
+        "mappedCardId": "demzref-moa-viy-1600-k"
+      },
+      {
+        "key": "delay-detonator",
+        "title": "Детонатор с задержкой (ДЕМЗ)",
+        "pages": [
+          70
+        ],
+        "category": "detonators-caps",
+        "kind": "Детонатор",
+        "box": [
+          0.065,
+          0.18,
+          0.225,
+          0.94
+        ],
+        "aliases": [],
+        "existingCardId": null,
+        "extraBoxes": [],
+        "occurrences": 1,
+        "mappedCardId": "demzref-delay-detonator"
+      },
+      {
+        "key": "m119a3-hydro-accumulator",
+        "title": "Гидроаккумулятор M119 A3 (ДЕМЗ)",
+        "pages": [
+          71
+        ],
+        "category": "weapon-components",
+        "kind": "Узел вооружения",
+        "box": [
+          0.56,
+          0.51,
+          0.96,
+          0.88
+        ],
+        "aliases": [
+          "Гидроаккумулятор M119A3"
+        ],
+        "existingCardId": null,
+        "extraBoxes": [],
+        "occurrences": 1,
+        "mappedCardId": "demzref-m119a3-hydro-accumulator"
+      },
+      {
+        "key": "m119a3-elevation-mechanism",
+        "title": "Подъёмный механизм M119 A3 (ДЕМЗ)",
+        "pages": [
+          72
+        ],
+        "category": "weapon-components",
+        "kind": "Узел вооружения",
+        "box": [
+          0.09,
+          0.5,
+          0.48,
+          0.94
+        ],
+        "aliases": [
+          "Подъёмный механизм M119A3"
+        ],
+        "existingCardId": null,
+        "extraBoxes": [],
+        "occurrences": 1,
+        "mappedCardId": "demzref-m119a3-elevation-mechanism"
+      },
+      {
+        "key": "m119a3-recoil-brake",
+        "title": "Тормоз отката M119 A3 (ДЕМЗ)",
+        "pages": [
+          73
+        ],
+        "category": "weapon-components",
+        "kind": "Узел вооружения",
+        "box": [
+          0.065,
+          0.6,
+          0.335,
+          0.77
+        ],
+        "aliases": [
+          "Тормоз отката M119A3"
+        ],
+        "existingCardId": null,
+        "extraBoxes": [],
+        "occurrences": 1,
+        "mappedCardId": "demzref-m119a3-recoil-brake"
+      },
+      {
+        "key": "m119a3-recuperator",
+        "title": "Накатник M119 A3 (ДЕМЗ)",
+        "pages": [
+          74
+        ],
+        "category": "weapon-components",
+        "kind": "Узел вооружения",
+        "box": [
+          0.055,
+          0.56,
+          0.33,
+          0.8
+        ],
+        "aliases": [
+          "Накатник M119A3"
+        ],
+        "existingCardId": null,
+        "extraBoxes": [],
+        "occurrences": 1,
+        "mappedCardId": "demzref-m119a3-recuperator"
+      },
+      {
+        "key": "motor-srm-102",
+        "title": "РДТТ SRM-102",
+        "pages": [
+          75
+        ],
+        "category": "rocket-motors",
+        "kind": "Ракетный двигатель",
+        "box": [
+          0.7,
+          0.16,
+          0.95,
+          0.95
+        ],
+        "aliases": [
+          "SRM-102",
+          "SRM102"
+        ],
+        "existingCardId": null,
+        "extraBoxes": [],
+        "occurrences": 1,
+        "mappedCardId": "demzref-motor-srm-102"
+      },
+      {
+        "key": "motor-srm-109",
+        "title": "РДТТ SRM-109",
+        "pages": [
+          76
+        ],
+        "category": "rocket-motors",
+        "kind": "Ракетный двигатель",
+        "box": [
+          0.7,
+          0.16,
+          0.95,
+          0.95
+        ],
+        "aliases": [
+          "SRM-109",
+          "SRM109"
+        ],
+        "existingCardId": null,
+        "extraBoxes": [],
+        "occurrences": 1,
+        "mappedCardId": "demzref-motor-srm-109"
+      },
+      {
+        "key": "motor-srm-15",
+        "title": "РДТТ SRM-15",
+        "pages": [
+          77
+        ],
+        "category": "rocket-motors",
+        "kind": "Ракетный двигатель",
+        "box": [
+          0.7,
+          0.16,
+          0.95,
+          0.95
+        ],
+        "aliases": [
+          "SRM-15",
+          "SRM15"
+        ],
+        "existingCardId": null,
+        "extraBoxes": [],
+        "occurrences": 1,
+        "mappedCardId": "demzref-motor-srm-15"
+      },
+      {
+        "key": "motor-srm-523",
+        "title": "РДТТ SRM-523",
+        "pages": [
+          78
+        ],
+        "category": "rocket-motors",
+        "kind": "Ракетный двигатель",
+        "box": [
+          0.67,
+          0.12,
+          0.96,
+          0.95
+        ],
+        "aliases": [
+          "SRM-523",
+          "SRM523"
+        ],
+        "existingCardId": null,
+        "extraBoxes": [],
+        "occurrences": 1,
+        "mappedCardId": "demzref-motor-srm-523"
+      },
+      {
+        "key": "motor-srm-22",
+        "title": "РДТТ SRM-22",
+        "pages": [
+          80
+        ],
+        "category": "rocket-motors",
+        "kind": "Ракетный двигатель",
+        "box": [
+          0.71,
+          0.14,
+          0.95,
+          0.95
+        ],
+        "aliases": [
+          "SRM-22",
+          "SRM22"
+        ],
+        "existingCardId": null,
+        "extraBoxes": [],
+        "occurrences": 1,
+        "mappedCardId": "demzref-motor-srm-22"
+      },
+      {
+        "key": "m121",
+        "title": "M121 — реактивный снаряд (ДЕМЗ)",
+        "pages": [
+          79
+        ],
+        "category": "rockets-recoilless",
+        "kind": "Реактивный боеприпас",
+        "box": [
+          0.71,
+          0.13,
+          0.93,
+          0.94
+        ],
+        "aliases": [
+          "M121",
+          "М121"
+        ],
+        "existingCardId": null,
+        "extraBoxes": [],
+        "occurrences": 1,
+        "mappedCardId": "demzref-m121"
+      },
+      {
+        "key": "artillery-case-122",
+        "title": "Гильза 122 мм (ДЕМЗ)",
+        "pages": [
+          81
+        ],
+        "category": "munition-components",
+        "kind": "Артиллерийская гильза",
+        "box": [
+          0.7,
+          0.28,
+          0.95,
+          0.93
+        ],
+        "aliases": [],
+        "existingCardId": null,
+        "extraBoxes": [],
+        "occurrences": 1,
+        "mappedCardId": "demzref-artillery-case-122"
+      },
+      {
+        "key": "artillery-case-152",
+        "title": "Гильза 152 мм (ДЕМЗ)",
+        "pages": [
+          82
+        ],
+        "category": "munition-components",
+        "kind": "Артиллерийская гильза",
+        "box": [
+          0.7,
+          0.28,
+          0.95,
+          0.93
+        ],
+        "aliases": [],
+        "existingCardId": null,
+        "extraBoxes": [],
+        "occurrences": 1,
+        "mappedCardId": "demzref-artillery-case-152"
+      },
+      {
+        "key": "kolibri",
+        "title": "Колибри — мобильная зарядная станция (ДЕМЗ)",
+        "pages": [
+          83
+        ],
+        "category": "weapon-components",
+        "kind": "Комплект обслуживания",
+        "box": [
+          0.64,
+          0.24,
+          0.98,
+          0.94
+        ],
+        "aliases": [
+          "Колібрі",
+          "Kolibri",
+          "Colibri"
+        ],
+        "existingCardId": null,
+        "extraBoxes": [],
+        "occurrences": 1,
+        "mappedCardId": "demzref-kolibri"
+      },
+      {
+        "key": "track-bradley",
+        "title": "Трак Bradley (ДЕМЗ)",
+        "pages": [
+          84
+        ],
+        "category": "vehicle-components",
+        "kind": "Компонент гусеничной техники",
+        "box": [
+          0.025,
+          0.16,
+          0.99,
+          0.95
+        ],
+        "aliases": [
+          "Bradley"
+        ],
+        "existingCardId": null,
+        "extraBoxes": [],
+        "occurrences": 1,
+        "mappedCardId": "demzref-track-bradley"
+      },
+      {
+        "key": "track-m113",
+        "title": "Трак M113 (ДЕМЗ)",
+        "pages": [
+          85
+        ],
+        "category": "vehicle-components",
+        "kind": "Компонент гусеничной техники",
+        "box": [
+          0.025,
+          0.16,
+          0.99,
+          0.95
+        ],
+        "aliases": [
+          "M113"
+        ],
+        "existingCardId": null,
+        "extraBoxes": [],
+        "occurrences": 1,
+        "mappedCardId": "demzref-track-m113"
+      },
+      {
+        "key": "track-m109l",
+        "title": "Трак M109L (ДЕМЗ)",
+        "pages": [
+          86
+        ],
+        "category": "vehicle-components",
+        "kind": "Компонент гусеничной техники",
+        "box": [
+          0.025,
+          0.16,
+          0.99,
+          0.95
+        ],
+        "aliases": [
+          "M109L"
+        ],
+        "existingCardId": null,
+        "extraBoxes": [],
+        "occurrences": 1,
+        "mappedCardId": "demzref-track-m109l"
+      },
+      {
+        "key": "track-mtlb",
+        "title": "Трак МТ-ЛБ (ДЕМЗ)",
+        "pages": [
+          87
+        ],
+        "category": "vehicle-components",
+        "kind": "Компонент гусеничной техники",
+        "box": [
+          0.025,
+          0.16,
+          0.99,
+          0.95
+        ],
+        "aliases": [
+          "МТ-ЛБ",
+          "MT-LB"
+        ],
+        "existingCardId": null,
+        "extraBoxes": [],
+        "occurrences": 1,
+        "mappedCardId": "demzref-track-mtlb"
+      },
+      {
+        "key": "track-krab",
+        "title": "Трак Krab (ДЕМЗ)",
+        "pages": [
+          88
+        ],
+        "category": "vehicle-components",
+        "kind": "Компонент гусеничной техники",
+        "box": [
+          0.025,
+          0.16,
+          0.99,
+          0.95
+        ],
+        "aliases": [
+          "Krab"
+        ],
+        "existingCardId": null,
+        "extraBoxes": [],
+        "occurrences": 1,
+        "mappedCardId": "demzref-track-krab"
+      }
+    ],
+    "observations": [
+      {
+        "page": 3,
+        "productKey": "mortar-hull-120",
+        "title": "Корпуса 120-мм миномётных мин (ДЕМЗ)",
+        "occurrence": 1,
+        "cardId": "demzref-mortar-hull-120"
+      },
+      {
+        "page": 3,
+        "productKey": "mortar-hull-120",
+        "title": "Корпуса 120-мм миномётных мин (ДЕМЗ)",
+        "occurrence": 2,
+        "cardId": "demzref-mortar-hull-120"
+      },
+      {
+        "page": 3,
+        "productKey": "mortar-hull-82",
+        "title": "Корпус 82-мм миномётной мины (ДЕМЗ)",
+        "occurrence": 1,
+        "cardId": "demzref-mortar-hull-82"
+      },
+      {
+        "page": 3,
+        "productKey": "mortar-hull-81",
+        "title": "Корпус 81-мм миномётной мины (ДЕМЗ)",
+        "occurrence": 1,
+        "cardId": "demzref-mortar-hull-81"
+      },
+      {
+        "page": 3,
+        "productKey": "mortar-hull-60",
+        "title": "Корпус 60-мм миномётной мины (ДЕМЗ)",
+        "occurrence": 1,
+        "cardId": "demzref-mortar-hull-60"
+      },
+      {
+        "page": 4,
+        "productKey": "shell-hull-122",
+        "title": "Корпус 122-мм осколочно-фугасного снаряда (ДЕМЗ)",
+        "occurrence": 1,
+        "cardId": "demzref-shell-hull-122"
+      },
+      {
+        "page": 4,
+        "productKey": "shell-hull-125",
+        "title": "Корпус 125-мм танкового снаряда (ДЕМЗ)",
+        "occurrence": 1,
+        "cardId": "demzref-shell-hull-125"
+      },
+      {
+        "page": 4,
+        "productKey": "shell-hull-130",
+        "title": "Корпус 130-мм осколочно-фугасного снаряда (ДЕМЗ)",
+        "occurrence": 1,
+        "cardId": "demzref-shell-hull-130"
+      },
+      {
+        "page": 4,
+        "productKey": "shell-hull-152",
+        "title": "Корпус 152-мм осколочно-фугасного снаряда (ДЕМЗ)",
+        "occurrence": 1,
+        "cardId": "demzref-shell-hull-152"
+      },
+      {
+        "page": 5,
+        "productKey": "shell-hull-m107m1",
+        "title": "Корпус 155-мм снаряда М107М1 (ДЕМЗ)",
+        "occurrence": 1,
+        "cardId": "demzref-shell-hull-m107m1"
+      },
+      {
+        "page": 5,
+        "productKey": "shell-hull-m795",
+        "title": "Корпус 155-мм снаряда М795 (ДЕМЗ)",
+        "occurrence": 1,
+        "cardId": "demzref-shell-hull-m795"
+      },
+      {
+        "page": 5,
+        "productKey": "shell-hull-ofd155",
+        "title": "Корпус 155-мм снаряда ОФД 155 (ДЕМЗ)",
+        "occurrence": 1,
+        "cardId": "demzref-shell-hull-ofd155"
+      },
+      {
+        "page": 6,
+        "productKey": "shell-hull-105",
+        "title": "Корпус 105-мм снаряда (ДЕМЗ)",
+        "occurrence": 1,
+        "cardId": "demzref-shell-hull-105"
+      },
+      {
+        "page": 6,
+        "productKey": "shell-hull-155-he-m1",
+        "title": "Корпус снаряда 155 HE M1 (ДЕМЗ)",
+        "occurrence": 1,
+        "cardId": "demzref-shell-hull-155-he-m1"
+      },
+      {
+        "page": 6,
+        "productKey": "shell-hull-l15a1",
+        "title": "Корпус снаряда L15A1 (ДЕМЗ)",
+        "occurrence": 1,
+        "cardId": "demzref-shell-hull-l15a1"
+      },
+      {
+        "page": 7,
+        "productKey": "m6",
+        "title": "М-6 — взрыватель",
+        "occurrence": 1,
+        "cardId": "ordnance-v27-m-6-vzryvatel"
+      },
+      {
+        "page": 7,
+        "productKey": "m12",
+        "title": "М-12 — взрыватель",
+        "occurrence": 1,
+        "cardId": "ordnance-v27-m-12-vzryvatel"
+      },
+      {
+        "page": 7,
+        "productKey": "mortar-case-120",
+        "title": "Гильза вышибного заряда 120-мм мины (ДЕМЗ)",
+        "occurrence": 1,
+        "cardId": "demzref-mortar-case-120"
+      },
+      {
+        "page": 7,
+        "productKey": "mortar-case-unindexed",
+        "title": "Гильза миномётного заряда без индекса (ДЕМЗ)",
+        "occurrence": 1,
+        "cardId": "demzref-mortar-case-unindexed"
+      },
+      {
+        "page": 7,
+        "productKey": "primer-m82",
+        "title": "Праймер M82 (ДЕМЗ)",
+        "occurrence": 1,
+        "cardId": "demzref-primer-m82"
+      },
+      {
+        "page": 7,
+        "productKey": "kv4",
+        "title": "Капсюльная втулка КВ-4 (ДЕМЗ)",
+        "occurrence": 1,
+        "cardId": "demzref-kv4"
+      },
+      {
+        "page": 8,
+        "productKey": "mortar-round-120",
+        "title": "120-мм миномётный выстрел (ДЕМЗ)",
+        "occurrence": 1,
+        "cardId": "demzref-mortar-round-120"
+      },
+      {
+        "page": 9,
+        "productKey": "mortar-round-82",
+        "title": "82-мм миномётный выстрел (ДЕМЗ)",
+        "occurrence": 1,
+        "cardId": "demzref-mortar-round-82"
+      },
+      {
+        "page": 10,
+        "productKey": "tm2025",
+        "title": "ТМ-2025",
+        "occurrence": 1,
+        "cardId": "eng-pdf-v7-118"
+      },
+      {
+        "page": 11,
+        "productKey": "mvch62d",
+        "title": "МВЧ-62Д",
+        "occurrence": 1,
+        "cardId": "demzref-mvch62d"
+      },
+      {
+        "page": 12,
+        "productKey": "mpem1",
+        "title": "МПЕМ-1",
+        "occurrence": 1,
+        "cardId": "demzref-mpem1"
+      },
+      {
+        "page": 7,
+        "productKey": "uzrgm2e",
+        "title": "УЗРГМ-2Е",
+        "occurrence": 1,
+        "cardId": "demzref-uzrgm2e"
+      },
+      {
+        "page": 13,
+        "productKey": "uzrgm2e",
+        "title": "УЗРГМ-2Е",
+        "occurrence": 1,
+        "cardId": "demzref-uzrgm2e"
+      },
+      {
+        "page": 14,
+        "productKey": "rgo-f1-d",
+        "title": "РГО-Ф1-Д",
+        "occurrence": 1,
+        "cardId": "demzref-rgo-f1-d"
+      },
+      {
+        "page": 15,
+        "productKey": "rgd5e",
+        "title": "РГД-5Е",
+        "occurrence": 1,
+        "cardId": "demzref-rgd5e"
+      },
+      {
+        "page": 16,
+        "productKey": "ibm-3",
+        "title": "ИБМ-3",
+        "occurrence": 1,
+        "cardId": "uavref-ibm-3"
+      },
+      {
+        "page": 17,
+        "productKey": "ibm-3",
+        "title": "ИБМ-3",
+        "occurrence": 1,
+        "cardId": "uavref-ibm-3"
+      },
+      {
+        "page": 18,
+        "productKey": "ibm-3",
+        "title": "ИБМ-3",
+        "occurrence": 1,
+        "cardId": "uavref-ibm-3"
+      },
+      {
+        "page": 19,
+        "productKey": "ibm-1",
+        "title": "ИБМ-1",
+        "occurrence": 1,
+        "cardId": "uavref-ibm-1"
+      },
+      {
+        "page": 20,
+        "productKey": "ibm-05",
+        "title": "ИБМ-0,5",
+        "occurrence": 1,
+        "cardId": "uavref-ibm-05"
+      },
+      {
+        "page": 21,
+        "productKey": "ibm-02",
+        "title": "ИБМ-0,2",
+        "occurrence": 1,
+        "cardId": "uavref-ibm-02"
+      },
+      {
+        "page": 22,
+        "productKey": "ss-02",
+        "title": "СС-0,2",
+        "occurrence": 1,
+        "cardId": "uavref-ss-02"
+      },
+      {
+        "page": 23,
+        "productKey": "ss-05",
+        "title": "СС-0,5",
+        "occurrence": 1,
+        "cardId": "uavref-ss-05"
+      },
+      {
+        "page": 30,
+        "productKey": "ss-mpp-3",
+        "title": "СС-МПП-3",
+        "occurrence": 1,
+        "cardId": "uavref-ss-mpp-3"
+      },
+      {
+        "page": 24,
+        "productKey": "mon50-2m",
+        "title": "МОН-50-2М",
+        "occurrence": 1,
+        "cardId": "demzref-mon50-2m"
+      },
+      {
+        "page": 25,
+        "productKey": "k-didlisovyk",
+        "title": "К-ДІДЛІСОВИК",
+        "occurrence": 1,
+        "cardId": "demzref-k-didlisovyk"
+      },
+      {
+        "page": 26,
+        "productKey": "hydra",
+        "title": "HYDRA",
+        "occurrence": 1,
+        "cardId": "demzref-hydra"
+      },
+      {
+        "page": 27,
+        "productKey": "babai",
+        "title": "БАБАЙ",
+        "occurrence": 1,
+        "cardId": "demzref-babai"
+      },
+      {
+        "page": 28,
+        "productKey": "didbabai",
+        "title": "ДІДБАБАЙ",
+        "occurrence": 1,
+        "cardId": "demzref-didbabai"
+      },
+      {
+        "page": 29,
+        "productKey": "mpp3",
+        "title": "МПП-3",
+        "occurrence": 1,
+        "cardId": "demzref-mpp3"
+      },
+      {
+        "page": 31,
+        "productKey": "mm82",
+        "title": "ММ-82",
+        "occurrence": 1,
+        "cardId": "demzref-mm82"
+      },
+      {
+        "page": 32,
+        "productKey": "mm120s",
+        "title": "ММ-120С",
+        "occurrence": 1,
+        "cardId": "demzref-mm120s"
+      },
+      {
+        "page": 33,
+        "productKey": "mm120s",
+        "title": "ММ-120С",
+        "occurrence": 1,
+        "cardId": "demzref-mm120s"
+      },
+      {
+        "page": 34,
+        "productKey": "mm120st",
+        "title": "ММ-120СТ",
+        "occurrence": 1,
+        "cardId": "demzref-mm120st"
+      },
+      {
+        "page": 35,
+        "productKey": "mm120st",
+        "title": "ММ-120СТ",
+        "occurrence": 1,
+        "cardId": "demzref-mm120st"
+      },
+      {
+        "page": 36,
+        "productKey": "mm120ch",
+        "title": "ММ-120Ч",
+        "occurrence": 1,
+        "cardId": "demzref-mm120ch"
+      },
+      {
+        "page": 37,
+        "productKey": "mm120ch",
+        "title": "ММ-120Ч",
+        "occurrence": 1,
+        "cardId": "demzref-mm120ch"
+      },
+      {
+        "page": 38,
+        "productKey": "ozm72ms",
+        "title": "ОЗМ-72МС",
+        "occurrence": 1,
+        "cardId": "demzref-ozm72ms"
+      },
+      {
+        "page": 39,
+        "productKey": "moa-spg",
+        "title": "МОА-СПГ",
+        "occurrence": 1,
+        "cardId": "demzref-moa-spg"
+      },
+      {
+        "page": 40,
+        "productKey": "moa-viy-900",
+        "title": "МОА-VIY-900",
+        "occurrence": 1,
+        "cardId": "demzref-moa-viy-900"
+      },
+      {
+        "page": 41,
+        "productKey": "moa-viy-900",
+        "title": "МОА-VIY-900",
+        "occurrence": 1,
+        "cardId": "demzref-moa-viy-900"
+      },
+      {
+        "page": 42,
+        "productKey": "moa-viy-400",
+        "title": "МОА-VIY-400",
+        "occurrence": 1,
+        "cardId": "demzref-moa-viy-400"
+      },
+      {
+        "page": 43,
+        "productKey": "moa-viy-400",
+        "title": "МОА-VIY-400",
+        "occurrence": 1,
+        "cardId": "demzref-moa-viy-400"
+      },
+      {
+        "page": 44,
+        "productKey": "moa-viy-120",
+        "title": "МОА-VIY-120",
+        "occurrence": 1,
+        "cardId": "demzref-moa-viy-120"
+      },
+      {
+        "page": 45,
+        "productKey": "viy-05",
+        "title": "VIY-0,5",
+        "occurrence": 1,
+        "cardId": "demzref-viy-05"
+      },
+      {
+        "page": 46,
+        "productKey": "viy-06",
+        "title": "VIY-0,6",
+        "occurrence": 1,
+        "cardId": "demzref-viy-06"
+      },
+      {
+        "page": 47,
+        "productKey": "viy-9",
+        "title": "VIY-9",
+        "occurrence": 1,
+        "cardId": "demzref-viy-9"
+      },
+      {
+        "page": 48,
+        "productKey": "holka-9000",
+        "title": "ГОЛКА 9000",
+        "occurrence": 1,
+        "cardId": "demzref-holka-9000"
+      },
+      {
+        "page": 49,
+        "productKey": "holka-9000",
+        "title": "ГОЛКА 9000",
+        "occurrence": 1,
+        "cardId": "demzref-holka-9000"
+      },
+      {
+        "page": 50,
+        "productKey": "holka-12000",
+        "title": "ГОЛКА 12000",
+        "occurrence": 1,
+        "cardId": "demzref-holka-12000"
+      },
+      {
+        "page": 51,
+        "productKey": "holka-12000",
+        "title": "ГОЛКА 12000",
+        "occurrence": 1,
+        "cardId": "demzref-holka-12000"
+      },
+      {
+        "page": 52,
+        "productKey": "holka-15000",
+        "title": "ГОЛКА 15000",
+        "occurrence": 1,
+        "cardId": "demzref-holka-15000"
+      },
+      {
+        "page": 53,
+        "productKey": "holka-15000",
+        "title": "ГОЛКА 15000",
+        "occurrence": 1,
+        "cardId": "demzref-holka-15000"
+      },
+      {
+        "page": 54,
+        "productKey": "moa-viy-600-ns",
+        "title": "МОА-VIY-600 нС",
+        "occurrence": 1,
+        "cardId": "demzref-moa-viy-600-ns"
+      },
+      {
+        "page": 55,
+        "productKey": "moa-viy-800-ns",
+        "title": "МОА-VIY-800 нС",
+        "occurrence": 1,
+        "cardId": "demzref-moa-viy-800-ns"
+      },
+      {
+        "page": 56,
+        "productKey": "moa-viy-1200-ns",
+        "title": "МОА-VIY-1200 нС",
+        "occurrence": 1,
+        "cardId": "demzref-moa-viy-1200-ns"
+      },
+      {
+        "page": 57,
+        "productKey": "moa-viy-1600-ns",
+        "title": "МОА-VIY-1600 нС",
+        "occurrence": 1,
+        "cardId": "demzref-moa-viy-1600-ns"
+      },
+      {
+        "page": 58,
+        "productKey": "moa-viy-600-s",
+        "title": "МОА-VIY-600 С",
+        "occurrence": 1,
+        "cardId": "demzref-moa-viy-600-s"
+      },
+      {
+        "page": 59,
+        "productKey": "moa-viy-800-s",
+        "title": "МОА-VIY-800 С",
+        "occurrence": 1,
+        "cardId": "demzref-moa-viy-800-s"
+      },
+      {
+        "page": 60,
+        "productKey": "moa-viy-1200-s",
+        "title": "МОА-VIY-1200 С",
+        "occurrence": 1,
+        "cardId": "demzref-moa-viy-1200-s"
+      },
+      {
+        "page": 61,
+        "productKey": "moa-viy-1600-s",
+        "title": "МОА-VIY-1600 С",
+        "occurrence": 1,
+        "cardId": "demzref-moa-viy-1600-s"
+      },
+      {
+        "page": 62,
+        "productKey": "moa-viy-600-nk",
+        "title": "МОА-VIY-600 нК",
+        "occurrence": 1,
+        "cardId": "demzref-moa-viy-600-nk"
+      },
+      {
+        "page": 63,
+        "productKey": "moa-viy-800-nk",
+        "title": "МОА-VIY-800 нК",
+        "occurrence": 1,
+        "cardId": "demzref-moa-viy-800-nk"
+      },
+      {
+        "page": 64,
+        "productKey": "moa-viy-1200-nk",
+        "title": "МОА-VIY-1200 нК",
+        "occurrence": 1,
+        "cardId": "demzref-moa-viy-1200-nk"
+      },
+      {
+        "page": 65,
+        "productKey": "moa-viy-1600-nk",
+        "title": "МОА-VIY-1600 нК",
+        "occurrence": 1,
+        "cardId": "demzref-moa-viy-1600-nk"
+      },
+      {
+        "page": 66,
+        "productKey": "moa-viy-600-k",
+        "title": "МОА-VIY-600 К",
+        "occurrence": 1,
+        "cardId": "demzref-moa-viy-600-k"
+      },
+      {
+        "page": 67,
+        "productKey": "moa-viy-800-k",
+        "title": "МОА-VIY-800 К",
+        "occurrence": 1,
+        "cardId": "demzref-moa-viy-800-k"
+      },
+      {
+        "page": 68,
+        "productKey": "moa-viy-1200-k",
+        "title": "МОА-VIY-1200 К",
+        "occurrence": 1,
+        "cardId": "demzref-moa-viy-1200-k"
+      },
+      {
+        "page": 69,
+        "productKey": "moa-viy-1600-k",
+        "title": "МОА-VIY-1600 К",
+        "occurrence": 1,
+        "cardId": "demzref-moa-viy-1600-k"
+      },
+      {
+        "page": 70,
+        "productKey": "delay-detonator",
+        "title": "Детонатор с задержкой (ДЕМЗ)",
+        "occurrence": 1,
+        "cardId": "demzref-delay-detonator"
+      },
+      {
+        "page": 71,
+        "productKey": "m119a3-hydro-accumulator",
+        "title": "Гидроаккумулятор M119 A3 (ДЕМЗ)",
+        "occurrence": 1,
+        "cardId": "demzref-m119a3-hydro-accumulator"
+      },
+      {
+        "page": 72,
+        "productKey": "m119a3-elevation-mechanism",
+        "title": "Подъёмный механизм M119 A3 (ДЕМЗ)",
+        "occurrence": 1,
+        "cardId": "demzref-m119a3-elevation-mechanism"
+      },
+      {
+        "page": 73,
+        "productKey": "m119a3-recoil-brake",
+        "title": "Тормоз отката M119 A3 (ДЕМЗ)",
+        "occurrence": 1,
+        "cardId": "demzref-m119a3-recoil-brake"
+      },
+      {
+        "page": 74,
+        "productKey": "m119a3-recuperator",
+        "title": "Накатник M119 A3 (ДЕМЗ)",
+        "occurrence": 1,
+        "cardId": "demzref-m119a3-recuperator"
+      },
+      {
+        "page": 75,
+        "productKey": "motor-srm-102",
+        "title": "РДТТ SRM-102",
+        "occurrence": 1,
+        "cardId": "demzref-motor-srm-102"
+      },
+      {
+        "page": 76,
+        "productKey": "motor-srm-109",
+        "title": "РДТТ SRM-109",
+        "occurrence": 1,
+        "cardId": "demzref-motor-srm-109"
+      },
+      {
+        "page": 77,
+        "productKey": "motor-srm-15",
+        "title": "РДТТ SRM-15",
+        "occurrence": 1,
+        "cardId": "demzref-motor-srm-15"
+      },
+      {
+        "page": 78,
+        "productKey": "motor-srm-523",
+        "title": "РДТТ SRM-523",
+        "occurrence": 1,
+        "cardId": "demzref-motor-srm-523"
+      },
+      {
+        "page": 80,
+        "productKey": "motor-srm-22",
+        "title": "РДТТ SRM-22",
+        "occurrence": 1,
+        "cardId": "demzref-motor-srm-22"
+      },
+      {
+        "page": 79,
+        "productKey": "m121",
+        "title": "M121 — реактивный снаряд (ДЕМЗ)",
+        "occurrence": 1,
+        "cardId": "demzref-m121"
+      },
+      {
+        "page": 81,
+        "productKey": "artillery-case-122",
+        "title": "Гильза 122 мм (ДЕМЗ)",
+        "occurrence": 1,
+        "cardId": "demzref-artillery-case-122"
+      },
+      {
+        "page": 82,
+        "productKey": "artillery-case-152",
+        "title": "Гильза 152 мм (ДЕМЗ)",
+        "occurrence": 1,
+        "cardId": "demzref-artillery-case-152"
+      },
+      {
+        "page": 83,
+        "productKey": "kolibri",
+        "title": "Колибри — мобильная зарядная станция (ДЕМЗ)",
+        "occurrence": 1,
+        "cardId": "demzref-kolibri"
+      },
+      {
+        "page": 84,
+        "productKey": "track-bradley",
+        "title": "Трак Bradley (ДЕМЗ)",
+        "occurrence": 1,
+        "cardId": "demzref-track-bradley"
+      },
+      {
+        "page": 85,
+        "productKey": "track-m113",
+        "title": "Трак M113 (ДЕМЗ)",
+        "occurrence": 1,
+        "cardId": "demzref-track-m113"
+      },
+      {
+        "page": 86,
+        "productKey": "track-m109l",
+        "title": "Трак M109L (ДЕМЗ)",
+        "occurrence": 1,
+        "cardId": "demzref-track-m109l"
+      },
+      {
+        "page": 87,
+        "productKey": "track-mtlb",
+        "title": "Трак МТ-ЛБ (ДЕМЗ)",
+        "occurrence": 1,
+        "cardId": "demzref-track-mtlb"
+      },
+      {
+        "page": 88,
+        "productKey": "track-krab",
+        "title": "Трак Krab (ДЕМЗ)",
+        "occurrence": 1,
+        "cardId": "demzref-track-krab"
+      }
+    ]
+  },
+  "validation": {
+    "pdfPages": 92,
+    "productPages": 86,
+    "productObservations": 103,
+    "referenceEntries": 91,
+    "newCards": 81,
+    "enrichedCards": 4,
+    "otherExistingDatabaseCardsPreserved": 1437,
+    "totalCards": 1520,
+    "newImages": 85,
+    "totalImages": 1431,
+    "newImageAssetBytes": 1593696,
+    "databaseIntegrity": "ok",
+    "foreignKeys": "ok",
+    "fts": "ok",
+    "idempotence": "ok",
+    "favoritesAndReading": "preserved",
+    "apkBuilt": false,
+    "published": false,
+    "searchRegressionTests": 9,
+    "designationSearchQueries": 233,
+    "javaFeatureTests": 4,
+    "coverageTests": 2,
+    "menuCacheTests": 3,
+    "menuImageTests": 2,
+    "androidDeviceReview": "not run; SDK not present"
+  },
+  "sources": {
+    "primaryInput": "Owner-supplied translated DEMZ catalog; exact file hash recorded",
+    "companyCountry": "https://kam.lt/en/ukraines-demz-defence-industry-company-agreed-to-build-an-ammunition-factory-in-lithuania-creating-up-to-450-jobs/",
+    "independentMON502M": "https://metis.fenixinsight.com/munition/mine/mon-50-2m",
+    "independentVerification": "Not complete for every product; catalog assertions are attributed, not upgraded to manufacturer-verified"
+  },
+  "scope": "General classification, exterior appearance, manufacturer attribution and exact designations",
+  "excludedContent": [
+    "internal cutaways",
+    "initiation circuitry",
+    "arming and handling procedures",
+    "installation and assembly instructions",
+    "release parameters",
+    "payload compatibility tables",
+    "explosive composition and performance parameters"
+  ],
+  "rights": "Source credits retained. No open redistribution licence is inferred from public availability or supplied catalog. No public release was performed."
+}

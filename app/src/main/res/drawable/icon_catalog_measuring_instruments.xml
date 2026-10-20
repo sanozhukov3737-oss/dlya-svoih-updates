@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Decorative analog-meter symbol; no circuit or measuring procedure is illustrated. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android" android:width="80dp" android:height="80dp" android:viewportWidth="80" android:viewportHeight="80">
+    <path android:pathData="M21,12 H59 Q64,12 64,17 V63 Q64,68 59,68 H21 Q16,68 16,63 V17 Q16,12 21,12 Z" android:fillColor="#7D8C5A" android:strokeColor="#27382E" android:strokeWidth="2.4" android:strokeLineJoin="round" />
+    <path android:pathData="M24,22 Q40,12 56,22 V42 H24 Z" android:fillColor="#E9DEBE" android:strokeColor="#27382E" android:strokeWidth="2.2" android:strokeLineJoin="round" />
+    <path android:pathData="M28,32 Q40,19 52,32 M31,27 L33,30 M40,24 V28 M49,27 L47,30 M40,38 L49,26" android:fillColor="#00000000" android:strokeColor="#27382E" android:strokeWidth="2" android:strokeLineCap="round" />
+    <path android:pathData="M34,56 A6,6 0 1,0 46,56 A6,6 0 1,0 34,56 Z" android:fillColor="#A7B5AE" android:strokeColor="#27382E" android:strokeWidth="2.4" />
+    <path android:pathData="M40,52 V56 M22,68 V71 M58,68 V71" android:fillColor="#00000000" android:strokeColor="#27382E" android:strokeWidth="2.4" android:strokeLineCap="round" />
+</vector>

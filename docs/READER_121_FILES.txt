@@ -1,0 +1,17 @@
+MAKE_APK.bat
+README_RU.md
+SHA256SUMS.txt
+app/build.gradle.kts
+app/src/main/assets/database/content-version.txt
+app/src/main/assets/database/guide-v29.db
+content/catalog.json
+docs/READER_121_FILES.txt
+docs/READER_151_AUDIT.json
+docs/READER_151_EXAMPLES.md
+docs/READER_UPDATE_V0_3_121.md
+tools/reader_121_curated.py
+tools/reader_121_style.py
+tools/reader_150_baseline.json
+tools/rewrite_reader_v121.py
+tools/test_reader_catalog_151.py
+tools/test_release_v042.py

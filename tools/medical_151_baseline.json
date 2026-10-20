@@ -1,0 +1,1337 @@
+[
+  {
+    "id": "first-aid-bleeding",
+    "title": "Сильное кровотечение",
+    "summary": "Большая потеря крови может быстро нарушить кровоснабжение органов.",
+    "body": "## Как распознать угрозу\n\nБольшая потеря крови может быстро нарушить кровоснабжение органов. Обильное непрерывное кровотечение, быстро промокающая одежда, бледность, холодная влажная кожа, слабость и ухудшение реакции требуют немедленного вызова помощи. Не ждите появления всех признаков и не тратьте время на определение типа повреждённого сосуда.\n\n## Первые действия\n\nПроверьте безопасность места. Попросите помощника вызвать экстренную службу; если вы один, используйте громкую связь. По возможности наденьте перчатки. Откройте доступ к ране и плотно прижмите чистую ткань или стерильную салфетку. Удерживайте постоянное прямое давление, не приподнимая материал для частых проверок. При глубоко вошедшем предмете давите вокруг него: не вытаскивайте предмет и не нажимайте на него.\n\n## Если давление не останавливает кровотечение\n\nПри угрожающем жизни кровотечении из конечности, не остановленном прямым давлением, как можно скорее примените доступный штатный жгут, если обучены его использованию; следуйте инструкции изделия и диспетчеру. Запишите время наложения, не ослабляйте жгут самостоятельно. Если не обучены или жгута нет, сразу сообщите диспетчеру, что давление не помогает, и продолжайте давление до его указаний.\n\n## До прибытия помощи\n\nПродолжайте контролировать кровотечение, укройте пострадавшего и наблюдайте за реакцией и дыханием. Сообщайте диспетчеру об ухудшении. Если человек перестал реагировать и не дышит нормально, следуйте указаниям по СЛР. Остановка наружного кровотечения не исключает внутреннего повреждения и не отменяет медицинскую оценку.\n\n## О памятке\n\nПамятка первой помощи для взрослых. При экстренной ситуации вызывайте местную службу помощи и следуйте диспетчеру. Текст требует проверки медицинским редактором и не заменяет практическое обучение.",
+    "rowid": 5,
+    "section": "MEDICINE",
+    "categoryId": "first-aid",
+    "tags": [
+      "медицина",
+      "кровотечение",
+      "первая помощь",
+      "справочная карточка"
+    ],
+    "countries": [],
+    "images": [
+      {
+        "id": "first-aid-bleeding-v20-0",
+        "localPath": "images/first-aid-bleeding-v20-0.webp",
+        "thumbnailPath": "thumbs/first-aid-bleeding-v20-0.webp",
+        "width": 1600,
+        "height": 1000,
+        "position": 0,
+        "caption": "Сильное кровотечение: авторская тематическая иллюстрация. Она обозначает тему карточки и не заменяет её текстовую инструкцию. Источник: Проект «ДЛЯ СВОИХ» — оригинальные тематические иллюстрации v0.3.19."
+      }
+    ],
+    "sources": [
+      {
+        "id": "core-src-5-sja",
+        "title": "St John Ambulance — Severe bleeding",
+        "url": "https://www.sja.org.uk/first-aid-advice/severe-bleeding/",
+        "accessedAt": "2026-09-09"
+      },
+      {
+        "id": "reference-v6-f491c25066c5602d29cc",
+        "title": "St John Ambulance — severe-bleeding",
+        "url": "https://www.sja.org.uk/first-aid-advice/severe-bleeding/",
+        "accessedAt": "2026-09-09"
+      },
+      {
+        "id": "first-aid-bleeding-v20-source-0",
+        "title": "Проект «ДЛЯ СВОИХ» — оригинальные тематические иллюстрации v0.3.19",
+        "url": null,
+        "accessedAt": "2026-09-11"
+      },
+      {
+        "id": "medical-v190-first-aid-bleeding",
+        "title": "St John Ambulance: severe-bleeding, собственная памятка, выбранные разделы",
+        "url": "https://www.sja.org.uk/first-aid-advice/severe-bleeding/",
+        "accessedAt": "2026-10-05"
+      },
+      {
+        "id": "medical-v190-extra-first-aid-bleeding",
+        "title": "Resuscitation Council UK: First Aid Guidelines 2025, Control of life-threatening bleeding",
+        "url": "https://www.resus.org.uk/professional-library/2025-resuscitation-guidelines/first-aid-guidelines",
+        "accessedAt": "2026-10-05"
+      }
+    ],
+    "contentStatus": "medical_review_required",
+    "reviewedAt": null,
+    "modelStatus": "legacy-medical_review_required",
+    "sourceGrade": "legacy",
+    "verifiedAt": null
+  },
+  {
+    "id": "first-aid-burn",
+    "title": "Термический ожог",
+    "summary": "Термический ожог возникает при воздействии горячей жидкости, пара, пламени или нагретого предмета.",
+    "body": "## Что оценивают\n\nТермический ожог возникает при воздействии горячей жидкости, пара, пламени или нагретого предмета. Видимая площадь, место повреждения и состояние человека важнее попытки самостоятельно определить «степень» ожога. Ожоги лица и шеи, затруднение дыхания, обширное или глубокое повреждение требуют срочной помощи.\n\n## Охлаждение и защита\n\nПрекратите воздействие тепла, если это безопасно, и сразу охлаждайте ожог прохладной проточной водой не менее 20 минут. Не задерживая охлаждение, снимите кольца, часы и свободную одежду возле ожога до нарастания отёка. Не отрывайте прилипшую ткань. Защищайте остальное тело от переохлаждения. После охлаждения неплотно прикройте повреждение чистой неприлипающей повязкой.\n\n## Чего избегать\n\nНе прикладывайте лёд, не смазывайте ожог маслом или кремом, не вскрывайте пузыри. Не обматывайте отекающую конечность тугой повязкой или плёнкой по окружности. При сомнении в тяжести обратитесь за медицинской помощью. Сообщите, чем и когда нанесён ожог и как долго проводилось охлаждение.\n\n## О памятке\n\nПамятка первой помощи для взрослых. При экстренной ситуации вызывайте местную службу помощи и следуйте диспетчеру. Текст требует проверки медицинским редактором и не заменяет практическое обучение.",
+    "rowid": 6,
+    "section": "MEDICINE",
+    "categoryId": "first-aid",
+    "tags": [
+      "медицина",
+      "ожог",
+      "первая помощь",
+      "справочная карточка"
+    ],
+    "countries": [],
+    "images": [
+      {
+        "id": "first-aid-burn-v20-0",
+        "localPath": "images/first-aid-burn-v20-0.webp",
+        "thumbnailPath": "thumbs/first-aid-burn-v20-0.webp",
+        "width": 1600,
+        "height": 1000,
+        "position": 0,
+        "caption": "Термический ожог: авторская тематическая иллюстрация. Она обозначает тему карточки и не заменяет её текстовую инструкцию. Источник: Проект «ДЛЯ СВОИХ» — оригинальные тематические иллюстрации v0.3.19."
+      }
+    ],
+    "sources": [
+      {
+        "id": "core-src-6-who",
+        "title": "Всемирная организация здравоохранения — Burns",
+        "url": "https://www.who.int/news-room/fact-sheets/detail/burns",
+        "accessedAt": "2026-09-09"
+      },
+      {
+        "id": "core-src-6-sja",
+        "title": "St John Ambulance — Burns and scalds",
+        "url": "https://www.sja.org.uk/first-aid-advice/burns-and-scalds/",
+        "accessedAt": "2026-09-09"
+      },
+      {
+        "id": "reference-v6-4f8a4928b0c2f5d512e6",
+        "title": "St John Ambulance — burns-and-scalds",
+        "url": "https://www.sja.org.uk/first-aid-advice/burns-and-scalds/",
+        "accessedAt": "2026-09-09"
+      },
+      {
+        "id": "reference-v6-364afa2603815bcea52e",
+        "title": "St John Ambulance — Severe burn",
+        "url": "https://www.sja.org.uk/first-aid-advice/severe-burn/",
+        "accessedAt": "2026-09-09"
+      },
+      {
+        "id": "reference-v6-fe8f00b9ed6ca9b0c6b6",
+        "title": "American Red Cross — Burns: How To Help",
+        "url": "https://www.redcross.org/take-a-class/resources/learn-first-aid/burns",
+        "accessedAt": "2026-09-09"
+      },
+      {
+        "id": "first-aid-burn-v20-source-0",
+        "title": "Проект «ДЛЯ СВОИХ» — оригинальные тематические иллюстрации v0.3.19",
+        "url": null,
+        "accessedAt": "2026-09-11"
+      },
+      {
+        "id": "medical-v190-first-aid-burn",
+        "title": "St John Ambulance: burns-and-scalds, собственная памятка, выбранные разделы",
+        "url": "https://www.sja.org.uk/first-aid-advice/burns-and-scalds/",
+        "accessedAt": "2026-10-05"
+      }
+    ],
+    "contentStatus": "medical_review_required",
+    "reviewedAt": null,
+    "modelStatus": "legacy-medical_review_required",
+    "sourceGrade": "legacy",
+    "verifiedAt": null
+  },
+  {
+    "id": "first-aid-unconscious",
+    "title": "Без сознания, но дышит нормально",
+    "summary": "Человек не отвечает на обращение, но дышит регулярно и нормально.",
+    "body": "## Когда нужна эта памятка\n\nЧеловек не отвечает на обращение, но дышит регулярно и нормально. Редкие судорожные вздохи, хрипы с длинными паузами и ненормальное дыхание не относятся к этой ситуации: при отсутствии реакции требуется помощь по алгоритму СЛР. Сразу вызовите экстренную службу по громкой связи.\n\n## Поддержание дыхания\n\nОткройте дыхательные пути и проверьте дыхание. При отсутствии травмы аккуратно переведите человека в устойчивое боковое положение: ближайшую руку расположите под прямым углом, дальнюю кисть поддерживайте у щеки, согните дальнее колено и поверните человека к себе, поддерживая голову. Слегка запрокиньте голову, чтобы дыхательные пути оставались открытыми; рот направлен вниз для оттока жидкости.\n\n## Наблюдение и травма\n\nОставайтесь рядом и проверяйте дыхание и реакцию. Не давайте воду, пищу или лекарства человеку без сознания. При травме не переводите его на бок автоматически. Но при рвоте или невозможности сохранить дыхательные пути открытыми осторожно поверните на бок, поддерживая голову и ограничивая движения шеи; с помощником делайте это согласованно. Следуйте диспетчеру: проходимость дыхательных путей имеет приоритет. Если дыхание становится ненормальным, немедленно переходите к СЛР.\n\n## О памятке\n\nПамятка первой помощи для взрослых. При экстренной ситуации вызывайте местную службу помощи и следуйте диспетчеру. Текст требует проверки медицинским редактором и не заменяет практическое обучение.",
+    "rowid": 7,
+    "section": "MEDICINE",
+    "categoryId": "first-aid",
+    "tags": [
+      "медицина",
+      "без сознания",
+      "экстренно",
+      "справочная карточка"
+    ],
+    "countries": [],
+    "images": [
+      {
+        "id": "first-aid-unconscious-v20-0",
+        "localPath": "images/first-aid-unconscious-v20-0.webp",
+        "thumbnailPath": "thumbs/first-aid-unconscious-v20-0.webp",
+        "width": 1600,
+        "height": 1000,
+        "position": 0,
+        "caption": "Без сознания, но дышит нормально: авторская тематическая иллюстрация. Она обозначает тему карточки и не заменяет её текстовую инструкцию. Источник: Проект «ДЛЯ СВОИХ» — оригинальные тематические иллюстрации v0.3.19."
+      }
+    ],
+    "sources": [
+      {
+        "id": "core-src-7-rcuk",
+        "title": "Resuscitation Council UK — First Aid Guidelines 2025",
+        "url": "https://www.resus.org.uk/professional-library/2025-resuscitation-guidelines/first-aid-guidelines",
+        "accessedAt": "2026-09-09"
+      },
+      {
+        "id": "core-src-7-sja",
+        "title": "St John Ambulance — Recovery position",
+        "url": "https://www.sja.org.uk/first-aid-advice/recovery-position/",
+        "accessedAt": "2026-09-09"
+      },
+      {
+        "id": "reference-v6-035d8803cd6ffb9abfc4",
+        "title": "St John Ambulance — recovery-position",
+        "url": "https://www.sja.org.uk/first-aid-advice/recovery-position/",
+        "accessedAt": "2026-09-09"
+      },
+      {
+        "id": "reference-v6-69a71eaeffec7075bdd6",
+        "title": "Resuscitation Council UK — First Aid Guidelines 2025",
+        "url": "https://www.resus.org.uk/professional-library/2025-resuscitation-guidelines/first-aid-guidelines",
+        "accessedAt": "2026-09-09"
+      },
+      {
+        "id": "first-aid-unconscious-v20-source-0",
+        "title": "Проект «ДЛЯ СВОИХ» — оригинальные тематические иллюстрации v0.3.19",
+        "url": null,
+        "accessedAt": "2026-09-11"
+      },
+      {
+        "id": "medical-v190-first-aid-unconscious",
+        "title": "St John Ambulance: recovery-position, собственная памятка, выбранные разделы",
+        "url": "https://www.sja.org.uk/first-aid-advice/recovery-position/",
+        "accessedAt": "2026-10-05"
+      },
+      {
+        "id": "medical-v190-extra-first-aid-unconscious",
+        "title": "Resuscitation Council UK: First Aid Guidelines 2025, Recovery position",
+        "url": "https://www.resus.org.uk/professional-library/2025-resuscitation-guidelines/first-aid-guidelines",
+        "accessedAt": "2026-10-05"
+      }
+    ],
+    "contentStatus": "medical_review_required",
+    "reviewedAt": null,
+    "modelStatus": "legacy-medical_review_required",
+    "sourceGrade": "legacy",
+    "verifiedAt": null
+  },
+  {
+    "id": "first-aid-scene-safety",
+    "title": "Безопасность места и вызов помощи",
+    "summary": "Сначала определите, безопасно ли приближаться.",
+    "body": "## Оценка обстановки\n\nСначала определите, безопасно ли приближаться. Движущийся транспорт, огонь, электричество, химическое загрязнение и другие сохраняющиеся угрозы могут привести к новым пострадавшим. Не входите в опасную зону ради осмотра. Сообщите о ней экстренным службам и дождитесь подготовленных спасателей.\n\n## Организация помощи\n\nБыстро выясните, что произошло и сколько людей пострадало. Если подойти безопасно, представьтесь, объясняйте свои действия и уважайте достоинство человека. Используйте доступные средства индивидуальной защиты. Попросите конкретного помощника вызвать службу и другого — встретить прибывающих специалистов. Сначала обращайте внимание на состояния, непосредственно угрожающие жизни.\n\n## Что сообщить диспетчеру\n\nНазовите место и ориентиры, характер события, число пострадавших, видимую опасность и номер для обратной связи. Отвечайте на вопросы и выполняйте инструкции. Громкая связь позволяет одновременно помогать и разговаривать. Не считайте, что кто-то уже вызвал помощь: проверьте это. При изменении обстановки заново оцените собственную безопасность.\n\n## О памятке\n\nПамятка первой помощи для взрослых. При экстренной ситуации вызывайте местную службу помощи и следуйте диспетчеру. Текст требует проверки медицинским редактором и не заменяет практическое обучение.",
+    "rowid": 76,
+    "section": "MEDICINE",
+    "categoryId": "first-aid",
+    "tags": [
+      "первая помощь",
+      "безопасность",
+      "экстренный вызов",
+      "справочная карточка"
+    ],
+    "countries": [],
+    "images": [
+      {
+        "id": "first-aid-scene-safety-v20-0",
+        "localPath": "images/first-aid-scene-safety-v20-0.webp",
+        "thumbnailPath": "thumbs/first-aid-scene-safety-v20-0.webp",
+        "width": 1600,
+        "height": 1000,
+        "position": 0,
+        "caption": "Безопасность места и вызов помощи: авторская тематическая иллюстрация. Она обозначает тему карточки и не заменяет её текстовую инструкцию. Источник: Проект «ДЛЯ СВОИХ» — оригинальные тематические иллюстрации v0.3.19."
+      }
+    ],
+    "sources": [
+      {
+        "id": "med-source-scene-safety",
+        "title": "Resuscitation Council UK — First Aid Guidelines 2025",
+        "url": "https://www.resus.org.uk/professional-library/2025-resuscitation-guidelines/first-aid-guidelines",
+        "accessedAt": "2026-09-09"
+      },
+      {
+        "id": "reference-v6-56de89cd22577b47d5ed",
+        "title": "St John Ambulance — duties-and-responsibilities-of-first-aiders",
+        "url": "https://www.sja.org.uk/first-aid-advice/duties-and-responsibilities-of-first-aiders/",
+        "accessedAt": "2026-09-09"
+      },
+      {
+        "id": "reference-v6-25ec0e9ff059482d7b21",
+        "title": "NHS — When to call 999",
+        "url": "https://www.nhs.uk/nhs-services/urgent-and-emergency-care-services/when-to-call-999/",
+        "accessedAt": "2026-09-09"
+      },
+      {
+        "id": "first-aid-scene-safety-v20-source-0",
+        "title": "Проект «ДЛЯ СВОИХ» — оригинальные тематические иллюстрации v0.3.19",
+        "url": null,
+        "accessedAt": "2026-09-11"
+      },
+      {
+        "id": "medical-v190-first-aid-scene-safety",
+        "title": "St John Ambulance: duties-and-responsibilities-of-first-aiders, собственная памятка, выбранные разделы",
+        "url": "https://www.sja.org.uk/first-aid-advice/duties-and-responsibilities-of-first-aiders/",
+        "accessedAt": "2026-10-05"
+      }
+    ],
+    "contentStatus": "medical_review_required",
+    "reviewedAt": null,
+    "modelStatus": "legacy-medical_review_required",
+    "sourceGrade": "legacy",
+    "verifiedAt": null
+  },
+  {
+    "id": "first-aid-primary-assessment",
+    "title": "Первичная оценка пострадавшего",
+    "summary": "Короткая проверка помогает заметить угрозы жизни раньше подробного осмотра.",
+    "body": "## Цель первичной оценки\n\nКороткая проверка помогает заметить угрозы жизни раньше подробного осмотра. Начните с безопасности, реакции и очевидного массивного кровотечения. Если кровь обильно льётся из раны, сразу начните прямое давление и вызовите помощь; при наличии помощника поручите ему давление. Если человек не реагирует, немедленно начните вызов по громкой связи и оценивайте дыхание, пока устанавливается соединение.\n\n## Дыхательные пути и дыхание\n\nОткройте дыхательные пути. Не более 10 секунд наблюдайте за движением грудной клетки, слушайте и ощущайте дыхание. Отдельные судорожные вздохи не являются нормальным дыханием. Медленное тяжёлое дыхание и необычное судорожное частое дыхание у не реагирующего человека тоже нельзя считать нормальными; при сомнении сразу следуйте диспетчеру. Если человек не реагирует и не дышит нормально, начинайте СЛР и попросите принести AED. Диспетчер поможет, если вы сомневаетесь.\n\n## Продолжение наблюдения\n\nПри нормальном дыхании продолжайте наблюдение и поддерживайте открытые дыхательные пути. Контролируйте обнаруженное кровотечение. Подробный сбор сведений не должен задерживать жизненно необходимые действия. Повторяйте оценку при изменении состояния; отсутствие ответа само по себе требует срочной помощи.\n\n## О памятке\n\nПамятка первой помощи для взрослых. При экстренной ситуации вызывайте местную службу помощи и следуйте диспетчеру. Текст требует проверки медицинским редактором и не заменяет практическое обучение.",
+    "rowid": 77,
+    "section": "MEDICINE",
+    "categoryId": "first-aid",
+    "tags": [
+      "осмотр",
+      "дыхание",
+      "сознание",
+      "ABCDE",
+      "справочная карточка"
+    ],
+    "countries": [],
+    "images": [
+      {
+        "id": "first-aid-primary-assessment-v20-0",
+        "localPath": "images/first-aid-primary-assessment-v20-0.webp",
+        "thumbnailPath": "thumbs/first-aid-primary-assessment-v20-0.webp",
+        "width": 1600,
+        "height": 1000,
+        "position": 0,
+        "caption": "Первичная оценка пострадавшего: авторская тематическая иллюстрация. Она обозначает тему карточки и не заменяет её текстовую инструкцию. Источник: Проект «ДЛЯ СВОИХ» — оригинальные тематические иллюстрации v0.3.19."
+      }
+    ],
+    "sources": [
+      {
+        "id": "med-source-primary-assessment",
+        "title": "Resuscitation Council UK — First Aid Guidelines 2025",
+        "url": "https://www.resus.org.uk/professional-library/2025-resuscitation-guidelines/first-aid-guidelines",
+        "accessedAt": "2026-09-09"
+      },
+      {
+        "id": "reference-v6-ccf20ce979ef498daeba",
+        "title": "St John Ambulance — primary-survey",
+        "url": "https://www.sja.org.uk/first-aid-advice/primary-survey/",
+        "accessedAt": "2026-09-09"
+      },
+      {
+        "id": "reference-v6-1ae69f6c52a7b36f8e0a",
+        "title": "Resuscitation Council UK — Adult Basic Life Support Guidelines 2025",
+        "url": "https://www.resus.org.uk/professional-library/2025-resuscitation-guidelines/adult-basic-life-support-guidelines",
+        "accessedAt": "2026-09-09"
+      },
+      {
+        "id": "first-aid-primary-assessment-v20-source-0",
+        "title": "Проект «ДЛЯ СВОИХ» — оригинальные тематические иллюстрации v0.3.19",
+        "url": null,
+        "accessedAt": "2026-09-11"
+      },
+      {
+        "id": "medical-v190-first-aid-primary-assessment",
+        "title": "St John Ambulance: primary-survey, собственная памятка, выбранные разделы",
+        "url": "https://www.sja.org.uk/first-aid-advice/primary-survey/",
+        "accessedAt": "2026-10-05"
+      },
+      {
+        "id": "medical-v190-extra-first-aid-primary-assessment",
+        "title": "Resuscitation Council UK: Adult BLS Guidelines 2025, Recognising cardiac arrest",
+        "url": "https://www.resus.org.uk/professional-library/2025-resuscitation-guidelines/adult-basic-life-support-guidelines",
+        "accessedAt": "2026-10-05"
+      }
+    ],
+    "contentStatus": "medical_review_required",
+    "reviewedAt": null,
+    "modelStatus": "legacy-medical_review_required",
+    "sourceGrade": "legacy",
+    "verifiedAt": null
+  },
+  {
+    "id": "first-aid-adult-cpr",
+    "title": "СЛР взрослому при отсутствии нормального дыхания",
+    "summary": "Если взрослый не реагирует, немедленно вызовите экстренную помощь по громкой связи.",
+    "body": "## Когда начинать\n\nЕсли взрослый не реагирует, немедленно вызовите экстренную помощь по громкой связи. Оценивайте дыхание, пока устанавливается соединение. При отсутствии нормального дыхания, включая редкие судорожные вздохи, начинайте СЛР. Не задерживайте помощь поиском пульса.\n\n## Надавливания и вдохи\n\nНачинайте СЛР там, где лежит человек: не переносите его с кровати на пол ради твёрдой поверхности. Основание ладони расположите в центре груди на нижней половине грудины, вторую ладонь сверху. Держите руки прямыми, плечи расположите над грудью пострадавшего. Надавливайте с частотой 100–120 в минуту и глубиной 5–6 см. Давайте груди полностью расправляться, уменьшайте паузы. Если обучены и готовы, чередуйте 30 надавливаний и 2 вдоха до видимого подъёма груди. Иначе продолжайте непрерывные надавливания.\n\n## AED и продолжение помощи\n\nПопросите помощника принести AED. Подключите его как можно раньше и следуйте подсказкам; во время анализа и разряда никто не касается человека. Продолжайте СЛР до принятия помощи специалистами, опасности для спасателя или полного истощения. При появлении осмысленных движений, открывании глаз или нормальном дыхании остановитесь для повторной оценки. Следуйте диспетчеру. Памятка относится к взрослым: для детей и младенцев алгоритмы отличаются.\n\n## О памятке\n\nПамятка первой помощи для взрослых. При экстренной ситуации вызывайте местную службу помощи и следуйте диспетчеру. Текст требует проверки медицинским редактором и не заменяет практическое обучение.",
+    "rowid": 78,
+    "section": "MEDICINE",
+    "categoryId": "first-aid",
+    "tags": [
+      "СЛР",
+      "реанимация",
+      "остановка сердца",
+      "справочная карточка"
+    ],
+    "countries": [],
+    "images": [
+      {
+        "id": "first-aid-adult-cpr-v20-0",
+        "localPath": "images/first-aid-adult-cpr-v20-0.webp",
+        "thumbnailPath": "thumbs/first-aid-adult-cpr-v20-0.webp",
+        "width": 1600,
+        "height": 1000,
+        "position": 0,
+        "caption": "СЛР взрослому при отсутствии нормального дыхания: авторская тематическая иллюстрация. Она обозначает тему карточки и не заменяет её текстовую инструкцию. Источник: Проект «ДЛЯ СВОИХ» — оригинальные тематические иллюстрации v0.3.19."
+      }
+    ],
+    "sources": [
+      {
+        "id": "med-source-adult-cpr",
+        "title": "Resuscitation Council UK — Adult Basic Life Support Guidelines 2025",
+        "url": "https://www.resus.org.uk/professional-library/2025-resuscitation-guidelines/adult-basic-life-support-guidelines",
+        "accessedAt": "2026-09-09"
+      },
+      {
+        "id": "reference-v6-bea3d192434687cc58d6",
+        "title": "Resuscitation Council UK — Adult Basic Life Support Guidelines 2025",
+        "url": "https://www.resus.org.uk/professional-library/2025-resuscitation-guidelines/adult-basic-life-support-guidelines",
+        "accessedAt": "2026-09-09"
+      },
+      {
+        "id": "reference-v6-4c496c4a2f51784d864b",
+        "title": "Resuscitation Council UK — First Aid Guidelines 2025",
+        "url": "https://www.resus.org.uk/professional-library/2025-resuscitation-guidelines/first-aid-guidelines",
+        "accessedAt": "2026-09-09"
+      },
+      {
+        "id": "first-aid-adult-cpr-v20-source-0",
+        "title": "Проект «ДЛЯ СВОИХ» — оригинальные тематические иллюстрации v0.3.19",
+        "url": null,
+        "accessedAt": "2026-09-11"
+      },
+      {
+        "id": "medical-v190-first-aid-adult-cpr",
+        "title": "Resuscitation Council UK: Adult BLS Guidelines 2025, High-quality chest compressions",
+        "url": "https://www.resus.org.uk/professional-library/2025-resuscitation-guidelines/adult-basic-life-support-guidelines",
+        "accessedAt": "2026-10-05"
+      }
+    ],
+    "contentStatus": "medical_review_required",
+    "reviewedAt": null,
+    "modelStatus": "legacy-medical_review_required",
+    "sourceGrade": "legacy",
+    "verifiedAt": null
+  },
+  {
+    "id": "first-aid-aed",
+    "title": "Автоматический наружный дефибриллятор",
+    "summary": "Автоматический наружный дефибриллятор анализирует сердечный ритм и определяет, показан ли разряд.",
+    "body": "## Что делает AED\n\nАвтоматический наружный дефибриллятор анализирует сердечный ритм и определяет, показан ли разряд. Устройство даёт голосовые и графические подсказки; специальный медицинский диплом для использования не нужен. AED применяют при отсутствии реакции и нормального дыхания вместе со СЛР и вызовом помощи.\n\n## Последовательность\n\nПопросите другого человека принести устройство, пока продолжаются надавливания. Не оставляйте пострадавшего одного ради поисков AED. Включите аппарат, обнажите грудную клетку, при необходимости быстро высушите места наклеивания. Разместите электроды строго по рисункам на устройстве или упаковке. Если помощников несколько, прерывайте надавливания только когда этого требует аппарат.\n\n## Анализ, разряд, продолжение\n\nВо время анализа ритма и разряда никто не касается человека. Выполните команду аппарата; некоторые модели подают разряд автоматически, другие требуют нажатия кнопки. После команды немедленно возобновите СЛР — также если разряд не рекомендован. Оставьте электроды на месте и продолжайте выполнять подсказки до прибытия специалистов. Сообщите бригаде, что AED использовался.\n\n## О памятке\n\nПамятка первой помощи для взрослых. При экстренной ситуации вызывайте местную службу помощи и следуйте диспетчеру. Текст требует проверки медицинским редактором и не заменяет практическое обучение.",
+    "rowid": 79,
+    "section": "MEDICINE",
+    "categoryId": "first-aid",
+    "tags": [
+      "AED",
+      "дефибриллятор",
+      "СЛР",
+      "справочная карточка"
+    ],
+    "countries": [],
+    "images": [
+      {
+        "id": "first-aid-aed-v17-0",
+        "localPath": "images/first-aid-aed-v17-0.webp",
+        "thumbnailPath": "thumbs/first-aid-aed-v17-0.webp",
+        "width": 936,
+        "height": 936,
+        "position": 0,
+        "caption": "Пример автоматического наружного дефибриллятора Mindray BeneHeart C1A: предметная фотография из каталога оборудования. Изображение иллюстрирует внешний вид прибора; памятка относится к классу АНД в целом. Источник: Дефибриллятор BeneHeart C1A - купить в Киеве и Украине | Цена, фото, характеристики, отзывы (43397)."
+      }
+    ],
+    "sources": [
+      {
+        "id": "med-source-aed",
+        "title": "St John Ambulance — How To Use A Defibrillator (AED)",
+        "url": "https://www.sja.org.uk/first-aid-advice/how-to-use-a-defibrillator/",
+        "accessedAt": "2026-09-09"
+      },
+      {
+        "id": "reference-v6-bf29db309f8cb344c569",
+        "title": "St John Ambulance — how-to-use-a-defibrillator",
+        "url": "https://www.sja.org.uk/first-aid-advice/how-to-use-a-defibrillator/",
+        "accessedAt": "2026-09-09"
+      },
+      {
+        "id": "first-aid-aed-v17-source-0",
+        "title": "Дефибриллятор BeneHeart C1A - купить в Киеве и Украине | Цена, фото, характеристики, отзывы (43397)",
+        "url": "https://med-magazin.ua/item_n25309.htm",
+        "accessedAt": "2026-09-10"
+      },
+      {
+        "id": "medical-v190-first-aid-aed",
+        "title": "Resuscitation Council UK: Adult BLS Guidelines 2025, When and how to use an AED",
+        "url": "https://www.resus.org.uk/professional-library/2025-resuscitation-guidelines/adult-basic-life-support-guidelines",
+        "accessedAt": "2026-10-05"
+      }
+    ],
+    "contentStatus": "medical_review_required",
+    "reviewedAt": null,
+    "modelStatus": "legacy-medical_review_required",
+    "sourceGrade": "legacy",
+    "verifiedAt": null
+  },
+  {
+    "id": "first-aid-adult-choking",
+    "title": "Удушье инородным телом у взрослого",
+    "summary": "Если взрослый может говорить, дышать и эффективно кашлять, поощряйте кашель и наблюдайте.",
+    "body": "## Частичная и тяжёлая непроходимость\n\nЕсли взрослый может говорить, дышать и эффективно кашлять, поощряйте кашель и наблюдайте. Не хлопайте по спине при эффективном кашле. Слабый неэффективный кашель, невозможность говорить или вдохнуть означают тяжёлую непроходимость и требуют немедленной помощи.\n\n## Действия при тяжёлом удушье\n\nНаклоните человека вперёд, поддерживая грудь. Нанесите до 5 ударов основанием ладони между лопатками, проверяя после каждого, устранена ли непроходимость. Если нет — выполните до 5 толчков в живот: кулак между пупком и нижним краем грудины, обхват второй рукой, движение внутрь и вверх. Поручите помощнику вызвать экстренную службу; если вы один, используйте громкую связь. После каждого толчка проверяйте, восстановилось ли дыхание. Продолжайте чередовать серии до 5 ударов и до 5 толчков, пока предмет не выйдет или состояние не изменится.\n\n## Если человек перестал реагировать\n\nОсторожно опустите его, оцените дыхание и при отсутствии нормального дыхания начинайте СЛР. Не проводите пальцами во рту вслепую. После толчков в живот человека должен осмотреть медработник даже при облегчении. Это памятка для взрослого; при беременности и невозможности обхватить живот нужны другие приёмы — следуйте диспетчеру.\n\n## О памятке\n\nПамятка первой помощи для взрослых. При экстренной ситуации вызывайте местную службу помощи и следуйте диспетчеру. Текст требует проверки медицинским редактором и не заменяет практическое обучение.",
+    "rowid": 80,
+    "section": "MEDICINE",
+    "categoryId": "first-aid",
+    "tags": [
+      "удушье",
+      "дыхательные пути",
+      "инородное тело",
+      "справочная карточка"
+    ],
+    "countries": [],
+    "images": [
+      {
+        "id": "first-aid-adult-choking-v18-0",
+        "localPath": "images/first-aid-adult-choking-v18-0.webp",
+        "thumbnailPath": "thumbs/first-aid-adult-choking-v18-0.webp",
+        "width": 1273,
+        "height": 1086,
+        "position": 0,
+        "caption": "Фрагмент памятки: помощь взрослому при инородном теле в дыхательных путях. Иллюстрация дополняет текст карточки; при сохраняющемся удушье нужна экстренная помощь 112 или 103. Источник: Учебно-методический комплекс по первой помощи Минздрава России, январь 2024; фрагмент предоставленного плаката."
+      }
+    ],
+    "sources": [
+      {
+        "id": "med-source-choking",
+        "title": "St John Ambulance — Choking",
+        "url": "https://www.sja.org.uk/first-aid-advice/choking/",
+        "accessedAt": "2026-09-09"
+      },
+      {
+        "id": "med-source-choking-rcuk",
+        "title": "Resuscitation Council UK — First Aid Guidelines 2025",
+        "url": "https://www.resus.org.uk/professional-library/2025-resuscitation-guidelines/first-aid-guidelines",
+        "accessedAt": "2026-09-09"
+      },
+      {
+        "id": "reference-v6-56f0e3a486578f0e365d",
+        "title": "St John Ambulance — choking",
+        "url": "https://www.sja.org.uk/first-aid-advice/choking/",
+        "accessedAt": "2026-09-09"
+      },
+      {
+        "id": "reference-v6-3f696dfc622f05263b5c",
+        "title": "Resuscitation Council UK — First Aid Guidelines 2025",
+        "url": "https://www.resus.org.uk/professional-library/2025-resuscitation-guidelines/first-aid-guidelines",
+        "accessedAt": "2026-09-09"
+      },
+      {
+        "id": "reference-v6-7efb8808701441e47281",
+        "title": "American Red Cross — Adult/Child Choking",
+        "url": "https://www.redcross.org/take-a-class/resources/learn-first-aid/adult-child-choking",
+        "accessedAt": "2026-09-09"
+      },
+      {
+        "id": "first-aid-adult-choking-v18-source-0",
+        "title": "Учебно-методический комплекс по первой помощи Минздрава России, январь 2024; фрагмент предоставленного плаката",
+        "url": null,
+        "accessedAt": "2026-09-11"
+      },
+      {
+        "id": "medical-v190-first-aid-adult-choking",
+        "title": "St John Ambulance: choking, собственная памятка, выбранные разделы",
+        "url": "https://www.sja.org.uk/first-aid-advice/choking/",
+        "accessedAt": "2026-10-05"
+      }
+    ],
+    "contentStatus": "medical_review_required",
+    "reviewedAt": null,
+    "modelStatus": "legacy-medical_review_required",
+    "sourceGrade": "legacy",
+    "verifiedAt": null
+  },
+  {
+    "id": "first-aid-shock",
+    "title": "Признаки шока после травмы",
+    "summary": "В первой помощи шок означает недостаточное кровоснабжение органов, а не только испуг.",
+    "body": "## Что означает шок\n\nВ первой помощи шок означает недостаточное кровоснабжение органов, а не только испуг. Он возможен при тяжёлой кровопотере, ожогах и других опасных состояниях. Наружной крови может не быть при внутреннем кровотечении. Ухудшение способно развиваться быстро.\n\n## Тревожные признаки\n\nБледность, холодная влажная кожа, потливость, частое поверхностное дыхание, слабость, беспокойство, спутанность, тошнота и снижение реакции требуют срочного вызова помощи. Один признак не устанавливает диагноз; оценивайте событие и общее состояние, не задерживая вызов.\n\n## Помощь до прибытия бригады\n\nУстраните доступную непосредственную причину: например, прижимайте рану при наружном кровотечении. Помогите человеку лечь, если положение переносится и травма не препятствует этому; при затруднённом дыхании следуйте диспетчеру. Укройте, успокаивайте, не давайте пищу и питьё. Не заставляйте вставать или идти. При подозрении на перелом ноги, бедра или таза не поднимайте ноги. Регулярно оценивайте дыхание и реакцию, передавайте изменения диспетчеру. При отсутствии нормального дыхания у человека без сознания нужна СЛР.\n\n## О памятке\n\nПамятка первой помощи для взрослых. При экстренной ситуации вызывайте местную службу помощи и следуйте диспетчеру. Текст требует проверки медицинским редактором и не заменяет практическое обучение.",
+    "rowid": 81,
+    "section": "MEDICINE",
+    "categoryId": "first-aid",
+    "tags": [
+      "шок",
+      "травма",
+      "кровообращение",
+      "справочная карточка"
+    ],
+    "countries": [],
+    "images": [
+      {
+        "id": "first-aid-shock-v20-0",
+        "localPath": "images/first-aid-shock-v20-0.webp",
+        "thumbnailPath": "thumbs/first-aid-shock-v20-0.webp",
+        "width": 1600,
+        "height": 1000,
+        "position": 0,
+        "caption": "Признаки шока после травмы: авторская тематическая иллюстрация. Она обозначает тему карточки и не заменяет её текстовую инструкцию. Источник: Проект «ДЛЯ СВОИХ» — оригинальные тематические иллюстрации v0.3.19."
+      }
+    ],
+    "sources": [
+      {
+        "id": "med-source-shock",
+        "title": "St John Ambulance — Shock Symptoms and First Aid",
+        "url": "https://www.sja.org.uk/first-aid-advice/shock/",
+        "accessedAt": "2026-09-09"
+      },
+      {
+        "id": "reference-v6-91dff39a856565694d8c",
+        "title": "St John Ambulance — shock",
+        "url": "https://www.sja.org.uk/first-aid-advice/shock/",
+        "accessedAt": "2026-09-09"
+      },
+      {
+        "id": "reference-v6-3c96dbf6da5dbf7ee896",
+        "title": "American Red Cross — Shock",
+        "url": "https://www.redcross.org/take-a-class/resources/learn-first-aid/shock",
+        "accessedAt": "2026-09-09"
+      },
+      {
+        "id": "first-aid-shock-v20-source-0",
+        "title": "Проект «ДЛЯ СВОИХ» — оригинальные тематические иллюстрации v0.3.19",
+        "url": null,
+        "accessedAt": "2026-09-11"
+      },
+      {
+        "id": "medical-v190-first-aid-shock",
+        "title": "St John Ambulance: shock, собственная памятка, выбранные разделы",
+        "url": "https://www.sja.org.uk/first-aid-advice/shock/",
+        "accessedAt": "2026-10-05"
+      },
+      {
+        "id": "medical-v190-extra-first-aid-shock",
+        "title": "St John Ambulance: Fractures and broken bones, ограничения положения при шоке",
+        "url": "https://www.sja.org.uk/first-aid-advice/fractures-and-broken-bones/",
+        "accessedAt": "2026-10-05"
+      }
+    ],
+    "contentStatus": "medical_review_required",
+    "reviewedAt": null,
+    "modelStatus": "legacy-medical_review_required",
+    "sourceGrade": "legacy",
+    "verifiedAt": null
+  },
+  {
+    "id": "first-aid-fracture",
+    "title": "Подозрение на перелом",
+    "summary": "Боль после травмы, припухлость, синяк, необычная форма конечности и невозможность пользоваться ею позволяют подозревать перелом.",
+    "body": "## Признаки повреждения\n\nБоль после травмы, припухлость, синяк, необычная форма конечности и невозможность пользоваться ею позволяют подозревать перелом. При открытом переломе есть рана; кость не всегда видна. Не просите двигать конечностью и не проверяйте «хруст» ради подтверждения.\n\n## Поддержка и рана\n\nПоддерживайте повреждённую часть выше и ниже места травмы в найденном положении. Используйте мягкую подкладку, чтобы уменьшить нежелательные движения. По возможности снимите кольца и часы до отёка, не причиняя дополнительной боли. При открытой ране накройте её чистой повязкой; не давите на выступающую кость и не пытайтесь вернуть её внутрь.\n\n## Медицинская помощь\n\nНе выпрямляйте деформацию и не заставляйте пострадавшего опираться на травмированную ногу. Спросите об онемении, покалывании и изменении ощущения холода или тепла в конечности; передайте ответ бригаде, не проверяя его болезненными движениями. Открытая рана, сильная деформация, повреждение крупных костей, таза или позвоночника, бледная холодная конечность и ухудшение самочувствия требуют экстренной помощи. Укройте человека и наблюдайте за дыханием и реакцией. Даже менее выраженная травма нуждается в осмотре для подтверждения диагноза.\n\n## О памятке\n\nПамятка первой помощи для взрослых. При экстренной ситуации вызывайте местную службу помощи и следуйте диспетчеру. Текст требует проверки медицинским редактором и не заменяет практическое обучение.",
+    "rowid": 82,
+    "section": "MEDICINE",
+    "categoryId": "first-aid",
+    "tags": [
+      "перелом",
+      "травма",
+      "иммобилизация",
+      "справочная карточка"
+    ],
+    "countries": [],
+    "images": [
+      {
+        "id": "first-aid-fracture-v20-0",
+        "localPath": "images/first-aid-fracture-v20-0.webp",
+        "thumbnailPath": "thumbs/first-aid-fracture-v20-0.webp",
+        "width": 1600,
+        "height": 1000,
+        "position": 0,
+        "caption": "Подозрение на перелом: авторская тематическая иллюстрация. Она обозначает тему карточки и не заменяет её текстовую инструкцию. Источник: Проект «ДЛЯ СВОИХ» — оригинальные тематические иллюстрации v0.3.19."
+      }
+    ],
+    "sources": [
+      {
+        "id": "med-source-fracture",
+        "title": "St John Ambulance — Broken Bones and Fractures",
+        "url": "https://www.sja.org.uk/first-aid-advice/fractures-and-broken-bones/",
+        "accessedAt": "2026-09-09"
+      },
+      {
+        "id": "reference-v6-253fe033fc7f3dca54f4",
+        "title": "St John Ambulance — fractures-and-broken-bones",
+        "url": "https://www.sja.org.uk/first-aid-advice/fractures-and-broken-bones/",
+        "accessedAt": "2026-09-09"
+      },
+      {
+        "id": "first-aid-fracture-v20-source-0",
+        "title": "Проект «ДЛЯ СВОИХ» — оригинальные тематические иллюстрации v0.3.19",
+        "url": null,
+        "accessedAt": "2026-09-11"
+      },
+      {
+        "id": "medical-v190-first-aid-fracture",
+        "title": "St John Ambulance: fractures-and-broken-bones, собственная памятка, выбранные разделы",
+        "url": "https://www.sja.org.uk/first-aid-advice/fractures-and-broken-bones/",
+        "accessedAt": "2026-10-05"
+      }
+    ],
+    "contentStatus": "medical_review_required",
+    "reviewedAt": null,
+    "modelStatus": "legacy-medical_review_required",
+    "sourceGrade": "legacy",
+    "verifiedAt": null
+  },
+  {
+    "id": "first-aid-head-injury",
+    "title": "Травма головы",
+    "summary": "После удара по голове наружная рана может выглядеть небольшой, а повреждение мозга проявиться позже.",
+    "body": "## Почему требуется наблюдение\n\nПосле удара по голове наружная рана может выглядеть небольшой, а повреждение мозга проявиться позже. Головная боль, головокружение, тошнота, потеря памяти о событии, спутанность и изменение поведения требуют внимания. Возможна сопутствующая травма шеи.\n\n## Когда нужна срочная помощь\n\nПотеря сознания, нарастающая сонливость, повторная рвота, судороги, ухудшение реакции или дыхания — повод немедленно вызвать экстренную службу. Сообщите также о приёме препаратов, влияющих на свёртывание крови, если это известно. Не пытайтесь доказать лёгкость травмы тем, что человек способен разговаривать.\n\n## До осмотра\n\nПомогите пострадавшему спокойно оставаться в безопасном положении, ограничьте лишние движения. Следите, отвечает ли он на простые вопросы и дышит ли нормально. При небольшой закрытой припухлости можно приложить холодный пакет через ткань. Не давите на деформированную область черепа и не вынимайте внедрённые предметы. При подозрении на травму позвоночника не поворачивайте голову. Передайте бригаде механизм травмы, время события и изменения состояния. Если после оценки специалиста разрешено наблюдение дома при лёгкой травме, рядом должен оставаться взрослый минимум первые 24 часа. Ухудшение требует повторного срочного обращения.\n\n## О памятке\n\nПамятка первой помощи для взрослых. При экстренной ситуации вызывайте местную службу помощи и следуйте диспетчеру. Текст требует проверки медицинским редактором и не заменяет практическое обучение.",
+    "rowid": 83,
+    "section": "MEDICINE",
+    "categoryId": "first-aid",
+    "tags": [
+      "голова",
+      "сотрясение",
+      "травма",
+      "справочная карточка"
+    ],
+    "countries": [],
+    "images": [
+      {
+        "id": "first-aid-head-injury-v20-0",
+        "localPath": "images/first-aid-head-injury-v20-0.webp",
+        "thumbnailPath": "thumbs/first-aid-head-injury-v20-0.webp",
+        "width": 1600,
+        "height": 1000,
+        "position": 0,
+        "caption": "Травма головы: авторская тематическая иллюстрация. Она обозначает тему карточки и не заменяет её текстовую инструкцию. Источник: Проект «ДЛЯ СВОИХ» — оригинальные тематические иллюстрации v0.3.19."
+      }
+    ],
+    "sources": [
+      {
+        "id": "med-source-head-injury",
+        "title": "St John Ambulance — Head Injury",
+        "url": "https://www.sja.org.uk/first-aid-advice/head-injury/",
+        "accessedAt": "2026-09-09"
+      },
+      {
+        "id": "reference-v6-f6d228768ae48428a8f2",
+        "title": "St John Ambulance — head-injury",
+        "url": "https://www.sja.org.uk/first-aid-advice/head-injury/",
+        "accessedAt": "2026-09-09"
+      },
+      {
+        "id": "first-aid-head-injury-v20-source-0",
+        "title": "Проект «ДЛЯ СВОИХ» — оригинальные тематические иллюстрации v0.3.19",
+        "url": null,
+        "accessedAt": "2026-09-11"
+      },
+      {
+        "id": "medical-v190-first-aid-head-injury",
+        "title": "St John Ambulance: head-injury, собственная памятка, выбранные разделы",
+        "url": "https://www.sja.org.uk/first-aid-advice/head-injury/",
+        "accessedAt": "2026-10-05"
+      },
+      {
+        "id": "medical-v190-extra-first-aid-head-injury",
+        "title": "NHS: Head injury and concussion, домашнее наблюдение после лёгкой травмы",
+        "url": "https://www.nhs.uk/conditions/head-injury-and-concussion/",
+        "accessedAt": "2026-10-05"
+      }
+    ],
+    "contentStatus": "medical_review_required",
+    "reviewedAt": null,
+    "modelStatus": "legacy-medical_review_required",
+    "sourceGrade": "legacy",
+    "verifiedAt": null
+  },
+  {
+    "id": "first-aid-spinal-injury",
+    "title": "Подозрение на травму позвоночника",
+    "summary": "Падение с высоты, удар по голове или спине, ныряние, сдавление и резкое столкновение могут сопровождаться травмой позвоночника.",
+    "body": "## Когда подозревать\n\nПадение с высоты, удар по голове или спине, ныряние, сдавление и резкое столкновение могут сопровождаться травмой позвоночника. Боль в шее или спине, слабость конечностей, онемение, покалывание и нарушение дыхания усиливают подозрение. Отсутствие этих признаков не исключает повреждение.\n\n## Ограничение движений\n\nВызовите экстренную помощь. Попросите человека не двигаться. Если он бодрствует и понимает обращение, помогите сохранять удобное устойчивое положение шеи; не заставляйте принимать другое положение. Не усаживайте и не поднимайте его ради осмотра; не выпрямляйте шею и не поворачивайте голову. При возможности поддерживайте голову с двух сторон в найденном положении, не прикладывая усилия. Не проверяйте подвижность шеи и не заставляйте человека демонстрировать движения руками или ногами.\n\n## Приоритет дыхания\n\nСохраняйте положение до прибытия подготовленных специалистов, если нет непосредственной внешней опасности. Проверяйте реакцию и нормальность дыхания. Если дыхательные пути перекрыты, возникла рвота или требуется СЛР, обеспечение дыхания имеет приоритет над неподвижностью; действуйте по указаниям диспетчера. Не изготавливайте жёсткий воротник наугад. Сообщите бригаде, что произошло и какие движения уже выполнялись.\n\n## О памятке\n\nПамятка первой помощи для взрослых. При экстренной ситуации вызывайте местную службу помощи и следуйте диспетчеру. Текст требует проверки медицинским редактором и не заменяет практическое обучение.",
+    "rowid": 84,
+    "section": "MEDICINE",
+    "categoryId": "first-aid",
+    "tags": [
+      "позвоночник",
+      "шея",
+      "травма",
+      "справочная карточка"
+    ],
+    "countries": [],
+    "images": [
+      {
+        "id": "first-aid-spinal-injury-v20-0",
+        "localPath": "images/first-aid-spinal-injury-v20-0.webp",
+        "thumbnailPath": "thumbs/first-aid-spinal-injury-v20-0.webp",
+        "width": 1600,
+        "height": 1000,
+        "position": 0,
+        "caption": "Подозрение на травму позвоночника: авторская тематическая иллюстрация. Она обозначает тему карточки и не заменяет её текстовую инструкцию. Источник: Проект «ДЛЯ СВОИХ» — оригинальные тематические иллюстрации v0.3.19."
+      }
+    ],
+    "sources": [
+      {
+        "id": "med-source-spinal-injury",
+        "title": "St John Ambulance — Spinal Injury First Aid",
+        "url": "https://www.sja.org.uk/first-aid-advice/spinal-injury/",
+        "accessedAt": "2026-09-09"
+      },
+      {
+        "id": "reference-v6-d49b17978089ae133628",
+        "title": "St John Ambulance — spinal-injury",
+        "url": "https://www.sja.org.uk/first-aid-advice/spinal-injury/",
+        "accessedAt": "2026-09-09"
+      },
+      {
+        "id": "reference-v6-01935d11c1b650934533",
+        "title": "Resuscitation Council UK — First Aid Guidelines 2025",
+        "url": "https://www.resus.org.uk/professional-library/2025-resuscitation-guidelines/first-aid-guidelines",
+        "accessedAt": "2026-09-09"
+      },
+      {
+        "id": "reference-v6-4d1aeedc960ba7d17e2b",
+        "title": "St John Ambulance — recovery-position",
+        "url": "https://www.sja.org.uk/first-aid-advice/recovery-position/",
+        "accessedAt": "2026-09-09"
+      },
+      {
+        "id": "first-aid-spinal-injury-v20-source-0",
+        "title": "Проект «ДЛЯ СВОИХ» — оригинальные тематические иллюстрации v0.3.19",
+        "url": null,
+        "accessedAt": "2026-09-11"
+      },
+      {
+        "id": "medical-v190-first-aid-spinal-injury",
+        "title": "St John Ambulance: spinal-injury, собственная памятка, выбранные разделы",
+        "url": "https://www.sja.org.uk/first-aid-advice/spinal-injury/",
+        "accessedAt": "2026-10-05"
+      },
+      {
+        "id": "medical-v190-extra-first-aid-spinal-injury",
+        "title": "Resuscitation Council UK: First Aid Guidelines 2025, Cervical spinal motion restriction",
+        "url": "https://www.resus.org.uk/professional-library/2025-resuscitation-guidelines/first-aid-guidelines",
+        "accessedAt": "2026-10-05"
+      }
+    ],
+    "contentStatus": "medical_review_required",
+    "reviewedAt": null,
+    "modelStatus": "legacy-medical_review_required",
+    "sourceGrade": "legacy",
+    "verifiedAt": null
+  },
+  {
+    "id": "first-aid-chemical-burn",
+    "title": "Химический ожог кожи",
+    "summary": "Химическое вещество на коже или одежде может продолжать повреждать ткани и попасть на того, кто помогает.",
+    "body": "## Опасность повторного контакта\n\nХимическое вещество на коже или одежде может продолжать повреждать ткани и попасть на того, кто помогает. Сначала оцените безопасность, вызовите экстренную помощь, используйте подходящие средства защиты. Не входите в загрязнённое помещение или облако неизвестного вещества.\n\n## Удаление вещества\n\nЕсли помощь безопасна, осторожно снимите загрязнённую одежду, не разнося вещество на чистую кожу. Сухой порошок сначала осторожно удалите, защищая руки. Затем промывайте поражённый участок большим количеством прохладной или чуть тёплой проточной воды. Направляйте сток в сторону от неповреждённых участков и окружающих. Не допускайте скопления загрязнённой воды возле пострадавшего. Не задерживайте начало промывания поиском противоядия. Продолжайте промывание до прибытия помощи, следуя диспетчеру и информации на упаковке вещества.\n\n## Что передать специалистам\n\nНе пытайтесь нейтрализовать кислоту щёлочью или наоборот, не наносите кремы и не растирайте кожу. Сохраните название или фотографию этикетки, только если это не требует опасного контакта. Сообщите время, длительность воздействия и уже проведённое промывание. Химический ожог нуждается в медицинской оценке, даже если сначала кажется небольшим.\n\n## О памятке\n\nПамятка первой помощи для взрослых. При экстренной ситуации вызывайте местную службу помощи и следуйте диспетчеру. Текст требует проверки медицинским редактором и не заменяет практическое обучение.",
+    "rowid": 85,
+    "section": "MEDICINE",
+    "categoryId": "first-aid",
+    "tags": [
+      "химический ожог",
+      "промывание",
+      "безопасность",
+      "справочная карточка"
+    ],
+    "countries": [],
+    "images": [
+      {
+        "id": "first-aid-chemical-burn-v20-0",
+        "localPath": "images/first-aid-chemical-burn-v20-0.webp",
+        "thumbnailPath": "thumbs/first-aid-chemical-burn-v20-0.webp",
+        "width": 1600,
+        "height": 1000,
+        "position": 0,
+        "caption": "Химический ожог кожи: авторская тематическая иллюстрация. Она обозначает тему карточки и не заменяет её текстовую инструкцию. Источник: Проект «ДЛЯ СВОИХ» — оригинальные тематические иллюстрации v0.3.19."
+      }
+    ],
+    "sources": [
+      {
+        "id": "med-source-chemical-burn",
+        "title": "World Health Organization — Burns",
+        "url": "https://www.who.int/news-room/fact-sheets/detail/burns",
+        "accessedAt": "2026-09-09"
+      },
+      {
+        "id": "med-source-chemical-burn-sja",
+        "title": "St John Ambulance — Chemical Burns (clinically reviewed 2025)",
+        "url": "https://www.sja.org.uk/first-aid-advice/chemical-burn/",
+        "accessedAt": "2026-09-09"
+      },
+      {
+        "id": "reference-v6-bf862e88d3584847fdce",
+        "title": "St John Ambulance — chemical-burn",
+        "url": "https://www.sja.org.uk/first-aid-advice/chemical-burn/",
+        "accessedAt": "2026-09-09"
+      },
+      {
+        "id": "first-aid-chemical-burn-v20-source-0",
+        "title": "Проект «ДЛЯ СВОИХ» — оригинальные тематические иллюстрации v0.3.19",
+        "url": null,
+        "accessedAt": "2026-09-11"
+      },
+      {
+        "id": "medical-v190-first-aid-chemical-burn",
+        "title": "St John Ambulance: chemical-burn, собственная памятка, выбранные разделы",
+        "url": "https://www.sja.org.uk/first-aid-advice/chemical-burn/",
+        "accessedAt": "2026-10-05"
+      }
+    ],
+    "contentStatus": "medical_review_required",
+    "reviewedAt": null,
+    "modelStatus": "legacy-medical_review_required",
+    "sourceGrade": "legacy",
+    "verifiedAt": null
+  },
+  {
+    "id": "first-aid-eye-injury",
+    "title": "Инородное тело или химикат в глазу",
+    "summary": "Раздражение поверхностной соринкой, химическое попадание и проникающая травма требуют разного подхода.",
+    "body": "## Различайте ситуации\n\nРаздражение поверхностной соринкой, химическое попадание и проникающая травма требуют разного подхода. Боль, слезотечение, светобоязнь, невозможность открыть глаз и изменение зрения — повод для медицинской оценки. Не трите глаз и не надавливайте на него.\n\n## Промывание\n\nПри химическом попадании немедленно промывайте глаз большим количеством чистой прохладной воды не менее 20 минут и организуйте срочную помощь. Наклоните голову так, чтобы загрязнённая вода не попадала в другой глаз. Поддерживайте веки открытыми без давления на глазное яблоко. Поток воды не должен быть сильным. При сильном химикате продолжайте промывание, пока ждёте медицинскую помощь; 20 минут не означают обязательного прекращения. Контактную линзу удаляйте только если она снимается легко и это не задерживает промывание. Поверхностную свободную соринку можно попытаться смыть чистой водой.\n\n## Проникающая травма\n\nНе вытаскивайте острый или внедрённый предмет, не касайтесь его и не пытайтесь исследовать рану. Попросите человека сохранять спокойствие и вызовите экстренную помощь. Не накладывайте давящую повязку. Снижение зрения, выраженная боль и сохраняющееся ощущение инородного тела требуют осмотра специалистом. Передайте сведения о веществе или механизме травмы.\n\n## О памятке\n\nПамятка первой помощи для взрослых. При экстренной ситуации вызывайте местную службу помощи и следуйте диспетчеру. Текст требует проверки медицинским редактором и не заменяет практическое обучение.",
+    "rowid": 86,
+    "section": "MEDICINE",
+    "categoryId": "first-aid",
+    "tags": [
+      "глаз",
+      "химикат",
+      "инородное тело",
+      "справочная карточка"
+    ],
+    "countries": [],
+    "images": [
+      {
+        "id": "first-aid-eye-injury-v20-0",
+        "localPath": "images/first-aid-eye-injury-v20-0.webp",
+        "thumbnailPath": "thumbs/first-aid-eye-injury-v20-0.webp",
+        "width": 1600,
+        "height": 1000,
+        "position": 0,
+        "caption": "Инородное тело или химикат в глазу: авторская тематическая иллюстрация. Она обозначает тему карточки и не заменяет её текстовую инструкцию. Источник: Проект «ДЛЯ СВОИХ» — оригинальные тематические иллюстрации v0.3.19."
+      }
+    ],
+    "sources": [
+      {
+        "id": "med-source-eye-injury",
+        "title": "St John Ambulance — Eye Injury First Aid",
+        "url": "https://www.sja.org.uk/first-aid-advice/eye-injury/",
+        "accessedAt": "2026-09-09"
+      },
+      {
+        "id": "reference-v6-34fa03dddf0c81a9ed5d",
+        "title": "St John Ambulance — eye-injury",
+        "url": "https://www.sja.org.uk/first-aid-advice/eye-injury/",
+        "accessedAt": "2026-09-09"
+      },
+      {
+        "id": "first-aid-eye-injury-v20-source-0",
+        "title": "Проект «ДЛЯ СВОИХ» — оригинальные тематические иллюстрации v0.3.19",
+        "url": null,
+        "accessedAt": "2026-09-11"
+      },
+      {
+        "id": "medical-v190-first-aid-eye-injury",
+        "title": "NHS: Eye injuries, версия страницы с медицинской проверкой 12.03.2026",
+        "url": "https://www.nhs.uk/conditions/eye-injuries/",
+        "accessedAt": "2026-10-05"
+      }
+    ],
+    "contentStatus": "medical_review_required",
+    "reviewedAt": null,
+    "modelStatus": "legacy-medical_review_required",
+    "sourceGrade": "legacy",
+    "verifiedAt": null
+  },
+  {
+    "id": "first-aid-electric-shock",
+    "title": "Поражение электрическим током",
+    "summary": "Не касайтесь человека, пока он может быть связан с источником тока.",
+    "body": "## Сначала электрическая безопасность\n\nНе касайтесь человека, пока он может быть связан с источником тока. Отключите питание штатным выключателем или автоматом, только если это можно сделать безопасно. При высоком напряжении, оборванном проводе или неизвестной обстановке не приближайтесь: необходимы аварийная служба и спасатели. Вода и металлические поверхности могут увеличить опасность.\n\n## После подтверждённого отключения\n\nВызовите экстренную помощь. Когда доступ безопасен, проверьте реакцию и нормальность дыхания. Если человек не реагирует и не дышит нормально, начинайте СЛР и используйте AED по его подсказкам. Если дышит нормально, наблюдайте за ним и учитывайте возможную травму при падении.\n\n## Даже небольшой след важен\n\nЭлектрический ожог на коже может быть небольшим, хотя повреждение глубже и возможны нарушения сердечного ритма. Не позволяйте оценивать тяжесть только по размеру наружной отметины. Охлаждайте доступный ожог водой лишь после устранения электрической опасности; не отрывайте прилипшую одежду. Передайте бригаде известные обстоятельства контакта, потерю сознания, падение и оказанную помощь.\n\n## О памятке\n\nПамятка первой помощи для взрослых. При экстренной ситуации вызывайте местную службу помощи и следуйте диспетчеру. Текст требует проверки медицинским редактором и не заменяет практическое обучение.",
+    "rowid": 87,
+    "section": "MEDICINE",
+    "categoryId": "first-aid",
+    "tags": [
+      "электротравма",
+      "ожог",
+      "СЛР",
+      "справочная карточка"
+    ],
+    "countries": [],
+    "images": [
+      {
+        "id": "first-aid-electric-shock-v20-0",
+        "localPath": "images/first-aid-electric-shock-v20-0.webp",
+        "thumbnailPath": "thumbs/first-aid-electric-shock-v20-0.webp",
+        "width": 1600,
+        "height": 1000,
+        "position": 0,
+        "caption": "Поражение электрическим током: авторская тематическая иллюстрация. Она обозначает тему карточки и не заменяет её текстовую инструкцию. Источник: Проект «ДЛЯ СВОИХ» — оригинальные тематические иллюстрации v0.3.19."
+      }
+    ],
+    "sources": [
+      {
+        "id": "med-source-electric-shock",
+        "title": "St John Ambulance — Electric Shock First Aid",
+        "url": "https://www.sja.org.uk/first-aid-advice/electrocution/",
+        "accessedAt": "2026-09-09"
+      },
+      {
+        "id": "reference-v6-0aae1f19ff3a47b6382e",
+        "title": "St John Ambulance — electrocution",
+        "url": "https://www.sja.org.uk/first-aid-advice/electrocution/",
+        "accessedAt": "2026-09-09"
+      },
+      {
+        "id": "reference-v6-7b7afd7ed55101ab823e",
+        "title": "American Red Cross — Burns: How To Help",
+        "url": "https://www.redcross.org/take-a-class/resources/learn-first-aid/burns",
+        "accessedAt": "2026-09-09"
+      },
+      {
+        "id": "first-aid-electric-shock-v20-source-0",
+        "title": "Проект «ДЛЯ СВОИХ» — оригинальные тематические иллюстрации v0.3.19",
+        "url": null,
+        "accessedAt": "2026-09-11"
+      },
+      {
+        "id": "medical-v190-first-aid-electric-shock",
+        "title": "St John Ambulance: electrocution, собственная памятка, выбранные разделы",
+        "url": "https://www.sja.org.uk/first-aid-advice/electrocution/",
+        "accessedAt": "2026-10-05"
+      }
+    ],
+    "contentStatus": "medical_review_required",
+    "reviewedAt": null,
+    "modelStatus": "legacy-medical_review_required",
+    "sourceGrade": "legacy",
+    "verifiedAt": null
+  },
+  {
+    "id": "first-aid-seizure",
+    "title": "Судорожный приступ",
+    "summary": "Заметьте время начала.",
+    "body": "## Во время судорог\n\nЗаметьте время начала. Уберите рядом твёрдые и острые предметы, подложите под голову что-то мягкое, ослабьте тесную одежду у шеи. Не удерживайте человека силой, не разжимайте челюсти и ничего не вкладывайте в рот. Не перемещайте его, если рядом нет непосредственной опасности.\n\n## После прекращения движений\n\nПроверьте реакцию и дыхание. Если человек не реагирует, но дышит нормально и нет препятствующей травмы, уложите его на бок и оставайтесь рядом. Если нормального дыхания нет, вызывайте помощь и начинайте СЛР. Пока сознание полностью не восстановилось, не давайте пищу, воду или таблетки.\n\n## Когда вызывать экстренную службу\n\nПомощь нужна при первом или неизвестном приступе, судорогах дольше 5 минут, повторении без восстановления сознания, травме или нарушении дыхания. Известная эпилепсия не отменяет вызов при этих признаках; сообщите диспетчеру о диагнозе и индивидуальном плане, если они известны. Вызовите помощь также если человек не восстанавливает реакцию после приступа. Спокойно объясните, что произошло, когда он придёт в себя; защитите его от толпы и лишнего внимания. Передайте медикам длительность приступа, повторения и изменения дыхания.\n\n## О памятке\n\nПамятка первой помощи для взрослых. При экстренной ситуации вызывайте местную службу помощи и следуйте диспетчеру. Текст требует проверки медицинским редактором и не заменяет практическое обучение.",
+    "rowid": 88,
+    "section": "MEDICINE",
+    "categoryId": "first-aid",
+    "tags": [
+      "судороги",
+      "приступ",
+      "сознание",
+      "справочная карточка"
+    ],
+    "countries": [],
+    "images": [
+      {
+        "id": "first-aid-seizure-v18-0",
+        "localPath": "images/first-aid-seizure-v18-0.webp",
+        "thumbnailPath": "thumbs/first-aid-seizure-v18-0.webp",
+        "width": 417,
+        "height": 336,
+        "position": 0,
+        "caption": "Фрагмент иллюстрации: мягкая подкладка под голову при судорожном приступе. Полный плакат не добавлен: в нём недостаточно уточнён момент поворота на бок. Источник: Памятка «Эпилепсия. Первая помощь» из предоставленного архива."
+      }
+    ],
+    "sources": [
+      {
+        "id": "med-source-seizure",
+        "title": "St John Ambulance — Seizure First Aid",
+        "url": "https://www.sja.org.uk/first-aid-advice/seizure/",
+        "accessedAt": "2026-09-09"
+      },
+      {
+        "id": "reference-v6-a6452503e794e54fd04c",
+        "title": "St John Ambulance — seizure",
+        "url": "https://www.sja.org.uk/first-aid-advice/seizure/",
+        "accessedAt": "2026-09-09"
+      },
+      {
+        "id": "first-aid-seizure-v18-source-0",
+        "title": "Памятка «Эпилепсия. Первая помощь» из предоставленного архива",
+        "url": null,
+        "accessedAt": "2026-09-11"
+      },
+      {
+        "id": "medical-v190-first-aid-seizure",
+        "title": "St John Ambulance: seizure, собственная памятка, выбранные разделы",
+        "url": "https://www.sja.org.uk/first-aid-advice/seizure/",
+        "accessedAt": "2026-10-05"
+      }
+    ],
+    "contentStatus": "medical_review_required",
+    "reviewedAt": null,
+    "modelStatus": "legacy-medical_review_required",
+    "sourceGrade": "legacy",
+    "verifiedAt": null
+  },
+  {
+    "id": "first-aid-poisoning",
+    "title": "Подозрение на отравление",
+    "summary": "Лекарства, бытовая химия, некоторые растения и другие вещества могут вызвать отравление при проглатывании.",
+    "body": "## Возможные признаки\n\nЛекарства, бытовая химия, некоторые растения и другие вещества могут вызвать отравление при проглатывании. Тошнота, рвота, боль в животе, жжение во рту, необычная сонливость, судороги и нарушение дыхания требуют срочной оценки. Отсутствие ранних симптомов не гарантирует безопасности.\n\n## Что делать\n\nСвяжитесь с экстренной службой или местным токсикологическим центром. Если человек в сознании, выясните название вещества, примерное количество и время контакта, не задерживая вызов. Сохраните упаковку для бригады, если это безопасно. Выполняйте указания специалиста и оставайтесь рядом.\n\n## Чего не делать\n\nНе вызывайте рвоту и не пытайтесь «нейтрализовать» вещество домашними средствами. Не давайте пищу, напитки или лекарства без указания специалиста. Не входите в помещение с неизвестным газом ради спасения: сообщите о загрязнении профессиональным службам. Следите за дыханием и реакцией. При отсутствии нормального дыхания у человека без сознания следуйте диспетчеру по СЛР, учитывая риск контакта с токсическим веществом.\n\n## О памятке\n\nПамятка первой помощи для взрослых. При экстренной ситуации вызывайте местную службу помощи и следуйте диспетчеру. Текст требует проверки медицинским редактором и не заменяет практическое обучение.",
+    "rowid": 89,
+    "section": "MEDICINE",
+    "categoryId": "first-aid",
+    "tags": [
+      "отравление",
+      "токсикология",
+      "экстренно",
+      "справочная карточка"
+    ],
+    "countries": [],
+    "images": [
+      {
+        "id": "first-aid-poisoning-v20-0",
+        "localPath": "images/first-aid-poisoning-v20-0.webp",
+        "thumbnailPath": "thumbs/first-aid-poisoning-v20-0.webp",
+        "width": 1600,
+        "height": 1000,
+        "position": 0,
+        "caption": "Подозрение на отравление: авторская тематическая иллюстрация. Она обозначает тему карточки и не заменяет её текстовую инструкцию. Источник: Проект «ДЛЯ СВОИХ» — оригинальные тематические иллюстрации v0.3.19."
+      }
+    ],
+    "sources": [
+      {
+        "id": "med-source-poisoning",
+        "title": "St John Ambulance — Poisoning",
+        "url": "https://www.sja.org.uk/first-aid-advice/poisoning/",
+        "accessedAt": "2026-09-09"
+      },
+      {
+        "id": "reference-v6-7c4969d45108ad3222d1",
+        "title": "St John Ambulance — poisoning",
+        "url": "https://www.sja.org.uk/first-aid-advice/poisoning/",
+        "accessedAt": "2026-09-09"
+      },
+      {
+        "id": "reference-v6-af8c37f3f046e9dcb669",
+        "title": "St John Ambulance — Carbon monoxide poisoning",
+        "url": "https://www.sja.org.uk/first-aid-advice/carbon-monoxide-poisoning/",
+        "accessedAt": "2026-09-09"
+      },
+      {
+        "id": "first-aid-poisoning-v20-source-0",
+        "title": "Проект «ДЛЯ СВОИХ» — оригинальные тематические иллюстрации v0.3.19",
+        "url": null,
+        "accessedAt": "2026-09-11"
+      },
+      {
+        "id": "medical-v190-first-aid-poisoning",
+        "title": "St John Ambulance: poisoning, собственная памятка, выбранные разделы",
+        "url": "https://www.sja.org.uk/first-aid-advice/poisoning/",
+        "accessedAt": "2026-10-05"
+      }
+    ],
+    "contentStatus": "medical_review_required",
+    "reviewedAt": null,
+    "modelStatus": "legacy-medical_review_required",
+    "sourceGrade": "legacy",
+    "verifiedAt": null
+  },
+  {
+    "id": "first-aid-heat-illness",
+    "title": "Перегрев и тепловой удар",
+    "summary": "Сильное потоотделение, жажда, слабость, головная боль и тошнота возможны при тепловом истощении.",
+    "body": "## Истощение и тепловой удар\n\nСильное потоотделение, жажда, слабость, головная боль и тошнота возможны при тепловом истощении. Спутанность, необычное поведение, судороги или потеря сознания в жаре либо после интенсивной физической нагрузки указывают на возможный тепловой удар — опасное для жизни состояние. Пот при тепловом ударе может сохраняться; сухая кожа не обязательна.\n\n## Немедленные действия\n\nПри признаках теплового удара сразу вызовите экстренную помощь и начните охлаждение. Переместите человека в прохладное затенённое место, снимите лишнюю верхнюю одежду. Смачивайте кожу прохладной водой и обдувайте, используйте прохладные влажные ткани. Не оставляйте его одного и не задерживайте вызов ради измерения температуры.\n\n## Наблюдение\n\nПри лёгких признаках перегрева и полностью сохранённом сознании предложите прохладную воду небольшими глотками. При спутанности, судорогах, нарушении глотания или потере сознания ничего не давайте через рот. Продолжайте охлаждать и наблюдать за дыханием до прибытия бригады. Ухудшение или отсутствие восстановления требует срочной медицинской оценки.\n\n## О памятке\n\nПамятка первой помощи для взрослых. При экстренной ситуации вызывайте местную службу помощи и следуйте диспетчеру. Текст требует проверки медицинским редактором и не заменяет практическое обучение.",
+    "rowid": 90,
+    "section": "MEDICINE",
+    "categoryId": "first-aid",
+    "tags": [
+      "перегрев",
+      "тепловой удар",
+      "охлаждение",
+      "справочная карточка"
+    ],
+    "countries": [],
+    "images": [
+      {
+        "id": "first-aid-heat-illness-v20-0",
+        "localPath": "images/first-aid-heat-illness-v20-0.webp",
+        "thumbnailPath": "thumbs/first-aid-heat-illness-v20-0.webp",
+        "width": 1600,
+        "height": 1000,
+        "position": 0,
+        "caption": "Перегрев и тепловой удар: авторская тематическая иллюстрация. Она обозначает тему карточки и не заменяет её текстовую инструкцию. Источник: Проект «ДЛЯ СВОИХ» — оригинальные тематические иллюстрации v0.3.19."
+      }
+    ],
+    "sources": [
+      {
+        "id": "med-source-heat",
+        "title": "CDC — About Heat and Your Health",
+        "url": "https://www.cdc.gov/heat-health/about/index.html",
+        "accessedAt": "2026-09-09"
+      },
+      {
+        "id": "med-source-heat-rcuk",
+        "title": "Resuscitation Council UK — First Aid Guidelines 2025 (heat stroke)",
+        "url": "https://www.resus.org.uk/professional-library/2025-resuscitation-guidelines/first-aid-guidelines",
+        "accessedAt": "2026-09-09"
+      },
+      {
+        "id": "reference-v6-7010db32b197fedcd9b7",
+        "title": "CDC / NIOSH — Heat-related Illnesses",
+        "url": "https://www.cdc.gov/niosh/heat-stress/about/illnesses.html",
+        "accessedAt": "2026-09-09"
+      },
+      {
+        "id": "first-aid-heat-illness-v20-source-0",
+        "title": "Проект «ДЛЯ СВОИХ» — оригинальные тематические иллюстрации v0.3.19",
+        "url": null,
+        "accessedAt": "2026-09-11"
+      },
+      {
+        "id": "medical-v190-first-aid-heat-illness",
+        "title": "CDC / NIOSH: Heat-related Illnesses, Heat stroke и Heat exhaustion",
+        "url": "https://www.cdc.gov/niosh/heat-stress/about/illnesses.html",
+        "accessedAt": "2026-10-05"
+      },
+      {
+        "id": "medical-v190-extra-first-aid-heat-illness",
+        "title": "Resuscitation Council UK: First Aid Guidelines 2025, Heat stroke",
+        "url": "https://www.resus.org.uk/professional-library/2025-resuscitation-guidelines/first-aid-guidelines",
+        "accessedAt": "2026-10-05"
+      }
+    ],
+    "contentStatus": "medical_review_required",
+    "reviewedAt": null,
+    "modelStatus": "legacy-medical_review_required",
+    "sourceGrade": "legacy",
+    "verifiedAt": null
+  },
+  {
+    "id": "first-aid-hypothermia",
+    "title": "Переохлаждение",
+    "summary": "При потере тепла температура тела может снизиться до опасного уровня, особенно на ветру и в мокрой одежде.",
+    "body": "## Как развивается переохлаждение\n\nПри потере тепла температура тела может снизиться до опасного уровня, особенно на ветру и в мокрой одежде. Озноб, холодная кожа, необычная усталость, спутанность, сонливость и замедление дыхания требуют внимания. Человек может плохо оценивать своё состояние.\n\n## Защита и согревание\n\nОрганизуйте экстренную помощь. По возможности осторожно укройте человека от ветра и холода, замените мокрую одежду сухой. Изолируйте от холодной земли, укутайте тело и голову, сохраняя свободное дыхание. Обращайтесь бережно, не заставляйте активно двигаться. Защищайте от холода и себя.\n\n## До прибытия помощи\n\nПолностью бодрствующему человеку, который нормально глотает, можно предложить тёплый безалкогольный напиток. При сонливости или нарушении сознания ничего не давайте через рот. Не используйте алкоголь, прямой сильный нагрев, огонь или горячую грелку у кожи: возможны ожоги. Не растирайте конечности. Оставайтесь рядом и следите за дыханием и реакцией. Если нормальное дыхание отсутствует, следуйте диспетчеру по СЛР.\n\n## О памятке\n\nПамятка первой помощи для взрослых. При экстренной ситуации вызывайте местную службу помощи и следуйте диспетчеру. Текст требует проверки медицинским редактором и не заменяет практическое обучение.",
+    "rowid": 91,
+    "section": "MEDICINE",
+    "categoryId": "first-aid",
+    "tags": [
+      "переохлаждение",
+      "холод",
+      "согревание",
+      "справочная карточка"
+    ],
+    "countries": [],
+    "images": [
+      {
+        "id": "first-aid-hypothermia-v20-0",
+        "localPath": "images/first-aid-hypothermia-v20-0.webp",
+        "thumbnailPath": "thumbs/first-aid-hypothermia-v20-0.webp",
+        "width": 1600,
+        "height": 1000,
+        "position": 0,
+        "caption": "Переохлаждение: авторская тематическая иллюстрация. Она обозначает тему карточки и не заменяет её текстовую инструкцию. Источник: Проект «ДЛЯ СВОИХ» — оригинальные тематические иллюстрации v0.3.19."
+      }
+    ],
+    "sources": [
+      {
+        "id": "med-source-hypothermia",
+        "title": "CDC — Preventing Hypothermia",
+        "url": "https://www.cdc.gov/winter-weather/prevention/index.html",
+        "accessedAt": "2026-09-09"
+      },
+      {
+        "id": "reference-v6-ca27fb34941cb800e821",
+        "title": "St John Ambulance — hypothermia",
+        "url": "https://www.sja.org.uk/first-aid-advice/hypothermia/",
+        "accessedAt": "2026-09-09"
+      },
+      {
+        "id": "reference-v6-cebe1a082ccb349aed90",
+        "title": "NHS — Hypothermia",
+        "url": "https://www.nhs.uk/conditions/hypothermia/",
+        "accessedAt": "2026-09-09"
+      },
+      {
+        "id": "first-aid-hypothermia-v20-source-0",
+        "title": "Проект «ДЛЯ СВОИХ» — оригинальные тематические иллюстрации v0.3.19",
+        "url": null,
+        "accessedAt": "2026-09-11"
+      },
+      {
+        "id": "medical-v190-first-aid-hypothermia",
+        "title": "St John Ambulance: hypothermia, собственная памятка, выбранные разделы",
+        "url": "https://www.sja.org.uk/first-aid-advice/hypothermia/",
+        "accessedAt": "2026-10-05"
+      }
+    ],
+    "contentStatus": "medical_review_required",
+    "reviewedAt": null,
+    "modelStatus": "legacy-medical_review_required",
+    "sourceGrade": "legacy",
+    "verifiedAt": null
+  },
+  {
+    "id": "first-aid-handover",
+    "title": "Наблюдение и передача пострадавшего",
+    "summary": "При угрозе жизни звоните в местную экстренную службу сразу.",
+    "body": "## Вызов без лишней задержки\n\nПри угрозе жизни звоните в местную экстренную службу сразу. Сначала сообщите точное место, ориентиры, что произошло и номер для обратной связи. Отвечайте на уточнения; вопросы диспетчера помогают определить необходимую помощь. Не завершайте разговор раньше его указания.\n\n## Сведения о человеке\n\nСообщите, реагирует ли пострадавший, нормально ли дышит, есть ли сильное кровотечение. Если известно, назовите возраст, заболевания, принимаемые лекарства и аллергии. Отделяйте наблюдения от предположений: «не отвечает с такого-то времени» полезнее неподтверждённого диагноза. Не задерживайте помощь ради поиска документов.\n\n## Передача прибывшей бригаде\n\nКратко опишите время и механизм события, изменения состояния и выполненные действия. Укажите время начала СЛР, использования AED, остановки кровотечения или охлаждения, если они проводились. Передайте упаковки возможных токсичных веществ без опасного контакта с ними. Попросите помощника встретить бригаду и обеспечить доступ. Если состояние меняется до прибытия, повторно сообщите диспетчеру и следуйте его указаниям. Также сообщите об изменении места ожидания, чтобы помощь направили по верному адресу.\n\n## О памятке\n\nПамятка первой помощи для взрослых. При экстренной ситуации вызывайте местную службу помощи и следуйте диспетчеру. Текст требует проверки медицинским редактором и не заменяет практическое обучение.",
+    "rowid": 92,
+    "section": "MEDICINE",
+    "categoryId": "first-aid",
+    "tags": [
+      "наблюдение",
+      "передача",
+      "экстренная помощь",
+      "справочная карточка"
+    ],
+    "countries": [],
+    "images": [
+      {
+        "id": "first-aid-handover-v20-0",
+        "localPath": "images/first-aid-handover-v20-0.webp",
+        "thumbnailPath": "thumbs/first-aid-handover-v20-0.webp",
+        "width": 1600,
+        "height": 1000,
+        "position": 0,
+        "caption": "Наблюдение и передача пострадавшего: авторская тематическая иллюстрация. Она обозначает тему карточки и не заменяет её текстовую инструкцию. Источник: Проект «ДЛЯ СВОИХ» — оригинальные тематические иллюстрации v0.3.19."
+      }
+    ],
+    "sources": [
+      {
+        "id": "med-source-handover",
+        "title": "Resuscitation Council UK — First Aid Guidelines 2025",
+        "url": "https://www.resus.org.uk/professional-library/2025-resuscitation-guidelines/first-aid-guidelines",
+        "accessedAt": "2026-09-09"
+      },
+      {
+        "id": "reference-v6-9be9e64ca29b476f1cdd",
+        "title": "NHS — When to call 999",
+        "url": "https://www.nhs.uk/nhs-services/urgent-and-emergency-care-services/when-to-call-999/",
+        "accessedAt": "2026-09-09"
+      },
+      {
+        "id": "reference-v6-e3748eb6432c20149b26",
+        "title": "East of England Ambulance Service — Using 999",
+        "url": "https://www.eastamb.nhs.uk/your-service/using-999",
+        "accessedAt": "2026-09-09"
+      },
+      {
+        "id": "reference-v6-c2442f94755cd3b4225c",
+        "title": "St John Ambulance — Secondary survey",
+        "url": "https://www.sja.org.uk/first-aid-advice/secondary-survey/",
+        "accessedAt": "2026-09-09"
+      },
+      {
+        "id": "first-aid-handover-v20-source-0",
+        "title": "Проект «ДЛЯ СВОИХ» — оригинальные тематические иллюстрации v0.3.19",
+        "url": null,
+        "accessedAt": "2026-09-11"
+      },
+      {
+        "id": "medical-v190-first-aid-handover",
+        "title": "NHS: When to call 999, сведения для диспетчера и прибывающей бригады",
+        "url": "https://www.nhs.uk/nhs-services/urgent-and-emergency-care-services/when-to-call-999/",
+        "accessedAt": "2026-10-05"
+      },
+      {
+        "id": "medical-v190-extra-first-aid-handover",
+        "title": "St John Ambulance: Secondary survey, сбор известных сведений",
+        "url": "https://www.sja.org.uk/first-aid-advice/secondary-survey/",
+        "accessedAt": "2026-10-05"
+      }
+    ],
+    "contentStatus": "medical_review_required",
+    "reviewedAt": null,
+    "modelStatus": "legacy-medical_review_required",
+    "sourceGrade": "legacy",
+    "verifiedAt": null
+  }
+]

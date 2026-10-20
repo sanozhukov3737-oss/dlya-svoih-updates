@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Decorative equipment-case symbol; no operating controls or wiring are specified. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android" android:width="80dp" android:height="80dp" android:viewportWidth="80" android:viewportHeight="80">
+    <path android:pathData="M29,25 V18 Q29,13 34,13 H46 Q51,13 51,18 V25" android:fillColor="#00000000" android:strokeColor="#27382E" android:strokeWidth="4" android:strokeLineJoin="round" />
+    <path android:pathData="M20,25 H59 Q64,25 64,30 V62 Q64,67 59,67 H20 Q15,67 15,62 V30 Q15,25 20,25 Z" android:fillColor="#7D8C5A" android:strokeColor="#27382E" android:strokeWidth="2.4" android:strokeLineJoin="round" />
+    <path android:pathData="M16,34 H63 M25,35 V65 M55,35 V65" android:fillColor="#00000000" android:strokeColor="#27382E" android:strokeWidth="2.4" />
+    <path android:pathData="M33,42 H47 V53 H33 Z" android:fillColor="#E9DEBE" android:strokeColor="#27382E" android:strokeWidth="2" android:strokeLineJoin="round" />
+    <path android:pathData="M21,25 V31 M58,25 V31 M22,67 V70 M57,67 V70" android:fillColor="#00000000" android:strokeColor="#27382E" android:strokeWidth="3" android:strokeLineCap="round" />
+</vector>

@@ -1,0 +1,84 @@
+{
+  "sourceFilename": "3_0_Иностранные_БП,_СВ,_ВВ_без_фоновых_ссылок(1).pdf",
+  "sourceSha256": "660e24db5695c91bc5e4e6654db681aaace3230874d1ac0ea078048049dd19ab",
+  "reviewedAt": "2026-10-06",
+  "baselineCards": 1287,
+  "addedCards": 6,
+  "totalCards": 1293,
+  "contentVersion": 148,
+  "items": [
+    {
+      "id": "ref-v211-m147",
+      "page": 21,
+      "crop": [
+        60,
+        145,
+        343,
+        530
+      ],
+      "width": 566,
+      "height": 770
+    },
+    {
+      "id": "ref-v211-m112",
+      "page": 33,
+      "crop": [
+        25,
+        155,
+        524,
+        416
+      ],
+      "width": 998,
+      "height": 522
+    },
+    {
+      "id": "ref-v211-m5-m5a1",
+      "page": 35,
+      "crop": [
+        18,
+        166,
+        286,
+        430
+      ],
+      "width": 536,
+      "height": 528
+    },
+    {
+      "id": "ref-v211-primasheet",
+      "page": 36,
+      "crop": [
+        28,
+        151,
+        432,
+        530
+      ],
+      "width": 808,
+      "height": 758
+    },
+    {
+      "id": "ref-v211-hexomax",
+      "page": 37,
+      "crop": [
+        20,
+        155,
+        475,
+        465
+      ],
+      "width": 910,
+      "height": 620
+    },
+    {
+      "id": "ref-v211-kemix-b",
+      "page": 42,
+      "crop": [
+        14,
+        151,
+        495,
+        510
+      ],
+      "width": 962,
+      "height": 718
+    }
+  ],
+  "independentVerification": false
+}

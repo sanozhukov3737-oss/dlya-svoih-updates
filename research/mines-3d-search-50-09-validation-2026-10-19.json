@@ -1,0 +1,23 @@
+{
+  "checkedAt": "2026-10-19",
+  "cardsReviewed": 50,
+  "htmlRows": 50,
+  "sourceLinks": 9,
+  "completedCardCount": 450,
+  "remainingCards": 94,
+  "glbFiles": 9,
+  "newGlbFiles": 1,
+  "newExactCardMappings": 0,
+  "unidentifiedReserveFiles": 1,
+  "unchangedProtectedFiles": 23,
+  "newGlbBytes": 1614392,
+  "newGlbSha256": "ef22499be13543bd9895b437f785af57523d6b1ff099bcb24138e88113056582",
+  "newGlbExternalResources": false,
+  "newGlbSourceBytesUnchanged": true,
+  "newGlbAndroidRenderChecked": false,
+  "zipCrcAndAllFileHashes": "passed",
+  "progressAndQueue": "passed",
+  "reportBytes": 209673,
+  "batchBytes": 44758974,
+  "batchSha256": "e1560419fc82aa6229dc46b9c355898900c9f3e30c1ebcea36da4567b6f402f8"
+}

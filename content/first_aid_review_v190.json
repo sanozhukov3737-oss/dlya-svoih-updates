@@ -1,0 +1,357 @@
+{
+  "medical_reviews": {
+    "first-aid-bleeding": {
+      "replacements": [
+        [
+          "## До прибытия помощи",
+          "## Если давление не останавливает кровотечение\n\nПри угрожающем жизни кровотечении из конечности, не остановленном прямым давлением, как можно скорее примените доступный штатный жгут, если обучены его использованию; следуйте инструкции изделия и диспетчеру. Запишите время наложения, не ослабляйте жгут самостоятельно. Если не обучены или жгута нет, сразу сообщите диспетчеру, что давление не помогает, и продолжайте давление до его указаний.\n\n## До прибытия помощи"
+        ]
+      ],
+      "note": "Добавлен переход от неэффективного прямого давления к помощи со штатным жгутом; сохранены пределы обучения и помощь диспетчера.",
+      "sources": [
+        {
+          "id": "medical-v190-first-aid-bleeding",
+          "title": "St John Ambulance: severe-bleeding, собственная памятка, выбранные разделы",
+          "url": "https://www.sja.org.uk/first-aid-advice/severe-bleeding/",
+          "accessedAt": "2026-10-05"
+        },
+        {
+          "id": "medical-v190-extra-first-aid-bleeding",
+          "title": "Resuscitation Council UK: First Aid Guidelines 2025, Control of life-threatening bleeding",
+          "url": "https://www.resus.org.uk/professional-library/2025-resuscitation-guidelines/first-aid-guidelines",
+          "accessedAt": "2026-10-05"
+        }
+      ]
+    },
+    "first-aid-burn": {
+      "replacements": [],
+      "note": "Сверены начало охлаждения, ранее записанные 20 минут, снятие свободных вещей и отсутствие отрывания прилипшей ткани. Новые числовые параметры не добавлены.",
+      "sources": [
+        {
+          "id": "medical-v190-first-aid-burn",
+          "title": "St John Ambulance: burns-and-scalds, собственная памятка, выбранные разделы",
+          "url": "https://www.sja.org.uk/first-aid-advice/burns-and-scalds/",
+          "accessedAt": "2026-10-05"
+        }
+      ]
+    },
+    "first-aid-unconscious": {
+      "replacements": [],
+      "note": "Сверено боковое положение при сохранённом нормальном дыхании и приоритет открытых дыхательных путей; травма остаётся отдельным условием.",
+      "sources": [
+        {
+          "id": "medical-v190-first-aid-unconscious",
+          "title": "St John Ambulance: recovery-position, собственная памятка, выбранные разделы",
+          "url": "https://www.sja.org.uk/first-aid-advice/recovery-position/",
+          "accessedAt": "2026-10-05"
+        },
+        {
+          "id": "medical-v190-extra-first-aid-unconscious",
+          "title": "Resuscitation Council UK: First Aid Guidelines 2025, Recovery position",
+          "url": "https://www.resus.org.uk/professional-library/2025-resuscitation-guidelines/first-aid-guidelines",
+          "accessedAt": "2026-10-05"
+        }
+      ]
+    },
+    "first-aid-scene-safety": {
+      "replacements": [],
+      "note": "Сверены защита помогающего, объяснение действий, достоинство пострадавшего и приоритет угроз жизни; британские номера не назначены всем регионам.",
+      "sources": [
+        {
+          "id": "medical-v190-first-aid-scene-safety",
+          "title": "St John Ambulance: duties-and-responsibilities-of-first-aiders, собственная памятка, выбранные разделы",
+          "url": "https://www.sja.org.uk/first-aid-advice/duties-and-responsibilities-of-first-aiders/",
+          "accessedAt": "2026-10-05"
+        }
+      ]
+    },
+    "first-aid-primary-assessment": {
+      "replacements": [
+        [
+          "Отдельные судорожные вздохи не являются нормальным дыханием.",
+          "Отдельные судорожные вздохи не являются нормальным дыханием. Медленное тяжёлое дыхание и необычное судорожное частое дыхание у не реагирующего человека тоже нельзя считать нормальными; при сомнении сразу следуйте диспетчеру."
+        ]
+      ],
+      "note": "Уточнено, что ненормальное дыхание не ограничивается редкими отдельными вздохами. Прежний предел проверки дыхания сохранён.",
+      "sources": [
+        {
+          "id": "medical-v190-first-aid-primary-assessment",
+          "title": "St John Ambulance: primary-survey, собственная памятка, выбранные разделы",
+          "url": "https://www.sja.org.uk/first-aid-advice/primary-survey/",
+          "accessedAt": "2026-10-05"
+        },
+        {
+          "id": "medical-v190-extra-first-aid-primary-assessment",
+          "title": "Resuscitation Council UK: Adult BLS Guidelines 2025, Recognising cardiac arrest",
+          "url": "https://www.resus.org.uk/professional-library/2025-resuscitation-guidelines/adult-basic-life-support-guidelines",
+          "accessedAt": "2026-10-05"
+        }
+      ]
+    },
+    "first-aid-adult-cpr": {
+      "replacements": [
+        [
+          "вторую ладонь сверху.",
+          "вторую ладонь сверху. Держите руки прямыми, плечи расположите над грудью пострадавшего."
+        ]
+      ],
+      "note": "Добавлено положение рук и плеч при надавливаниях. Прежние 100–120 в минуту, 5–6 см и 30:2 сохранены и повторно сверены, но новыми числами не объявлены.",
+      "sources": [
+        {
+          "id": "medical-v190-first-aid-adult-cpr",
+          "title": "Resuscitation Council UK: Adult BLS Guidelines 2025, High-quality chest compressions",
+          "url": "https://www.resus.org.uk/professional-library/2025-resuscitation-guidelines/adult-basic-life-support-guidelines",
+          "accessedAt": "2026-10-05"
+        }
+      ]
+    },
+    "first-aid-aed": {
+      "replacements": [],
+      "note": "Сверены доступность AED для неспециалиста, положение электродов по устройству, отсутствие контакта при анализе и немедленное продолжение СЛР после команды.",
+      "sources": [
+        {
+          "id": "medical-v190-first-aid-aed",
+          "title": "Resuscitation Council UK: Adult BLS Guidelines 2025, When and how to use an AED",
+          "url": "https://www.resus.org.uk/professional-library/2025-resuscitation-guidelines/adult-basic-life-support-guidelines",
+          "accessedAt": "2026-10-05"
+        }
+      ]
+    },
+    "first-aid-adult-choking": {
+      "replacements": [
+        [
+          "Продолжайте чередовать серии до 5 ударов и до 5 толчков, пока предмет не выйдет или состояние не изменится.",
+          "После каждого толчка проверяйте, восстановилось ли дыхание. Продолжайте чередовать серии до 5 ударов и до 5 толчков, пока предмет не выйдет или состояние не изменится."
+        ]
+      ],
+      "note": "Добавлена повторная оценка после каждого толчка; прежние серии до пяти и ограничения для отдельных ситуаций сохранены.",
+      "sources": [
+        {
+          "id": "medical-v190-first-aid-adult-choking",
+          "title": "St John Ambulance: choking, собственная памятка, выбранные разделы",
+          "url": "https://www.sja.org.uk/first-aid-advice/choking/",
+          "accessedAt": "2026-10-05"
+        }
+      ]
+    },
+    "first-aid-shock": {
+      "replacements": [
+        [
+          "Не заставляйте вставать или идти.",
+          "Не заставляйте вставать или идти. При подозрении на перелом ноги, бедра или таза не поднимайте ноги."
+        ]
+      ],
+      "note": "Явно указан запрет подъёма ног при подозреваемых переломах; положение пострадавшего по-прежнему зависит от травмы и дыхания.",
+      "sources": [
+        {
+          "id": "medical-v190-first-aid-shock",
+          "title": "St John Ambulance: shock, собственная памятка, выбранные разделы",
+          "url": "https://www.sja.org.uk/first-aid-advice/shock/",
+          "accessedAt": "2026-10-05"
+        },
+        {
+          "id": "medical-v190-extra-first-aid-shock",
+          "title": "St John Ambulance: Fractures and broken bones, ограничения положения при шоке",
+          "url": "https://www.sja.org.uk/first-aid-advice/fractures-and-broken-bones/",
+          "accessedAt": "2026-10-05"
+        }
+      ]
+    },
+    "first-aid-fracture": {
+      "replacements": [
+        [
+          "Не выпрямляйте деформацию и не заставляйте пострадавшего опираться на травмированную ногу.",
+          "Не выпрямляйте деформацию и не заставляйте пострадавшего опираться на травмированную ногу. Спросите об онемении, покалывании и изменении ощущения холода или тепла в конечности; передайте ответ бригаде, не проверяя его болезненными движениями."
+        ]
+      ],
+      "note": "Добавлен сбор сведений об изменившейся чувствительности без двигательных проб; поддержка и защита открытой раны сохранены.",
+      "sources": [
+        {
+          "id": "medical-v190-first-aid-fracture",
+          "title": "St John Ambulance: fractures-and-broken-bones, собственная памятка, выбранные разделы",
+          "url": "https://www.sja.org.uk/first-aid-advice/fractures-and-broken-bones/",
+          "accessedAt": "2026-10-05"
+        }
+      ]
+    },
+    "first-aid-head-injury": {
+      "replacements": [
+        [
+          "Передайте бригаде механизм травмы, время события и изменения состояния.",
+          "Передайте бригаде механизм травмы, время события и изменения состояния. Если после оценки специалиста разрешено наблюдение дома при лёгкой травме, рядом должен оставаться взрослый минимум первые 24 часа. Ухудшение требует повторного срочного обращения."
+        ]
+      ],
+      "note": "Добавлено наблюдение взрослым в первые 24 часа при разрешённом домашнем наблюдении; это не замена срочной оценки тревожных признаков.",
+      "sources": [
+        {
+          "id": "medical-v190-first-aid-head-injury",
+          "title": "St John Ambulance: head-injury, собственная памятка, выбранные разделы",
+          "url": "https://www.sja.org.uk/first-aid-advice/head-injury/",
+          "accessedAt": "2026-10-05"
+        },
+        {
+          "id": "medical-v190-extra-first-aid-head-injury",
+          "title": "NHS: Head injury and concussion, домашнее наблюдение после лёгкой травмы",
+          "url": "https://www.nhs.uk/conditions/head-injury-and-concussion/",
+          "accessedAt": "2026-10-05"
+        }
+      ]
+    },
+    "first-aid-spinal-injury": {
+      "replacements": [
+        [
+          "Попросите человека не двигаться.",
+          "Попросите человека не двигаться. Если он бодрствует и понимает обращение, помогите сохранять удобное устойчивое положение шеи; не заставляйте принимать другое положение."
+        ]
+      ],
+      "note": "Уточнено удобное устойчивое положение шеи у бодрствующего человека без принудительного изменения положения; приоритет дыхания сохранён.",
+      "sources": [
+        {
+          "id": "medical-v190-first-aid-spinal-injury",
+          "title": "St John Ambulance: spinal-injury, собственная памятка, выбранные разделы",
+          "url": "https://www.sja.org.uk/first-aid-advice/spinal-injury/",
+          "accessedAt": "2026-10-05"
+        },
+        {
+          "id": "medical-v190-extra-first-aid-spinal-injury",
+          "title": "Resuscitation Council UK: First Aid Guidelines 2025, Cervical spinal motion restriction",
+          "url": "https://www.resus.org.uk/professional-library/2025-resuscitation-guidelines/first-aid-guidelines",
+          "accessedAt": "2026-10-05"
+        }
+      ]
+    },
+    "first-aid-chemical-burn": {
+      "replacements": [
+        [
+          "Продолжайте промывание до прибытия помощи, следуя диспетчеру и информации на упаковке вещества.",
+          "Не допускайте скопления загрязнённой воды возле пострадавшего. Не задерживайте начало промывания поиском противоядия. Продолжайте промывание до прибытия помощи, следуя диспетчеру и информации на упаковке вещества."
+        ]
+      ],
+      "note": "Добавлены отсутствие задержки ради противоядия и предотвращение скопления загрязнённой воды. Прежние удаление порошка и отсутствие самостоятельной нейтрализации сохранены.",
+      "sources": [
+        {
+          "id": "medical-v190-first-aid-chemical-burn",
+          "title": "St John Ambulance: chemical-burn, собственная памятка, выбранные разделы",
+          "url": "https://www.sja.org.uk/first-aid-advice/chemical-burn/",
+          "accessedAt": "2026-10-05"
+        }
+      ]
+    },
+    "first-aid-eye-injury": {
+      "replacements": [
+        [
+          "Поддерживайте веки открытыми без давления на глазное яблоко.",
+          "Поддерживайте веки открытыми без давления на глазное яблоко. Поток воды не должен быть сильным. При сильном химикате продолжайте промывание, пока ждёте медицинскую помощь; 20 минут не означают обязательного прекращения."
+        ]
+      ],
+      "note": "Уточнены слабый поток и продолжение промывания при сильном химикате во время ожидания помощи. Проникающая травма остаётся отдельной ситуацией без извлечения предмета.",
+      "sources": [
+        {
+          "id": "medical-v190-first-aid-eye-injury",
+          "title": "NHS: Eye injuries, версия страницы с медицинской проверкой 12.03.2026",
+          "url": "https://www.nhs.uk/conditions/eye-injuries/",
+          "accessedAt": "2026-10-05"
+        }
+      ]
+    },
+    "first-aid-electric-shock": {
+      "replacements": [],
+      "note": "Сверена необходимость прекратить электрический контакт до доступа и оценки пострадавшего; рискованные импровизированные способы перемещения к базовой памятке не добавлялись.",
+      "sources": [
+        {
+          "id": "medical-v190-first-aid-electric-shock",
+          "title": "St John Ambulance: electrocution, собственная памятка, выбранные разделы",
+          "url": "https://www.sja.org.uk/first-aid-advice/electrocution/",
+          "accessedAt": "2026-10-05"
+        }
+      ]
+    },
+    "first-aid-seizure": {
+      "replacements": [
+        [
+          "Помощь нужна при первом или неизвестном приступе, судорогах дольше 5 минут, повторении без восстановления сознания, травме или нарушении дыхания.",
+          "Помощь нужна при первом или неизвестном приступе, судорогах дольше 5 минут, повторении без восстановления сознания, травме или нарушении дыхания. Известная эпилепсия не отменяет вызов при этих признаках; сообщите диспетчеру о диагнозе и индивидуальном плане, если они известны."
+        ]
+      ],
+      "note": "Уточнено, что известная эпилепсия не отменяет помощь при перечисленных опасных признаках; в рот ничего не помещается, удерживание силой запрещено.",
+      "sources": [
+        {
+          "id": "medical-v190-first-aid-seizure",
+          "title": "St John Ambulance: seizure, собственная памятка, выбранные разделы",
+          "url": "https://www.sja.org.uk/first-aid-advice/seizure/",
+          "accessedAt": "2026-10-05"
+        }
+      ]
+    },
+    "first-aid-poisoning": {
+      "replacements": [],
+      "note": "Сверены отсутствие вызванной рвоты, ограничение приёма через рот и передача названия вещества и упаковки. Самостоятельные схемы антидотов не добавлялись.",
+      "sources": [
+        {
+          "id": "medical-v190-first-aid-poisoning",
+          "title": "St John Ambulance: poisoning, собственная памятка, выбранные разделы",
+          "url": "https://www.sja.org.uk/first-aid-advice/poisoning/",
+          "accessedAt": "2026-10-05"
+        }
+      ]
+    },
+    "first-aid-heat-illness": {
+      "replacements": [
+        [
+          "Спутанность, необычное поведение, судороги или потеря сознания в жаре указывают",
+          "Спутанность, необычное поведение, судороги или потеря сознания в жаре либо после интенсивной физической нагрузки указывают"
+        ]
+      ],
+      "note": "Уточнён контекст интенсивной физической нагрузки; сохранены немедленное охлаждение и возможность сохраняющегося потоотделения.",
+      "sources": [
+        {
+          "id": "medical-v190-first-aid-heat-illness",
+          "title": "CDC / NIOSH: Heat-related Illnesses, Heat stroke и Heat exhaustion",
+          "url": "https://www.cdc.gov/niosh/heat-stress/about/illnesses.html",
+          "accessedAt": "2026-10-05"
+        },
+        {
+          "id": "medical-v190-extra-first-aid-heat-illness",
+          "title": "Resuscitation Council UK: First Aid Guidelines 2025, Heat stroke",
+          "url": "https://www.resus.org.uk/professional-library/2025-resuscitation-guidelines/first-aid-guidelines",
+          "accessedAt": "2026-10-05"
+        }
+      ]
+    },
+    "first-aid-hypothermia": {
+      "replacements": [],
+      "note": "Сверены изоляция от холода, снятие мокрой одежды и отсутствие прямого сильного нагрева и алкоголя; прежние ограничения питья при нарушении сознания сохранены.",
+      "sources": [
+        {
+          "id": "medical-v190-first-aid-hypothermia",
+          "title": "St John Ambulance: hypothermia, собственная памятка, выбранные разделы",
+          "url": "https://www.sja.org.uk/first-aid-advice/hypothermia/",
+          "accessedAt": "2026-10-05"
+        }
+      ]
+    },
+    "first-aid-handover": {
+      "replacements": [
+        [
+          "Если состояние меняется до прибытия, повторно сообщите диспетчеру и следуйте его указаниям.",
+          "Если состояние меняется до прибытия, повторно сообщите диспетчеру и следуйте его указаниям. Также сообщите об изменении места ожидания, чтобы помощь направили по верному адресу."
+        ]
+      ],
+      "note": "Добавлено сообщение об изменении места ожидания; сбор сведений не задерживает жизненно необходимые действия.",
+      "sources": [
+        {
+          "id": "medical-v190-first-aid-handover",
+          "title": "NHS: When to call 999, сведения для диспетчера и прибывающей бригады",
+          "url": "https://www.nhs.uk/nhs-services/urgent-and-emergency-care-services/when-to-call-999/",
+          "accessedAt": "2026-10-05"
+        },
+        {
+          "id": "medical-v190-extra-first-aid-handover",
+          "title": "St John Ambulance: Secondary survey, сбор известных сведений",
+          "url": "https://www.sja.org.uk/first-aid-advice/secondary-survey/",
+          "accessedAt": "2026-10-05"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,14 @@
+--------- beginning of main
+--------- beginning of system
+--------- beginning of kernel
+10-20 10:00:43.494  6136  6136 E chromium: [ERROR:filesystem_posix.cc(62)] mkdir /data/user/0/ru.dlyasvoih.app/cache/WebView/Crashpad: No such file or directory (2)
+10-20 10:00:45.571  6136  6136 I OfflineModelViewer: Offline model frame {"colors":1812,"triangles":3563,"stage":[412,471],"viewport":[412,471],"buffer":[618,706],"camera":[2.1266167268991856,1.6540352320326999,2.7567253867211665]}
+10-20 10:00:57.935  6136  6136 E chromium: [ERROR:aw_browser_terminator.cc(125)] Renderer process (8363) crash detected (code -1).
+10-20 10:01:25.388  6136  6136 I OfflineModelViewer: Offline model frame {"colors":2141,"triangles":49823,"stage":[412,451],"viewport":[412,451],"buffer":[618,676],"camera":[2.0945077200392217,1.6290615600305058,2.7151026000508427]}
+10-20 10:01:41.934  6136  6136 E chromium: [ERROR:aw_browser_terminator.cc(125)] Renderer process (8955) crash detected (code -1).
+10-20 10:01:54.261  6136  6136 I OfflineModelViewer: Offline model frame {"colors":243,"triangles":2276,"stage":[412,451],"viewport":[412,451],"buffer":[618,676],"camera":[2.2315404900434044,1.7356426033670926,2.8927376722784874]}
+10-20 10:02:10.701  6136  6136 E chromium: [ERROR:aw_browser_terminator.cc(125)] Renderer process (9283) crash detected (code -1).
+10-20 10:02:23.061  6136  6136 I OfflineModelViewer: Offline model frame {"colors":342,"triangles":34414,"stage":[412,451],"viewport":[412,451],"buffer":[618,676],"camera":[1.9929627773502006,1.550082160161267,2.5834702669354455]}
+10-20 10:02:39.420  6136  6136 E chromium: [ERROR:aw_browser_terminator.cc(125)] Renderer process (9611) crash detected (code -1).
+10-20 10:02:51.797  6136  6136 I OfflineModelViewer: Offline model frame {"colors":295,"triangles":13550,"stage":[412,451],"viewport":[412,451],"buffer":[618,676],"camera":[1.7896220758732873,1.391928281234779,2.319880468724632]}
+10-20 10:03:08.570  6136  6136 E chromium: [ERROR:aw_browser_terminator.cc(125)] Renderer process (9946) crash detected (code -1).
