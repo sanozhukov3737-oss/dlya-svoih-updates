@@ -53,9 +53,9 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          gh api repos/sanozhukov3737-oss/dlya-svoih-updates/actions/jobs/118635179670/logs > research/post-0.3.134/android-ota-final-job.log
-          gh api repos/sanozhukov3737-oss/dlya-svoih-updates/actions/jobs/118628222094/logs > research/post-0.3.134/android-ota-permission-attempt-job.log
-          gh api repos/sanozhukov3737-oss/dlya-svoih-updates/actions/jobs/118632329095/logs > research/post-0.3.134/android-ota-installed-attempt-job.log
+          gh api --allow-escape-sequences repos/sanozhukov3737-oss/dlya-svoih-updates/actions/jobs/118635179670/logs > research/post-0.3.134/android-ota-final-job.log
+          gh api --allow-escape-sequences repos/sanozhukov3737-oss/dlya-svoih-updates/actions/jobs/118628222094/logs > research/post-0.3.134/android-ota-permission-attempt-job.log
+          gh api --allow-escape-sequences repos/sanozhukov3737-oss/dlya-svoih-updates/actions/jobs/118632329095/logs > research/post-0.3.134/android-ota-installed-attempt-job.log
           gh api repos/sanozhukov3737-oss/dlya-svoih-updates/actions/runs/39424991339 > research/post-0.3.134/android-ota-run.json
           python3 - <<'PY'
           import json
