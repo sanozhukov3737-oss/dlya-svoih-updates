@@ -57,6 +57,8 @@
     "remainingExactVariantImages": 8,
     "publishedApplicationChanged": false,
     "details": "research/post-0.3.134/FOLLOWUP-2026-10-20.md",
-    "imageSearch": "research/post-0.3.134/image-search-followup-2026-10-20.json"
+    "imageSearch": "research/post-0.3.134/image-search-followup-2026-10-20.json",
+    "kitRepositoryPath": "tools/phone-check/DLYA_SVOIH_PHONE_CHECK_0.3.134.zip",
+    "kitSha256": "ae7530e7b2cb629b24ed83b513876f6e85b163e2829366d13ea3452bb115fd31"
   }
 }
