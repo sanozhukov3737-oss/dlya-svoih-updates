@@ -1,0 +1,80 @@
+name: Recovery 0.3.134 - sign prepared APK
+
+on:
+  push:
+    branches: ['recovery/android-0.3.134-stage2-20261019']
+    paths:
+      - '.github/workflows/recovery-sign-prepared-134.yml'
+      - 'tools/recovery_sign_prepared_134.py'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: recovery-sign-prepared-134
+  cancel-in-progress: false
+
+jobs:
+  sign:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    env:
+      CI_SIGNING_KEYSTORE: ${{ runner.temp }}/recovery134-existing.keystore
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - name: Download the exact recovered input and published reference
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p build/recovery-input
+          gh release download recovery-inputs-0.3.134-20261020 --repo "$GITHUB_REPOSITORY" --pattern DLYA_SVOIH_COMBINED_0.3.134_CANDIDATE.zip --dir build/recovery-input
+          python3 - <<'PY'
+          import urllib.request
+          from pathlib import Path
+          url = 'https://github.com/sanozhukov3737-oss/dlya-svoih-updates/releases/download/app-0.3.133/DLYA_SVOIH_v0.3.133.apk'
+          with urllib.request.urlopen(url, timeout=120) as response:
+              Path('build/recovery-input/previous-0.3.133.apk').write_bytes(response.read())
+          PY
+      - name: Verify input hashes, catalog, models and preserved published cards
+        run: |
+          python3 tools/recovery_sign_prepared_134.py --preflight-only --archive build/recovery-input/DLYA_SVOIH_COMBINED_0.3.134_CANDIDATE.zip --previous build/recovery-input/previous-0.3.133.apk --work build/recovery-work --out build/recovery-signed
+      - name: Install Android signature verification tools
+        run: '"$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" "build-tools;36.0.0"'
+      - name: Restore the existing signing key without exposing it
+        env:
+          ANDROID_DEBUG_KEYSTORE_BASE64: ${{ secrets.ANDROID_DEBUG_KEYSTORE_BASE64 }}
+        run: |
+          python3 - <<'PY'
+          import base64, os
+          from pathlib import Path
+          value = ''.join(os.environ.get('ANDROID_DEBUG_KEYSTORE_BASE64', '').split())
+          if not value:
+              raise SystemExit('Existing signing secret is unavailable; no new key will be created.')
+          path = Path(os.environ['CI_SIGNING_KEYSTORE'])
+          path.write_bytes(base64.b64decode(value, validate=True))
+          path.chmod(0o600)
+          PY
+      - name: Sign the prepared APK and require the published 0.3.133 certificate
+        id: sign
+        run: |
+          python3 tools/recovery_sign_prepared_134.py --archive build/recovery-input/DLYA_SVOIH_COMBINED_0.3.134_CANDIDATE.zip --previous build/recovery-input/previous-0.3.133.apk --work build/recovery-work --out build/recovery-signed --sdk "$ANDROID_HOME" --keystore "$CI_SIGNING_KEYSTORE"
+      - uses: actions/upload-artifact@v4
+        if: ${{ steps.sign.outcome == 'success' }}
+        with:
+          name: recovery134-signed-apk
+          path: build/recovery-signed/
+          if-no-files-found: error
+          retention-days: 30
+      - name: Remove temporary signing key
+        if: always()
+        run: |
+          python3 - <<'PY'
+          import os
+          from pathlib import Path
+          Path(os.environ['CI_SIGNING_KEYSTORE']).unlink(missing_ok=True)
+          PY
