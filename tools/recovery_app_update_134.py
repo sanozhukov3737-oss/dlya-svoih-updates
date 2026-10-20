@@ -54,6 +54,14 @@ def update_through_app():
     if switch.get('checked')!='true': qa.tap(switch)
     qa.capture('ota-unknown-sources-allowed')
     qa.adb('shell','input','keyevent','4')
+    # Published 0.3.133 may return to its Ready card after Settings instead of
+    # launching the installer immediately. Follow the same visible second tap
+    # available to a user; never replace the hand-off with adb installation.
+    handoff = visible(lambda a:(a.get('package')==qa.PACKAGE and a.get('text')=='Установить обновление')
+        or (a.get('package') in ('com.google.android.packageinstaller','com.android.packageinstaller')
+        and a.get('text','').upper() in ('INSTALL','UPDATE','УСТАНОВИТЬ','ОБНОВИТЬ')),timeout=60)
+    if handoff.get('package')==qa.PACKAGE:
+        qa.capture('ota-ready-after-permission');qa.tap(handoff)
     install = visible(lambda a:a.get('package') in ('com.google.android.packageinstaller','com.android.packageinstaller')
         and a.get('text','').upper() in ('INSTALL','UPDATE','УСТАНОВИТЬ','ОБНОВИТЬ'),timeout=60)
     qa.capture('ota-system-install-confirmation');qa.tap(install)
