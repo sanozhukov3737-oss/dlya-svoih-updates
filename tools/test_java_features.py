@@ -11,6 +11,19 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 class JavaFeatureTests(unittest.TestCase):
+    def test_uav_catalog_group_and_navigation_routes(self):
+        java = shutil.which('java')
+        if java is None:
+            self.skipTest('JDK is not installed')
+        sources = [ROOT / 'app/src/main/java/ru/dlyasvoih/app/ui/CatalogHierarchy.java',
+                   ROOT / 'test-common/HostUavHierarchyChecks.java']
+        with tempfile.TemporaryDirectory() as directory:
+            subprocess.run([java, '-m', 'jdk.compiler/com.sun.tools.javac.Main', '-d', directory,
+                            *map(str, sources)], check=True, capture_output=True, timeout=30)
+            checked = subprocess.run([java, '-cp', directory, 'ru.dlyasvoih.app.ui.HostUavHierarchyChecks'],
+                                     check=True, capture_output=True, text=True, timeout=30)
+            self.assertIn('UAV hierarchy checks passed', checked.stdout)
+
     def test_apk_identity_version_and_signature_policy(self):
         java = shutil.which('java')
         if java is None:

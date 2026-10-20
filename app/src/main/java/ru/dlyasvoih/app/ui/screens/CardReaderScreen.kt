@@ -60,7 +60,7 @@ fun CardReaderScreen(vm: CardReaderViewModel, repo: GuideRepository, onBack: () 
                             TextButton(onClick = next ?: {}, enabled = next != null,
                                 modifier = Modifier.testTag("reader_next").semantics { contentDescription = "Следующая карточка" }) { Text("›") }
                         }
-                        Text("Свайп вправо — следующая карточка", style = MaterialTheme.typography.labelSmall,
+                        Text("Свайп влево — следующая, вправо — предыдущая", style = MaterialTheme.typography.labelSmall,
                             color = MaterialTheme.colorScheme.onSurfaceVariant, modifier = Modifier.padding(bottom = 6.dp))
                     }
                 }, onImage = { index -> onImage(id, index) })
@@ -82,29 +82,25 @@ internal fun CardReaderPages(ids: List<String>, initialId: String, onSettled: (S
     content: @Composable (id: String, active: Boolean, page: Int, total: Int,
         previous: (() -> Unit)?, next: (() -> Unit)?) -> Unit) {
     if (ids.isEmpty()) return
-    // Physical pages run opposite to the catalog order. A finger moving to the right decreases
-    // the physical page number, so it opens the next card. Keep the normal pager scroll/nested-
-    // scroll implementation rather than reversing it around vertically scrolling articles.
-    val pager = key("reader-right-swipe-v2") {
-        rememberPagerState(initialPage = ids.lastIndex - ids.indexOf(initialId).coerceAtLeast(0), pageCount = { ids.size })
-    }
+    // Catalog index equals pager index: a left swipe opens the next card.
+    val pager = rememberPagerState(initialPage = ids.indexOf(initialId).coerceAtLeast(0), pageCount = { ids.size })
     val scope = rememberCoroutineScope()
     val settledCallback by rememberUpdatedState(onSettled)
     LaunchedEffect(pager, jump) {
-        jump?.let { if (it.index in ids.indices) pager.scrollToPage(ids.lastIndex - it.index) }
+        jump?.let { if (it.index in ids.indices) pager.scrollToPage(it.index) }
     }
     LaunchedEffect(pager, ids) {
-        snapshotFlow { if (pager.isScrollInProgress) null else ids.getOrNull(ids.lastIndex - pager.settledPage) }
+        snapshotFlow { if (pager.isScrollInProgress) null else ids.getOrNull(pager.settledPage) }
             .filterNotNull().distinctUntilChanged().collect { settledCallback(it) }
     }
     CompositionLocalProvider(LocalLayoutDirection provides LayoutDirection.Ltr) {
         HorizontalPager(state = pager, modifier = Modifier.fillMaxSize().testTag("card_reader"),
             // Leave adjacent-page prefetch to the pager instead of keeping two extra
             // complete articles measured and collecting their database flows.
-            reverseLayout = false, key = { ids[ids.lastIndex - it] }) { physicalPage ->
-            val index = ids.lastIndex - physicalPage
-            val previous: (() -> Unit)? = if (index > 0) ({ scope.launch { pager.animateScrollToPage(physicalPage + 1) }; Unit }) else null
-            val next: (() -> Unit)? = if (index + 1 < ids.size) ({ scope.launch { pager.animateScrollToPage(physicalPage - 1) }; Unit }) else null
+            reverseLayout = false, key = { ids[it] }) { physicalPage ->
+            val index = physicalPage
+            val previous: (() -> Unit)? = if (index > 0) ({ scope.launch { pager.animateScrollToPage(index - 1) }; Unit }) else null
+            val next: (() -> Unit)? = if (index + 1 < ids.size) ({ scope.launch { pager.animateScrollToPage(index + 1) }; Unit }) else null
             content(ids[index], physicalPage == pager.settledPage && !pager.isScrollInProgress,
                 index + 1, ids.size, previous, next)
         }

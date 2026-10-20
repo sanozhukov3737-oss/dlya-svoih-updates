@@ -1,0 +1,17 @@
+{
+  "phase": "published-and-public-downloads-verified",
+  "workflowCommit": "a107df395f160a5751f41b8d5d8dd885d3eea7b6",
+  "exactApkSha256": "300b77deaee3348e05a0135bf0079414c07dc2e15a7dcfd9b1239a8cef99298f",
+  "sourceCommit": "9971bd151d5bc3fd49399cadf7019540b497c3f8",
+  "feedTests": 20,
+  "localCatalogPackage": {
+    "path": "/workspace/scratch/a8009b11e95e/source134/build/publication-0.3.134/catalog-195.zip",
+    "bytes": 88811182,
+    "sha256": "52cb88ee1222a93f3e32e2b3ffc733ed6ed10a05b79a9e4a35c997c79ea74bbf"
+  },
+  "catalogNote": "Actual release ZIP is generated from the same verified production assets in Actions; ZIP timestamps can differ. Its published SHA-256 is recorded by the actual feed.",
+  "releaseId": 418300116,
+  "workflowRun": 39411561984,
+  "workflowConclusion": "success",
+  "resultPath": "research/publication-0.3.134/publication-result.json"
+}

@@ -1,0 +1,781 @@
+{
+  "formatVersion": 1,
+  "preparedAt": "2026-10-19",
+  "targetContentVersion": 192,
+  "categories": [
+    {
+      "id": "uav-drop-munitions",
+      "section": "AMMUNITION",
+      "title": "Боеприпасы для сброса",
+      "sortOrder": 40
+    },
+    {
+      "id": "uav-warheads",
+      "section": "AMMUNITION",
+      "title": "Боевые части БПЛА",
+      "sortOrder": 41
+    },
+    {
+      "id": "uav-release-systems",
+      "section": "AMMUNITION",
+      "title": "Системы сброса",
+      "sortOrder": 42
+    }
+  ],
+  "cards": [
+    {
+      "id": "uavref-ofsp-05",
+      "rowid": 10001,
+      "title": "ОФСП-05",
+      "summary": "ОФСП-05 — российский осколочно-фугасный боеприпас семейства ОФСП для БПЛА.",
+      "body": "## Описание\n\nКороткий цилиндрический корпус с поперечными рёбрами и хвостовым оперением.\n\n## Обозначение\n\nОФСП-0,5; OFSP-05. Самостоятельный вариант семейства ОФСП. Конкретный изготовитель по использованному материалу не подтверждён.",
+      "section": "AMMUNITION",
+      "categoryId": "uav-drop-munitions",
+      "countries": [
+        "ru"
+      ],
+      "tags": [
+        "ОФСП",
+        "OFSP",
+        "ОФСП-05",
+        "ОФСП-0,5",
+        "OFSP-05",
+        "БПЛА",
+        "сбрасываемый боеприпас"
+      ],
+      "images": [
+        {
+          "id": "uavref-ofsp-05-exterior",
+          "localPath": "images/uavref-ofsp-05.webp",
+          "thumbnailPath": "thumbs/uavref-ofsp-05.webp",
+          "caption": "Внешний вид ОФСП-05. Иллюстрация из опубликованного материала, стр. 5; сохранён исходный вид.",
+          "width": 279,
+          "height": 102,
+          "position": 0
+        }
+      ],
+      "sources": [
+        {
+          "id": "uavref-ofsp-05-g7",
+          "title": "Материал 2022 года, опубликованный ТрО G7 — обозначения и внешние виды ОФСП, стр. 5",
+          "url": "https://sprotyvg7.com.ua/wp-content/uploads/2023/04/%D0%91%D0%9F%D0%9B%D0%90_1-2.pdf",
+          "accessedAt": "2026-10-19"
+        }
+      ],
+      "contentStatus": "source_only",
+      "reviewedAt": null,
+      "modelStatus": "source-listed",
+      "sourceGrade": "B",
+      "verifiedAt": null
+    },
+    {
+      "id": "uavref-ofsp-08",
+      "rowid": 10002,
+      "title": "ОФСП-08",
+      "summary": "ОФСП-08 — российский осколочно-фугасный боеприпас семейства ОФСП для БПЛА.",
+      "body": "## Описание\n\nЦилиндрический ребристый корпус с хвостовым оперением.\n\n## Обозначение\n\nОФСП-0,8; OFSP-08. Самостоятельный вариант семейства ОФСП. Конкретный изготовитель по использованному материалу не подтверждён.",
+      "section": "AMMUNITION",
+      "categoryId": "uav-drop-munitions",
+      "countries": [
+        "ru"
+      ],
+      "tags": [
+        "ОФСП",
+        "OFSP",
+        "ОФСП-08",
+        "ОФСП-0,8",
+        "OFSP-08",
+        "БПЛА",
+        "сбрасываемый боеприпас"
+      ],
+      "images": [
+        {
+          "id": "uavref-ofsp-08-exterior",
+          "localPath": "images/uavref-ofsp-08.webp",
+          "thumbnailPath": "thumbs/uavref-ofsp-08.webp",
+          "caption": "Внешний вид ОФСП-08. Иллюстрация из опубликованного материала, стр. 5; сохранён исходный вид.",
+          "width": 343,
+          "height": 97,
+          "position": 0
+        }
+      ],
+      "sources": [
+        {
+          "id": "uavref-ofsp-08-g7",
+          "title": "Материал 2022 года, опубликованный ТрО G7 — обозначения и внешние виды ОФСП, стр. 5",
+          "url": "https://sprotyvg7.com.ua/wp-content/uploads/2023/04/%D0%91%D0%9F%D0%9B%D0%90_1-2.pdf",
+          "accessedAt": "2026-10-19"
+        }
+      ],
+      "contentStatus": "source_only",
+      "reviewedAt": null,
+      "modelStatus": "source-listed",
+      "sourceGrade": "B",
+      "verifiedAt": null
+    },
+    {
+      "id": "uavref-ofsp-17",
+      "rowid": 10003,
+      "title": "ОФСП-1,7",
+      "summary": "ОФСП-1,7 — российский осколочно-фугасный боеприпас семейства ОФСП для БПЛА.",
+      "body": "## Описание\n\nУдлинённый ребристый корпус с хвостовым оперением.\n\n## Обозначение\n\nОФСП-1.7; OFSP-1.7. Самостоятельный вариант семейства ОФСП. Конкретный изготовитель по использованному материалу не подтверждён.",
+      "section": "AMMUNITION",
+      "categoryId": "uav-drop-munitions",
+      "countries": [
+        "ru"
+      ],
+      "tags": [
+        "ОФСП",
+        "OFSP",
+        "ОФСП-1,7",
+        "ОФСП-1.7",
+        "OFSP-1.7",
+        "БПЛА",
+        "сбрасываемый боеприпас"
+      ],
+      "images": [
+        {
+          "id": "uavref-ofsp-17-exterior",
+          "localPath": "images/uavref-ofsp-17.webp",
+          "thumbnailPath": "thumbs/uavref-ofsp-17.webp",
+          "caption": "Внешний вид ОФСП-1,7. Иллюстрация из опубликованного материала, стр. 5; сохранён исходный вид.",
+          "width": 525,
+          "height": 121,
+          "position": 0
+        }
+      ],
+      "sources": [
+        {
+          "id": "uavref-ofsp-17-g7",
+          "title": "Материал 2022 года, опубликованный ТрО G7 — обозначения и внешние виды ОФСП, стр. 5",
+          "url": "https://sprotyvg7.com.ua/wp-content/uploads/2023/04/%D0%91%D0%9F%D0%9B%D0%90_1-2.pdf",
+          "accessedAt": "2026-10-19"
+        }
+      ],
+      "contentStatus": "source_only",
+      "reviewedAt": null,
+      "modelStatus": "source-listed",
+      "sourceGrade": "B",
+      "verifiedAt": null
+    },
+    {
+      "id": "uavref-ofsp-25",
+      "rowid": 10004,
+      "title": "ОФСП-2,5",
+      "summary": "ОФСП-2,5 — российский осколочно-фугасный боеприпас семейства ОФСП для БПЛА.",
+      "body": "## Описание\n\nВытянутый корпус с поперечными рёбрами и хвостовым оперением.\n\n## Обозначение\n\nОФСП-2.5; OFSP-2.5. Самостоятельный вариант семейства ОФСП. Конкретный изготовитель по использованному материалу не подтверждён.",
+      "section": "AMMUNITION",
+      "categoryId": "uav-drop-munitions",
+      "countries": [
+        "ru"
+      ],
+      "tags": [
+        "ОФСП",
+        "OFSP",
+        "ОФСП-2,5",
+        "ОФСП-2.5",
+        "OFSP-2.5",
+        "БПЛА",
+        "сбрасываемый боеприпас"
+      ],
+      "images": [
+        {
+          "id": "uavref-ofsp-25-exterior",
+          "localPath": "images/uavref-ofsp-25.webp",
+          "thumbnailPath": "thumbs/uavref-ofsp-25.webp",
+          "caption": "Внешний вид ОФСП-2,5. Иллюстрация из опубликованного материала, стр. 5; сохранён исходный вид.",
+          "width": 527,
+          "height": 123,
+          "position": 0
+        }
+      ],
+      "sources": [
+        {
+          "id": "uavref-ofsp-25-g7",
+          "title": "Материал 2022 года, опубликованный ТрО G7 — обозначения и внешние виды ОФСП, стр. 5",
+          "url": "https://sprotyvg7.com.ua/wp-content/uploads/2023/04/%D0%91%D0%9F%D0%9B%D0%90_1-2.pdf",
+          "accessedAt": "2026-10-19"
+        }
+      ],
+      "contentStatus": "source_only",
+      "reviewedAt": null,
+      "modelStatus": "source-listed",
+      "sourceGrade": "B",
+      "verifiedAt": null
+    },
+    {
+      "id": "uavref-ofbch-2",
+      "rowid": 10005,
+      "title": "ОФБЧ-2",
+      "summary": "ОФБЧ-2 — обозначение осколочно-фугасной боевой части БПЛА. На опубликованном образце виден цилиндрический корпус с частыми поперечными рёбрами.",
+      "body": "## Описание\n\nНа внешней фотографии показан светло-серый цилиндрический корпус с поперечными рёбрами и нанесённой маркировкой. Наблюдаемый цвет относится к этому экземпляру.\n\nОбозначение ОФБЧ-2 приведено в публикации непосредственного исследователя образца. ОФБЧ расшифровывается как «осколочно-фугасная боевая часть»; сокращение без числового индекса обозначает класс, а не одну определённую модель.\n\n## Происхождение\n\nРоссия. Изготовитель и год принятия по использованной публикации не установлены.",
+      "section": "AMMUNITION",
+      "categoryId": "uav-warheads",
+      "countries": [
+        "ru"
+      ],
+      "tags": [
+        "ОФБЧ",
+        "ОФБЧ-2",
+        "OFBCh-2",
+        "OFBCH2",
+        "БПЛА",
+        "боевая часть"
+      ],
+      "images": [
+        {
+          "id": "uavref-ofbch-2-exterior",
+          "localPath": "images/uavref-ofbch-2.webp",
+          "thumbnailPath": "thumbs/uavref-ofbch-2.webp",
+          "caption": "ОФБЧ-2, внешний вид. Фото из авторской публикации Сергея Бескрестнова на Цензор.НЕТ, 10.11.2025.",
+          "width": 780,
+          "height": 1297,
+          "position": 0
+        }
+      ],
+      "sources": [
+        {
+          "id": "uavref-ofbch-2-observer",
+          "title": "Сергей Бескрестнов — авторская публикация и внешний вид ОФБЧ-2 (10.11.2025)",
+          "url": "https://censor.net/ru/blogs/3584091/znayideno-boyiovu-chastinu-v-seredin-drona-gerbera-yak-pratsyu-yiogo-sistema-p-drivu",
+          "accessedAt": "2026-10-19"
+        }
+      ],
+      "contentStatus": "source_only",
+      "reviewedAt": null,
+      "modelStatus": "source-listed",
+      "sourceGrade": "B",
+      "verifiedAt": null
+    },
+    {
+      "id": "uavref-ofbch-25",
+      "rowid": 10006,
+      "title": "ОФБЧ-2,5",
+      "summary": "ОФБЧ-2,5 — российская осколочно-фугасная боевая часть БПЛА. Открытая публикация ГУР связывает это обозначение с предприятием «Базальт».",
+      "body": "## Описание\n\nОФБЧ-2,5 описана в сообщении ГУР от 18 февраля 2025 года как российская боевая часть для БПЛА. На внешних фотографиях из этой публикации виден цилиндрический корпус со светлым покрытием.\n\n## Обозначение\n\nОФБЧ-2,5; OFBCh-2.5. Сокращение ОФБЧ означает «осколочно-фугасная боевая часть». Совпадение основного обозначения не подтверждает тождество разных исполнений.\n\n## Происхождение\n\nРоссия. Предприятие «Базальт» — по атрибуции ГУР. Год принятия конкретного исполнения в использованном сообщении не указан.",
+      "section": "AMMUNITION",
+      "categoryId": "uav-warheads",
+      "countries": [
+        "ru"
+      ],
+      "tags": [
+        "ОФБЧ",
+        "ОФБЧ-2,5",
+        "ОФБЧ-2.5",
+        "OFBCh-2.5",
+        "Базальт",
+        "БПЛА",
+        "боевая часть"
+      ],
+      "images": [
+        {
+          "id": "uavref-ofbch-25-exterior",
+          "localPath": "images/uavref-ofbch-25.webp",
+          "thumbnailPath": "thumbs/uavref-ofbch-25.webp",
+          "caption": "Внешние виды из публикации ГУР, 18.02.2025. Исходное фото сохранено; светлое покрытие показано как в источнике.",
+          "width": 1400,
+          "height": 788,
+          "position": 0
+        }
+      ],
+      "sources": [
+        {
+          "id": "uavref-ofbch-25-gur",
+          "title": "ГУР — сообщение 18.02.2025: обозначение ОФБЧ-2,5, атрибуция и внешний вид",
+          "url": "https://gur.gov.ua/content/serii-y-ta-iak-rosiia-modernizuie-shakhedy-ta-inshi-udarni-bpla.html",
+          "accessedAt": "2026-10-19"
+        }
+      ],
+      "contentStatus": "source_only",
+      "reviewedAt": null,
+      "modelStatus": "source-listed",
+      "sourceGrade": "B",
+      "verifiedAt": null
+    },
+    {
+      "id": "uavref-ibm-02",
+      "rowid": 10007,
+      "title": "ИБМ-0,2",
+      "summary": "ИБМ-0,2 — боеприпас из каталога ДЕМЗ. Небольшой вытянутый цилиндрический корпус с плоской верхней крышкой.",
+      "body": "## Описание\n\nКомпактный боеприпас, представленный в линейке ДЕМЗ для БПЛА. В каталоге показан отдельный внешний вид изделия.\n\n## Внешний вид\n\nНебольшой вытянутый цилиндрический корпус с плоской верхней крышкой.\n\n## Обозначение и происхождение\n\nВ каталоге — ІБМ-0,2. Изготовитель указан как ООО «ДЕМЗ» / DEMZ. Страна — Украина. Год издания каталога — 2026; это не дата принятия изделия на вооружение.",
+      "section": "AMMUNITION",
+      "categoryId": "uav-drop-munitions",
+      "countries": [
+        "ua"
+      ],
+      "tags": [
+        "ИБМ-0,2",
+        "ІБМ-0,2",
+        "IBM-0.2",
+        "ДЕМЗ",
+        "DEMZ",
+        "БПЛА"
+      ],
+      "images": [
+        {
+          "id": "uavref-ibm-02-exterior",
+          "localPath": "images/uavref-ibm-02.webp",
+          "thumbnailPath": "thumbs/uavref-ibm-02.webp",
+          "caption": "ИБМ-0,2: внешний вид из предоставленного каталога ДЕМЗ, стр. 21. Изображение изготовителя.",
+          "width": 357,
+          "height": 736,
+          "position": 0
+        }
+      ],
+      "sources": [
+        {
+          "id": "uavref-ibm-02-catalog",
+          "title": "ДЕМЗ — предоставленный каталог, сентябрь 2026, стр. 21",
+          "url": null,
+          "accessedAt": "2026-10-19"
+        },
+        {
+          "id": "uavref-ibm-02-demz-country",
+          "title": "Минобороны Литвы — украинское происхождение компании DEMZ, 14.08.2026",
+          "url": "https://kam.lt/en/ukraines-demz-defence-industry-company-agreed-to-build-an-ammunition-factory-in-lithuania-creating-up-to-450-jobs/",
+          "accessedAt": "2026-10-19"
+        }
+      ],
+      "contentStatus": "source_only",
+      "reviewedAt": null,
+      "modelStatus": "source-listed",
+      "sourceGrade": "B",
+      "verifiedAt": null
+    },
+    {
+      "id": "uavref-ibm-05",
+      "rowid": 10008,
+      "title": "ИБМ-0,5",
+      "summary": "ИБМ-0,5 — боеприпас из каталога ДЕМЗ. Округлый зелёный корпус с выраженным геометрическим рельефом поверхности.",
+      "body": "## Описание\n\nБоеприпас из линейки ДЕМЗ для БПЛА. Внешне отличается от гладких цилиндрических изделий этого каталога.\n\n## Внешний вид\n\nОкруглый зелёный корпус с выраженным геометрическим рельефом поверхности.\n\n## Обозначение и происхождение\n\nВ каталоге — ІБМ-0,5. Изготовитель указан как ООО «ДЕМЗ» / DEMZ. Страна — Украина. Год издания каталога — 2026; это не дата принятия изделия на вооружение.",
+      "section": "AMMUNITION",
+      "categoryId": "uav-drop-munitions",
+      "countries": [
+        "ua"
+      ],
+      "tags": [
+        "ИБМ-0,5",
+        "ІБМ-0,5",
+        "IBM-0.5",
+        "ДЕМЗ",
+        "DEMZ",
+        "БПЛА"
+      ],
+      "images": [
+        {
+          "id": "uavref-ibm-05-exterior",
+          "localPath": "images/uavref-ibm-05.webp",
+          "thumbnailPath": "thumbs/uavref-ibm-05.webp",
+          "caption": "ИБМ-0,5: внешний вид из предоставленного каталога ДЕМЗ, стр. 20. Изображение изготовителя.",
+          "width": 334,
+          "height": 667,
+          "position": 0
+        }
+      ],
+      "sources": [
+        {
+          "id": "uavref-ibm-05-catalog",
+          "title": "ДЕМЗ — предоставленный каталог, сентябрь 2026, стр. 20",
+          "url": null,
+          "accessedAt": "2026-10-19"
+        },
+        {
+          "id": "uavref-ibm-05-demz-country",
+          "title": "Минобороны Литвы — украинское происхождение компании DEMZ, 14.08.2026",
+          "url": "https://kam.lt/en/ukraines-demz-defence-industry-company-agreed-to-build-an-ammunition-factory-in-lithuania-creating-up-to-450-jobs/",
+          "accessedAt": "2026-10-19"
+        }
+      ],
+      "contentStatus": "source_only",
+      "reviewedAt": null,
+      "modelStatus": "source-listed",
+      "sourceGrade": "B",
+      "verifiedAt": null
+    },
+    {
+      "id": "uavref-ibm-1",
+      "rowid": 10009,
+      "title": "ИБМ-1",
+      "summary": "ИБМ-1 — боеприпас из каталога ДЕМЗ. Высокий гладкий цилиндр с более широкими торцевыми частями.",
+      "body": "## Описание\n\nБоеприпас, включённый в каталог ДЕМЗ среди изделий для БПЛА. На каталожном изображении показан корпус зелёного цвета.\n\n## Внешний вид\n\nВысокий гладкий цилиндр с более широкими торцевыми частями.\n\n## Обозначение и происхождение\n\nВ каталоге — ІБМ-1. Изготовитель указан как ООО «ДЕМЗ» / DEMZ. Страна — Украина. Год издания каталога — 2026; это не дата принятия изделия на вооружение.",
+      "section": "AMMUNITION",
+      "categoryId": "uav-drop-munitions",
+      "countries": [
+        "ua"
+      ],
+      "tags": [
+        "ИБМ-1",
+        "ІБМ-1",
+        "IBM-1",
+        "ДЕМЗ",
+        "DEMZ",
+        "БПЛА"
+      ],
+      "images": [
+        {
+          "id": "uavref-ibm-1-exterior",
+          "localPath": "images/uavref-ibm-1.webp",
+          "thumbnailPath": "thumbs/uavref-ibm-1.webp",
+          "caption": "ИБМ-1: внешний вид из предоставленного каталога ДЕМЗ, стр. 19. Изображение изготовителя.",
+          "width": 368,
+          "height": 736,
+          "position": 0
+        }
+      ],
+      "sources": [
+        {
+          "id": "uavref-ibm-1-catalog",
+          "title": "ДЕМЗ — предоставленный каталог, сентябрь 2026, стр. 19",
+          "url": null,
+          "accessedAt": "2026-10-19"
+        },
+        {
+          "id": "uavref-ibm-1-demz-country",
+          "title": "Минобороны Литвы — украинское происхождение компании DEMZ, 14.08.2026",
+          "url": "https://kam.lt/en/ukraines-demz-defence-industry-company-agreed-to-build-an-ammunition-factory-in-lithuania-creating-up-to-450-jobs/",
+          "accessedAt": "2026-10-19"
+        }
+      ],
+      "contentStatus": "source_only",
+      "reviewedAt": null,
+      "modelStatus": "source-listed",
+      "sourceGrade": "B",
+      "verifiedAt": null
+    },
+    {
+      "id": "uavref-ibm-3",
+      "rowid": 10010,
+      "title": "ИБМ-3",
+      "summary": "ИБМ-3 — боеприпас из каталога ДЕМЗ. Вытянутый корпус прямоугольного сечения с маркировкой ІБМ-3.",
+      "body": "## Описание\n\nСемейство инженерных боеприпасов, представленное ДЕМЗ в нескольких исполнениях. Общий индекс объединяет варианты, которые нельзя надёжно различить только по общему виду корпуса.\n\n## Внешний вид\n\nВытянутый корпус прямоугольного сечения с маркировкой ІБМ-3.\n\n## Обозначение и происхождение\n\nВ каталоге — ІБМ-3. Изготовитель указан как ООО «ДЕМЗ» / DEMZ. Страна — Украина. Год издания каталога — 2026; это не дата принятия изделия на вооружение.",
+      "section": "AMMUNITION",
+      "categoryId": "uav-drop-munitions",
+      "countries": [
+        "ua"
+      ],
+      "tags": [
+        "ИБМ-3",
+        "ІБМ-3",
+        "IBM-3",
+        "ДЕМЗ",
+        "DEMZ",
+        "БПЛА"
+      ],
+      "images": [
+        {
+          "id": "uavref-ibm-3-exterior",
+          "localPath": "images/uavref-ibm-3.webp",
+          "thumbnailPath": "thumbs/uavref-ibm-3.webp",
+          "caption": "ИБМ-3: внешний вид из предоставленного каталога ДЕМЗ, стр. 16. Изображение изготовителя.",
+          "width": 415,
+          "height": 1031,
+          "position": 0
+        }
+      ],
+      "sources": [
+        {
+          "id": "uavref-ibm-3-catalog",
+          "title": "ДЕМЗ — предоставленный каталог, сентябрь 2026, стр. 16",
+          "url": null,
+          "accessedAt": "2026-10-19"
+        },
+        {
+          "id": "uavref-ibm-3-demz-country",
+          "title": "Минобороны Литвы — украинское происхождение компании DEMZ, 14.08.2026",
+          "url": "https://kam.lt/en/ukraines-demz-defence-industry-company-agreed-to-build-an-ammunition-factory-in-lithuania-creating-up-to-450-jobs/",
+          "accessedAt": "2026-10-19"
+        }
+      ],
+      "contentStatus": "source_only",
+      "reviewedAt": null,
+      "modelStatus": "source-listed",
+      "sourceGrade": "B",
+      "verifiedAt": null
+    },
+    {
+      "id": "uavref-ss-02",
+      "rowid": 10011,
+      "title": "СС-0,2",
+      "summary": "СС-0,2 — система сброса для БПЛА, представленная в каталоге ДЕМЗ. Круглый кассетный блок с открытой рамой и расположенными по окружности гнёздами.",
+      "body": "## Описание\n\nКаталожное изделие ДЕМЗ, относящееся к системам сброса. Это отдельный подвесной агрегат, а не самостоятельный боеприпас.\n\n## Внешний вид\n\nКруглый кассетный блок с открытой рамой и расположенными по окружности гнёздами. В каталоге показан общий внешний вид блока.\n\n## Происхождение\n\nИзготовитель указан как ООО «ДЕМЗ» / DEMZ, Украина. Каталог датирован сентябрём 2026 года. Принадлежность к конкретной модели гражданского квадрокоптера по использованным материалам не установлена.",
+      "section": "AMMUNITION",
+      "categoryId": "uav-release-systems",
+      "countries": [
+        "ua"
+      ],
+      "tags": [
+        "СС-0,2",
+        "СС-0.2",
+        "SS-02",
+        "ДЕМЗ",
+        "DEMZ",
+        "БПЛА",
+        "система сброса"
+      ],
+      "images": [
+        {
+          "id": "uavref-ss-02-exterior",
+          "localPath": "images/uavref-ss-02.webp",
+          "thumbnailPath": "thumbs/uavref-ss-02.webp",
+          "caption": "СС-0,2: общий внешний вид из предоставленного каталога ДЕМЗ, стр. 22. Изображение изготовителя.",
+          "width": 679,
+          "height": 760,
+          "position": 0
+        }
+      ],
+      "sources": [
+        {
+          "id": "uavref-ss-02-catalog",
+          "title": "ДЕМЗ — предоставленный каталог, сентябрь 2026, стр. 22",
+          "url": null,
+          "accessedAt": "2026-10-19"
+        },
+        {
+          "id": "uavref-ss-02-demz-country",
+          "title": "Минобороны Литвы — украинское происхождение компании DEMZ, 14.08.2026",
+          "url": "https://kam.lt/en/ukraines-demz-defence-industry-company-agreed-to-build-an-ammunition-factory-in-lithuania-creating-up-to-450-jobs/",
+          "accessedAt": "2026-10-19"
+        }
+      ],
+      "contentStatus": "source_only",
+      "reviewedAt": null,
+      "modelStatus": "source-listed",
+      "sourceGrade": "B",
+      "verifiedAt": null
+    },
+    {
+      "id": "uavref-ss-05",
+      "rowid": 10012,
+      "title": "СС-0,5",
+      "summary": "СС-0,5 — система сброса для БПЛА, представленная в каталоге ДЕМЗ. Кассетный блок с радиальной компоновкой и открытой несущей рамой.",
+      "body": "## Описание\n\nКаталожное изделие ДЕМЗ, относящееся к системам сброса. Это отдельный подвесной агрегат, а не самостоятельный боеприпас.\n\n## Внешний вид\n\nКассетный блок с радиальной компоновкой и открытой несущей рамой. В каталоге показан общий внешний вид блока.\n\n## Происхождение\n\nИзготовитель указан как ООО «ДЕМЗ» / DEMZ, Украина. Каталог датирован сентябрём 2026 года. Принадлежность к конкретной модели гражданского квадрокоптера по использованным материалам не установлена.",
+      "section": "AMMUNITION",
+      "categoryId": "uav-release-systems",
+      "countries": [
+        "ua"
+      ],
+      "tags": [
+        "СС-0,5",
+        "СС-0.5",
+        "SS-05",
+        "ДЕМЗ",
+        "DEMZ",
+        "БПЛА",
+        "система сброса"
+      ],
+      "images": [
+        {
+          "id": "uavref-ss-05-exterior",
+          "localPath": "images/uavref-ss-05.webp",
+          "thumbnailPath": "thumbs/uavref-ss-05.webp",
+          "caption": "СС-0,5: общий внешний вид из предоставленного каталога ДЕМЗ, стр. 23. Изображение изготовителя.",
+          "width": 666,
+          "height": 748,
+          "position": 0
+        }
+      ],
+      "sources": [
+        {
+          "id": "uavref-ss-05-catalog",
+          "title": "ДЕМЗ — предоставленный каталог, сентябрь 2026, стр. 23",
+          "url": null,
+          "accessedAt": "2026-10-19"
+        },
+        {
+          "id": "uavref-ss-05-demz-country",
+          "title": "Минобороны Литвы — украинское происхождение компании DEMZ, 14.08.2026",
+          "url": "https://kam.lt/en/ukraines-demz-defence-industry-company-agreed-to-build-an-ammunition-factory-in-lithuania-creating-up-to-450-jobs/",
+          "accessedAt": "2026-10-19"
+        }
+      ],
+      "contentStatus": "source_only",
+      "reviewedAt": null,
+      "modelStatus": "source-listed",
+      "sourceGrade": "B",
+      "verifiedAt": null
+    },
+    {
+      "id": "uavref-ss-mpp-3",
+      "rowid": 10013,
+      "title": "СС-МПП-3",
+      "summary": "СС-МПП-3 — система сброса для БПЛА, представленная в каталоге ДЕМЗ. Многоместный кассетный блок с группой вытянутых элементов по наружному контуру.",
+      "body": "## Описание\n\nКаталожное изделие ДЕМЗ, относящееся к системам сброса. Это отдельный подвесной агрегат, а не самостоятельный боеприпас.\n\n## Внешний вид\n\nМногоместный кассетный блок с группой вытянутых элементов по наружному контуру. В каталоге показан общий внешний вид блока.\n\n## Происхождение\n\nИзготовитель указан как ООО «ДЕМЗ» / DEMZ, Украина. Каталог датирован сентябрём 2026 года. Принадлежность к конкретной модели гражданского квадрокоптера по использованным материалам не установлена.",
+      "section": "AMMUNITION",
+      "categoryId": "uav-release-systems",
+      "countries": [
+        "ua"
+      ],
+      "tags": [
+        "СС-МПП-3",
+        "СС-МПП-3",
+        "SS-MPP-3",
+        "ДЕМЗ",
+        "DEMZ",
+        "БПЛА",
+        "система сброса"
+      ],
+      "images": [
+        {
+          "id": "uavref-ss-mpp-3-exterior",
+          "localPath": "images/uavref-ss-mpp-3.webp",
+          "thumbnailPath": "thumbs/uavref-ss-mpp-3.webp",
+          "caption": "СС-МПП-3: общий внешний вид из предоставленного каталога ДЕМЗ, стр. 30. Изображение изготовителя.",
+          "width": 690,
+          "height": 725,
+          "position": 0
+        }
+      ],
+      "sources": [
+        {
+          "id": "uavref-ss-mpp-3-catalog",
+          "title": "ДЕМЗ — предоставленный каталог, сентябрь 2026, стр. 30",
+          "url": null,
+          "accessedAt": "2026-10-19"
+        },
+        {
+          "id": "uavref-ss-mpp-3-demz-country",
+          "title": "Минобороны Литвы — украинское происхождение компании DEMZ, 14.08.2026",
+          "url": "https://kam.lt/en/ukraines-demz-defence-industry-company-agreed-to-build-an-ammunition-factory-in-lithuania-creating-up-to-450-jobs/",
+          "accessedAt": "2026-10-19"
+        }
+      ],
+      "contentStatus": "source_only",
+      "reviewedAt": null,
+      "modelStatus": "source-listed",
+      "sourceGrade": "B",
+      "verifiedAt": null
+    }
+  ],
+  "assetFiles": [
+    {
+      "path": "images/uavref-ofsp-05.webp",
+      "bytes": 4552,
+      "sha256": "4094044e50a5b608b693681e6ecd48284a9551185ffa38cd4b31bc364d2928c8"
+    },
+    {
+      "path": "thumbs/uavref-ofsp-05.webp",
+      "bytes": 4004,
+      "sha256": "d6e4675fc9e44367f4e4a65be6530935db8455bf170cb945426dda4715b5c909"
+    },
+    {
+      "path": "images/uavref-ofsp-08.webp",
+      "bytes": 5148,
+      "sha256": "3bb1fe1f7776a1533aa3cbf0cece8f6952ac6f75c1c561d1392488321816bf5e"
+    },
+    {
+      "path": "thumbs/uavref-ofsp-08.webp",
+      "bytes": 3716,
+      "sha256": "fc00427c1d7534aee5d3f3611bbdd581f88f3f00d5ffbc1a153e659480a451d8"
+    },
+    {
+      "path": "images/uavref-ofsp-17.webp",
+      "bytes": 8068,
+      "sha256": "1cb5f287903d45de16355fbf44857093e8df73f3aec934b9ea89bbc38c829444"
+    },
+    {
+      "path": "thumbs/uavref-ofsp-17.webp",
+      "bytes": 2922,
+      "sha256": "06e2ee56625220fefc23391d53797ab26a1f175bd57de06537d217130cd1822a"
+    },
+    {
+      "path": "images/uavref-ofsp-25.webp",
+      "bytes": 9068,
+      "sha256": "0309026360d7c231000c866e34611d67c9f3905fe689ce0870172ecd41878247"
+    },
+    {
+      "path": "thumbs/uavref-ofsp-25.webp",
+      "bytes": 3060,
+      "sha256": "8d78a86498a5e9e1553f70a008ccddfe7e89394d24dea084fc0b9da6d221c3ff"
+    },
+    {
+      "path": "images/uavref-ofbch-2.webp",
+      "bytes": 86942,
+      "sha256": "d0e64c37d3950a9442f4fa3b987cf36f45ccc2e50c1dcb16afefa2c8cbea11b5"
+    },
+    {
+      "path": "thumbs/uavref-ofbch-2.webp",
+      "bytes": 14442,
+      "sha256": "8973f66e2788f2108c369a1e5faef5935224e36b8228088bffcf62707977582d"
+    },
+    {
+      "path": "images/uavref-ofbch-25.webp",
+      "bytes": 95918,
+      "sha256": "caba51ed994be2570293e62cd1ea442baad1a0f0d6353afc43558b68a4a8ca65"
+    },
+    {
+      "path": "thumbs/uavref-ofbch-25.webp",
+      "bytes": 10860,
+      "sha256": "6cac9921bdbe6f216882c74f2d01c20bdf5e80c04a1859b006b548ad48180d2b"
+    },
+    {
+      "path": "images/uavref-ibm-02.webp",
+      "bytes": 18060,
+      "sha256": "0182e1319e45901248f69cc2e61a9d7a9c5ce0c9395369357928687cbbaad1be"
+    },
+    {
+      "path": "thumbs/uavref-ibm-02.webp",
+      "bytes": 3414,
+      "sha256": "cbfc247de0dd57d10f26d8b17fea5853fbfeb1c928a1f66919ee121b40770dc3"
+    },
+    {
+      "path": "images/uavref-ibm-05.webp",
+      "bytes": 12802,
+      "sha256": "5564baad6924ab4a739d4c499e83d33275478e2d79eb0c4f1cf34c96d96f7e3e"
+    },
+    {
+      "path": "thumbs/uavref-ibm-05.webp",
+      "bytes": 4024,
+      "sha256": "4bb6a4dfd7b181e9a700864f963ad0595aaa2b429bf87bd7cb4a9163f41a8a12"
+    },
+    {
+      "path": "images/uavref-ibm-1.webp",
+      "bytes": 8656,
+      "sha256": "4b6b8019ca03ce38f9cc008a97a9657c7d561bc611e34a1ae1baed00fad56e54"
+    },
+    {
+      "path": "thumbs/uavref-ibm-1.webp",
+      "bytes": 2348,
+      "sha256": "9b479ef221edfb5d0f2012a62e1607ff9d2654c53b1a2a3599b6ca825b513496"
+    },
+    {
+      "path": "images/uavref-ibm-3.webp",
+      "bytes": 12830,
+      "sha256": "6be885d2bc9f3903d84f9ff2ce3c9b99bc2a1b6ca1cdbe98a97ab475e280405e"
+    },
+    {
+      "path": "thumbs/uavref-ibm-3.webp",
+      "bytes": 2266,
+      "sha256": "44b678af1ec581028b3e1623a36e9868b5bcc9acb0a1c6ee0be563956da4767e"
+    },
+    {
+      "path": "images/uavref-ss-02.webp",
+      "bytes": 51674,
+      "sha256": "7f890133bb6a3e39d5990c6fe1ba15cbc18a698c47c77b0968efca66bfb831cb"
+    },
+    {
+      "path": "thumbs/uavref-ss-02.webp",
+      "bytes": 14038,
+      "sha256": "141f2e8ab607c182f6a3d3e8bcc6ba213cbd89a005d094a1ffa582270ee87241"
+    },
+    {
+      "path": "images/uavref-ss-05.webp",
+      "bytes": 31060,
+      "sha256": "af450c91c9dc56e472009fe0c5601142a93f9c68a8094adea90d120df8cbb619"
+    },
+    {
+      "path": "thumbs/uavref-ss-05.webp",
+      "bytes": 8814,
+      "sha256": "9c74bcb81faa6d237f6626a148020d35ed189edbc122e6f077a57f30e042bb89"
+    },
+    {
+      "path": "images/uavref-ss-mpp-3.webp",
+      "bytes": 42628,
+      "sha256": "fdc610c8b9d1c6944a85dc45ca17c7ae5eb7a0bc0893d841d7deb2f7ae37948b"
+    },
+    {
+      "path": "thumbs/uavref-ss-mpp-3.webp",
+      "bytes": 10398,
+      "sha256": "5a81c4ccfbef333d2f52ad9c5c79244b39bd558e8e24a39ef4079f994c809a3c"
+    }
+  ]
+}

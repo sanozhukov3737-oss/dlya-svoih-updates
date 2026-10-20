@@ -1,0 +1,7 @@
+--------- beginning of main
+--------- beginning of system
+--------- beginning of kernel
+10-20 09:17:00.290  6240  6240 E chromium: [ERROR:filesystem_posix.cc(62)] mkdir /data/user/0/ru.dlyasvoih.app/cache/WebView/Crashpad: No such file or directory (2)
+10-20 09:17:02.705  6240  6240 I OfflineModelViewer: Offline model frame {"colors":1812,"triangles":3563,"stage":[412,471],"viewport":[412,471],"buffer":[618,706],"camera":[2.1266167268991856,1.6540352320326999,2.7567253867211665]}
+10-20 09:17:15.195  6240  6240 E chromium: [ERROR:aw_browser_terminator.cc(125)] Renderer process (8200) crash detected (code -1).
+10-20 09:17:37.718  6240  6240 I OfflineModelViewer: Offline model frame {"colors":2141,"triangles":49823,"stage":[412,451],"viewport":[412,451],"buffer":[618,676],"camera":[2.0945077200392217,1.6290615600305058,2.7151026000508427]}

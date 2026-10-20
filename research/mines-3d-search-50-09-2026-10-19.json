@@ -1,0 +1,2211 @@
+{
+  "checkedAt": "2026-10-19",
+  "mode": "Separate exterior 3D research; no app integration",
+  "range": [
+    401,
+    450
+  ],
+  "cardsReviewed": 50,
+  "sketchfabAttempts": 100,
+  "successfulSketchfabQueries": 100,
+  "blockedSketchfabQueries": 0,
+  "rawSketchfabResults": 56,
+  "uniqueRawSketchfabResults": 53,
+  "supplementalModelMetadataLookups": 2,
+  "webQueries": 68,
+  "webEngines": {
+    "system2": 64,
+    "system1": 4
+  },
+  "newDownloadedFilesFromSearch": 1,
+  "newFilesForReviewedCards": 0,
+  "newUnidentifiedReserveFiles": 1,
+  "separateBatchFiles": 9,
+  "heldReferenceSourceFiles": 3,
+  "counts": {
+    "excluded": 6,
+    "variant": 1,
+    "none": 43
+  },
+  "cards": [
+    {
+      "id": "mine-audit-v25-us-mk-57",
+      "title": "Mk 57",
+      "number": 401,
+      "apiQueries": [
+        "Mk 57 naval mine",
+        "Mark 57 mine"
+      ],
+      "status": "excluded",
+      "note": "Это система управления корабельным огнём и вертикальная пусковая установка, а не морская мина Mk 57.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Совпадение исключено после проверки"
+    },
+    {
+      "id": "mine-audit-v25-us-mk-64-mod-5-quickstrike-er",
+      "title": "Mk 64 Mod 5 Quickstrike-ER",
+      "number": 402,
+      "apiQueries": [
+        "Mk 64 Quickstrike ER",
+        "Quickstrike ER mine"
+      ],
+      "status": "variant",
+      "note": "Найдена обычная Mk-64 Quickstrike в библиотеке MVRsimulation. На первичной странице нет подтверждения исполнения Mod 5 Quickstrike-ER. Доступ предоставляется клиентам VRSG в собственном формате. К карточке Mod 5 ER модель не привязана, открытого GLB не получено.",
+      "sources": [
+        {
+          "title": "Mk-64 Quickstrike · MVRsimulation",
+          "url": "https://www.mvrsimulation.com/index.php/model/mk-64usgrey",
+          "author": "MVRsimulation",
+          "license": "Для клиентов VRSG, собственный формат; открытая лицензия не подтверждена",
+          "verification": "Первичная страница прямо указывает Mk-64 Quickstrike, но не Mod 5 и не ER."
+        }
+      ],
+      "downloadedThisPass": false,
+      "statusLabel": "Родственное название · точная модификация не подтверждена"
+    },
+    {
+      "id": "mine-audit-v25-fr-lance",
+      "title": "Lance",
+      "number": 403,
+      "apiQueries": [
+        "Lance French mine",
+        "Lance naval mine"
+      ],
+      "status": "none",
+      "note": "Проверены Lance и GIAT Lance с уточнением типа объекта. Копья, страйкбольные устройства и изделия с тем же словом в названии не считались моделью французской мины. Подходящий наружный файл не получен.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не найден в этом проходе"
+    },
+    {
+      "id": "mine-audit-v25-fr-m-51",
+      "title": "M-51",
+      "number": 404,
+      "apiQueries": [
+        "M-51 French mine",
+        "M51 landmine"
+      ],
+      "status": "excluded",
+      "note": "Модели танка с индексом M-51 не соответствуют французской мине M-51.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Совпадение исключено после проверки"
+    },
+    {
+      "id": "mine-audit-v25-fr-m-52",
+      "title": "M-52",
+      "number": 405,
+      "apiQueries": [
+        "M-52 French mine",
+        "M52 landmine"
+      ],
+      "status": "none",
+      "note": "Проверены M-52, Model 1952 и дополнительное название M 52 MACI. Скутеры, самоходные орудия и другие предметы с индексом M52 исключены. Подходящий наружный файл в этом проходе не получен.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не найден в этом проходе"
+    },
+    {
+      "id": "mine-audit-v25-fr-mle-1951",
+      "title": "Mle 1951",
+      "number": 406,
+      "apiQueries": [
+        "Mle 1951 mine",
+        "Modele 1951 mine"
+      ],
+      "status": "excluded",
+      "note": "В индексаторе найдено предложение нажимной MI APID 51. В нашей базе Mle 1951 и Mle 1955 относятся к осколочному семейству Model 1951/55. Совпадения года недостаточно: эту модель не подставляли к данным карточкам. Индивидуальный файл и лицензия предложения не подтверждены.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Совпадение исключено после проверки"
+    },
+    {
+      "id": "mine-audit-v25-fr-mle-1955",
+      "title": "Mle 1955",
+      "number": 407,
+      "apiQueries": [
+        "Mle 1955 mine",
+        "Modele 1955 mine"
+      ],
+      "status": "none",
+      "note": "Проверены Mle 1955, семейство 1951/55 и MI AP MB 51-55. Найденная в индексаторе нажимная MI APID 51 к этой осколочной карточке не относится. Подходящий наружный файл не получен.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не найден в этом проходе"
+    },
+    {
+      "id": "mine-audit-v25-fr-model-1953",
+      "title": "Model 1953",
+      "number": 408,
+      "apiQueries": [
+        "Model 1953 French mine",
+        "Mle 1953 mine"
+      ],
+      "status": "none",
+      "note": "Проверены обозначение и варианты написания в публичном каталоге Sketchfab и веб-поиске. Подходящая наружная модель именно этой карточки с подтверждённым правом включения в приложение в этом проходе не получена.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не найден в этом проходе"
+    },
+    {
+      "id": "mine-audit-v25-fr-model-1954",
+      "title": "Model 1954",
+      "number": 409,
+      "apiQueries": [
+        "Model 1954 French mine",
+        "Mle 1954 mine"
+      ],
+      "status": "none",
+      "note": "Проверены обозначение и варианты написания в публичном каталоге Sketchfab и веб-поиске. Подходящая наружная модель именно этой карточки с подтверждённым правом включения в приложение в этом проходе не получена.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не найден в этом проходе"
+    },
+    {
+      "id": "mine-audit-v25-us-m23",
+      "title": "M23",
+      "number": 410,
+      "apiQueries": [
+        "M23 chemical mine",
+        "M23 landmine"
+      ],
+      "status": "excluded",
+      "note": "Найдены упоминания технических разрезных макетов. Они исключены из подбора цельных наружных визуальных моделей; исходники и внутренние детали не скачивались.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Совпадение исключено после проверки"
+    },
+    {
+      "id": "mine-audit-v26-su-pm-1",
+      "title": "ПМ-1",
+      "number": 411,
+      "apiQueries": [
+        "PM-1 naval mine",
+        "ПМ-1 морская мина"
+      ],
+      "status": "none",
+      "note": "Проверены обозначение и варианты написания в публичном каталоге Sketchfab и веб-поиске. Подходящая наружная модель именно этой карточки с подтверждённым правом включения в приложение в этом проходе не получена.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не найден в этом проходе"
+    },
+    {
+      "id": "mine-audit-v26-su-ksm",
+      "title": "КСМ",
+      "number": 412,
+      "apiQueries": [
+        "KSM naval mine",
+        "КСМ мина"
+      ],
+      "status": "none",
+      "note": "Проверены обозначение и варианты написания в публичном каталоге Sketchfab и веб-поиске. Подходящая наружная модель именно этой карточки с подтверждённым правом включения в приложение в этом проходе не получена.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не найден в этом проходе"
+    },
+    {
+      "id": "mine-audit-v26-su-pm-2",
+      "title": "ПМ-2",
+      "number": 413,
+      "apiQueries": [
+        "PM-2 naval mine",
+        "ПМ-2 морская мина"
+      ],
+      "status": "excluded",
+      "note": "Объект на странице обозначен как отдельное устройство PM-2, а не советская морская мина ПМ-2. Файл не скачивался.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Совпадение исключено после проверки"
+    },
+    {
+      "id": "mine-audit-v26-su-pkm-25",
+      "title": "ПКМ-25",
+      "number": 414,
+      "apiQueries": [
+        "PKM-25 mine",
+        "ПКМ-25"
+      ],
+      "status": "none",
+      "note": "Проверены обозначение и варианты написания в публичном каталоге Sketchfab и веб-поиске. Подходящая наружная модель именно этой карточки с подтверждённым правом включения в приложение в этом проходе не получена.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не найден в этом проходе"
+    },
+    {
+      "id": "mine-audit-v26-su-dm-1",
+      "title": "ДМ-1",
+      "number": 415,
+      "apiQueries": [
+        "DM-1 naval mine",
+        "ДМ-1 мина"
+      ],
+      "status": "excluded",
+      "note": "Это авиационный объект, не советская морская мина ДМ-1.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Совпадение исключено после проверки"
+    },
+    {
+      "id": "mine-audit-v26-su-udm",
+      "title": "УДМ / УДМ-Э",
+      "number": 416,
+      "apiQueries": [
+        "UDM naval mine",
+        "УДМ мина"
+      ],
+      "status": "none",
+      "note": "Проверены обозначение и варианты написания в публичном каталоге Sketchfab и веб-поиске. Подходящая наружная модель именно этой карточки с подтверждённым правом включения в приложение в этом проходе не получена.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не найден в этом проходе"
+    },
+    {
+      "id": "mine-audit-v26-su-udm-2",
+      "title": "УДМ-2",
+      "number": 417,
+      "apiQueries": [
+        "UDM-2 mine",
+        "УДМ-2"
+      ],
+      "status": "none",
+      "note": "Проверены обозначение и варианты написания в публичном каталоге Sketchfab и веб-поиске. Подходящая наружная модель именно этой карточки с подтверждённым правом включения в приложение в этом проходе не получена.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не найден в этом проходе"
+    },
+    {
+      "id": "mine-audit-v26-su-udm-500",
+      "title": "УДМ-500",
+      "number": 418,
+      "apiQueries": [
+        "UDM-500",
+        "УДМ-500"
+      ],
+      "status": "none",
+      "note": "Проверены УДМ-500 и UDM-500. Найденные фотографии музейных экспонатов и упоминания в списке желаемых моделей не являются распространяемым 3D-файлом. Точное соответствие общего морского резерва этой карточке не заявляется.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не найден в этом проходе"
+    },
+    {
+      "id": "mine-audit-v26-su-udm-m",
+      "title": "УДМ-М",
+      "number": 419,
+      "apiQueries": [
+        "UDM-M mine",
+        "УДМ-М мина"
+      ],
+      "status": "none",
+      "note": "Проверены обозначение и варианты написания в публичном каталоге Sketchfab и веб-поиске. Подходящая наружная модель именно этой карточки с подтверждённым правом включения в приложение в этом проходе не получена.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не найден в этом проходе"
+    },
+    {
+      "id": "mine-audit-v26-su-amd-2-1000",
+      "title": "АМД-2-1000",
+      "number": 420,
+      "apiQueries": [
+        "AMD-2-1000",
+        "АМД-2-1000"
+      ],
+      "status": "none",
+      "note": "Проверены обозначение и варианты написания в публичном каталоге Sketchfab и веб-поиске. Подходящая наружная модель именно этой карточки с подтверждённым правом включения в приложение в этом проходе не получена.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не найден в этом проходе"
+    },
+    {
+      "id": "mine-audit-v26-su-amd-2-500",
+      "title": "АМД-2-500",
+      "number": 421,
+      "apiQueries": [
+        "AMD-2-500",
+        "АМД-2-500"
+      ],
+      "status": "none",
+      "note": "Проверены обозначение и варианты написания в публичном каталоге Sketchfab и веб-поиске. Подходящая наружная модель именно этой карточки с подтверждённым правом включения в приложение в этом проходе не получена.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не найден в этом проходе"
+    },
+    {
+      "id": "mine-audit-v26-su-amd-2m",
+      "title": "АМД-2М",
+      "number": 422,
+      "apiQueries": [
+        "AMD-2M mine",
+        "АМД-2М"
+      ],
+      "status": "none",
+      "note": "Проверены обозначение и варианты написания в публичном каталоге Sketchfab и веб-поиске. Подходящая наружная модель именно этой карточки с подтверждённым правом включения в приложение в этом проходе не получена.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не найден в этом проходе"
+    },
+    {
+      "id": "mine-audit-v26-su-amd-4-1000",
+      "title": "АМД-4-1000",
+      "number": 423,
+      "apiQueries": [
+        "AMD-4-1000",
+        "АМД-4-1000"
+      ],
+      "status": "none",
+      "note": "Проверены обозначение и варианты написания в публичном каталоге Sketchfab и веб-поиске. Подходящая наружная модель именно этой карточки с подтверждённым правом включения в приложение в этом проходе не получена.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не найден в этом проходе"
+    },
+    {
+      "id": "mine-audit-v26-su-amd-4-500",
+      "title": "АМД-4-500",
+      "number": 424,
+      "apiQueries": [
+        "AMD-4-500",
+        "АМД-4-500"
+      ],
+      "status": "none",
+      "note": "Проверены обозначение и варианты написания в публичном каталоге Sketchfab и веб-поиске. Подходящая наружная модель именно этой карточки с подтверждённым правом включения в приложение в этом проходе не получена.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не найден в этом проходе"
+    },
+    {
+      "id": "mine-audit-v26-su-gm",
+      "title": "ГМ",
+      "number": 425,
+      "apiQueries": [
+        "GM Soviet naval mine",
+        "ГМ морская мина"
+      ],
+      "status": "none",
+      "note": "Проверены обозначение и варианты написания в публичном каталоге Sketchfab и веб-поиске. Подходящая наружная модель именно этой карточки с подтверждённым правом включения в приложение в этом проходе не получена.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не найден в этом проходе"
+    },
+    {
+      "id": "mine-audit-v26-su-plt-6",
+      "title": "ПЛТ-6 (опытная)",
+      "number": 426,
+      "apiQueries": [
+        "PLT-6 mine",
+        "ПЛТ-6"
+      ],
+      "status": "none",
+      "note": "Проверено полное обозначение опытного образца. Исторические упоминания и похожие сокращения не считались доступной наружной 3D-моделью. Подходящий файл в этом проходе не получен.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не найден в этом проходе"
+    },
+    {
+      "id": "mine-audit-v26-su-pmr-1",
+      "title": "ПМР-1",
+      "number": 427,
+      "apiQueries": [
+        "PMR-1 naval mine",
+        "ПМР-1 морская мина"
+      ],
+      "status": "none",
+      "note": "Поиск выполнен с уточнением «морская мина», чтобы отделить советские ПМР от одноимённых югославских наземных мин и минных заградителей. Иные индексы и учебное исполнение не объединялись. Подходящий файл именно этой карточки не получен.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не найден в этом проходе"
+    },
+    {
+      "id": "mine-audit-v26-su-pmr-2",
+      "title": "ПМР-2",
+      "number": 428,
+      "apiQueries": [
+        "PMR-2 naval mine",
+        "ПМР-2 морская мина"
+      ],
+      "status": "none",
+      "note": "Поиск выполнен с уточнением «морская мина», чтобы отделить советские ПМР от одноимённых югославских наземных мин и минных заградителей. Иные индексы и учебное исполнение не объединялись. Подходящий файл именно этой карточки не получен.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не найден в этом проходе"
+    },
+    {
+      "id": "mine-audit-v26-su-pmr-2m",
+      "title": "ПМР-2М",
+      "number": 429,
+      "apiQueries": [
+        "PMR-2M mine",
+        "ПМР-2М"
+      ],
+      "status": "none",
+      "note": "Поиск выполнен с уточнением «морская мина», чтобы отделить советские ПМР от одноимённых югославских наземных мин и минных заградителей. Иные индексы и учебное исполнение не объединялись. Подходящий файл именно этой карточки не получен.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не найден в этом проходе"
+    },
+    {
+      "id": "mine-audit-v26-su-pmr-2u",
+      "title": "ПМР-2У (учебная)",
+      "number": 430,
+      "apiQueries": [
+        "PMR-2U mine",
+        "ПМР-2У"
+      ],
+      "status": "none",
+      "note": "Поиск выполнен с уточнением «морская мина», чтобы отделить советские ПМР от одноимённых югославских наземных мин и минных заградителей. Иные индексы и учебное исполнение не объединялись. Подходящий файл именно этой карточки не получен.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не найден в этом проходе"
+    },
+    {
+      "id": "mine-audit-v26-su-pmt-1",
+      "title": "ПМТ-1",
+      "number": 431,
+      "apiQueries": [
+        "PMT-1 mine",
+        "ПМТ-1"
+      ],
+      "status": "none",
+      "note": "Проверены обозначение и варианты написания в публичном каталоге Sketchfab и веб-поиске. Подходящая наружная модель именно этой карточки с подтверждённым правом включения в приложение в этом проходе не получена.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не найден в этом проходе"
+    },
+    {
+      "id": "mine-audit-v26-su-apm",
+      "title": "АПМ",
+      "number": 432,
+      "apiQueries": [
+        "APM naval mine",
+        "АПМ мина"
+      ],
+      "status": "none",
+      "note": "Проверены обозначение и варианты написания в публичном каталоге Sketchfab и веб-поиске. Подходящая наружная модель именно этой карточки с подтверждённым правом включения в приложение в этом проходе не получена.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не найден в этом проходе"
+    },
+    {
+      "id": "mine-audit-v26-su-plt-4m",
+      "title": "ПЛТ-4М (опытная)",
+      "number": 433,
+      "apiQueries": [
+        "PLT-4M",
+        "ПЛТ-4М"
+      ],
+      "status": "none",
+      "note": "Проверено полное обозначение опытного образца. Исторические упоминания и похожие сокращения не считались доступной наружной 3D-моделью. Подходящий файл в этом проходе не получен.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не найден в этом проходе"
+    },
+    {
+      "id": "mine-audit-v26-su-plt-5",
+      "title": "ПЛТ-5 (опытная)",
+      "number": 434,
+      "apiQueries": [
+        "PLT-5 mine",
+        "ПЛТ-5"
+      ],
+      "status": "none",
+      "note": "Проверено полное обозначение опытного образца. Исторические упоминания и похожие сокращения не считались доступной наружной 3D-моделью. Подходящий файл в этом проходе не получен.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не найден в этом проходе"
+    },
+    {
+      "id": "mine-audit-v26-su-mnp",
+      "title": "МНП",
+      "number": 435,
+      "apiQueries": [
+        "MNP naval mine",
+        "МНП мина"
+      ],
+      "status": "none",
+      "note": "Проверены обозначение и варианты написания в публичном каталоге Sketchfab и веб-поиске. Подходящая наружная модель именно этой карточки с подтверждённым правом включения в приложение в этом проходе не получена.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не найден в этом проходе"
+    },
+    {
+      "id": "mine-audit-v26-su-apdm",
+      "title": "АПДМ",
+      "number": 436,
+      "apiQueries": [
+        "APDM mine",
+        "АПДМ"
+      ],
+      "status": "none",
+      "note": "Проверены обозначение и варианты написания в публичном каталоге Sketchfab и веб-поиске. Подходящая наружная модель именно этой карточки с подтверждённым правом включения в приложение в этом проходе не получена.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не найден в этом проходе"
+    },
+    {
+      "id": "mine-audit-v26-su-pdm-3ya",
+      "title": "ПДМ-3Я",
+      "number": 437,
+      "apiQueries": [
+        "PDM-3Ya",
+        "ПДМ-3Я"
+      ],
+      "status": "none",
+      "note": "Проверены ПДМ-3Я, PDM-3Ya и STL. Справочные фотографии, рисунки и текстовые руководства не считались доступным цифровым наружным макетом. Точный распространяемый файл не получен.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не найден в этом проходе"
+    },
+    {
+      "id": "mine-audit-v26-su-krm",
+      "title": "КРМ",
+      "number": 438,
+      "apiQueries": [
+        "KRM naval mine",
+        "КРМ морская мина"
+      ],
+      "status": "none",
+      "note": "Проверены обозначение и варианты написания в публичном каталоге Sketchfab и веб-поиске. Подходящая наружная модель именно этой карточки с подтверждённым правом включения в приложение в этом проходе не получена.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не найден в этом проходе"
+    },
+    {
+      "id": "mine-audit-v26-su-prm",
+      "title": "ПРМ",
+      "number": 439,
+      "apiQueries": [
+        "PRM naval mine",
+        "ПРМ мина"
+      ],
+      "status": "none",
+      "note": "Проверены обозначение и варианты написания в публичном каталоге Sketchfab и веб-поиске. Подходящая наружная модель именно этой карточки с подтверждённым правом включения в приложение в этом проходе не получена.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не найден в этом проходе"
+    },
+    {
+      "id": "mine-audit-v26-su-rm-1",
+      "title": "РМ-1",
+      "number": 440,
+      "apiQueries": [
+        "RM-1 naval mine",
+        "РМ-1 мина"
+      ],
+      "status": "none",
+      "note": "Проверены обозначение и варианты написания в публичном каталоге Sketchfab и веб-поиске. Подходящая наружная модель именно этой карточки с подтверждённым правом включения в приложение в этом проходе не получена.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не найден в этом проходе"
+    },
+    {
+      "id": "mine-audit-v26-su-rm-2",
+      "title": "РМ-2",
+      "number": 441,
+      "apiQueries": [
+        "RM-2 naval mine",
+        "РМ-2 мина"
+      ],
+      "status": "none",
+      "note": "Проверены обозначение и варианты написания в публичном каталоге Sketchfab и веб-поиске. Подходящая наружная модель именно этой карточки с подтверждённым правом включения в приложение в этом проходе не получена.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не найден в этом проходе"
+    },
+    {
+      "id": "mine-audit-v26-su-rm-2g",
+      "title": "РМ-2Г",
+      "number": 442,
+      "apiQueries": [
+        "RM-2G",
+        "РМ-2Г"
+      ],
+      "status": "none",
+      "note": "Проверены обозначение и варианты написания в публичном каталоге Sketchfab и веб-поиске. Подходящая наружная модель именно этой карточки с подтверждённым правом включения в приложение в этом проходе не получена.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не найден в этом проходе"
+    },
+    {
+      "id": "mine-audit-v26-su-smdm-1",
+      "title": "СМДМ-1",
+      "number": 443,
+      "apiQueries": [
+        "SMDM-1",
+        "СМДМ-1"
+      ],
+      "status": "none",
+      "note": "Проверены обозначение и варианты написания в публичном каталоге Sketchfab и веб-поиске. Подходящая наружная модель именно этой карточки с подтверждённым правом включения в приложение в этом проходе не получена.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не найден в этом проходе"
+    },
+    {
+      "id": "mine-audit-v26-su-smdm-2",
+      "title": "СМДМ-2",
+      "number": 444,
+      "apiQueries": [
+        "SMDM-2",
+        "СМДМ-2"
+      ],
+      "status": "none",
+      "note": "Проверены обозначение и варианты написания в публичном каталоге Sketchfab и веб-поиске. Подходящая наружная модель именно этой карточки с подтверждённым правом включения в приложение в этом проходе не получена.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не найден в этом проходе"
+    },
+    {
+      "id": "mine-audit-v26-su-mdt",
+      "title": "МДТ",
+      "number": 445,
+      "apiQueries": [
+        "MDT naval mine",
+        "МДТ мина"
+      ],
+      "status": "none",
+      "note": "Проверены обозначение и варианты написания в публичном каталоге Sketchfab и веб-поиске. Подходящая наружная модель именно этой карточки с подтверждённым правом включения в приложение в этом проходе не получена.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не найден в этом проходе"
+    },
+    {
+      "id": "mine-audit-v26-su-mtpk-1",
+      "title": "МТПК-1",
+      "number": 446,
+      "apiQueries": [
+        "MTPK-1",
+        "МТПК-1"
+      ],
+      "status": "none",
+      "note": "Проверены обозначение и варианты написания в публичном каталоге Sketchfab и веб-поиске. Подходящая наружная модель именно этой карточки с подтверждённым правом включения в приложение в этом проходе не получена.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не найден в этом проходе"
+    },
+    {
+      "id": "mine-audit-v26-su-mtpk-2",
+      "title": "МТПК-2",
+      "number": 447,
+      "apiQueries": [
+        "MTPK-2",
+        "МТПК-2"
+      ],
+      "status": "none",
+      "note": "Проверены обозначение и варианты написания в публичном каталоге Sketchfab и веб-поиске. Подходящая наружная модель именно этой карточки с подтверждённым правом включения в приложение в этом проходе не получена.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не найден в этом проходе"
+    },
+    {
+      "id": "mine-audit-v26-su-mshm",
+      "title": "МШМ",
+      "number": 448,
+      "apiQueries": [
+        "MShM mine",
+        "МШМ морская мина"
+      ],
+      "status": "none",
+      "note": "Проверены обозначение и варианты написания в публичном каталоге Sketchfab и веб-поиске. Подходящая наружная модель именно этой карточки с подтверждённым правом включения в приложение в этом проходе не получена.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не найден в этом проходе"
+    },
+    {
+      "id": "mine-audit-v26-su-kpm",
+      "title": "КПМ",
+      "number": 449,
+      "apiQueries": [
+        "KPM naval mine",
+        "КПМ мина"
+      ],
+      "status": "none",
+      "note": "Проверены обозначение и варианты написания в публичном каталоге Sketchfab и веб-поиске. Подходящая наружная модель именно этой карточки с подтверждённым правом включения в приложение в этом проходе не получена.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не найден в этом проходе"
+    },
+    {
+      "id": "mine-audit-v26-su-uksm",
+      "title": "УКСМ",
+      "number": 450,
+      "apiQueries": [
+        "UKSM mine",
+        "УКСМ"
+      ],
+      "status": "none",
+      "note": "Проверены обозначение и варианты написания в публичном каталоге Sketchfab и веб-поиске. Подходящая наружная модель именно этой карточки с подтверждённым правом включения в приложение в этом проходе не получена.",
+      "sources": [],
+      "downloadedThisPass": false,
+      "statusLabel": "Подходящий файл не найден в этом проходе"
+    }
+  ],
+  "rejected": [
+    {
+      "cardId": "mine-audit-v25-us-mk-57",
+      "title": "Mark 57 Director / Mk 57 VLS",
+      "reason": "Это система управления корабельным огнём и вертикальная пусковая установка, а не морская мина Mk 57.",
+      "source": "https://free3d.com/3d-model/mark-57-director-1460.html"
+    },
+    {
+      "cardId": "mine-audit-v25-fr-m-51",
+      "title": "Sherman M-51 / Isherman",
+      "reason": "Модели танка с индексом M-51 не соответствуют французской мине M-51.",
+      "source": "https://www.cgtrader.com/3d-models/vehicle/military-vehicle/m-51-isherman"
+    },
+    {
+      "cardId": "mine-audit-v25-fr-mle-1951",
+      "title": "MI APID 51 · нажимная модель",
+      "reason": "В индексаторе найдено предложение нажимной MI APID 51. В нашей базе Mle 1951 и Mle 1955 относятся к осколочному семейству Model 1951/55. Совпадения года недостаточно: эту модель не подставляли к данным карточкам. Индивидуальный файл и лицензия предложения не подтверждены."
+    },
+    {
+      "cardId": "mine-audit-v25-us-m23",
+      "title": "M23 · разрезные технические макеты",
+      "reason": "Найдены упоминания технических разрезных макетов. Они исключены из подбора цельных наружных визуальных моделей; исходники и внутренние детали не скачивались."
+    },
+    {
+      "cardId": "mine-audit-v26-su-pm-2",
+      "title": "PM-2 Detonator · WWII",
+      "reason": "Объект на странице обозначен как отдельное устройство PM-2, а не советская морская мина ПМ-2. Файл не скачивался.",
+      "source": "https://www.turbosquid.com/ru/3d-models/wwii-pm-2-detonator-1062250"
+    },
+    {
+      "cardId": "mine-audit-v26-su-dm-1",
+      "title": "Lippisch P 13 & DM-1",
+      "reason": "Это авиационный объект, не советская морская мина ДМ-1.",
+      "source": "https://sketchfab.com/3d-models/lippisch-p-13-dm-1-2b4f918eea194fffbb4d55cc7c671a85"
+    },
+    {
+      "title": "List of Vacant Models · DCS World",
+      "reason": "Перечень желаемых моделей содержит УДМ, АМД, РМ и другие названия. Само включение в список не подтверждает существования доступного цифрового исходника.",
+      "source": "https://forum.dcs.world/topic/216247-list-of-vacant-models-ii/"
+    },
+    {
+      "title": "Общие сокращения AMD / APM / KRM / PRM / SMDM",
+      "reason": "Процессоры, расчётное ПО, игровые предметы, автомобили и научные публикации с похожими сокращениями исключены. В 56 сырых результатах API нет подтверждённых моделей мин из текущих 50 карточек."
+    }
+  ],
+  "additionalModels": [
+    {
+      "title": "Old Sea Mine · наружный визуальный резерв",
+      "source": "https://sketchfab.com/3d-models/old-sea-mine-15a9f5d74f474cdbba3716cd3aeea419",
+      "author": "Jorma Rysky",
+      "license": "CC BY 4.0",
+      "downloaded": true,
+      "cardIds": [],
+      "note": "Получен официальный GLB с текстурой 1K. Автор не подтверждает точное обозначение или страну. Модель стилизована; это не достоверная реконструкция конкретного типа и не основание для заполнения ТТХ."
+    },
+    {
+      "title": "HIGH Venäläinen M/12 miina - Russian M/12 Mine",
+      "source": "https://sketchfab.com/3d-models/high-venalainen-m12-miina-russian-m12-mine-0eabe5b441584b1a8a84d00b40aaf421",
+      "author": "Traffic Museums Association / Trafiikki-museot",
+      "license": "CC BY-NC 4.0",
+      "downloaded": false,
+      "cardIds": [],
+      "note": "Музейный скан M/12 найден при расширенном поиске вне текущих 50 карточек. Ограничение NonCommercial подтверждено в публичных метаданных; файл не добавлен в распространяемую подборку."
+    }
+  ],
+  "newReserve": {
+    "id": "old-sea-mine-unidentified-reserve",
+    "title": "Морская мина · тип не установлен · резерв",
+    "sourceTitle": "Old Sea Mine",
+    "author": "Jorma Rysky",
+    "embeddedAuthor": "Jorma Rysky (Joona Venäläinen) (https://sketchfab.com/Rysky)",
+    "authorUrl": "https://sketchfab.com/Rysky",
+    "source": "https://sketchfab.com/3d-models/old-sea-mine-15a9f5d74f474cdbba3716cd3aeea419",
+    "sourceUid": "15a9f5d74f474cdbba3716cd3aeea419",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "sourceNoAIFlag": true,
+    "sourceNoAINotice": "NoAI flag displayed on source page; preserve this source metadata. No generative model creation or editing performed.",
+    "file": "models/old-sea-mine-unidentified-reserve.glb",
+    "downloadFormat": "Official Sketchfab converted GLB, 1k texture, downloaded through Download 3D Model interface",
+    "bytes": 1614392,
+    "sha256": "ef22499be13543bd9895b437f785af57523d6b1ff099bcb24138e88113056582",
+    "triangles": 10116,
+    "meshCount": 4,
+    "images": 1,
+    "animations": 0,
+    "externalResources": false,
+    "modifications": "No local modifications. Original downloaded Sketchfab conversion preserved byte for byte.",
+    "identificationNote": "Author states only a possible old Russian influence. Exact designation, date and country are not independently confirmed; no specific catalog card is assigned.",
+    "cardIds": [],
+    "role": "unidentified exterior visual reserve; not a new confirmed designation",
+    "replacesAutomatically": false,
+    "displayColorMode": "source",
+    "displayReview": "Geometry review completed. Source preview has a readable brown hand-painted finish; the actual downloaded GLB still needs an Android material/UV and contrast review before integration.",
+    "publishedInApp": false,
+    "review": "Four views of the actual downloaded mesh, using an illustrative matte brown review palette only in the diagnostic image. GLB geometry and source materials are unchanged. This image does not validate source texture appearance or replace the required Android test.",
+    "reviewImage": "old-sea-mine-reserve-review.png",
+    "extensionsUsed": [
+      "KHR_materials_specular"
+    ]
+  },
+  "progress": {
+    "batch": "cards50-09",
+    "completedCardIds": [
+      "eng-tm-62m",
+      "eng-pmn",
+      "eng-pmn-2",
+      "eng-mon-50",
+      "eng-ozm-72",
+      "eng-pom-2-family",
+      "eng-ptm-3",
+      "eng-m19",
+      "eng-dm-31-at",
+      "eng-mi-ac-pr-family",
+      "eng-type-72p-av",
+      "eng-mn-111",
+      "eng-pp-mi-sr-ii",
+      "eng-ffv-028",
+      "eng-tm-65-77",
+      "eng-israel-no-4",
+      "eng-blu-43-b-family",
+      "eng-dm-41-ap",
+      "eng-fordonsmina-13-family",
+      "eng-hailstorm-family",
+      "eng-li-11-truppmina-10",
+      "eng-m14-ap-mine",
+      "eng-m16-mine-family",
+      "eng-m67-m72-mine-family",
+      "eng-m77-m90-mine-family",
+      "eng-m86-pdm",
+      "eng-mai-75",
+      "eng-mai-ga4",
+      "eng-maped-mod-f1",
+      "eng-mi-ap-dv-59",
+      "eng-mi-ap-mb-51",
+      "eng-mm-1",
+      "eng-mrud",
+      "eng-nr-413",
+      "eng-pjrad",
+      "eng-pp-mi-ba",
+      "eng-ppm-2-dd",
+      "eng-sb-33-family",
+      "eng-str-50-str-75-family",
+      "eng-t-ab-1-ap",
+      "eng-truppmina-12-family",
+      "eng-type-58-ap",
+      "eng-type-72-ap-family",
+      "eng-valmara-family",
+      "eng-var-40-var-100-family",
+      "eng-vp-84-vp-01-family",
+      "eng-vp-88",
+      "eng-vs-50-family",
+      "eng-vs-jap",
+      "eng-vs-mk2-family",
+      "eng-vs-sapf-m3",
+      "eng-ym-1-ir",
+      "eng-ym-1b-ir",
+      "eng-israel-no-12",
+      "eng-pma-1a",
+      "eng-pma-2",
+      "eng-pma-3",
+      "eng-prom-1",
+      "eng-protivopehotnaa-fugasnaa-mina-l10a1",
+      "eng-protivopehotnaa-fugasnaa-mina-lory",
+      "eng-protivopehotnaa-fugasnaa-mina-maus-1",
+      "eng-p4-mk1-pk",
+      "eng-pm-79-bg",
+      "eng-ts-50",
+      "eng-psm-1-bg",
+      "eng-r-25",
+      "eng-tos",
+      "eng-adwat",
+      "submunition-blu-91-b",
+      "eng-c-3-b-av",
+      "eng-c14",
+      "eng-dm-11-av-1951",
+      "eng-parm-family",
+      "eng-dm21",
+      "eng-fordonsmina-14",
+      "eng-l9a2-l18a1-bar-mine-family",
+      "eng-m15-av",
+      "eng-m21-av",
+      "eng-m6a2-av",
+      "eng-m70-m73-mine-family",
+      "eng-m7a2-av",
+      "eng-mat-62b-mat-76-family",
+      "eng-mat-5-mat-6-family",
+      "eng-mats-family",
+      "eng-mc-71",
+      "eng-mi-ac-ah-family",
+      "eng-mitral",
+      "eng-mn-123-family",
+      "eng-mpbk-zn",
+      "eng-mr-123",
+      "eng-p3-mk2-pk",
+      "eng-pansermine-m47",
+      "eng-pk-14-ee",
+      "eng-pm-60-k-1",
+      "eng-prb-m3-family",
+      "eng-pt-mi-ba-family",
+      "eng-pt-mi-u",
+      "eng-saci-54-family",
+      "eng-sb-81-family",
+      "eng-sh-55-family",
+      "eng-stridsvagnsmina-m52b",
+      "eng-t-ab-1-at",
+      "eng-tc-family",
+      "eng-tulipan",
+      "eng-umk",
+      "eng-vs-1-6-family",
+      "eng-vs-av-family",
+      "eng-atm-01-family",
+      "eng-atm-15m",
+      "eng-atm-4m",
+      "eng-atm-r3",
+      "eng-israel-no-6",
+      "eng-tma-family",
+      "eng-m49a1-signal-mine",
+      "eng-mpr-m85",
+      "eng-slam-family",
+      "submunition-m78-av-submunition",
+      "eng-pdf-v7-001",
+      "eng-pdf-v7-002",
+      "eng-pdf-v7-003",
+      "eng-pdf-v7-004",
+      "eng-pdf-v7-005",
+      "eng-pdf-v7-006",
+      "eng-pdf-v7-007",
+      "eng-pdf-v7-008",
+      "eng-pdf-v7-009",
+      "eng-pdf-v7-010",
+      "eng-pdf-v7-011",
+      "eng-pdf-v7-012",
+      "eng-pdf-v7-013",
+      "eng-pdf-v7-014",
+      "eng-pdf-v7-015",
+      "eng-pdf-v7-016",
+      "eng-pdf-v7-017",
+      "eng-pdf-v7-018",
+      "eng-pdf-v7-019",
+      "eng-pdf-v7-020",
+      "eng-pdf-v7-021",
+      "eng-pdf-v7-022",
+      "eng-pdf-v7-023",
+      "eng-pdf-v7-024",
+      "eng-pdf-v7-025",
+      "eng-pdf-v7-026",
+      "eng-pdf-v7-027",
+      "eng-pdf-v7-028",
+      "eng-pdf-v7-029",
+      "eng-pdf-v7-030",
+      "eng-pdf-v7-031",
+      "eng-pdf-v7-032",
+      "eng-pdf-v7-033",
+      "eng-pdf-v7-034",
+      "eng-pdf-v7-035",
+      "eng-pdf-v7-036",
+      "eng-pdf-v7-037",
+      "eng-pdf-v7-038",
+      "eng-pdf-v7-039",
+      "eng-pdf-v7-040",
+      "eng-pdf-v7-041",
+      "eng-pdf-v7-042",
+      "eng-pdf-v7-043",
+      "eng-pdf-v7-044",
+      "eng-pdf-v7-045",
+      "eng-pdf-v7-046",
+      "eng-pdf-v7-047",
+      "eng-pdf-v7-048",
+      "eng-pdf-v7-049",
+      "eng-pdf-v7-050",
+      "eng-pdf-v7-051",
+      "eng-pdf-v7-052",
+      "eng-pdf-v7-053",
+      "eng-pdf-v7-054",
+      "eng-pdf-v7-055",
+      "eng-pdf-v7-056",
+      "eng-pdf-v7-057",
+      "eng-pdf-v7-058",
+      "eng-pdf-v7-059",
+      "eng-pdf-v7-060",
+      "eng-pdf-v7-061",
+      "eng-pdf-v7-062",
+      "eng-pdf-v7-063",
+      "eng-pdf-v7-064",
+      "eng-pdf-v7-065",
+      "eng-pdf-v7-066",
+      "eng-pdf-v7-067",
+      "eng-pdf-v7-068",
+      "eng-pdf-v7-069",
+      "eng-pdf-v7-070",
+      "eng-pdf-v7-071",
+      "eng-pdf-v7-072",
+      "eng-pdf-v7-073",
+      "eng-pdf-v7-074",
+      "eng-pdf-v7-075",
+      "eng-pdf-v7-076",
+      "eng-pdf-v7-077",
+      "eng-pdf-v7-078",
+      "eng-pdf-v7-079",
+      "eng-pdf-v7-080",
+      "eng-pdf-v7-081",
+      "eng-pdf-v7-082",
+      "eng-pdf-v7-083",
+      "eng-pdf-v7-084",
+      "eng-pdf-v7-085",
+      "eng-pdf-v7-086",
+      "eng-pdf-v7-087",
+      "eng-pdf-v7-088",
+      "eng-pdf-v7-089",
+      "eng-pdf-v7-090",
+      "eng-pdf-v7-091",
+      "eng-pdf-v7-092",
+      "eng-pdf-v7-093",
+      "eng-pdf-v7-094",
+      "eng-pdf-v7-095",
+      "eng-pdf-v7-096",
+      "eng-pdf-v7-097",
+      "eng-pdf-v7-098",
+      "eng-pdf-v7-099",
+      "eng-pdf-v7-106",
+      "eng-pdf-v7-109",
+      "eng-pdf-v7-111",
+      "eng-pdf-v7-112",
+      "eng-pdf-v7-113",
+      "eng-pdf-v7-116",
+      "eng-pdf-v7-117",
+      "eng-pdf-v7-118",
+      "eng-pdf-v7-119",
+      "eng-pdf-v7-120",
+      "eng-pdf-v7-121",
+      "eng-pdf-v7-122",
+      "eng-pdf-v7-124",
+      "eng-pdf-v7-126",
+      "eng-pdf-v7-127",
+      "eng-pdf-v7-128",
+      "eng-pdf-v7-129",
+      "eng-pdf-v7-130",
+      "eng-pdf-v7-131",
+      "ref-v8-in-nipun",
+      "ref-v8-in-vibhav",
+      "ref-v8-in-vishal",
+      "ref-v8-in-prachand",
+      "ref-v8-za-r2m1",
+      "ref-v8-za-r2m2",
+      "ref-v8-za-no69mk1",
+      "ref-v8-za-shrapnel-no2",
+      "ref-v8-za-mini-ms803",
+      "ref-v8-za-type72-ap",
+      "ref-v8-za-no8-at",
+      "ref-v8-za-type72-at",
+      "ref-v8-zw-zap1",
+      "ref-v8-zw-zap2",
+      "ref-v8-zw-zaps",
+      "ref-v8-cn-type59-ap",
+      "ref-v8-cn-type59-at",
+      "ref-v8-jp-type63-ap",
+      "ref-v8-jp-type63-at",
+      "ref-v8-cn-type66",
+      "ref-v8-jp-type67",
+      "ref-v8-jp-type80",
+      "ref-v8-pk-p2mk2-ap",
+      "ref-v8-pk-p5-family",
+      "ref-v8-pk-p7mk1",
+      "ref-v8-pk-p2mk2-at",
+      "ref-v8-ar-fmk1",
+      "ref-v8-ar-mapg",
+      "ref-v8-ar-mappg",
+      "ref-v8-ar-fmk3",
+      "ref-v8-cl-mapp78",
+      "ref-v8-cl-mapt78",
+      "ref-v8-cl-cardoen-i",
+      "ref-v8-cl-cardoen-ii",
+      "ref-v8-pmd-6m",
+      "ref-v8-pmn-4",
+      "ref-v8-pmn-3",
+      "ref-v8-mon-90",
+      "ref-v8-mon-100",
+      "ref-v8-pomz-2m",
+      "ref-v8-tmn-46",
+      "ref-v8-tm-57",
+      "ref-v8-pdm-1",
+      "ref-v8-pdm-1m",
+      "ref-v8-pdm-2",
+      "ref-v8-tm-62p3",
+      "ref-v8-tm-62p",
+      "ref-v8-tm-72",
+      "ref-v8-pomz-2",
+      "ref-v8-mon-200",
+      "ref-v8-pom-3",
+      "ref-v8-ptm-4",
+      "ref-v8-pmd-6",
+      "ref-v9-fi-panssarimiina-m36",
+      "ref-v9-fi-panssarimiina-m39",
+      "ref-v9-fi-panssarimiina-ms39-ms40",
+      "ref-v9-fi-panssarimiina-m44",
+      "ref-v9-de-tellermine35",
+      "ref-v9-se-stridsvagnsmina-m39",
+      "ref-v9-fi-jaamiina-m41",
+      "ref-v9-fi-rasia-ansa-m42",
+      "ref-v9-fi-laatikkomiina-m43",
+      "ref-v9-fi-putkiansa42-putkimiina43",
+      "ref-v9-su-tm41",
+      "ref-v9-su-tmdb",
+      "ref-v9-su-tmk2",
+      "ref-v9-su-ozm3",
+      "ref-v9-su-ozm4",
+      "ref-v9-cn-type69-ap",
+      "ref-v9-vn-mbv78a1-a2",
+      "ref-v9-vn-mn79",
+      "ref-v9-vn-mdh10",
+      "ref-v9-vn-nomz2b",
+      "ref-v9-ro-mss",
+      "ref-v9-il-no22",
+      "ref-v9-il-no3",
+      "ref-v10-ru-model1908",
+      "ref-v10-su-m26",
+      "ref-v10-su-kb",
+      "ref-v10-su-m08-39",
+      "ref-v10-su-yam",
+      "ref-v10-cn-mao1",
+      "ref-v10-cn-mao4",
+      "ref-v10-ru-tm89",
+      "ref-v10-cs-pt-mi-p",
+      "ref-v10-pz-mi-85m",
+      "ref-v10-at-pz-mi-88",
+      "ref-v10-hu-uka63",
+      "ref-v10-gb-mk7",
+      "ref-v10-imp",
+      "mine-audit-v25-su-tm-62b",
+      "mine-audit-v25-su-tm-62d",
+      "mine-audit-v25-su-tm-62p2",
+      "mine-audit-v25-su-tm-62t",
+      "mine-audit-v25-su-mon-500",
+      "mine-audit-v25-su-pom-1s",
+      "mine-audit-v25-su-pom-2s",
+      "mine-audit-v25-su-ptm-1",
+      "mine-audit-v25-su-ptm-1g",
+      "mine-audit-v25-su-ptm-1s",
+      "mine-audit-v25-su-pfm-1s",
+      "mine-audit-v25-su-tm-73",
+      "mine-audit-v25-su-tm-83",
+      "mine-audit-v25-gb-hb-876",
+      "mine-audit-v25-gb-l14",
+      "mine-audit-v25-gb-pad",
+      "mine-audit-v25-de-sm-70",
+      "mine-audit-v25-cn-gld-111",
+      "mine-audit-v25-cn-type-84a",
+      "mine-audit-v25-cn-type-84b",
+      "mine-audit-v25-cn-type-84c",
+      "mine-audit-v25-ru-mdm-1-mod-1",
+      "mine-audit-v25-ru-mdm-2-mod-1",
+      "mine-audit-v25-ru-mdm-3-mod-1",
+      "mine-audit-v25-su-lmg",
+      "mine-audit-v25-su-ozm-160",
+      "mine-audit-v25-su-pmd-7",
+      "mine-audit-v25-su-pmd-7ts",
+      "mine-audit-v25-su-pmz-40",
+      "mine-audit-v25-su-tm-39",
+      "mine-audit-v25-su-tm-44",
+      "mine-audit-v25-su-tmb-2",
+      "mine-audit-v25-su-tmd-40",
+      "mine-audit-v25-su-tmd-44",
+      "mine-audit-v25-su-yam-5",
+      "mine-audit-v25-us-m24",
+      "mine-audit-v25-us-m26",
+      "mine-audit-v25-us-m2a4",
+      "mine-audit-v25-us-m2a4b2",
+      "mine-audit-v25-us-m3",
+      "mine-audit-v25-us-m66",
+      "mine-audit-v25-us-mk-62-quickstrike",
+      "mine-audit-v25-us-mk-63-quickstrike",
+      "mine-audit-v25-us-mk-65-quickstrike",
+      "mine-audit-v25-cs-pp-mi-d",
+      "mine-audit-v25-cs-pp-mi-sk",
+      "mine-audit-v25-cs-pp-mi-sr",
+      "mine-audit-v25-cs-pt-mi-ba-ii",
+      "mine-audit-v25-cs-pt-mi-ba-iii",
+      "mine-audit-v25-cs-pt-mi-d",
+      "mine-audit-v25-cs-pt-mi-k",
+      "mine-audit-v25-yu-cobra",
+      "mine-audit-v25-yu-kb-2",
+      "mine-audit-v25-yu-pmb-1",
+      "mine-audit-v25-yu-pmb-2",
+      "mine-audit-v25-yu-pmb-3",
+      "mine-audit-v25-yu-pmd-1",
+      "mine-audit-v25-yu-pmr-2",
+      "mine-audit-v25-yu-pmr-3",
+      "mine-audit-v25-yu-pmr-4",
+      "mine-audit-v25-yu-prom-2",
+      "mine-audit-v25-yu-prom-kd",
+      "mine-audit-v25-yu-tmm-1",
+      "mine-audit-v25-de-glasmine-43",
+      "mine-audit-v25-de-holzmine-42",
+      "mine-audit-v25-de-panzer-schnellmine-a",
+      "mine-audit-v25-de-panzer-schnellmine-b",
+      "mine-audit-v25-de-riegelmine-43",
+      "mine-audit-v25-de-riegelmine-44",
+      "mine-audit-v25-de-sch-tzenmine-42",
+      "mine-audit-v25-de-topfmine-4531",
+      "mine-audit-v25-us-mk-36",
+      "mine-audit-v25-us-mk-52",
+      "mine-audit-v25-us-mk-55",
+      "mine-audit-v25-us-mk-56",
+      "mine-audit-v25-us-mk-57",
+      "mine-audit-v25-us-mk-64-mod-5-quickstrike-er",
+      "mine-audit-v25-fr-lance",
+      "mine-audit-v25-fr-m-51",
+      "mine-audit-v25-fr-m-52",
+      "mine-audit-v25-fr-mle-1951",
+      "mine-audit-v25-fr-mle-1955",
+      "mine-audit-v25-fr-model-1953",
+      "mine-audit-v25-fr-model-1954",
+      "mine-audit-v25-us-m23",
+      "mine-audit-v26-su-pm-1",
+      "mine-audit-v26-su-ksm",
+      "mine-audit-v26-su-pm-2",
+      "mine-audit-v26-su-pkm-25",
+      "mine-audit-v26-su-dm-1",
+      "mine-audit-v26-su-udm",
+      "mine-audit-v26-su-udm-2",
+      "mine-audit-v26-su-udm-500",
+      "mine-audit-v26-su-udm-m",
+      "mine-audit-v26-su-amd-2-1000",
+      "mine-audit-v26-su-amd-2-500",
+      "mine-audit-v26-su-amd-2m",
+      "mine-audit-v26-su-amd-4-1000",
+      "mine-audit-v26-su-amd-4-500",
+      "mine-audit-v26-su-gm",
+      "mine-audit-v26-su-plt-6",
+      "mine-audit-v26-su-pmr-1",
+      "mine-audit-v26-su-pmr-2",
+      "mine-audit-v26-su-pmr-2m",
+      "mine-audit-v26-su-pmr-2u",
+      "mine-audit-v26-su-pmt-1",
+      "mine-audit-v26-su-apm",
+      "mine-audit-v26-su-plt-4m",
+      "mine-audit-v26-su-plt-5",
+      "mine-audit-v26-su-mnp",
+      "mine-audit-v26-su-apdm",
+      "mine-audit-v26-su-pdm-3ya",
+      "mine-audit-v26-su-krm",
+      "mine-audit-v26-su-prm",
+      "mine-audit-v26-su-rm-1",
+      "mine-audit-v26-su-rm-2",
+      "mine-audit-v26-su-rm-2g",
+      "mine-audit-v26-su-smdm-1",
+      "mine-audit-v26-su-smdm-2",
+      "mine-audit-v26-su-mdt",
+      "mine-audit-v26-su-mtpk-1",
+      "mine-audit-v26-su-mtpk-2",
+      "mine-audit-v26-su-mshm",
+      "mine-audit-v26-su-kpm",
+      "mine-audit-v26-su-uksm"
+    ],
+    "completedCardCount": 450,
+    "lastBatchRange": [
+      401,
+      450
+    ],
+    "nextBatchRange": [
+      451,
+      500
+    ],
+    "nextCards": [
+      {
+        "id": "mine-audit-v26-su-ugm",
+        "title": "УГМ"
+      },
+      {
+        "id": "mine-audit-v26-su-kam",
+        "title": "КАМ"
+      },
+      {
+        "id": "mine-audit-v26-su-lira",
+        "title": "Лира"
+      },
+      {
+        "id": "mine-audit-v26-su-ml-7",
+        "title": "МЛ-7"
+      },
+      {
+        "id": "mine-audit-v26-su-ml-8",
+        "title": "МЛ-8"
+      },
+      {
+        "id": "mine-audit-v26-su-ms-2",
+        "title": "МС-2"
+      },
+      {
+        "id": "mine-audit-v26-su-ms-3",
+        "title": "МС-3"
+      },
+      {
+        "id": "mine-audit-v26-su-pmd-57",
+        "title": "ПМД-57"
+      },
+      {
+        "id": "mine-audit-v26-us-hammerhead-encapsulated-effector",
+        "title": "Hammerhead Encapsulated Effector"
+      },
+      {
+        "id": "mine-audit-v26-us-mk-68-clandestine-delivered-mine",
+        "title": "Mk 68 Clandestine Delivered Mine"
+      },
+      {
+        "id": "mine-audit-v26-su-pkm-100",
+        "title": "ПКМ-100"
+      },
+      {
+        "id": "mine-audit-v26-su-mds-1-omul",
+        "title": "МДС-1 «Омуль»"
+      },
+      {
+        "id": "mine-audit-v26-su-tum-500",
+        "title": "ТУМ-500"
+      },
+      {
+        "id": "mine-audit-v26-su-tum-1000",
+        "title": "ТУМ-1000"
+      },
+      {
+        "id": "ordnance-v27-m131-mopms-sistema-rasseivaniya-min",
+        "title": "M131 MOPMS — система рассеивания мин"
+      },
+      {
+        "id": "ordnance-v27-m131-mopms-ap-mine",
+        "title": "M131 MOPMS AP Mine"
+      },
+      {
+        "id": "ordnance-v27-m131-mopms-at-mine",
+        "title": "M131 MOPMS AT Mine"
+      },
+      {
+        "id": "ordnance-v27-m139-volcano-sistema-rasseivaniya-min",
+        "title": "M139 Volcano — система рассеивания мин"
+      },
+      {
+        "id": "ordnance-v27-m139-volcano-ap-mine",
+        "title": "M139 Volcano AP Mine"
+      },
+      {
+        "id": "ordnance-v27-m139-volcano-at-mine",
+        "title": "M139 Volcano AT Mine"
+      },
+      {
+        "id": "ordnance-v27-ms-4",
+        "title": "МС-4"
+      },
+      {
+        "id": "ordnance-v27-sm-320",
+        "title": "СМ-320"
+      },
+      {
+        "id": "ordnance-v27-pmfc-1-kuba",
+        "title": "PMFC-1 (Куба)"
+      },
+      {
+        "id": "ordnance-v27-pmfh-1-kuba",
+        "title": "PMFH-1 (Куба)"
+      },
+      {
+        "id": "ordnance-v27-pmm-1-kuba",
+        "title": "PMM-1 (Куба)"
+      },
+      {
+        "id": "ordnance-v27-m57-app-m57-kuba",
+        "title": "M57 (Куба)"
+      },
+      {
+        "id": "ordnance-v30-app-m57-kndr",
+        "title": "APP M57 (КНДР)"
+      },
+      {
+        "id": "ordnance-v27-mm1-myanma",
+        "title": "MM1 (Мьянма)"
+      },
+      {
+        "id": "ordnance-v27-mm2-myanma",
+        "title": "MM2 (Мьянма)"
+      },
+      {
+        "id": "ordnance-v27-mm5-myanma",
+        "title": "MM5 (Мьянма)"
+      },
+      {
+        "id": "ordnance-v27-mm6-myanma",
+        "title": "MM6 (Мьянма)"
+      },
+      {
+        "id": "ordnance-v27-alcm-82-alcm-83-kndr",
+        "title": "ALCM-82 / ALCM-83 (КНДР)"
+      },
+      {
+        "id": "ordnance-v27-atm-41-kndr",
+        "title": "ATM-41 (КНДР)"
+      },
+      {
+        "id": "ordnance-v27-atm-44-kndr",
+        "title": "ATM-44 (КНДР)"
+      },
+      {
+        "id": "ordnance-v27-atm-46-kndr",
+        "title": "ATM-46 (КНДР)"
+      },
+      {
+        "id": "ordnance-v27-atm-46n-kndr",
+        "title": "ATM-46N (КНДР)"
+      },
+      {
+        "id": "ordnance-v27-atm-72-kndr",
+        "title": "ATM-72 (КНДР)"
+      },
+      {
+        "id": "ordnance-v27-atm-6-kndr",
+        "title": "ATM-6 (Австрия)"
+      },
+      {
+        "id": "ordnance-v27-atm-7-kndr",
+        "title": "ATM-7 (Австрия)"
+      },
+      {
+        "id": "ordnance-v27-100-mm-at-mine-vetnam",
+        "title": "100-mm AT Mine (Вьетнам)"
+      },
+      {
+        "id": "ordnance-v27-150-mm-at-mine-vetnam",
+        "title": "150-mm AT Mine (Вьетнам)"
+      },
+      {
+        "id": "ordnance-v27-200-mm-at-mine-vetnam",
+        "title": "200-mm AT Mine (Вьетнам)"
+      },
+      {
+        "id": "ordnance-v27-model-1948-ap-mine-vetnam",
+        "title": "Model 1948 AP Mine (Вьетнам)"
+      },
+      {
+        "id": "ordnance-v27-min-grenade-shaped-vetnam",
+        "title": "MIN grenade-shaped (Вьетнам)"
+      },
+      {
+        "id": "ordnance-v27-ym-ii-iran",
+        "title": "YM-II (Иран)"
+      },
+      {
+        "id": "ordnance-v27-ym-iii-ym-3-iran",
+        "title": "YM-III / YM-3 (Иран)"
+      },
+      {
+        "id": "ordnance-v27-ym-4-iran",
+        "title": "YM-4 (Иран)"
+      },
+      {
+        "id": "ordnance-v27-km14-respublika-koreya",
+        "title": "KM14 (Республика Корея)"
+      },
+      {
+        "id": "ordnance-v27-km16-respublika-koreya",
+        "title": "KM16 (Республика Корея)"
+      },
+      {
+        "id": "ordnance-v27-km18a1-respublika-koreya",
+        "title": "KM18A1 (Республика Корея)"
+      }
+    ],
+    "remainingCards": 94,
+    "originalQueueCards": 527,
+    "originalQueueRemaining": 77,
+    "addedCatalog195MineCards": [
+      {
+        "id": "demzref-mon50-2m",
+        "title": "МОН-50-2М"
+      },
+      {
+        "id": "demzref-k-didlisovyk",
+        "title": "К-ДІДЛІСОВИК"
+      },
+      {
+        "id": "demzref-hydra",
+        "title": "HYDRA"
+      },
+      {
+        "id": "demzref-babai",
+        "title": "БАБАЙ"
+      },
+      {
+        "id": "demzref-didbabai",
+        "title": "ДІДБАБАЙ"
+      },
+      {
+        "id": "demzref-mpp3",
+        "title": "МПП-3"
+      },
+      {
+        "id": "demzref-ozm72ms",
+        "title": "ОЗМ-72МС"
+      },
+      {
+        "id": "handbookref-ptm-l1-vr-6",
+        "title": "ПТМ-Л1 ВР-6"
+      },
+      {
+        "id": "handbookref-mon-100-1",
+        "title": "МОН-100.1"
+      },
+      {
+        "id": "handbookref-ptm-u-01",
+        "title": "ПТМ-У-01"
+      },
+      {
+        "id": "handbookref-ptm-u-02",
+        "title": "ПТМ-У-02"
+      },
+      {
+        "id": "handbookref-ptm-u-03",
+        "title": "ПТМ-У-03"
+      },
+      {
+        "id": "handbookref-ptm-u-04",
+        "title": "ПТМ-У-04"
+      },
+      {
+        "id": "handbookref-ptm-us-05",
+        "title": "ПТМ-УС-05"
+      },
+      {
+        "id": "handbookref-ptm-us-06",
+        "title": "ПТМ-УС-06"
+      },
+      {
+        "id": "handbookref-ptm-us-07",
+        "title": "ПТМ-УС-07"
+      },
+      {
+        "id": "handbookref-ptm-us-08",
+        "title": "ПТМ-УС-08"
+      }
+    ],
+    "totalQueueCards": 544,
+    "pendingQueue": [
+      {
+        "id": "mine-audit-v26-su-ugm",
+        "title": "УГМ"
+      },
+      {
+        "id": "mine-audit-v26-su-kam",
+        "title": "КАМ"
+      },
+      {
+        "id": "mine-audit-v26-su-lira",
+        "title": "Лира"
+      },
+      {
+        "id": "mine-audit-v26-su-ml-7",
+        "title": "МЛ-7"
+      },
+      {
+        "id": "mine-audit-v26-su-ml-8",
+        "title": "МЛ-8"
+      },
+      {
+        "id": "mine-audit-v26-su-ms-2",
+        "title": "МС-2"
+      },
+      {
+        "id": "mine-audit-v26-su-ms-3",
+        "title": "МС-3"
+      },
+      {
+        "id": "mine-audit-v26-su-pmd-57",
+        "title": "ПМД-57"
+      },
+      {
+        "id": "mine-audit-v26-us-hammerhead-encapsulated-effector",
+        "title": "Hammerhead Encapsulated Effector"
+      },
+      {
+        "id": "mine-audit-v26-us-mk-68-clandestine-delivered-mine",
+        "title": "Mk 68 Clandestine Delivered Mine"
+      },
+      {
+        "id": "mine-audit-v26-su-pkm-100",
+        "title": "ПКМ-100"
+      },
+      {
+        "id": "mine-audit-v26-su-mds-1-omul",
+        "title": "МДС-1 «Омуль»"
+      },
+      {
+        "id": "mine-audit-v26-su-tum-500",
+        "title": "ТУМ-500"
+      },
+      {
+        "id": "mine-audit-v26-su-tum-1000",
+        "title": "ТУМ-1000"
+      },
+      {
+        "id": "ordnance-v27-m131-mopms-sistema-rasseivaniya-min",
+        "title": "M131 MOPMS — система рассеивания мин"
+      },
+      {
+        "id": "ordnance-v27-m131-mopms-ap-mine",
+        "title": "M131 MOPMS AP Mine"
+      },
+      {
+        "id": "ordnance-v27-m131-mopms-at-mine",
+        "title": "M131 MOPMS AT Mine"
+      },
+      {
+        "id": "ordnance-v27-m139-volcano-sistema-rasseivaniya-min",
+        "title": "M139 Volcano — система рассеивания мин"
+      },
+      {
+        "id": "ordnance-v27-m139-volcano-ap-mine",
+        "title": "M139 Volcano AP Mine"
+      },
+      {
+        "id": "ordnance-v27-m139-volcano-at-mine",
+        "title": "M139 Volcano AT Mine"
+      },
+      {
+        "id": "ordnance-v27-ms-4",
+        "title": "МС-4"
+      },
+      {
+        "id": "ordnance-v27-sm-320",
+        "title": "СМ-320"
+      },
+      {
+        "id": "ordnance-v27-pmfc-1-kuba",
+        "title": "PMFC-1 (Куба)"
+      },
+      {
+        "id": "ordnance-v27-pmfh-1-kuba",
+        "title": "PMFH-1 (Куба)"
+      },
+      {
+        "id": "ordnance-v27-pmm-1-kuba",
+        "title": "PMM-1 (Куба)"
+      },
+      {
+        "id": "ordnance-v27-m57-app-m57-kuba",
+        "title": "M57 (Куба)"
+      },
+      {
+        "id": "ordnance-v30-app-m57-kndr",
+        "title": "APP M57 (КНДР)"
+      },
+      {
+        "id": "ordnance-v27-mm1-myanma",
+        "title": "MM1 (Мьянма)"
+      },
+      {
+        "id": "ordnance-v27-mm2-myanma",
+        "title": "MM2 (Мьянма)"
+      },
+      {
+        "id": "ordnance-v27-mm5-myanma",
+        "title": "MM5 (Мьянма)"
+      },
+      {
+        "id": "ordnance-v27-mm6-myanma",
+        "title": "MM6 (Мьянма)"
+      },
+      {
+        "id": "ordnance-v27-alcm-82-alcm-83-kndr",
+        "title": "ALCM-82 / ALCM-83 (КНДР)"
+      },
+      {
+        "id": "ordnance-v27-atm-41-kndr",
+        "title": "ATM-41 (КНДР)"
+      },
+      {
+        "id": "ordnance-v27-atm-44-kndr",
+        "title": "ATM-44 (КНДР)"
+      },
+      {
+        "id": "ordnance-v27-atm-46-kndr",
+        "title": "ATM-46 (КНДР)"
+      },
+      {
+        "id": "ordnance-v27-atm-46n-kndr",
+        "title": "ATM-46N (КНДР)"
+      },
+      {
+        "id": "ordnance-v27-atm-72-kndr",
+        "title": "ATM-72 (КНДР)"
+      },
+      {
+        "id": "ordnance-v27-atm-6-kndr",
+        "title": "ATM-6 (Австрия)"
+      },
+      {
+        "id": "ordnance-v27-atm-7-kndr",
+        "title": "ATM-7 (Австрия)"
+      },
+      {
+        "id": "ordnance-v27-100-mm-at-mine-vetnam",
+        "title": "100-mm AT Mine (Вьетнам)"
+      },
+      {
+        "id": "ordnance-v27-150-mm-at-mine-vetnam",
+        "title": "150-mm AT Mine (Вьетнам)"
+      },
+      {
+        "id": "ordnance-v27-200-mm-at-mine-vetnam",
+        "title": "200-mm AT Mine (Вьетнам)"
+      },
+      {
+        "id": "ordnance-v27-model-1948-ap-mine-vetnam",
+        "title": "Model 1948 AP Mine (Вьетнам)"
+      },
+      {
+        "id": "ordnance-v27-min-grenade-shaped-vetnam",
+        "title": "MIN grenade-shaped (Вьетнам)"
+      },
+      {
+        "id": "ordnance-v27-ym-ii-iran",
+        "title": "YM-II (Иран)"
+      },
+      {
+        "id": "ordnance-v27-ym-iii-ym-3-iran",
+        "title": "YM-III / YM-3 (Иран)"
+      },
+      {
+        "id": "ordnance-v27-ym-4-iran",
+        "title": "YM-4 (Иран)"
+      },
+      {
+        "id": "ordnance-v27-km14-respublika-koreya",
+        "title": "KM14 (Республика Корея)"
+      },
+      {
+        "id": "ordnance-v27-km16-respublika-koreya",
+        "title": "KM16 (Республика Корея)"
+      },
+      {
+        "id": "ordnance-v27-km18a1-respublika-koreya",
+        "title": "KM18A1 (Республика Корея)"
+      },
+      {
+        "id": "ordnance-v27-z-001m-armeniya",
+        "title": "Z-001M (Армения)"
+      },
+      {
+        "id": "ordnance-v27-pmn-e-armeniya",
+        "title": "ПМН-Э (Армения)"
+      },
+      {
+        "id": "ordnance-v27-p3-jumping-pakistan",
+        "title": "P3 Jumping (Пакистан)"
+      },
+      {
+        "id": "ordnance-v29-ga-0377",
+        "title": "M86"
+      },
+      {
+        "id": "ordnance-v29-ga-0384",
+        "title": "M56 mine dispensing subsystem"
+      },
+      {
+        "id": "ordnance-v29-ga-0385",
+        "title": "M87 Volcano"
+      },
+      {
+        "id": "ordnance-v29-ga-0386",
+        "title": "M88 Volcano"
+      },
+      {
+        "id": "ordnance-v29-ga-0387",
+        "title": "Spider XM10"
+      },
+      {
+        "id": "ordnance-v29-ga-0388",
+        "title": "Spider XM332 — комплект блока управления"
+      },
+      {
+        "id": "ordnance-v29-ga-0389",
+        "title": "Spider XM8 — MGL"
+      },
+      {
+        "id": "ordnance-v29-ga-0390",
+        "title": "Spider XM9 — ERTS"
+      },
+      {
+        "id": "ordnance-v29-ga-0391",
+        "title": "Spider XM96 — учебный блок MCAT"
+      },
+      {
+        "id": "ordnance-v29-ga-0392",
+        "title": "XM204 Wide Area Top Attack Munition"
+      },
+      {
+        "id": "ordnance-v29-ga-0393",
+        "title": "XM94 SLAM"
+      },
+      {
+        "id": "ordnance-v29-ga-0394",
+        "title": "M10 practice"
+      },
+      {
+        "id": "ordnance-v29-ga-0395",
+        "title": "M12 practice series"
+      },
+      {
+        "id": "ordnance-v29-ga-0396",
+        "title": "M16A1 inert"
+      },
+      {
+        "id": "ordnance-v29-ga-0397",
+        "title": "M20 practice"
+      },
+      {
+        "id": "ordnance-v29-ga-0398",
+        "title": "M35 practice"
+      },
+      {
+        "id": "ordnance-v29-ga-0399",
+        "title": "M68 practice"
+      },
+      {
+        "id": "ordnance-v29-ga-0400",
+        "title": "M69 practice"
+      },
+      {
+        "id": "ordnance-v29-ga-0401",
+        "title": "M79 practice"
+      },
+      {
+        "id": "ordnance-v29-ga-0402",
+        "title": "M8 practice"
+      },
+      {
+        "id": "ordnance-v29-ga-0403",
+        "title": "M80 practice"
+      },
+      {
+        "id": "ordnance-v29-ga-0404",
+        "title": "M81 practice"
+      },
+      {
+        "id": "ordnance-v29-ga-0405",
+        "title": "M8A1 practice"
+      },
+      {
+        "id": "pptx-v166-tm-124",
+        "title": "ТМ-124"
+      },
+      {
+        "id": "demzref-mon50-2m",
+        "title": "МОН-50-2М"
+      },
+      {
+        "id": "demzref-k-didlisovyk",
+        "title": "К-ДІДЛІСОВИК"
+      },
+      {
+        "id": "demzref-hydra",
+        "title": "HYDRA"
+      },
+      {
+        "id": "demzref-babai",
+        "title": "БАБАЙ"
+      },
+      {
+        "id": "demzref-didbabai",
+        "title": "ДІДБАБАЙ"
+      },
+      {
+        "id": "demzref-mpp3",
+        "title": "МПП-3"
+      },
+      {
+        "id": "demzref-ozm72ms",
+        "title": "ОЗМ-72МС"
+      },
+      {
+        "id": "handbookref-ptm-l1-vr-6",
+        "title": "ПТМ-Л1 ВР-6"
+      },
+      {
+        "id": "handbookref-mon-100-1",
+        "title": "МОН-100.1"
+      },
+      {
+        "id": "handbookref-ptm-u-01",
+        "title": "ПТМ-У-01"
+      },
+      {
+        "id": "handbookref-ptm-u-02",
+        "title": "ПТМ-У-02"
+      },
+      {
+        "id": "handbookref-ptm-u-03",
+        "title": "ПТМ-У-03"
+      },
+      {
+        "id": "handbookref-ptm-u-04",
+        "title": "ПТМ-У-04"
+      },
+      {
+        "id": "handbookref-ptm-us-05",
+        "title": "ПТМ-УС-05"
+      },
+      {
+        "id": "handbookref-ptm-us-06",
+        "title": "ПТМ-УС-06"
+      },
+      {
+        "id": "handbookref-ptm-us-07",
+        "title": "ПТМ-УС-07"
+      },
+      {
+        "id": "handbookref-ptm-us-08",
+        "title": "ПТМ-УС-08"
+      }
+    ],
+    "manualDownloadPolicy": "When an official download fails, give the user the verified primary URL, precise exterior filename and observed licence; do not count the file as downloaded."
+  },
+  "queries": [
+    "\"Mk 57\" naval mine 3D model",
+    "\"Mk 64\" Quickstrike ER 3D model",
+    "\"Lance\" French mine \"3d\"",
+    "\"M-51\" French mine \"3d\"",
+    "\"M-52\" French mine \"3d\"",
+    "\"Mle 1951\" mine 3D model",
+    "\"Mle 1955\" mine 3D model",
+    "\"Model 1953\" French mine \"3d\"",
+    "\"Model 1954\" French mine \"3d\"",
+    "\"M23\" chemical mine 3D model",
+    "\"PM-1\" Soviet naval mine \"3d\"",
+    "\"КСМ\" \"мина\" \"3d\"",
+    "\"PM-2\" Soviet naval mine \"3d\"",
+    "\"ПКМ-25\" \"3д\"",
+    "\"DM-1\" Soviet naval mine \"3d\"",
+    "\"УДМ\" \"морская мина\" \"3d\"",
+    "\"UDM-2\" mine \"3d\"",
+    "\"УДМ-500\" \"3d\"",
+    "\"УДМ-М\" модель 3д",
+    "\"AMD-2-1000\" \"3d\"",
+    "\"AMD-2-500\" \"3d\"",
+    "\"AMD-2M\" \"3d model\"",
+    "\"AMD-4-1000\" \"3d\"",
+    "\"AMD-4-500\" \"3d\"",
+    "\"ГМ\" \"морская мина\" \"3д\"",
+    "\"ПЛТ-6\" модель",
+    "\"PMR-1\" naval mine 3d model",
+    "\"PMR-2\" naval mine 3d model",
+    "\"PMR-2M\" \"3d\"",
+    "\"ПМР-2У\" модель",
+    "\"PMT-1\" mine \"3d\"",
+    "\"APM\" Soviet naval mine \"3d\"",
+    "\"ПЛТ-4М\" модель",
+    "\"ПЛТ-5\" \"мина\" модель",
+    "\"МНП\" морская мина 3д",
+    "\"APDM\" mine \"3d model\"",
+    "\"ПДМ-3Я\" 3д модель",
+    "\"KRM\" naval mine \"3d\"",
+    "\"PRM\" naval mine \"3d model\"",
+    "\"RM-1\" naval mine \"3d\"",
+    "\"RM-2\" naval mine \"3d model\"",
+    "\"РМ-2Г\" модель",
+    "\"SMDM-1\" \"3d\"",
+    "\"SMDM-2\" \"3d\"",
+    "\"МДТ\" мина 3д модель",
+    "\"MTPK-1\" \"3d model\"",
+    "\"MTPK-2\" \"3d model\"",
+    "\"МШМ\" \"3d\" мина",
+    "\"КПМ\" морская мина 3д модель",
+    "\"UKSM\" mine \"3d model\"",
+    "\"УКСМ\" \"3д\"",
+    "\"ПДМ-3Я\" STL",
+    "\"мина УДМ\" \"3д модель\"",
+    "\"PMR\" \"naval\" \"3d\"",
+    "\"French landmine\" \"3D model\"",
+    "\"Soviet naval mine\" \"3D model\"",
+    "Soviet naval mine 3D model download",
+    "мина УДМ 3D модель скачать",
+    "French mine modele 1951 3D model",
+    "French mine modele 1955 3D model",
+    "\"French anti-personnel mine model 1951\" \"3D\"",
+    "\"MI APID 51\" STL",
+    "\"M 51 MACI\" 3D",
+    "\"M 52 MACI\" 3D",
+    "\"MI AP MB 51\" \"3d\"",
+    "\"MI AP MB 51-55\" model STL",
+    "\"GIAT Lance\" \"3d\"",
+    "\"Mle 1951\" bounding \"3d\""
+  ],
+  "webQueryRuns": [
+    {
+      "batch": "pass9-web-01",
+      "engine": "system2",
+      "queries": [
+        "\"Mk 57\" naval mine 3D model",
+        "\"Mk 64\" Quickstrike ER 3D model",
+        "\"Lance\" French mine \"3d\"",
+        "\"M-51\" French mine \"3d\""
+      ]
+    },
+    {
+      "batch": "pass9-web-02",
+      "engine": "system2",
+      "queries": [
+        "\"M-52\" French mine \"3d\"",
+        "\"Mle 1951\" mine 3D model",
+        "\"Mle 1955\" mine 3D model",
+        "\"Model 1953\" French mine \"3d\""
+      ]
+    },
+    {
+      "batch": "pass9-web-03",
+      "engine": "system2",
+      "queries": [
+        "\"Model 1954\" French mine \"3d\"",
+        "\"M23\" chemical mine 3D model",
+        "\"PM-1\" Soviet naval mine \"3d\"",
+        "\"КСМ\" \"мина\" \"3d\""
+      ]
+    },
+    {
+      "batch": "pass9-web-04",
+      "engine": "system2",
+      "queries": [
+        "\"PM-2\" Soviet naval mine \"3d\"",
+        "\"ПКМ-25\" \"3д\"",
+        "\"DM-1\" Soviet naval mine \"3d\"",
+        "\"УДМ\" \"морская мина\" \"3d\""
+      ]
+    },
+    {
+      "batch": "pass9-web-05",
+      "engine": "system2",
+      "queries": [
+        "\"UDM-2\" mine \"3d\"",
+        "\"УДМ-500\" \"3d\"",
+        "\"УДМ-М\" модель 3д",
+        "\"AMD-2-1000\" \"3d\""
+      ]
+    },
+    {
+      "batch": "pass9-web-06",
+      "engine": "system2",
+      "queries": [
+        "\"AMD-2-500\" \"3d\"",
+        "\"AMD-2M\" \"3d model\"",
+        "\"AMD-4-1000\" \"3d\"",
+        "\"AMD-4-500\" \"3d\""
+      ]
+    },
+    {
+      "batch": "pass9-web-07",
+      "engine": "system2",
+      "queries": [
+        "\"ГМ\" \"морская мина\" \"3д\"",
+        "\"ПЛТ-6\" модель",
+        "\"PMR-1\" naval mine 3d model",
+        "\"PMR-2\" naval mine 3d model"
+      ]
+    },
+    {
+      "batch": "pass9-web-08",
+      "engine": "system2",
+      "queries": [
+        "\"PMR-2M\" \"3d\"",
+        "\"ПМР-2У\" модель",
+        "\"PMT-1\" mine \"3d\"",
+        "\"APM\" Soviet naval mine \"3d\""
+      ]
+    },
+    {
+      "batch": "pass9-web-09",
+      "engine": "system2",
+      "queries": [
+        "\"ПЛТ-4М\" модель",
+        "\"ПЛТ-5\" \"мина\" модель",
+        "\"МНП\" морская мина 3д",
+        "\"APDM\" mine \"3d model\""
+      ]
+    },
+    {
+      "batch": "pass9-web-10",
+      "engine": "system2",
+      "queries": [
+        "\"ПДМ-3Я\" 3д модель",
+        "\"KRM\" naval mine \"3d\"",
+        "\"PRM\" naval mine \"3d model\"",
+        "\"RM-1\" naval mine \"3d\""
+      ]
+    },
+    {
+      "batch": "pass9-web-11",
+      "engine": "system2",
+      "queries": [
+        "\"RM-2\" naval mine \"3d model\"",
+        "\"РМ-2Г\" модель",
+        "\"SMDM-1\" \"3d\"",
+        "\"SMDM-2\" \"3d\""
+      ]
+    },
+    {
+      "batch": "pass9-web-12",
+      "engine": "system2",
+      "queries": [
+        "\"МДТ\" мина 3д модель",
+        "\"MTPK-1\" \"3d model\"",
+        "\"MTPK-2\" \"3d model\"",
+        "\"МШМ\" \"3d\" мина"
+      ]
+    },
+    {
+      "batch": "pass9-web-13",
+      "engine": "system2",
+      "queries": [
+        "\"КПМ\" морская мина 3д модель",
+        "\"UKSM\" mine \"3d model\"",
+        "\"УКСМ\" \"3д\"",
+        "\"ПДМ-3Я\" STL"
+      ]
+    },
+    {
+      "batch": "pass9-web-14",
+      "engine": "system1",
+      "queries": [
+        "\"мина УДМ\" \"3д модель\"",
+        "\"PMR\" \"naval\" \"3d\"",
+        "\"French landmine\" \"3D model\"",
+        "\"Soviet naval mine\" \"3D model\""
+      ]
+    },
+    {
+      "batch": "pass9-web-15",
+      "engine": "system2",
+      "queries": [
+        "Soviet naval mine 3D model download",
+        "мина УДМ 3D модель скачать",
+        "French mine modele 1951 3D model",
+        "French mine modele 1955 3D model"
+      ]
+    },
+    {
+      "batch": "pass9-web-16",
+      "engine": "system2",
+      "queries": [
+        "\"French anti-personnel mine model 1951\" \"3D\"",
+        "\"MI APID 51\" STL",
+        "\"M 51 MACI\" 3D",
+        "\"M 52 MACI\" 3D"
+      ]
+    },
+    {
+      "batch": "pass9-web-17",
+      "engine": "system2",
+      "queries": [
+        "\"MI AP MB 51\" \"3d\"",
+        "\"MI AP MB 51-55\" model STL",
+        "\"GIAT Lance\" \"3d\"",
+        "\"Mle 1951\" bounding \"3d\""
+      ]
+    }
+  ],
+  "limitations": [
+    "По каждому из 50 обозначений проверены публичный каталог Sketchfab и веб-выдача. Поиск не доказывает отсутствия других моделей в интернете.",
+    "Выполнены 100 успешных поисковых запросов Sketchfab и 68 веб-запросов, включая четыре запроса во второй поисковой системе. 56 сырых совпадений / 53 уникальных объекта не являются 53 моделями мин. Ещё две конкретные модели проверены отдельными запросами метаданных.",
+    "Новый файл получен при дополнительном общем поиске морских моделей. Ни одной новой точной привязки к карточкам №401–450 не заявляется. 450 проверенных карточек не означают 450 найденных 3D-моделей.",
+    "Old Sea Mine — стилизованная наружная визуальная модель без установленного обозначения. Сохранены исходный файл, авторство, CC BY 4.0 и отметка NoAI. Из модели не выводились исторические ТТХ или подлинная окраска.",
+    "Диагностические четыре вида проверяют геометрию и используют условный цвет только на иллюстрации. Исходный GLB не перекрашивался. Реальный начальный и повёрнутый вид, материалы, UV и контраст на Android остаются непроверенными; в приложение модель не включена.",
+    "Музейный M/12 с CC BY-NC 4.0 отмечен отдельно, не скачан и не добавлен в распространяемый архив. Предложения платных файлов не приобретались.",
+    "Прежние восемь GLB, их сведения об авторах и три отложенных X3D сохранены без изменений. Разрезные технические модели, внутренние детали и извлечённые игровые ресурсы не включались."
+  ]
+}

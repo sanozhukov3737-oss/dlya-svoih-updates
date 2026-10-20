@@ -1,0 +1,32 @@
+{
+  "pdfPages": 26,
+  "productPages": 25,
+  "productRows": 187,
+  "newCards": 177,
+  "existingRows": 10,
+  "enrichedExistingCards": 8,
+  "existingCardsPreserved": 1520,
+  "totalCards": 1697,
+  "newImages": 167,
+  "totalImages": 1598,
+  "cardsWithoutExteriorInSource": 10,
+  "newImageAssetBytes": 2508564,
+  "databaseIntegrity": "ok",
+  "foreignKeys": "ok",
+  "fts": "ok",
+  "idempotence": "ok",
+  "favoritesAndReading": "preserved",
+  "apkBuilt": false,
+  "published": false,
+  "search": {
+    "regressionTests": 10,
+    "designationQueries": 468,
+    "failures": []
+  },
+  "hostTests": {
+    "tests": 13,
+    "result": "passed"
+  },
+  "sourceSha256": "264abfa31b5baafa0c70efd082e411e6fb7c2c46428ec817a5efa069b32abf37",
+  "preparedContentVersion": 194
+}

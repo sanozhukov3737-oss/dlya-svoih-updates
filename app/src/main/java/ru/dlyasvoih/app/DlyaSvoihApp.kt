@@ -130,7 +130,7 @@ private fun GuideNavigation(repo: GuideRepository, shortcutRequest: State<Shortc
                     }, onCategory = { category ->
                         nav.navigate("catalog/countries/${MainSection.AMMUNITION.name}?category=${Uri.encode(category)}")
                     }, onGroup = { group ->
-                        nav.navigate(if (group == CatalogHierarchy.INITIATION_GROUP) "catalog/initiation" else "catalog/engineering")
+                        nav.navigate(CatalogHierarchy.groupRoute(group))
                     }, onOpenCard = { id -> nav.navigate("catalog/card/${Uri.encode(id)}") },
                         onUpdate = { nav.navigate("catalog/updates") },
                         onSearch = { nav.navigate(Tab.SEARCH.route) })
@@ -141,7 +141,7 @@ private fun GuideNavigation(repo: GuideRepository, shortcutRequest: State<Shortc
                     OverviewScreen(overviewModel(repo, section), section, onBack = { nav.popBackStack() }, onCategory = { category ->
                         nav.navigate("catalog/countries/$section?category=${Uri.encode(category)}")
                     }, onGroup = { group ->
-                        nav.navigate(if (group == CatalogHierarchy.INITIATION_GROUP) "catalog/initiation" else "catalog/engineering")
+                        nav.navigate(CatalogHierarchy.groupRoute(group))
                     }, onSearch = { nav.navigate(Tab.SEARCH.route) })
                 }
                 composable("catalog/engineering") {
@@ -156,6 +156,13 @@ private fun GuideNavigation(repo: GuideRepository, shortcutRequest: State<Shortc
                     OverviewScreen(overviewModel(repo, section), section, onBack = { nav.popBackStack() },
                         onCategory = { category -> nav.navigate("catalog/countries/$section?category=${Uri.encode(category)}") },
                         group = CatalogHierarchy.INITIATION_GROUP,
+                        onSearch = { nav.navigate(Tab.SEARCH.route) })
+                }
+                composable("catalog/uav") {
+                    val section = MainSection.AMMUNITION.name
+                    OverviewScreen(overviewModel(repo, section), section, onBack = { nav.popBackStack() },
+                        onCategory = { category -> nav.navigate("catalog/countries/$section?category=${Uri.encode(category)}") },
+                        group = CatalogHierarchy.UAV_GROUP,
                         onSearch = { nav.navigate(Tab.SEARCH.route) })
                 }
                 composable("catalog/countries/{section}?category={category}", arguments = listOf(

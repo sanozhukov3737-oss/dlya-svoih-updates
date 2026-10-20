@@ -1,0 +1,20 @@
+{
+  "checkedAt": "2026-10-19",
+  "cardsReviewed": 50,
+  "htmlRows": 50,
+  "sourceLinks": 24,
+  "completedCardCount": 500,
+  "remainingCards": 44,
+  "nextBatchRange": [
+    501,
+    544
+  ],
+  "glbFiles": 9,
+  "newGlbFiles": 0,
+  "unchangedProtectedFiles": 25,
+  "zipCrcAndAllFileHashes": "passed",
+  "progressAndQueue": "passed",
+  "reportBytes": 134115,
+  "batchBytes": 44816601,
+  "batchSha256": "6758fec0d746788c5149ff8193bbfb5b5ab3b95a1c939e04d0004b525a6f3e49"
+}

@@ -1,0 +1,14 @@
+{
+  "serial": "emulator-5554",
+  "acceleration": "required-KVM",
+  "testPassed": false,
+  "error": "RuntimeError: Emulator exited before boot; see emulator.log",
+  "adbKill": {
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "error: could not connect to TCP port 5554: Connection refused\n"
+  },
+  "emulatorExitCode": 1,
+  "shutdownSeconds": 0.0,
+  "totalSeconds": 2.0
+}

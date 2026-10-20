@@ -12,6 +12,7 @@ import java.util.Set;
 public final class CatalogHierarchy {
     public static final String ENGINEERING_GROUP = "@engineering";
     public static final String INITIATION_GROUP = "@initiation";
+    public static final String UAV_GROUP = "@uav";
     private static final Set<String> HIDDEN_CATEGORIES = Collections.unmodifiableSet(
             new LinkedHashSet<>(Arrays.asList("audit-candidates", "reference")));
     private static final List<String> ENGINEERING = Collections.unmodifiableList(Arrays.asList(
@@ -25,6 +26,8 @@ public final class CatalogHierarchy {
     private static final List<String> ROOT_CATEGORIES = Collections.unmodifiableList(Arrays.asList(
             "grenades", "mortars", "artillery", "cannon-ammunition", "rockets-recoilless",
             "air-munitions", "submunitions"));
+    private static final List<String> UAV = Collections.unmodifiableList(Arrays.asList(
+            "uav-drop-munitions", "uav-warheads", "uav-release-systems"));
 
     private CatalogHierarchy() { }
 
@@ -38,6 +41,19 @@ public final class CatalogHierarchy {
 
     public static List<String> initiationIds(Collection<String> availableIds) {
         return present(INITIATION, availableIds);
+    }
+
+    public static List<String> uavIds(Collection<String> availableIds) {
+        return present(UAV, availableIds);
+    }
+
+    public static String groupRoute(String id) {
+        switch (id) {
+            case ENGINEERING_GROUP: return "catalog/engineering";
+            case INITIATION_GROUP: return "catalog/initiation";
+            case UAV_GROUP: return "catalog/uav";
+            default: throw new IllegalArgumentException("Unknown catalog group: " + id);
+        }
     }
 
     private static List<String> present(List<String> ordered, Collection<String> availableIds) {
@@ -54,9 +70,11 @@ public final class CatalogHierarchy {
         List<String> result = new ArrayList<>();
         if (!initiationIds(available).isEmpty()) result.add(INITIATION_GROUP);
         if (!engineeringIds(available).isEmpty()) result.add(ENGINEERING_GROUP);
+        if (!uavIds(available).isEmpty()) result.add(UAV_GROUP);
         for (String id : ROOT_CATEGORIES) if (available.contains(id)) result.add(id);
         for (String id : available) {
-            if (!ROOT_CATEGORIES.contains(id) && !ENGINEERING.contains(id) && !INITIATION.contains(id)) result.add(id);
+            if (!ROOT_CATEGORIES.contains(id) && !ENGINEERING.contains(id) && !INITIATION.contains(id)
+                    && !UAV.contains(id)) result.add(id);
         }
         return Collections.unmodifiableList(result);
     }
@@ -65,6 +83,14 @@ public final class CatalogHierarchy {
         switch (id) {
             case INITIATION_GROUP: return "Воспламенители, детонаторы, взрыватели, шнуры, провода и приборы";
             case ENGINEERING_GROUP: return "Мины, заряды и самодельные устройства";
+            case UAV_GROUP: return "Боеприпасы для сброса, боевые части и системы сброса";
+            case "uav-drop-munitions": return "Обозначения, внешний вид и описание сбрасываемых боеприпасов";
+            case "uav-warheads": return "Боевые части БПЛА: обозначения и общие сведения";
+            case "uav-release-systems": return "Системы сброса: модели и внешний вид";
+            case "munition-components": return "Корпуса, гильзы и отдельные компоненты боеприпасов";
+            case "rocket-motors": return "Ракетные двигатели: обозначения и общий внешний вид";
+            case "weapon-components": return "Узлы вооружения и оборудование: назначение и внешний вид";
+            case "vehicle-components": return "Детали техники: каталожные обозначения и изображения";
             case "mines-antipersonnel": return "Противопехотные мины и их разновидности";
             case "mines-antitank": return "Противотанковые мины разных стран";
             case "mines-antibottom": return "Противоднищевые мины: страны и обозначения";

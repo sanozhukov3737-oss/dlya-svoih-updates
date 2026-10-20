@@ -1,0 +1,9 @@
+{
+  "inputApkSha256": "f7f7d1034c5dba4117629e384833f5ade7545a3aae617b5b3b9da6f53b36b07f",
+  "renderFixedUnsignedApkSha256": "dd49b40f181544b3966a3725a8f21872cf1b7dc65f98215424da809cdafcf9d5",
+  "originalViewerBundleSha256": "e2ec3b59df4076ef8f9cb0a099217de5f15b2de9c918a76d8c49a89944a7e034",
+  "viewerBundleSha256": "4a9cb38da18262a7c6c31faf6360ad8d356fb8ba866dba799360d2ab40e5c713",
+  "onlyEntryChangedFromSearchFixedApk": "assets/viewer3d/viewer.bundle.js",
+  "allGlbAndAttributionBytesUnchanged": true,
+  "behavior": "Replace only non-ASCII transient material debug names before Three.js constructs GLSL SHADER_NAME; preserve all source GLB bytes, PBR colors, geometry and Russian UI attribution"
+}

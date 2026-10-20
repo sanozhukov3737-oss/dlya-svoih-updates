@@ -1,0 +1,30 @@
+{
+  "apkSha256": "19d1d109cc9d046500f7e4027a4aa8c628d76973c2b778b477c065ff5f2974c6",
+  "packageName": "ru.dlyasvoih.app",
+  "versionName": "0.3.134",
+  "versionCode": 138,
+  "upgradeInstallation": "passed-actual-adb-install-r-over-published-0.3.133",
+  "favoritesPreserved": true,
+  "favoriteIds": [
+    "mine-audit-v25-su-pmk-40",
+    "ref-v8-tm-46"
+  ],
+  "settingsPreserved": true,
+  "preservedAppearance": {
+    "theme_mode": "2",
+    "large_mode": "true"
+  },
+  "fullCatalogOnAndroid": true,
+  "contentVersion": 195,
+  "cards": 1697,
+  "images": 1600,
+  "preservedPublishedCardIdsAndRowids": 1426,
+  "galleryZoomAndSecondPhoto": false,
+  "cardButtonsAndSwipes": false,
+  "offline": true,
+  "androidVersion": "11",
+  "androidApi": "30",
+  "androidModel": "sdk_gphone_x86_64",
+  "modelVisualChecks": "pending-viewer-script",
+  "photoNavigationError": "UI element missing: ['Сравнительный наружный вид: ПМН слева, ПМН-2 справа. Фото: MoserB; автор разрешил свободное использование. Копия Wikimedia 960×720 преобразована в WebP. Ориентация уточнена по видимым корпусам: слово rechts в названии исходного файла не соответствует расположению ПМН на снимке.', 'БОЕПРИПАСЫ', 'ПМН-2', 'СССР', '3D-модель', 'Офлайн', 'Быстрая сверка', 'Сравнить', 'Страна и происхождение', 'Описание', 'Характеристики', 'ПМН-2, внешний вид. Фото: Danish EOD and Search Center. Источник: GICHD — Explosive Ordnance Guide for Ukraine (2022), PDF-стр. 18.', 'Назад', 'Карточка', 'Поделиться', 'Чтение', 'В избранное', 'Каталог', 'Избранное', 'Недавние']"
+}

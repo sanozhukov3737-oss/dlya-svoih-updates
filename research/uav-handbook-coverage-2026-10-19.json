@@ -1,0 +1,5124 @@
+{
+  "source": {
+    "filename": "Справочные_данные_по_боеприпасам_и_взрывателям_для_применения_с.pdf",
+    "title": "Справочные данные: боеприпасы и взрыватели для применения с БПЛА ВСУ (перевод с украинского языка)",
+    "sha256": "264abfa31b5baafa0c70efd082e411e6fb7c2c46428ec817a5efa069b32abf37",
+    "pages": 26,
+    "publisher": "Не установлен по предоставленному переводу",
+    "independentConfirmation": "Переводной справочник является основным источником. Внешний поиск не дал достаточного первичного подтверждения каждого индекса.",
+    "imageRights": "Исходные авторы и лицензии отдельных иллюстраций в PDF не установлены."
+  },
+  "comparedAgainstContentVersion": 193,
+  "preparedContentVersion": 194,
+  "totalRows": 187,
+  "newCards": 177,
+  "existingRows": 10,
+  "enrichedExistingCards": 8,
+  "newExteriorImages": 169,
+  "noExteriorRows": 8,
+  "nonProductPages": [
+    {
+      "page": 1,
+      "reason": "Титульный лист"
+    }
+  ],
+  "observations": [
+    {
+      "page": 2,
+      "slot": 1,
+      "rowBounds": [
+        62.25,
+        138.75
+      ],
+      "nameRaw": "Взрыватель ПБ-1У для 82-мм мины",
+      "title": "ПБ-1У",
+      "maker": "Промэнерго",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На фотографии показан металлический корпус со светлой нижней частью и коническим верхом.",
+      "generalType": "взрыватель",
+      "aliases": [
+        "ПБ-1У",
+        "pb-1u"
+      ],
+      "exteriorCrop": [
+        98.5,
+        64.05,
+        261.4,
+        136.95
+      ],
+      "mappedCardId": "handbookref-pb-1u"
+    },
+    {
+      "page": 2,
+      "slot": 2,
+      "rowBounds": [
+        138.75,
+        197.25
+      ],
+      "nameRaw": "ПНИ-1",
+      "title": "ПНИ-1",
+      "maker": "ПИИ «Интервзрывпром»",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "no-exterior-in-source",
+      "appearance": "",
+      "generalType": "взрыватель",
+      "aliases": [
+        "ПНИ-1",
+        "pni-1"
+      ],
+      "mappedCardId": "handbookref-pni-1"
+    },
+    {
+      "page": 2,
+      "slot": 3,
+      "rowBounds": [
+        197.25,
+        259.5
+      ],
+      "nameRaw": "ПНУ-1-1/2",
+      "title": "ПНУ-1-1/2",
+      "maker": "ПИИ «Интервзрывпром»",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "no-exterior-in-source",
+      "appearance": "",
+      "generalType": "взрыватель",
+      "aliases": [
+        "ПНУ-1-1/2",
+        "pnu-1-1/2"
+      ],
+      "mappedCardId": "handbookref-pnu-1-1-2"
+    },
+    {
+      "page": 2,
+      "slot": 4,
+      "rowBounds": [
+        259.5,
+        341.75
+      ],
+      "nameRaw": "ПНУ-1-36",
+      "title": "ПНУ-1-36",
+      "maker": "ПИИ «Интервзрывпром»",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "no-exterior-in-source",
+      "appearance": "",
+      "generalType": "взрыватель",
+      "aliases": [
+        "ПНУ-1-36",
+        "pnu-1-36"
+      ],
+      "mappedCardId": "handbookref-pnu-1-36"
+    },
+    {
+      "page": 2,
+      "slot": 5,
+      "rowBounds": [
+        341.75,
+        423.75
+      ],
+      "nameRaw": "АВ-23У",
+      "title": "АВ-23У",
+      "maker": "НПФ «АДРОН»",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exact-exterior-drawing",
+      "appearance": "",
+      "generalType": "взрыватель",
+      "aliases": [
+        "АВ-23У",
+        "av-23u"
+      ],
+      "mappedCardId": "handbookref-av-23u",
+      "exteriorCrop": [
+        128,
+        344,
+        222,
+        422
+      ]
+    },
+    {
+      "page": 2,
+      "slot": 6,
+      "rowBounds": [
+        423.75,
+        508.25
+      ],
+      "nameRaw": "БПБПЛА- ЕМИ-К",
+      "title": "БПБПЛА-ЕМИ-К",
+      "maker": "Иннатекс",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На иллюстрации виден тёмный наружный корпус с выступающей верхней частью.",
+      "generalType": "взрыватель",
+      "aliases": [
+        "БПБПЛА-ЕМИ-К",
+        "bpbpla-emi-k"
+      ],
+      "exteriorCrop": [
+        154,
+        432,
+        208,
+        507
+      ],
+      "mappedCardId": "handbookref-bpbpla-emi-k"
+    },
+    {
+      "page": 2,
+      "slot": 7,
+      "rowBounds": [
+        508.25,
+        591.75
+      ],
+      "nameRaw": "БЕП-ЛД-М1",
+      "title": "БЕП-ЛД-М1",
+      "maker": "АйТи Системы и интеграция",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На двух внешних видах показан компактный цилиндрический корпус с округлыми боковыми гранями.",
+      "generalType": "взрыватель",
+      "aliases": [
+        "БЕП-ЛД-М1",
+        "bep-ld-m1"
+      ],
+      "exteriorCrop": [
+        98.5,
+        510.05,
+        261.4,
+        589.95
+      ],
+      "mappedCardId": "handbookref-bep-ld-m1"
+    },
+    {
+      "page": 3,
+      "slot": 1,
+      "rowBounds": [
+        22.75,
+        117.25
+      ],
+      "nameRaw": "82-мм мина для БПЛА",
+      "title": "82-мм мина для БПЛА (ПХЗ)",
+      "maker": "НПО «Павлоградский химический завод»",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "Показан вытянутый корпус с заострённой головной частью и хвостовым оперением.",
+      "generalType": "миномётный боеприпас в исполнении для БПЛА",
+      "aliases": [
+        "82-мм мина для БПЛА (ПХЗ)",
+        "82-mm mina dlya bpla (pkhz)"
+      ],
+      "exteriorCrop": [
+        98.5,
+        24.55,
+        261.4,
+        115.45
+      ],
+      "mappedCardId": "handbookref-82-mm-mina-dlya-bpla-pkhz"
+    },
+    {
+      "page": 3,
+      "slot": 2,
+      "rowBounds": [
+        117.25,
+        205.75
+      ],
+      "nameRaw": "Малая авиа- ционная бомба МОА-120",
+      "title": "МОА-120",
+      "maker": "НПО «Павлоградский химический завод»",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На фотографии показан светлый вытянутый корпус с тёмным хвостовым оперением.",
+      "generalType": "малый авиационный боеприпас",
+      "aliases": [
+        "МОА-120",
+        "moa-120"
+      ],
+      "exteriorCrop": [
+        98.5,
+        119.05,
+        261.4,
+        203.95
+      ],
+      "mappedCardId": "handbookref-moa-120"
+    },
+    {
+      "page": 3,
+      "slot": 3,
+      "rowBounds": [
+        205.75,
+        286.25
+      ],
+      "nameRaw": "Малая авиа- ционная бомба МОА-400",
+      "title": "МОА-400",
+      "maker": "НПО «Павлоградский химический завод»",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На фотографии виден зелёный корпус с длинной светлой хвостовой частью.",
+      "generalType": "малый авиационный боеприпас",
+      "aliases": [
+        "МОА-400",
+        "moa-400"
+      ],
+      "exteriorCrop": [
+        98.5,
+        207.55,
+        261.4,
+        284.45
+      ],
+      "mappedCardId": "handbookref-moa-400"
+    },
+    {
+      "page": 3,
+      "slot": 4,
+      "rowBounds": [
+        286.25,
+        367.75
+      ],
+      "nameRaw": "Малая авиа- ционная бомба МОА-900",
+      "title": "МОА-900",
+      "maker": "НПО «Павлоградский химический завод»",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "Показан округлый светлый корпус с вытянутой хвостовой частью и тёмным оперением.",
+      "generalType": "малый авиационный боеприпас",
+      "aliases": [
+        "МОА-900",
+        "moa-900"
+      ],
+      "exteriorCrop": [
+        98.5,
+        288.05,
+        261.4,
+        365.95
+      ],
+      "mappedCardId": "handbookref-moa-900"
+    },
+    {
+      "page": 3,
+      "slot": 5,
+      "rowBounds": [
+        367.75,
+        442.75
+      ],
+      "nameRaw": "БПБПЛА- РКГ-1600 АД",
+      "title": "БПБПЛА-РКГ-1600 АД",
+      "maker": "«Маяк-Перспектива» / «Завод Маяк»",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На фотографии виден короткий корпус с продольным хвостовым оперением.",
+      "generalType": "кумулятивный боеприпас",
+      "aliases": [
+        "БПБПЛА-РКГ-1600 АД",
+        "bpbpla-rkg-1600 ad"
+      ],
+      "exteriorCrop": [
+        98.5,
+        369.55,
+        261.4,
+        440.95
+      ],
+      "mappedCardId": "handbookref-bpbpla-rkg-1600-ad"
+    },
+    {
+      "page": 3,
+      "slot": 6,
+      "rowBounds": [
+        442.75,
+        518.25
+      ],
+      "nameRaw": "БПБПЛА- РКГ-1100",
+      "title": "БПБПЛА-РКГ-1100",
+      "maker": "Иннатекс",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На иллюстрации показан вытянутый корпус с конической головной частью и хвостовыми лопастями.",
+      "generalType": "кумулятивный боеприпас",
+      "aliases": [
+        "БПБПЛА-РКГ-1100",
+        "bpbpla-rkg-1100"
+      ],
+      "exteriorCrop": [
+        98.5,
+        444.55,
+        261.4,
+        516.45
+      ],
+      "mappedCardId": "handbookref-bpbpla-rkg-1100"
+    },
+    {
+      "page": 3,
+      "slot": 7,
+      "rowBounds": [
+        518.25,
+        591.75
+      ],
+      "nameRaw": "БПБПЛА- РКГ-2300М",
+      "title": "БПБПЛА-РКГ-2300М",
+      "maker": "Иннатекс",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На иллюстрации показан цилиндрический корпус с кольцевой наружной поверхностью и оперением.",
+      "generalType": "кумулятивно-осколочный боеприпас",
+      "aliases": [
+        "БПБПЛА-РКГ-2300М",
+        "bpbpla-rkg-2300m"
+      ],
+      "exteriorCrop": [
+        98.5,
+        520.05,
+        261.4,
+        589.95
+      ],
+      "mappedCardId": "handbookref-bpbpla-rkg-2300m"
+    },
+    {
+      "page": 4,
+      "slot": 1,
+      "rowBounds": [
+        3.5,
+        73.75
+      ],
+      "nameRaw": "БПБПЛА- ОФ-500",
+      "title": "БПБПЛА-ОФ-500",
+      "maker": "Иннатекс",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На каталожной иллюстрации показан вытянутый корпус с длинными оконечными частями и хвостовым оперением.",
+      "generalType": "осколочно-фугасный боеприпас",
+      "aliases": [
+        "БПБПЛА-ОФ-500",
+        "bpbpla-of-500"
+      ],
+      "exteriorCrop": [
+        98.5,
+        5.3,
+        261.4,
+        71.95
+      ],
+      "mappedCardId": "handbookref-bpbpla-of-500"
+    },
+    {
+      "page": 4,
+      "slot": 2,
+      "rowBounds": [
+        73.75,
+        159.25
+      ],
+      "nameRaw": "БПБПЛА- ОФ-1100",
+      "title": "БПБПЛА-ОФ-1100",
+      "maker": "Иннатекс",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На каталожной иллюстрации показан вытянутый корпус с длинными оконечными частями и хвостовым оперением.",
+      "generalType": "осколочно-фугасный боеприпас",
+      "aliases": [
+        "БПБПЛА-ОФ-1100",
+        "bpbpla-of-1100"
+      ],
+      "exteriorCrop": [
+        98.5,
+        75.55,
+        261.4,
+        157.45
+      ],
+      "mappedCardId": "handbookref-bpbpla-of-1100"
+    },
+    {
+      "page": 4,
+      "slot": 3,
+      "rowBounds": [
+        159.25,
+        236.25
+      ],
+      "nameRaw": "БПБПЛА- ОФ-1500 НПП",
+      "title": "БПБПЛА-ОФ-1500 НПП",
+      "maker": "Иннатекс",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На каталожной иллюстрации показан вытянутый корпус с длинными оконечными частями и хвостовым оперением.",
+      "generalType": "осколочно-фугасный боеприпас",
+      "aliases": [
+        "БПБПЛА-ОФ-1500 НПП",
+        "bpbpla-of-1500 npp"
+      ],
+      "exteriorCrop": [
+        98.5,
+        161.05,
+        261.4,
+        234.45
+      ],
+      "mappedCardId": "handbookref-bpbpla-of-1500-npp"
+    },
+    {
+      "page": 4,
+      "slot": 4,
+      "rowBounds": [
+        236.25,
+        331
+      ],
+      "nameRaw": "БПБПЛА- ОФ-2500",
+      "title": "БПБПЛА-ОФ-2500",
+      "maker": "Иннатекс",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На каталожной иллюстрации показан вытянутый корпус с длинными оконечными частями и хвостовым оперением.",
+      "generalType": "осколочно-фугасный боеприпас",
+      "aliases": [
+        "БПБПЛА-ОФ-2500",
+        "bpbpla-of-2500"
+      ],
+      "exteriorCrop": [
+        98.5,
+        238.05,
+        261.4,
+        329.2
+      ],
+      "mappedCardId": "handbookref-bpbpla-of-2500"
+    },
+    {
+      "page": 4,
+      "slot": 5,
+      "rowBounds": [
+        331,
+        418.75
+      ],
+      "nameRaw": "БПБПЛА- ОФМ-1500",
+      "title": "БПБПЛА-ОФМ-1500",
+      "maker": "Иннатекс",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На каталожной иллюстрации показан вытянутый корпус с длинными оконечными частями и хвостовым оперением.",
+      "generalType": "осколочно-фугасный боеприпас",
+      "aliases": [
+        "БПБПЛА-ОФМ-1500",
+        "bpbpla-ofm-1500"
+      ],
+      "exteriorCrop": [
+        98.5,
+        332.8,
+        261.4,
+        416.95
+      ],
+      "mappedCardId": "handbookref-bpbpla-ofm-1500"
+    },
+    {
+      "page": 4,
+      "slot": 6,
+      "rowBounds": [
+        418.75,
+        501.75
+      ],
+      "nameRaw": "БПБПЛА- ОФМ-2500",
+      "title": "БПБПЛА-ОФМ-2500",
+      "maker": "Иннатекс",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На каталожной иллюстрации показан вытянутый корпус с длинными оконечными частями и хвостовым оперением.",
+      "generalType": "осколочно-фугасный боеприпас",
+      "aliases": [
+        "БПБПЛА-ОФМ-2500",
+        "bpbpla-ofm-2500"
+      ],
+      "exteriorCrop": [
+        98.5,
+        420.55,
+        261.4,
+        499.95
+      ],
+      "mappedCardId": "handbookref-bpbpla-ofm-2500"
+    },
+    {
+      "page": 4,
+      "slot": 7,
+      "rowBounds": [
+        501.75,
+        591.75
+      ],
+      "nameRaw": "БПБПЛА- КОМ-1500",
+      "title": "БПБПЛА-КОМ-1500",
+      "maker": "Иннатекс",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На каталожной иллюстрации показан вытянутый корпус с длинными оконечными частями и хвостовым оперением.",
+      "generalType": "осколочно-кумулятивный боеприпас",
+      "aliases": [
+        "БПБПЛА-КОМ-1500",
+        "bpbpla-kom-1500"
+      ],
+      "exteriorCrop": [
+        98.5,
+        503.55,
+        261.4,
+        589.95
+      ],
+      "mappedCardId": "handbookref-bpbpla-kom-1500"
+    },
+    {
+      "page": 5,
+      "slot": 1,
+      "rowBounds": [
+        3.5,
+        93.75
+      ],
+      "nameRaw": "БПБПЛА- БЦ-2500",
+      "title": "БПБПЛА-БЦ-2500",
+      "maker": "Иннатекс",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "Показан цилиндрический корпус с выраженной средней частью и хвостовым оперением.",
+      "generalType": "многоцелевой боеприпас",
+      "aliases": [
+        "БПБПЛА-БЦ-2500",
+        "bpbpla-bts-2500"
+      ],
+      "exteriorCrop": [
+        98.5,
+        5.3,
+        261.4,
+        91.95
+      ],
+      "mappedCardId": "handbookref-bpbpla-bts-2500"
+    },
+    {
+      "page": 5,
+      "slot": 2,
+      "rowBounds": [
+        93.75,
+        186.25
+      ],
+      "nameRaw": "БПБПЛА- БЦ-3500",
+      "title": "БПБПЛА-БЦ-3500",
+      "maker": "Иннатекс",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "Показан цилиндрический корпус с выраженной средней частью и хвостовым оперением.",
+      "generalType": "многоцелевой боеприпас",
+      "aliases": [
+        "БПБПЛА-БЦ-3500",
+        "bpbpla-bts-3500"
+      ],
+      "exteriorCrop": [
+        98.5,
+        95.55,
+        261.4,
+        184.45
+      ],
+      "mappedCardId": "handbookref-bpbpla-bts-3500"
+    },
+    {
+      "page": 5,
+      "slot": 3,
+      "rowBounds": [
+        186.25,
+        271.25
+      ],
+      "nameRaw": "БПБПЛА- БЦ-4500",
+      "title": "БПБПЛА-БЦ-4500",
+      "maker": "Иннатекс",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "Показан цилиндрический корпус с выраженной средней частью и хвостовым оперением.",
+      "generalType": "многоцелевой боеприпас",
+      "aliases": [
+        "БПБПЛА-БЦ-4500",
+        "bpbpla-bts-4500"
+      ],
+      "exteriorCrop": [
+        98.5,
+        188.05,
+        261.4,
+        269.45
+      ],
+      "mappedCardId": "handbookref-bpbpla-bts-4500"
+    },
+    {
+      "page": 5,
+      "slot": 4,
+      "rowBounds": [
+        271.25,
+        353.75
+      ],
+      "nameRaw": "БПБПЛА- ОК-2500",
+      "title": "БПБПЛА-ОК-2500",
+      "maker": "Иннатекс",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "Показан цилиндрический корпус с выраженной средней частью и хвостовым оперением.",
+      "generalType": "осколочно-кумулятивный боеприпас",
+      "aliases": [
+        "БПБПЛА-ОК-2500",
+        "bpbpla-ok-2500"
+      ],
+      "exteriorCrop": [
+        98.5,
+        273.05,
+        261.4,
+        351.95
+      ],
+      "mappedCardId": "handbookref-bpbpla-ok-2500"
+    },
+    {
+      "page": 5,
+      "slot": 5,
+      "rowBounds": [
+        353.75,
+        429.25
+      ],
+      "nameRaw": "БПБПЛА- ЗП-500",
+      "title": "БПБПЛА-ЗП-500",
+      "maker": "Иннатекс",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "Показан цилиндрический корпус с выраженной средней частью и хвостовым оперением.",
+      "generalType": "зажигательный боеприпас",
+      "aliases": [
+        "БПБПЛА-ЗП-500",
+        "bpbpla-zp-500"
+      ],
+      "exteriorCrop": [
+        98.5,
+        355.55,
+        261.4,
+        427.45
+      ],
+      "mappedCardId": "handbookref-bpbpla-zp-500"
+    },
+    {
+      "page": 5,
+      "slot": 6,
+      "rowBounds": [
+        429.25,
+        509.5
+      ],
+      "nameRaw": "БПБПЛА- ЗПН-1100",
+      "title": "БПБПЛА-ЗПН-1100",
+      "maker": "Иннатекс",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "Показан цилиндрический корпус с выраженной средней частью и хвостовым оперением.",
+      "generalType": "зажигательный боеприпас",
+      "aliases": [
+        "БПБПЛА-ЗПН-1100",
+        "bpbpla-zpn-1100"
+      ],
+      "exteriorCrop": [
+        98.5,
+        431.05,
+        261.4,
+        507.7
+      ],
+      "mappedCardId": "handbookref-bpbpla-zpn-1100"
+    },
+    {
+      "page": 5,
+      "slot": 7,
+      "rowBounds": [
+        509.5,
+        591.25
+      ],
+      "nameRaw": "БПБПЛА- ЗП-2800М",
+      "title": "БПБПЛА-ЗП-2800М",
+      "maker": "Иннатекс",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "Показан цилиндрический корпус с выраженной средней частью и хвостовым оперением.",
+      "generalType": "зажигательный боеприпас",
+      "aliases": [
+        "БПБПЛА-ЗП-2800М",
+        "bpbpla-zp-2800m"
+      ],
+      "exteriorCrop": [
+        98.5,
+        511.3,
+        261.4,
+        589.45
+      ],
+      "mappedCardId": "handbookref-bpbpla-zp-2800m"
+    },
+    {
+      "page": 6,
+      "slot": 1,
+      "rowBounds": [
+        3.5,
+        76.5
+      ],
+      "nameRaw": "БПБПЛА- К-500",
+      "title": "БПБПЛА-К-500",
+      "maker": "Иннатекс",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На каталожной иллюстрации показан вытянутый корпус с конической головной частью и хвостовым оперением.",
+      "generalType": "кумулятивный боеприпас",
+      "aliases": [
+        "БПБПЛА-К-500",
+        "bpbpla-k-500"
+      ],
+      "exteriorCrop": [
+        98.5,
+        5.3,
+        261.4,
+        74.7
+      ],
+      "mappedCardId": "handbookref-bpbpla-k-500"
+    },
+    {
+      "page": 6,
+      "slot": 2,
+      "rowBounds": [
+        76.5,
+        158.5
+      ],
+      "nameRaw": "БПБПЛА- К-1100",
+      "title": "БПБПЛА-К-1100",
+      "maker": "Иннатекс",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На каталожной иллюстрации показан вытянутый корпус с конической головной частью и хвостовым оперением.",
+      "generalType": "кумулятивный боеприпас",
+      "aliases": [
+        "БПБПЛА-К-1100",
+        "bpbpla-k-1100"
+      ],
+      "exteriorCrop": [
+        98.5,
+        78.3,
+        261.4,
+        156.7
+      ],
+      "mappedCardId": "handbookref-bpbpla-k-1100"
+    },
+    {
+      "page": 6,
+      "slot": 3,
+      "rowBounds": [
+        158.5,
+        242.5
+      ],
+      "nameRaw": "БПБПЛА- К-2500",
+      "title": "БПБПЛА-К-2500",
+      "maker": "Иннатекс",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На каталожной иллюстрации показан вытянутый корпус с конической головной частью и хвостовым оперением.",
+      "generalType": "кумулятивный боеприпас",
+      "aliases": [
+        "БПБПЛА-К-2500",
+        "bpbpla-k-2500"
+      ],
+      "exteriorCrop": [
+        98.5,
+        160.3,
+        261.4,
+        240.7
+      ],
+      "mappedCardId": "handbookref-bpbpla-k-2500"
+    },
+    {
+      "page": 6,
+      "slot": 4,
+      "rowBounds": [
+        242.5,
+        323.75
+      ],
+      "nameRaw": "БПБПЛА- К-3000",
+      "title": "БПБПЛА-К-3000",
+      "maker": "Иннатекс",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На каталожной иллюстрации показан вытянутый корпус с конической головной частью и хвостовым оперением.",
+      "generalType": "кумулятивный боеприпас",
+      "aliases": [
+        "БПБПЛА-К-3000",
+        "bpbpla-k-3000"
+      ],
+      "exteriorCrop": [
+        98.5,
+        244.3,
+        261.4,
+        321.95
+      ],
+      "mappedCardId": "handbookref-bpbpla-k-3000"
+    },
+    {
+      "page": 6,
+      "slot": 5,
+      "rowBounds": [
+        323.75,
+        378.25
+      ],
+      "nameRaw": "БПЛА БНПП-40",
+      "title": "БНПП-40",
+      "maker": "Бюро специального технического инжиниринга «СТАНДАРТ Т»",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На фотографии виден светлый цилиндрический корпус с хвостовым оперением.",
+      "generalType": "осколочный боеприпас",
+      "aliases": [
+        "БНПП-40",
+        "bnpp-40"
+      ],
+      "exteriorCrop": [
+        98.5,
+        325.55,
+        261.4,
+        376.45
+      ],
+      "mappedCardId": "handbookref-bnpp-40"
+    },
+    {
+      "page": 6,
+      "slot": 6,
+      "rowBounds": [
+        378.25,
+        431.75
+      ],
+      "nameRaw": "БПЛА БНПП-40М",
+      "title": "БНПП-40М",
+      "maker": "Бюро специального технического инжиниринга «СТАНДАРТ Т»",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На фотографии виден тёмный вытянутый корпус с хвостовым оперением.",
+      "generalType": "осколочный боеприпас",
+      "aliases": [
+        "БНПП-40М",
+        "bnpp-40m"
+      ],
+      "exteriorCrop": [
+        98.5,
+        380.05,
+        261.4,
+        429.95
+      ],
+      "mappedCardId": "handbookref-bnpp-40m"
+    },
+    {
+      "page": 6,
+      "slot": 7,
+      "rowBounds": [
+        431.75,
+        506.25
+      ],
+      "nameRaw": "МБ-50КУЗ «Малыш»",
+      "title": "МБ-50КУЗ «Малыш»",
+      "maker": "Укрэлектроаппарат",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На фотографии показан короткий корпус с тёмной головной частью, светлым поясом и хвостовым оперением.",
+      "generalType": "кумулятивно-осколочный боеприпас",
+      "aliases": [
+        "МБ-50КУЗ «Малыш»",
+        "mb-50kuz «malysh»"
+      ],
+      "exteriorCrop": [
+        98.5,
+        433.55,
+        261.4,
+        504.45
+      ],
+      "mappedCardId": "handbookref-mb-50kuz-malysh"
+    },
+    {
+      "page": 6,
+      "slot": 8,
+      "rowBounds": [
+        506.25,
+        590.75
+      ],
+      "nameRaw": "ОГ-Б1",
+      "title": "ОГ-Б1",
+      "maker": "Промэнерго",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На фотографии виден зелёный вытянутый корпус с конической головной частью и тёмным оперением.",
+      "generalType": "осколочный боеприпас",
+      "aliases": [
+        "ОГ-Б1",
+        "og-b1"
+      ],
+      "exteriorCrop": [
+        98.5,
+        508.05,
+        261.4,
+        588.95
+      ],
+      "mappedCardId": "handbookref-og-b1"
+    },
+    {
+      "page": 7,
+      "slot": 1,
+      "rowBounds": [
+        2.25,
+        72.25
+      ],
+      "nameRaw": "БАМ-0,5",
+      "title": "БАМ-0,5",
+      "maker": "НЕО ТЕК",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На фотографии показан короткий цилиндрический корпус с маркировкой и хвостовым оперением.",
+      "generalType": "осколочный боеприпас",
+      "aliases": [
+        "БАМ-0,5",
+        "БАМ-0.5",
+        "bam-0,5"
+      ],
+      "exteriorCrop": [
+        98.5,
+        4.05,
+        261.4,
+        70.45
+      ],
+      "mappedCardId": "handbookref-bam-0-5"
+    },
+    {
+      "page": 7,
+      "slot": 2,
+      "rowBounds": [
+        72.25,
+        126
+      ],
+      "nameRaw": "БАМ-0,5К",
+      "title": "БАМ-0,5К",
+      "maker": "НЕО ТЕК",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На фотографии показан короткий цилиндрический корпус с маркировкой и хвостовым оперением.",
+      "generalType": "кумулятивный боеприпас",
+      "aliases": [
+        "БАМ-0,5К",
+        "БАМ-0.5К",
+        "bam-0,5k"
+      ],
+      "exteriorCrop": [
+        98.5,
+        74.05,
+        261.4,
+        124.2
+      ],
+      "mappedCardId": "handbookref-bam-0-5k"
+    },
+    {
+      "page": 7,
+      "slot": 3,
+      "rowBounds": [
+        126,
+        198.25
+      ],
+      "nameRaw": "ЗК 2.7 КУЗ",
+      "title": "ЗК 2.7 КУЗ",
+      "maker": "НЕО ТЕК",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На фотографии виден вытянутый цилиндрический корпус с маркировкой на боковой поверхности.",
+      "generalType": "кумулятивно-зажигательный боеприпас",
+      "aliases": [
+        "ЗК 2.7 КУЗ",
+        "ЗК 2,7 КУЗ",
+        "zk 2.7 kuz"
+      ],
+      "exteriorCrop": [
+        98.5,
+        127.8,
+        261.4,
+        196.45
+      ],
+      "mappedCardId": "handbookref-zk-2-7-kuz"
+    },
+    {
+      "page": 7,
+      "slot": 4,
+      "rowBounds": [
+        198.25,
+        279.75
+      ],
+      "nameRaw": "ЗК 2.7 КУМ",
+      "title": "ЗК 2.7 КУМ",
+      "maker": "НЕО ТЕК",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На фотографии виден вытянутый цилиндрический корпус с маркировкой на боковой поверхности.",
+      "generalType": "кумулятивный боеприпас",
+      "aliases": [
+        "ЗК 2.7 КУМ",
+        "ЗК 2,7 КУМ",
+        "zk 2.7 kum"
+      ],
+      "exteriorCrop": [
+        98.5,
+        200.05,
+        261.4,
+        277.95
+      ],
+      "mappedCardId": "handbookref-zk-2-7-kum"
+    },
+    {
+      "page": 7,
+      "slot": 5,
+      "rowBounds": [
+        279.75,
+        364.25
+      ],
+      "nameRaw": "ЗК 2.7 ШОК",
+      "title": "ЗК 2.7 ШОК",
+      "maker": "НЕО ТЕК",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На фотографии виден вытянутый цилиндрический корпус с маркировкой на боковой поверхности.",
+      "generalType": "осколочно-кумулятивный боеприпас",
+      "aliases": [
+        "ЗК 2.7 ШОК",
+        "ЗК 2,7 ШОК",
+        "zk 2.7 shok"
+      ],
+      "exteriorCrop": [
+        98.5,
+        281.55,
+        261.4,
+        362.45
+      ],
+      "mappedCardId": "handbookref-zk-2-7-shok"
+    },
+    {
+      "page": 7,
+      "slot": 6,
+      "rowBounds": [
+        364.25,
+        440.25
+      ],
+      "nameRaw": "ЗК 2.7 ШУТ",
+      "title": "ЗК 2.7 ШУТ",
+      "maker": "НЕО ТЕК",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На фотографии виден вытянутый цилиндрический корпус с маркировкой на боковой поверхности.",
+      "generalType": "термобарический боеприпас",
+      "aliases": [
+        "ЗК 2.7 ШУТ",
+        "ЗК 2,7 ШУТ",
+        "zk 2.7 shut"
+      ],
+      "exteriorCrop": [
+        98.5,
+        366.05,
+        261.4,
+        438.45
+      ],
+      "mappedCardId": "handbookref-zk-2-7-shut"
+    },
+    {
+      "page": 7,
+      "slot": 7,
+      "rowBounds": [
+        440.25,
+        521.5
+      ],
+      "nameRaw": "ЗК-3.5 КТ",
+      "title": "ЗК-3.5 КТ",
+      "maker": "НЕО ТЕК",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На фотографии виден вытянутый цилиндрический корпус с маркировкой на боковой поверхности.",
+      "generalType": "кумулятивно-термобарический боеприпас",
+      "aliases": [
+        "ЗК-3.5 КТ",
+        "ЗК-3,5 КТ",
+        "zk-3.5 kt"
+      ],
+      "exteriorCrop": [
+        98.5,
+        442.05,
+        261.4,
+        519.7
+      ],
+      "mappedCardId": "handbookref-zk-3-5-kt"
+    },
+    {
+      "page": 7,
+      "slot": 8,
+      "rowBounds": [
+        521.5,
+        594.25
+      ],
+      "nameRaw": "ЗК-12 КТ",
+      "title": "ЗК-12 КТ",
+      "maker": "НЕО ТЕК",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На фотографии виден вытянутый цилиндрический корпус с маркировкой на боковой поверхности.",
+      "generalType": "кумулятивно-термобарический боеприпас",
+      "aliases": [
+        "ЗК-12 КТ",
+        "zk-12 kt"
+      ],
+      "exteriorCrop": [
+        98.5,
+        523.3,
+        261.4,
+        592.45
+      ],
+      "mappedCardId": "handbookref-zk-12-kt"
+    },
+    {
+      "page": 8,
+      "slot": 1,
+      "rowBounds": [
+        2.75,
+        101.75
+      ],
+      "nameRaw": "HFB600F (ШОАБ- 0,5/0,5М) «Орех»",
+      "title": "HFB600F «Орех»",
+      "maker": "ХК «МИКРОН»",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На фотографии виден округлый корпус с гранёной наружной поверхностью и хвостовым оперением.",
+      "generalType": "осколочный боеприпас",
+      "aliases": [
+        "HFB600F «Орех»",
+        "hfb600f «orekh»",
+        "ШОАБ-0,5/0,5М",
+        "Горіх"
+      ],
+      "exteriorCrop": [
+        98.5,
+        4.55,
+        261.4,
+        99.95
+      ],
+      "mappedCardId": "handbookref-hfb600f-orekh"
+    },
+    {
+      "page": 8,
+      "slot": 2,
+      "rowBounds": [
+        101.75,
+        209.5
+      ],
+      "nameRaw": "HFB1055F (АО-1СЧ) «Редис»",
+      "title": "HFB1055F «Редис»",
+      "maker": "ХК «МИКРОН»",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "Показан короткий светлый корпус с хвостовым оперением.",
+      "generalType": "осколочный боеприпас",
+      "aliases": [
+        "HFB1055F «Редис»",
+        "hfb1055f «redis»",
+        "АО-1СЧ"
+      ],
+      "exteriorCrop": [
+        98.5,
+        103.55,
+        261.4,
+        207.7
+      ],
+      "mappedCardId": "handbookref-hfb1055f-redis"
+    },
+    {
+      "page": 8,
+      "slot": 3,
+      "rowBounds": [
+        209.5,
+        304.25
+      ],
+      "nameRaw": "HFB1200F (АО-2,5РТ (РТМ)) «Свекла»",
+      "title": "HFB1200F «Свекла»",
+      "maker": "ХК «МИКРОН»",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "Показан округлый светлый корпус с хвостовым оперением.",
+      "generalType": "осколочно-фугасный боеприпас",
+      "aliases": [
+        "HFB1200F «Свекла»",
+        "hfb1200f «svekla»",
+        "АО-2,5РТ",
+        "АО-2,5РТМ",
+        "Буряк"
+      ],
+      "exteriorCrop": [
+        98.5,
+        211.3,
+        261.4,
+        302.45
+      ],
+      "mappedCardId": "handbookref-hfb1200f-svekla"
+    },
+    {
+      "page": 8,
+      "slot": 4,
+      "rowBounds": [
+        304.25,
+        405.25
+      ],
+      "nameRaw": "HFB0500С (ПТАБ-1М) «Морковь»",
+      "title": "HFB0500C «Морковь»",
+      "maker": "ХК «МИКРОН»",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "Показан вытянутый металлический корпус с конической головной частью и хвостовым оперением.",
+      "generalType": "кумулятивный боеприпас",
+      "aliases": [
+        "HFB0500C «Морковь»",
+        "hfb0500c «morkov»",
+        "ПТАБ-1М",
+        "Морква"
+      ],
+      "exteriorCrop": [
+        98.5,
+        306.05,
+        261.4,
+        403.45
+      ],
+      "mappedCardId": "handbookref-hfb0500c-morkov"
+    },
+    {
+      "page": 8,
+      "slot": 5,
+      "rowBounds": [
+        405.25,
+        485.75
+      ],
+      "nameRaw": "HFB1250СF (ПТАБ- 2,5М/2,5V) «Огурец»",
+      "title": "HFB1250CF «Огурец»",
+      "maker": "ХК «МИКРОН»",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На фотографии виден вытянутый корпус со светлой хвостовой частью.",
+      "generalType": "кумулятивно-осколочный боеприпас",
+      "aliases": [
+        "HFB1250CF «Огурец»",
+        "hfb1250cf «ogurets»",
+        "ПТАБ-2,5М",
+        "ПТАБ-2,5V",
+        "Огірок"
+      ],
+      "exteriorCrop": [
+        98.5,
+        407.05,
+        261.4,
+        483.95
+      ],
+      "mappedCardId": "handbookref-hfb1250cf-ogurets"
+    },
+    {
+      "page": 8,
+      "slot": 6,
+      "rowBounds": [
+        485.75,
+        590.25
+      ],
+      "nameRaw": "HFS1300СF «Ананас-К»",
+      "title": "HFS1300CF «Ананас-К»",
+      "maker": "ХК «МИКРОН»",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "Показан короткий корпус с наружной рельефной поверхностью и хвостовым оперением.",
+      "generalType": "кумулятивно-осколочный боеприпас",
+      "aliases": [
+        "HFS1300CF «Ананас-К»",
+        "hfs1300cf «ananas-k»"
+      ],
+      "exteriorCrop": [
+        98.5,
+        487.55,
+        261.4,
+        588.45
+      ],
+      "mappedCardId": "handbookref-hfs1300cf-ananas-k"
+    },
+    {
+      "page": 9,
+      "slot": 1,
+      "rowBounds": [
+        2.75,
+        87.75
+      ],
+      "nameRaw": "HFS1300F «Ананас»",
+      "title": "HFS1300F «Ананас»",
+      "maker": "ХК «МИКРОН»",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На фотографии виден короткий корпус с рельефной наружной поверхностью и хвостовым оперением.",
+      "generalType": "осколочный боеприпас",
+      "aliases": [
+        "HFS1300F «Ананас»",
+        "hfs1300f «ananas»"
+      ],
+      "exteriorCrop": [
+        98.5,
+        4.55,
+        261.4,
+        85.95
+      ],
+      "mappedCardId": "handbookref-hfs1300f-ananas"
+    },
+    {
+      "page": 9,
+      "slot": 2,
+      "rowBounds": [
+        87.75,
+        169.75
+      ],
+      "nameRaw": "HFМ0050",
+      "title": "HFM0050",
+      "maker": "ХК «МИКРОН»",
+      "existingCardId": "eng-pdf-v7-112",
+      "status": "existing",
+      "imagePolicy": "preserve-existing-photo",
+      "appearance": "",
+      "generalType": "противопехотная мина",
+      "aliases": [
+        "HFM0050",
+        "hfm0050"
+      ],
+      "mappedCardId": "eng-pdf-v7-112"
+    },
+    {
+      "page": 9,
+      "slot": 3,
+      "rowBounds": [
+        169.75,
+        245.25
+      ],
+      "nameRaw": "ЯУ-50-0,4",
+      "title": "ЯУ-50-0,4",
+      "maker": "Ай Эс Айр Дефенс",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "Показан короткий корпус с округлой головной частью и хвостовым оперением.",
+      "generalType": "кумулятивный боеприпас",
+      "aliases": [
+        "ЯУ-50-0,4",
+        "ЯУ-50-0.4",
+        "yau-50-0,4"
+      ],
+      "exteriorCrop": [
+        98.5,
+        171.55,
+        261.4,
+        243.45
+      ],
+      "mappedCardId": "handbookref-yau-50-0-4"
+    },
+    {
+      "page": 9,
+      "slot": 4,
+      "rowBounds": [
+        245.25,
+        309.5
+      ],
+      "nameRaw": "УАБ-1.5-А",
+      "title": "УАБ-1.5-А",
+      "maker": "Институт химии высокой энергии",
+      "existingCardId": "pptx-v166-uab-1-5-a",
+      "status": "existing",
+      "imagePolicy": "preserve-existing-photo",
+      "appearance": "",
+      "generalType": "осколочный боеприпас",
+      "aliases": [
+        "УАБ-1.5-А",
+        "УАБ-1,5-А",
+        "uab-1.5-a"
+      ],
+      "mappedCardId": "pptx-v166-uab-1-5-a"
+    },
+    {
+      "page": 9,
+      "slot": 5,
+      "rowBounds": [
+        309.5,
+        368
+      ],
+      "nameRaw": "УАБ-2.0-А",
+      "title": "УАБ-2.0-А",
+      "maker": "Институт химии высокой энергии",
+      "existingCardId": "pptx-v166-uab-2-0-a",
+      "status": "existing",
+      "imagePolicy": "preserve-existing-photo",
+      "appearance": "",
+      "generalType": "осколочный боеприпас",
+      "aliases": [
+        "УАБ-2.0-А",
+        "УАБ-2,0-А",
+        "uab-2.0-a"
+      ],
+      "mappedCardId": "pptx-v166-uab-2-0-a"
+    },
+    {
+      "page": 9,
+      "slot": 6,
+      "rowBounds": [
+        368,
+        422.75
+      ],
+      "nameRaw": "УАБ-2.5-А",
+      "title": "УАБ-2.5-А",
+      "maker": "Институт химии высокой энергии",
+      "existingCardId": "pptx-v166-uab-2-5-a",
+      "status": "existing",
+      "imagePolicy": "preserve-existing-photo",
+      "appearance": "",
+      "generalType": "осколочный боеприпас",
+      "aliases": [
+        "УАБ-2.5-А",
+        "УАБ-2,5-А",
+        "uab-2.5-a"
+      ],
+      "mappedCardId": "pptx-v166-uab-2-5-a"
+    },
+    {
+      "page": 9,
+      "slot": 7,
+      "rowBounds": [
+        422.75,
+        481.25
+      ],
+      "nameRaw": "УАБ-4.0-А",
+      "title": "УАБ-4.0-А",
+      "maker": "Институт химии высокой энергии",
+      "existingCardId": "pptx-v166-uab-4-0-a",
+      "status": "existing",
+      "imagePolicy": "preserve-existing-photo",
+      "appearance": "",
+      "generalType": "осколочный боеприпас",
+      "aliases": [
+        "УАБ-4.0-А",
+        "УАБ-4,0-А",
+        "uab-4.0-a"
+      ],
+      "mappedCardId": "pptx-v166-uab-4-0-a"
+    },
+    {
+      "page": 9,
+      "slot": 8,
+      "rowBounds": [
+        481.25,
+        554.25
+      ],
+      "nameRaw": "УАБК-1.5-А",
+      "title": "УАБК-1.5-А",
+      "maker": "Институт химии высокой энергии",
+      "existingCardId": "pptx-v166-uabk-family",
+      "status": "existing",
+      "imagePolicy": "preserve-existing-photo",
+      "appearance": "",
+      "generalType": "осколочный боеприпас",
+      "aliases": [
+        "УАБК-1.5-А",
+        "УАБК-1,5-А",
+        "uabk-1.5-a"
+      ],
+      "mappedCardId": "pptx-v166-uabk-family"
+    },
+    {
+      "page": 10,
+      "slot": 1,
+      "rowBounds": [
+        2.75,
+        113.75
+      ],
+      "nameRaw": "УАБК-2.0-А",
+      "title": "УАБК-2.0-А",
+      "maker": "Институт химии высокой энергии",
+      "existingCardId": "pptx-v166-uabk-family",
+      "status": "existing",
+      "imagePolicy": "preserve-existing-photo",
+      "appearance": "",
+      "generalType": "осколочный боеприпас",
+      "aliases": [
+        "УАБК-2.0-А",
+        "УАБК-2,0-А",
+        "uabk-2.0-a"
+      ],
+      "mappedCardId": "pptx-v166-uabk-family"
+    },
+    {
+      "page": 10,
+      "slot": 2,
+      "rowBounds": [
+        113.75,
+        215.75
+      ],
+      "nameRaw": "УАБК-2.5-А",
+      "title": "УАБК-2.5-А",
+      "maker": "Институт химии высокой энергии",
+      "existingCardId": "pptx-v166-uabk-family",
+      "status": "existing",
+      "imagePolicy": "preserve-existing-photo",
+      "appearance": "",
+      "generalType": "осколочный боеприпас",
+      "aliases": [
+        "УАБК-2.5-А",
+        "УАБК-2,5-А",
+        "uabk-2.5-a"
+      ],
+      "mappedCardId": "pptx-v166-uabk-family"
+    },
+    {
+      "page": 10,
+      "slot": 3,
+      "rowBounds": [
+        215.75,
+        314.75
+      ],
+      "nameRaw": "ФАБ-8.5-А",
+      "title": "ФАБ-8.5-А",
+      "maker": "Институт химии высокой энергии",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На фотографии виден вытянутый светлый цилиндрический корпус с нанесённой маркировкой.",
+      "generalType": "фугасный боеприпас",
+      "aliases": [
+        "ФАБ-8.5-А",
+        "ФАБ-8,5-А",
+        "fab-8.5-a"
+      ],
+      "exteriorCrop": [
+        98.5,
+        217.55,
+        261.4,
+        312.95
+      ],
+      "mappedCardId": "handbookref-fab-8-5-a"
+    },
+    {
+      "page": 10,
+      "slot": 4,
+      "rowBounds": [
+        314.75,
+        393.5
+      ],
+      "nameRaw": "УАБ-1.5",
+      "title": "УАБ-1.5",
+      "maker": "Институт химии высокой энергии",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На изображении показан тёмный цилиндрический корпус с продольными окнами в наружной оболочке.",
+      "generalType": "осколочный боеприпас",
+      "aliases": [
+        "УАБ-1.5",
+        "УАБ-1,5",
+        "uab-1.5"
+      ],
+      "exteriorCrop": [
+        98.5,
+        316.55,
+        261.4,
+        391.7
+      ],
+      "mappedCardId": "handbookref-uab-1-5"
+    },
+    {
+      "page": 10,
+      "slot": 5,
+      "rowBounds": [
+        393.5,
+        449.75
+      ],
+      "nameRaw": "УАБ-2.0",
+      "title": "УАБ-2.0",
+      "maker": "Институт химии высокой энергии",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На изображении показан тёмный цилиндрический корпус с продольными окнами в наружной оболочке.",
+      "generalType": "осколочный боеприпас",
+      "aliases": [
+        "УАБ-2.0",
+        "УАБ-2,0",
+        "uab-2.0"
+      ],
+      "exteriorCrop": [
+        98.5,
+        395.3,
+        261.4,
+        447.95
+      ],
+      "mappedCardId": "handbookref-uab-2-0"
+    },
+    {
+      "page": 10,
+      "slot": 6,
+      "rowBounds": [
+        449.75,
+        513.75
+      ],
+      "nameRaw": "УАБ-2.5",
+      "title": "УАБ-2.5",
+      "maker": "Институт химии высокой энергии",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На изображении показан тёмный цилиндрический корпус с продольными окнами в наружной оболочке.",
+      "generalType": "осколочный боеприпас",
+      "aliases": [
+        "УАБ-2.5",
+        "УАБ-2,5",
+        "uab-2.5"
+      ],
+      "exteriorCrop": [
+        98.5,
+        451.55,
+        261.4,
+        511.95
+      ],
+      "mappedCardId": "handbookref-uab-2-5"
+    },
+    {
+      "page": 10,
+      "slot": 7,
+      "rowBounds": [
+        513.75,
+        591.75
+      ],
+      "nameRaw": "УАБК-1.5",
+      "title": "УАБК-1.5",
+      "maker": "Институт химии высокой энергии",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На фотографии виден короткий тёмный цилиндрический корпус с нанесённой маркировкой.",
+      "generalType": "осколочный боеприпас",
+      "aliases": [
+        "УАБК-1.5",
+        "УАБК-1,5",
+        "uabk-1.5"
+      ],
+      "exteriorCrop": [
+        98.5,
+        515.55,
+        261.4,
+        589.95
+      ],
+      "mappedCardId": "handbookref-uabk-1-5"
+    },
+    {
+      "page": 11,
+      "slot": 1,
+      "rowBounds": [
+        2.25,
+        99.75
+      ],
+      "nameRaw": "УАБК-2.0",
+      "title": "УАБК-2.0",
+      "maker": "Институт химии высокой энергии",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На фотографии виден короткий тёмный цилиндрический корпус с нанесённой маркировкой.",
+      "generalType": "осколочный боеприпас",
+      "aliases": [
+        "УАБК-2.0",
+        "УАБК-2,0",
+        "uabk-2.0"
+      ],
+      "exteriorCrop": [
+        98.5,
+        4.05,
+        261.4,
+        97.95
+      ],
+      "mappedCardId": "handbookref-uabk-2-0"
+    },
+    {
+      "page": 11,
+      "slot": 2,
+      "rowBounds": [
+        99.75,
+        191.75
+      ],
+      "nameRaw": "УАБК-2.5",
+      "title": "УАБК-2.5",
+      "maker": "Институт химии высокой энергии",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На фотографии виден короткий тёмный цилиндрический корпус с нанесённой маркировкой.",
+      "generalType": "осколочный боеприпас",
+      "aliases": [
+        "УАБК-2.5",
+        "УАБК-2,5",
+        "uabk-2.5"
+      ],
+      "exteriorCrop": [
+        98.5,
+        101.55,
+        261.4,
+        189.95
+      ],
+      "mappedCardId": "handbookref-uabk-2-5"
+    },
+    {
+      "page": 11,
+      "slot": 3,
+      "rowBounds": [
+        191.75,
+        306.25
+      ],
+      "nameRaw": "ФАБ-8.5",
+      "title": "ФАБ-8.5",
+      "maker": "Институт химии высокой энергии",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На иллюстрации показан зелёный вытянутый корпус с тёмным хвостовым оперением.",
+      "generalType": "фугасный боеприпас",
+      "aliases": [
+        "ФАБ-8.5",
+        "ФАБ-8,5",
+        "fab-8.5"
+      ],
+      "exteriorCrop": [
+        98.5,
+        193.55,
+        261.4,
+        304.45
+      ],
+      "mappedCardId": "handbookref-fab-8-5"
+    },
+    {
+      "page": 11,
+      "slot": 4,
+      "rowBounds": [
+        306.25,
+        391.75
+      ],
+      "nameRaw": "БО-82.3",
+      "title": "БО-82.3",
+      "maker": "ПИИ «Интервзрывпром»",
+      "existingCardId": "pptx-v166-bo-82-3",
+      "status": "existing",
+      "imagePolicy": "preserve-existing-photo",
+      "appearance": "",
+      "generalType": "осколочный боеприпас",
+      "aliases": [
+        "БО-82.3",
+        "БО-82,3",
+        "bo-82.3"
+      ],
+      "mappedCardId": "pptx-v166-bo-82-3"
+    },
+    {
+      "page": 11,
+      "slot": 5,
+      "rowBounds": [
+        391.75,
+        485
+      ],
+      "nameRaw": "ТАБ.К-1.4",
+      "title": "ТАБ.К-1.4",
+      "maker": "ПИИ «Интервзрывпром»",
+      "existingCardId": "pptx-v166-tab-k-1-4",
+      "status": "existing",
+      "imagePolicy": "preserve-existing-photo",
+      "appearance": "",
+      "generalType": "термобарический боеприпас",
+      "aliases": [
+        "ТАБ.К-1.4",
+        "ТАБ,К-1,4",
+        "tab.k-1.4"
+      ],
+      "mappedCardId": "pptx-v166-tab-k-1-4"
+    },
+    {
+      "page": 11,
+      "slot": 6,
+      "rowBounds": [
+        485,
+        537.25
+      ],
+      "nameRaw": "ОФБЧ-2.5",
+      "title": "ОФБЧ-2.5 («Маяк-Перспектива»)",
+      "maker": "«Маяк-Перспектива» / «Завод Маяк»",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "no-exterior-in-source",
+      "appearance": "",
+      "generalType": "осколочно-фугасная боевая часть",
+      "aliases": [
+        "ОФБЧ-2.5 («Маяк-Перспектива»)",
+        "ОФБЧ-2,5 («Маяк-Перспектива»)",
+        "ofbch-2.5 («mayak-perspektiva»)",
+        "ОФБЧ-2.5 Маяк",
+        "ОФБЧ-2,5 Украина"
+      ],
+      "mappedCardId": "handbookref-ofbch-2-5-mayak-perspektiva"
+    },
+    {
+      "page": 11,
+      "slot": 7,
+      "rowBounds": [
+        537.25,
+        591.75
+      ],
+      "nameRaw": "ВОФБЧ-2.5",
+      "title": "ВОФБЧ-2.5",
+      "maker": "«Маяк-Перспектива» / «Завод Маяк»",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "no-exterior-in-source",
+      "appearance": "",
+      "generalType": "осколочно-фугасная боевая часть",
+      "aliases": [
+        "ВОФБЧ-2.5",
+        "ВОФБЧ-2,5",
+        "vofbch-2.5"
+      ],
+      "mappedCardId": "handbookref-vofbch-2-5"
+    },
+    {
+      "page": 12,
+      "slot": 1,
+      "rowBounds": [
+        2.75,
+        69.25
+      ],
+      "nameRaw": "БПТБ-23.0,5",
+      "title": "БПТБ-23.0,5",
+      "maker": "«Маяк-Перспектива» / «Завод Маяк»",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На фотографии показан короткий цилиндрический корпус с хвостовым оперением.",
+      "generalType": "термобарический боеприпас",
+      "aliases": [
+        "БПТБ-23.0,5",
+        "БПТБ-23.0.5",
+        "БПТБ-23,0,5",
+        "bptb-23.0,5"
+      ],
+      "exteriorCrop": [
+        98.5,
+        4.55,
+        261.4,
+        67.45
+      ],
+      "mappedCardId": "handbookref-bptb-23-0-5"
+    },
+    {
+      "page": 12,
+      "slot": 2,
+      "rowBounds": [
+        69.25,
+        123.75
+      ],
+      "nameRaw": "БПТБ-23.1",
+      "title": "БПТБ-23.1",
+      "maker": "«Маяк-Перспектива» / «Завод Маяк»",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На фотографии показан короткий цилиндрический корпус с хвостовым оперением.",
+      "generalType": "термобарический боеприпас",
+      "aliases": [
+        "БПТБ-23.1",
+        "БПТБ-23,1",
+        "bptb-23.1"
+      ],
+      "exteriorCrop": [
+        98.5,
+        71.05,
+        261.4,
+        121.95
+      ],
+      "mappedCardId": "handbookref-bptb-23-1"
+    },
+    {
+      "page": 12,
+      "slot": 3,
+      "rowBounds": [
+        123.75,
+        178
+      ],
+      "nameRaw": "БПТБ-23.1,5",
+      "title": "БПТБ-23.1,5",
+      "maker": "«Маяк-Перспектива» / «Завод Маяк»",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На фотографии показан короткий цилиндрический корпус с хвостовым оперением.",
+      "generalType": "термобарический боеприпас",
+      "aliases": [
+        "БПТБ-23.1,5",
+        "БПТБ-23.1.5",
+        "БПТБ-23,1,5",
+        "bptb-23.1,5"
+      ],
+      "exteriorCrop": [
+        98.5,
+        125.55,
+        261.4,
+        176.2
+      ],
+      "mappedCardId": "handbookref-bptb-23-1-5"
+    },
+    {
+      "page": 12,
+      "slot": 4,
+      "rowBounds": [
+        178,
+        238.75
+      ],
+      "nameRaw": "БПТБ-23.2,5",
+      "title": "БПТБ-23.2,5",
+      "maker": "«Маяк-Перспектива» / «Завод Маяк»",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На фотографии показан короткий цилиндрический корпус с хвостовым оперением.",
+      "generalType": "термобарический боеприпас",
+      "aliases": [
+        "БПТБ-23.2,5",
+        "БПТБ-23.2.5",
+        "БПТБ-23,2,5",
+        "bptb-23.2,5"
+      ],
+      "exteriorCrop": [
+        98.5,
+        179.8,
+        261.4,
+        236.95
+      ],
+      "mappedCardId": "handbookref-bptb-23-2-5"
+    },
+    {
+      "page": 12,
+      "slot": 5,
+      "rowBounds": [
+        238.75,
+        333.5
+      ],
+      "nameRaw": "ОБПК-23.1",
+      "title": "ОБПК-23.1",
+      "maker": "«Маяк-Перспектива» / «Завод Маяк»",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На фотографии показан короткий цилиндрический корпус с хвостовым оперением.",
+      "generalType": "кумулятивно-осколочный боеприпас",
+      "aliases": [
+        "ОБПК-23.1",
+        "ОБПК-23,1",
+        "obpk-23.1"
+      ],
+      "exteriorCrop": [
+        98.5,
+        240.55,
+        261.4,
+        331.7
+      ],
+      "mappedCardId": "handbookref-obpk-23-1"
+    },
+    {
+      "page": 12,
+      "slot": 6,
+      "rowBounds": [
+        333.5,
+        427.5
+      ],
+      "nameRaw": "ОБПК-23.1,5",
+      "title": "ОБПК-23.1,5",
+      "maker": "«Маяк-Перспектива» / «Завод Маяк»",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На фотографии показан короткий цилиндрический корпус с хвостовым оперением.",
+      "generalType": "кумулятивно-осколочный боеприпас",
+      "aliases": [
+        "ОБПК-23.1,5",
+        "ОБПК-23.1.5",
+        "ОБПК-23,1,5",
+        "obpk-23.1,5"
+      ],
+      "exteriorCrop": [
+        98.5,
+        335.3,
+        261.4,
+        425.7
+      ],
+      "mappedCardId": "handbookref-obpk-23-1-5"
+    },
+    {
+      "page": 12,
+      "slot": 7,
+      "rowBounds": [
+        427.5,
+        535.25
+      ],
+      "nameRaw": "ОБПК-23.2,5",
+      "title": "ОБПК-23.2,5",
+      "maker": "«Маяк-Перспектива» / «Завод Маяк»",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На фотографии показан короткий цилиндрический корпус с хвостовым оперением.",
+      "generalType": "кумулятивно-осколочный боеприпас",
+      "aliases": [
+        "ОБПК-23.2,5",
+        "ОБПК-23.2.5",
+        "ОБПК-23,2,5",
+        "obpk-23.2,5"
+      ],
+      "exteriorCrop": [
+        98.5,
+        429.3,
+        261.4,
+        533.45
+      ],
+      "mappedCardId": "handbookref-obpk-23-2-5"
+    },
+    {
+      "page": 12,
+      "slot": 8,
+      "rowBounds": [
+        535.25,
+        593.75
+      ],
+      "nameRaw": "УАБ-0,5",
+      "title": "УАБ-0,5",
+      "maker": "Мавик плюс",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На иллюстрации показан красноватый цилиндрический корпус с тёмным оперением.",
+      "generalType": "осколочный боеприпас",
+      "aliases": [
+        "УАБ-0,5",
+        "УАБ-0.5",
+        "uab-0,5"
+      ],
+      "exteriorCrop": [
+        98.5,
+        537.05,
+        261.4,
+        591.95
+      ],
+      "mappedCardId": "handbookref-uab-0-5"
+    },
+    {
+      "page": 13,
+      "slot": 1,
+      "rowBounds": [
+        3.5,
+        83.25
+      ],
+      "nameRaw": "",
+      "title": "УАБ-0,75",
+      "maker": "Мавик плюс",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На иллюстрации показан красноватый цилиндрический корпус с тёмным оперением.",
+      "generalType": "осколочный боеприпас",
+      "aliases": [
+        "УАБ-0,75",
+        "УАБ-0.75",
+        "uab-0,75"
+      ],
+      "exteriorCrop": [
+        98.5,
+        5.3,
+        261.4,
+        81.45
+      ],
+      "mappedCardId": "handbookref-uab-0-75"
+    },
+    {
+      "page": 13,
+      "slot": 2,
+      "rowBounds": [
+        83.25,
+        139.25
+      ],
+      "nameRaw": "",
+      "title": "МАБ-Л68К-ВР1",
+      "maker": "Лазар индастриз",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "Каталожная иллюстрация показывает зелёный цилиндрический корпус.",
+      "generalType": "кумулятивный боеприпас",
+      "aliases": [
+        "МАБ-Л68К-ВР1",
+        "mab-l68k-vr1"
+      ],
+      "exteriorCrop": [
+        98.5,
+        85.05,
+        261.4,
+        137.45
+      ],
+      "mappedCardId": "handbookref-mab-l68k-vr1"
+    },
+    {
+      "page": 13,
+      "slot": 3,
+      "rowBounds": [
+        139.25,
+        194.25
+      ],
+      "nameRaw": "",
+      "title": "МАБ-Л68КО-ВР1",
+      "maker": "Лазар индастриз",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "Каталожная иллюстрация показывает зелёный цилиндрический корпус.",
+      "generalType": "кумулятивно-осколочный боеприпас",
+      "aliases": [
+        "МАБ-Л68КО-ВР1",
+        "mab-l68ko-vr1"
+      ],
+      "exteriorCrop": [
+        98.5,
+        141.05,
+        261.4,
+        192.45
+      ],
+      "mappedCardId": "handbookref-mab-l68ko-vr1"
+    },
+    {
+      "page": 13,
+      "slot": 4,
+      "rowBounds": [
+        194.25,
+        251.75
+      ],
+      "nameRaw": "",
+      "title": "МАБ-Л68О-ВР1",
+      "maker": "Лазар индастриз",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "Каталожная иллюстрация показывает зелёный цилиндрический корпус.",
+      "generalType": "осколочный боеприпас",
+      "aliases": [
+        "МАБ-Л68О-ВР1",
+        "mab-l68o-vr1"
+      ],
+      "exteriorCrop": [
+        98.5,
+        196.05,
+        261.4,
+        249.95
+      ],
+      "mappedCardId": "handbookref-mab-l68o-vr1"
+    },
+    {
+      "page": 13,
+      "slot": 5,
+      "rowBounds": [
+        251.75,
+        308.25
+      ],
+      "nameRaw": "",
+      "title": "МАБ-Л1.5Ое ВР-6",
+      "maker": "Лазар индастриз",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "Каталожная иллюстрация показывает зелёный цилиндрический корпус.",
+      "generalType": "осколочный боеприпас",
+      "aliases": [
+        "МАБ-Л1.5Ое ВР-6",
+        "МАБ-Л1,5Ое ВР-6",
+        "mab-l1.5oe vr-6"
+      ],
+      "exteriorCrop": [
+        98.5,
+        253.55,
+        261.4,
+        306.45
+      ],
+      "mappedCardId": "handbookref-mab-l1-5oe-vr-6"
+    },
+    {
+      "page": 13,
+      "slot": 6,
+      "rowBounds": [
+        308.25,
+        365.25
+      ],
+      "nameRaw": "",
+      "title": "МАБ-Л3.0О ВР-6",
+      "maker": "Лазар индастриз",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "Каталожная иллюстрация показывает зелёный цилиндрический корпус.",
+      "generalType": "осколочный боеприпас",
+      "aliases": [
+        "МАБ-Л3.0О ВР-6",
+        "МАБ-Л3,0О ВР-6",
+        "mab-l3.0o vr-6"
+      ],
+      "exteriorCrop": [
+        98.5,
+        310.05,
+        261.4,
+        363.45
+      ],
+      "mappedCardId": "handbookref-mab-l3-0o-vr-6"
+    },
+    {
+      "page": 13,
+      "slot": 7,
+      "rowBounds": [
+        365.25,
+        422.75
+      ],
+      "nameRaw": "",
+      "title": "МФАБ-Л65 ВР-6",
+      "maker": "Лазар индастриз",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "Каталожная иллюстрация показывает зелёный цилиндрический корпус.",
+      "generalType": "фугасный боеприпас",
+      "aliases": [
+        "МФАБ-Л65 ВР-6",
+        "mfab-l65 vr-6"
+      ],
+      "exteriorCrop": [
+        98.5,
+        367.05,
+        261.4,
+        420.95
+      ],
+      "mappedCardId": "handbookref-mfab-l65-vr-6"
+    },
+    {
+      "page": 13,
+      "slot": 8,
+      "rowBounds": [
+        422.75,
+        479.25
+      ],
+      "nameRaw": "",
+      "title": "МАБ-Л70К ВР-6",
+      "maker": "Лазар индастриз",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "Каталожная иллюстрация показывает зелёный цилиндрический корпус.",
+      "generalType": "кумулятивный боеприпас",
+      "aliases": [
+        "МАБ-Л70К ВР-6",
+        "mab-l70k vr-6"
+      ],
+      "exteriorCrop": [
+        98.5,
+        424.55,
+        261.4,
+        477.45
+      ],
+      "mappedCardId": "handbookref-mab-l70k-vr-6"
+    },
+    {
+      "page": 13,
+      "slot": 9,
+      "rowBounds": [
+        479.25,
+        536.25
+      ],
+      "nameRaw": "",
+      "title": "МАБ-Л70Ке ВР-6",
+      "maker": "Лазар индастриз",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "Каталожная иллюстрация показывает зелёный цилиндрический корпус.",
+      "generalType": "кумулятивный боеприпас",
+      "aliases": [
+        "МАБ-Л70Ке ВР-6",
+        "mab-l70ke vr-6"
+      ],
+      "exteriorCrop": [
+        98.5,
+        481.05,
+        261.4,
+        534.45
+      ],
+      "mappedCardId": "handbookref-mab-l70ke-vr-6"
+    },
+    {
+      "page": 13,
+      "slot": 10,
+      "rowBounds": [
+        536.25,
+        594
+      ],
+      "nameRaw": "",
+      "title": "МАБ-Л100К ВР-6",
+      "maker": "Лазар индастриз",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "Каталожная иллюстрация показывает зелёный цилиндрический корпус.",
+      "generalType": "кумулятивный боеприпас",
+      "aliases": [
+        "МАБ-Л100К ВР-6",
+        "mab-l100k vr-6"
+      ],
+      "exteriorCrop": [
+        98.5,
+        538.05,
+        261.4,
+        592.2
+      ],
+      "mappedCardId": "handbookref-mab-l100k-vr-6"
+    },
+    {
+      "page": 14,
+      "slot": 1,
+      "rowBounds": [
+        3.5,
+        63.25
+      ],
+      "nameRaw": "",
+      "title": "МАБ-Л100Ке ВР-6",
+      "maker": "Лазар индастриз",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "Каталожная иллюстрация показывает зелёный цилиндрический корпус.",
+      "generalType": "кумулятивный боеприпас",
+      "aliases": [
+        "МАБ-Л100Ке ВР-6",
+        "mab-l100ke vr-6"
+      ],
+      "exteriorCrop": [
+        98.5,
+        5.3,
+        261.4,
+        61.45
+      ],
+      "mappedCardId": "handbookref-mab-l100ke-vr-6"
+    },
+    {
+      "page": 14,
+      "slot": 2,
+      "rowBounds": [
+        63.25,
+        147.25
+      ],
+      "nameRaw": "",
+      "title": "ПТМ-Л1 ВР-6",
+      "maker": "Лазар индастриз",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На иллюстрации показан тёмный короткий цилиндрический корпус с наружными выступами.",
+      "generalType": "противотанковая мина",
+      "aliases": [
+        "ПТМ-Л1 ВР-6",
+        "ptm-l1 vr-6"
+      ],
+      "exteriorCrop": [
+        98.5,
+        65.05,
+        261.4,
+        145.45
+      ],
+      "mappedCardId": "handbookref-ptm-l1-vr-6"
+    },
+    {
+      "page": 14,
+      "slot": 3,
+      "rowBounds": [
+        147.25,
+        209.5
+      ],
+      "nameRaw": "",
+      "title": "БО-0,5",
+      "maker": "Секьюрити инжиниринг",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На фотографии виден светлый цилиндрический корпус с хвостовым оперением; на нём читается надпись «МАКЕТ».",
+      "generalType": "осколочный боеприпас",
+      "aliases": [
+        "БО-0,5",
+        "БО-0.5",
+        "bo-0,5"
+      ],
+      "exteriorCrop": [
+        98.5,
+        149.05,
+        261.4,
+        207.7
+      ],
+      "mappedCardId": "handbookref-bo-0-5"
+    },
+    {
+      "page": 14,
+      "slot": 4,
+      "rowBounds": [
+        209.5,
+        312.5
+      ],
+      "nameRaw": "",
+      "title": "ОФБ-60-ЯУ",
+      "maker": "Секьюрити инжиниринг",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На фотографии показан серый цилиндрический корпус с маркировкой на боковой поверхности.",
+      "generalType": "осколочно-фугасный боеприпас",
+      "aliases": [
+        "ОФБ-60-ЯУ",
+        "ofb-60-yau"
+      ],
+      "exteriorCrop": [
+        98.5,
+        211.3,
+        261.4,
+        310.7
+      ],
+      "mappedCardId": "handbookref-ofb-60-yau"
+    },
+    {
+      "page": 14,
+      "slot": 5,
+      "rowBounds": [
+        312.5,
+        404.75
+      ],
+      "nameRaw": "",
+      "title": "БОТ-1600",
+      "maker": "ТЕХНОСТАРТ УА",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На фотографии виден зелёный цилиндрический корпус с тёмной хвостовой частью.",
+      "generalType": "осколочно-термобарический боеприпас",
+      "aliases": [
+        "БОТ-1600",
+        "bot-1600"
+      ],
+      "exteriorCrop": [
+        98.5,
+        314.3,
+        261.4,
+        402.95
+      ],
+      "mappedCardId": "handbookref-bot-1600"
+    },
+    {
+      "page": 14,
+      "slot": 6,
+      "rowBounds": [
+        404.75,
+        505.75
+      ],
+      "nameRaw": "",
+      "title": "ОАБ-1,5",
+      "maker": "НПФ «АДРОН»",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На фотографии показан тёмный вытянутый корпус с хвостовым оперением и поперечным наружным выступом.",
+      "generalType": "осколочный боеприпас",
+      "aliases": [
+        "ОАБ-1,5",
+        "ОАБ-1.5",
+        "oab-1,5"
+      ],
+      "exteriorCrop": [
+        98.5,
+        406.55,
+        261.4,
+        503.95
+      ],
+      "mappedCardId": "handbookref-oab-1-5"
+    },
+    {
+      "page": 14,
+      "slot": 7,
+      "rowBounds": [
+        505.75,
+        593
+      ],
+      "nameRaw": "",
+      "title": "ТАБ-1,5",
+      "maker": "НПФ «АДРОН»",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На фотографии показан тёмный вытянутый корпус с хвостовым оперением и поперечным наружным выступом.",
+      "generalType": "термобарический боеприпас",
+      "aliases": [
+        "ТАБ-1,5",
+        "ТАБ-1.5",
+        "tab-1,5"
+      ],
+      "exteriorCrop": [
+        98.5,
+        507.55,
+        261.4,
+        591.2
+      ],
+      "mappedCardId": "handbookref-tab-1-5"
+    },
+    {
+      "page": 15,
+      "slot": 1,
+      "rowBounds": [
+        1.25,
+        75.25
+      ],
+      "nameRaw": "",
+      "title": "ТАБ-1,5-1",
+      "maker": "НПФ «АДРОН»",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На фотографии показан тёмный вытянутый корпус с хвостовым оперением и поперечным наружным выступом.",
+      "generalType": "термобарический боеприпас",
+      "aliases": [
+        "ТАБ-1,5-1",
+        "ТАБ-1.5-1",
+        "tab-1,5-1"
+      ],
+      "exteriorCrop": [
+        98.5,
+        3.05,
+        261.4,
+        73.45
+      ],
+      "mappedCardId": "handbookref-tab-1-5-1"
+    },
+    {
+      "page": 15,
+      "slot": 2,
+      "rowBounds": [
+        75.25,
+        166.25
+      ],
+      "nameRaw": "",
+      "title": "УЯ-65-0,5",
+      "maker": "Гринхаус Солюшнс",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "Внешний вид закрытого корпуса: зелёный цилиндр с округлым верхом и суженной нижней частью.",
+      "generalType": "кумулятивная боевая часть",
+      "aliases": [
+        "УЯ-65-0,5",
+        "УЯ-65-0.5",
+        "uya-65-0,5"
+      ],
+      "exteriorCrop": [
+        173,
+        77.05,
+        231,
+        164.45
+      ],
+      "mappedCardId": "handbookref-uya-65-0-5"
+    },
+    {
+      "page": 15,
+      "slot": 3,
+      "rowBounds": [
+        166.25,
+        262.25
+      ],
+      "nameRaw": "",
+      "title": "УЯ-У-65-0,8",
+      "maker": "Гринхаус Солюшнс",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "Внешний вид закрытого корпуса: зелёный цилиндр с округлым верхом.",
+      "generalType": "боевая часть",
+      "aliases": [
+        "УЯ-У-65-0,8",
+        "УЯ-У-65-0.8",
+        "uya-u-65-0,8"
+      ],
+      "exteriorCrop": [
+        179,
+        168.05,
+        225.5,
+        260.45
+      ],
+      "mappedCardId": "handbookref-uya-u-65-0-8"
+    },
+    {
+      "page": 15,
+      "slot": 4,
+      "rowBounds": [
+        262.25,
+        361.25
+      ],
+      "nameRaw": "",
+      "title": "УФ-65-1",
+      "maker": "Гринхаус Солюшнс",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "Внешний вид закрытого корпуса: зелёный цилиндр с плоским верхом и маркировкой на боковой поверхности.",
+      "generalType": "осколочно-фугасная боевая часть",
+      "aliases": [
+        "УФ-65-1",
+        "uf-65-1"
+      ],
+      "exteriorCrop": [
+        177,
+        264.05,
+        234,
+        359.45
+      ],
+      "mappedCardId": "handbookref-uf-65-1"
+    },
+    {
+      "page": 15,
+      "slot": 5,
+      "rowBounds": [
+        361.25,
+        481.75
+      ],
+      "nameRaw": "",
+      "title": "ТЗ-65-1",
+      "maker": "Гринхаус Солюшнс",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "Внешний вид закрытого корпуса: вытянутый зелёный цилиндр с маркировкой на боковой поверхности.",
+      "generalType": "зажигательная боевая часть",
+      "aliases": [
+        "ТЗ-65-1",
+        "tz-65-1"
+      ],
+      "exteriorCrop": [
+        122,
+        363.05,
+        177,
+        479.95
+      ],
+      "mappedCardId": "handbookref-tz-65-1"
+    },
+    {
+      "page": 15,
+      "slot": 6,
+      "rowBounds": [
+        481.75,
+        592.25
+      ],
+      "nameRaw": "",
+      "title": "УБ-65-1,2",
+      "maker": "Гринхаус Солюшнс",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "Внешний вид закрытого корпуса: зелёный цилиндр с округлым верхом и маркировкой.",
+      "generalType": "осколочная боевая часть",
+      "aliases": [
+        "УБ-65-1,2",
+        "УБ-65-1.2",
+        "ub-65-1,2"
+      ],
+      "exteriorCrop": [
+        174,
+        483.55,
+        233,
+        590.45
+      ],
+      "mappedCardId": "handbookref-ub-65-1-2"
+    },
+    {
+      "page": 16,
+      "slot": 1,
+      "rowBounds": [
+        2.75,
+        110.5
+      ],
+      "nameRaw": "",
+      "title": "УБН-85-1,2",
+      "maker": "Гринхаус Солюшнс",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "Внешний вид закрытого корпуса: зелёный цилиндр с округлым верхом и суженной нижней частью.",
+      "generalType": "осколочная боевая часть",
+      "aliases": [
+        "УБН-85-1,2",
+        "УБН-85-1.2",
+        "ubn-85-1,2"
+      ],
+      "exteriorCrop": [
+        178,
+        4.55,
+        223,
+        108.7
+      ],
+      "mappedCardId": "handbookref-ubn-85-1-2"
+    },
+    {
+      "page": 16,
+      "slot": 2,
+      "rowBounds": [
+        110.5,
+        227.75
+      ],
+      "nameRaw": "",
+      "title": "УЯ-У-65-1,3",
+      "maker": "Гринхаус Солюшнс",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "Внешний вид закрытого корпуса: зелёный цилиндр с округлым верхом и маркировкой.",
+      "generalType": "боевая часть",
+      "aliases": [
+        "УЯ-У-65-1,3",
+        "УЯ-У-65-1.3",
+        "uya-u-65-1,3"
+      ],
+      "exteriorCrop": [
+        179,
+        112.3,
+        225,
+        225.95
+      ],
+      "mappedCardId": "handbookref-uya-u-65-1-3"
+    },
+    {
+      "page": 16,
+      "slot": 3,
+      "rowBounds": [
+        227.75,
+        352.5
+      ],
+      "nameRaw": "",
+      "title": "К-85-1,3",
+      "maker": "Гринхаус Солюшнс",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "Внешний вид закрытого корпуса: вытянутый зелёный цилиндр с округлым верхом и суженной нижней частью.",
+      "generalType": "кумулятивная боевая часть",
+      "aliases": [
+        "К-85-1,3",
+        "К-85-1.3",
+        "k-85-1,3"
+      ],
+      "exteriorCrop": [
+        180,
+        229.55,
+        222,
+        350.7
+      ],
+      "mappedCardId": "handbookref-k-85-1-3"
+    },
+    {
+      "page": 16,
+      "slot": 4,
+      "rowBounds": [
+        352.5,
+        479.25
+      ],
+      "nameRaw": "",
+      "title": "УЯ-95-1,5",
+      "maker": "Гринхаус Солюшнс",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "Внешний вид закрытого корпуса: зелёный цилиндр с округлым верхом и суженной нижней частью.",
+      "generalType": "кумулятивная боевая часть",
+      "aliases": [
+        "УЯ-95-1,5",
+        "УЯ-95-1.5",
+        "uya-95-1,5"
+      ],
+      "exteriorCrop": [
+        174,
+        354.3,
+        234,
+        477.45
+      ],
+      "mappedCardId": "handbookref-uya-95-1-5"
+    },
+    {
+      "page": 16,
+      "slot": 5,
+      "rowBounds": [
+        479.25,
+        593.25
+      ],
+      "nameRaw": "",
+      "title": "УБН-110-1,7",
+      "maker": "Гринхаус Солюшнс",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "Внешний вид закрытого корпуса: тёмный цилиндр с округлым верхом, кольцевым поясом и суженной нижней частью.",
+      "generalType": "осколочная боевая часть",
+      "aliases": [
+        "УБН-110-1,7",
+        "УБН-110-1.7",
+        "ubn-110-1,7"
+      ],
+      "exteriorCrop": [
+        175,
+        481.05,
+        239,
+        591.45
+      ],
+      "mappedCardId": "handbookref-ubn-110-1-7"
+    },
+    {
+      "page": 17,
+      "slot": 1,
+      "rowBounds": [
+        1.25,
+        79
+      ],
+      "nameRaw": "",
+      "title": "ЗБ-500",
+      "maker": "Дымы",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На фотографии виден прямоугольный светло-серый корпус с красной верхней и тёмной нижней частью.",
+      "generalType": "зажигательный боеприпас",
+      "aliases": [
+        "ЗБ-500",
+        "zb-500"
+      ],
+      "exteriorCrop": [
+        98.5,
+        3.05,
+        261.4,
+        77.2
+      ],
+      "mappedCardId": "handbookref-zb-500"
+    },
+    {
+      "page": 17,
+      "slot": 2,
+      "rowBounds": [
+        79,
+        162.25
+      ],
+      "nameRaw": "",
+      "title": "ЗБ-700",
+      "maker": "Дымы",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На фотографии виден прямоугольный светло-серый корпус с красной верхней и тёмной нижней частью.",
+      "generalType": "зажигательный боеприпас",
+      "aliases": [
+        "ЗБ-700",
+        "zb-700"
+      ],
+      "exteriorCrop": [
+        98.5,
+        80.8,
+        261.4,
+        160.45
+      ],
+      "mappedCardId": "handbookref-zb-700"
+    },
+    {
+      "page": 17,
+      "slot": 3,
+      "rowBounds": [
+        162.25,
+        261.25
+      ],
+      "nameRaw": "",
+      "title": "ЗБ-700М",
+      "maker": "Дымы",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На фотографии виден прямоугольный светло-серый корпус с красной верхней и тёмной нижней частью.",
+      "generalType": "зажигательный боеприпас",
+      "aliases": [
+        "ЗБ-700М",
+        "zb-700m"
+      ],
+      "exteriorCrop": [
+        98.5,
+        164.05,
+        261.4,
+        259.45
+      ],
+      "mappedCardId": "handbookref-zb-700m"
+    },
+    {
+      "page": 17,
+      "slot": 4,
+      "rowBounds": [
+        261.25,
+        355.75
+      ],
+      "nameRaw": "",
+      "title": "ЗБ-1200",
+      "maker": "Дымы",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На фотографии виден прямоугольный светло-серый корпус с красной верхней и тёмной нижней частью.",
+      "generalType": "зажигательный боеприпас",
+      "aliases": [
+        "ЗБ-1200",
+        "zb-1200"
+      ],
+      "exteriorCrop": [
+        98.5,
+        263.05,
+        261.4,
+        353.95
+      ],
+      "mappedCardId": "handbookref-zb-1200"
+    },
+    {
+      "page": 17,
+      "slot": 5,
+      "rowBounds": [
+        355.75,
+        465.75
+      ],
+      "nameRaw": "",
+      "title": "ЗБ-1200М",
+      "maker": "Дымы",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На фотографии виден прямоугольный светло-серый корпус с красной верхней и тёмной нижней частью.",
+      "generalType": "зажигательный боеприпас",
+      "aliases": [
+        "ЗБ-1200М",
+        "zb-1200m"
+      ],
+      "exteriorCrop": [
+        98.5,
+        357.55,
+        261.4,
+        463.95
+      ],
+      "mappedCardId": "handbookref-zb-1200m"
+    },
+    {
+      "page": 17,
+      "slot": 6,
+      "rowBounds": [
+        465.75,
+        590.75
+      ],
+      "nameRaw": "",
+      "title": "ЗБ-1500",
+      "maker": "Дымы",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На фотографии виден прямоугольный светло-серый корпус с красной верхней и тёмной нижней частью.",
+      "generalType": "зажигательный боеприпас",
+      "aliases": [
+        "ЗБ-1500",
+        "zb-1500"
+      ],
+      "exteriorCrop": [
+        98.5,
+        467.55,
+        261.4,
+        588.95
+      ],
+      "mappedCardId": "handbookref-zb-1500"
+    },
+    {
+      "page": 18,
+      "slot": 1,
+      "rowBounds": [
+        2.75,
+        120.75
+      ],
+      "nameRaw": "",
+      "title": "ЗБ-2000",
+      "maker": "Дымы",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На фотографии виден прямоугольный светло-серый корпус с красной верхней и тёмной нижней частью.",
+      "generalType": "зажигательный боеприпас",
+      "aliases": [
+        "ЗБ-2000",
+        "zb-2000"
+      ],
+      "exteriorCrop": [
+        98.5,
+        4.55,
+        261.4,
+        118.95
+      ],
+      "mappedCardId": "handbookref-zb-2000"
+    },
+    {
+      "page": 18,
+      "slot": 2,
+      "rowBounds": [
+        120.75,
+        264.75
+      ],
+      "nameRaw": "",
+      "title": "ЗБ-2500",
+      "maker": "Дымы",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На фотографии виден прямоугольный светло-серый корпус с красной верхней и тёмной нижней частью.",
+      "generalType": "зажигательный боеприпас",
+      "aliases": [
+        "ЗБ-2500",
+        "zb-2500"
+      ],
+      "exteriorCrop": [
+        98.5,
+        122.55,
+        261.4,
+        262.95
+      ],
+      "mappedCardId": "handbookref-zb-2500"
+    },
+    {
+      "page": 18,
+      "slot": 3,
+      "rowBounds": [
+        264.75,
+        326.75
+      ],
+      "nameRaw": "",
+      "title": "НАБ-30В",
+      "maker": "СКБ «Вектор-В»",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "Показан тёмный вытянутый корпус с хвостовым оперением.",
+      "generalType": "осколочный боеприпас",
+      "aliases": [
+        "НАБ-30В",
+        "nab-30v"
+      ],
+      "exteriorCrop": [
+        98.5,
+        266.55,
+        261.4,
+        324.95
+      ],
+      "mappedCardId": "handbookref-nab-30v"
+    },
+    {
+      "page": 18,
+      "slot": 4,
+      "rowBounds": [
+        326.75,
+        399
+      ],
+      "nameRaw": "",
+      "title": "НАБ-40В",
+      "maker": "СКБ «Вектор-В»",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "Показан тёмный вытянутый корпус с хвостовым оперением.",
+      "generalType": "осколочный боеприпас",
+      "aliases": [
+        "НАБ-40В",
+        "nab-40v"
+      ],
+      "exteriorCrop": [
+        98.5,
+        328.55,
+        261.4,
+        397.2
+      ],
+      "mappedCardId": "handbookref-nab-40v"
+    },
+    {
+      "page": 18,
+      "slot": 5,
+      "rowBounds": [
+        399,
+        461.75
+      ],
+      "nameRaw": "",
+      "title": "НАБ-500В",
+      "maker": "СКБ «Вектор-В»",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "Показан тёмный вытянутый корпус с хвостовым оперением.",
+      "generalType": "осколочный боеприпас",
+      "aliases": [
+        "НАБ-500В",
+        "nab-500v"
+      ],
+      "exteriorCrop": [
+        98.5,
+        400.8,
+        261.4,
+        459.95
+      ],
+      "mappedCardId": "handbookref-nab-500v"
+    },
+    {
+      "page": 18,
+      "slot": 6,
+      "rowBounds": [
+        461.75,
+        536.75
+      ],
+      "nameRaw": "",
+      "title": "НАБ-1500В",
+      "maker": "СКБ «Вектор-В»",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "Показан тёмный вытянутый корпус с хвостовым оперением.",
+      "generalType": "осколочный боеприпас",
+      "aliases": [
+        "НАБ-1500В",
+        "nab-1500v"
+      ],
+      "exteriorCrop": [
+        98.5,
+        463.55,
+        261.4,
+        534.95
+      ],
+      "mappedCardId": "handbookref-nab-1500v"
+    },
+    {
+      "page": 18,
+      "slot": 7,
+      "rowBounds": [
+        536.75,
+        593.25
+      ],
+      "nameRaw": "",
+      "title": "БКО АН-500",
+      "maker": "Юкрейниан дефенс энд девелопмент компани",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На фотографии показан короткий цилиндрический корпус с нанесённой маркировкой.",
+      "generalType": "кумулятивно-осколочный боеприпас",
+      "aliases": [
+        "БКО АН-500",
+        "bko an-500"
+      ],
+      "exteriorCrop": [
+        98.5,
+        538.55,
+        261.4,
+        591.45
+      ],
+      "mappedCardId": "handbookref-bko-an-500"
+    },
+    {
+      "page": 19,
+      "slot": 1,
+      "rowBounds": [
+        2.75,
+        57.75
+      ],
+      "nameRaw": "БКО АН-500М",
+      "title": "БКО АН-500М",
+      "maker": "Юкрейниан дефенс энд девелопмент компани",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На фотографии показан короткий цилиндрический корпус с нанесённой маркировкой.",
+      "generalType": "кумулятивно-осколочный боеприпас",
+      "aliases": [
+        "БКО АН-500М",
+        "bko an-500m"
+      ],
+      "exteriorCrop": [
+        98.5,
+        4.55,
+        261.4,
+        55.95
+      ],
+      "mappedCardId": "handbookref-bko-an-500m"
+    },
+    {
+      "page": 19,
+      "slot": 2,
+      "rowBounds": [
+        57.75,
+        112
+      ],
+      "nameRaw": "БКО АН-1500",
+      "title": "БКО АН-1500",
+      "maker": "Юкрейниан дефенс энд девелопмент компани",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На фотографии показан короткий цилиндрический корпус с нанесённой маркировкой.",
+      "generalType": "кумулятивно-осколочный боеприпас",
+      "aliases": [
+        "БКО АН-1500",
+        "bko an-1500"
+      ],
+      "exteriorCrop": [
+        98.5,
+        59.55,
+        261.4,
+        110.2
+      ],
+      "mappedCardId": "handbookref-bko-an-1500"
+    },
+    {
+      "page": 19,
+      "slot": 3,
+      "rowBounds": [
+        112,
+        167
+      ],
+      "nameRaw": "БКО АН-1500М",
+      "title": "БКО АН-1500М",
+      "maker": "Юкрейниан дефенс энд девелопмент компани",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На фотографии показан короткий цилиндрический корпус с нанесённой маркировкой.",
+      "generalType": "кумулятивно-осколочный боеприпас",
+      "aliases": [
+        "БКО АН-1500М",
+        "bko an-1500m"
+      ],
+      "exteriorCrop": [
+        98.5,
+        113.8,
+        261.4,
+        165.2
+      ],
+      "mappedCardId": "handbookref-bko-an-1500m"
+    },
+    {
+      "page": 19,
+      "slot": 4,
+      "rowBounds": [
+        167,
+        258.5
+      ],
+      "nameRaw": "МОН-100.1",
+      "title": "МОН-100.1",
+      "maker": "Юкрейниан дефенс энд девелопмент компани",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На фотографии виден светлый цилиндрический корпус с маркировкой на боковой поверхности.",
+      "generalType": "мина",
+      "aliases": [
+        "МОН-100.1",
+        "МОН-100,1",
+        "mon-100.1"
+      ],
+      "exteriorCrop": [
+        98.5,
+        168.8,
+        261.4,
+        256.7
+      ],
+      "mappedCardId": "handbookref-mon-100-1"
+    },
+    {
+      "page": 19,
+      "slot": 5,
+      "rowBounds": [
+        258.5,
+        322.25
+      ],
+      "nameRaw": "МОА «Композит» 43/12 осколочный",
+      "title": "МОА «Композит» 43/12 осколочный",
+      "maker": "НПО «Павлоградский химический завод»",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На фотографии показан тёмный цилиндрический корпус с рельефной наружной поверхностью.",
+      "generalType": "осколочный боеприпас",
+      "aliases": [
+        "МОА «Композит» 43/12 осколочный",
+        "moa «kompozit» 43/12 oskolochnyi"
+      ],
+      "exteriorCrop": [
+        98.5,
+        260.3,
+        261.4,
+        320.45
+      ],
+      "mappedCardId": "handbookref-moa-kompozit-43-12-oskolochnyi"
+    },
+    {
+      "page": 19,
+      "slot": 6,
+      "rowBounds": [
+        322.25,
+        409.25
+      ],
+      "nameRaw": "МОА «Композит» 43/7 осколочный",
+      "title": "МОА «Композит» 43/7 осколочный",
+      "maker": "НПО «Павлоградский химический завод»",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На фотографии показан тёмный цилиндрический корпус с рельефной наружной поверхностью.",
+      "generalType": "осколочный боеприпас",
+      "aliases": [
+        "МОА «Композит» 43/7 осколочный",
+        "moa «kompozit» 43/7 oskolochnyi"
+      ],
+      "exteriorCrop": [
+        98.5,
+        324.05,
+        261.4,
+        407.45
+      ],
+      "mappedCardId": "handbookref-moa-kompozit-43-7-oskolochnyi"
+    },
+    {
+      "page": 19,
+      "slot": 7,
+      "rowBounds": [
+        409.25,
+        462
+      ],
+      "nameRaw": "МОА «Композит» 43 камикадзе",
+      "title": "МОА «Композит» 43 камикадзе",
+      "maker": "НПО «Павлоградский химический завод»",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На фотографии показан тёмный цилиндрический корпус с рельефной наружной поверхностью.",
+      "generalType": "осколочный боеприпас",
+      "aliases": [
+        "МОА «Композит» 43 камикадзе",
+        "moa «kompozit» 43 kamikadze"
+      ],
+      "exteriorCrop": [
+        98.5,
+        411.05,
+        261.4,
+        460.2
+      ],
+      "mappedCardId": "handbookref-moa-kompozit-43-kamikadze"
+    },
+    {
+      "page": 19,
+      "slot": 8,
+      "rowBounds": [
+        462,
+        527.25
+      ],
+      "nameRaw": "МОА «Композит» 61 камикадзе",
+      "title": "МОА «Композит» 61 камикадзе",
+      "maker": "НПО «Павлоградский химический завод»",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На фотографии показан тёмный цилиндрический корпус с рельефной наружной поверхностью.",
+      "generalType": "осколочный боеприпас",
+      "aliases": [
+        "МОА «Композит» 61 камикадзе",
+        "moa «kompozit» 61 kamikadze"
+      ],
+      "exteriorCrop": [
+        98.5,
+        463.8,
+        261.4,
+        525.45
+      ],
+      "mappedCardId": "handbookref-moa-kompozit-61-kamikadze"
+    },
+    {
+      "page": 19,
+      "slot": 9,
+      "rowBounds": [
+        527.25,
+        592.25
+      ],
+      "nameRaw": "ТБ-1",
+      "title": "ТБ-1",
+      "maker": "НПП Химических продуктов",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На фотографии виден зелёный вытянутый корпус с хвостовым оперением.",
+      "generalType": "термобарический боеприпас",
+      "aliases": [
+        "ТБ-1",
+        "tb-1"
+      ],
+      "exteriorCrop": [
+        98.5,
+        529.05,
+        261.4,
+        590.45
+      ],
+      "mappedCardId": "handbookref-tb-1"
+    },
+    {
+      "page": 20,
+      "slot": 1,
+      "rowBounds": [
+        2.25,
+        94.25
+      ],
+      "nameRaw": "",
+      "title": "ТБ-2",
+      "maker": "НПП Химических продуктов",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На фотографии виден зелёный вытянутый корпус с хвостовым оперением.",
+      "generalType": "термобарический боеприпас",
+      "aliases": [
+        "ТБ-2",
+        "tb-2"
+      ],
+      "exteriorCrop": [
+        98.5,
+        4.05,
+        261.4,
+        92.45
+      ],
+      "mappedCardId": "handbookref-tb-2"
+    },
+    {
+      "page": 20,
+      "slot": 2,
+      "rowBounds": [
+        94.25,
+        189.75
+      ],
+      "nameRaw": "",
+      "title": "ЗК 1,5 КТ",
+      "maker": "Украинские оборонные решения",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На наружных видах показан цилиндрический корпус с маркировкой; отдельно воспроизведена предупредительная надпись.",
+      "generalType": "кумулятивно-термобарический боеприпас",
+      "aliases": [
+        "ЗК 1,5 КТ",
+        "ЗК 1.5 КТ",
+        "zk 1,5 kt"
+      ],
+      "exteriorCrop": [
+        98.5,
+        96.05,
+        261.4,
+        187.95
+      ],
+      "mappedCardId": "handbookref-zk-1-5-kt"
+    },
+    {
+      "page": 20,
+      "slot": 3,
+      "rowBounds": [
+        189.75,
+        295.25
+      ],
+      "nameRaw": "",
+      "title": "ЗК 1,5 КО",
+      "maker": "Украинские оборонные решения",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На наружных видах показан цилиндрический корпус с маркировкой; отдельно воспроизведена предупредительная надпись.",
+      "generalType": "кумулятивно-осколочный боеприпас",
+      "aliases": [
+        "ЗК 1,5 КО",
+        "ЗК 1.5 КО",
+        "zk 1,5 ko"
+      ],
+      "exteriorCrop": [
+        98.5,
+        191.55,
+        261.4,
+        293.45
+      ],
+      "mappedCardId": "handbookref-zk-1-5-ko"
+    },
+    {
+      "page": 20,
+      "slot": 4,
+      "rowBounds": [
+        295.25,
+        379.25
+      ],
+      "nameRaw": "",
+      "title": "РБ10-01",
+      "maker": "Умные боеприпасы",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На иллюстрации показан тёмный корпус с рельефной наружной поверхностью и хвостовым оперением.",
+      "generalType": "осколочный боеприпас",
+      "aliases": [
+        "РБ10-01",
+        "rb10-01"
+      ],
+      "exteriorCrop": [
+        98.5,
+        297.05,
+        261.4,
+        377.45
+      ],
+      "mappedCardId": "handbookref-rb10-01"
+    },
+    {
+      "page": 20,
+      "slot": 5,
+      "rowBounds": [
+        379.25,
+        442.25
+      ],
+      "nameRaw": "",
+      "title": "РБ10-02",
+      "maker": "Умные боеприпасы",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На иллюстрации показан короткий тёмный корпус с рельефной наружной поверхностью.",
+      "generalType": "осколочный боеприпас",
+      "aliases": [
+        "РБ10-02",
+        "rb10-02"
+      ],
+      "exteriorCrop": [
+        98.5,
+        381.05,
+        261.4,
+        440.45
+      ],
+      "mappedCardId": "handbookref-rb10-02"
+    },
+    {
+      "page": 20,
+      "slot": 6,
+      "rowBounds": [
+        442.25,
+        524.75
+      ],
+      "nameRaw": "",
+      "title": "РБ15-01",
+      "maker": "Умные боеприпасы",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На иллюстрации показан тёмный корпус с рельефной наружной поверхностью и хвостовым оперением.",
+      "generalType": "осколочный боеприпас",
+      "aliases": [
+        "РБ15-01",
+        "rb15-01"
+      ],
+      "exteriorCrop": [
+        98.5,
+        444.05,
+        261.4,
+        522.95
+      ],
+      "mappedCardId": "handbookref-rb15-01"
+    },
+    {
+      "page": 20,
+      "slot": 7,
+      "rowBounds": [
+        524.75,
+        592.25
+      ],
+      "nameRaw": "",
+      "title": "РБ15-02",
+      "maker": "Умные боеприпасы",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На иллюстрации показан короткий тёмный корпус с рельефной наружной поверхностью.",
+      "generalType": "осколочный боеприпас",
+      "aliases": [
+        "РБ15-02",
+        "rb15-02"
+      ],
+      "exteriorCrop": [
+        98.5,
+        526.55,
+        261.4,
+        590.45
+      ],
+      "mappedCardId": "handbookref-rb15-02"
+    },
+    {
+      "page": 21,
+      "slot": 1,
+      "rowBounds": [
+        2.25,
+        84.75
+      ],
+      "nameRaw": "",
+      "title": "РБ20-01",
+      "maker": "Умные боеприпасы",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На иллюстрации показан тёмный корпус с рельефной наружной поверхностью и хвостовым оперением.",
+      "generalType": "осколочный боеприпас",
+      "aliases": [
+        "РБ20-01",
+        "rb20-01"
+      ],
+      "exteriorCrop": [
+        98.5,
+        4.05,
+        261.4,
+        82.95
+      ],
+      "mappedCardId": "handbookref-rb20-01"
+    },
+    {
+      "page": 21,
+      "slot": 2,
+      "rowBounds": [
+        84.75,
+        158.25
+      ],
+      "nameRaw": "",
+      "title": "РБ20-02",
+      "maker": "Умные боеприпасы",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На иллюстрации показан короткий тёмный корпус с рельефной наружной поверхностью.",
+      "generalType": "осколочный боеприпас",
+      "aliases": [
+        "РБ20-02",
+        "rb20-02"
+      ],
+      "exteriorCrop": [
+        98.5,
+        86.55,
+        261.4,
+        156.45
+      ],
+      "mappedCardId": "handbookref-rb20-02"
+    },
+    {
+      "page": 21,
+      "slot": 3,
+      "rowBounds": [
+        158.25,
+        236.75
+      ],
+      "nameRaw": "",
+      "title": "РБ25-01",
+      "maker": "Умные боеприпасы",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На иллюстрации показан тёмный корпус с рельефной наружной поверхностью и хвостовым оперением.",
+      "generalType": "осколочный боеприпас",
+      "aliases": [
+        "РБ25-01",
+        "rb25-01"
+      ],
+      "exteriorCrop": [
+        98.5,
+        160.05,
+        261.4,
+        234.95
+      ],
+      "mappedCardId": "handbookref-rb25-01"
+    },
+    {
+      "page": 21,
+      "slot": 4,
+      "rowBounds": [
+        236.75,
+        309.75
+      ],
+      "nameRaw": "",
+      "title": "РБ25-02",
+      "maker": "Умные боеприпасы",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На иллюстрации показан короткий тёмный корпус с рельефной наружной поверхностью.",
+      "generalType": "осколочный боеприпас",
+      "aliases": [
+        "РБ25-02",
+        "rb25-02"
+      ],
+      "exteriorCrop": [
+        98.5,
+        238.55,
+        261.4,
+        307.95
+      ],
+      "mappedCardId": "handbookref-rb25-02"
+    },
+    {
+      "page": 21,
+      "slot": 5,
+      "rowBounds": [
+        309.75,
+        389.75
+      ],
+      "nameRaw": "",
+      "title": "РБ40-Ф-01",
+      "maker": "Умные боеприпасы",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На иллюстрации показан тёмный вытянутый цилиндрический корпус с продольными окнами.",
+      "generalType": "фугасный боеприпас",
+      "aliases": [
+        "РБ40-Ф-01",
+        "rb40-f-01"
+      ],
+      "exteriorCrop": [
+        98.5,
+        311.55,
+        261.4,
+        387.95
+      ],
+      "mappedCardId": "handbookref-rb40-f-01"
+    },
+    {
+      "page": 21,
+      "slot": 6,
+      "rowBounds": [
+        389.75,
+        481
+      ],
+      "nameRaw": "",
+      "title": "РБ40-Ф-02",
+      "maker": "Умные боеприпасы",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На иллюстрации виден короткий тёмный цилиндрический корпус.",
+      "generalType": "фугасный боеприпас",
+      "aliases": [
+        "РБ40-Ф-02",
+        "rb40-f-02"
+      ],
+      "exteriorCrop": [
+        98.5,
+        391.55,
+        261.4,
+        479.2
+      ],
+      "mappedCardId": "handbookref-rb40-f-02"
+    },
+    {
+      "page": 21,
+      "slot": 7,
+      "rowBounds": [
+        481,
+        536.75
+      ],
+      "nameRaw": "",
+      "title": "ПТМ-У-01",
+      "maker": "Умные боеприпасы",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На иллюстрации показан зелёный прямоугольный корпус.",
+      "generalType": "противотанковая мина",
+      "aliases": [
+        "ПТМ-У-01",
+        "ptm-u-01"
+      ],
+      "exteriorCrop": [
+        98.5,
+        482.8,
+        261.4,
+        534.95
+      ],
+      "mappedCardId": "handbookref-ptm-u-01"
+    },
+    {
+      "page": 21,
+      "slot": 8,
+      "rowBounds": [
+        536.75,
+        593.75
+      ],
+      "nameRaw": "",
+      "title": "ПТМ-У-02",
+      "maker": "Умные боеприпасы",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На иллюстрации показан зелёный прямоугольный корпус.",
+      "generalType": "противотанковая мина",
+      "aliases": [
+        "ПТМ-У-02",
+        "ptm-u-02"
+      ],
+      "exteriorCrop": [
+        98.5,
+        538.55,
+        261.4,
+        591.95
+      ],
+      "mappedCardId": "handbookref-ptm-u-02"
+    },
+    {
+      "page": 22,
+      "slot": 1,
+      "rowBounds": [
+        2.75,
+        59.75
+      ],
+      "nameRaw": "",
+      "title": "ПТМ-У-03",
+      "maker": "Умные боеприпасы",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На иллюстрации показан зелёный прямоугольный корпус.",
+      "generalType": "противотанковая мина",
+      "aliases": [
+        "ПТМ-У-03",
+        "ptm-u-03"
+      ],
+      "exteriorCrop": [
+        98.5,
+        4.55,
+        261.4,
+        57.95
+      ],
+      "mappedCardId": "handbookref-ptm-u-03"
+    },
+    {
+      "page": 22,
+      "slot": 2,
+      "rowBounds": [
+        59.75,
+        116.75
+      ],
+      "nameRaw": "",
+      "title": "ПТМ-У-04",
+      "maker": "Умные боеприпасы",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На иллюстрации показан зелёный прямоугольный корпус.",
+      "generalType": "противотанковая мина",
+      "aliases": [
+        "ПТМ-У-04",
+        "ptm-u-04"
+      ],
+      "exteriorCrop": [
+        98.5,
+        61.55,
+        261.4,
+        114.95
+      ],
+      "mappedCardId": "handbookref-ptm-u-04"
+    },
+    {
+      "page": 22,
+      "slot": 3,
+      "rowBounds": [
+        116.75,
+        174.75
+      ],
+      "nameRaw": "",
+      "title": "ПТМ-УС-05",
+      "maker": "Умные боеприпасы",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На иллюстрации показан светлый прямоугольный корпус с тёмной передней поверхностью.",
+      "generalType": "противопехотная мина",
+      "aliases": [
+        "ПТМ-УС-05",
+        "ptm-us-05"
+      ],
+      "exteriorCrop": [
+        98.5,
+        118.55,
+        261.4,
+        172.95
+      ],
+      "mappedCardId": "handbookref-ptm-us-05"
+    },
+    {
+      "page": 22,
+      "slot": 4,
+      "rowBounds": [
+        174.75,
+        231.75
+      ],
+      "nameRaw": "",
+      "title": "ПТМ-УС-06",
+      "maker": "Умные боеприпасы",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На иллюстрации показан светлый прямоугольный корпус с тёмной передней поверхностью.",
+      "generalType": "противопехотная мина",
+      "aliases": [
+        "ПТМ-УС-06",
+        "ptm-us-06"
+      ],
+      "exteriorCrop": [
+        98.5,
+        176.55,
+        261.4,
+        229.95
+      ],
+      "mappedCardId": "handbookref-ptm-us-06"
+    },
+    {
+      "page": 22,
+      "slot": 5,
+      "rowBounds": [
+        231.75,
+        288.75
+      ],
+      "nameRaw": "",
+      "title": "ПТМ-УС-07",
+      "maker": "Умные боеприпасы",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На иллюстрации показан светлый прямоугольный корпус с тёмной передней поверхностью.",
+      "generalType": "противопехотная мина",
+      "aliases": [
+        "ПТМ-УС-07",
+        "ptm-us-07"
+      ],
+      "exteriorCrop": [
+        98.5,
+        233.55,
+        261.4,
+        286.95
+      ],
+      "mappedCardId": "handbookref-ptm-us-07"
+    },
+    {
+      "page": 22,
+      "slot": 6,
+      "rowBounds": [
+        288.75,
+        346.5
+      ],
+      "nameRaw": "",
+      "title": "ПТМ-УС-08",
+      "maker": "Умные боеприпасы",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На иллюстрации показан светлый прямоугольный корпус с тёмной передней поверхностью.",
+      "generalType": "противопехотная мина",
+      "aliases": [
+        "ПТМ-УС-08",
+        "ptm-us-08"
+      ],
+      "exteriorCrop": [
+        98.5,
+        290.55,
+        261.4,
+        344.7
+      ],
+      "mappedCardId": "handbookref-ptm-us-08"
+    },
+    {
+      "page": 22,
+      "slot": 7,
+      "rowBounds": [
+        346.5,
+        417.75
+      ],
+      "nameRaw": "",
+      "title": "БТ1-1200",
+      "maker": "Инспецпром",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На иллюстрации показан зелёный вытянутый корпус с хвостовым оперением.",
+      "generalType": "термобарический боеприпас",
+      "aliases": [
+        "БТ1-1200",
+        "bt1-1200"
+      ],
+      "exteriorCrop": [
+        98.5,
+        348.3,
+        261.4,
+        415.95
+      ],
+      "mappedCardId": "handbookref-bt1-1200"
+    },
+    {
+      "page": 22,
+      "slot": 8,
+      "rowBounds": [
+        417.75,
+        523.25
+      ],
+      "nameRaw": "",
+      "title": "ОФБ FRAG-05-1480-1.4KG",
+      "maker": "СПЕЦТЕХНОЭКСПОРТ",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На иллюстрации виден серый округлый корпус с рельефными наружными рёбрами.",
+      "generalType": "осколочно-фугасный боеприпас",
+      "aliases": [
+        "ОФБ FRAG-05-1480-1.4KG",
+        "ОФБ FRAG-05-1480-1,4KG",
+        "ofb frag-05-1480-1.4kg",
+        "FRAG-05-1480-1.4KG"
+      ],
+      "exteriorCrop": [
+        98.5,
+        419.55,
+        261.4,
+        521.45
+      ],
+      "mappedCardId": "handbookref-ofb-frag-05-1480-1-4kg"
+    },
+    {
+      "page": 22,
+      "slot": 9,
+      "rowBounds": [
+        523.25,
+        593.75
+      ],
+      "nameRaw": "",
+      "title": "ОБ-Д1 (ОБД1.00.00)",
+      "maker": "Деталь-Импекс",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На фотографии показан светлый корпус с сетчатой наружной фактурой и тёмным хвостовым оперением.",
+      "generalType": "осколочный боеприпас",
+      "aliases": [
+        "ОБ-Д1 (ОБД1.00.00)",
+        "ОБ-Д1 (ОБД1,00,00)",
+        "ob-d1 (obd1.00.00)"
+      ],
+      "exteriorCrop": [
+        98.5,
+        525.05,
+        261.4,
+        591.95
+      ],
+      "mappedCardId": "handbookref-ob-d1-obd1-00-00"
+    },
+    {
+      "page": 23,
+      "slot": 1,
+      "rowBounds": [
+        2.25,
+        74.25
+      ],
+      "nameRaw": "",
+      "title": "ОБ-Д1 (ОБД1.00.00-01)",
+      "maker": "Деталь-Импекс",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На фотографии показан светлый корпус с сетчатой наружной фактурой и светлым хвостовым оперением.",
+      "generalType": "осколочный боеприпас",
+      "aliases": [
+        "ОБ-Д1 (ОБД1.00.00-01)",
+        "ОБ-Д1 (ОБД1,00,00-01)",
+        "ob-d1 (obd1.00.00-01)"
+      ],
+      "exteriorCrop": [
+        98.5,
+        4.05,
+        261.4,
+        72.45
+      ],
+      "mappedCardId": "handbookref-ob-d1-obd1-00-00-01"
+    },
+    {
+      "page": 23,
+      "slot": 2,
+      "rowBounds": [
+        74.25,
+        161.75
+      ],
+      "nameRaw": "КО 1.3 «Пузатый змей»",
+      "title": "КО 1.3 «Пузатый змей»",
+      "maker": "АЭРО ЦЕНТР",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На фотографии показан тёмный цилиндрический корпус с широким поясом из наружных элементов.",
+      "generalType": "кумулятивно-осколочный боеприпас",
+      "aliases": [
+        "КО 1.3 «Пузатый змей»",
+        "КО 1,3 «Пузатый змей»",
+        "ko 1.3 «puzatyi zmei»"
+      ],
+      "exteriorCrop": [
+        98.5,
+        76.05,
+        261.4,
+        159.95
+      ],
+      "mappedCardId": "handbookref-ko-1-3-puzatyi-zmei"
+    },
+    {
+      "page": 23,
+      "slot": 3,
+      "rowBounds": [
+        161.75,
+        242.75
+      ],
+      "nameRaw": "",
+      "title": "RR2500SC",
+      "maker": "Рендрок Украина",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На иллюстрации показан светлый цилиндрический корпус с округлёнными торцами.",
+      "generalType": "кумулятивно-осколочный боеприпас",
+      "aliases": [
+        "RR2500SC",
+        "rr2500sc"
+      ],
+      "exteriorCrop": [
+        98.5,
+        163.55,
+        261.4,
+        240.95
+      ],
+      "mappedCardId": "handbookref-rr2500sc"
+    },
+    {
+      "page": 23,
+      "slot": 4,
+      "rowBounds": [
+        242.75,
+        319.75
+      ],
+      "nameRaw": "",
+      "title": "RR4000SC",
+      "maker": "Рендрок Украина",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На иллюстрации показан светлый цилиндрический корпус с продольными наружными линиями.",
+      "generalType": "кумулятивно-осколочный боеприпас",
+      "aliases": [
+        "RR4000SC",
+        "rr4000sc"
+      ],
+      "exteriorCrop": [
+        98.5,
+        244.55,
+        261.4,
+        317.95
+      ],
+      "mappedCardId": "handbookref-rr4000sc"
+    },
+    {
+      "page": 23,
+      "slot": 5,
+      "rowBounds": [
+        319.75,
+        406.25
+      ],
+      "nameRaw": "",
+      "title": "ОФБПК-1,4",
+      "maker": "Смарт Вепонри Солюшенс",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На фотографии виден тёмный вытянутый цилиндрический корпус со светлой хвостовой частью.",
+      "generalType": "кумулятивно-осколочный боеприпас",
+      "aliases": [
+        "ОФБПК-1,4",
+        "ОФБПК-1.4",
+        "ofbpk-1,4"
+      ],
+      "exteriorCrop": [
+        98.5,
+        321.55,
+        261.4,
+        404.45
+      ],
+      "mappedCardId": "handbookref-ofbpk-1-4"
+    },
+    {
+      "page": 23,
+      "slot": 6,
+      "rowBounds": [
+        406.25,
+        462.25
+      ],
+      "nameRaw": "",
+      "title": "БВА65.1000",
+      "maker": "НПК «Булава»",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На фотографии показан зелёный цилиндрический корпус с маркировкой на боковой поверхности.",
+      "generalType": "осколочная боевая часть",
+      "aliases": [
+        "БВА65.1000",
+        "БВА65,1000",
+        "bva65.1000"
+      ],
+      "exteriorCrop": [
+        98.5,
+        408.05,
+        261.4,
+        460.45
+      ],
+      "mappedCardId": "handbookref-bva65-1000"
+    },
+    {
+      "page": 23,
+      "slot": 7,
+      "rowBounds": [
+        462.25,
+        522.75
+      ],
+      "nameRaw": "",
+      "title": "БВА65.1500",
+      "maker": "НПК «Булава»",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На фотографии показан зелёный цилиндрический корпус с маркировкой на боковой поверхности.",
+      "generalType": "осколочная боевая часть",
+      "aliases": [
+        "БВА65.1500",
+        "БВА65,1500",
+        "bva65.1500"
+      ],
+      "exteriorCrop": [
+        98.5,
+        464.05,
+        261.4,
+        520.95
+      ],
+      "mappedCardId": "handbookref-bva65-1500"
+    },
+    {
+      "page": 23,
+      "slot": 8,
+      "rowBounds": [
+        522.75,
+        592.75
+      ],
+      "nameRaw": "",
+      "title": "БВА65.2000",
+      "maker": "НПК «Булава»",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На фотографии показан зелёный цилиндрический корпус с маркировкой на боковой поверхности.",
+      "generalType": "осколочная боевая часть",
+      "aliases": [
+        "БВА65.2000",
+        "БВА65,2000",
+        "bva65.2000"
+      ],
+      "exteriorCrop": [
+        98.5,
+        524.55,
+        261.4,
+        590.95
+      ],
+      "mappedCardId": "handbookref-bva65-2000"
+    },
+    {
+      "page": 24,
+      "slot": 1,
+      "rowBounds": [
+        2.25,
+        67.25
+      ],
+      "nameRaw": "",
+      "title": "УБ-3 (В61.00.08В)",
+      "maker": "Оркистек",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "Показан зелёный цилиндрический корпус со светлой хвостовой частью.",
+      "generalType": "осколочный боеприпас",
+      "aliases": [
+        "УБ-3 (В61.00.08В)",
+        "УБ-3 (В61,00,08В)",
+        "ub-3 (v61.00.08v)",
+        "В61.00.08В",
+        "B61.00.08B"
+      ],
+      "exteriorCrop": [
+        98.5,
+        4.05,
+        261.4,
+        65.45
+      ],
+      "mappedCardId": "handbookref-ub-3-v61-00-08v"
+    },
+    {
+      "page": 24,
+      "slot": 2,
+      "rowBounds": [
+        67.25,
+        135
+      ],
+      "nameRaw": "",
+      "title": "УБ-3 (В61.00.08Е)",
+      "maker": "Оркистек",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "Показан зелёный цилиндрический корпус со светлой конической головной частью.",
+      "generalType": "осколочный боеприпас",
+      "aliases": [
+        "УБ-3 (В61.00.08Е)",
+        "УБ-3 (В61,00,08Е)",
+        "ub-3 (v61.00.08e)",
+        "В61.00.08Е",
+        "B61.00.08E"
+      ],
+      "exteriorCrop": [
+        98.5,
+        69.05,
+        261.4,
+        133.2
+      ],
+      "mappedCardId": "handbookref-ub-3-v61-00-08e"
+    },
+    {
+      "page": 24,
+      "slot": 3,
+      "rowBounds": [
+        135,
+        197.25
+      ],
+      "nameRaw": "",
+      "title": "ТБ-15 (В61.11.11Е)",
+      "maker": "Оркистек",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "Показан зелёный вытянутый цилиндрический корпус.",
+      "generalType": "термобарический боеприпас",
+      "aliases": [
+        "ТБ-15 (В61.11.11Е)",
+        "ТБ-15 (В61,11,11Е)",
+        "tb-15 (v61.11.11e)",
+        "В61.11.11Е",
+        "B61.11.11E"
+      ],
+      "exteriorCrop": [
+        98.5,
+        136.8,
+        261.4,
+        195.45
+      ],
+      "mappedCardId": "handbookref-tb-15-v61-11-11e"
+    },
+    {
+      "page": 24,
+      "slot": 4,
+      "rowBounds": [
+        197.25,
+        257.25
+      ],
+      "nameRaw": "",
+      "title": "УБ-5 (В61.01.10Е)",
+      "maker": "Оркистек",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "Показан зелёный цилиндрический корпус со светлой конической головной частью.",
+      "generalType": "осколочный боеприпас",
+      "aliases": [
+        "УБ-5 (В61.01.10Е)",
+        "УБ-5 (В61,01,10Е)",
+        "ub-5 (v61.01.10e)",
+        "В61.01.10Е",
+        "B61.01.10E"
+      ],
+      "exteriorCrop": [
+        98.5,
+        199.05,
+        261.4,
+        255.45
+      ],
+      "mappedCardId": "handbookref-ub-5-v61-01-10e"
+    },
+    {
+      "page": 24,
+      "slot": 5,
+      "rowBounds": [
+        257.25,
+        304.5
+      ],
+      "nameRaw": "",
+      "title": "БУБ-11 (В70.00.05В)",
+      "maker": "Оркистек",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На фотографии виден короткий зелёный корпус со светлой хвостовой частью.",
+      "generalType": "бронебойно-осколочный боеприпас",
+      "aliases": [
+        "БУБ-11 (В70.00.05В)",
+        "БУБ-11 (В70,00,05В)",
+        "bub-11 (v70.00.05v)",
+        "В70.00.05В",
+        "B70.00.05B"
+      ],
+      "exteriorCrop": [
+        98.5,
+        259.05,
+        261.4,
+        302.7
+      ],
+      "mappedCardId": "handbookref-bub-11-v70-00-05v"
+    },
+    {
+      "page": 24,
+      "slot": 6,
+      "rowBounds": [
+        304.5,
+        384.5
+      ],
+      "nameRaw": "",
+      "title": "БУБ-11 (В70.00.05Е)",
+      "maker": "Оркистек",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На фотографии виден короткий зелёный корпус с кольцевыми наружными поясами.",
+      "generalType": "бронебойно-осколочный боеприпас",
+      "aliases": [
+        "БУБ-11 (В70.00.05Е)",
+        "БУБ-11 (В70,00,05Е)",
+        "bub-11 (v70.00.05e)",
+        "В70.00.05Е",
+        "B70.00.05E"
+      ],
+      "exteriorCrop": [
+        98.5,
+        306.3,
+        261.4,
+        382.7
+      ],
+      "mappedCardId": "handbookref-bub-11-v70-00-05e"
+    },
+    {
+      "page": 24,
+      "slot": 7,
+      "rowBounds": [
+        384.5,
+        451.75
+      ],
+      "nameRaw": "",
+      "title": "УБ-2 (В61.00.05Е)",
+      "maker": "Оркистек",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "Показан короткий зелёный корпус со светлой конической головной частью.",
+      "generalType": "осколочный боеприпас",
+      "aliases": [
+        "УБ-2 (В61.00.05Е)",
+        "УБ-2 (В61,00,05Е)",
+        "ub-2 (v61.00.05e)",
+        "В61.00.05Е",
+        "B61.00.05E"
+      ],
+      "exteriorCrop": [
+        98.5,
+        386.3,
+        261.4,
+        449.95
+      ],
+      "mappedCardId": "handbookref-ub-2-v61-00-05e"
+    },
+    {
+      "page": 24,
+      "slot": 8,
+      "rowBounds": [
+        451.75,
+        511.25
+      ],
+      "nameRaw": "",
+      "title": "УБ-2 (В61.00.05В)",
+      "maker": "Оркистек",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "Показан короткий зелёный корпус со светлой хвостовой частью.",
+      "generalType": "осколочный боеприпас",
+      "aliases": [
+        "УБ-2 (В61.00.05В)",
+        "УБ-2 (В61,00,05В)",
+        "ub-2 (v61.00.05v)",
+        "В61.00.05В",
+        "B61.00.05B"
+      ],
+      "exteriorCrop": [
+        98.5,
+        453.55,
+        261.4,
+        509.45
+      ],
+      "mappedCardId": "handbookref-ub-2-v61-00-05v"
+    },
+    {
+      "page": 24,
+      "slot": 9,
+      "rowBounds": [
+        511.25,
+        592.75
+      ],
+      "nameRaw": "",
+      "title": "БА-7 «Шершень»",
+      "maker": "Центр технологий и исследований «Путь»",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На фотографии виден короткий голубой корпус с поперечными наружными рёбрами.",
+      "generalType": "кумулятивно-зажигательный боеприпас",
+      "aliases": [
+        "БА-7 «Шершень»",
+        "ba-7 «shershen»"
+      ],
+      "exteriorCrop": [
+        98.5,
+        513.05,
+        261.4,
+        590.95
+      ],
+      "mappedCardId": "handbookref-ba-7-shershen"
+    },
+    {
+      "page": 25,
+      "slot": 1,
+      "rowBounds": [
+        2.25,
+        100.75
+      ],
+      "nameRaw": "LSCFGH-09-792- 1,8 кг",
+      "title": "LSCFGH-09-792",
+      "maker": "СпецТехноЭкспорт",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На каталожной иллюстрации виден серый корпус с рельефными наружными рёбрами и коническим торцом.",
+      "generalType": "кумулятивно-осколочная боевая часть",
+      "aliases": [
+        "LSCFGH-09-792",
+        "lscfgh-09-792"
+      ],
+      "exteriorCrop": [
+        98.5,
+        4.05,
+        261.4,
+        98.95
+      ],
+      "mappedCardId": "handbookref-lscfgh-09-792"
+    },
+    {
+      "page": 25,
+      "slot": 2,
+      "rowBounds": [
+        100.75,
+        146.75
+      ],
+      "nameRaw": "",
+      "title": "DF.FBP-9-U",
+      "maker": "Дефенс Форт",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "В справочнике для серии повторяется иллюстрация вытянутого корпуса с конической головной частью и хвостовым оперением.",
+      "generalType": "фугасный боеприпас",
+      "aliases": [
+        "DF.FBP-9-U",
+        "DF,FBP-9-U",
+        "df.fbp-9-u"
+      ],
+      "exteriorCrop": [
+        98.5,
+        102.55,
+        261.4,
+        144.95
+      ],
+      "mappedCardId": "handbookref-df-fbp-9-u"
+    },
+    {
+      "page": 25,
+      "slot": 3,
+      "rowBounds": [
+        146.75,
+        193.75
+      ],
+      "nameRaw": "",
+      "title": "DF.FBP-9-M",
+      "maker": "Дефенс Форт",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "В справочнике для серии повторяется иллюстрация вытянутого корпуса с конической головной частью и хвостовым оперением.",
+      "generalType": "фугасный боеприпас",
+      "aliases": [
+        "DF.FBP-9-M",
+        "DF,FBP-9-M",
+        "df.fbp-9-m"
+      ],
+      "exteriorCrop": [
+        98.5,
+        148.55,
+        261.4,
+        191.95
+      ],
+      "mappedCardId": "handbookref-df-fbp-9-m"
+    },
+    {
+      "page": 25,
+      "slot": 4,
+      "rowBounds": [
+        193.75,
+        239.75
+      ],
+      "nameRaw": "",
+      "title": "DF.FBP-9-T",
+      "maker": "Дефенс Форт",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "В справочнике для серии повторяется иллюстрация вытянутого корпуса с конической головной частью и хвостовым оперением.",
+      "generalType": "фугасный боеприпас",
+      "aliases": [
+        "DF.FBP-9-T",
+        "DF,FBP-9-T",
+        "df.fbp-9-t"
+      ],
+      "exteriorCrop": [
+        98.5,
+        195.55,
+        261.4,
+        237.95
+      ],
+      "mappedCardId": "handbookref-df-fbp-9-t"
+    },
+    {
+      "page": 25,
+      "slot": 5,
+      "rowBounds": [
+        239.75,
+        293.5
+      ],
+      "nameRaw": "",
+      "title": "DF.FBP-12-U",
+      "maker": "Дефенс Форт",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "В справочнике для серии повторяется иллюстрация вытянутого корпуса с конической головной частью и хвостовым оперением.",
+      "generalType": "фугасный боеприпас",
+      "aliases": [
+        "DF.FBP-12-U",
+        "DF,FBP-12-U",
+        "df.fbp-12-u"
+      ],
+      "exteriorCrop": [
+        98.5,
+        241.55,
+        261.4,
+        291.7
+      ],
+      "mappedCardId": "handbookref-df-fbp-12-u"
+    },
+    {
+      "page": 25,
+      "slot": 6,
+      "rowBounds": [
+        293.5,
+        346.25
+      ],
+      "nameRaw": "",
+      "title": "DF.FBP-12-M",
+      "maker": "Дефенс Форт",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "В справочнике для серии повторяется иллюстрация вытянутого корпуса с конической головной частью и хвостовым оперением.",
+      "generalType": "фугасный боеприпас",
+      "aliases": [
+        "DF.FBP-12-M",
+        "DF,FBP-12-M",
+        "df.fbp-12-m"
+      ],
+      "exteriorCrop": [
+        98.5,
+        295.3,
+        261.4,
+        344.45
+      ],
+      "mappedCardId": "handbookref-df-fbp-12-m"
+    },
+    {
+      "page": 25,
+      "slot": 7,
+      "rowBounds": [
+        346.25,
+        399.25
+      ],
+      "nameRaw": "",
+      "title": "DF.FBP-12-T",
+      "maker": "Дефенс Форт",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "В справочнике для серии повторяется иллюстрация вытянутого корпуса с конической головной частью и хвостовым оперением.",
+      "generalType": "фугасный боеприпас",
+      "aliases": [
+        "DF.FBP-12-T",
+        "DF,FBP-12-T",
+        "df.fbp-12-t"
+      ],
+      "exteriorCrop": [
+        98.5,
+        348.05,
+        261.4,
+        397.45
+      ],
+      "mappedCardId": "handbookref-df-fbp-12-t"
+    },
+    {
+      "page": 25,
+      "slot": 8,
+      "rowBounds": [
+        399.25,
+        463.25
+      ],
+      "nameRaw": "",
+      "title": "DF.FBP-16-U",
+      "maker": "Дефенс Форт",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "В справочнике для серии повторяется иллюстрация вытянутого корпуса с конической головной частью и хвостовым оперением.",
+      "generalType": "фугасный боеприпас",
+      "aliases": [
+        "DF.FBP-16-U",
+        "DF,FBP-16-U",
+        "df.fbp-16-u"
+      ],
+      "exteriorCrop": [
+        98.5,
+        401.05,
+        261.4,
+        461.45
+      ],
+      "mappedCardId": "handbookref-df-fbp-16-u"
+    },
+    {
+      "page": 25,
+      "slot": 9,
+      "rowBounds": [
+        463.25,
+        528.25
+      ],
+      "nameRaw": "",
+      "title": "DF.FBP-16-M",
+      "maker": "Дефенс Форт",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "В справочнике для серии повторяется иллюстрация вытянутого корпуса с конической головной частью и хвостовым оперением.",
+      "generalType": "фугасный боеприпас",
+      "aliases": [
+        "DF.FBP-16-M",
+        "DF,FBP-16-M",
+        "df.fbp-16-m"
+      ],
+      "exteriorCrop": [
+        98.5,
+        465.05,
+        261.4,
+        526.45
+      ],
+      "mappedCardId": "handbookref-df-fbp-16-m"
+    },
+    {
+      "page": 25,
+      "slot": 10,
+      "rowBounds": [
+        528.25,
+        592.25
+      ],
+      "nameRaw": "",
+      "title": "DF.FBP-16-T",
+      "maker": "Дефенс Форт",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "В справочнике для серии повторяется иллюстрация вытянутого корпуса с конической головной частью и хвостовым оперением.",
+      "generalType": "фугасный боеприпас",
+      "aliases": [
+        "DF.FBP-16-T",
+        "DF,FBP-16-T",
+        "df.fbp-16-t"
+      ],
+      "exteriorCrop": [
+        98.5,
+        530.05,
+        261.4,
+        590.45
+      ],
+      "mappedCardId": "handbookref-df-fbp-16-t"
+    },
+    {
+      "page": 26,
+      "slot": 1,
+      "rowBounds": [
+        1.5,
+        122.25
+      ],
+      "nameRaw": "",
+      "title": "УФБЧ-250",
+      "maker": "НПО «Павлоградский химический завод»",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На фотографии показаны прямоугольные изделия в транспортной таре.",
+      "generalType": "фугасная боевая часть",
+      "aliases": [
+        "УФБЧ-250",
+        "ufbch-250"
+      ],
+      "exteriorCrop": [
+        98.5,
+        3.3,
+        261.4,
+        120.45
+      ],
+      "mappedCardId": "handbookref-ufbch-250"
+    },
+    {
+      "page": 26,
+      "slot": 2,
+      "rowBounds": [
+        122.25,
+        245.25
+      ],
+      "nameRaw": "",
+      "title": "УФБЧ-500",
+      "maker": "НПО «Павлоградский химический завод»",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "exterior-only",
+      "appearance": "На фотографии показано отдельное прямоугольное изделие со светлой наружной поверхностью.",
+      "generalType": "фугасная боевая часть",
+      "aliases": [
+        "УФБЧ-500",
+        "ufbch-500"
+      ],
+      "exteriorCrop": [
+        98.5,
+        124.05,
+        261.4,
+        243.45
+      ],
+      "mappedCardId": "handbookref-ufbch-500"
+    },
+    {
+      "page": 26,
+      "slot": 3,
+      "rowBounds": [
+        245.25,
+        329.75
+      ],
+      "nameRaw": "",
+      "title": "МОА 45/9",
+      "maker": "НПО Химических продуктов",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "no-exterior-in-source",
+      "appearance": "",
+      "generalType": "осколочный боеприпас",
+      "aliases": [
+        "МОА 45/9",
+        "moa 45/9"
+      ],
+      "mappedCardId": "handbookref-moa-45-9"
+    },
+    {
+      "page": 26,
+      "slot": 4,
+      "rowBounds": [
+        329.75,
+        415.25
+      ],
+      "nameRaw": "",
+      "title": "МОА 45/13",
+      "maker": "НПО Химических продуктов",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "no-exterior-in-source",
+      "appearance": "",
+      "generalType": "осколочный боеприпас",
+      "aliases": [
+        "МОА 45/13",
+        "moa 45/13"
+      ],
+      "mappedCardId": "handbookref-moa-45-13"
+    },
+    {
+      "page": 26,
+      "slot": 5,
+      "rowBounds": [
+        415.25,
+        499.5
+      ],
+      "nameRaw": "",
+      "title": "МОА 60/9",
+      "maker": "НПО Химических продуктов",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "no-exterior-in-source",
+      "appearance": "",
+      "generalType": "осколочный боеприпас",
+      "aliases": [
+        "МОА 60/9",
+        "moa 60/9"
+      ],
+      "mappedCardId": "handbookref-moa-60-9"
+    },
+    {
+      "page": 26,
+      "slot": 6,
+      "rowBounds": [
+        499.5,
+        593.75
+      ],
+      "nameRaw": "",
+      "title": "МОА 60/13",
+      "maker": "НПО Химических продуктов",
+      "existingCardId": null,
+      "status": "new",
+      "imagePolicy": "labelled-related-variant",
+      "appearance": "",
+      "generalType": "осколочный боеприпас",
+      "aliases": [
+        "МОА 60/13",
+        "moa 60/13"
+      ],
+      "mappedCardId": "handbookref-moa-60-13",
+      "exactExteriorStillMissing": true
+    }
+  ],
+  "identityDecisions": [
+    {
+      "source": "ОФБЧ-2.5, с. 11",
+      "decision": "Отдельная украинская карточка с изготовителем «Маяк-Перспектива»; российская ОФБЧ-2,5 не изменена."
+    },
+    {
+      "source": "БПБПЛА-ОФ-1100, с. 4",
+      "decision": "Отдельная карточка полного боеприпаса; существующая atlas-bp-bpla описывает только электронный модуль под подписью атласа."
+    },
+    {
+      "source": "УАБК-1.5-А / -2.0-А / -2.5-А",
+      "decision": "Все три строки сопоставлены существующей карточке семейства. Исполнения без -А имеют отдельные строки в PDF и заведены отдельно."
+    },
+    {
+      "source": "HFB600F / HFB1055F / HFB1200F / HFB0500C / HFB1250CF",
+      "decision": "Сохранены самостоятельные индексы HFB; подписи советских суббоеприпасов в скобках не приравнены автоматически к новым изделиям."
+    },
+    {
+      "source": "РБ10 / РБ15 / РБ20 / РБ25 / РБ40-Ф",
+      "decision": "Суффиксы -01 и -02 сохранены как разные исполнения; существующая РБ05 и обобщённая РБ40-Ф не подменяют эти строки."
+    }
+  ],
+  "excludedContent": [
+    "Совместимость с конкретными БПЛА, предельные нагрузки и способы применения",
+    "Настройки, режимы, схемы и способы инициирования",
+    "Внутренние разрезы, схемы подключения, составы снаряжения и показатели поражающего действия",
+    "Процедуры установки, сборки, разборки и обезвреживания"
+  ],
+  "originalHandbookIllustrations": 167,
+  "originalRowsWithoutExteriorIllustration": 10,
+  "imageReview": {
+    "preparedContentVersion": 195,
+    "addedIllustrations": 2,
+    "exactExteriorDrawingsAdded": 1,
+    "relatedVariantPhotographsAdded": 1,
+    "remainingWithoutAnyIllustration": 8,
+    "remainingWithoutConfirmedExactExterior": 9,
+    "transcriptionCorrections": [
+      {
+        "cardId": "handbookref-pb-1u",
+        "reason": "Исправление ошибки переноса по визуально проверенной строке PDF, с. 2"
+      },
+      {
+        "cardId": "handbookref-pni-1",
+        "reason": "Исправление ошибки переноса по визуально проверенной строке PDF, с. 2"
+      }
+    ]
+  }
+}

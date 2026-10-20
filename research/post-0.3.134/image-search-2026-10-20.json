@@ -1,0 +1,126 @@
+{
+  "date": "2026-10-20",
+  "scope": "Eight recently added handbook cards; exterior imagery only",
+  "newImagesAdded": 0,
+  "remainingExactVariantImages": 8,
+  "queries": [
+    "\"ПНИ-1\" взрыватель",
+    "\"ПНІ-1\" підривач",
+    "\"ПНУ-1-1/2\"",
+    "\"ПНУ-1-36\" фото",
+    "Intervybukhprom official products PNI PNU fuze",
+    "\"ОФБЧ-2.5\" \"Маяк-Перспектива\" фото",
+    "\"ВОФБЧ-2.5\"",
+    "\"МОА-FPV\" \"45/9\"",
+    "\"МОА45/13\" фото",
+    "\"МОА-45/13\" фото",
+    "\"МОА\" \"60/9\" фото",
+    "\"НВО\" \"ПХЗ\" \"МОА\" офіційний сайт"
+  ],
+  "sources": [
+    {
+      "url": "https://ivp.pat.ua/",
+      "result": "Issuer disclosure page confirms Intervybukhprom identity; no target exterior product images"
+    },
+    {
+      "url": "https://explosive.in.ua",
+      "result": "Not accessible through web retrieval; direct host HTTP 503"
+    },
+    {
+      "url": "https://www.mayak.com.ua/",
+      "result": "Not accessible through web retrieval; direct host HTTP 503; no exact OFBCh/VOFBCh image verified"
+    },
+    {
+      "url": "https://pvkhz.com/",
+      "result": "Candidate domain not accessible (HTTP 503); not established as a current authoritative product catalog"
+    },
+    {
+      "url": "https://www.scribd.com/document/1064303977/Bpla-Dovidnik",
+      "result": "Indexed text names Mayak OFBCh/VOFBCh; does not establish reusable exact exterior image or rights"
+    },
+    {
+      "url": "https://www.scribd.com/document/1075604464/",
+      "result": "Public indexed table of contents names MOA-FPV45/9 on page61; variant equality with MOA45/9 not established, All Rights Reserved; image not copied"
+    },
+    {
+      "url": "https://www.linkedin.com/posts/se%C3%A1n-moorhouse-b037562_ukrainewar-osint-eod-activity-7431401977613279233-AxvU",
+      "result": "Already examined earlier; MOA Composite61 and MOA-FPV60/13 are different from remaining targets; no additional photo selected"
+    },
+    {
+      "url": "https://adron.ua/portfolio/",
+      "result": "Primary manufacturer lists AV26U, not AV23U; existing drawing remains unchanged"
+    },
+    {
+      "url": "https://cat-uxo.com/explosive-hazards/ucav/ofbch-25-aircraft-bomblet",
+      "result": "Image search candidate marked OFBCh-25-2.5; wrong identity for Mayak item, rejected"
+    }
+  ],
+  "cards": [
+    {
+      "cardId": "handbookref-pni-1",
+      "title": "ПНИ-1",
+      "status": "unresolved-no-verified-exact-exterior-image",
+      "addedImage": false,
+      "reason": "Точная наружная фотография и права использования не подтверждены; корпоративная страница не содержит нужного изделия.",
+      "nextRequirement": "Фотография точного варианта с происхождением, авторством и разрешёнными условиями использования"
+    },
+    {
+      "cardId": "handbookref-pnu-1-1-2",
+      "title": "ПНУ-1-1/2",
+      "status": "unresolved-no-verified-exact-exterior-image",
+      "addedImage": false,
+      "reason": "Точная наружная фотография и права использования не подтверждены; корпоративная страница не содержит нужного изделия.",
+      "nextRequirement": "Фотография точного варианта с происхождением, авторством и разрешёнными условиями использования"
+    },
+    {
+      "cardId": "handbookref-pnu-1-36",
+      "title": "ПНУ-1-36",
+      "status": "unresolved-no-verified-exact-exterior-image",
+      "addedImage": false,
+      "reason": "Точная наружная фотография и права использования не подтверждены; корпоративная страница не содержит нужного изделия.",
+      "nextRequirement": "Фотография точного варианта с происхождением, авторством и разрешёнными условиями использования"
+    },
+    {
+      "cardId": "handbookref-ofbch-2-5-mayak-perspektiva",
+      "title": "ОФБЧ-2.5 («Маяк-Перспектива»)",
+      "status": "unresolved-no-verified-exact-exterior-image",
+      "addedImage": false,
+      "reason": "Найдены текстовые упоминания точного обозначения; проверенной наружной фотографии с авторством/правами нет. Сходное российское ОФБЧ не подставлялось.",
+      "nextRequirement": "Фотография точного варианта с происхождением, авторством и разрешёнными условиями использования"
+    },
+    {
+      "cardId": "handbookref-vofbch-2-5",
+      "title": "ВОФБЧ-2.5",
+      "status": "unresolved-no-verified-exact-exterior-image",
+      "addedImage": false,
+      "reason": "Найдены текстовые упоминания точного обозначения; проверенной наружной фотографии с авторством/правами нет. Сходное российское ОФБЧ не подставлялось.",
+      "nextRequirement": "Фотография точного варианта с происхождением, авторством и разрешёнными условиями использования"
+    },
+    {
+      "cardId": "handbookref-moa-45-9",
+      "title": "МОА45/9",
+      "status": "unresolved-no-verified-exact-exterior-image",
+      "addedImage": false,
+      "reason": "Найдены родственные МОА-FPV и МОА Композит; тождество точного исполнения и доступная для включения фотография не подтверждены.",
+      "nextRequirement": "Фотография точного варианта с происхождением, авторством и разрешёнными условиями использования"
+    },
+    {
+      "cardId": "handbookref-moa-45-13",
+      "title": "МОА45/13",
+      "status": "unresolved-no-verified-exact-exterior-image",
+      "addedImage": false,
+      "reason": "Найдены родственные МОА-FPV и МОА Композит; тождество точного исполнения и доступная для включения фотография не подтверждены.",
+      "nextRequirement": "Фотография точного варианта с происхождением, авторством и разрешёнными условиями использования"
+    },
+    {
+      "cardId": "handbookref-moa-60-9",
+      "title": "МОА60/9",
+      "status": "unresolved-no-verified-exact-exterior-image",
+      "addedImage": false,
+      "reason": "Найдены родственные МОА-FPV и МОА Композит; тождество точного исполнения и доступная для включения фотография не подтверждены.",
+      "nextRequirement": "Фотография точного варианта с происхождением, авторством и разрешёнными условиями использования"
+    }
+  ],
+  "existingMediaChanged": false,
+  "publishedCatalogVersion": 195
+}

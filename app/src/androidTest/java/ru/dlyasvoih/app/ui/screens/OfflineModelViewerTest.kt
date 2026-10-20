@@ -1,0 +1,165 @@
+package ru.dlyasvoih.app.ui.screens
+
+import android.content.Context
+import android.net.Uri
+import android.webkit.WebView
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.runtime.key
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.ui.test.*
+import androidx.compose.ui.test.junit4.createComposeRule
+import androidx.test.core.app.ApplicationProvider
+import androidx.test.platform.app.InstrumentationRegistry
+import org.junit.Assert.*
+import org.junit.Rule
+import org.junit.Test
+import android.os.ParcelFileDescriptor
+import java.util.concurrent.CountDownLatch
+import java.util.concurrent.TimeUnit
+import java.util.concurrent.atomic.AtomicReference
+
+class OfflineModelViewerTest {
+    @get:Rule val compose = createComposeRule()
+
+    @Test fun modelIsAttachedOnlyToItsExactCardAndDialogCloses() {
+        compose.setContent {
+            MaterialTheme {
+                OfflineModelAction("ref-v8-tmn-46", true)
+                OfflineModelAction(OfflineModelFiles.CARD_ID, true)
+            }
+        }
+        compose.onAllNodesWithTag("open_offline_3d").assertCountEquals(1)
+        compose.onNodeWithTag("offline_3d_dialog").assertDoesNotExist()
+        compose.onNodeWithTag("open_offline_3d").performClick()
+        compose.onNodeWithTag("offline_3d_dialog").assertIsDisplayed()
+        compose.onNodeWithContentDescription("Назад").performClick()
+        compose.onNodeWithTag("offline_3d_dialog").assertDoesNotExist()
+    }
+
+    @Test fun packagedModelActuallyRendersWithNetworkAccessDisabled() {
+        lateinit var viewer: WebView
+        compose.setContent { MaterialTheme(colorScheme = androidx.compose.material3.darkColorScheme()) { OfflineModelDialog(onViewerCreated = { viewer = it }, onDismiss = {}) } }
+        compose.waitForIdle()
+        val instrumentation = InstrumentationRegistry.getInstrumentation()
+        fun evaluate(script: String): String {
+            val answer = AtomicReference<String>()
+            val latch = CountDownLatch(1)
+            instrumentation.runOnMainSync { viewer.evaluateJavascript(script) { answer.set(it); latch.countDown() } }
+            check(latch.await(5, TimeUnit.SECONDS)) { "WebView JavaScript did not respond" }
+            return answer.get()
+        }
+        val deadline = System.currentTimeMillis() + 30_000
+        var state = ""
+        while (System.currentTimeMillis() < deadline) {
+            state = evaluate("document.body.dataset.state")
+            if (state == "\"ready\"" || state == "\"error\"") break
+            Thread.sleep(100)
+        }
+        assertEquals(evaluate("document.body.innerText"), "\"ready\"", state)
+        assertTrue(evaluate("Number(document.querySelector('canvas').dataset.triangles)").toInt() > 1_000)
+        assertTrue(evaluate("Number(document.querySelector('canvas').dataset.colors)").toInt() > 100)
+        instrumentation.runOnMainSync {
+            assertTrue(viewer.settings.blockNetworkLoads)
+            assertFalse(viewer.settings.allowFileAccess)
+            assertFalse(viewer.settings.allowContentAccess)
+        }
+        // Gradle uninstalls the test app afterwards, so keep proof outside its data.
+        val visualFrame = CountDownLatch(1)
+        instrumentation.runOnMainSync {
+            viewer.postVisualStateCallback(1L, object : WebView.VisualStateCallback() {
+                override fun onComplete(requestId: Long) { visualFrame.countDown() }
+            })
+        }
+        assertTrue("WebView did not produce a composited frame", visualFrame.await(10, TimeUnit.SECONDS))
+        compose.waitForIdle()
+        Thread.sleep(750)
+        assertEquals("true", evaluate("document.getElementById('status').hidden"))
+        val descriptor = instrumentation.uiAutomation.executeShellCommand(
+            "screencap -p /data/local/tmp/offline-model-tm46.png")
+        ParcelFileDescriptor.AutoCloseInputStream(descriptor).use { it.readBytes() }
+    }
+
+    @Test fun unknownAssetsRemoteAddressesAndTraversalAreBlocked() {
+        val context = ApplicationProvider.getApplicationContext<Context>()
+        val valid = OfflineModelFiles.response(context, Uri.parse(OfflineModelFiles.ENTRY_URL))
+        assertEquals(200, valid.statusCode)
+        valid.data.close()
+        for (address in listOf("https://example.com/assets/viewer3d/index.html",
+            "http://appassets.androidplatform.net/assets/viewer3d/index.html",
+            "https://appassets.androidplatform.net/assets/viewer3d/../../database/guide-v29.db",
+            "https://appassets.androidplatform.net/assets/viewer3d/%2e%2e/index.html",
+            OfflineModelFiles.ENTRY_URL + "?remote=true", "file:///android_asset/viewer3d/index.html")) {
+            val blocked = OfflineModelFiles.response(context, Uri.parse(address))
+            assertEquals(address, 403, blocked.statusCode)
+            blocked.data.close()
+        }
+    }
+
+    @Test fun galleryOpensTheChosenModelAndReturnsToTheList() {
+        compose.setContent { MaterialTheme { OfflineModelGallery {} } }
+        compose.onNodeWithTag("offline_3d_gallery").assertIsDisplayed()
+        compose.onNodeWithTag("offline_3d_gallery_list").performScrollToNode(hasTestTag("offline_model:m18a1-claymore"))
+        compose.onNodeWithTag("offline_model:m18a1-claymore").performClick()
+        compose.onNodeWithText("M18A1 Claymore · 3D").assertIsDisplayed()
+        compose.onNodeWithText("Charlie Tinley · CC BY 4.0").assertIsDisplayed()
+        compose.onNodeWithContentDescription("Назад").performClick()
+        compose.onNodeWithTag("offline_3d_gallery").assertIsDisplayed()
+    }
+
+    @Test fun everyPackagedModelRendersWithoutNetworkAndUsesItsOwnAsset() {
+        val context = ApplicationProvider.getApplicationContext<Context>()
+        val models = OfflineModelFiles.models(context)
+        assertTrue(models.size >= 19)
+        lateinit var viewer: WebView
+        val selectedModel = mutableStateOf("tm-46")
+        compose.setContent { MaterialTheme {
+            key(selectedModel.value) {
+                OfflineModelDialog(modelId = selectedModel.value, onViewerCreated = { viewer = it }, onDismiss = {})
+            }
+        } }
+        compose.waitForIdle()
+        val instrumentation = InstrumentationRegistry.getInstrumentation()
+        fun evaluate(script: String): String {
+            val answer = AtomicReference<String>()
+            val latch = CountDownLatch(1)
+            instrumentation.runOnMainSync { viewer.evaluateJavascript(script) { answer.set(it); latch.countDown() } }
+            check(latch.await(5, TimeUnit.SECONDS)) { "WebView did not respond" }
+            return answer.get()
+        }
+        for (model in models) {
+            compose.runOnIdle { selectedModel.value = model.id }
+            compose.waitForIdle()
+            val deadline = System.currentTimeMillis() + 45_000
+            var state = ""
+            while (System.currentTimeMillis() < deadline) {
+                state = evaluate("document.body && document.body.dataset.state")
+                val current = evaluate("document.body && document.body.dataset.model")
+                if ((state == "\"ready\"" || state == "\"error\"") && current == "\"${model.id}\"") break
+                Thread.sleep(100)
+            }
+            assertEquals(model.title + ": " + evaluate("document.body.innerText"), "\"ready\"", state)
+            assertEquals("\"${model.id}\"", evaluate("document.body.dataset.model"))
+            assertTrue(model.title, evaluate("Number(document.querySelector('canvas').dataset.triangles)").toInt() > 0)
+            assertTrue(model.title, evaluate("Number(document.querySelector('canvas').dataset.colors)").toInt() > 8)
+            val homeExtent = evaluate("Number(document.querySelector('canvas').dataset.homeExtent)").toDouble()
+            assertTrue(model.title + " starts outside the viewport: " + homeExtent, homeExtent > 0.05 && homeExtent <= 0.85)
+            instrumentation.runOnMainSync { assertTrue(viewer.settings.blockNetworkLoads) }
+            Thread.sleep(350)
+            val descriptor = instrumentation.uiAutomation.executeShellCommand(
+                "screencap -p /data/local/tmp/offline-model-${model.id}.png")
+            ParcelFileDescriptor.AutoCloseInputStream(descriptor).use { it.readBytes() }
+            if (model.id in setOf("m14-complete", "pmn-2-complete", "m16-complete", "british-drifting-mine")) {
+                fun shell(command: String): ByteArray = ParcelFileDescriptor.AutoCloseInputStream(
+                    instrumentation.uiAutomation.executeShellCommand(command)).use { it.readBytes() }
+                val before = shell("cat /data/local/tmp/offline-model-${model.id}.png")
+                shell("input swipe 90 290 230 330 700")
+                Thread.sleep(1000)
+                shell("screencap -p /data/local/tmp/offline-model-${model.id}-rotated.png")
+                val after = shell("cat /data/local/tmp/offline-model-${model.id}-rotated.png")
+                assertTrue(model.title + " initial screenshot is missing", before.size > 1000)
+                assertTrue(model.title + " rotated screenshot is missing", after.size > 1000)
+                assertFalse(model.title + " did not visibly rotate", before.contentEquals(after))
+            }
+        }
+    }
+}

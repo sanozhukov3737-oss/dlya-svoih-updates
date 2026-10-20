@@ -1,0 +1,22 @@
+{
+  "activeAndroidQaCommit": "4cb8edf5bf6f5923455720522048b57fb4f1ee5e",
+  "remoteBranchHead": "4cb8edf5bf6f5923455720522048b57fb4f1ee5e",
+  "remoteTree": "f2a93133947542d5ba2c7a92989a3c6a13e8b498",
+  "signedRun": 39403888993,
+  "signedSha256": "300b77deaee3348e05a0135bf0079414c07dc2e15a7dcfd9b1239a8cef99298f",
+  "draftReleaseId": 418146995,
+  "finalSignedDraftAssetId": 658954242,
+  "sourceDataCommit": "e920f5a6068f0a0ce0efa54f082a97cb15e85516",
+  "remaining": [],
+  "currentIssue": null,
+  "candidateUnsignedSha256": "dd49b40f181544b3966a3725a8f21872cf1b7dc65f98215424da809cdafcf9d5",
+  "candidateViewerSha256": "4a9cb38da18262a7c6c31faf6360ad8d356fb8ba866dba799360d2ab40e5c713",
+  "sourceCandidateCommit": "a8c3b76f8921ffe05e4beaad7b6ba33891200642",
+  "checkpointZipSha256": "db2f72ca8734e30df83a3cef78a20b3c2b96a31f7ec97234af176530f35331f4",
+  "status": "recovery-signature-and-actual-Android-QA-complete",
+  "androidRun": 39404271107,
+  "androidWorkflowConclusion": "cancelled-at-emulator-shutdown-after-all-app-checks",
+  "androidProofArtifactId": 12257790754,
+  "remainingInfrastructureTask": "Resolve emulator shutdown hang in future CI; actual app QA and proof upload are complete.",
+  "publication": "not-performed"
+}

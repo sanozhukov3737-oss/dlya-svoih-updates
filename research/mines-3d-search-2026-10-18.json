@@ -1,0 +1,5520 @@
+{
+  "date": "2026-10-18",
+  "mineCards": 539,
+  "queriesCompleted": 623,
+  "queryErrors": {},
+  "rawUniqueResults": 201,
+  "bundledModels": 12,
+  "scope": "Public downloadable exterior visual reference models. Search completion is not proof that no model exists elsewhere.",
+  "held": [
+    {
+      "uid": "0a105cb7c84a4abf9e3f0f8f3a8d9a31",
+      "reason": "Museum cutaway with exposed interior; exterior-only collection."
+    },
+    {
+      "uid": "4d4033efc0074338926b059a4ac9f889",
+      "reason": "Free Standard license redistribution conditions unresolved."
+    },
+    {
+      "uid": "402cc412497a4c23b29be0e6c32142f0",
+      "reason": "Exploded interior model."
+    }
+  ],
+  "cards": [
+    {
+      "id": "eng-pdf-v7-087",
+      "title": "BMM 80",
+      "categoryId": "mines-anchored",
+      "queries": [
+        "bmm 80 naval mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ref-v10-cn-mao1",
+      "title": "M-1 / Mao-1 — морская мина Китая",
+      "categoryId": "mines-anchored",
+      "queries": [
+        "m-1 naval mine",
+        "mao-1 naval mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ref-v10-cn-mao4",
+      "title": "M-4 / Mao-4 — морская мина Китая",
+      "categoryId": "mines-anchored",
+      "queries": [
+        "m-4 naval mine",
+        "mao-4 naval mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-090",
+      "title": "MN 105 / Seppia",
+      "categoryId": "mines-anchored",
+      "queries": [
+        "mn 105 naval mine",
+        "seppia naval mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-097",
+      "title": "MO-90",
+      "categoryId": "mines-anchored",
+      "queries": [
+        "mo-90 naval mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v26-su-kam",
+      "title": "КАМ",
+      "categoryId": "mines-anchored",
+      "queries": [
+        "kam naval mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ref-v10-su-kb",
+      "title": "КБ — корабельная большая мина",
+      "categoryId": "mines-anchored",
+      "queries": [
+        "kb naval mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v26-su-kpm",
+      "title": "КПМ",
+      "categoryId": "mines-anchored",
+      "queries": [
+        "kpm naval mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v26-su-lira",
+      "title": "Лира",
+      "categoryId": "mines-anchored",
+      "queries": [
+        "lira naval mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ref-v10-su-m26",
+      "title": "М-26 — морская мина образца 1926 года",
+      "categoryId": "mines-anchored",
+      "queries": [
+        "m-26 naval mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ref-v10-ru-model1908",
+      "title": "Морская мина образца 1908 года",
+      "categoryId": "mines-anchored",
+      "queries": [
+        "morskaya mina obraztsa 1908 goda"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ref-v10-su-m08-39",
+      "title": "Морская мина образца 1908/39 года",
+      "categoryId": "mines-anchored",
+      "queries": [
+        "morskaya mina obraztsa 1908/39 goda"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v26-su-tum-1000",
+      "title": "ТУМ-1000",
+      "categoryId": "mines-anchored",
+      "queries": [
+        "tum-1000 naval mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v26-su-tum-500",
+      "title": "ТУМ-500",
+      "categoryId": "mines-anchored",
+      "queries": [
+        "tum-500 naval mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v26-su-ugm",
+      "title": "УГМ",
+      "categoryId": "mines-anchored",
+      "queries": [
+        "ugm naval mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v26-su-uksm",
+      "title": "УКСМ",
+      "categoryId": "mines-anchored",
+      "queries": [
+        "uksm naval mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ref-v10-su-yam",
+      "title": "ЯМ — якорная малая морская мина",
+      "categoryId": "mines-anchored",
+      "queries": [
+        "yam naval mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-021",
+      "title": "AT-2: DM1274 / DM1274A1 / DM1399 / DM1233",
+      "categoryId": "mines-antibottom",
+      "queries": [
+        "at-2: dm1274 mine",
+        "dm1274a1 mine",
+        "dm1399 mine",
+        "dm1233 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-027",
+      "title": "ATM-900",
+      "categoryId": "mines-antibottom",
+      "queries": [
+        "atm-900 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-035",
+      "title": "BAT/7",
+      "categoryId": "mines-antibottom",
+      "queries": [
+        "bat/7 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "submunition-blu-91-b",
+      "title": "BLU-91/B (мина-суббоеприпас)",
+      "categoryId": "mines-antibottom",
+      "queries": [
+        "blu-91/b mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-dm-31-at",
+      "title": "DM-31 AT",
+      "categoryId": "mines-antibottom",
+      "queries": [
+        "dm-31 at mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-024",
+      "title": "DM1239 / MIFF",
+      "categoryId": "mines-antibottom",
+      "queries": [
+        "dm1239 mine",
+        "miff mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-ffv-028",
+      "title": "FFV 028 / Stridsvagnsmina 6",
+      "categoryId": "mines-antibottom",
+      "queries": [
+        "ffv 028 mine",
+        "stridsvagnsmina 6"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v25-gb-hb-876",
+      "title": "HB-876",
+      "categoryId": "mines-antibottom",
+      "queries": [
+        "hb-876 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-023",
+      "title": "HPD: HPD1 / HPD1A / HPD2 / HPD3 / HPD F2 / HPD 2A2",
+      "categoryId": "mines-antibottom",
+      "queries": [
+        "hpd: hpd1 mine",
+        "hpd1a mine",
+        "hpd2 mine",
+        "hpd3 mine",
+        "hpd f2 mine",
+        "hpd 2a2 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ref-v10-imp",
+      "title": "IMP — Infantry Mine Project",
+      "categoryId": "mines-antibottom",
+      "queries": [
+        "imp mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v25-yu-kb-2",
+      "title": "KB-2",
+      "categoryId": "mines-antibottom",
+      "queries": [
+        "kb-2 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v25-fr-lance",
+      "title": "Lance",
+      "categoryId": "mines-antibottom",
+      "queries": [
+        "lance mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-m21-av",
+      "title": "M21 (противотранспортная мина)",
+      "categoryId": "mines-antibottom",
+      "queries": [
+        "m21 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-m70-m73-mine-family",
+      "title": "M70 / M73 (RAAM/FASCAM)",
+      "categoryId": "mines-antibottom",
+      "queries": [
+        "m70 mine",
+        "m73 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-037",
+      "title": "M75",
+      "categoryId": "mines-antibottom",
+      "queries": [
+        "m75 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-036",
+      "title": "M76 / M79",
+      "categoryId": "mines-antibottom",
+      "queries": [
+        "m76 mine",
+        "m79 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "submunition-m78-av-submunition",
+      "title": "M78 (противотранспортный суббоеприпас)",
+      "categoryId": "mines-antibottom",
+      "queries": [
+        "m78 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-mc-71",
+      "title": "MC-71",
+      "categoryId": "mines-antibottom",
+      "queries": [
+        "mc-71 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-022",
+      "title": "MI AC DISP F1",
+      "categoryId": "mines-antibottom",
+      "queries": [
+        "mi ac disp f1 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-mn-111",
+      "title": "MN-111",
+      "categoryId": "mines-antibottom",
+      "queries": [
+        "mn-111 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-mn-123-family",
+      "title": "MN-123 / MN-121",
+      "categoryId": "mines-antibottom",
+      "queries": [
+        "mn-123 mine",
+        "mn-121 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-mr-123",
+      "title": "MR-123",
+      "categoryId": "mines-antibottom",
+      "queries": [
+        "mr-123 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ref-v10-gb-mk7",
+      "title": "Mk 7 (семейство)",
+      "categoryId": "mines-antibottom",
+      "queries": [
+        "mk 7 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v25-fr-model-1953",
+      "title": "Model 1953",
+      "categoryId": "mines-antibottom",
+      "queries": [
+        "model 1953 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v25-fr-model-1954",
+      "title": "Model 1954",
+      "categoryId": "mines-antibottom",
+      "queries": [
+        "model 1954 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-020",
+      "title": "PM-87 / Pohjamiina 87",
+      "categoryId": "mines-antibottom",
+      "queries": [
+        "pm-87 mine",
+        "pohjamiina 87 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-025",
+      "title": "PT Mi-D1M",
+      "categoryId": "mines-antibottom",
+      "queries": [
+        "pt mi-d1m mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ref-v10-cs-pt-mi-p",
+      "title": "PT Mi-P",
+      "categoryId": "mines-antibottom",
+      "queries": [
+        "pt mi-p mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pt-mi-u",
+      "title": "PT Mi-U",
+      "categoryId": "mines-antibottom",
+      "queries": [
+        "pt mi-u mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-026",
+      "title": "PTM-25",
+      "categoryId": "mines-antibottom",
+      "queries": [
+        "ptm-25 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ref-v10-pz-mi-85m",
+      "title": "PZ MI 85M",
+      "categoryId": "mines-antibottom",
+      "queries": [
+        "pz mi 85m mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ref-v10-at-pz-mi-88",
+      "title": "PZ Mi 88 (Австрия)",
+      "categoryId": "mines-antibottom",
+      "queries": [
+        "pz mi 88 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-030",
+      "title": "SB-MV/1",
+      "categoryId": "mines-antibottom",
+      "queries": [
+        "sb-mv/1 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-018",
+      "title": "SENTRY ATC",
+      "categoryId": "mines-antibottom",
+      "queries": [
+        "sentry atc mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-019",
+      "title": "SENTRY ATM",
+      "categoryId": "mines-antibottom",
+      "queries": [
+        "sentry atm mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-028",
+      "title": "TMD-1",
+      "categoryId": "mines-antibottom",
+      "queries": [
+        "tmd-1 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-tmrp-6",
+      "title": "TMRP-6",
+      "categoryId": "mines-antibottom",
+      "queries": [
+        "tmrp-6 mine"
+      ],
+      "searched": true,
+      "bundledModels": [
+        "tmrp-6"
+      ]
+    },
+    {
+      "id": "ref-v10-hu-uka63",
+      "title": "UKA-63",
+      "categoryId": "mines-antibottom",
+      "queries": [
+        "uka-63 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-umk",
+      "title": "UMK (противотранспортная мина)",
+      "categoryId": "mines-antibottom",
+      "queries": [
+        "umk mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-034",
+      "title": "VS-AT4EL",
+      "categoryId": "mines-antibottom",
+      "queries": [
+        "vs-at4el mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-031",
+      "title": "VS-HCT",
+      "categoryId": "mines-antibottom",
+      "queries": [
+        "vs-hct mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-032",
+      "title": "VS-HCT2",
+      "categoryId": "mines-antibottom",
+      "queries": [
+        "vs-hct2 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-033",
+      "title": "VS-HCT4",
+      "categoryId": "mines-antibottom",
+      "queries": [
+        "vs-hct4 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-029",
+      "title": "VS-SATM1",
+      "categoryId": "mines-antibottom",
+      "queries": [
+        "vs-satm1 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-ptm-3",
+      "title": "ПТМ-3",
+      "categoryId": "mines-antibottom",
+      "queries": [
+        "ptm-3 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ref-v8-tm-72",
+      "title": "ТМ-72",
+      "categoryId": "mines-antibottom",
+      "queries": [
+        "tm-72 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ref-v10-ru-tm89",
+      "title": "ТМ-89",
+      "categoryId": "mines-antibottom",
+      "queries": [
+        "tm-89 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ref-v9-su-tmk2",
+      "title": "ТМК-2",
+      "categoryId": "mines-antibottom",
+      "queries": [
+        "tmk-2 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ordnance-v27-alcm-82-alcm-83-kndr",
+      "title": "ALCM-82 / ALCM-83 (КНДР)",
+      "categoryId": "mines-antiland",
+      "queries": [
+        "alcm-82 mine",
+        "alcm-83 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-076",
+      "title": "EPR 1.2 / EPR 3.6 / EPR 6",
+      "categoryId": "mines-antiland",
+      "queries": [
+        "epr 1.2 mine",
+        "epr 3.6 mine",
+        "epr 6 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-074",
+      "title": "MAS/17",
+      "categoryId": "mines-antiland",
+      "queries": [
+        "mas/17 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-075",
+      "title": "MAS/22",
+      "categoryId": "mines-antiland",
+      "queries": [
+        "mas/22 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-071",
+      "title": "MEP-2RC",
+      "categoryId": "mines-antiland",
+      "queries": [
+        "mep-2rc mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-072",
+      "title": "MEP-8RC",
+      "categoryId": "mines-antiland",
+      "queries": [
+        "mep-8rc mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-073",
+      "title": "MIRJAM",
+      "categoryId": "mines-antiland",
+      "queries": [
+        "mirjam mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-065",
+      "title": "MPD",
+      "categoryId": "mines-antiland",
+      "queries": [
+        "mpd mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-067",
+      "title": "PDM-120",
+      "categoryId": "mines-antiland",
+      "queries": [
+        "pdm-120 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-068",
+      "title": "PDM-1B",
+      "categoryId": "mines-antiland",
+      "queries": [
+        "pdm-1b mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-069",
+      "title": "PDM-1C",
+      "categoryId": "mines-antiland",
+      "queries": [
+        "pdm-1c mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-070",
+      "title": "PDM-2B",
+      "categoryId": "mines-antiland",
+      "queries": [
+        "pdm-2b mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-066",
+      "title": "VS-RM-30",
+      "categoryId": "mines-antiland",
+      "queries": [
+        "vs-rm-30 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v26-su-apdm",
+      "title": "АПДМ",
+      "categoryId": "mines-antiland",
+      "queries": [
+        "apdm mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ref-v8-pdm-1",
+      "title": "ПДМ-1",
+      "categoryId": "mines-antiland",
+      "queries": [
+        "pdm-1 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ref-v8-pdm-1m",
+      "title": "ПДМ-1М",
+      "categoryId": "mines-antiland",
+      "queries": [
+        "pdm-1m mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ref-v8-pdm-2",
+      "title": "ПДМ-2",
+      "categoryId": "mines-antiland",
+      "queries": [
+        "pdm-2 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v26-su-pdm-3ya",
+      "title": "ПДМ-3Я",
+      "categoryId": "mines-antiland",
+      "queries": [
+        "pdm-3ya mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ordnance-v30-app-m57-kndr",
+      "title": "APP M57 (КНДР)",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "app m57 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-blu-43-b-family",
+      "title": "BLU-43/B Dragontooth",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "blu-43/b dragontooth mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-010",
+      "title": "BLU-92/B",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "blu-92/b mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-013",
+      "title": "BM/85",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "bm/85 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ref-v8-cl-cardoen-i",
+      "title": "Cardoen I",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "cardoen i mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ref-v8-cl-cardoen-ii",
+      "title": "Cardoen II",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "cardoen ii mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-014",
+      "title": "DM-11 (противопехотная)",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "dm-11 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-007",
+      "title": "DM-31 (противопехотная)",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "dm-31 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-dm-41-ap",
+      "title": "DM-41 (противопехотная)",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "dm-41 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ref-v8-ar-fmk1",
+      "title": "FMK-1",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "fmk-1 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v25-cn-gld-111",
+      "title": "GLD-111",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "gld-111 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v25-de-glasmine-43",
+      "title": "Glasmine 43",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "glasmine 43"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-128",
+      "title": "Gyata-64 / Gayata-64",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "gyata-64 mine",
+        "gayata-64 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-112",
+      "title": "HFM0050",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "hfm0050 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ordnance-v27-km14-respublika-koreya",
+      "title": "KM14 (Республика Корея)",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "km14 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ordnance-v27-km16-respublika-koreya",
+      "title": "KM16 (Республика Корея)",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "km16 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ordnance-v27-km18a1-respublika-koreya",
+      "title": "KM18A1 (Республика Корея)",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "km18a1 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-li-11-truppmina-10",
+      "title": "LI-11 / Truppmina 10 / DM11 AP",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "li-11 mine",
+        "truppmina 10",
+        "dm11 ap mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ref-v9-fi-laatikkomiina-m43",
+      "title": "Laatikkomiina m/43 «Penaali»",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "laatikkomiina m/43 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-001",
+      "title": "M-11",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "m-11 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-002",
+      "title": "M-12",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "m-12 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ref-v8-cl-mapp78",
+      "title": "M.A.P.P. 78-F2 FAMAE",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "m.a.p.p. 78-f2 famae mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ref-v8-cl-mapt78",
+      "title": "M.A.P.T. 78-F2 FAMAE",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "m.a.p.t. 78-f2 famae mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ordnance-v27-m131-mopms-ap-mine",
+      "title": "M131 MOPMS AP Mine",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "m131 mopms ap mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ordnance-v27-m139-volcano-ap-mine",
+      "title": "M139 Volcano AP Mine",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "m139 volcano ap mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-m14-ap-mine",
+      "title": "M14 (противопехотная мина)",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "m14 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-m16-mine-family",
+      "title": "M16 / M16A1 / M16A2 — противопехотные мины",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "m16 mine",
+        "m16a1 mine",
+        "m16a2 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ordnance-v29-ga-0371",
+      "title": "M18A1",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "m18a1 mine"
+      ],
+      "searched": true,
+      "bundledModels": [
+        "m18a1-claymore"
+      ]
+    },
+    {
+      "id": "eng-m18a1",
+      "title": "M18A1 Claymore",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "m18a1 claymore"
+      ],
+      "searched": true,
+      "bundledModels": [
+        "m18a1-claymore"
+      ]
+    },
+    {
+      "id": "mine-audit-v25-us-m26",
+      "title": "M26",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "m26 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v25-us-m2a4",
+      "title": "M2A4",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "m2a4 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v25-us-m2a4b2",
+      "title": "M2A4B2",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "m2a4b2 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v25-us-m3",
+      "title": "M3",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "m3 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ordnance-v27-m57-app-m57-kuba",
+      "title": "M57 (Куба)",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "m57 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-m67-m72-mine-family",
+      "title": "M67 / M72 — мины ADAM",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "m67 mine",
+        "m72 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-009",
+      "title": "M74 (противопехотная мина)",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "m74 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-m77-m90-mine-family",
+      "title": "M77 / M90 — противопехотные мины",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "m77 mine",
+        "m90 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ordnance-v29-ga-0377",
+      "title": "M86",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "m86 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-m86-pdm",
+      "title": "M86 Pursuit Deterrent Munition",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "m86 pursuit deterrent munition mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-mai-75",
+      "title": "MAI-75",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "mai-75 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-maped-mod-f1",
+      "title": "MAPED mod. F1",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "maped mod. f1 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ref-v8-ar-mapg",
+      "title": "MAPG (Аргентина)",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "mapg mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ref-v8-ar-mappg",
+      "title": "MAPPG (Аргентина)",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "mappg mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ref-v9-vn-mbv78a1-a2",
+      "title": "MBV78A1 / MBV78A2",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "mbv78a1 mine",
+        "mbv78a2 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ref-v9-vn-mdh10",
+      "title": "MDH10 / MDH-10",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "mdh10 mine",
+        "mdh-10 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ordnance-v27-min-grenade-shaped-vetnam",
+      "title": "MIN grenade-shaped (Вьетнам)",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "min grenade-shaped mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-mm-1",
+      "title": "MM-1",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "mm-1 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ordnance-v27-mm1-myanma",
+      "title": "MM1 (Мьянма)",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "mm1 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ordnance-v27-mm2-myanma",
+      "title": "MM2 (Мьянма)",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "mm2 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ordnance-v27-mm5-myanma",
+      "title": "MM5 (Мьянма)",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "mm5 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ordnance-v27-mm6-myanma",
+      "title": "MM6 (Мьянма)",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "mm6 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ref-v9-vn-mn79",
+      "title": "MN79 / MN-79",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "mn79 mine",
+        "mn-79 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-hailstorm-family",
+      "title": "MPIM HAILSTORM / MINI HAILSTORM",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "mpim hailstorm mine",
+        "mini hailstorm mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-mrud",
+      "title": "MRUD",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "mrud mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ref-v9-ro-mss",
+      "title": "MSS (Румыния)",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "mss mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-mi-ap-dv-59",
+      "title": "Mi-AP-DV 59",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "mi-ap-dv 59 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-130",
+      "title": "Mi-AP-DV Piguet 61 / 63",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "mi-ap-dv piguet 61 mine",
+        "63 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-mi-ap-mb-51",
+      "title": "Mi-AP-MB-51",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "mi-ap-mb-51 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ref-v8-za-mini-ms803",
+      "title": "Mini-MS 803 / MIM MS-803",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "mini-ms 803 mine",
+        "mim ms-803 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v25-fr-mle-1951",
+      "title": "Mle 1951",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "mle 1951 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v25-fr-mle-1955",
+      "title": "Mle 1955",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "mle 1955 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ordnance-v27-model-1948-ap-mine-vetnam",
+      "title": "Model 1948 AP Mine (Вьетнам)",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "model 1948 ap mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-129",
+      "title": "NM-14 (Индия)",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "nm-14 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ref-v9-vn-nomz2b",
+      "title": "NOMZ2B",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "nomz2b mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-nr-413",
+      "title": "NR 413",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "nr 413 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-008",
+      "title": "NR 442",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "nr 442 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ref-v8-in-nipun",
+      "title": "Nipun",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "nipun mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-124",
+      "title": "No. 10 (Израиль)",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "no. 10 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ref-v9-il-no3",
+      "title": "No. 3 AP (Израиль)",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "no. 3 ap mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ref-v8-za-no69mk1",
+      "title": "No. 69 Mk1 (ЮАР)",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "no. 69 mk1 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-012",
+      "title": "P-40",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "p-40 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ref-v8-pk-p2mk2-ap",
+      "title": "P2 Mk2 AP (Пакистан)",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "p2 mk2 ap mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ordnance-v27-p3-jumping-pakistan",
+      "title": "P3 Jumping (Пакистан)",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "p3 jumping mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-p4-mk1-pk",
+      "title": "P4 Mk1",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "p4 mk1 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ref-v8-pk-p5-family",
+      "title": "P5 Mk1 / P5 Mk2",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "p5 mk1 mine",
+        "p5 mk2 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ref-v8-pk-p7mk1",
+      "title": "P7 Mk1",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "p7 mk1 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v25-gb-pad",
+      "title": "PAD",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "pad mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pjrad",
+      "title": "PJRAD",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "pjrad mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v25-yu-pmb-1",
+      "title": "PMB-1 — обозначение требует проверки",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "pmb-1 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v25-yu-pmb-2",
+      "title": "PMB-2 — обозначение требует проверки",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "pmb-2 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v25-yu-pmb-3",
+      "title": "PMB-3 — обозначение требует проверки",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "pmb-3 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v25-yu-pmd-1",
+      "title": "PMD-1",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "pmd-1 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ordnance-v27-pmfc-1-kuba",
+      "title": "PMFC-1 (Куба)",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "pmfc-1 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ordnance-v27-pmfh-1-kuba",
+      "title": "PMFH-1 (Куба)",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "pmfh-1 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ordnance-v27-pmm-1-kuba",
+      "title": "PMM-1 (Куба)",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "pmm-1 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v25-yu-pmr-2",
+      "title": "PMR-2",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "pmr-2 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v25-yu-pmr-3",
+      "title": "PMR-3",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "pmr-3 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v25-yu-pmr-4",
+      "title": "PMR-4",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "pmr-4 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v25-cs-pp-mi-d",
+      "title": "PP-MI-D",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "pp-mi-d mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v25-cs-pp-mi-sk",
+      "title": "PP-MI-SK",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "pp-mi-sk mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v25-cs-pp-mi-sr",
+      "title": "PP-MI-SR",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "pp-mi-sr mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pp-mi-ba",
+      "title": "PP-Mi-Ba",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "pp-mi-ba mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-015",
+      "title": "PP-Mi-Na",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "pp-mi-na mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pp-mi-sr-ii",
+      "title": "PP-Mi-Sr II",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "pp-mi-sr ii mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-ppm-2-dd",
+      "title": "PPM-2",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "ppm-2 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-prb-m409",
+      "title": "PRB M409",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "prb m409 mine"
+      ],
+      "searched": true,
+      "bundledModels": [
+        "prb-m409"
+      ]
+    },
+    {
+      "id": "mine-audit-v25-yu-prom-2",
+      "title": "PROM-2",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "prom-2 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v25-yu-prom-kd",
+      "title": "PROM-KD",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "prom-kd mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ref-v9-fi-putkiansa42-putkimiina43",
+      "title": "Putkiansa m/42 / Putkimiina m/43",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "putkiansa m/42 mine",
+        "putkimiina m/43 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ref-v8-za-r2m1",
+      "title": "R2M1",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "r2m1 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ref-v8-za-r2m2",
+      "title": "R2M2",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "r2m2 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ref-v9-fi-rasia-ansa-m42",
+      "title": "Rasia-ansa m/42",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "rasia-ansa m/42 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-125",
+      "title": "S.Mi.35",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "s.mi.35 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-sb-33-family",
+      "title": "SB-33 (семейство)",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "sb-33 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v25-de-sm-70",
+      "title": "SM-70",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "sm-70 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-str-50-str-75-family",
+      "title": "STR-50 / STR-75",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "str-50 mine",
+        "str-75 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v25-de-sch-tzenmine-42",
+      "title": "Schützenmine 42",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "schützenmine 42"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ref-v8-za-shrapnel-no2",
+      "title": "Shrapnel Mine No. 2",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "shrapnel mine no. 2"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-t-ab-1-ap",
+      "title": "T-AB-1 (противопехотная)",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "t-ab-1 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-ts-50",
+      "title": "TS-50",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "ts-50 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-truppmina-12-family",
+      "title": "Truppmina 12 / Truppmina 12B",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "truppmina 12",
+        "truppmina 12b"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-type-58-ap",
+      "title": "Type 58 (противопехотная)",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "type 58 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ref-v8-cn-type59-ap",
+      "title": "Type 59 AP (Китай)",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "type 59 ap mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ref-v8-jp-type63-ap",
+      "title": "Type 63 AP (Япония)",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "type 63 ap mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ref-v8-cn-type66",
+      "title": "Type 66 (Китай)",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "type 66 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ref-v8-jp-type67",
+      "title": "Type 67 (Япония)",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "type 67 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ref-v9-cn-type69-ap",
+      "title": "Type 69 AP (Китай)",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "type 69 ap mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-type-72-ap-family",
+      "title": "Type 72 A/B/C (противопехотная ветвь)",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "type 72 a/b/c mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ref-v8-za-type72-ap",
+      "title": "Type 72 AP (ЮАР)",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "type 72 ap mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ref-v8-jp-type80",
+      "title": "Type 80 (Япония)",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "type 80 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-var-40-var-100-family",
+      "title": "VAR 40 / VAR 100",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "var 40 mine",
+        "var 100 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-vp-88",
+      "title": "VP 88",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "vp 88 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-vs-50-family",
+      "title": "VS-50 / VS-50 EO3",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "vs-50 mine",
+        "vs-50 eo3 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-006",
+      "title": "VS-APFM1",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "vs-apfm1 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-003",
+      "title": "VS-DAFM1",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "vs-dafm1 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-vs-jap",
+      "title": "VS-JAP",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "vs-jap mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-vs-mk2-family",
+      "title": "VS-Mk-2 / VS-Mk2-EL",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "vs-mk-2 mine",
+        "vs-mk2-el mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-vs-sapf-m3",
+      "title": "VS-SAPF-M3",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "vs-sapf-m3 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-valmara-family",
+      "title": "Valmara V-59 / V-69",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "valmara v-59 mine",
+        "v-69 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-ym-1-ir",
+      "title": "YM-1",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "ym-1 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-ym-1b-ir",
+      "title": "YM-1B",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "ym-1b mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ordnance-v27-ym-4-iran",
+      "title": "YM-4 (Иран)",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "ym-4 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ordnance-v27-z-001m-armeniya",
+      "title": "Z-001M (Армения)",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "z-001m mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ref-v8-zw-zap1",
+      "title": "ZAP No. 1 / RAP No. 1",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "zap no. 1 mine",
+        "rap no. 1 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ref-v8-zw-zap2",
+      "title": "ZAP No. 2 / RAP No. 2",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "zap no. 2 mine",
+        "rap no. 2 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ref-v8-zw-zaps",
+      "title": "ZAPS / RAPS PloughShear",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "zaps mine",
+        "raps ploughshear mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-117",
+      "title": "Волчек / Дзига",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "volchek mine",
+        "dziga mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-israel-no-12",
+      "title": "Израильская мина No. 12",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "izrailskaya mina no. 12"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-israel-no-4",
+      "title": "Израильская мина No. 4",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "izrailskaya mina no. 4"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v26-su-ml-7",
+      "title": "МЛ-7",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "ml-7 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v26-su-ml-8",
+      "title": "МЛ-8",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "ml-8 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ref-v8-mon-100",
+      "title": "МОН-100: советская модель и польское исполнение",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "mon-100: sovetskaya model i polskoe ispolnenie mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ref-v8-mon-200",
+      "title": "МОН-200",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "mon-200 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-mon-50",
+      "title": "МОН-50",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "mon-50 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ref-v8-mon-90",
+      "title": "МОН-90",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "mon-90 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v26-su-ms-2",
+      "title": "МС-2",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "ms-2 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v26-su-ms-3",
+      "title": "МС-3",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "ms-3 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ordnance-v27-ms-4",
+      "title": "МС-4",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "ms-4 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-106",
+      "title": "Муха",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "mukha mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v25-su-ozm-160",
+      "title": "ОЗМ-160",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "ozm-160 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ref-v9-su-ozm3",
+      "title": "ОЗМ-3",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "ozm-3 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ref-v9-su-ozm4",
+      "title": "ОЗМ-4",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "ozm-4 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-ozm-72",
+      "title": "ОЗМ-72",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "ozm-72 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pm-79-bg",
+      "title": "ПМ-79 / PM-79",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "pm-79 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pma-1a",
+      "title": "ПМА-1А",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "pma-1a mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pma-2",
+      "title": "ПМА-2",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "pma-2 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pma-3",
+      "title": "ПМА-3",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "pma-3 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v26-su-pmd-57",
+      "title": "ПМД-57",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "pmd-57 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ref-v8-pmd-6",
+      "title": "ПМД-6",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "pmd-6 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ref-v8-pmd-6m",
+      "title": "ПМД-6М",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "pmd-6m mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v25-su-pmd-7",
+      "title": "ПМД-7",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "pmd-7 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v25-su-pmd-7ts",
+      "title": "ПМД-7Ц",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "pmd-7ts mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v25-su-pmk-40",
+      "title": "ПМК-40",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "pmk-40 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pmn",
+      "title": "ПМН",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "pmn mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pmn-2",
+      "title": "ПМН-2",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "pmn-2 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ref-v8-pmn-3",
+      "title": "ПМН-3",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "pmn-3 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ref-v8-pmn-4",
+      "title": "ПМН-4",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "pmn-4 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ordnance-v27-pmn-e-armeniya",
+      "title": "ПМН-Э (Армения)",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "pmn-e mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v25-su-pom-1s",
+      "title": "ПОМ-1 / ПОМ-1С",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "pom-1 mine",
+        "pom-1s mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pom-2-family",
+      "title": "ПОМ-2 (семейство)",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "pom-2 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v25-su-pom-2s",
+      "title": "ПОМ-2С",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "pom-2s mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ref-v8-pom-3",
+      "title": "ПОМ-3 «Медальон»",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "pom-3 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ref-v8-pomz-2",
+      "title": "ПОМЗ-2",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "pomz-2 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ref-v8-pomz-2m",
+      "title": "ПОМЗ-2М",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "pomz-2m mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-109",
+      "title": "ППМ-1П",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "ppm-1p mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-prom-1",
+      "title": "ПРОМ-1",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "prom-1 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-psm-1-bg",
+      "title": "ПСМ-1",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "psm-1 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pfm-1",
+      "title": "ПФМ-1 «Лепесток»",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "pfm-1 mine"
+      ],
+      "searched": true,
+      "bundledModels": [
+        "pfm-1"
+      ]
+    },
+    {
+      "id": "mine-audit-v25-su-pfm-1s",
+      "title": "ПФМ-1С",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "pfm-1s mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-111",
+      "title": "Пенал",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "penal mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-protivopehotnaa-fugasnaa-mina-l10a1",
+      "title": "Противопехотная фугасная мина L10A1",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "protivopekhotnaya fugasnaya mina l10a1"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-protivopehotnaa-fugasnaa-mina-lory",
+      "title": "Противопехотная фугасная мина LORY",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "protivopekhotnaya fugasnaya mina lory"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-protivopehotnaa-fugasnaa-mina-maus-1",
+      "title": "Противопехотная фугасная мина MAUS-1",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "protivopekhotnaya fugasnaya mina maus-1"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-r-25",
+      "title": "Р-25",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "r-25 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-113",
+      "title": "СТИК-Ф / Stick ИБ",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "stik-f mine",
+        "stick ib mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-tos",
+      "title": "ТОС",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "tos mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-116",
+      "title": "УПМ-О",
+      "categoryId": "mines-antipersonnel",
+      "queries": [
+        "upm-o mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ordnance-v27-100-mm-at-mine-vetnam",
+      "title": "100-mm AT Mine (Вьетнам)",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "100-mm at mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ordnance-v27-150-mm-at-mine-vetnam",
+      "title": "150-mm AT Mine (Вьетнам)",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "150-mm at mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ordnance-v27-200-mm-at-mine-vetnam",
+      "title": "200-mm AT Mine (Вьетнам)",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "200-mm at mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-adwat",
+      "title": "ADWAT",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "adwat mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-041",
+      "title": "APILAS / APAJAX (мина)",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "apilas mine",
+        "apajax mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-043",
+      "title": "ARGES",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "arges mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-atm-01-family",
+      "title": "ATM-01 (семейство)",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "atm-01 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ordnance-v27-atm-41-kndr",
+      "title": "ATM-41 (КНДР)",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "atm-41 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ordnance-v27-atm-44-kndr",
+      "title": "ATM-44 (КНДР)",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "atm-44 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ordnance-v27-atm-46-kndr",
+      "title": "ATM-46 (КНДР)",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "atm-46 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ordnance-v27-atm-46n-kndr",
+      "title": "ATM-46N (КНДР)",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "atm-46n mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ordnance-v27-atm-72-kndr",
+      "title": "ATM-72 (КНДР)",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "atm-72 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-042",
+      "title": "Addermine / AJAX",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "addermine",
+        "ajax mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-c14",
+      "title": "C14",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "c14 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-dm21",
+      "title": "DM 21 (противотанковая мина)",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "dm 21 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ref-v8-ar-fmk3",
+      "title": "FMK-3",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "fmk-3 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v25-de-holzmine-42",
+      "title": "Holzmine 42",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "holzmine 42"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-l9a2-l18a1-bar-mine-family",
+      "title": "L9A2 Bar Mine / L18A1",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "l9a2 bar mine",
+        "l18a1 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v25-fr-m-51",
+      "title": "M-51",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "m-51 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v25-fr-m-52",
+      "title": "M-52",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "m-52 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-126",
+      "title": "M-80 (Египет)",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "m-80 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-m1-m1a1-av-family",
+      "title": "M1 / M1A1 (противотранспортные мины)",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "m1 mine",
+        "m1a1 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-m15-av",
+      "title": "M15 (противотанковая мина)",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "m15 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-m19",
+      "title": "M19",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "m19 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v25-us-m66",
+      "title": "M66",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "m66 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-m6a2-av",
+      "title": "M6A2",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "m6a2 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-m7a2-av",
+      "title": "M7A2",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "m7a2 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-mat-62b-mat-76-family",
+      "title": "MAT-62B / MAT-76",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "mat-62b mine",
+        "mat-76 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-mat-5-mat-6-family",
+      "title": "MAT/5 / MAT/6",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "mat/5 mine",
+        "mat/6 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-mats-family",
+      "title": "MATS/1.4 / MATS/2.6",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "mats/1.4 mine",
+        "mats/2.6 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-mi-ac-ah-family",
+      "title": "MI AC AH F1 / F2",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "mi ac ah f1 mine",
+        "f2 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-mi-ac-pr-family",
+      "title": "MI AC PR — F1, H и FR",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "mi ac pr mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-120",
+      "title": "MKTBT",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "mktbt mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-038",
+      "title": "MPB-ZK",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "mpb-zk mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-039",
+      "title": "MPB-ZN",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "mpb-zn mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-mpbk-zn",
+      "title": "MPBK-ZN",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "mpbk-zn mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-mitral",
+      "title": "Mitral",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "mitral mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ref-v9-il-no22",
+      "title": "No. 22 AT (Израиль)",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "no. 22 at mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ref-v8-za-no8-at",
+      "title": "No. 8 AT (ЮАР)",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "no. 8 at mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ref-v8-pk-p2mk2-at",
+      "title": "P2 Mk2 AT (Пакистан)",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "p2 mk2 at mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-p3-mk2-pk",
+      "title": "P3 Mk2",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "p3 mk2 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-122",
+      "title": "PARM NextGen",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "parm nextgen mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pm-60-k-1",
+      "title": "PM-60 / K-1",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "pm-60 mine",
+        "k-1 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-prb-m3-family",
+      "title": "PRB M3 / M3A1",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "prb m3 mine",
+        "m3a1 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pt-mi-ba-family",
+      "title": "PT Mi-Ba (семейство)",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "pt mi-ba mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v25-cs-pt-mi-ba-ii",
+      "title": "PT-MI-BA II",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "pt-mi-ba ii mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v25-cs-pt-mi-ba-iii",
+      "title": "PT-MI-BA III",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "pt-mi-ba iii mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v25-cs-pt-mi-d",
+      "title": "PT-MI-D",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "pt-mi-d mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v25-cs-pt-mi-k",
+      "title": "PT-MI-K",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "pt-mi-k mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pansermine-m47",
+      "title": "Pansermine M/47",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "pansermine m/47"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-016",
+      "title": "Pansermine M/56 / AC ID 51/52",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "pansermine m/56",
+        "ac id 51/52 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ref-v9-fi-panssarimiina-m36",
+      "title": "Panssarimiina m/36",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "panssarimiina m/36 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ref-v9-fi-panssarimiina-m39",
+      "title": "Panssarimiina m/39 (Финляндия)",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "panssarimiina m/39 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ref-v9-fi-panssarimiina-m44",
+      "title": "Panssarimiina m/44",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "panssarimiina m/44 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ref-v9-fi-panssarimiina-ms39-ms40",
+      "title": "Panssarimiina m/S-39 / m/S-40",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "panssarimiina m/s-39 mine",
+        "m/s-40 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v25-de-panzer-schnellmine-a",
+      "title": "Panzer-Schnellmine A",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "panzer-schnellmine a"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v25-de-panzer-schnellmine-b",
+      "title": "Panzer-Schnellmine B",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "panzer-schnellmine b"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ref-v8-in-prachand",
+      "title": "Prachand",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "prachand mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v25-de-riegelmine-43",
+      "title": "Riegelmine 43",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "riegelmine 43"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v25-de-riegelmine-44",
+      "title": "Riegelmine 44",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "riegelmine 44"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-saci-54-family",
+      "title": "SACI 54 (семейство)",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "saci 54 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-127",
+      "title": "SACI IMAS",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "saci imas mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-sb-81-family",
+      "title": "SB-81 / SB-81-AR-AN",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "sb-81 mine",
+        "sb-81-ar-an mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-sh-55-family",
+      "title": "SH-55 (семейство)",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "sh-55 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-017",
+      "title": "Stridsvagnsmina 5",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "stridsvagnsmina 5"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-stridsvagnsmina-m52b",
+      "title": "Stridsvagnsmina m/52B",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "stridsvagnsmina m/52b"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-t-ab-1-at",
+      "title": "T-AB-1 (противотранспортная)",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "t-ab-1 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-131",
+      "title": "T.Mi.43",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "t.mi.43 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-tc-family",
+      "title": "TC/2.4 / TC/3.6 / TC/6",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "tc/2.4 mine",
+        "tc/3.6 mine",
+        "tc/6 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-tm-65-77",
+      "title": "TM 65 77 / Telamiina 65 77",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "tm 65 77 mine",
+        "telamiina 65 77 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-tma-family",
+      "title": "TMA — TMA-1A, TMA-2A, TMA-3, TMA-4, TMA-5/5A",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "tma mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v25-yu-tmm-1",
+      "title": "TMM-1",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "tmm-1 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ref-v9-de-tellermine35",
+      "title": "Tellermine 35 / T.Mi.35",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "tellermine 35",
+        "t.mi.35 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ref-v9-de-tellermine42",
+      "title": "Tellermine 42 / T.Mi.42",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "tellermine 42",
+        "t.mi.42 mine"
+      ],
+      "searched": true,
+      "bundledModels": [
+        "tellermine-42"
+      ]
+    },
+    {
+      "id": "mine-audit-v25-de-topfmine-4531",
+      "title": "Topfmine 4531",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "topfmine 4531"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-tulipan",
+      "title": "Tulipan",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "tulipan mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ref-v8-cn-type59-at",
+      "title": "Type 59 AT (Китай)",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "type 59 at mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ref-v8-jp-type63-at",
+      "title": "Type 63 AT / Type 63B (Япония)",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "type 63 at mine",
+        "type 63b mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-type-72p-av",
+      "title": "Type 72 (P), противотранспортная",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "type 72 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ref-v8-za-type72-at",
+      "title": "Type 72 AT (ЮАР)",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "type 72 at mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-121",
+      "title": "Type 81 AT",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "type 81 at mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v25-cn-type-84a",
+      "title": "Type 84A",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "type 84a mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v25-cn-type-84b",
+      "title": "Type 84B",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "type 84b mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v25-cn-type-84c",
+      "title": "Type 84C",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "type 84c mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-vs-1-6-family",
+      "title": "VS-1.6 / VS-1.6-AR-AN",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "vs-1.6 mine",
+        "vs-1.6-ar-an mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ref-v8-in-vibhav",
+      "title": "Vibhav",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "vibhav mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ref-v8-in-vishal",
+      "title": "Vishal",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "vishal mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ordnance-v27-ym-ii-iran",
+      "title": "YM-II (Иран)",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "ym-ii mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ordnance-v27-ym-iii-ym-3-iran",
+      "title": "YM-III / YM-3 (Иран)",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "ym-iii mine",
+        "ym-3 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-atm-15m",
+      "title": "АТМ-15М",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "atm-15m mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-atm-4m",
+      "title": "АТМ-4М",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "atm-4m mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-atm-r3",
+      "title": "АТМ-Р3",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "atm-r3 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-israel-no-6",
+      "title": "Израильская мина No. 6",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "izrailskaya mina no. 6"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v25-su-pmz-40",
+      "title": "ПМЗ-40",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "pmz-40 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v25-ru-ptkm-1r",
+      "title": "ПТКМ-1Р",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "ptkm-1r mine"
+      ],
+      "searched": true,
+      "bundledModels": [
+        "ptkm-1r"
+      ]
+    },
+    {
+      "id": "ref-v8-ptm-4",
+      "title": "ПТМ-4",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "ptm-4 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-119",
+      "title": "ТМ-124",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "tm-124 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "pptx-v166-tm-124",
+      "title": "ТМ-124",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "tm-124 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-118",
+      "title": "ТМ-2025",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "tm-2025 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ref-v9-su-tm35",
+      "title": "ТМ-35",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "tm-35 mine"
+      ],
+      "searched": true,
+      "bundledModels": [
+        "tm-35"
+      ]
+    },
+    {
+      "id": "mine-audit-v25-su-tm-39",
+      "title": "ТМ-39",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "tm-39 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ref-v9-su-tm41",
+      "title": "ТМ-41",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "tm-41 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v25-su-tm-44",
+      "title": "ТМ-44",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "tm-44 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ref-v8-tm-46",
+      "title": "ТМ-46",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "tm-46 mine"
+      ],
+      "searched": true,
+      "bundledModels": [
+        "tm-46"
+      ]
+    },
+    {
+      "id": "ref-v8-tm-57",
+      "title": "ТМ-57",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "tm-57 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v25-su-tm-62b",
+      "title": "ТМ-62Б",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "tm-62b mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v25-su-tm-62d",
+      "title": "ТМ-62Д",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "tm-62d mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-tm-62m",
+      "title": "ТМ-62М",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "tm-62m mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ref-v8-tm-62p",
+      "title": "ТМ-62П",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "tm-62p mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v25-su-tm-62p2",
+      "title": "ТМ-62П2",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "tm-62p2 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ref-v8-tm-62p3",
+      "title": "ТМ-62П3",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "tm-62p3 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v25-su-tm-62t",
+      "title": "ТМ-62Т",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "tm-62t mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v25-su-tmb-2",
+      "title": "ТМБ-2",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "tmb-2 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v25-su-tmd-40",
+      "title": "ТМД-40",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "tmd-40 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v25-su-tmd-44",
+      "title": "ТМД-44",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "tmd-44 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ref-v9-su-tmdb",
+      "title": "ТМД-Б",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "tmd-b mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ref-v8-tmn-46",
+      "title": "ТМН-46",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "tmn-46 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ref-v9-se-stridsvagnsmina-m39",
+      "title": "Шведская противотанковая m/39 (Swedish M/39)",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "shvedskaya protivotankovaya m/39 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v25-su-yam-5",
+      "title": "ЯМ-5",
+      "categoryId": "mines-antitank",
+      "queries": [
+        "yam-5 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ordnance-v27-atm-6-kndr",
+      "title": "ATM-6 (Австрия)",
+      "categoryId": "mines-antivehicle",
+      "queries": [
+        "atm-6 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ordnance-v27-atm-7-kndr",
+      "title": "ATM-7 (Австрия)",
+      "categoryId": "mines-antivehicle",
+      "queries": [
+        "atm-7 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-c-3-b-av",
+      "title": "C-3-B",
+      "categoryId": "mines-antivehicle",
+      "queries": [
+        "c-3-b mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v25-yu-cobra",
+      "title": "COBRA",
+      "categoryId": "mines-antivehicle",
+      "queries": [
+        "cobra mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-dm-11-av-1951",
+      "title": "DM 11 (противотранспортная, образца 1951 года)",
+      "categoryId": "mines-antivehicle",
+      "queries": [
+        "dm 11 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-fordonsmina-13-family",
+      "title": "Fordonsmina 13 / Fordonsmina 13R",
+      "categoryId": "mines-antivehicle",
+      "queries": [
+        "fordonsmina 13",
+        "fordonsmina 13r"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-fordonsmina-14",
+      "title": "Fordonsmina 14 / FFV 016",
+      "categoryId": "mines-antivehicle",
+      "queries": [
+        "fordonsmina 14",
+        "ffv 016 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v25-gb-l14",
+      "title": "L14",
+      "categoryId": "mines-antivehicle",
+      "queries": [
+        "l14 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-004",
+      "title": "M-13",
+      "categoryId": "mines-antivehicle",
+      "queries": [
+        "m-13 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ordnance-v27-m131-mopms-at-mine",
+      "title": "M131 MOPMS AT Mine",
+      "categoryId": "mines-antivehicle",
+      "queries": [
+        "m131 mopms at mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ordnance-v27-m139-volcano-at-mine",
+      "title": "M139 Volcano AT Mine",
+      "categoryId": "mines-antivehicle",
+      "queries": [
+        "m139 volcano at mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v25-us-m24",
+      "title": "M24",
+      "categoryId": "mines-antivehicle",
+      "queries": [
+        "m24 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-mai-ga4",
+      "title": "MAI-GA4",
+      "categoryId": "mines-antivehicle",
+      "queries": [
+        "mai-ga4 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-parm-family",
+      "title": "PARM DM12 / DM22",
+      "categoryId": "mines-antivehicle",
+      "queries": [
+        "parm dm12 mine",
+        "dm22 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-040",
+      "title": "PD Mi-PK",
+      "categoryId": "mines-antivehicle",
+      "queries": [
+        "pd mi-pk mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pk-14-ee",
+      "title": "PK-14 / M14 (Эстония)",
+      "categoryId": "mines-antivehicle",
+      "queries": [
+        "m14 mine",
+        "pk-14 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-vp-84-vp-01-family",
+      "title": "VP 84 / VP 01",
+      "categoryId": "mines-antivehicle",
+      "queries": [
+        "vp 84 mine",
+        "vp 01 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-vs-av-family",
+      "title": "VS-2.2 / VS-3.6 / VS-6.0 / VS-9.0",
+      "categoryId": "mines-antivehicle",
+      "queries": [
+        "vs-2.2 mine",
+        "vs-3.6 mine",
+        "vs-6.0 mine",
+        "vs-9.0 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-005",
+      "title": "VS-DAFM6 / VS-DAFM7",
+      "categoryId": "mines-antivehicle",
+      "queries": [
+        "vs-dafm6 mine",
+        "vs-dafm7 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v25-su-lmg",
+      "title": "ЛМГ",
+      "categoryId": "mines-antivehicle",
+      "queries": [
+        "lmg mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v25-su-mon-500",
+      "title": "МОН-500",
+      "categoryId": "mines-antivehicle",
+      "queries": [
+        "mon-500 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v25-su-ptm-1",
+      "title": "ПТМ-1",
+      "categoryId": "mines-antivehicle",
+      "queries": [
+        "ptm-1 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v25-su-ptm-1g",
+      "title": "ПТМ-1Г",
+      "categoryId": "mines-antivehicle",
+      "queries": [
+        "ptm-1g mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v25-su-ptm-1s",
+      "title": "ПТМ-1С",
+      "categoryId": "mines-antivehicle",
+      "queries": [
+        "ptm-1s mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v25-su-tm-73",
+      "title": "ТМ-73",
+      "categoryId": "mines-antivehicle",
+      "queries": [
+        "tm-73 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v25-su-tm-83",
+      "title": "ТМ-83",
+      "categoryId": "mines-antivehicle",
+      "queries": [
+        "tm-83 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-094",
+      "title": "Asteria",
+      "categoryId": "mines-naval",
+      "queries": [
+        "asteria naval mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-084",
+      "title": "BGM 100 / Rockan",
+      "categoryId": "mines-naval",
+      "queries": [
+        "bgm 100 naval mine",
+        "rockan naval mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-086",
+      "title": "BGM 600",
+      "categoryId": "mines-naval",
+      "queries": [
+        "bgm 600 naval mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-085",
+      "title": "BGM 601 / Banny",
+      "categoryId": "mines-naval",
+      "queries": [
+        "bgm 601 naval mine",
+        "banny naval mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-080",
+      "title": "GM-750",
+      "categoryId": "mines-naval",
+      "queries": [
+        "gm-750 naval mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v26-us-hammerhead-encapsulated-effector",
+      "title": "Hammerhead Encapsulated Effector",
+      "categoryId": "mines-naval",
+      "queries": [
+        "hammerhead encapsulated effector naval mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-083",
+      "title": "MINEA",
+      "categoryId": "mines-naval",
+      "queries": [
+        "minea"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-093",
+      "title": "MN 102 / Murena",
+      "categoryId": "mines-naval",
+      "queries": [
+        "mn 102 naval mine",
+        "murena naval mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-092",
+      "title": "MP 80",
+      "categoryId": "mines-naval",
+      "queries": [
+        "mp 80 naval mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-091",
+      "title": "MR 80",
+      "categoryId": "mines-naval",
+      "queries": [
+        "mr 80 naval mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-081",
+      "title": "Manta / MN 103",
+      "categoryId": "mines-naval",
+      "queries": [
+        "manta naval mine",
+        "mn 103 naval mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v25-us-mk-36",
+      "title": "Mk 36",
+      "categoryId": "mines-naval",
+      "queries": [
+        "mk 36 naval mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v25-us-mk-52",
+      "title": "Mk 52",
+      "categoryId": "mines-naval",
+      "queries": [
+        "mk 52 naval mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v25-us-mk-55",
+      "title": "Mk 55",
+      "categoryId": "mines-naval",
+      "queries": [
+        "mk 55 naval mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v25-us-mk-56",
+      "title": "Mk 56",
+      "categoryId": "mines-naval",
+      "queries": [
+        "mk 56 naval mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v25-us-mk-57",
+      "title": "Mk 57",
+      "categoryId": "mines-naval",
+      "queries": [
+        "mk 57 naval mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-095",
+      "title": "Mk 60 Captor",
+      "categoryId": "mines-naval",
+      "queries": [
+        "mk 60 captor naval mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v25-us-mk-62-quickstrike",
+      "title": "Mk 62 Quickstrike",
+      "categoryId": "mines-naval",
+      "queries": [
+        "mk 62 quickstrike naval mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v25-us-mk-63-quickstrike",
+      "title": "Mk 63 Quickstrike",
+      "categoryId": "mines-naval",
+      "queries": [
+        "mk 63 quickstrike naval mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v25-us-mk-64-mod-5-quickstrike-er",
+      "title": "Mk 64 Mod 5 Quickstrike-ER",
+      "categoryId": "mines-naval",
+      "queries": [
+        "mk 64 mod 5 quickstrike-er naval mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v25-us-mk-65-quickstrike",
+      "title": "Mk 65 Quickstrike",
+      "categoryId": "mines-naval",
+      "queries": [
+        "mk 65 quickstrike naval mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-096",
+      "title": "Mk 67 SLMM",
+      "categoryId": "mines-naval",
+      "queries": [
+        "mk 67 slmm naval mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v26-us-mk-68-clandestine-delivered-mine",
+      "title": "Mk 68 Clandestine Delivered Mine",
+      "categoryId": "mines-naval",
+      "queries": [
+        "mk 68 clandestine delivered mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-082",
+      "title": "PDM-250",
+      "categoryId": "mines-naval",
+      "queries": [
+        "pdm-250 naval mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-079",
+      "title": "PM04",
+      "categoryId": "mines-naval",
+      "queries": [
+        "pm04 naval mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-077",
+      "title": "PM16 / Blocker",
+      "categoryId": "mines-naval",
+      "queries": [
+        "pm16 naval mine",
+        "blocker naval mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-088",
+      "title": "Quickstrike",
+      "categoryId": "mines-naval",
+      "queries": [
+        "quickstrike naval mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-089",
+      "title": "Quickstrike-ER",
+      "categoryId": "mines-naval",
+      "queries": [
+        "quickstrike-er naval mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-099",
+      "title": "Sea Urchin",
+      "categoryId": "mines-naval",
+      "queries": [
+        "sea urchin naval mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-098",
+      "title": "Stonefish",
+      "categoryId": "mines-naval",
+      "queries": [
+        "stonefish naval mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-078",
+      "title": "TURSO MM30",
+      "categoryId": "mines-naval",
+      "queries": [
+        "turso mm30 naval mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v26-su-amd-2-1000",
+      "title": "АМД-2-1000",
+      "categoryId": "mines-naval",
+      "queries": [
+        "amd-2-1000 naval mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v26-su-amd-2-500",
+      "title": "АМД-2-500",
+      "categoryId": "mines-naval",
+      "queries": [
+        "amd-2-500 naval mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v26-su-amd-2m",
+      "title": "АМД-2М",
+      "categoryId": "mines-naval",
+      "queries": [
+        "amd-2m naval mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v26-su-amd-4-1000",
+      "title": "АМД-4-1000",
+      "categoryId": "mines-naval",
+      "queries": [
+        "amd-4-1000 naval mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v26-su-amd-4-500",
+      "title": "АМД-4-500",
+      "categoryId": "mines-naval",
+      "queries": [
+        "amd-4-500 naval mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v26-su-apm",
+      "title": "АПМ",
+      "categoryId": "mines-naval",
+      "queries": [
+        "apm naval mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v26-su-gm",
+      "title": "ГМ",
+      "categoryId": "mines-naval",
+      "queries": [
+        "gm naval mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v26-su-dm-1",
+      "title": "ДМ-1",
+      "categoryId": "mines-naval",
+      "queries": [
+        "dm-1 naval mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v26-su-krm",
+      "title": "КРМ",
+      "categoryId": "mines-naval",
+      "queries": [
+        "krm naval mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v26-su-ksm",
+      "title": "КСМ",
+      "categoryId": "mines-naval",
+      "queries": [
+        "ksm naval mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v25-ru-mdm-1-mod-1",
+      "title": "МДМ-1 мод. 1",
+      "categoryId": "mines-naval",
+      "queries": [
+        "mdm-1 mod. 1 naval mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v25-ru-mdm-2-mod-1",
+      "title": "МДМ-2 мод. 1",
+      "categoryId": "mines-naval",
+      "queries": [
+        "mdm-2 mod. 1 naval mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v25-ru-mdm-3-mod-1",
+      "title": "МДМ-3 мод. 1",
+      "categoryId": "mines-naval",
+      "queries": [
+        "mdm-3 mod. 1 naval mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v26-su-mds-1-omul",
+      "title": "МДС-1 «Омуль»",
+      "categoryId": "mines-naval",
+      "queries": [
+        "mds-1 naval mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v26-su-mdt",
+      "title": "МДТ",
+      "categoryId": "mines-naval",
+      "queries": [
+        "mdt naval mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v26-su-mnp",
+      "title": "МНП",
+      "categoryId": "mines-naval",
+      "queries": [
+        "mnp naval mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v26-su-mtpk-1",
+      "title": "МТПК-1",
+      "categoryId": "mines-naval",
+      "queries": [
+        "mtpk-1 naval mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v26-su-mtpk-2",
+      "title": "МТПК-2",
+      "categoryId": "mines-naval",
+      "queries": [
+        "mtpk-2 naval mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v26-su-mshm",
+      "title": "МШМ",
+      "categoryId": "mines-naval",
+      "queries": [
+        "mshm naval mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v26-su-pkm-100",
+      "title": "ПКМ-100",
+      "categoryId": "mines-naval",
+      "queries": [
+        "pkm-100 naval mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v26-su-pkm-25",
+      "title": "ПКМ-25",
+      "categoryId": "mines-naval",
+      "queries": [
+        "pkm-25 naval mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v26-su-plt-4m",
+      "title": "ПЛТ-4М (опытная)",
+      "categoryId": "mines-naval",
+      "queries": [
+        "plt-4m naval mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v26-su-plt-5",
+      "title": "ПЛТ-5 (опытная)",
+      "categoryId": "mines-naval",
+      "queries": [
+        "plt-5 naval mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v26-su-plt-6",
+      "title": "ПЛТ-6 (опытная)",
+      "categoryId": "mines-naval",
+      "queries": [
+        "plt-6 naval mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v26-su-pm-1",
+      "title": "ПМ-1",
+      "categoryId": "mines-naval",
+      "queries": [
+        "pm-1 naval mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v26-su-pm-2",
+      "title": "ПМ-2",
+      "categoryId": "mines-naval",
+      "queries": [
+        "pm-2 naval mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v26-su-pmr-1",
+      "title": "ПМР-1",
+      "categoryId": "mines-naval",
+      "queries": [
+        "pmr-1 naval mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v26-su-pmr-2",
+      "title": "ПМР-2",
+      "categoryId": "mines-naval",
+      "queries": [
+        "pmr-2 naval mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v26-su-pmr-2m",
+      "title": "ПМР-2М",
+      "categoryId": "mines-naval",
+      "queries": [
+        "pmr-2m naval mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v26-su-pmr-2u",
+      "title": "ПМР-2У (учебная)",
+      "categoryId": "mines-naval",
+      "queries": [
+        "pmr-2u naval mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v26-su-pmt-1",
+      "title": "ПМТ-1",
+      "categoryId": "mines-naval",
+      "queries": [
+        "pmt-1 naval mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v26-su-prm",
+      "title": "ПРМ",
+      "categoryId": "mines-naval",
+      "queries": [
+        "prm naval mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v26-su-rm-1",
+      "title": "РМ-1",
+      "categoryId": "mines-naval",
+      "queries": [
+        "rm-1 naval mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v26-su-rm-2",
+      "title": "РМ-2",
+      "categoryId": "mines-naval",
+      "queries": [
+        "rm-2 naval mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v26-su-rm-2g",
+      "title": "РМ-2Г",
+      "categoryId": "mines-naval",
+      "queries": [
+        "rm-2g naval mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v26-su-smdm-1",
+      "title": "СМДМ-1",
+      "categoryId": "mines-naval",
+      "queries": [
+        "smdm-1 naval mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v26-su-smdm-2",
+      "title": "СМДМ-2",
+      "categoryId": "mines-naval",
+      "queries": [
+        "smdm-2 naval mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v26-su-udm",
+      "title": "УДМ / УДМ-Э",
+      "categoryId": "mines-naval",
+      "queries": [
+        "udm naval mine",
+        "udm-e naval mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v26-su-udm-2",
+      "title": "УДМ-2",
+      "categoryId": "mines-naval",
+      "queries": [
+        "udm-2 naval mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v26-su-udm-500",
+      "title": "УДМ-500",
+      "categoryId": "mines-naval",
+      "queries": [
+        "udm-500 naval mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v26-su-udm-m",
+      "title": "УДМ-М",
+      "categoryId": "mines-naval",
+      "queries": [
+        "udm-m naval mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-051",
+      "title": "AHM-200",
+      "categoryId": "mines-special",
+      "queries": [
+        "ahm-200 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-052",
+      "title": "AHM-200-1",
+      "categoryId": "mines-special",
+      "queries": [
+        "ahm-200-1 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-053",
+      "title": "AHM-200-2",
+      "categoryId": "mines-special",
+      "queries": [
+        "ahm-200-2 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-055",
+      "title": "DM-39",
+      "categoryId": "mines-special",
+      "queries": [
+        "dm-39 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-054",
+      "title": "DM-49",
+      "categoryId": "mines-special",
+      "queries": [
+        "dm-49 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-060",
+      "title": "EPR/2.5",
+      "categoryId": "mines-special",
+      "queries": [
+        "epr/2.5 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-050",
+      "title": "IMZR-11",
+      "categoryId": "mines-special",
+      "queries": [
+        "imzr-11 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ref-v9-fi-jaamiina-m41",
+      "title": "Jäämiina m/41 / ARSA",
+      "categoryId": "mines-special",
+      "queries": [
+        "jäämiina m/41 mine",
+        "arsa mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-048",
+      "title": "Larmmina 2",
+      "categoryId": "mines-special",
+      "queries": [
+        "larmmina 2"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ordnance-v29-ga-0394",
+      "title": "M10 practice",
+      "categoryId": "mines-special",
+      "queries": [
+        "m10 practice mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ordnance-v29-ga-0395",
+      "title": "M12 practice series",
+      "categoryId": "mines-special",
+      "queries": [
+        "m12 practice series mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ordnance-v27-m131-mopms-sistema-rasseivaniya-min",
+      "title": "M131 MOPMS — система рассеивания мин",
+      "categoryId": "mines-special",
+      "queries": [
+        "m131 mopms mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ordnance-v27-m139-volcano-sistema-rasseivaniya-min",
+      "title": "M139 Volcano — система рассеивания мин",
+      "categoryId": "mines-special",
+      "queries": [
+        "m139 volcano mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ordnance-v29-ga-0396",
+      "title": "M16A1 inert",
+      "categoryId": "mines-special",
+      "queries": [
+        "m16a1 inert mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ordnance-v29-ga-0397",
+      "title": "M20 practice",
+      "categoryId": "mines-special",
+      "queries": [
+        "m20 practice mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "mine-audit-v25-us-m23",
+      "title": "M23",
+      "categoryId": "mines-special",
+      "queries": [
+        "m23 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ordnance-v29-ga-0398",
+      "title": "M35 practice",
+      "categoryId": "mines-special",
+      "queries": [
+        "m35 practice mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-m49a1-signal-mine",
+      "title": "M49A1 — сигнальная мина",
+      "categoryId": "mines-special",
+      "queries": [
+        "m49a1 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ordnance-v29-ga-0384",
+      "title": "M56 mine dispensing subsystem",
+      "categoryId": "mines-special",
+      "queries": [
+        "m56 mine dispensing subsystem"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ordnance-v29-ga-0399",
+      "title": "M68 practice",
+      "categoryId": "mines-special",
+      "queries": [
+        "m68 practice mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ordnance-v29-ga-0400",
+      "title": "M69 practice",
+      "categoryId": "mines-special",
+      "queries": [
+        "m69 practice mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ordnance-v29-ga-0401",
+      "title": "M79 practice",
+      "categoryId": "mines-special",
+      "queries": [
+        "m79 practice mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ordnance-v29-ga-0402",
+      "title": "M8 practice",
+      "categoryId": "mines-special",
+      "queries": [
+        "m8 practice mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ordnance-v29-ga-0403",
+      "title": "M80 practice",
+      "categoryId": "mines-special",
+      "queries": [
+        "m80 practice mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ordnance-v29-ga-0404",
+      "title": "M81 practice",
+      "categoryId": "mines-special",
+      "queries": [
+        "m81 practice mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ordnance-v29-ga-0385",
+      "title": "M87 Volcano",
+      "categoryId": "mines-special",
+      "queries": [
+        "m87 volcano mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ordnance-v29-ga-0386",
+      "title": "M88 Volcano",
+      "categoryId": "mines-special",
+      "queries": [
+        "m88 volcano mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ordnance-v29-ga-0405",
+      "title": "M8A1 practice",
+      "categoryId": "mines-special",
+      "queries": [
+        "m8a1 practice mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-061",
+      "title": "MDM-5",
+      "categoryId": "mines-special",
+      "queries": [
+        "mdm-5 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-062",
+      "title": "MDM-6",
+      "categoryId": "mines-special",
+      "queries": [
+        "mdm-6 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-063",
+      "title": "MDM-7 / MDM-7B",
+      "categoryId": "mines-special",
+      "queries": [
+        "mdm-7 mine",
+        "mdm-7b mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-064",
+      "title": "MDM8-2B",
+      "categoryId": "mines-special",
+      "queries": [
+        "mdm8-2b mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-046",
+      "title": "MI ECL CB 58",
+      "categoryId": "mines-special",
+      "queries": [
+        "mi ecl cb 58 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-047",
+      "title": "MI ECL LDU F1B",
+      "categoryId": "mines-special",
+      "queries": [
+        "mi ecl ldu f1b mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-mpr-m85",
+      "title": "MPR-M85",
+      "categoryId": "mines-special",
+      "queries": [
+        "mpr-m85 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-011",
+      "title": "MUSPA / MUSA",
+      "categoryId": "mines-special",
+      "queries": [
+        "muspa mine",
+        "musa mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-058",
+      "title": "Mila-6C",
+      "categoryId": "mines-special",
+      "queries": [
+        "mila-6c mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-056",
+      "title": "Minforsat 1",
+      "categoryId": "mines-special",
+      "queries": [
+        "minforsat 1 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-057",
+      "title": "Piovra / «Пьовра»",
+      "categoryId": "mines-special",
+      "queries": [
+        "piovra / mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-slam-family",
+      "title": "SLAM M2 / M4",
+      "categoryId": "mines-special",
+      "queries": [
+        "slam m2 mine",
+        "m4 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ordnance-v29-ga-0387",
+      "title": "Spider XM10",
+      "categoryId": "mines-special",
+      "queries": [
+        "spider xm10 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ordnance-v29-ga-0388",
+      "title": "Spider XM332 — комплект блока управления",
+      "categoryId": "mines-special",
+      "queries": [
+        "spider xm332 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ordnance-v29-ga-0389",
+      "title": "Spider XM8 — MGL",
+      "categoryId": "mines-special",
+      "queries": [
+        "spider xm8 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ordnance-v29-ga-0390",
+      "title": "Spider XM9 — ERTS",
+      "categoryId": "mines-special",
+      "queries": [
+        "spider xm9 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ordnance-v29-ga-0391",
+      "title": "Spider XM96 — учебный блок MCAT",
+      "categoryId": "mines-special",
+      "queries": [
+        "spider xm96 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-045",
+      "title": "VAR/IG",
+      "categoryId": "mines-special",
+      "queries": [
+        "var/ig mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-059",
+      "title": "VS-SS-22",
+      "categoryId": "mines-special",
+      "queries": [
+        "vs-ss-22 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-044",
+      "title": "VS-T",
+      "categoryId": "mines-special",
+      "queries": [
+        "vs-t mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "eng-pdf-v7-049",
+      "title": "VS-TA 90",
+      "categoryId": "mines-special",
+      "queries": [
+        "vs-ta 90 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ordnance-v29-ga-0392",
+      "title": "XM204 Wide Area Top Attack Munition",
+      "categoryId": "mines-special",
+      "queries": [
+        "xm204 wide area top attack munition mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ordnance-v29-ga-0393",
+      "title": "XM94 SLAM",
+      "categoryId": "mines-special",
+      "queries": [
+        "xm94 slam mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    },
+    {
+      "id": "ordnance-v27-sm-320",
+      "title": "СМ-320",
+      "categoryId": "mines-special",
+      "queries": [
+        "sm-320 mine"
+      ],
+      "searched": true,
+      "bundledModels": []
+    }
+  ]
+}

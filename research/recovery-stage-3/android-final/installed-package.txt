@@ -1,0 +1,146 @@
+Activity Resolver Table:
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        b8f4a01 ru.dlyasvoih.app/.MainActivity filter 25500a6
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      androidx.profileinstaller.action.SAVE_PROFILE:
+        ac80ae7 ru.dlyasvoih.app/androidx.profileinstaller.ProfileInstallReceiver filter 1408132
+          Action: "androidx.profileinstaller.action.SAVE_PROFILE"
+      androidx.profileinstaller.action.INSTALL_PROFILE:
+        ac80ae7 ru.dlyasvoih.app/androidx.profileinstaller.ProfileInstallReceiver filter 293694
+          Action: "androidx.profileinstaller.action.INSTALL_PROFILE"
+      androidx.profileinstaller.action.SKIP_FILE:
+        ac80ae7 ru.dlyasvoih.app/androidx.profileinstaller.ProfileInstallReceiver filter aa5853d
+          Action: "androidx.profileinstaller.action.SKIP_FILE"
+      androidx.profileinstaller.action.BENCHMARK_OPERATION:
+        ac80ae7 ru.dlyasvoih.app/androidx.profileinstaller.ProfileInstallReceiver filter e806e83
+          Action: "androidx.profileinstaller.action.BENCHMARK_OPERATION"
+
+Permissions:
+  Permission [ru.dlyasvoih.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (2183d68):
+    sourcePackage=ru.dlyasvoih.app
+    uid=10167 gids=null type=0 prot=signature
+    perm=Permission{af4e56b ru.dlyasvoih.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+
+Registered ContentProviders:
+  ru.dlyasvoih.app/.data.update.UpdateFileProvider:
+    Provider{3ee78c8 ru.dlyasvoih.app/.data.update.UpdateFileProvider}
+  ru.dlyasvoih.app/androidx.startup.InitializationProvider:
+    Provider{8068d61 ru.dlyasvoih.app/androidx.startup.InitializationProvider}
+
+ContentProvider Authorities:
+  [ru.dlyasvoih.app.androidx-startup]:
+    Provider{8068d61 ru.dlyasvoih.app/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{3e3f086 ru.dlyasvoih.app}
+  [ru.dlyasvoih.app.updates]:
+    Provider{3ee78c8 ru.dlyasvoih.app/.data.update.UpdateFileProvider}
+      applicationInfo=ApplicationInfo{8fa6d47 ru.dlyasvoih.app}
+
+Key Set Manager:
+  [ru.dlyasvoih.app]
+      Signing KeySets: 35
+
+Packages:
+  Package [ru.dlyasvoih.app] (d3d9e9d):
+    userId=10167
+    pkg=Package{3fe8f12 ru.dlyasvoih.app}
+    codePath=/data/app/~~ItyJQ4IKNYpKIMROUYb8qw==/ru.dlyasvoih.app-W-V_SsNmaRr8Fw250uJ0kw==
+    resourcePath=/data/app/~~ItyJQ4IKNYpKIMROUYb8qw==/ru.dlyasvoih.app-W-V_SsNmaRr8Fw250uJ0kw==
+    legacyNativeLibraryDir=/data/app/~~ItyJQ4IKNYpKIMROUYb8qw==/ru.dlyasvoih.app-W-V_SsNmaRr8Fw250uJ0kw==/lib
+    primaryCpuAbi=x86_64
+    secondaryCpuAbi=null
+    versionCode=138 minSdk=26 targetSdk=36
+    versionName=0.3.134
+    splits=[base]
+    apkSigningVersion=3
+    applicationInfo=ApplicationInfo{3fe8f12 ru.dlyasvoih.app}
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    queriesPackages=[]
+    dataDir=/data/user/0/ru.dlyasvoih.app
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    timeStamp=2026-10-20 09:58:35
+    firstInstallTime=2026-10-20 09:57:50
+    lastUpdateTime=2026-10-20 09:58:36
+    signatures=PackageSignatures{ce696e3 version:3, signatures:[1123f4e6], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    declared permissions:
+      ru.dlyasvoih.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature, INSTALLED
+    requested permissions:
+      android.permission.INTERNET
+      android.permission.REQUEST_INSTALL_PACKAGES
+      ru.dlyasvoih.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+    install permissions:
+      android.permission.INTERNET: granted=true
+      ru.dlyasvoih.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+    User 0: ceDataInode=131129 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=false enabled=0 instant=false virtual=false
+      gids=[3003]
+      runtime permissions:
+
+Queries:
+  system apps queryable: false
+  queries via package name:
+  queries via intent:
+  queryable via interaction:
+    User 0:
+
+Package Changes:
+  Sequence number=353
+  User 0:
+    seq=0, package=com.google.android.permissioncontroller
+    seq=1, package=com.android.systemui
+    seq=4, package=com.google.android.inputmethod.latin
+    seq=6, package=com.google.android.cellbroadcastreceiver
+    seq=9, package=com.google.android.sdksetup
+    seq=19, package=com.google.android.youtube
+    seq=23, package=com.google.android.apps.youtube.music
+    seq=103, package=com.android.carrierdefaultapp
+    seq=289, package=com.google.android.apps.messaging
+    seq=290, package=com.android.settings
+    seq=299, package=com.google.android.googlequicksearchbox
+    seq=300, package=com.google.android.gsf
+    seq=302, package=com.google.android.apps.docs
+    seq=306, package=com.google.android.calendar
+    seq=307, package=com.android.camera2
+    seq=308, package=com.android.nfc
+    seq=310, package=com.android.traceur
+    seq=311, package=com.android.stk
+    seq=312, package=com.google.android.apps.maps
+    seq=314, package=com.google.android.apps.photos
+    seq=317, package=com.google.android.apps.wellbeing
+    seq=332, package=com.google.android.gm
+    seq=336, package=com.google.android.partnersetup
+    seq=341, package=com.google.android.projection.gearhead
+    seq=342, package=com.google.android.setupwizard
+    seq=347, package=com.google.android.videos
+    seq=351, package=com.google.android.gms
+    seq=352, package=ru.dlyasvoih.app
+
+
+Dexopt state:
+  [ru.dlyasvoih.app]
+    path: /data/app/~~ItyJQ4IKNYpKIMROUYb8qw==/ru.dlyasvoih.app-W-V_SsNmaRr8Fw250uJ0kw==/base.apk
+      x86_64: [status=speed-profile] [reason=install]
+
+
+Compiler stats:
+  [ru.dlyasvoih.app]
+     base.apk - 152
+
+APEX session state:
+
+Active APEX packages:
+
+
+Inactive APEX packages:
+
+
+Factory APEX packages:
+
+

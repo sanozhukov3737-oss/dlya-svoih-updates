@@ -19,19 +19,27 @@ import androidx.compose.ui.semantics.clearAndSetSemantics
 import androidx.compose.ui.unit.dp
 import ru.dlyasvoih.app.R
 
-private data class MenuIconSpec(val drawable: Int = 0, val assetPath: String? = null)
+private data class MenuIconSpec(val drawable: Int = 0, val photo: Int = 0)
 
-// Representative exterior photographs reuse the bundled, reviewed catalog thumbnails.
-// Other groups use decorative vector pictograms. See docs/qa/menu-icons-v037.json.
+// Menu photos are application resources, independent of catalog pack replacement.
+// These are unchanged copies of the previously reviewed representative thumbnails.
 private val menuIconSpecs = mapOf(
     "AMMUNITION" to MenuIconSpec(drawable = R.drawable.icon_catalog_ammunition),
     "ATGM" to MenuIconSpec(drawable = R.drawable.icon_catalog_atgm),
     "atgm-reference" to MenuIconSpec(drawable = R.drawable.icon_catalog_atgm),
     "SVO" to MenuIconSpec(drawable = R.drawable.icon_catalog_drone),
     "sources" to MenuIconSpec(drawable = R.drawable.icon_catalog_drone),
+    "@uav" to MenuIconSpec(drawable = R.drawable.icon_catalog_drone),
+    "uav-drop-munitions" to MenuIconSpec(drawable = R.drawable.icon_catalog_air_munition),
+    "uav-warheads" to MenuIconSpec(drawable = R.drawable.icon_catalog_charges),
+    "uav-release-systems" to MenuIconSpec(drawable = R.drawable.icon_catalog_drone),
+    "munition-components" to MenuIconSpec(drawable = R.drawable.icon_catalog_charges),
+    "rocket-motors" to MenuIconSpec(drawable = R.drawable.icon_catalog_rocket),
+    "weapon-components" to MenuIconSpec(drawable = R.drawable.icon_catalog_artillery),
+    "vehicle-components" to MenuIconSpec(drawable = R.drawable.icon_catalog_catalog),
     "MEDICINE" to MenuIconSpec(drawable = R.drawable.icon_catalog_first_aid),
     "first-aid" to MenuIconSpec(drawable = R.drawable.icon_catalog_first_aid),
-    "@engineering" to MenuIconSpec(assetPath = "thumbs/reference-v6-c599de7b0d152112.webp"),
+    "@engineering" to MenuIconSpec(photo = R.drawable.menu_photo_antitank),
     "@initiation" to MenuIconSpec(drawable = R.drawable.icon_catalog_fuzes),
     "fuzes" to MenuIconSpec(drawable = R.drawable.icon_catalog_fuzes),
     "@all" to MenuIconSpec(drawable = R.drawable.icon_catalog_catalog),
@@ -43,17 +51,17 @@ private val menuIconSpecs = mapOf(
     "cannon-ammunition" to MenuIconSpec(drawable = R.drawable.icon_catalog_cannon_ammunition),
     "rockets-recoilless" to MenuIconSpec(drawable = R.drawable.icon_catalog_rocket),
     "air-munitions" to MenuIconSpec(drawable = R.drawable.icon_catalog_air_munition),
-    "submunitions" to MenuIconSpec(assetPath = "thumbs/reference-v6-1ee2339bfba41d1a.webp"),
+    "submunitions" to MenuIconSpec(photo = R.drawable.menu_photo_submunitions),
     "audit-candidates" to MenuIconSpec(drawable = R.drawable.icon_catalog_audit),
     "charges" to MenuIconSpec(drawable = R.drawable.icon_catalog_charges),
-    "mines-antipersonnel" to MenuIconSpec(assetPath = "thumbs/reference-v6-ce04e677b1d11765.webp"),
-    "mines-antitank" to MenuIconSpec(assetPath = "thumbs/reference-v6-c599de7b0d152112.webp"),
+    "mines-antipersonnel" to MenuIconSpec(photo = R.drawable.menu_photo_antipersonnel),
+    "mines-antitank" to MenuIconSpec(photo = R.drawable.menu_photo_antitank),
     "mines-antibottom" to MenuIconSpec(drawable = R.drawable.icon_catalog_mines_antibottom),
-    "mines-antivehicle" to MenuIconSpec(assetPath = "thumbs/reference-v6-df08e881d21bb13e.webp"),
-    "mines-naval" to MenuIconSpec(assetPath = "thumbs/reference-v7-080-0.webp"),
+    "mines-antivehicle" to MenuIconSpec(photo = R.drawable.menu_photo_antivehicle),
+    "mines-naval" to MenuIconSpec(photo = R.drawable.menu_photo_naval),
     "mines-anchored" to MenuIconSpec(drawable = R.drawable.icon_catalog_mines_anchored),
-    "mines-antiland" to MenuIconSpec(assetPath = "thumbs/reference-v7-065-0.webp"),
-    "mines-special" to MenuIconSpec(assetPath = "thumbs/reference-v7-054-0.webp"),
+    "mines-antiland" to MenuIconSpec(photo = R.drawable.menu_photo_antiland),
+    "mines-special" to MenuIconSpec(photo = R.drawable.menu_photo_special),
     "ied" to MenuIconSpec(drawable = R.drawable.icon_catalog_ied),
     "ignition-electric" to MenuIconSpec(drawable = R.drawable.icon_catalog_ignition_electric),
     "detonators-caps" to MenuIconSpec(drawable = R.drawable.icon_catalog_detonators_caps),
@@ -72,10 +80,15 @@ private val menuIconSpecs = mapOf(
     "detonators-electronic" to MenuIconSpec(drawable = R.drawable.icon_catalog_detonators_electronic),
  )
 
+internal fun catalogMenuIconResource(key: String, useRepresentativePhoto: Boolean = true): Int {
+    val spec = menuIconSpecs[key] ?: MenuIconSpec(drawable = R.drawable.icon_catalog_catalog)
+    return if (useRepresentativePhoto && spec.photo != 0) spec.photo
+        else if (spec.drawable != 0) spec.drawable else R.drawable.icon_catalog_ammunition
+}
+
 /** Offline decorative menu icon. The containing row supplies its accessible label. */
 @Composable
 fun CatalogMenuIcon(key: String, modifier: Modifier = Modifier, useRepresentativePhoto: Boolean = true) {
-    val spec = menuIconSpecs[key] ?: MenuIconSpec(drawable = R.drawable.icon_catalog_catalog)
     val shape = RoundedCornerShape(14.dp)
     Box(
         modifier = modifier
@@ -87,16 +100,11 @@ fun CatalogMenuIcon(key: String, modifier: Modifier = Modifier, useRepresentativ
             .clearAndSetSemantics { },
         contentAlignment = Alignment.Center
     ) {
-        val path = spec.assetPath
-        if (path != null && useRepresentativePhoto) {
-            LocalGuideImage(path, "", Modifier.fillMaxSize(), fit = true)
-        } else {
-            Image(
-                painter = painterResource(if (spec.drawable != 0) spec.drawable else R.drawable.icon_catalog_ammunition),
-                contentDescription = null,
-                contentScale = ContentScale.Fit,
-                modifier = Modifier.fillMaxSize()
-            )
-        }
+        Image(
+            painter = painterResource(catalogMenuIconResource(key, useRepresentativePhoto)),
+            contentDescription = null,
+            contentScale = ContentScale.Fit,
+            modifier = Modifier.fillMaxSize()
+        )
     }
 }

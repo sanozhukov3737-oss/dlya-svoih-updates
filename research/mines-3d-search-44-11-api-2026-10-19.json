@@ -1,0 +1,1809 @@
+{
+  "checkedAt": "2026-10-19",
+  "range": [
+    501,
+    544
+  ],
+  "cards": [
+    {
+      "id": "ordnance-v27-z-001m-armeniya",
+      "title": "Z-001M (Армения)",
+      "number": 501,
+      "apiQueries": [
+        "Z-001M mine",
+        "Z001M landmine",
+        "З-001М мина"
+      ],
+      "status": "lead",
+      "note": "В поисковом индексе агрегатора есть предложение Z-001M на Cults. Индивидуальный первичный исходник, автор и лицензия не установлены; покупка и скачивание не выполнялись. Происхождение и соответствие конкретному варианту не уточнялись по одному названию.",
+      "sources": [
+        {
+          "title": "Z-001M anti-personnel (AP) Landmine — упоминание в Yeggi",
+          "url": "https://www.yeggi.com/q/airsoft%2Bmine/",
+          "author": "Поисковый агрегатор Yeggi",
+          "license": "Автор исходника и лицензия не установлены",
+          "verification": "Упоминание товара Cults видно только в поисковом индексе агрегатора. Индивидуальная первичная страница и файл не установлены.",
+          "designationConfidence": "index-lead-only"
+        }
+      ],
+      "statusLabel": "Упоминание · первичный файл не установлен",
+      "downloadedThisPass": false
+    },
+    {
+      "id": "ordnance-v27-pmn-e-armeniya",
+      "title": "ПМН-Э (Армения)",
+      "number": 502,
+      "apiQueries": [
+        "PMN-E mine",
+        "ПМН-Э мина"
+      ],
+      "status": "variant",
+      "note": "Проверены PMN-E и ПМН-Э. Родственные модели ПМН не подтверждают отдельное исполнение ПМН-Э; подходящий наружный файл для этой карточки не получен.",
+      "sources": [],
+      "statusLabel": "Точное исполнение не подтверждено",
+      "downloadedThisPass": false
+    },
+    {
+      "id": "ordnance-v27-p3-jumping-pakistan",
+      "title": "P3 Jumping (Пакистан)",
+      "number": 503,
+      "apiQueries": [
+        "P3 Jumping mine",
+        "Pakistan P3 mine"
+      ],
+      "status": "none",
+      "note": "Проверены P3 Jumping и Pakistan P3 mine. Результаты по самолётам P-3, дробовикам и геологическим моделям не относятся к пакистанской карточке. Наружный файл не получен.",
+      "sources": [],
+      "statusLabel": "Подходящий файл не получен в этом проходе",
+      "downloadedThisPass": false
+    },
+    {
+      "id": "ordnance-v29-ga-0377",
+      "title": "M86",
+      "number": 504,
+      "apiQueries": [
+        "M86 PDM",
+        "M86 mine"
+      ],
+      "status": "excluded",
+      "note": "Модель M86 Grenade на BlendSwap доступна с отметкой CC0, однако на первичном превью изображены обычные ручные гранаты. Они не соответствуют секторной форме M86 PDM. Модель не скачивалась и не привязывалась к карточке.",
+      "sources": [
+        {
+          "title": "M86 Grenade",
+          "url": "https://blendswap.com/blend/11920",
+          "author": "Benjamin97",
+          "license": "CC0",
+          "verification": "Название и лицензия прочитаны на первичной странице; превью осмотрено в браузере. Изображена ручная граната, её форма не соответствует секторному M86 PDM.",
+          "designationConfidence": "rejected-different-object"
+        }
+      ],
+      "statusLabel": "Совпадение исключено после проверки",
+      "downloadedThisPass": false
+    },
+    {
+      "id": "ordnance-v29-ga-0384",
+      "title": "M56 mine dispensing subsystem",
+      "number": 505,
+      "apiQueries": [
+        "M56 mine dispensing",
+        "M56 mine dispenser"
+      ],
+      "status": "none",
+      "note": "Проверен точный индекс этой карточки. Подсистема M56, контейнеры M87/M88 и система M139 — отдельные объекты. Найденная ранее модель системы M139 не засчитана за самостоятельный файл контейнера или подсистемы; подходящий файл в этом проходе не получен.",
+      "sources": [],
+      "statusLabel": "Подходящий файл не получен в этом проходе",
+      "downloadedThisPass": false
+    },
+    {
+      "id": "ordnance-v29-ga-0385",
+      "title": "M87 Volcano",
+      "number": 506,
+      "apiQueries": [
+        "M87 Volcano",
+        "M87 mine canister"
+      ],
+      "status": "none",
+      "note": "Проверен точный индекс этой карточки. Подсистема M56, контейнеры M87/M88 и система M139 — отдельные объекты. Найденная ранее модель системы M139 не засчитана за самостоятельный файл контейнера или подсистемы; подходящий файл в этом проходе не получен.",
+      "sources": [],
+      "statusLabel": "Подходящий файл не получен в этом проходе",
+      "downloadedThisPass": false
+    },
+    {
+      "id": "ordnance-v29-ga-0386",
+      "title": "M88 Volcano",
+      "number": 507,
+      "apiQueries": [
+        "M88 Volcano",
+        "M88 training canister"
+      ],
+      "status": "none",
+      "note": "Проверен точный индекс этой карточки. Подсистема M56, контейнеры M87/M88 и система M139 — отдельные объекты. Найденная ранее модель системы M139 не засчитана за самостоятельный файл контейнера или подсистемы; подходящий файл в этом проходе не получен.",
+      "sources": [],
+      "statusLabel": "Подходящий файл не получен в этом проходе",
+      "downloadedThisPass": false
+    },
+    {
+      "id": "ordnance-v29-ga-0387",
+      "title": "Spider XM10",
+      "number": 508,
+      "apiQueries": [
+        "Spider XM10",
+        "M7 Spider mine"
+      ],
+      "status": "none",
+      "note": "Проверено отдельное обозначение компонента Spider. Модели пауков, фантастических spider mines и винтовки HK XM8 не относятся к этим узлам. Фотографии, справочные перечни и схемы упаковки не подтверждают цифровой наружный 3D-файл.",
+      "sources": [],
+      "statusLabel": "Подходящий файл не получен в этом проходе",
+      "downloadedThisPass": false
+    },
+    {
+      "id": "ordnance-v29-ga-0388",
+      "title": "Spider XM332 — комплект блока управления",
+      "number": 509,
+      "apiQueries": [
+        "Spider XM332",
+        "XM332 control unit"
+      ],
+      "status": "none",
+      "note": "Проверено отдельное обозначение компонента Spider. Модели пауков, фантастических spider mines и винтовки HK XM8 не относятся к этим узлам. Фотографии, справочные перечни и схемы упаковки не подтверждают цифровой наружный 3D-файл.",
+      "sources": [],
+      "statusLabel": "Подходящий файл не получен в этом проходе",
+      "downloadedThisPass": false
+    },
+    {
+      "id": "ordnance-v29-ga-0389",
+      "title": "Spider XM8 — MGL",
+      "number": 510,
+      "apiQueries": [
+        "Spider XM8",
+        "XM8 MGL"
+      ],
+      "status": "none",
+      "note": "Проверено отдельное обозначение компонента Spider. Модели пауков, фантастических spider mines и винтовки HK XM8 не относятся к этим узлам. Фотографии, справочные перечни и схемы упаковки не подтверждают цифровой наружный 3D-файл.",
+      "sources": [],
+      "statusLabel": "Подходящий файл не получен в этом проходе",
+      "downloadedThisPass": false
+    },
+    {
+      "id": "ordnance-v29-ga-0390",
+      "title": "Spider XM9 — ERTS",
+      "number": 511,
+      "apiQueries": [
+        "Spider XM9",
+        "XM9 ERTS"
+      ],
+      "status": "none",
+      "note": "Проверено отдельное обозначение компонента Spider. Модели пауков, фантастических spider mines и винтовки HK XM8 не относятся к этим узлам. Фотографии, справочные перечни и схемы упаковки не подтверждают цифровой наружный 3D-файл.",
+      "sources": [],
+      "statusLabel": "Подходящий файл не получен в этом проходе",
+      "downloadedThisPass": false
+    },
+    {
+      "id": "ordnance-v29-ga-0391",
+      "title": "Spider XM96 — учебный блок MCAT",
+      "number": 512,
+      "apiQueries": [
+        "Spider XM96",
+        "XM96 MCAT"
+      ],
+      "status": "none",
+      "note": "Проверено отдельное обозначение компонента Spider. Модели пауков, фантастических spider mines и винтовки HK XM8 не относятся к этим узлам. Фотографии, справочные перечни и схемы упаковки не подтверждают цифровой наружный 3D-файл.",
+      "sources": [],
+      "statusLabel": "Подходящий файл не получен в этом проходе",
+      "downloadedThisPass": false
+    },
+    {
+      "id": "ordnance-v29-ga-0392",
+      "title": "XM204 Wide Area Top Attack Munition",
+      "number": 513,
+      "apiQueries": [
+        "XM204 munition",
+        "XM204 WAM"
+      ],
+      "status": "none",
+      "note": "Проверен точный индекс XM204 Wide Area Top Attack Munition. Результаты по одноимённому старому артиллерийскому изделию и фантастическому крейсеру исключены. Подходящий наружный файл не получен.",
+      "sources": [],
+      "statusLabel": "Подходящий файл не получен в этом проходе",
+      "downloadedThisPass": false
+    },
+    {
+      "id": "ordnance-v29-ga-0393",
+      "title": "XM94 SLAM",
+      "number": 514,
+      "apiQueries": [
+        "XM94 SLAM",
+        "SLAM landmine"
+      ],
+      "status": "variant",
+      "note": "Проверен ранний индекс XM94 SLAM. Игровое SLAM из Half-Life и более поздние исполнения M2/M3/M4 не подтверждают точную раннюю модель XM94. Подходящий файл не получен.",
+      "sources": [],
+      "statusLabel": "Точное исполнение не подтверждено",
+      "downloadedThisPass": false
+    },
+    {
+      "id": "ordnance-v29-ga-0394",
+      "title": "M10 practice",
+      "number": 515,
+      "apiQueries": [
+        "M10 practice mine",
+        "M10 landmine"
+      ],
+      "status": "none",
+      "note": "Проверен конкретный учебный индекс. Веб-страницы физических макетов и общие модели боевого семейства не считались самостоятельным цифровым исходником учебного исполнения. Скан M33 относится к другому объекту; подходящий файл не получен.",
+      "sources": [],
+      "statusLabel": "Подходящий файл не получен в этом проходе",
+      "downloadedThisPass": false
+    },
+    {
+      "id": "ordnance-v29-ga-0395",
+      "title": "M12 practice series",
+      "number": 516,
+      "apiQueries": [
+        "M12 practice mine",
+        "M12 mine training"
+      ],
+      "status": "none",
+      "note": "Проверен конкретный учебный индекс. Веб-страницы физических макетов и общие модели боевого семейства не считались самостоятельным цифровым исходником учебного исполнения. Скан M33 относится к другому объекту; подходящий файл не получен.",
+      "sources": [],
+      "statusLabel": "Подходящий файл не получен в этом проходе",
+      "downloadedThisPass": false
+    },
+    {
+      "id": "ordnance-v29-ga-0396",
+      "title": "M16A1 inert",
+      "number": 517,
+      "apiQueries": [
+        "M16A1 inert mine",
+        "M16A1 training mine"
+      ],
+      "status": "variant",
+      "note": "Проверено конкретное инертное/учебное исполнение. Сохранённая ранее модель семейства M16 не подтверждает маркировку M16A1 Inert или Training M81. Модели винтовки M16A1 исключены; новый файл для этой карточки не получен.",
+      "sources": [],
+      "statusLabel": "Точное исполнение не подтверждено",
+      "downloadedThisPass": false
+    },
+    {
+      "id": "ordnance-v29-ga-0397",
+      "title": "M20 practice",
+      "number": 518,
+      "apiQueries": [
+        "M20 practice mine",
+        "M20 landmine"
+      ],
+      "status": "candidate",
+      "note": "Подтверждена бесплатная игровая M20 от cranksdev. Наружный вид осмотрен: название автора — M20 Anti-Tank, но отдельное подтверждение учебного исполнения Practice не получено. Официальная кнопка скачивания требует входа. Лицензия Royalty Free ограничивает отдельную передачу модели; в ZIP с GLB файл не включён.",
+      "sources": [
+        {
+          "title": "M20 Anti-Tank Game Ready PBR Asset",
+          "url": "https://www.cgtrader.com/free-3d-models/military/rocketry/m20-game-ready",
+          "author": "cranksdev",
+          "license": "Royalty Free License (no AI)",
+          "verification": "Первичная страница прочитана, наружный вид осмотрен в браузере. Free Download открыл окно входа. Указаны BLEND 43.2 MB, OBJ/FBX/STL; файл не получен.",
+          "designationConfidence": "M20-labelled-practice-variant-unconfirmed",
+          "downloadRequiresLogin": true,
+          "formatsAdvertised": [
+            "BLEND",
+            "OBJ",
+            "FBX",
+            "STL"
+          ],
+          "advertisedBlendBytesApprox": 43200000
+        },
+        {
+          "title": "Условия Royalty Free License · CGTrader",
+          "url": "https://help.cgtrader.com/hc/en-us/articles/360015124437-Royalty-Free-License",
+          "author": "CGTrader Help Center",
+          "license": "Требуется использование как Incorporated Product; самостоятельная передача исходного ресурса ограничена",
+          "verification": "Первичный справочный текст прочитан. Для применения в ПО требуется препятствовать самостоятельному получению модели. Сохранение в распространяемый ZIP с отдельными GLB не согласовано."
+        }
+      ],
+      "statusLabel": "Кандидат · требуется вход и проверка условий",
+      "downloadedThisPass": false
+    },
+    {
+      "id": "ordnance-v29-ga-0398",
+      "title": "M35 practice",
+      "number": 519,
+      "apiQueries": [
+        "M35 practice mine",
+        "M35 landmine"
+      ],
+      "status": "none",
+      "note": "Проверен конкретный учебный индекс. Веб-страницы физических макетов и общие модели боевого семейства не считались самостоятельным цифровым исходником учебного исполнения. Скан M33 относится к другому объекту; подходящий файл не получен.",
+      "sources": [],
+      "statusLabel": "Подходящий файл не получен в этом проходе",
+      "downloadedThisPass": false
+    },
+    {
+      "id": "ordnance-v29-ga-0399",
+      "title": "M68 practice",
+      "number": 520,
+      "apiQueries": [
+        "M68 practice mine",
+        "M33 Claymore training"
+      ],
+      "status": "viewer",
+      "note": "Музей публикует 3D-скан учебного корпуса M33 — компонента комплекта M68. Открытое скачивание отключено, лицензия на распространение не указана. Полный комплект M68 этим сканом не подтверждён. У другой модели Claymore фраза Some practice относится к работе автора, а не к учебному варианту мины.",
+      "sources": [
+        {
+          "title": "SAS M33 APERS Mine (Practice)",
+          "url": "https://sketchfab.com/3d-models/sas-m33-apers-mine-practice-d6b577fe074f48f68f997c7c318d7e02",
+          "author": "Combined Military Services Museum",
+          "license": "Открытая лицензия не указана; isDownloadable=false",
+          "verification": "Прочитаны индивидуальные первичные метаданные и описание музейного образца. Подтверждён корпус M33, а не полный комплект M68.",
+          "uid": "d6b577fe074f48f68f997c7c318d7e02",
+          "isDownloadable": false,
+          "designationConfidence": "source-labelled-component-only"
+        },
+        {
+          "title": "Special Forces Section · музейная коллекция",
+          "url": "https://cmsm.co.uk/virtual-museum/special-forces-section",
+          "author": "Combined Military Services Museum",
+          "license": "Открытая лицензия на 3D-файлы на этой странице не заявлена",
+          "verification": "Первичная страница музея подтверждает свою 3D-модель M33 и отдельно сумку для неё."
+        },
+        {
+          "title": "Claymore m18",
+          "url": "https://sketchfab.com/3d-models/claymore-m18-0e44b2adeb974830804c3ec68c0920f0",
+          "author": "zhezhela",
+          "license": "CC BY 4.0",
+          "verification": "Прочитаны индивидуальные метаданные. Фраза Some practice описывает упражнение автора в моделировании; она не обозначает учебный комплект M68.",
+          "uid": "0e44b2adeb974830804c3ec68c0920f0",
+          "isDownloadable": true,
+          "designationConfidence": "related-M18-only"
+        }
+      ],
+      "statusLabel": "3D-просмотрщик · открытое скачивание отключено",
+      "downloadedThisPass": false
+    },
+    {
+      "id": "ordnance-v29-ga-0400",
+      "title": "M69 practice",
+      "number": 521,
+      "apiQueries": [
+        "M69 practice mine",
+        "M69 landmine"
+      ],
+      "status": "excluded",
+      "note": "Найдены 3D-модели ручной учебной гранаты M69. Это другой объект, чем карточка учебного проекта мины M69; модель гранаты не подставлялась.",
+      "sources": [
+        {
+          "title": "M69 practice hand grenade",
+          "url": "https://sketchfab.com/3d-models/m69-practice-hand-grenade-4b8d7aff768b476cad0b29a0be3dc30b",
+          "author": "Maksim Sokranskiy",
+          "license": "Для текущей карточки не применяется",
+          "verification": "Первичная выдача называет объект hand grenade, а не mine."
+        }
+      ],
+      "statusLabel": "Совпадение исключено после проверки",
+      "downloadedThisPass": false
+    },
+    {
+      "id": "ordnance-v29-ga-0401",
+      "title": "M79 practice",
+      "number": 522,
+      "apiQueries": [
+        "M79 practice mine",
+        "M79 inert mine"
+      ],
+      "status": "excluded",
+      "note": "Найдены модели гранатомёта M79. Индекс совпадает, но объект не является инертной учебной миной M79; подходящий наружный файл не получен.",
+      "sources": [
+        {
+          "title": "M79 Grenade Launcher",
+          "url": "https://www.cgtrader.com/3d-models/military/gun/m79-grenade-launcher",
+          "author": "Не требуется для исключения",
+          "license": "Не проверялась: другой объект",
+          "verification": "Первичная страница в выдаче прямо называет гранатомёт."
+        }
+      ],
+      "statusLabel": "Совпадение исключено после проверки",
+      "downloadedThisPass": false
+    },
+    {
+      "id": "ordnance-v29-ga-0402",
+      "title": "M8 practice",
+      "number": 523,
+      "apiQueries": [
+        "M8 practice mine",
+        "M8 landmine"
+      ],
+      "status": "none",
+      "note": "Проверен конкретный учебный индекс. Веб-страницы физических макетов и общие модели боевого семейства не считались самостоятельным цифровым исходником учебного исполнения. Скан M33 относится к другому объекту; подходящий файл не получен.",
+      "sources": [],
+      "statusLabel": "Подходящий файл не получен в этом проходе",
+      "downloadedThisPass": false
+    },
+    {
+      "id": "ordnance-v29-ga-0403",
+      "title": "M80 practice",
+      "number": 524,
+      "apiQueries": [
+        "M80 practice mine",
+        "M80 training mine"
+      ],
+      "status": "none",
+      "note": "Проверен конкретный учебный индекс. Веб-страницы физических макетов и общие модели боевого семейства не считались самостоятельным цифровым исходником учебного исполнения. Скан M33 относится к другому объекту; подходящий файл не получен.",
+      "sources": [],
+      "statusLabel": "Подходящий файл не получен в этом проходе",
+      "downloadedThisPass": false
+    },
+    {
+      "id": "ordnance-v29-ga-0404",
+      "title": "M81 practice",
+      "number": 525,
+      "apiQueries": [
+        "M81 practice mine",
+        "M81 training mine"
+      ],
+      "status": "variant",
+      "note": "Проверено конкретное инертное/учебное исполнение. Сохранённая ранее модель семейства M16 не подтверждает маркировку M16A1 Inert или Training M81. Модели винтовки M16A1 исключены; новый файл для этой карточки не получен.",
+      "sources": [],
+      "statusLabel": "Точное исполнение не подтверждено",
+      "downloadedThisPass": false
+    },
+    {
+      "id": "ordnance-v29-ga-0405",
+      "title": "M8A1 practice",
+      "number": 526,
+      "apiQueries": [
+        "M8A1 mine",
+        "M8A1 practice mine"
+      ],
+      "status": "excluded",
+      "note": "Модели M8A1 из Call of Duty и World of Tanks изображают винтовку или машину. К учебной мине M8A1 они не относятся. Точное исполнение не подменялось общей моделью M8.",
+      "sources": [
+        {
+          "title": "Call of Duty: Black Ops 7 — M8A1",
+          "url": "https://sketchfab.com/3d-models/call-of-duty-black-ops-7-m8a1-a55a1e7d9ca343dc8ae58b742228ea40",
+          "author": "thientrung2004pr",
+          "license": "Для текущей карточки не применяется",
+          "verification": "Название первичной записи указывает игровой объект другого типа."
+        }
+      ],
+      "statusLabel": "Совпадение исключено после проверки",
+      "downloadedThisPass": false
+    },
+    {
+      "id": "pptx-v166-tm-124",
+      "title": "ТМ-124",
+      "number": 527,
+      "apiQueries": [
+        "TM-124",
+        "ТМ-124"
+      ],
+      "status": "none",
+      "note": "Проверены ТМ-124 и TM-124 с указанием mine/3D. Статические изображения в презентации и справочнике не стали подтверждением открытого 3D-исходника. Подходящий файл не получен.",
+      "sources": [],
+      "statusLabel": "Подходящий файл не получен в этом проходе",
+      "downloadedThisPass": false
+    },
+    {
+      "id": "demzref-mon50-2m",
+      "title": "МОН-50-2М",
+      "number": 528,
+      "apiQueries": [
+        "MON-50-2M",
+        "МОН-50-2М"
+      ],
+      "status": "variant",
+      "note": "Проверены МОН-50-2М и MON-50-2M. Обычные модели МОН-50, включая найденные в более широкой выдаче, не доказывают соответствия отдельному исполнению 2М. Файл не получен.",
+      "sources": [],
+      "statusLabel": "Точное исполнение не подтверждено",
+      "downloadedThisPass": false
+    },
+    {
+      "id": "demzref-k-didlisovyk",
+      "title": "К-ДІДЛІСОВИК",
+      "number": 529,
+      "apiQueries": [
+        "К-ДІДЛІСОВИК",
+        "K Didlisovyk"
+      ],
+      "status": "none",
+      "note": "Проверены название из каталога и варианты написания. Описание или фото изделия, изготовленного с применением 3D-печати, не подтверждает опубликованный визуальный 3D-файл. Фантастические Hydra, персонажи и одноимённые транспортные модели исключены; подходящий наружный файл не получен.",
+      "sources": [],
+      "statusLabel": "Подходящий файл не получен в этом проходе",
+      "downloadedThisPass": false
+    },
+    {
+      "id": "demzref-hydra",
+      "title": "HYDRA",
+      "number": 530,
+      "apiQueries": [
+        "HYDRA landmine",
+        "ГІДРА міна"
+      ],
+      "status": "none",
+      "note": "Проверены название из каталога и варианты написания. Описание или фото изделия, изготовленного с применением 3D-печати, не подтверждает опубликованный визуальный 3D-файл. Фантастические Hydra, персонажи и одноимённые транспортные модели исключены; подходящий наружный файл не получен.",
+      "sources": [],
+      "statusLabel": "Подходящий файл не получен в этом проходе",
+      "downloadedThisPass": false
+    },
+    {
+      "id": "demzref-babai",
+      "title": "БАБАЙ",
+      "number": 531,
+      "apiQueries": [
+        "БАБАЙ міна",
+        "Babai mine"
+      ],
+      "status": "none",
+      "note": "Проверены название из каталога и варианты написания. Описание или фото изделия, изготовленного с применением 3D-печати, не подтверждает опубликованный визуальный 3D-файл. Фантастические Hydra, персонажи и одноимённые транспортные модели исключены; подходящий наружный файл не получен.",
+      "sources": [],
+      "statusLabel": "Подходящий файл не получен в этом проходе",
+      "downloadedThisPass": false
+    },
+    {
+      "id": "demzref-didbabai",
+      "title": "ДІДБАБАЙ",
+      "number": 532,
+      "apiQueries": [
+        "ДІДБАБАЙ",
+        "Didbabai"
+      ],
+      "status": "none",
+      "note": "Проверены название из каталога и варианты написания. Описание или фото изделия, изготовленного с применением 3D-печати, не подтверждает опубликованный визуальный 3D-файл. Фантастические Hydra, персонажи и одноимённые транспортные модели исключены; подходящий наружный файл не получен.",
+      "sources": [],
+      "statusLabel": "Подходящий файл не получен в этом проходе",
+      "downloadedThisPass": false
+    },
+    {
+      "id": "demzref-mpp3",
+      "title": "МПП-3",
+      "number": 533,
+      "apiQueries": [
+        "МПП-3 міна",
+        "MPP-3 mine"
+      ],
+      "status": "viewer",
+      "note": "Подтверждена запись MPP-3 / MPP-Z от CAT-UXO, созданная в сотрудничестве с Redwire Solutions. На Sketchfab открытое скачивание отключено и открытая лицензия отсутствует. Указана страница автора на Cults, но самостоятельный закрытый наружный файл и его лицензия в этом проходе не подтверждены; файл не получен.",
+      "sources": [
+        {
+          "title": "Ukrainian MPP-3 (MPP-Z) 3D Printed Land Mine",
+          "url": "https://sketchfab.com/3d-models/ukrainian-mpp-3-mpp-z-3d-printed-land-mine-3dbcd27259004ea4b2f880ca6270f970",
+          "author": "CAT-UXO; в описании указано сотрудничество с Redwire Solutions",
+          "license": "Открытая лицензия не указана; isDownloadable=false",
+          "verification": "Индивидуальный публичный API подтверждает название MPP-3 и отключённое скачивание. Автор называет модель неработающим учебным представлением; самостоятельный распространяемый файл не получен.",
+          "uid": "3dbcd27259004ea4b2f880ca6270f970",
+          "isDownloadable": false,
+          "designationConfidence": "source-labelled"
+        }
+      ],
+      "statusLabel": "3D-просмотрщик · открытое скачивание отключено",
+      "downloadedThisPass": false
+    },
+    {
+      "id": "demzref-ozm72ms",
+      "title": "ОЗМ-72МС",
+      "number": 534,
+      "apiQueries": [
+        "ОЗМ-72МС",
+        "OZM-72MS"
+      ],
+      "status": "variant",
+      "note": "Проверены ОЗМ-72МС и OZM-72MS. Общая модель ОЗМ-72 не доказывает точного исполнения МС; подходящий файл не получен.",
+      "sources": [],
+      "statusLabel": "Точное исполнение не подтверждено",
+      "downloadedThisPass": false
+    },
+    {
+      "id": "handbookref-ptm-l1-vr-6",
+      "title": "ПТМ-Л1 ВР-6",
+      "number": 535,
+      "apiQueries": [
+        "ПТМ-Л1 ВР-6",
+        "PTM-L1"
+      ],
+      "status": "none",
+      "note": "Проверены точное обозначение из справочника и латинское написание. Фотографии, иллюстрации и упоминания в PDF не считались 3D-файлами. Внутренние схемы и технические инструкции не включались; отдельный распространяемый наружный файл не получен.",
+      "sources": [],
+      "statusLabel": "Подходящий файл не получен в этом проходе",
+      "downloadedThisPass": false
+    },
+    {
+      "id": "handbookref-mon-100-1",
+      "title": "МОН-100.1",
+      "number": 536,
+      "apiQueries": [
+        "МОН-100.1",
+        "MON-100.1"
+      ],
+      "status": "none",
+      "note": "Проверены точное обозначение из справочника и латинское написание. Фотографии, иллюстрации и упоминания в PDF не считались 3D-файлами. Внутренние схемы и технические инструкции не включались; отдельный распространяемый наружный файл не получен.",
+      "sources": [],
+      "statusLabel": "Подходящий файл не получен в этом проходе",
+      "downloadedThisPass": false
+    },
+    {
+      "id": "handbookref-ptm-u-01",
+      "title": "ПТМ-У-01",
+      "number": 537,
+      "apiQueries": [
+        "ПТМ-У-01",
+        "PTM-U-01"
+      ],
+      "status": "none",
+      "note": "Проверены точное обозначение из справочника и латинское написание. Фотографии, иллюстрации и упоминания в PDF не считались 3D-файлами. Внутренние схемы и технические инструкции не включались; отдельный распространяемый наружный файл не получен.",
+      "sources": [],
+      "statusLabel": "Подходящий файл не получен в этом проходе",
+      "downloadedThisPass": false
+    },
+    {
+      "id": "handbookref-ptm-u-02",
+      "title": "ПТМ-У-02",
+      "number": 538,
+      "apiQueries": [
+        "ПТМ-У-02",
+        "PTM-U-02"
+      ],
+      "status": "none",
+      "note": "Проверены точное обозначение из справочника и латинское написание. Фотографии, иллюстрации и упоминания в PDF не считались 3D-файлами. Внутренние схемы и технические инструкции не включались; отдельный распространяемый наружный файл не получен.",
+      "sources": [],
+      "statusLabel": "Подходящий файл не получен в этом проходе",
+      "downloadedThisPass": false
+    },
+    {
+      "id": "handbookref-ptm-u-03",
+      "title": "ПТМ-У-03",
+      "number": 539,
+      "apiQueries": [
+        "ПТМ-У-03",
+        "PTM-U-03"
+      ],
+      "status": "none",
+      "note": "Проверены точное обозначение из справочника и латинское написание. Фотографии, иллюстрации и упоминания в PDF не считались 3D-файлами. Внутренние схемы и технические инструкции не включались; отдельный распространяемый наружный файл не получен.",
+      "sources": [],
+      "statusLabel": "Подходящий файл не получен в этом проходе",
+      "downloadedThisPass": false
+    },
+    {
+      "id": "handbookref-ptm-u-04",
+      "title": "ПТМ-У-04",
+      "number": 540,
+      "apiQueries": [
+        "ПТМ-У-04",
+        "PTM-U-04"
+      ],
+      "status": "none",
+      "note": "Проверены точное обозначение из справочника и латинское написание. Фотографии, иллюстрации и упоминания в PDF не считались 3D-файлами. Внутренние схемы и технические инструкции не включались; отдельный распространяемый наружный файл не получен.",
+      "sources": [],
+      "statusLabel": "Подходящий файл не получен в этом проходе",
+      "downloadedThisPass": false
+    },
+    {
+      "id": "handbookref-ptm-us-05",
+      "title": "ПТМ-УС-05",
+      "number": 541,
+      "apiQueries": [
+        "ПТМ-УС-05",
+        "PTM-US-05"
+      ],
+      "status": "none",
+      "note": "Проверены точное обозначение из справочника и латинское написание. Фотографии, иллюстрации и упоминания в PDF не считались 3D-файлами. Внутренние схемы и технические инструкции не включались; отдельный распространяемый наружный файл не получен.",
+      "sources": [],
+      "statusLabel": "Подходящий файл не получен в этом проходе",
+      "downloadedThisPass": false
+    },
+    {
+      "id": "handbookref-ptm-us-06",
+      "title": "ПТМ-УС-06",
+      "number": 542,
+      "apiQueries": [
+        "ПТМ-УС-06",
+        "PTM-US-06"
+      ],
+      "status": "none",
+      "note": "Проверены точное обозначение из справочника и латинское написание. Фотографии, иллюстрации и упоминания в PDF не считались 3D-файлами. Внутренние схемы и технические инструкции не включались; отдельный распространяемый наружный файл не получен.",
+      "sources": [],
+      "statusLabel": "Подходящий файл не получен в этом проходе",
+      "downloadedThisPass": false
+    },
+    {
+      "id": "handbookref-ptm-us-07",
+      "title": "ПТМ-УС-07",
+      "number": 543,
+      "apiQueries": [
+        "ПТМ-УС-07",
+        "PTM-US-07"
+      ],
+      "status": "none",
+      "note": "Проверены точное обозначение из справочника и латинское написание. Фотографии, иллюстрации и упоминания в PDF не считались 3D-файлами. Внутренние схемы и технические инструкции не включались; отдельный распространяемый наружный файл не получен.",
+      "sources": [],
+      "statusLabel": "Подходящий файл не получен в этом проходе",
+      "downloadedThisPass": false
+    },
+    {
+      "id": "handbookref-ptm-us-08",
+      "title": "ПТМ-УС-08",
+      "number": 544,
+      "apiQueries": [
+        "ПТМ-УС-08",
+        "PTM-US-08"
+      ],
+      "status": "none",
+      "note": "Проверены точное обозначение из справочника и латинское написание. Фотографии, иллюстрации и упоминания в PDF не считались 3D-файлами. Внутренние схемы и технические инструкции не включались; отдельный распространяемый наружный файл не получен.",
+      "sources": [],
+      "statusLabel": "Подходящий файл не получен в этом проходе",
+      "downloadedThisPass": false
+    }
+  ],
+  "queries": [
+    {
+      "query": "Z-001M mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=Z-001M+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 7.62
+    },
+    {
+      "query": "Z001M landmine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=Z001M+landmine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 7.62
+    },
+    {
+      "query": "З-001М мина",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=%D0%97-001%D0%9C+%D0%BC%D0%B8%D0%BD%D0%B0&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 7.68
+    },
+    {
+      "query": "PMN-E mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=PMN-E+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 7.66
+    },
+    {
+      "query": "ПМН-Э мина",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=%D0%9F%D0%9C%D0%9D-%D0%AD+%D0%BC%D0%B8%D0%BD%D0%B0&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 6.0
+    },
+    {
+      "query": "P3 Jumping mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=P3+Jumping+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 5.79
+    },
+    {
+      "query": "Pakistan P3 mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=Pakistan+P3+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 5.84
+    },
+    {
+      "query": "M86 PDM",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=M86+PDM&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 5.67
+    },
+    {
+      "query": "M86 mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=M86+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 5.08
+    },
+    {
+      "query": "M56 mine dispensing",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=M56+mine+dispensing&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 5.02
+    },
+    {
+      "query": "M56 mine dispenser",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=M56+mine+dispenser&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.92
+    },
+    {
+      "query": "M87 Volcano",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=M87+Volcano&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 5.06
+    },
+    {
+      "query": "M87 mine canister",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=M87+mine+canister&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 7.1
+    },
+    {
+      "query": "M88 Volcano",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=M88+Volcano&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 7.03
+    },
+    {
+      "query": "M88 training canister",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=M88+training+canister&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 6.78
+    },
+    {
+      "query": "Spider XM10",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=Spider+XM10&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 6.7
+    },
+    {
+      "query": "M7 Spider mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=M7+Spider+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 5.32
+    },
+    {
+      "query": "Spider XM332",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=Spider+XM332&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 5.01
+    },
+    {
+      "query": "XM332 control unit",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=XM332+control+unit&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 5.02
+    },
+    {
+      "query": "Spider XM8",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=Spider+XM8&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.92
+    },
+    {
+      "query": "XM8 MGL",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=XM8+MGL&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 5.13
+    },
+    {
+      "query": "Spider XM9",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=Spider+XM9&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 5.07
+    },
+    {
+      "query": "XM9 ERTS",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=XM9+ERTS&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 5.04
+    },
+    {
+      "query": "Spider XM96",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=Spider+XM96&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.97
+    },
+    {
+      "query": "XM96 MCAT",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=XM96+MCAT&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 5.23
+    },
+    {
+      "query": "XM204 munition",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=XM204+munition&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 5.1
+    },
+    {
+      "query": "XM204 WAM",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=XM204+WAM&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 5.13
+    },
+    {
+      "query": "XM94 SLAM",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=XM94+SLAM&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 5.21
+    },
+    {
+      "query": "SLAM landmine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=SLAM+landmine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 5.3
+    },
+    {
+      "query": "M10 practice mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=M10+practice+mine&count=24",
+      "ok": true,
+      "models": [
+        {
+          "uid": "d6b577fe074f48f68f997c7c318d7e02",
+          "name": "SAS M33 APERS Mine (Practice)",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-d6b577fe074f48f68f997c7c318d7e02",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 2178819,
+          "vertexCount": 1089765,
+          "author": "Combined Military Services Museum",
+          "authorProfile": "https://sketchfab.com/cmsm"
+        },
+        {
+          "uid": "0e44b2adeb974830804c3ec68c0920f0",
+          "name": "Claymore m18",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-0e44b2adeb974830804c3ec68c0920f0",
+          "isDownloadable": true,
+          "license": {
+            "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+            "label": "CC Attribution"
+          },
+          "faceCount": 13998,
+          "vertexCount": 7025,
+          "author": "zhezhela",
+          "authorProfile": "https://sketchfab.com/Zhezhela"
+        }
+      ],
+      "hasNext": false,
+      "seconds": 5.33
+    },
+    {
+      "query": "M10 landmine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=M10+landmine&count=24",
+      "ok": true,
+      "models": [
+        {
+          "uid": "589f8e1c102a4ab2a0ffabf1c9fcfd11",
+          "name": "Landmine MON-50",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-589f8e1c102a4ab2a0ffabf1c9fcfd11",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 8383,
+          "vertexCount": 4245,
+          "author": "Dmitriy Shishelin",
+          "authorProfile": "https://sketchfab.com/Theraphosa"
+        },
+        {
+          "uid": "ca9aa3e6c1614f1aa0a4bcb2c218e520",
+          "name": "M-14 Landmine",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-ca9aa3e6c1614f1aa0a4bcb2c218e520",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 113808,
+          "vertexCount": 66528,
+          "author": "CAT-UXO",
+          "authorProfile": "https://sketchfab.com/CAT-UXO"
+        },
+        {
+          "uid": "cfda7690cc364a648366501c680f56a1",
+          "name": "M15 Landmine",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-cfda7690cc364a648366501c680f56a1",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 5130,
+          "vertexCount": 2633,
+          "author": "fxnx",
+          "authorProfile": "https://sketchfab.com/fxnx"
+        },
+        {
+          "uid": "f20fbe32c42e4dd6b312563fdab0fdcf",
+          "name": "MON-90 Russian Fragmentation Mine",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-f20fbe32c42e4dd6b312563fdab0fdcf",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 7188,
+          "vertexCount": 3648,
+          "author": "Jimmy Johansson",
+          "authorProfile": "https://sketchfab.com/Jimmy_Johansson"
+        },
+        {
+          "uid": "b57e34ead0e643429e081cacaeaa9f78",
+          "name": "MON-50. МОН-50. AP mine. REUPLOAD",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-b57e34ead0e643429e081cacaeaa9f78",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 43678,
+          "vertexCount": 21871,
+          "author": "Valger",
+          "authorProfile": "https://sketchfab.com/Valger"
+        },
+        {
+          "uid": "c17e285d5e1d428db1c1f5d43228517c",
+          "name": "MON-50 Russian Directional Fragmentation Mine",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-c17e285d5e1d428db1c1f5d43228517c",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 8789,
+          "vertexCount": 4494,
+          "author": "Jimmy Johansson",
+          "authorProfile": "https://sketchfab.com/Jimmy_Johansson"
+        }
+      ],
+      "hasNext": false,
+      "seconds": 5.59
+    },
+    {
+      "query": "M12 practice mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=M12+practice+mine&count=24",
+      "ok": true,
+      "models": [
+        {
+          "uid": "d6b577fe074f48f68f997c7c318d7e02",
+          "name": "SAS M33 APERS Mine (Practice)",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-d6b577fe074f48f68f997c7c318d7e02",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 2178819,
+          "vertexCount": 1089765,
+          "author": "Combined Military Services Museum",
+          "authorProfile": "https://sketchfab.com/cmsm"
+        },
+        {
+          "uid": "0e44b2adeb974830804c3ec68c0920f0",
+          "name": "Claymore m18",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-0e44b2adeb974830804c3ec68c0920f0",
+          "isDownloadable": true,
+          "license": {
+            "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+            "label": "CC Attribution"
+          },
+          "faceCount": 13998,
+          "vertexCount": 7025,
+          "author": "zhezhela",
+          "authorProfile": "https://sketchfab.com/Zhezhela"
+        }
+      ],
+      "hasNext": false,
+      "seconds": 5.24
+    },
+    {
+      "query": "M12 mine training",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=M12+mine+training&count=24",
+      "ok": true,
+      "models": [
+        {
+          "uid": "d6b577fe074f48f68f997c7c318d7e02",
+          "name": "SAS M33 APERS Mine (Practice)",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-d6b577fe074f48f68f997c7c318d7e02",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 2178819,
+          "vertexCount": 1089765,
+          "author": "Combined Military Services Museum",
+          "authorProfile": "https://sketchfab.com/cmsm"
+        },
+        {
+          "uid": "b9011e48c9b44e9e912f36fbdeda53fe",
+          "name": "PD‑980 Righteous Fury - Pendragon Arms",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-b9011e48c9b44e9e912f36fbdeda53fe",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 44798,
+          "vertexCount": 22825,
+          "author": "Coyako Games",
+          "authorProfile": "https://sketchfab.com/matzen.paul"
+        }
+      ],
+      "hasNext": false,
+      "seconds": 5.22
+    },
+    {
+      "query": "M16A1 inert mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=M16A1+inert+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 5.04
+    },
+    {
+      "query": "M16A1 training mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=M16A1+training+mine&count=24",
+      "ok": true,
+      "models": [
+        {
+          "uid": "d6b577fe074f48f68f997c7c318d7e02",
+          "name": "SAS M33 APERS Mine (Practice)",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-d6b577fe074f48f68f997c7c318d7e02",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 2178819,
+          "vertexCount": 1089765,
+          "author": "Combined Military Services Museum",
+          "authorProfile": "https://sketchfab.com/cmsm"
+        }
+      ],
+      "hasNext": false,
+      "seconds": 5.2
+    },
+    {
+      "query": "M20 practice mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=M20+practice+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.87
+    },
+    {
+      "query": "M20 landmine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=M20+landmine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.63
+    },
+    {
+      "query": "M35 practice mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=M35+practice+mine&count=24",
+      "ok": true,
+      "models": [
+        {
+          "uid": "d6b577fe074f48f68f997c7c318d7e02",
+          "name": "SAS M33 APERS Mine (Practice)",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-d6b577fe074f48f68f997c7c318d7e02",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 2178819,
+          "vertexCount": 1089765,
+          "author": "Combined Military Services Museum",
+          "authorProfile": "https://sketchfab.com/cmsm"
+        },
+        {
+          "uid": "234d45d1579040198eddd54ecc35a3c3",
+          "name": "SAS M33 Mine Carrier Bag",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-234d45d1579040198eddd54ecc35a3c3",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 6095735,
+          "vertexCount": 3048338,
+          "author": "Combined Military Services Museum",
+          "authorProfile": "https://sketchfab.com/cmsm"
+        }
+      ],
+      "hasNext": false,
+      "seconds": 4.48
+    },
+    {
+      "query": "M35 landmine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=M35+landmine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.47
+    },
+    {
+      "query": "M68 practice mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=M68+practice+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.2
+    },
+    {
+      "query": "M33 Claymore training",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=M33+Claymore+training&count=24",
+      "ok": true,
+      "models": [
+        {
+          "uid": "d6b577fe074f48f68f997c7c318d7e02",
+          "name": "SAS M33 APERS Mine (Practice)",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-d6b577fe074f48f68f997c7c318d7e02",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 2178819,
+          "vertexCount": 1089765,
+          "author": "Combined Military Services Museum",
+          "authorProfile": "https://sketchfab.com/cmsm"
+        }
+      ],
+      "hasNext": false,
+      "seconds": 5.34
+    },
+    {
+      "query": "M69 practice mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=M69+practice+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 5.21
+    },
+    {
+      "query": "M69 landmine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=M69+landmine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 5.08
+    },
+    {
+      "query": "M79 practice mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=M79+practice+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 5.25
+    },
+    {
+      "query": "M79 inert mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=M79+inert+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 5.64
+    },
+    {
+      "query": "M8 practice mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=M8+practice+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 5.55
+    },
+    {
+      "query": "M8 landmine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=M8+landmine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 5.74
+    },
+    {
+      "query": "M80 practice mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=M80+practice+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 5.44
+    },
+    {
+      "query": "M80 training mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=M80+training+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 5.16
+    },
+    {
+      "query": "M81 practice mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=M81+practice+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 5.16
+    },
+    {
+      "query": "M81 training mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=M81+training+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 5.07
+    },
+    {
+      "query": "M8A1 mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=M8A1+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.88
+    },
+    {
+      "query": "M8A1 practice mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=M8A1+practice+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 5.37
+    },
+    {
+      "query": "TM-124",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=TM-124&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 5.29
+    },
+    {
+      "query": "ТМ-124",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=%D0%A2%D0%9C-124&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 5.33
+    },
+    {
+      "query": "MON-50-2M",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=MON-50-2M&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 5.24
+    },
+    {
+      "query": "МОН-50-2М",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=%D0%9C%D0%9E%D0%9D-50-2%D0%9C&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 5.18
+    },
+    {
+      "query": "К-ДІДЛІСОВИК",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=%D0%9A-%D0%94%D0%86%D0%94%D0%9B%D0%86%D0%A1%D0%9E%D0%92%D0%98%D0%9A&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 5.41
+    },
+    {
+      "query": "K Didlisovyk",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=K+Didlisovyk&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 5.12
+    },
+    {
+      "query": "HYDRA landmine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=HYDRA+landmine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 5.39
+    },
+    {
+      "query": "ГІДРА міна",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=%D0%93%D0%86%D0%94%D0%A0%D0%90+%D0%BC%D1%96%D0%BD%D0%B0&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 5.07
+    },
+    {
+      "query": "БАБАЙ міна",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=%D0%91%D0%90%D0%91%D0%90%D0%99+%D0%BC%D1%96%D0%BD%D0%B0&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 5.31
+    },
+    {
+      "query": "Babai mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=Babai+mine&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.84
+    },
+    {
+      "query": "ДІДБАБАЙ",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=%D0%94%D0%86%D0%94%D0%91%D0%90%D0%91%D0%90%D0%99&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.79
+    },
+    {
+      "query": "Didbabai",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=Didbabai&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 6.26
+    },
+    {
+      "query": "МПП-3 міна",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=%D0%9C%D0%9F%D0%9F-3+%D0%BC%D1%96%D0%BD%D0%B0&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 6.19
+    },
+    {
+      "query": "MPP-3 mine",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=MPP-3+mine&count=24",
+      "ok": true,
+      "models": [
+        {
+          "uid": "3dbcd27259004ea4b2f880ca6270f970",
+          "name": "Ukrainian MPP-3 (MPP-Z)  3D Printed Land Mine",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-3dbcd27259004ea4b2f880ca6270f970",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 35030,
+          "vertexCount": 19083,
+          "author": "CAT-UXO",
+          "authorProfile": "https://sketchfab.com/CAT-UXO"
+        }
+      ],
+      "hasNext": false,
+      "seconds": 6.46
+    },
+    {
+      "query": "ОЗМ-72МС",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=%D0%9E%D0%97%D0%9C-72%D0%9C%D0%A1&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 5.95
+    },
+    {
+      "query": "OZM-72MS",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=OZM-72MS&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 5.55
+    },
+    {
+      "query": "ПТМ-Л1 ВР-6",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=%D0%9F%D0%A2%D0%9C-%D0%9B1+%D0%92%D0%A0-6&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 5.55
+    },
+    {
+      "query": "PTM-L1",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=PTM-L1&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 5.56
+    },
+    {
+      "query": "МОН-100.1",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=%D0%9C%D0%9E%D0%9D-100.1&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 5.27
+    },
+    {
+      "query": "MON-100.1",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=MON-100.1&count=24",
+      "ok": true,
+      "models": [
+        {
+          "uid": "f5b439064cf144d680af8a6d3412cd5a",
+          "name": "Apollo Lunar Sample 10021,79",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-f5b439064cf144d680af8a6d3412cd5a",
+          "isDownloadable": true,
+          "license": {
+            "uid": "7c23a1ba438d4306920229c12afcb5f9",
+            "label": "CC0 Public Domain"
+          },
+          "faceCount": 98184,
+          "vertexCount": 49090,
+          "author": "NASA Astromaterials 3D",
+          "authorProfile": "https://sketchfab.com/Astromaterials3D"
+        },
+        {
+          "uid": "4919ba9b5a8747259ebd55c01f68757e",
+          "name": "Marcopolo G7 1200 VOLVO Auto Viação 1001",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-4919ba9b5a8747259ebd55c01f68757e",
+          "isDownloadable": true,
+          "license": {
+            "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+            "label": "CC Attribution"
+          },
+          "faceCount": 458081,
+          "vertexCount": 241843,
+          "author": "miguterj2106",
+          "authorProfile": "https://sketchfab.com/miguterj2106"
+        },
+        {
+          "uid": "8c67108071a54b5b9b668b80fc70974d",
+          "name": "10021-MOD",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-8c67108071a54b5b9b668b80fc70974d",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 88546,
+          "vertexCount": 47666,
+          "author": "Projecto Engenharia",
+          "authorProfile": "https://sketchfab.com/projecto"
+        },
+        {
+          "uid": "e58ad26d0ed3402290324fa3a1ff27f0",
+          "name": "1001 Sterling Pl 16 Mod Tilt",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-e58ad26d0ed3402290324fa3a1ff27f0",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 1820,
+          "vertexCount": 1281,
+          "author": "Brooklyn SolarWorks",
+          "authorProfile": "https://sketchfab.com/brooklynsolarworks"
+        },
+        {
+          "uid": "fb82f60949b14ad683354f422080bc1e",
+          "name": "Extrait relevés 3D - Carrières de Bagneux",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-fb82f60949b14ad683354f422080bc1e",
+          "isDownloadable": true,
+          "license": {
+            "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+            "label": "CC Attribution"
+          },
+          "faceCount": 101777,
+          "vertexCount": 127684,
+          "author": "Moutonneux",
+          "authorProfile": "https://sketchfab.com/moutonneux"
+        },
+        {
+          "uid": "747f8c8f64fe4410aeb86583c606a46c",
+          "name": "Basket / CAS 0370-0763",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-747f8c8f64fe4410aeb86583c606a46c",
+          "isDownloadable": false,
+          "license": null,
+          "faceCount": 999935,
+          "vertexCount": 499969,
+          "author": "California Academy of Sciences",
+          "authorProfile": "https://sketchfab.com/calacademy"
+        }
+      ],
+      "hasNext": false,
+      "seconds": 5.42
+    },
+    {
+      "query": "ПТМ-У-01",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=%D0%9F%D0%A2%D0%9C-%D0%A3-01&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 5.43
+    },
+    {
+      "query": "PTM-U-01",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=PTM-U-01&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 5.23
+    },
+    {
+      "query": "ПТМ-У-02",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=%D0%9F%D0%A2%D0%9C-%D0%A3-02&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 5.12
+    },
+    {
+      "query": "PTM-U-02",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=PTM-U-02&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 5.35
+    },
+    {
+      "query": "ПТМ-У-03",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=%D0%9F%D0%A2%D0%9C-%D0%A3-03&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 5.18
+    },
+    {
+      "query": "PTM-U-03",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=PTM-U-03&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.97
+    },
+    {
+      "query": "ПТМ-У-04",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=%D0%9F%D0%A2%D0%9C-%D0%A3-04&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.99
+    },
+    {
+      "query": "PTM-U-04",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=PTM-U-04&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 5.26
+    },
+    {
+      "query": "ПТМ-УС-05",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=%D0%9F%D0%A2%D0%9C-%D0%A3%D0%A1-05&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 5.14
+    },
+    {
+      "query": "PTM-US-05",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=PTM-US-05&count=24",
+      "ok": true,
+      "models": [
+        {
+          "uid": "86dff766e51d4f2084a3768be7f08b8c",
+          "name": "Animated Hands (Test)",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-86dff766e51d4f2084a3768be7f08b8c",
+          "isDownloadable": true,
+          "license": {
+            "uid": "bbfe3f7dbcdd4122b966b85b9786a989",
+            "label": "CC Attribution-NonCommercial"
+          },
+          "faceCount": 8289,
+          "vertexCount": 534,
+          "author": "3DHaupt",
+          "authorProfile": "https://sketchfab.com/dennish2010"
+        }
+      ],
+      "hasNext": false,
+      "seconds": 5.15
+    },
+    {
+      "query": "ПТМ-УС-06",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=%D0%9F%D0%A2%D0%9C-%D0%A3%D0%A1-06&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 4.97
+    },
+    {
+      "query": "PTM-US-06",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=PTM-US-06&count=24",
+      "ok": true,
+      "models": [
+        {
+          "uid": "c8ccb8ba7975485398cfee76e7763fc8",
+          "name": "231212-06 quote 3D",
+          "viewerUrl": "https://sketchfab.com/3d-models/none-c8ccb8ba7975485398cfee76e7763fc8",
+          "isDownloadable": true,
+          "license": {
+            "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+            "label": "CC Attribution"
+          },
+          "faceCount": 49384,
+          "vertexCount": 27888,
+          "author": "US Truss Pty Ltd",
+          "authorProfile": "https://sketchfab.com/ustruss"
+        }
+      ],
+      "hasNext": false,
+      "seconds": 5.36
+    },
+    {
+      "query": "ПТМ-УС-07",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=%D0%9F%D0%A2%D0%9C-%D0%A3%D0%A1-07&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 5.3
+    },
+    {
+      "query": "PTM-US-07",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=PTM-US-07&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 5.28
+    },
+    {
+      "query": "ПТМ-УС-08",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=%D0%9F%D0%A2%D0%9C-%D0%A3%D0%A1-08&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 5.23
+    },
+    {
+      "query": "PTM-US-08",
+      "url": "https://api.sketchfab.com/v3/search?type=models&q=PTM-US-08&count=24",
+      "ok": true,
+      "models": [],
+      "hasNext": false,
+      "seconds": 5.16
+    }
+  ],
+  "verifiedModelDetails": [
+    {
+      "uid": "d6b577fe074f48f68f997c7c318d7e02",
+      "name": "SAS M33 APERS Mine (Practice)",
+      "viewerUrl": "https://sketchfab.com/3d-models/sas-m33-apers-mine-practice-d6b577fe074f48f68f997c7c318d7e02",
+      "isDownloadable": false,
+      "license": {},
+      "author": {
+        "displayName": "Combined Military Services Museum",
+        "profileUrl": "https://sketchfab.com/cmsm"
+      },
+      "faceCount": 2178819,
+      "vertexCount": 1089765,
+      "publishedAt": "2022-07-31T10:46:51.228869",
+      "checkedUrl": "https://api.sketchfab.com/v3/models/d6b577fe074f48f68f997c7c318d7e02",
+      "ok": true
+    },
+    {
+      "uid": "3dbcd27259004ea4b2f880ca6270f970",
+      "name": "Ukrainian MPP-3 (MPP-Z)  3D Printed Land Mine",
+      "viewerUrl": "https://sketchfab.com/3d-models/ukrainian-mpp-3-mpp-z-3d-printed-land-mine-3dbcd27259004ea4b2f880ca6270f970",
+      "isDownloadable": false,
+      "license": {},
+      "author": {
+        "displayName": "CAT-UXO",
+        "profileUrl": "https://sketchfab.com/CAT-UXO"
+      },
+      "faceCount": 35030,
+      "vertexCount": 19083,
+      "publishedAt": "2026-10-02T00:29:14.402488",
+      "checkedUrl": "https://api.sketchfab.com/v3/models/3dbcd27259004ea4b2f880ca6270f970",
+      "ok": true
+    },
+    {
+      "uid": "0e44b2adeb974830804c3ec68c0920f0",
+      "name": "Claymore m18",
+      "viewerUrl": "https://sketchfab.com/3d-models/claymore-m18-0e44b2adeb974830804c3ec68c0920f0",
+      "isDownloadable": true,
+      "license": {
+        "uri": "https://api.sketchfab.com/v3/licenses/322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution",
+        "fullName": "Creative Commons Attribution",
+        "requirements": "Author must be credited. Commercial use is allowed.",
+        "url": "http://creativecommons.org/licenses/by/4.0/",
+        "slug": "by"
+      },
+      "author": {
+        "displayName": "zhezhela",
+        "profileUrl": "https://sketchfab.com/Zhezhela"
+      },
+      "faceCount": 13998,
+      "vertexCount": 7025,
+      "publishedAt": "2021-05-24T17:33:27.913295",
+      "checkedUrl": "https://api.sketchfab.com/v3/models/0e44b2adeb974830804c3ec68c0920f0",
+      "ok": true
+    }
+  ]
+}

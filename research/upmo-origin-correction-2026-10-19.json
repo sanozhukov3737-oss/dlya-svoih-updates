@@ -1,0 +1,47 @@
+{
+  "cardId": "eng-pdf-v7-116",
+  "date": "2026-10-19",
+  "beforeCountryIds": [
+    "ua"
+  ],
+  "afterCountryIds": [
+    "ru"
+  ],
+  "originCorrectionBasis": "Explicit correction by the catalog owner after reviewing the application's UPM-O card screenshot: the item is Russian.",
+  "independentManufacturerOriginConfirmation": false,
+  "priorAttribution": "Provided Minley PDF, page 56, listed Ukraine; the original application already labelled this as tentative.",
+  "primaryExteriorReference": "https://t.me/nvp_73/4404",
+  "primaryReferenceScope": "The primary post corroborates the UPM-O designation, general class and exterior. It does not independently establish the manufacturer or country of manufacture.",
+  "changes": [
+    "Country mapping changed from ua to ru.",
+    "Summary and reader body updated consistently; obsolete Ukrainian origin claim removed from the user-facing text and search index.",
+    "Existing PDF source and image credits preserved; primary exterior reference added.",
+    "Review status, source grade and verifiedAt not upgraded.",
+    "Build restoration applies the same correction to catalog 190 and advances only that database to content version 191, preserving all other cards and images."
+  ],
+  "publicationStatus": "Prepared source branch only; APK, catalog release and update feed not published.",
+  "validation": {
+    "catalog190OtherCardsUnchanged": 1425,
+    "catalog190ImagesUnchanged": 1333,
+    "bundledSourceOtherCardsUnchanged": 1323,
+    "bundledSourceImagesUnchanged": 1306,
+    "preparedCatalogVersion": 191,
+    "preparedCatalogCards": 1426,
+    "countryAndRussianFTSSearch": "passed",
+    "databaseIntegrity": "passed",
+    "productionSearchChecks": {
+      "passed": 7,
+      "database": "restored and corrected catalog 191"
+    },
+    "javaFeatureChecks": {
+      "passed": 3,
+      "environment": "JAVA_TOOL_OPTIONS=-XX:-UsePerfData avoids this host JVM shared memory crash"
+    },
+    "legacyReader152SnapshotChecks": {
+      "failures": 3,
+      "sameFailuresReproducedAgainstUnchangedBase": true,
+      "reason": "Version-152 snapshot assertions predate the current catalog and unchanged later Fagot description."
+    },
+    "actualAndroidRunThisChange": false
+  }
+}

@@ -127,13 +127,14 @@ interface GuideDao {
     @Query("""
         SELECT c.* FROM cards c
         WHERE c.archived = 0 AND c.id != :id
-            AND (c.categoryId = (SELECT categoryId FROM cards WHERE id = :id) OR c.id IN (:familyIds))
+            AND c.section = (SELECT section FROM cards WHERE id = :id)
+            AND c.categoryId = (SELECT categoryId FROM cards WHERE id = :id)
         ORDER BY CASE WHEN c.id IN (:familyIds) THEN 0 ELSE 1 END,
             CASE WHEN EXISTS (SELECT 1 FROM card_countries a JOIN card_countries b ON a.countryId = b.countryId
                 WHERE a.cardId = :id AND b.cardId = c.id) THEN 0 ELSE 1 END,
             c.sortTitle, c.rowid LIMIT 12
     """)
-    fun relatedCardEntities(id: String, familyIds: List<String>): Flow<List<CardEntity>>
+    fun comparisonCards(id: String, familyIds: List<String>): Flow<List<CardEntity>>
     @Upsert suspend fun saveReading(value: ReadingEntity)
     @Query("DELETE FROM reading WHERE cardId = :id") suspend fun removeReading(id: String): Int
     @Query("DELETE FROM reading WHERE cardId NOT IN (SELECT cardId FROM reading ORDER BY updatedAt DESC, cardId LIMIT 50)")

@@ -58,6 +58,7 @@ fun OverviewScreen(
         when {
             group == CatalogHierarchy.ENGINEERING_GROUP -> CatalogHierarchy.engineeringIds(ammunitionIds)
             group == CatalogHierarchy.INITIATION_GROUP -> CatalogHierarchy.initiationIds(ammunitionIds)
+            group == CatalogHierarchy.UAV_GROUP -> CatalogHierarchy.uavIds(ammunitionIds)
             isHome || section == MainSection.AMMUNITION.name -> CatalogHierarchy.rootIds(ammunitionIds)
             else -> state.categories.filter { it.section == section }.map { it.id }
         }
@@ -66,10 +67,12 @@ fun OverviewScreen(
     val title = when (group) {
         CatalogHierarchy.ENGINEERING_GROUP -> "Инженерные боеприпасы"
         CatalogHierarchy.INITIATION_GROUP -> "Средства взрывания"
+        CatalogHierarchy.UAV_GROUP -> "БПЛА: боеприпасы и сбросы"
         else -> MainSection.fromId(section)?.title ?: "ДЛЯ СВОИХ"
     }
     var appearanceOpen by rememberSaveable { mutableStateOf(false) }
     var aboutOpen by rememberSaveable { mutableStateOf(false) }
+    var modelsOpen by rememberSaveable { mutableStateOf(false) }
     var menuOpen by remember { mutableStateOf(false) }
     Scaffold(topBar = {
         GuideBar(title, onBack) {
@@ -82,6 +85,9 @@ fun OverviewScreen(
                         Icon(painterResource(R.drawable.icon_ui_more), contentDescription = "Открыть меню")
                     }
                     DropdownMenu(expanded = menuOpen, onDismissRequest = { menuOpen = false }) {
+                        DropdownMenuItem(text = { Text("3D-модели · офлайн") },
+                            modifier = Modifier.testTag("home_menu_3d"),
+                            onClick = { menuOpen = false; modelsOpen = true })
                         DropdownMenuItem(text = { Text(if (onlineUpdate is RemoteUpdateState.Available ||
                             (onlineUpdate as? RemoteUpdateState.Error)?.catalog != null ||
                             appUpdate is AppUpdateState.Available || appUpdate is AppUpdateState.Ready ||
@@ -108,6 +114,10 @@ fun OverviewScreen(
                 contentPadding = PaddingValues(start = 14.dp, end = 14.dp, bottom = 28.dp),
                 verticalArrangement = Arrangement.spacedBy(14.dp)
             ) {
+                if (group == CatalogHierarchy.ENGINEERING_GROUP) item(key = "offline_models") {
+                    OutlinedButton(onClick = { modelsOpen = true }, modifier = Modifier.fillMaxWidth()
+                        .testTag("open_3d_gallery")) { Text("3D-модели · офлайн") }
+                }
                 if (isHome) {
                     if (state.favoriteCards.isNotEmpty()) item(key = "favorites") {
                         PreviewShelf("Избранное", state.favoriteCards, onOpenCard)
@@ -131,11 +141,13 @@ fun OverviewScreen(
                     val children = when (id) {
                         CatalogHierarchy.ENGINEERING_GROUP -> CatalogHierarchy.engineeringIds(ammunitionIds)
                         CatalogHierarchy.INITIATION_GROUP -> CatalogHierarchy.initiationIds(ammunitionIds)
+                        CatalogHierarchy.UAV_GROUP -> CatalogHierarchy.uavIds(ammunitionIds)
                         else -> emptyList()
                     }
                     val categoryTitle = when (id) {
                         CatalogHierarchy.ENGINEERING_GROUP -> "Инженерные боеприпасы"
                         CatalogHierarchy.INITIATION_GROUP -> "Средства взрывания"
+                        CatalogHierarchy.UAV_GROUP -> "БПЛА: боеприпасы и сбросы"
                         "fuzes", "engineering" -> "Общие сведения"
                         "ied" -> "СВУ"
                         else -> categoryById[id]?.title ?: id
@@ -173,6 +185,7 @@ fun OverviewScreen(
         }
     }
     if (appearanceOpen) AppearanceDialog { appearanceOpen = false }
+    if (modelsOpen) OfflineModelGallery { modelsOpen = false }
     if (aboutOpen) AboutDialog(state.contentVersion,
         if (state.loading || state.error) null else state.counts.values.sum()) { aboutOpen = false }
 }

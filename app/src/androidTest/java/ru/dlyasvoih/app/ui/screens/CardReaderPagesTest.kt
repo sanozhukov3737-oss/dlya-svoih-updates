@@ -66,7 +66,7 @@ class CardReaderPagesTest {
         }
     }
 
-    @Test fun selectedCardOpensAndRightSwipeAdvancesWithFiniteEnds() {
+    @Test fun selectedCardOpensAndLeftSwipeAdvancesWithFiniteEnds() {
         val settled = mutableListOf<String>()
         compose.setContent {
             MaterialTheme {
@@ -82,15 +82,15 @@ class CardReaderPagesTest {
             }
         }
         compose.onNodeWithTag("visible_card").assertTextEquals("b:2/3")
-        compose.onNodeWithTag("card_reader").performTouchInput { swipeRight() }
+        compose.onNodeWithTag("card_reader").performTouchInput { swipeLeft() }
         compose.onNodeWithTag("visible_card").assertTextEquals("c:3/3")
         compose.onNodeWithTag("next").assertIsNotEnabled()
-        compose.onNodeWithTag("card_reader").performTouchInput { swipeRight() }
+        compose.onNodeWithTag("card_reader").performTouchInput { swipeLeft() }
         compose.onNodeWithTag("visible_card").assertTextEquals("c:3/3")
         compose.runOnIdle { assertEquals(listOf("b", "c"), settled) }
         compose.onNodeWithTag("previous").performClick()
         compose.onNodeWithTag("visible_card").assertTextEquals("b:2/3")
-        compose.onNodeWithTag("card_reader").performTouchInput { swipeLeft() }
+        compose.onNodeWithTag("card_reader").performTouchInput { swipeRight() }
         compose.onNodeWithTag("visible_card").assertTextEquals("a:1/3")
         compose.onNodeWithTag("previous").assertIsNotEnabled()
     }
@@ -108,13 +108,13 @@ class CardReaderPagesTest {
         }
         compose.onNodeWithTag("article_a").performScrollToIndex(10)
         compose.onNodeWithText("a row 10").assertIsDisplayed()
-        compose.onNodeWithTag("card_reader").performTouchInput { swipeRight() }
-        compose.onNodeWithText("b row 0").assertIsDisplayed()
         compose.onNodeWithTag("card_reader").performTouchInput { swipeLeft() }
+        compose.onNodeWithText("b row 0").assertIsDisplayed()
+        compose.onNodeWithTag("card_reader").performTouchInput { swipeRight() }
         compose.onNodeWithText("a row 10").assertIsDisplayed()
     }
 
-    @Test fun rightSwipeAdvancesEvenWhenThePhoneUsesRtlLayout() {
+    @Test fun leftSwipeAdvancesEvenWhenThePhoneUsesRtlLayout() {
         compose.setContent {
             MaterialTheme {
                 CompositionLocalProvider(LocalLayoutDirection provides LayoutDirection.Rtl) {
@@ -127,13 +127,13 @@ class CardReaderPagesTest {
             }
         }
         compose.onNodeWithTag("visible_card").assertTextEquals("b")
-        compose.onNodeWithTag("card_reader").performTouchInput { swipeRight() }
-        compose.onNodeWithTag("visible_card").assertTextEquals("c")
         compose.onNodeWithTag("card_reader").performTouchInput { swipeLeft() }
+        compose.onNodeWithTag("visible_card").assertTextEquals("c")
+        compose.onNodeWithTag("card_reader").performTouchInput { swipeRight() }
         compose.onNodeWithTag("visible_card").assertTextEquals("b")
     }
 
-    @Test fun choosingADistantCardKeepsTheRightSwipeDirectionAndSettledId() {
+    @Test fun choosingADistantCardKeepsTheLeftSwipeDirectionAndSettledId() {
         val ids = (1..250).map { "card-$it" }
         val settled = mutableListOf<String>()
         compose.setContent {
@@ -153,9 +153,9 @@ class CardReaderPagesTest {
         }
         compose.onNodeWithTag("jump_200").performClick()
         compose.onNodeWithTag("visible_card").assertTextEquals("card-200:200/250")
-        compose.onNodeWithTag("card_reader").performTouchInput { swipeRight() }
-        compose.onNodeWithTag("visible_card").assertTextEquals("card-201:201/250")
         compose.onNodeWithTag("card_reader").performTouchInput { swipeLeft() }
+        compose.onNodeWithTag("visible_card").assertTextEquals("card-201:201/250")
+        compose.onNodeWithTag("card_reader").performTouchInput { swipeRight() }
         compose.onNodeWithTag("visible_card").assertTextEquals("card-200:200/250")
         compose.runOnIdle { assertEquals("card-200", settled.last()) }
     }

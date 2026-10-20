@@ -1,0 +1,59 @@
+name: Recover complete editable catalog 195
+
+on:
+  push:
+    branches: ['recovery/android-0.3.134-stage2-20261019']
+    paths: ['.github/workflows/sync-current-source-134.yml', 'tools/sync_catalog_source.py', 'tools/catalog_projection.py']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  synchronize:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          ref: '9971bd151d5bc3fd49399cadf7019540b497c3f8'
+          path: full-source
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - name: Recover and compare every content table
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y python3-pil
+          cp tools/build_catalog.py tools/catalog_projection.py tools/sync_catalog_source.py tools/test_updates.py full-source/tools/
+          cd full-source
+          /usr/bin/python3 tools/sync_catalog_source.py
+          /usr/bin/python3 -m unittest discover -s tools -p test_updates.py
+          python3 - <<'PY'
+          import hashlib,json
+          from pathlib import Path
+          report=json.loads(Path('research/post-0.3.134/catalog-source-sync.json').read_text())
+          assert report['contentVersion']==195 and report['counts']['cards']==1697 and report['counts']['images']==1600
+          assert report['databaseSha256']=='fbbb7a38d77b09b963520011ef64b8111991e03ed1b2ae6277ec335761a107ed'
+          assert report['sourceSha256']=='7bffb7dfcd684958a3a183b4d49f4e4a7f11f6d4769d4fefa3ba5ba39560430a'
+          PY
+      - name: Preserve the recovered source on its own branch
+        run: |
+          cd full-source
+          git switch -c maintenance/source134-synced-20261020
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add content/catalog.json tools/build_catalog.py tools/catalog_projection.py tools/sync_catalog_source.py tools/test_updates.py research/post-0.3.134/catalog-source-sync.json
+          git commit -m 'Restore complete editable catalog 195 without changing published assets'
+          git push origin HEAD:refs/heads/maintenance/source134-synced-20261020
+          git rev-parse HEAD HEAD^{tree} > source-commit.txt
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: complete-catalog-source-proof
+          path: |
+            full-source/research/post-0.3.134/catalog-source-sync.json
+            full-source/source-commit.txt
+          retention-days: 30

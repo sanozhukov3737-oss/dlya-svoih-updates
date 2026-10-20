@@ -1,0 +1,99 @@
+[
+  {
+    "runId": 39392176663,
+    "commit": "6bea466ec2533cdd9d847b35112788f29f0c3859",
+    "result": "workflow-context-validation-failure"
+  },
+  {
+    "runId": 39392358491,
+    "commit": "bd7119dc574f96ff3f35eb6b8e73c33ca5dd4d6a",
+    "result": "draft-release-read-access-not-found"
+  },
+  {
+    "runId": 39392735774,
+    "commit": "5e603a32def44f146771ee8b7f9b572102affb34",
+    "result": "draft-asset-read-access-HTTP403"
+  },
+  {
+    "runId": 39393283820,
+    "commit": "283af5f930e81686062277e936db1fb701461b10",
+    "result": "original-candidate-signature-passed"
+  },
+  {
+    "runId": 39394789383,
+    "commit": "f00c5521a7ef9646866533ba180c11b9604d580e",
+    "result": "Android-test-search-stack-navigation"
+  },
+  {
+    "runId": 39395790883,
+    "commit": "d99a2ac3426e660300cd96361a0f3617dbc158e5",
+    "result": "Android-test-Compose-switch-selector"
+  },
+  {
+    "runId": 39396641826,
+    "commit": "75060e4dbaacb6a2c9c4c4bdc18c4cd07b7768b4",
+    "result": "actual-Android-found-five-invalid-searchText-fields"
+  },
+  {
+    "runId": 39397795183,
+    "commit": "2289f432808060d2280d54cea799edeac955189f",
+    "result": "fixed-search-repair-SQLite-version-mismatch-guarded"
+  },
+  {
+    "runId": 39398090103,
+    "commit": "d9ce092a0249037b28498197cc7df0d69e9919f1",
+    "result": "fixed-signature-verified"
+  },
+  {
+    "runId": 39398320838,
+    "commit": "b52a6fcba4bdc84d05d93b3434c908bbb4b19e69",
+    "result": "actual-upgrade-data-preservation-passed-test-tab-intent-stopped"
+  },
+  {
+    "runId": 39398966129,
+    "commit": "6485cec50deb9a369c00ac1e9e84a04b140df578",
+    "result": "offline-search-and-TM46-render-passed-gallery-selector-and-source-black-heuristic"
+  },
+  {
+    "runId": 39399608622,
+    "commit": "0406fea9caa9798f2c9e0ffc298867d1976258d3",
+    "result": "runner-KVM-preparation-failed-no-Android-test"
+  },
+  {
+    "runId": 39400080420,
+    "commit": "68d683597fdaaef2bff30e4c3befc0f2bfc2cbd8",
+    "result": "actual-Android-confirmed-shaderSource-not-ASCII-material-name-error"
+  },
+  {
+    "runId": 39402353169,
+    "commit": "5aeef9578926c32b890f7dc0bb787763d71092bc",
+    "result": "GPU-synchronization-candidate-signature-passed-not-final"
+  },
+  {
+    "runId": 39402639738,
+    "commit": "9c56543996c0c95dd944ec29974e7880f17b7507",
+    "result": "upgrade-gallery-navigation-passed-GPU-hypothesis-did-not-resolve-M14"
+  },
+  {
+    "runId": 39401367903,
+    "commit": "2a6f47534efd6d3bde196f01280752debfa70bcd",
+    "result": "diagnostic-probe-stopped-on-offline-setup-race-not-Android-QA-pass"
+  },
+  {
+    "runId": 39401819559,
+    "commit": "eef143c651e62599e9f513890e8cb48967b2e1c0",
+    "result": "diagnostic-probe-stopped-on-incomplete-UIAutomator-XML"
+  },
+  {
+    "runId": 39403888993,
+    "commit": "a01ae5371649fe66ee2c57674889100e9bacdb06",
+    "result": "final-shader-name-repair-signature-passed"
+  },
+  {
+    "runId": 39404271107,
+    "commit": "4cb8edf5bf6f5923455720522048b57fb4f1ee5e",
+    "result": "all-actual-Android-app-checks-passed-and-eight-frames-reviewed;workflow-cancelled-at-emulator-shutdown;proof-upload-success",
+    "workflowConclusion": "cancelled",
+    "proofArtifactId": 12257790754
+  }
+]

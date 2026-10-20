@@ -167,6 +167,13 @@ class GuideRepository(private val db: GuideDatabase, private val legacyPrefs: Sh
     suspend fun initialize() = withContext(Dispatchers.IO) {
         updater?.initialize()
         db.withTransaction {
+            // Rebuild once for an existing install or a newly imported catalog. Name search
+            // also reads the title directly, so a missing FTS entry cannot hide a model.
+            val searchRevision = "2:" + (dao.metadata("content_version") ?: "0")
+            if (dao.metadata("search_index_revision") != searchRevision) {
+                db.openHelper.writableDatabase.execSQL("INSERT INTO cards_fts(cards_fts) VALUES ('rebuild')")
+                dao.putMetadata(MetadataEntity("search_index_revision", searchRevision))
+            }
             if (dao.metadata("legacy_favorites_imported") == null) {
                 // Marker and inserts commit atomically. Existing SQL favorites are never overwritten.
                 val oldIds = legacyPrefs.getStringSet("favorites", emptySet()).orEmpty().toSet()
@@ -218,7 +225,7 @@ class GuideRepository(private val db: GuideDatabase, private val legacyPrefs: Sh
     fun detail(id: String) = combine(combine(dao.card(id), dao.images(id), dao.sources(id),
         dao.isFavorite(id), dao.cardCountries(id)) { card, images, sources, favorite, countries ->
         CardDetails(card, images, sources, favorite, countries)
-    }, dao.relatedCards(id, CardFamilies.relatedIds(id)), dao.relatedCardEntities(id, CardFamilies.relatedIds(id))) { details, related, comparisonCards ->
+    }, dao.relatedCards(id, CardFamilies.relatedIds(id)), dao.comparisonCards(id, CardFamilies.relatedIds(id))) { details, related, comparisonCards ->
         details.copy(related = related, comparisonCards = comparisonCards)
     }
 

@@ -1,0 +1,215 @@
+{
+  "preparedAt": "2026-10-19",
+  "state": "prepared-not-published",
+  "baseline": "catalog-190 plus prepared UPM-O correction 191",
+  "targetContentVersion": 192,
+  "cardCount": 13,
+  "images": 13,
+  "scope": "Exterior identification and general descriptive reference",
+  "excludedMaterial": [
+    "internal cutaways",
+    "wiring and circuit diagrams",
+    "arming or initiation details",
+    "payload compatibility tables",
+    "release settings",
+    "handling and installation instructions"
+  ],
+  "aircraftModelCompatibilityMappings": [],
+  "sourceAuthenticity": "Owner-supplied DEMZ translated PDF is retained by hash; external observations are attributed",
+  "imageRights": "Attribution recorded. Public availability does not establish an open redistribution licence; owner-supplied catalog images and third-party photos remain subject to their original rights. No licence claim or publication approval is inferred.",
+  "provenance": [
+    {
+      "cardId": "uavref-ofsp-05",
+      "sourceUrl": "https://sprotyvg7.com.ua/wp-content/uploads/2023/04/%D0%91%D0%9F%D0%9B%D0%90_1-2.pdf",
+      "page": 5,
+      "clip": [
+        355,
+        269,
+        476,
+        313
+      ],
+      "imageType": "published-exterior-illustration",
+      "manufacturerConfirmed": false
+    },
+    {
+      "cardId": "uavref-ofsp-08",
+      "sourceUrl": "https://sprotyvg7.com.ua/wp-content/uploads/2023/04/%D0%91%D0%9F%D0%9B%D0%90_1-2.pdf",
+      "page": 5,
+      "clip": [
+        340,
+        231,
+        489,
+        273
+      ],
+      "imageType": "published-exterior-illustration",
+      "manufacturerConfirmed": false
+    },
+    {
+      "cardId": "uavref-ofsp-17",
+      "sourceUrl": "https://sprotyvg7.com.ua/wp-content/uploads/2023/04/%D0%91%D0%9F%D0%9B%D0%90_1-2.pdf",
+      "page": 5,
+      "clip": [
+        300,
+        125,
+        528,
+        177
+      ],
+      "imageType": "published-exterior-illustration",
+      "manufacturerConfirmed": false
+    },
+    {
+      "cardId": "uavref-ofsp-25",
+      "sourceUrl": "https://sprotyvg7.com.ua/wp-content/uploads/2023/04/%D0%91%D0%9F%D0%9B%D0%90_1-2.pdf",
+      "page": 5,
+      "clip": [
+        300,
+        65,
+        529,
+        118
+      ],
+      "imageType": "published-exterior-illustration",
+      "manufacturerConfirmed": false
+    },
+    {
+      "cardId": "uavref-ofbch-2",
+      "sourceUrl": "https://censor.net/ru/blogs/3584091/znayideno-boyiovu-chastinu-v-seredin-drona-gerbera-yak-pratsyu-yiogo-sistema-p-drivu",
+      "imageUrl": "https://images.cnscdn.com/5/8/4/d/584d5ac920ec39a3bed2fe800a7d3e14/780x1297.jpg",
+      "imageType": "observer-exterior-photo",
+      "manufacturerConfirmed": false
+    },
+    {
+      "cardId": "uavref-ofbch-25",
+      "sourceUrl": "https://gur.gov.ua/content/serii-y-ta-iak-rosiia-modernizuie-shakhedy-ta-inshi-udarni-bpla.html",
+      "imageUrl": "https://gur.gov.ua/images/items/20250218-ws-07.webp",
+      "imageType": "official-exterior-photos",
+      "manufacturerAttribution": "ГУР: Базальт; not independently confirmed by manufacturer"
+    },
+    {
+      "cardId": "uavref-ibm-02",
+      "sourceFile": "Каталог_2026_на_русском(1).pdf",
+      "sourceSha256": "2482f01e4ff43be8e87d8164be438af502a162ea2cc2b2f75a8b03df5fd7a8d0",
+      "page": 21,
+      "clip": [
+        50,
+        90,
+        205,
+        410
+      ],
+      "nativeDesignation": "ІБМ-0,2",
+      "imageType": "manufacturer-catalog-exterior",
+      "note": "Catalogue translation supplied by owner; original publication authenticity not independently verified"
+    },
+    {
+      "cardId": "uavref-ibm-05",
+      "sourceFile": "Каталог_2026_на_русском(1).pdf",
+      "sourceSha256": "2482f01e4ff43be8e87d8164be438af502a162ea2cc2b2f75a8b03df5fd7a8d0",
+      "page": 20,
+      "clip": [
+        50,
+        90,
+        195,
+        380
+      ],
+      "nativeDesignation": "ІБМ-0,5",
+      "imageType": "manufacturer-catalog-exterior",
+      "note": "Catalogue translation supplied by owner; original publication authenticity not independently verified"
+    },
+    {
+      "cardId": "uavref-ibm-1",
+      "sourceFile": "Каталог_2026_на_русском(1).pdf",
+      "sourceSha256": "2482f01e4ff43be8e87d8164be438af502a162ea2cc2b2f75a8b03df5fd7a8d0",
+      "page": 19,
+      "clip": [
+        40,
+        100,
+        200,
+        420
+      ],
+      "nativeDesignation": "ІБМ-1",
+      "imageType": "manufacturer-catalog-exterior",
+      "note": "Catalogue translation supplied by owner; original publication authenticity not independently verified"
+    },
+    {
+      "cardId": "uavref-ibm-3",
+      "sourceFile": "Каталог_2026_на_русском(1).pdf",
+      "sourceSha256": "2482f01e4ff43be8e87d8164be438af502a162ea2cc2b2f75a8b03df5fd7a8d0",
+      "page": 16,
+      "clip": [
+        65,
+        100,
+        245,
+        548
+      ],
+      "nativeDesignation": "ІБМ-3",
+      "imageType": "manufacturer-catalog-exterior",
+      "note": "Catalogue translation supplied by owner; original publication authenticity not independently verified"
+    },
+    {
+      "cardId": "uavref-ss-02",
+      "sourceFile": "Каталог_2026_на_русском(1).pdf",
+      "sourceSha256": "2482f01e4ff43be8e87d8164be438af502a162ea2cc2b2f75a8b03df5fd7a8d0",
+      "page": 22,
+      "clip": [
+        15,
+        155,
+        310,
+        485
+      ],
+      "imageType": "manufacturer-catalog-exterior",
+      "aircraftCompatibilityConfirmed": false
+    },
+    {
+      "cardId": "uavref-ss-05",
+      "sourceFile": "Каталог_2026_на_русском(1).pdf",
+      "sourceSha256": "2482f01e4ff43be8e87d8164be438af502a162ea2cc2b2f75a8b03df5fd7a8d0",
+      "page": 23,
+      "clip": [
+        25,
+        160,
+        314,
+        485
+      ],
+      "imageType": "manufacturer-catalog-exterior",
+      "aircraftCompatibilityConfirmed": false
+    },
+    {
+      "cardId": "uavref-ss-mpp-3",
+      "sourceFile": "Каталог_2026_на_русском(1).pdf",
+      "sourceSha256": "2482f01e4ff43be8e87d8164be438af502a162ea2cc2b2f75a8b03df5fd7a8d0",
+      "page": 30,
+      "clip": [
+        10,
+        165,
+        310,
+        480
+      ],
+      "imageType": "manufacturer-catalog-exterior",
+      "aircraftCompatibilityConfirmed": false
+    }
+  ],
+  "validation": {
+    "baselineCards": 1426,
+    "addedCards": 13,
+    "resultCards": 1439,
+    "preservedOtherCards": 1425,
+    "correctedExistingCard": "eng-pdf-v7-116",
+    "addedImages": 13,
+    "addedCategories": 3,
+    "resultImages": 1346,
+    "sourceOtherCardsPreserved": 1324,
+    "integrity": "ok",
+    "foreignKeys": "ok",
+    "fts": "ok",
+    "idempotence": "ok",
+    "favoritesAndReading": "preserved",
+    "productionSearchRegressionTests": 8,
+    "newDesignationChecks": 39,
+    "javaFeatureTests": 4,
+    "menuCacheTests": 3,
+    "menuImageTests": 2,
+    "androidDeviceReview": "not run; Android SDK unavailable",
+    "apkBuilt": false,
+    "apkPublished": false,
+    "githubPublished": false
+  }
+}

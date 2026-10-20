@@ -9,3 +9,4 @@ keystore.properties
 __pycache__/
 *.pyc
 .idea/
+web-viewer/node_modules/
