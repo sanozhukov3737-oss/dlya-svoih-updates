@@ -187,11 +187,18 @@ def verify_photo_and_navigation(report):
     tap(text('Противопехотные мины'))
     tap(text('Все страны'))
     def position():
-        node=description('Перейти к карточке')
-        label=' '.join(n.get('text','') for n in node.iter('node'))
-        m=re.search(r'(\d+)\s*/\s*(\d+)',label)
-        assert m, ('Reader position missing', label)
-        return int(m[1]),int(m[2])
+        root=tree()
+        node=next(n for n in root.iter('node') if n.get('content-desc')=='Перейти к карточке')
+        x1,y1,x2,y2=bounds(node)
+        # Compose exports the visible counter as a sibling inside the button's
+        # bounds, not as an XML child of the description node.
+        for candidate in root.iter('node'):
+            match=re.fullmatch(r'(\d+)\s*/\s*(\d+)',candidate.get('text',''))
+            if match:
+                a,b,c,d=bounds(candidate)
+                if x1<=a<c<=x2 and y1<=b<d<=y2:
+                    return int(match[1]),int(match[2])
+        raise AssertionError('Visible reader counter missing from button bounds')
     first,total=position()
     assert first==1 and total>1
     tap(description('Следующая карточка'))
