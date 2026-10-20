@@ -1,5 +1,5 @@
 {
-  "status": "completed-with-explicit-external-items",
+  "status": "awaiting-physical-device-and-exact-images",
   "ruStore": "excluded",
   "sourceSynchronizationCommit": "f1eddd6a9baa3d97e27a4c12044d991b29ec56bf",
   "proofCommit": "a4a563506990c1443ddef3bcff6cc920e5e44b06",
@@ -45,5 +45,18 @@
   "codeAndEvidenceMainCommit": "331e36472d62489825f75415b9ee3a25092dd295",
   "codeAndEvidenceTree": "8be1f0c9a66053c070dfd10cf3ff219bb9acde67",
   "localEquivalentCommit": "00f8d4ceaad7a82a8620c4e5626f05cfa33a7648",
-  "workspaceRoot": "/workspace/scratch/a8009b11e95e/source134"
+  "workspaceRoot": "/workspace/scratch/a8009b11e95e/source134",
+  "followUp": {
+    "date": "2026-10-20",
+    "phoneWizardPrepared": true,
+    "phoneEntryPoint": "tools/CHECK_PHONE.cmd",
+    "physicalDeviceTestPassed": false,
+    "simulatedAdbTestsPassed": 6,
+    "windowsLauncherExecuted": false,
+    "newImagesAdded": 0,
+    "remainingExactVariantImages": 8,
+    "publishedApplicationChanged": false,
+    "details": "research/post-0.3.134/FOLLOWUP-2026-10-20.md",
+    "imageSearch": "research/post-0.3.134/image-search-followup-2026-10-20.json"
+  }
 }

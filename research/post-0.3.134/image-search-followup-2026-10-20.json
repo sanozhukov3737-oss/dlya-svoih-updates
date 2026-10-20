@@ -1,0 +1,176 @@
+{
+  "date": "2026-10-20",
+  "scope": "Exterior-image follow-up for eight existing handbook cards",
+  "status": "unresolved-exact-images",
+  "newImagesAdded": 0,
+  "remainingExactVariantImages": 8,
+  "textQueries": 19,
+  "imageQueries": 4,
+  "queries": [
+    {
+      "index": "system1",
+      "query": "\"ПНІ-1\" \"підривач\" фото"
+    },
+    {
+      "index": "system1",
+      "query": "\"ПНУ-1-36\" фото"
+    },
+    {
+      "index": "system1",
+      "query": "\"ПНУ-1-1/2\" фото"
+    },
+    {
+      "index": "system1",
+      "query": "\"Маяк-Перспектива\" \"ОФБЧ\" фото"
+    },
+    {
+      "index": "system1",
+      "query": "\"МОА45/9\" фото"
+    },
+    {
+      "index": "system1",
+      "query": "\"МОА45/13\" фото"
+    },
+    {
+      "index": "system1",
+      "query": "\"МОА60/9\" фото"
+    },
+    {
+      "index": "system1",
+      "query": "\"ВОФБЧ-2.5\" фото"
+    },
+    {
+      "index": "system2",
+      "query": "\"MOA\" \"45/9\" munition"
+    },
+    {
+      "index": "system2",
+      "query": "\"МОА-FPV\" \"45\""
+    },
+    {
+      "index": "system2",
+      "query": "\"ВОФБЧ\""
+    },
+    {
+      "index": "system2",
+      "query": "\"ПНИ-1\" \"Интервзрывпром\""
+    },
+    {
+      "index": "system1",
+      "query": "Интервибухпром ПНУ підривник фото"
+    },
+    {
+      "index": "system1",
+      "query": "\"ВОФБЧ\" Маяк"
+    },
+    {
+      "index": "system1",
+      "query": "\"МОА\" \"45/13\""
+    },
+    {
+      "index": "system1",
+      "query": "\"МОА\" \"60/9\""
+    },
+    {
+      "index": "image",
+      "query": "\"ПНУ-1-36\""
+    },
+    {
+      "index": "image",
+      "query": "\"ПНИ-1\" взрыватель"
+    },
+    {
+      "index": "image",
+      "query": "\"МОА\" \"45/9\""
+    },
+    {
+      "index": "image",
+      "query": "\"ВОФБЧ-2.5\""
+    },
+    {
+      "index": "system1",
+      "query": "\"НВП Хімічних продуктів\" \"МОА\" фото"
+    },
+    {
+      "index": "system1",
+      "query": "\"ПНУ\" \"Інтервибухпром\" фото"
+    },
+    {
+      "index": "system1",
+      "query": "\"МОА\" \"45/9\" фотографія"
+    }
+  ],
+  "findings": [
+    {
+      "url": "https://ivp.pat.ua/",
+      "result": "Indexed corporate issuer information; no matched exterior photograph in returned results. A similarly named LLC is a different legal entity and is not used for attribution."
+    },
+    {
+      "url": "https://www.scribd.com/document/1075604375/",
+      "result": "Additional indexed catalog copy names OFBCh and VOFBCh; returned excerpt does not supply a verified exact exterior photograph. No hidden pages or paid access used."
+    },
+    {
+      "url": "https://www.scribd.com/document/1062668676/",
+      "result": "Indexed text names PNU and MOA designations; no exact exterior photograph established from this result."
+    },
+    {
+      "url": "https://www.scribd.com/document/1075604464/",
+      "result": "Indexed mention of MOA-FPV 45/9 is not evidence of a matched image for MOA 45/9; no image copied."
+    },
+    {
+      "url": "https://cat-uxo.com/explosive-hazards/ucav/ofbch-25-aircraft-bomblet",
+      "result": "Image result is labelled OFBCh-25-2.5 and does not establish the Mayak-Perspektiva product identity; rejected."
+    }
+  ],
+  "cards": [
+    {
+      "cardId": "handbookref-pni-1",
+      "title": "ПНИ-1",
+      "status": "awaiting-verified-exact-exterior-photo",
+      "addedImage": false
+    },
+    {
+      "cardId": "handbookref-pnu-1-1-2",
+      "title": "ПНУ-1-1/2",
+      "status": "awaiting-verified-exact-exterior-photo",
+      "addedImage": false
+    },
+    {
+      "cardId": "handbookref-pnu-1-36",
+      "title": "ПНУ-1-36",
+      "status": "awaiting-verified-exact-exterior-photo",
+      "addedImage": false
+    },
+    {
+      "cardId": "handbookref-ofbch-2-5-mayak-perspektiva",
+      "title": "ОФБЧ-2.5 («Маяк-Перспектива»)",
+      "status": "awaiting-verified-exact-exterior-photo",
+      "addedImage": false
+    },
+    {
+      "cardId": "handbookref-vofbch-2-5",
+      "title": "ВОФБЧ-2.5",
+      "status": "awaiting-verified-exact-exterior-photo",
+      "addedImage": false
+    },
+    {
+      "cardId": "handbookref-moa-45-9",
+      "title": "МОА45/9",
+      "status": "awaiting-verified-exact-exterior-photo",
+      "addedImage": false
+    },
+    {
+      "cardId": "handbookref-moa-45-13",
+      "title": "МОА45/13",
+      "status": "awaiting-verified-exact-exterior-photo",
+      "addedImage": false
+    },
+    {
+      "cardId": "handbookref-moa-60-9",
+      "title": "МОА60/9",
+      "status": "awaiting-verified-exact-exterior-photo",
+      "addedImage": false
+    }
+  ],
+  "catalogAndPublishedApkChanged": false
+}
