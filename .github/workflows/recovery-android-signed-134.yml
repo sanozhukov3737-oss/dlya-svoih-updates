@@ -23,7 +23,9 @@ concurrency:
 jobs:
   android:
     runs-on: ubuntu-24.04
-    timeout-minutes: 25
+    timeout-minutes: 30
+    env:
+      ANDROID_AVD_HOME: ${{ runner.temp }}/dlya-svoih-avds
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-java@v4
@@ -70,7 +72,9 @@ jobs:
       - name: Prepare fresh accelerated Android 11 device
         run: |
           "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" 'system-images;android-30;google_apis;x86_64'
+          mkdir -p "$ANDROID_AVD_HOME"
           echo no | "$ANDROID_HOME/cmdline-tools/latest/bin/avdmanager" create avd --force --name recovery134 --package 'system-images;android-30;google_apis;x86_64' --device pixel_2
+          "$ANDROID_HOME/emulator/emulator" -list-avds
       - name: Verify public in-app update and full offline Android UI
         run: >-
           python3 tools/run_android_emulator.py --out build/recovery-android/emulator --timeout 1200 --
