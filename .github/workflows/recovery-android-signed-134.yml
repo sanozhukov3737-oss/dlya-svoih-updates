@@ -31,7 +31,7 @@ jobs:
       - uses: actions/download-artifact@v4
         with:
           name: recovery134-signed-apk
-          run-id: 39402353169
+          run-id: 39403888993
           github-token: ${{ github.token }}
           path: build/recovery-signed
       - name: Verify the signed artifact and obtain the published baseline
@@ -44,7 +44,7 @@ jobs:
           p=Path('build/recovery-signed/DLYA_SVOIH_v0.3.134.apk')
           assert p.stat().st_size==144646769
           with p.open('rb') as stream:
-              assert hashlib.file_digest(stream,'sha256').hexdigest()=='d35f71c479618577578610385e91f546c672c423579303da5ec7b461ca96f759'
+              assert hashlib.file_digest(stream,'sha256').hexdigest()=='300b77deaee3348e05a0135bf0079414c07dc2e15a7dcfd9b1239a8cef99298f'
           report=json.loads(Path('build/recovery-signed/stage-3-signature-verification.json').read_text())
           assert report['signatureVerified'] and report['certificateSha256']=='2f0a0908f269bc039311edb58fca8863347f1e4c3a7cfaddd909991cf1f0b509'
           with zipfile.ZipFile(p) as z:

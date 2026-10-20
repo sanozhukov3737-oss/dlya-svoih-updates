@@ -14,7 +14,7 @@ import xml.etree.ElementTree as ET
 from pathlib import Path
 
 PACKAGE = 'ru.dlyasvoih.app'
-SIGNED_SHA = 'd35f71c479618577578610385e91f546c672c423579303da5ec7b461ca96f759'
+SIGNED_SHA = '300b77deaee3348e05a0135bf0079414c07dc2e15a7dcfd9b1239a8cef99298f'
 OLD_SHA = '8cff50f9d76dbeec261ca928603277bdf540d0d0b42913bde919a82ce8d5d49f'
 out = None
 
