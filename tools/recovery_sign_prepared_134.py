@@ -22,6 +22,8 @@ MANIFEST_SHA = "11402c11a9f2ac1ad95770ced7f5d25073c8016ba5d4fa0c33b1e943ccd797f4
 SOURCE_COMMIT = "e5eb15076c4727ec0deb32a4f7b2ac43b1e3b812"
 DB_ASSET = "assets/database/guide-v29.db"
 MODELS_ASSET = "assets/viewer3d/models.json"
+VIEWER_ASSET = "assets/viewer3d/viewer.bundle.js"
+VIEWER_SHA = "8495bc95f464c432c364a8551bbfad89d8e27663555737651b5a2105f2f70878"
 
 
 def sha(path):
@@ -143,16 +145,18 @@ def main():
         print(json.dumps(report, ensure_ascii=False, indent=2))
         return
     require(args.repaired_unsigned is not None, "The Android-discovered search repair is required")
-    require(sha(args.repaired_unsigned) == "f7f7d1034c5dba4117629e384833f5ade7545a3aae617b5b3b9da6f53b36b07f",
-            "Repaired unsigned APK differs from the reproducible SQLite 3.45.1 result")
+    require(sha(args.repaired_unsigned) == "ee7f1165af361b970ba6915c34799cb7112dbeccb9ce08853ee08e5c57cb62a4",
+            "Repaired unsigned APK differs from the reproducible catalog and renderer result")
     with zipfile.ZipFile(unsigned) as original, zipfile.ZipFile(args.repaired_unsigned) as fixed:
         require(original.namelist() == fixed.namelist(), "Repaired APK entry set changed")
         changed = [n for n in original.namelist() if original.read(n) != fixed.read(n)]
-        require(changed == [DB_ASSET], "Repair changed more than the catalog database")
+        require(len(changed)==2 and set(changed)=={DB_ASSET,VIEWER_ASSET}, "Unexpected repaired APK entries")
+        require(hashlib.sha256(fixed.read(VIEWER_ASSET)).hexdigest()==VIEWER_SHA, "Renderer repair changed")
         require(hashlib.sha256(fixed.read(DB_ASSET)).hexdigest() == REPAIRED_DB_SHA,
                 "Repaired catalog differs from the locally checked five-field repair")
     report["repairedUnsignedApkSha256"] = sha(args.repaired_unsigned)
-    report["onlyEntryChangedByRepair"] = DB_ASSET
+    report["entriesChangedByRepair"] = [DB_ASSET,VIEWER_ASSET]
+    report["rendererBundleSha256"] = VIEWER_SHA
     report["catalog"] = inspect_catalog(args.repaired_unsigned, args.previous, REPAIRED_DB_SHA)
     unsigned = args.repaired_unsigned
     require(args.sdk is not None and args.keystore is not None, "SDK and existing CI keystore are required")
