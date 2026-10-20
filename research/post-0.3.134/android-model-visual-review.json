@@ -1,0 +1,76 @@
+{
+  "status": "passed-assistant-visual-review-of-actual-Android-frames",
+  "androidRun": 39424991339,
+  "apkSha256": "300b77deaee3348e05a0135bf0079414c07dc2e15a7dcfd9b1239a8cef99298f",
+  "originalPngsUnchanged": true,
+  "framesReviewed": 8,
+  "geometryAndModelManifestChanged": false,
+  "conditionalColorLabelsPresent": true,
+  "creditsAndLicensesVisible": true,
+  "frames": [
+    {
+      "modelId": "m14-complete",
+      "view": "initial",
+      "path": "research/post-0.3.134/android-ota-final/recovery-android/proof/viewer/offline-model-m14-complete-release.png",
+      "sha256": "f528b6b7c83d46e60a867fd63ce643eaf3ac6cc5df74da83a3cb413edef0a05b",
+      "visualReview": "passed",
+      "observation": "Матовая оливковая условная окраска; боковые рёбра и кольца читаются, в повёрнутом виде различима верхняя поверхность."
+    },
+    {
+      "modelId": "m14-complete",
+      "view": "rotated",
+      "path": "research/post-0.3.134/android-ota-final/recovery-android/proof/viewer/offline-model-m14-complete-release-rotated.png",
+      "sha256": "f14a12abd9579a21093f9f132428380f479612a90d9922ce0d09c67ff4c03cdd",
+      "visualReview": "passed",
+      "observation": "Матовая оливковая условная окраска; боковые рёбра и кольца читаются, в повёрнутом виде различима верхняя поверхность."
+    },
+    {
+      "modelId": "pmn-2-complete",
+      "view": "initial",
+      "path": "research/post-0.3.134/android-ota-final/recovery-android/proof/viewer/offline-model-pmn-2-complete-release.png",
+      "sha256": "d4ce7fd4a80a382ac3899dcc27ca6885c06fbdad6e02747c1a28ac0e98fca4f4",
+      "visualReview": "passed",
+      "observation": "Оливковый корпус и тёмная крышка отделены друг от друга и фона; выступы, обод и детали видны после вращения."
+    },
+    {
+      "modelId": "pmn-2-complete",
+      "view": "rotated",
+      "path": "research/post-0.3.134/android-ota-final/recovery-android/proof/viewer/offline-model-pmn-2-complete-release-rotated.png",
+      "sha256": "7e121cc568b31fd50acd529c2cd33c1e22a67f134b712c61c42acac7e6258f20",
+      "visualReview": "passed",
+      "observation": "Оливковый корпус и тёмная крышка отделены друг от друга и фона; выступы, обод и детали видны после вращения."
+    },
+    {
+      "modelId": "m16-complete",
+      "view": "initial",
+      "path": "research/post-0.3.134/android-ota-final/recovery-android/proof/viewer/offline-model-m16-complete-release.png",
+      "sha256": "509a7c8216cf1d686f47ad535a780a0f7f8573d00427867e6b727d68c9246a6c",
+      "visualReview": "passed",
+      "observation": "Условная оливковая окраска; цилиндр, верхний рельеф и выступающие детали читаются в обоих ракурсах."
+    },
+    {
+      "modelId": "m16-complete",
+      "view": "rotated",
+      "path": "research/post-0.3.134/android-ota-final/recovery-android/proof/viewer/offline-model-m16-complete-release-rotated.png",
+      "sha256": "5877cf1e42c205c6f4b0b03df76e24c011922ea31ad6c20e857bb0faa69d2544",
+      "visualReview": "passed",
+      "observation": "Условная оливковая окраска; цилиндр, верхний рельеф и выступающие детали читаются в обоих ракурсах."
+    },
+    {
+      "modelId": "british-drifting-mine",
+      "view": "initial",
+      "path": "research/post-0.3.134/android-ota-final/recovery-android/proof/viewer/offline-model-british-drifting-mine-release.png",
+      "sha256": "ed53f545a444904b9ed6194692db500221dc5838f883190a07a0a4ee513445a6",
+      "visualReview": "passed",
+      "observation": "Сохранена музейная тёмная текстура; светлый пояс, отверстия, фактура и блики различимы в обоих ракурсах на светлом фоне."
+    },
+    {
+      "modelId": "british-drifting-mine",
+      "view": "rotated",
+      "path": "research/post-0.3.134/android-ota-final/recovery-android/proof/viewer/offline-model-british-drifting-mine-release-rotated.png",
+      "sha256": "ff74b0405441f3502b04c404bc4c3a10e28b063337d45b2ca2b2eb4a470e6934",
+      "visualReview": "passed",
+      "observation": "Сохранена музейная тёмная текстура; светлый пояс, отверстия, фактура и блики различимы в обоих ракурсах на светлом фоне."
+    }
+  ]
+}

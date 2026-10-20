@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <int name="theme_mode" value="2" />
+    <boolean name="large_mode" value="true" />
+</map>

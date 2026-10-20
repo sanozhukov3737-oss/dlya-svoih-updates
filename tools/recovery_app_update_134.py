@@ -80,6 +80,13 @@ def update_through_app():
         installedApkSha256=installed_sha, newApkInstalledViaAdb=False, package=qa.PACKAGE,
         versionName='0.3.134',versionCode=138)
     (qa.out/'ota-installation.json').write_text(json.dumps(evidence,ensure_ascii=False,indent=2)+'\n')
+    # Complete Android's own success screen. A shortcut can otherwise be
+    # delivered to the app underneath the still-visible installer window.
+    opened = visible(lambda a:a.get('package') in ('com.google.android.packageinstaller','com.android.packageinstaller')
+        and a.get('text','').upper() in ('OPEN','ОТКРЫТЬ'),timeout=60)
+    qa.tap(opened)
+    visible(lambda a:a.get('package')==qa.PACKAGE,timeout=60)
+    qa.capture('ota-opened-updated-app')
     for service in ('wifi','data'): qa.adb('shell','svc',service,'disable')
     qa.adb('shell','settings','put','global','airplane_mode_on','1')
     qa.adb('shell','am','broadcast','-a','android.intent.action.AIRPLANE_MODE','--ez','state','true')

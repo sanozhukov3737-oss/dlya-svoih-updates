@@ -1,0 +1,45 @@
+{
+  "status": "completed-with-explicit-external-items",
+  "ruStore": "excluded",
+  "sourceSynchronizationCommit": "f1eddd6a9baa3d97e27a4c12044d991b29ec56bf",
+  "proofCommit": "a4a563506990c1443ddef3bcff6cc920e5e44b06",
+  "proofTree": "87b74ecfe7364ba8adf771919ac6db620836956c",
+  "apkSha256": "300b77deaee3348e05a0135bf0079414c07dc2e15a7dcfd9b1239a8cef99298f",
+  "certificateSha256": "2f0a0908f269bc039311edb58fca8863347f1e4c3a7cfaddd909991cf1f0b509",
+  "publicReleaseUnchanged": true,
+  "android": {
+    "runId": 39424991339,
+    "jobId": 118635179670,
+    "conclusion": "success",
+    "api": 30,
+    "acceleration": "KVM",
+    "updateViaApp": true,
+    "newApkInstalledViaAdb": false,
+    "favoritesPreserved": true,
+    "settingsPreserved": true,
+    "preservedCardIdsAndRowids": 1426,
+    "cards": 1697,
+    "images": 1600,
+    "contentVersion": 195,
+    "offlineUiPassed": true,
+    "modelFramesVisuallyReviewed": 8,
+    "shutdownSeconds": 1.12,
+    "emulatorExitCode": 0
+  },
+  "hostTestsPassed": 29,
+  "proofArchive": {
+    "runId": 39426377809,
+    "jobId": 118639872831,
+    "conclusion": "success"
+  },
+  "remaining": [
+    {
+      "item": "physical-Android-device",
+      "reason": "No connected device, USB/ADB/Android SDK/KVM on this host; Windows procedure and capture tool prepared"
+    },
+    {
+      "item": "exact-exterior-images-for-eight-handbook-cards",
+      "reason": "Exact variant and permitted image source not confirmed; search and rejected candidates recorded"
+    }
+  ]
+}

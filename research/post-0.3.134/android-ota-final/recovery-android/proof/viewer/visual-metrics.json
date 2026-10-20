@@ -1,0 +1,66 @@
+[
+  {
+    "view": "Британская дрейфующая мина",
+    "illustrative": false,
+    "visibleColors": 18485,
+    "coloredFraction": 0.03267395132962938,
+    "darkFraction": 0.4909217401457581,
+    "reliefRange": 61.995999999999995
+  },
+  {
+    "view": "Британская дрейфующая мина rotated",
+    "illustrative": false,
+    "visibleColors": 14397,
+    "coloredFraction": 0.0260884802506803,
+    "darkFraction": 0.7291065391275666,
+    "reliefRange": 48.2808
+  },
+  {
+    "view": "M14",
+    "illustrative": true,
+    "visibleColors": 2750,
+    "coloredFraction": 0.9964009485871941,
+    "darkFraction": 0.0,
+    "reliefRange": 41.427599999999984
+  },
+  {
+    "view": "M14 rotated",
+    "illustrative": true,
+    "visibleColors": 2875,
+    "coloredFraction": 0.9965555671220462,
+    "darkFraction": 0.0,
+    "reliefRange": 48.926199999999994
+  },
+  {
+    "view": "ПМН-2",
+    "illustrative": true,
+    "visibleColors": 3739,
+    "coloredFraction": 0.8088920056100982,
+    "darkFraction": 1.8700327255726977e-05,
+    "reliefRange": 56.4308
+  },
+  {
+    "view": "ПМН-2 rotated",
+    "illustrative": true,
+    "visibleColors": 5707,
+    "coloredFraction": 0.7669030677979873,
+    "darkFraction": 0.04342661698760732,
+    "reliefRange": 54.35859999999999
+  },
+  {
+    "view": "M16 · семейство",
+    "illustrative": true,
+    "visibleColors": 2781,
+    "coloredFraction": 0.9930459035229147,
+    "darkFraction": 0.0,
+    "reliefRange": 40.142799999999994
+  },
+  {
+    "view": "M16 · семейство rotated",
+    "illustrative": true,
+    "visibleColors": 2559,
+    "coloredFraction": 0.9953668898718464,
+    "darkFraction": 0.0,
+    "reliefRange": 49.4288
+  }
+]

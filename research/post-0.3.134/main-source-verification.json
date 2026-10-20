@@ -1,0 +1,20 @@
+{
+  "publishedCatalog190IdsAndRowidsPreserved": 1426,
+  "contentVersion": 195,
+  "currentCards": 1697,
+  "images": 1600,
+  "databaseSha256": "fbbb7a38d77b09b963520011ef64b8111991e03ed1b2ae6277ec335761a107ed",
+  "packagedDataChanged": false,
+  "fullJsonSourceSha256": "7bffb7dfcd684958a3a183b4d49f4e4a7f11f6d4769d4fefa3ba5ba39560430a",
+  "mainSynchronizationCommit": "f1eddd6a9baa3d97e27a4c12044d991b29ec56bf",
+  "mainSynchronizationTree": "d21432dd7c1fd91d915fddc53ee8e7aabd71aa02",
+  "releaseTagStill": "9971bd151d5bc3fd49399cadf7019540b497c3f8",
+  "ruStoreRemovedFromActiveTasks": true,
+  "sourceOnlySensorIdsNotInsertedIntoPublished195": [
+    "sensor-dopler",
+    "sensor-dzhoniki",
+    "sensor-iskra-m",
+    "sensor-mag-2",
+    "sensor-mag-3"
+  ]
+}
