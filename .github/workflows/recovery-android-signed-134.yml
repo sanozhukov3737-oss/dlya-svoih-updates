@@ -25,7 +25,7 @@ jobs:
     runs-on: ubuntu-24.04
     timeout-minutes: 30
     env:
-      ANDROID_AVD_HOME: ${{ runner.temp }}/dlya-svoih-avds
+      ANDROID_AVD_HOME: ${{ github.workspace }}/build/android-avds
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-java@v4
