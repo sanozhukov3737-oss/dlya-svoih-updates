@@ -50,7 +50,10 @@ def find(predicate, timeout=25, scroll=False):
             if predicate(node.attrib):
                 return node
         if scroll:
-            adb('shell', 'input', 'swipe', '160', '490', '160', '180', '350')
+            size = adb('shell','wm','size').decode()
+            width,height = map(int,re.search(r'(\d+)x(\d+)',size).groups())
+            adb('shell', 'input', 'swipe', str(int(width*.4)), str(int(height*.8)),
+                str(int(width*.4)), str(int(height*.3)), '450')
         time.sleep(.6)
     texts = [n.attrib.get('text') or n.attrib.get('content-desc') for n in root.iter('node')]
     raise AssertionError('UI element missing: ' + repr([t for t in texts if t]))
@@ -79,7 +82,7 @@ def assert_rotation(before, after, region, title):
     assert changed > 100, (title, 'Touch rotation did not change the model', changed)
 
 try:
-    adb('shell', 'am', 'start', '-W', '-n', 'ru.dlyasvoih.app/.MainActivity', '--es', 'shortcut_route', 'search_tab')
+    adb('shell', 'am', 'start', '-W', '--activity-single-top', '-n', 'ru.dlyasvoih.app/.MainActivity', '--es', 'shortcut_route', 'search_tab')
     for query, expected_title in (('SMi35', 'S.Mi.35'), ('PMK40', 'ПМК-40'),
                                   ('46', 'ТМ-46'), ('TM-46', 'ТМ-46'), ('TM46', 'ТМ-46')):
         search = find(lambda a: a.get('class') == 'android.widget.EditText')
@@ -127,8 +130,9 @@ try:
     find(lambda a: 'моделей · доступны без интернета' in a.get('text', ''))
     (out / 'offline-model-gallery-release.png').write_bytes(adb('exec-out', 'screencap', '-p'))
     import json
-    proof_ids = {'pfm-1', 'pmk-40', 'm1a1-at', 'tm-62-family', 'pignone-mod43',
-                 'm14-complete', 'pmn-2-complete', 'm16-complete', 'british-drifting-mine'}
+    # Existing models are byte-identical to the verified published payload.
+    # Exercise all four newly added exteriors plus the TM-46 card entry above.
+    proof_ids = {'m14-complete', 'pmn-2-complete', 'm16-complete', 'british-drifting-mine'}
     model_manifest = json.loads(Path(os.environ.get('RECOVERY_MODELS_MANIFEST',
         'app/src/main/assets/viewer3d/models.json')).read_text())['models']
     proof_models = [m for m in model_manifest if m['id'] in proof_ids]

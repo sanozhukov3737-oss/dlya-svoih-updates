@@ -9,6 +9,7 @@ import sqlite3
 import subprocess
 import sys
 import time
+import traceback
 import xml.etree.ElementTree as ET
 from pathlib import Path
 
@@ -74,7 +75,7 @@ def capture(name):
 
 
 def start(route='catalog'):
-    adb('shell', 'am', 'start', '-W', '-n', PACKAGE+'/.MainActivity', '--es', 'shortcut_route', route)
+    adb('shell', 'am', 'start', '-W', '--activity-single-top', '-n', PACKAGE+'/.MainActivity', '--es', 'shortcut_route', route)
 
 
 def search(query, title):
@@ -129,6 +130,7 @@ def snapshot(label):
 
 def catalog_root():
     start('catalog')
+    tap(text('Каталог'))
     for _ in range(8):
         root=tree()
         if any(n.get('content-desc')=='Открыть меню' for n in root.iter('node')):
@@ -256,7 +258,6 @@ def main():
     assert after['metadata'].get('content_version')=='195'
     assert all(after['cards'].get(k)==v for k,v in before['cards'].items()),'Published cards/rowids were lost'
     start('favorites_tab');text('ТМ-46');text('ПМК-40');capture('after-favorites')
-    appearance_dialog();tap(text('Готово'));capture('after-appearance')
     report={'apkSha256':SIGNED_SHA,'packageName':PACKAGE,'versionName':'0.3.134','versionCode':138,
             'upgradeInstallation':'passed-actual-adb-install-r-over-published-0.3.133',
             'favoritesPreserved':True,'favoriteIds':sorted(expected_favorites),'settingsPreserved':True,
@@ -269,8 +270,14 @@ def main():
             'modelVisualChecks':'pending-viewer-script'}
     (out/'upgrade-verification.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
     print('Upgrade, favorites, appearance and full catalog 195 verified on Android',flush=True)
-    verify_photo_and_navigation()
-    report.update(galleryZoomAndSecondPhoto=True,cardButtonsAndSwipes=True)
+    appearance_dialog();capture('after-appearance-dialog');tap(text('Готово'));capture('after-appearance')
+    try:
+        verify_photo_and_navigation()
+        report.update(galleryZoomAndSecondPhoto=True,cardButtonsAndSwipes=True)
+    except Exception as error:
+        report['photoNavigationError']=str(error)
+        capture('photo-navigation-failure')
+        traceback.print_exc()
     (out/'upgrade-verification.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
     search('TM46','ТМ-46')
     env=dict(os.environ,RECOVERY_UI_OUT=str(out/'viewer'),RECOVERY_MODELS_MANIFEST=str(args.models.resolve()))
@@ -283,6 +290,7 @@ def main():
     report['humanVisualReview']='pending-review-of-actual-Android-frames'
     (out/'upgrade-verification.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
     print(json.dumps(report,ensure_ascii=False,indent=2),flush=True)
+    assert report['galleryZoomAndSecondPhoto'] and report['cardButtonsAndSwipes'],report
 
 
 if __name__=='__main__':
