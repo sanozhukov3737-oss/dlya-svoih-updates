@@ -6,6 +6,7 @@ on:
     paths:
       - '.github/workflows/recovery-sign-prepared-134.yml'
       - 'tools/recovery_sign_prepared_134.py'
+      - 'tools/recovery_repair_search_134.py'
   workflow_dispatch:
 
 permissions:
@@ -78,6 +79,15 @@ jobs:
           python3 tools/recovery_sign_prepared_134.py --preflight-only --archive build/recovery-input/DLYA_SVOIH_COMBINED_0.3.134_CANDIDATE.zip --previous build/recovery-input/previous-0.3.133.apk --work build/recovery-work --out build/recovery-signed
       - name: Install Android signature verification tools
         run: '"$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" "build-tools;36.0.0"'
+      - name: Repair only five derived search fields using verified production Java
+        run: |
+          git fetch --depth=1 origin tag app-0.3.133
+          git bundle verify build/recovery-work/DLYA_SVOIH_0.3.134.bundle
+          git fetch build/recovery-work/DLYA_SVOIH_0.3.134.bundle refs/heads/feature-uav-reference-20261019:refs/remotes/recovery/input134
+          test "$(git rev-parse refs/remotes/recovery/input134)" = e5eb15076c4727ec0deb32a4f7b2ac43b1e3b812
+          git worktree add --detach build/recovery-source e5eb15076c4727ec0deb32a4f7b2ac43b1e3b812
+          python3 tools/recovery_repair_search_134.py --apk build/recovery-work/DLYA_SVOIH_v0.3.134-unsigned.apk --source-tree build/recovery-source --out build/recovery-repaired
+          cp build/recovery-repaired/search-repair-verification.json build/recovery-signed/
       - name: Restore the existing signing key without exposing it
         env:
           ANDROID_DEBUG_KEYSTORE_BASE64: ${{ secrets.ANDROID_DEBUG_KEYSTORE_BASE64 }}
@@ -95,7 +105,7 @@ jobs:
       - name: Sign the prepared APK and require the published 0.3.133 certificate
         id: sign
         run: |
-          python3 tools/recovery_sign_prepared_134.py --archive build/recovery-input/DLYA_SVOIH_COMBINED_0.3.134_CANDIDATE.zip --previous build/recovery-input/previous-0.3.133.apk --work build/recovery-work --out build/recovery-signed --sdk "$ANDROID_HOME" --keystore "$CI_SIGNING_KEYSTORE"
+          python3 tools/recovery_sign_prepared_134.py --archive build/recovery-input/DLYA_SVOIH_COMBINED_0.3.134_CANDIDATE.zip --previous build/recovery-input/previous-0.3.133.apk --work build/recovery-work --out build/recovery-signed --repaired-unsigned build/recovery-repaired/DLYA_SVOIH_v0.3.134-search-fixed-unsigned.apk --sdk "$ANDROID_HOME" --keystore "$CI_SIGNING_KEYSTORE"
       - uses: actions/upload-artifact@v4
         if: ${{ steps.sign.outcome == 'success' }}
         with:

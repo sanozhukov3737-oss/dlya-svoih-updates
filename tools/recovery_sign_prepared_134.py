@@ -17,6 +17,7 @@ UNSIGNED_SHA = "43ffc8b8d8ba2a632d3d13a5f287a4fb6a6a43bddf008122026186aa2a0197f4
 PREVIOUS_SHA = "8cff50f9d76dbeec261ca928603277bdf540d0d0b42913bde919a82ce8d5d49f"
 BUNDLE_SHA = "17f54a6770eb980241edd5fd2ac356b93cda4785bac3b708bcda9c6d8d078104"
 DB_SHA = "937b641c3296fb7ea381674d5854e514b7ea84d604060fcc6b52ee9890b4ed8b"
+REPAIRED_DB_SHA = "cf90d4a8374adb2e0e941e5140f047796e0cefb64775f40ce523a5af0b898424"
 MANIFEST_SHA = "11402c11a9f2ac1ad95770ced7f5d25073c8016ba5d4fa0c33b1e943ccd797f4"
 SOURCE_COMMIT = "e5eb15076c4727ec0deb32a4f7b2ac43b1e3b812"
 DB_ASSET = "assets/database/guide-v29.db"
@@ -49,13 +50,13 @@ def database(apk, directory, name):
     return db, hashlib.sha256(raw).hexdigest()
 
 
-def inspect_catalog(unsigned, previous):
+def inspect_catalog(unsigned, previous, expected_db_sha=DB_SHA):
     with tempfile.TemporaryDirectory(prefix="recovery134-db-") as tmp:
         directory = Path(tmp)
         new, db_hash = database(unsigned, directory, "new.db")
         old, _ = database(previous, directory, "old.db")
         try:
-            require(db_hash == DB_SHA, "Prepared catalog SHA-256 changed")
+            require(db_hash == expected_db_sha, "Prepared catalog SHA-256 changed")
             cards = new.execute("SELECT count(*) FROM cards").fetchone()[0]
             images = new.execute("SELECT count(*) FROM images").fetchone()[0]
             metadata = dict(new.execute("SELECT key,value FROM metadata"))
@@ -116,6 +117,7 @@ def main():
     parser.add_argument("--sdk", type=Path)
     parser.add_argument("--keystore", type=Path)
     parser.add_argument("--preflight-only", action="store_true")
+    parser.add_argument("--repaired-unsigned", type=Path)
     args = parser.parse_args()
     require(sha(args.archive) == ARCHIVE_SHA, "Recovery archive SHA-256 mismatch")
     require(sha(args.previous) == PREVIOUS_SHA and args.previous.stat().st_size == 121074164,
@@ -140,6 +142,17 @@ def main():
         (args.out / "stage-3-preflight.json").write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n")
         print(json.dumps(report, ensure_ascii=False, indent=2))
         return
+    require(args.repaired_unsigned is not None, "The Android-discovered search repair is required")
+    with zipfile.ZipFile(unsigned) as original, zipfile.ZipFile(args.repaired_unsigned) as fixed:
+        require(original.namelist() == fixed.namelist(), "Repaired APK entry set changed")
+        changed = [n for n in original.namelist() if original.read(n) != fixed.read(n)]
+        require(changed == [DB_ASSET], "Repair changed more than the catalog database")
+        require(hashlib.sha256(fixed.read(DB_ASSET)).hexdigest() == REPAIRED_DB_SHA,
+                "Repaired catalog differs from the locally checked five-field repair")
+    report["repairedUnsignedApkSha256"] = sha(args.repaired_unsigned)
+    report["onlyEntryChangedByRepair"] = DB_ASSET
+    report["catalog"] = inspect_catalog(args.repaired_unsigned, args.previous, REPAIRED_DB_SHA)
+    unsigned = args.repaired_unsigned
     require(args.sdk is not None and args.keystore is not None, "SDK and existing CI keystore are required")
     tools = args.sdk / "build-tools/36.0.0"
     signer, aapt, align = tools / "apksigner", tools / "aapt2", tools / "zipalign"
@@ -155,6 +168,9 @@ def main():
     expected_identity = {"packageName": "ru.dlyasvoih.app", "versionCode": 138,
                          "versionName": "0.3.134", "debuggable": False}
     require(identity(unsigned, aapt) == expected_identity, "Prepared APK identity mismatch")
+    aligned = args.work / "DLYA_SVOIH_v0.3.134-search-fixed-aligned.apk"
+    run([align, "-f", "4", unsigned, aligned])
+    unsigned = aligned
     run([align, "-c", "4", unsigned])
     signed = args.out / "DLYA_SVOIH_v0.3.134.apk"
     run([signer, "sign", "--ks", args.keystore, "--ks-key-alias", "androiddebugkey",
