@@ -31,7 +31,7 @@ jobs:
       - uses: actions/download-artifact@v4
         with:
           name: recovery134-signed-apk
-          run-id: 39398090103
+          run-id: 39402353169
           github-token: ${{ github.token }}
           path: build/recovery-signed
       - name: Verify the signed artifact and obtain the published baseline
@@ -44,7 +44,7 @@ jobs:
           p=Path('build/recovery-signed/DLYA_SVOIH_v0.3.134.apk')
           assert p.stat().st_size==144646769
           with p.open('rb') as stream:
-              assert hashlib.file_digest(stream,'sha256').hexdigest()=='19d1d109cc9d046500f7e4027a4aa8c628d76973c2b778b477c065ff5f2974c6'
+              assert hashlib.file_digest(stream,'sha256').hexdigest()=='d35f71c479618577578610385e91f546c672c423579303da5ec7b461ca96f759'
           report=json.loads(Path('build/recovery-signed/stage-3-signature-verification.json').read_text())
           assert report['signatureVerified'] and report['certificateSha256']=='2f0a0908f269bc039311edb58fca8863347f1e4c3a7cfaddd909991cf1f0b509'
           with zipfile.ZipFile(p) as z:
@@ -74,7 +74,7 @@ jobs:
           profile: pixel_2
           disable-animations: true
           emulator-options: -no-window -gpu swiftshader_indirect -noaudio -no-boot-anim -no-snapshot -accel on -memory 4096 -cores 4 -partition-size 8192 -camera-back none -camera-front none
-          script: python3 tools/recovery_probe_render_134.py --signed build/recovery-signed/DLYA_SVOIH_v0.3.134.apk --out build/recovery-android/proof --models build/recovery-android/models.json
+          script: python3 tools/recovery_android_stage3.py --previous build/recovery-android/previous-0.3.133.apk --signed build/recovery-signed/DLYA_SVOIH_v0.3.134.apk --out build/recovery-android/proof --models build/recovery-android/models.json --viewer-script tools/verify_release_ui.py
       - uses: actions/upload-artifact@v4
         if: always()
         with:

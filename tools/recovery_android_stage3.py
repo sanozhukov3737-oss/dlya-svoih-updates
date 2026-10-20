@@ -14,7 +14,7 @@ import xml.etree.ElementTree as ET
 from pathlib import Path
 
 PACKAGE = 'ru.dlyasvoih.app'
-SIGNED_SHA = '19d1d109cc9d046500f7e4027a4aa8c628d76973c2b778b477c065ff5f2974c6'
+SIGNED_SHA = 'd35f71c479618577578610385e91f546c672c423579303da5ec7b461ca96f759'
 OLD_SHA = '8cff50f9d76dbeec261ca928603277bdf540d0d0b42913bde919a82ce8d5d49f'
 out = None
 
@@ -33,10 +33,18 @@ def sha(path):
 
 
 def tree():
-    adb('shell', 'uiautomator', 'dump', '/sdcard/recovery134-ui.xml', timeout=35)
-    raw = adb('exec-out', 'cat', '/sdcard/recovery134-ui.xml')
-    (out / 'last-ui.xml').write_bytes(raw)
-    return ET.fromstring(raw)
+    for _ in range(4):
+        adb('shell', 'uiautomator', 'dump', '/sdcard/recovery134-ui.xml', timeout=35)
+        raw = adb('exec-out', 'cat', '/sdcard/recovery134-ui.xml')
+        try:
+            root=ET.fromstring(raw)
+        except ET.ParseError:
+            (out/'last-invalid-ui-dump.txt').write_bytes(raw)
+            time.sleep(.5)
+            continue
+        (out / 'last-ui.xml').write_bytes(raw)
+        return root
+    raise AssertionError('Android UIAutomator did not return an XML hierarchy')
 
 
 def find(predicate, timeout=40):
