@@ -1,0 +1,84 @@
+name: Preserve Android 0.3.134 OTA evidence
+
+on:
+  push:
+    branches: ['recovery/android-0.3.134-stage2-20261019']
+    paths: ['.github/workflows/archive-android-134-proof.yml']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: read
+
+jobs:
+  preserve:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: f1eddd6a9baa3d97e27a4c12044d991b29ec56bf
+      - name: Wait for the exact Android test to finish successfully
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          for attempt in {1..40}; do
+            result="$(gh api repos/sanozhukov3737-oss/dlya-svoih-updates/actions/runs/39424991339 --jq '.status + ":" + (.conclusion // "")')"
+            if [[ "$result" == completed:* ]]; then
+              test "$result" = 'completed:success'
+              break
+            fi
+            sleep 15
+          done
+          test "$result" = 'completed:success'
+      - uses: actions/download-artifact@v4
+        with:
+          name: recovery134-actual-android-proof
+          run-id: 39424991339
+          github-token: ${{ github.token }}
+          path: research/post-0.3.134/android-ota-final
+      - uses: actions/download-artifact@v4
+        with:
+          name: recovery134-actual-android-proof
+          run-id: 39422944272
+          github-token: ${{ github.token }}
+          path: research/post-0.3.134/android-ota-permission-attempt
+      - uses: actions/download-artifact@v4
+        with:
+          name: recovery134-actual-android-proof
+          run-id: 39424155756
+          github-token: ${{ github.token }}
+          path: research/post-0.3.134/android-ota-installed-attempt
+      - name: Preserve logs and verify successful actual OTA evidence
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh api repos/sanozhukov3737-oss/dlya-svoih-updates/actions/jobs/118635179670/logs > research/post-0.3.134/android-ota-final-job.log
+          gh api repos/sanozhukov3737-oss/dlya-svoih-updates/actions/jobs/118628222094/logs > research/post-0.3.134/android-ota-permission-attempt-job.log
+          gh api repos/sanozhukov3737-oss/dlya-svoih-updates/actions/jobs/118632329095/logs > research/post-0.3.134/android-ota-installed-attempt-job.log
+          gh api repos/sanozhukov3737-oss/dlya-svoih-updates/actions/runs/39424991339 > research/post-0.3.134/android-ota-run.json
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          root=Path('research/post-0.3.134/android-ota-final/recovery-android')
+          proof=json.loads((root/'proof/upgrade-verification.json').read_text())
+          ota=json.loads((root/'proof/ota-installation.json').read_text())
+          lifecycle=json.loads((root/'emulator/lifecycle.json').read_text())
+          run=json.loads(Path('research/post-0.3.134/android-ota-run.json').read_text())
+          assert run['status']=='completed' and run['conclusion']=='success'
+          assert proof['apkSha256']=='300b77deaee3348e05a0135bf0079414c07dc2e15a7dcfd9b1239a8cef99298f'
+          assert proof['favoritesPreserved'] and proof['settingsPreserved'] and proof['fullCatalogOnAndroid'] and proof['offline']
+          assert proof['cards']==1697 and proof['images']==1600 and proof['contentVersion']==195
+          assert proof['galleryZoomAndSecondPhoto'] and proof['cardButtonsAndSwipes']
+          assert ota['newApkInstalledViaAdb'] is False and ota['installedApkSha256']==proof['apkSha256']
+          assert lifecycle['testPassed'] and lifecycle['emulatorExitCode']==0 and lifecycle['shutdownSeconds']<24
+          PY
+      - name: Commit raw evidence without altering published application files
+        run: |
+          git switch -c maintenance/android134-ota-proof-20261020
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add research/post-0.3.134/android-ota-final research/post-0.3.134/android-ota-permission-attempt research/post-0.3.134/android-ota-final-job.log research/post-0.3.134/android-ota-permission-attempt-job.log research/post-0.3.134/android-ota-run.json research/post-0.3.134/android-ota-installed-attempt research/post-0.3.134/android-ota-installed-attempt-job.log
+          git commit -m 'Preserve real Android in-app upgrade, offline UI, model frames and bounded shutdown evidence'
+          git push origin HEAD:refs/heads/maintenance/android134-ota-proof-20261020
+          git rev-parse HEAD HEAD^{tree}
