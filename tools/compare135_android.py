@@ -105,7 +105,9 @@ def main():
     ui.adb('shell','settings','put','system','font_scale','1.0')
     # These debug-test packages belong only to this fresh emulator. Removing
     # them enables installation of the older public versionCode 138.
-    ui.adb('uninstall',PACKAGE)
+    packages = ui.adb('shell','pm','list','packages',PACKAGE).decode().splitlines()
+    if 'package:'+PACKAGE in packages:
+        ui.adb('uninstall',PACKAGE)
     ui.adb('install','--no-streaming',ROOT/'previous-0.3.134.apk',timeout=180)
     ui.start('favorites_tab')
     ui.text('Избранное')
