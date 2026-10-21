@@ -49,14 +49,15 @@ def find(predicate, timeout=20):
 
 def cold_start(label):
     ui.adb('shell', 'am', 'force-stop', PACKAGE)
-    ui.adb('logcat', '-c')
     raw = ui.adb('shell', 'am', 'start', '-W', '-n', PACKAGE + '/.MainActivity', timeout=60).decode()
     (ui.out / (label + '-am-start.txt')).write_text(raw)
     assert 'Status: ok' in raw and 'Error:' not in raw, raw
     ui.text('Инженерные боеприпасы')
     logs = ui.adb('logcat', '-d', '-v', 'brief').decode(errors='replace')
+    # Some API 26 images reject logcat -c even as root. Keep logs and take the
+    # most recent launch entries instead of modifying the system log buffers.
     relevant = [line for line in logs.splitlines() if PACKAGE in line and
-                ('Displayed ' in line or 'Fully drawn ' in line)]
+                ('Displayed ' in line or 'Fully drawn ' in line)][-2:]
     (ui.out / (label + '-drawn.txt')).write_text('\n'.join(relevant) + '\n')
     timings = {key: int(value) for key, value in re.findall(
         r'^(ThisTime|TotalTime|WaitTime):\s*(\d+)', raw, re.MULTILINE)}
@@ -96,6 +97,11 @@ def scroll_sample(label, report):
     assert before != after, 'Reader did not move after four visible gestures'
     raw = ui.adb('shell', 'dumpsys', 'gfxinfo', PACKAGE, 'framestats').decode(errors='replace')
     (ui.out / (label + '-gfxinfo.txt')).write_text(raw)
+    report['scrollFrames'] = frame_report(raw)
+    ui.capture(label)
+
+
+def frame_report(raw):
     total = re.search(r'Total frames rendered:\s*(\d+)', raw)
     janky = re.search(r'Janky frames:\s*(\d+)\s*\(([^)]+)\)', raw)
     percentiles = dict(re.findall(r'(50th|90th|95th|99th) percentile:\s*(\d+)ms', raw))
@@ -112,13 +118,16 @@ def scroll_sample(label, report):
             duration = frame.get('FrameCompleted', 0) - frame.get('IntendedVsync', 0)
             if frame['Flags'] == 0 and 0 < duration < 60_000_000_000:
                 durations.append(duration / 1_000_000)
-    assert total and int(total[1]) > 0 and durations, 'Android returned no frame evidence'
-    report['scrollFrames'] = dict(totalFrames=int(total[1]),
+    assert total and int(total[1]) > 0, 'Android returned no frame evidence'
+    # An unchanged non-profileable production APK can expose only aggregate
+    # gfxinfo on some OS versions. Preserve that evidence without inventing
+    # individual frame durations or treating absent detail as an app failure.
+    return dict(totalFrames=int(total[1]),
         jankyFrames=int(janky[1]) if janky else None,
         jankyPercent=janky[2] if janky else None, percentileMs=percentiles,
-        retainedFrameSample=len(durations), maxRetainedFrameMs=round(max(durations), 2),
-        retainedFramesOver700ms=sum(t > 700 for t in durations))
-    ui.capture(label)
+        detailedFrameTimingsAvailable=bool(durations), retainedFrameSample=len(durations),
+        maxRetainedFrameMs=round(max(durations), 2) if durations else None,
+        retainedFramesOver700ms=sum(t > 700 for t in durations) if durations else None)
 
 
 def comparison(report):
@@ -217,7 +226,6 @@ def main():
         announce('Offline first launch passed; measure three subsequent cold starts')
         report['coldStarts'] = [cold_start('cold-' + str(i)) for i in range(1, 4)]
         report['coldStartMedianTotalMs'] = statistics.median(v['TotalTime'] for v in report['coldStarts'])
-        ui.adb('logcat', '-c')
         announce('Search two names in the full catalog')
         search('TM46', 'ТМ-46', report)
         result = search('PMN2', 'ПМН-2', report)
