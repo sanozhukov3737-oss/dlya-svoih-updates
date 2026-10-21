@@ -35,18 +35,29 @@ jobs:
           request=json.loads(Path('docs/releases/app-0.3.135-verified.json').read_text())
           assert request['visualReview']=='passed'
           assert isinstance(request['workflowRunId'],int) and request['workflowRunId']>0
-          with open(os.environ['GITHUB_OUTPUT'],'a') as out:out.write('run='+str(request['workflowRunId'])+'\n')
+          with open(os.environ['GITHUB_OUTPUT'],'a') as out:
+              out.write('run='+str(request['workflowRunId'])+'\n')
+              out.write('published='+str(bool(request.get('verifyPublishedOnly'))).lower()+'\n')
           PY
       - uses: actions/download-artifact@v4
+        if: steps.request.outputs.published != 'true'
         with:
           name: comparison135-signed-release
           run-id: ${{ steps.request.outputs.run }}
           github-token: ${{ github.token }}
           path: build/comparison135-candidate
       - name: Install signature verification tools
+        if: steps.request.outputs.published != 'true'
         run: '"$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" "build-tools;36.0.0"'
       - name: Verify exact artifact, publish and check public channel
-        run: python3 tools/publish_comparison135.py
+        env:
+          VERIFY_PUBLISHED: ${{ steps.request.outputs.published }}
+        run: |
+          if [ "$VERIFY_PUBLISHED" = true ]; then
+            python3 tools/publish_comparison135.py --verify-published
+          else
+            python3 tools/publish_comparison135.py
+          fi
       - uses: actions/upload-artifact@v4
         if: always()
         with:

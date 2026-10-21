@@ -32,5 +32,6 @@
     "reading position",
     "appearance",
     "reader preferences"
-  ]
+  ],
+  "verifyPublishedOnly": true
 }

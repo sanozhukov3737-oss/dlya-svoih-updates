@@ -1,0 +1,15 @@
+{
+  "versionName": "0.3.135",
+  "versionCode": 139,
+  "contentVersion": 197,
+  "apkSha256": "068b71392f570ad768b59c391c10dbba8f9f90dce07d545b37bb545ffd71b3aa",
+  "apkBytes": 144816913,
+  "feedSha256": "f2e318d12acc11c51dea3dc9fddad9d17cdb02544178e0790c10de12851a498f",
+  "signerSha256": "2f0a0908f269bc039311edb58fca8863347f1e4c3a7cfaddd909991cf1f0b509",
+  "buildWorkflowRunId": 39578144223,
+  "sourceCommit": "ebaef40e8a74c3c5e2fb322575ee82c0c656cc2e",
+  "releasePublished": true,
+  "publicChannelVerified": true,
+  "releaseUrl": "https://github.com/sanozhukov3737-oss/dlya-svoih-updates/releases/tag/app-0.3.135",
+  "publicChannelUrl": "https://github.com/sanozhukov3737-oss/dlya-svoih-updates/releases/latest/download/latest.json"
+}
