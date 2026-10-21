@@ -35,7 +35,7 @@ jobs:
       - uses: actions/download-artifact@v4
         with:
           name: comparison136-signed-release
-          run-id: 39602003224
+          run-id: 39604907534
           github-token: ${{ github.token }}
           path: build/compat136/candidate
       - name: Obtain the exact public baseline and Android image
@@ -90,7 +90,7 @@ jobs:
       - uses: actions/download-artifact@v4
         with:
           name: comparison136-signed-release
-          run-id: 39602003224
+          run-id: 39604907534
           github-token: ${{ github.token }}
           path: build/candidate136
       - name: Save successful Android evidence for visual review
@@ -108,7 +108,7 @@ jobs:
                   dest=target/f'api{api}'/p.relative_to(source/'proof');dest.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(p,dest)
               shutil.copyfile(source/'emulator/lifecycle.json',target/f'api{api}'/'emulator-lifecycle.json')
           shutil.copyfile('build/candidate136/build-result.json',target/'build-result.json')
-          (target/'verification-run.json').write_text(json.dumps({'workflowRunId':int(os.environ['GITHUB_RUN_ID']),'sourceCommit':os.environ['GITHUB_SHA'],'buildWorkflowRunId':39602003224,'apkSha256':'dc15ca46a065c017d16333a7eefb715ef83279295501511684c10a2173163fa1'},indent=2)+'\n')
+          (target/'verification-run.json').write_text(json.dumps({'workflowRunId':int(os.environ['GITHUB_RUN_ID']),'sourceCommit':os.environ['GITHUB_SHA'],'buildWorkflowRunId':39604907534,'apkSha256':'0a22658eab2cc409eebf1c9d62cb1139b79cbb160e238ebc5102b8abc4566162'},indent=2)+'\n')
           PY
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'

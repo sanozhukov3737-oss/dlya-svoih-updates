@@ -136,6 +136,19 @@ def frame_report(raw):
 
 
 def comparison(report, exercise_keyboard=False):
+    def options_region(root):
+        tagged = next((n for n in root.iter('node') if n.get('resource-id', '').split('/')[-1] == 'comparison_options'), None)
+        # A Dialog owns a separate semantics root; production UIAutomator need
+        # not inherit testTagsAsResourceId from the activity.
+        region = tagged if tagged is not None else next((n for n in root.iter('node')
+            if n.get('scrollable') == 'true' and n.get('package') == PACKAGE), None)
+        assert region is not None, 'Visible picker scroll region missing'
+        return region
+
+    def scroll_options(root):
+        left, top, right, bottom = ui.bounds(options_region(root))
+        ui.adb('shell', 'input', 'swipe', (left+right)//2, top+(bottom-top)*85//100,
+            (left+right)//2, top+(bottom-top)*15//100, '250')
     for _ in range(8):
         root = hierarchy()
         action = next((n for n in root.iter('node') if n.get('text') == 'Сравнить'), None)
@@ -156,7 +169,8 @@ def comparison(report, exercise_keyboard=False):
     ui.text('Поиск по названию')
     if exercise_keyboard:
         ime = ui.adb('shell','dumpsys','input_method').decode(errors='replace')
-        if 'mInputShown=true' in ime or 'mIsInputViewShown=true' in ime:
+        legacy = int(ui.adb('shell','getprop','ro.build.version.sdk').decode().strip()) < 31
+        if legacy and ('mInputShown=true' in ime or 'mIsInputViewShown=true' in ime):
             ui.adb('shell','input','keyevent','4')
             ui.text('Поиск по названию')
         ui.capture('picker-before-selection')
@@ -166,10 +180,7 @@ def comparison(report, exercise_keyboard=False):
             and n.get('checked') == 'false' and n.get('enabled') == 'true'), None)
         if option is not None:
             break
-        region = next(n for n in root.iter('node') if n.get('resource-id', '').split('/')[-1] == 'comparison_options')
-        left, top, right, bottom = ui.bounds(region)
-        ui.adb('shell', 'input', 'swipe', (left+right)//2, top+(bottom-top)*85//100,
-            (left+right)//2, top+(bottom-top)*15//100, '250')
+        scroll_options(root)
     else:
         raise AssertionError('No selectable comparison option after five bounded list scrolls')
     ui.tap(option)
@@ -177,7 +188,19 @@ def comparison(report, exercise_keyboard=False):
         field = find(lambda a: a.get('class') == 'android.widget.EditText')
         ui.tap(field)
         ui.adb('shell', 'input', 'text', 'M14')
-        ui.text('M14 (противопехотная мина)')
+        for _ in range(6):
+            root = hierarchy()
+            field = next(n for n in root.iter('node') if n.get('class') == 'android.widget.EditText')
+            apply = next(n for n in root.iter('node') if n.get('text') == 'Сравнить · 3')
+            top, bottom = ui.bounds(field)[3], ui.bounds(apply)[1]
+            result = next((n for n in root.iter('node') if n.get('text') == 'M14 (противопехотная мина)'
+                and top <= ui.bounds(n)[1] < ui.bounds(n)[3] <= bottom
+                and ui.bounds(n)[3] - ui.bounds(n)[1] >= 24), None)
+            if result is not None:
+                break
+            scroll_options(root)
+        else:
+            raise AssertionError('Matching M14 result not reachable after six bounded picker scrolls')
         # Do not dismiss IME or press Back: the real Apply action must remain
         # usable while typing, including on Android 8.
         ui.capture('picker-keyboard')

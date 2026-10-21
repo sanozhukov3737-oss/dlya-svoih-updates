@@ -1,8 +1,8 @@
 {
   "versionName": "0.3.136",
-  "verificationAttempt": 1,
-  "buildWorkflowRunId": 39602003224,
-  "candidateSourceCommit": "b666568842c192ef3e66f58dbd407505cd9fa427",
-  "apkSha256": "dc15ca46a065c017d16333a7eefb715ef83279295501511684c10a2173163fa1",
-  "purpose": "Check the same signed APK after denying fresh-emulator Gboard Contacts prompts; no APK rebuild"
+  "verificationAttempt": 2,
+  "buildWorkflowRunId": 39604907534,
+  "candidateSourceCommit": "91d57c8e9d00a01381eb242cae9f106d5ef140c6",
+  "apkSha256": "0a22658eab2cc409eebf1c9d62cb1139b79cbb160e238ebc5102b8abc4566162",
+  "purpose": "Verify the unchanged final signed APK with correct legacy keyboard dismissal and actual options-list scrolling"
 }
