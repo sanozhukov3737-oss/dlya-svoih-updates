@@ -68,9 +68,10 @@ public class NavigationChecks {
                     params=[]
                     for match in re.finditer(r':id|:familyIds',query): params.extend([current] if match.group()==':id' else group)
                     rows = db.execute(sql,params).fetchall()
-                    # Preview starts with id; CardEntity SELECT * starts with rowid.
-                    outputs.append([r[0] if isinstance(r[0],str) else r[1] for r in rows])
-                self.assertEqual(outputs[0],outputs[1])
+                    outputs.append([r[0] for r in rows])
+                # Related cards remain a 12-item preview. Comparison keeps that
+                # ordering and exposes the rest of the same category to search.
+                self.assertEqual(outputs[0],outputs[1][:len(outputs[0])])
                 result=outputs[0]
                 self.assertNotIn(current,result)
                 self.assertEqual(len(result),len(set(result)))

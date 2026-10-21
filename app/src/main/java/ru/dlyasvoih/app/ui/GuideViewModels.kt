@@ -229,6 +229,7 @@ class DetailViewModel(private val repo: GuideRepository, saved: SavedStateHandle
     fun clearError() { mutableError.value = null }
     fun position(index: Int, offset: Int) { latestPosition = index to offset; repo.scheduleReading(id, index, offset, displayedVersion) }
     fun flushReading() { latestPosition?.let { repo.scheduleReading(id, it.first, it.second, displayedVersion, immediate = true) } }
+    suspend fun comparisonCard(candidateId: String): CardEntity? = repo.comparisonCard(id, candidateId)
     fun toggleFavorite() {
         if (mutableBusy.value) return
         mutableBusy.value = true

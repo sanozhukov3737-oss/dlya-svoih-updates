@@ -24,7 +24,7 @@ private const val DEFAULT_UPDATE_SOURCE =
 
 data class CardDetails(val card: CardEntity?, val images: List<ImageEntity>,
     val sources: List<SourceEntity>, val favorite: Boolean, val countries: List<CountryEntity>,
-    val related: List<CardPreview> = emptyList(), val comparisonCards: List<CardEntity> = emptyList())
+    val related: List<CardPreview> = emptyList(), val comparisonCards: List<CardPreview> = emptyList())
 
 class GuideRepository(private val db: GuideDatabase, private val legacyPrefs: SharedPreferences,
     private val updater: ContentUpdater? = null, private val remote: RemoteCatalogSource? = null,
@@ -227,6 +227,13 @@ class GuideRepository(private val db: GuideDatabase, private val legacyPrefs: Sh
         CardDetails(card, images, sources, favorite, countries)
     }, dao.relatedCards(id, CardFamilies.relatedIds(id)), dao.comparisonCards(id, CardFamilies.relatedIds(id))) { details, related, comparisonCards ->
         details.copy(related = related, comparisonCards = comparisonCards)
+    }
+
+    suspend fun comparisonCard(anchorId: String, id: String): CardEntity? = withContext(Dispatchers.IO) {
+        val anchor = dao.card(anchorId).first() ?: return@withContext null
+        dao.card(id).first()?.takeIf {
+            !it.archived && it.id != anchor.id && it.section == anchor.section && it.categoryId == anchor.categoryId
+        }
     }
 
     suspend fun toggleFavorite(id: String) {

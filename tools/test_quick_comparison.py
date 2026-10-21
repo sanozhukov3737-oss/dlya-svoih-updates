@@ -37,19 +37,23 @@ class QuickComparisonTests(unittest.TestCase):
             return db.execute(sql, params).fetchall()
 
         with sqlite3.connect(':memory:') as db:
-            db.execute('CREATE TABLE cards(id TEXT, section TEXT, categoryId TEXT, archived INT, sortTitle TEXT)')
+            db.execute('CREATE TABLE cards(id TEXT, section TEXT, categoryId TEXT, archived INT, sortTitle TEXT, title TEXT DEFAULT "", summary TEXT DEFAULT "", thumbnailPath TEXT, contentStatus TEXT DEFAULT "demo", modelStatus TEXT DEFAULT "legacy")')
             db.execute('CREATE TABLE card_countries(cardId TEXT, countryId TEXT)')
-            db.executemany('INSERT INTO cards VALUES(?,?,?,?,?)', [
+            db.executemany('INSERT INTO cards(id,section,categoryId,archived,sortTitle) VALUES(?,?,?,?,?)', [
                 ('current', 'S1', 'C1', 0, 'a'), ('correct', 'S1', 'C1', 0, 'b'),
                 ('wrong-category', 'S1', 'C2', 0, 'c'), ('wrong-section', 'S2', 'C1', 0, 'd'),
                 ('archived', 'S1', 'C1', 1, 'e')])
             self.assertEqual(['correct'], [r[0] for r in compare(db, 'current',
                 ['current', 'correct', 'wrong-category', 'wrong-section', 'archived'])])
+            db.executemany('INSERT INTO cards(id,section,categoryId,archived,sortTitle) VALUES(?,?,?,?,?)',
+                [(f'option-{i}', 'S1', 'C1', 0, f'z{i:02}') for i in range(25)])
+            rows = compare(db, 'current', [])
+            self.assertEqual(26, len(rows))
+            self.assertTrue(all(len(r) == 8 for r in rows), 'Candidates must not load article bodies')
         with sqlite3.connect(ROOT / 'app/src/main/assets/database/guide-v29.db') as db:
             for current, section, category in db.execute('SELECT id,section,categoryId FROM cards'):
                 rows = compare(db, current, ['eng-pmn', 'grenade-rgn', 'first-aid-burn'])
-                # Entity rows begin with rowid, id, section, categoryId.
-                self.assertTrue(all(r[1] != current and r[2:4] == (section, category) for r in rows), current)
+                self.assertTrue(all(r[0] != current and (r[1], r[5]) == (section, category) for r in rows), current)
 
 
 if __name__ == '__main__':

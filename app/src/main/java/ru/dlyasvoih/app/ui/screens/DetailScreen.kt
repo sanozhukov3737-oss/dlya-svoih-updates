@@ -66,7 +66,6 @@ import ru.dlyasvoih.app.ui.DetailViewModel
 import ru.dlyasvoih.app.ui.GalleryViewModel
 import ru.dlyasvoih.app.ui.content.ReferenceBodyParser
 import ru.dlyasvoih.app.ui.content.ReaderContent
-import ru.dlyasvoih.app.ui.content.ComparisonContent
 import kotlin.math.max
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -80,7 +79,7 @@ fun DetailScreen(vm: DetailViewModel, onBack: () -> Unit, active: Boolean = true
     val ready = (state as? DetailState.Ready)?.value
     val paragraphs = (state as? DetailState.Ready)?.paragraphs.orEmpty()
     var quickOpen by remember { mutableStateOf(false) }
-    var compareOpen by remember { mutableStateOf(false) }
+    var compareOpen by rememberSaveable(vm.id) { mutableStateOf(false) }
     LaunchedEffect(error) { error?.let { snackbar.showSnackbar(it); vm.clearError() } }
     val context = LocalContext.current
     val readerPrefs = remember(context) { context.getSharedPreferences("reader", Context.MODE_PRIVATE) }
@@ -271,7 +270,7 @@ fun DetailScreen(vm: DetailViewModel, onBack: () -> Unit, active: Boolean = true
         QuickRecognitionSheet(card, recognitionBlocks(paragraphs)) { quickOpen = false }
     }
     if (compareOpen && card != null && value.comparisonCards.isNotEmpty()) {
-        ComparisonSheet(card, value.comparisonCards) { compareOpen = false }
+        ComparisonSheet(card, value.comparisonCards, vm::comparisonCard) { compareOpen = false }
     }
 }
 
@@ -326,62 +325,6 @@ private fun QuickRecognitionSheet(card: CardEntity, blocks: List<String>, onDism
             else blocks.forEach { Text(it, style = MaterialTheme.typography.bodyLarge) }
             Text("Используйте полную карточку и источники для проверки контекста.", style = MaterialTheme.typography.bodySmall,
                 color = MaterialTheme.colorScheme.onSurfaceVariant)
-        }
-    }
-}
-
-@OptIn(ExperimentalMaterial3Api::class)
-@Composable
-internal fun ComparisonSheet(card: CardEntity, related: List<CardEntity>, onDismiss: () -> Unit) {
-    var selected by remember(card.id, related) { mutableStateOf(related.first()) }
-    val rows = remember(card.body, selected.body) { ComparisonContent.rows(card.body, selected.body) }
-    ModalBottomSheet(onDismissRequest = onDismiss) {
-        LazyColumn(Modifier.fillMaxWidth().fillMaxHeight(0.85f).testTag("comparison_table"),
-            contentPadding = PaddingValues(start = 16.dp, end = 16.dp, bottom = 28.dp),
-            verticalArrangement = Arrangement.spacedBy(12.dp)) {
-            item {
-                Text("БЫСТРОЕ СРАВНЕНИЕ", style = MaterialTheme.typography.labelLarge, color = MaterialTheme.colorScheme.primary)
-                Text("Сравнить с", style = MaterialTheme.typography.titleSmall)
-                LazyRow(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-                    items(related, key = { it.id }) { option ->
-                        FilterChip(selected = option.id == selected.id, onClick = { selected = option },
-                            label = { Text(option.title, maxLines = 1) })
-                    }
-                }
-            }
-            item {
-                Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(12.dp)) {
-                    Text(card.title, Modifier.weight(1f), style = MaterialTheme.typography.titleSmall)
-                    Text(selected.title, Modifier.weight(1f), style = MaterialTheme.typography.titleSmall)
-                }
-            }
-            item { ComparisonRow("Описание", card.summary, selected.summary, "summary") }
-            items(rows.size) { index ->
-                val row = rows[index]
-                ComparisonRow(row.label, row.left, row.right, index.toString())
-            }
-            if (rows.isEmpty()) item {
-                Text("В этих карточках нет таблиц характеристик. Показаны описания.",
-                    style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
-            }
-            item {
-                Text("Пустое поле означает, что сведения отсутствуют в карточке. Сверяйте значения и единицы по источникам.",
-                    style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
-            }
-        }
-    }
-}
-
-@Composable
-private fun ComparisonRow(label: String, left: String?, right: String?, key: String) {
-    Column(Modifier.fillMaxWidth(), verticalArrangement = Arrangement.spacedBy(6.dp)) {
-        HorizontalDivider()
-        Text(label, style = MaterialTheme.typography.labelMedium, color = MaterialTheme.colorScheme.primary)
-        Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(12.dp)) {
-            Text(left ?: "Нет данных в карточке", Modifier.weight(1f).testTag("comparison_" + key + "_left"),
-                style = MaterialTheme.typography.bodySmall)
-            Text(right ?: "Нет данных в карточке", Modifier.weight(1f).testTag("comparison_" + key + "_right"),
-                style = MaterialTheme.typography.bodySmall)
         }
     }
 }
