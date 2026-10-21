@@ -1,0 +1,20 @@
+{
+  "previousVersion": "0.3.134",
+  "versionName": "0.3.135",
+  "versionCode": 139,
+  "contentVersion": 197,
+  "preservedCatalogIds": 1695,
+  "favoritesPreserved": true,
+  "readingPositionPreserved": true,
+  "preferencesPreserved": true,
+  "comparisonInActualSignedRelease": true,
+  "threeCardsInSameCategory": true,
+  "pickerReachable": true,
+  "smallScreenDp": [
+    360,
+    640
+  ],
+  "largeFontScale": 1.3,
+  "selectionSurvivesConfigurationChange": true,
+  "humanVisualReview": "pending review of the captured Android frames"
+}

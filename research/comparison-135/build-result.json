@@ -1,0 +1,13 @@
+{
+  "versionName": "0.3.135",
+  "versionCode": 139,
+  "contentVersion": 197,
+  "candidateSourceCommit": "3b3c3ffedd744d4b9f245c4d66c5a9a30a25e423",
+  "workflowRunId": 39576511977,
+  "apkSha256": "e8d71136f1d46e4ca64830e3d57efc2a2d37836d289455a6d316ad4c64c3d322",
+  "apkBytes": 144816913,
+  "feedSha256": "c369f52c58f6cb9466c863537fd858bcb9a197077f2a78b7fe5b341e10a5c7b7",
+  "signerSha256": "2f0a0908f269bc039311edb58fca8863347f1e4c3a7cfaddd909991cf1f0b509",
+  "catalogOfferUnchanged": true,
+  "humanVisualReview": "pending review of actual Android screenshots"
+}
