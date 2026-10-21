@@ -1,0 +1,117 @@
+name: Verify the existing signed keyboard fix 0.3.136
+
+on:
+  push:
+    branches: ['main']
+    paths: ['docs/releases/app-0.3.136-recheck.json', '.github/workflows/verify-136-artifact.yml']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: read
+
+concurrency:
+  group: verify-artifact-136
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        api: [26, 36]
+    env:
+      ANDROID_AVD_HOME: ${{ github.workspace }}/build/android-avds
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: tools
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: actions/download-artifact@v4
+        with:
+          name: comparison136-signed-release
+          run-id: 39602003224
+          github-token: ${{ github.token }}
+          path: build/compat136/candidate
+      - name: Obtain the exact public baseline and Android image
+        run: |
+          set -euo pipefail
+          curl --fail --silent --show-error --location --retry 2 --max-time 180 'https://github.com/sanozhukov3737-oss/dlya-svoih-updates/releases/download/app-0.3.135/DLYA_SVOIH_v0.3.135.apk' --output build/compat136/previous.apk
+          echo '068b71392f570ad768b59c391c10dbba8f9f90dce07d545b37bb545ffd71b3aa  build/compat136/previous.apk' | sha256sum --check
+          "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" 'emulator' 'system-images;android-${{ matrix.api }};google_apis;x86_64'
+      - name: Create fresh native 720 by 1280 accelerated device
+        run: |
+          set -euo pipefail
+          echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules
+          sudo udevadm control --reload-rules
+          sudo udevadm trigger --name-match=kvm
+          mkdir -p "$ANDROID_AVD_HOME"
+          echo no | "$ANDROID_HOME/cmdline-tools/latest/bin/avdmanager" create avd --force --name recovery134 --package 'system-images;android-${{ matrix.api }};google_apis;x86_64' --device pixel_2
+          python3 - <<'PY'
+          import os
+          from pathlib import Path
+          p=Path(os.environ['ANDROID_AVD_HOME'])/'recovery134.avd/config.ini'
+          values=dict(line.split('=',1) for line in p.read_text().splitlines() if '=' in line)
+          values.update({'hw.lcd.width':'720','hw.lcd.height':'1280','hw.lcd.density':'320'})
+          p.write_text('\n'.join(k+'='+v for k,v in values.items())+'\n')
+          PY
+      - name: Verify signed upgrade and keyboard confirmation offline
+        run: |
+          set -euo pipefail
+          /usr/bin/python3 tools/run_android_emulator.py --out build/compat136/emulator --timeout 480 -- /usr/bin/python3 tools/check136_android.py --apk build/compat136/candidate/DLYA_SVOIH_v0.3.136.apk --previous build/compat136/previous.apk --metadata build/compat136/candidate/build-result.json --out build/compat136/proof --expected-api ${{ matrix.api }}
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: comparison136-api${{ matrix.api }}-proof
+          path: |
+            build/compat136/proof/
+            build/compat136/emulator/
+          if-no-files-found: error
+          retention-days: 30
+
+  record:
+    needs: [check]
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    permissions:
+      contents: write
+      actions: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: comparison136-api*-proof
+          path: build/evidence136
+      - uses: actions/download-artifact@v4
+        with:
+          name: comparison136-signed-release
+          run-id: 39602003224
+          github-token: ${{ github.token }}
+          path: build/candidate136
+      - name: Save successful Android evidence for visual review
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import json,shutil,os
+          from pathlib import Path
+          target=Path('research/compatibility-136');target.mkdir(parents=True,exist_ok=True)
+          for api in (26,36):
+              source=Path(f'build/evidence136/comparison136-api{api}-proof')
+              assert json.loads((source/'proof/result.json').read_text())['passed'] is True
+              for p in (source/'proof').rglob('*'):
+                  if not p.is_file() or p.suffix not in ('.png','.xml','.json','.txt'):continue
+                  dest=target/f'api{api}'/p.relative_to(source/'proof');dest.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(p,dest)
+              shutil.copyfile(source/'emulator/lifecycle.json',target/f'api{api}'/'emulator-lifecycle.json')
+          shutil.copyfile('build/candidate136/build-result.json',target/'build-result.json')
+          (target/'verification-run.json').write_text(json.dumps({'workflowRunId':int(os.environ['GITHUB_RUN_ID']),'sourceCommit':os.environ['GITHUB_SHA'],'buildWorkflowRunId':39602003224,'apkSha256':'dc15ca46a065c017d16333a7eefb715ef83279295501511684c10a2173163fa1'},indent=2)+'\n')
+          PY
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add research/compatibility-136
+          git commit -m 'Record signed 0.3.136 upgrade and keyboard checks on Android 8 and 16'
+          git push origin HEAD:main

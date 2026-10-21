@@ -1,0 +1,8 @@
+{
+  "versionName": "0.3.136",
+  "verificationAttempt": 1,
+  "buildWorkflowRunId": 39602003224,
+  "candidateSourceCommit": "b666568842c192ef3e66f58dbd407505cd9fa427",
+  "apkSha256": "dc15ca46a065c017d16333a7eefb715ef83279295501511684c10a2173163fa1",
+  "purpose": "Check the same signed APK after denying fresh-emulator Gboard Contacts prompts; no APK rebuild"
+}

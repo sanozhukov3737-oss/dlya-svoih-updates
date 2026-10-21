@@ -53,6 +53,14 @@ def main():
         report['api']=api
         ui.adb('root'); ui.adb('wait-for-device')
         assert ui.adb('shell', 'id', '-u').decode().strip()=='0'
+        # Fresh API 26 Google images can show Gboard's first-use Contacts
+        # permission dialog. Deny access on this disposable emulator; it is
+        # unrelated to the app and no keyboard permission is ever granted.
+        for permission in ('READ_CONTACTS','WRITE_CONTACTS'):
+            ui.adb('shell','pm','revoke','com.google.android.inputmethod.latin',
+                'android.permission.'+permission,check=False)
+            ui.adb('shell','pm','set-permission-flags','com.google.android.inputmethod.latin',
+                'android.permission.'+permission,'user-set','user-fixed',check=False)
         png=ui.adb('exec-out', 'screencap', '-p')
         assert png[:8]==b'\x89PNG\r\n\x1a\n' and struct.unpack('>II',png[16:24])==(720,1280), 'Native 720x1280 AVD required; no legacy wm scaling'
         for service in ('wifi', 'data'):

@@ -154,6 +154,12 @@ def comparison(report, exercise_keyboard=False):
     ui.capture('comparison-two')
     ui.tap(ui.text('Выбрать карточки'))
     ui.text('Поиск по названию')
+    if exercise_keyboard:
+        ime = ui.adb('shell','dumpsys','input_method').decode(errors='replace')
+        if 'mInputShown=true' in ime or 'mIsInputViewShown=true' in ime:
+            ui.adb('shell','input','keyevent','4')
+            ui.text('Поиск по названию')
+        ui.capture('picker-before-selection')
     for attempt in range(5):
         root = hierarchy()
         option = next((n for n in root.iter('node') if n.get('checkable') == 'true'
