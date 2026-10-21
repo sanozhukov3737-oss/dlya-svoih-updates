@@ -1,0 +1,69 @@
+Applications Memory Usage (in Kilobytes):
+Uptime: 197047 Realtime: 197047
+
+** MEMINFO in pid 4628 [ru.dlyasvoih.app] **
+                   Pss  Private  Private     Swap      Rss     Heap     Heap     Heap
+                 Total    Dirty    Clean    Dirty    Total     Size    Alloc     Free
+                ------   ------   ------   ------   ------   ------   ------   ------
+  Native Heap    45041    44996        0        0    48784    63548    51980     7148
+  Dalvik Heap     6681     6564        0        0    14368    15219     7610     7609
+ Dalvik Other     3227     1920        0        0     5368                           
+        Stack      740      740        0        0      752                           
+       Ashmem       10        0        0        0      608                           
+    Other dev        9        0        8        0      244                           
+     .so mmap     2564      284      312        0    42548                           
+    .jar mmap     1254        0        0        0    38548                           
+    .apk mmap      252        0        0        0     1884                           
+    .ttf mmap      607        0      284        0     1876                           
+    .dex mmap     3299        0     3292        0     4148                           
+    .oat mmap      396        0        0        0    11740                           
+    .art mmap     1148      684        0        0    32028                           
+   Other mmap      772       16       60        0     2756                           
+      Unknown      616      612        0        0     1544                           
+        TOTAL    66616    55816     3956        0   207196    78767    59590    14757
+ 
+ App Summary
+                       Pss(KB)                        Rss(KB)
+                        ------                         ------
+           Java Heap:     7248                          46396
+         Native Heap:    44996                          48784
+                Code:     4204                         103372
+               Stack:      740                            752
+            Graphics:        0                              0
+       Private Other:     2584
+              System:     6844
+             Unknown:                                    7892
+ 
+           TOTAL PSS:    66616            TOTAL RSS:   207196      TOTAL SWAP (KB):        0
+ 
+ Objects
+               Views:       12         ViewRootImpl:        1
+         AppContexts:        5           Activities:        1
+              Assets:       21        AssetManagers:        0
+       Local Binders:       22        Proxy Binders:       52
+       Parcel memory:        8         Parcel count:       34
+    Death Recipients:        0             WebViews:        0
+ 
+ Native Allocations
+                         Count                       Total(kB)
+                        ------                         ------
+    Other (malloced):     1016                             95
+ Other (nonmalloced):       80                             58
+   Bitmap (malloced):       33                             64
+Bitmap (nonmalloced):        7                           3472
+ 
+ SQL
+         MEMORY_USED:     8090
+  PAGECACHE_OVERFLOW:     7582          MALLOC_SIZE:      256
+ 
+ DATABASES
+      pgsz     dbsz   Lookaside(b) cache hits cache misses cache size  Dbname
+PER CONNECTION STATS
+         4    13180            108   179   281    24  /data/user/0/ru.dlyasvoih.app/databases/guide.db
+         4       16                    0     0     0    (attached) temp
+         4    13180            123   452   128    12  /data/user/0/ru.dlyasvoih.app/databases/guide.db (2)
+         4    13180            123   325   209    10  /data/user/0/ru.dlyasvoih.app/databases/guide.db (3)
+         4    13180            123   451    81    13  /data/user/0/ru.dlyasvoih.app/databases/guide.db (1)
+POOL STATS
+     cache hits  cache misses    cache size  Dbname
+            866           365          1231  /data/user/0/ru.dlyasvoih.app/databases/guide.db

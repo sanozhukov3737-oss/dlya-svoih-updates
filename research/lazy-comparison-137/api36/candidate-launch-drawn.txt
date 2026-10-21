@@ -1,0 +1,2 @@
+I/ActivityTaskManager(  670): Displayed ru.dlyasvoih.app/.MainActivity for user 0: +1s478ms
+I/ActivityTaskManager(  670): Fully drawn ru.dlyasvoih.app/.MainActivity: +1s478ms

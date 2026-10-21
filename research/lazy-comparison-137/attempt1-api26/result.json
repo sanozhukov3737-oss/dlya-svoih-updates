@@ -1,0 +1,21 @@
+{
+  "versionName": "0.3.137",
+  "versionCode": 141,
+  "api": 26,
+  "apkSha256": "f0a67816b64c831259f54c1da10b010e50ef781ad9bb75010dab89be3715eebe",
+  "candidateSourceCommit": "510727a0107b8c9a3be881fb5e871d6b78a253bd",
+  "checks": {},
+  "searchObservationUpperBoundsMs": {},
+  "passed": false,
+  "limitations": [
+    "KVM and software SwiftShader; no physical-phone result.",
+    "Same emulator, baseline first then signed upgrade; order and runner load are not randomized.",
+    "Three batches of 12 real horizontal reader swipes per APK, first and repeated passes mixed.",
+    "gfxinfo describes frame timing, not elapsed time to ready text or first decoded image.",
+    "Image decoding latency and memory-cache hit rate are not measured.",
+    "ADB signed upgrade, not an in-app installer test."
+  ],
+  "androidTests": 14,
+  "error": "AssertionError: Android still has a default network",
+  "durationSeconds": 35.27
+}

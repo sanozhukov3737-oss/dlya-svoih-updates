@@ -1,0 +1,56 @@
+Applications Memory Usage (in Kilobytes):
+Uptime: 121715 Realtime: 121715
+
+** MEMINFO in pid 5396 [ru.dlyasvoih.app] **
+                   Pss  Private  Private  SwapPss     Heap     Heap     Heap
+                 Total    Dirty    Clean    Dirty     Size    Alloc     Free
+                ------   ------   ------   ------   ------   ------   ------
+  Native Heap    16674    16508        0        0    32768    24139     8628
+  Dalvik Heap    10786    10760        0        0    11849     5925     5924
+ Dalvik Other     7340     7340        0        0                           
+        Stack      928      928        0        0                           
+       Ashmem       33       28        0        0                           
+    Other dev       16        0       16        0                           
+     .so mmap     2454      240       68        0                           
+    .apk mmap      437        0        0        0                           
+    .ttf mmap      197        0       96        0                           
+    .dex mmap     5488        4     4256        0                           
+    .oat mmap     1873        0       64        0                           
+    .art mmap     1149      712        0        0                           
+   Other mmap      147       16       20        0                           
+      Unknown      530      496        0        0                           
+        TOTAL    48052    37032     4520        0    44617    30064    14552
+ 
+ App Summary
+                       Pss(KB)
+                        ------
+           Java Heap:    11472
+         Native Heap:    16508
+                Code:     4728
+               Stack:      928
+            Graphics:        0
+       Private Other:     7916
+              System:     6500
+ 
+               TOTAL:    48052       TOTAL SWAP PSS:        0
+ 
+ Objects
+               Views:       11         ViewRootImpl:        1
+         AppContexts:        2           Activities:        1
+              Assets:        2        AssetManagers:        3
+       Local Binders:       17        Proxy Binders:       19
+       Parcel memory:        6         Parcel count:       27
+    Death Recipients:        0      OpenSSL Sockets:        0
+            WebViews:        0
+ 
+ SQL
+         MEMORY_USED:     5856
+  PAGECACHE_OVERFLOW:     5018          MALLOC_SIZE:      256
+ 
+ DATABASES
+      pgsz     dbsz   Lookaside(b)          cache  Dbname
+         4    13180             89     498/423/24  /data/user/0/ru.dlyasvoih.app/databases/guide.db
+         4       16                         0/0/0    (attached) temp
+         4    13180            109      367/260/8  /data/user/0/ru.dlyasvoih.app/databases/guide.db (3)
+         4    13180            109      700/73/17  /data/user/0/ru.dlyasvoih.app/databases/guide.db (1)
+         4    13180            109     234/285/10  /data/user/0/ru.dlyasvoih.app/databases/guide.db (2)
