@@ -135,7 +135,7 @@ def frame_report(raw):
         retainedFramesOver700ms=sum(t > 700 for t in durations) if durations else None)
 
 
-def comparison(report):
+def comparison(report, exercise_keyboard=False):
     for _ in range(8):
         root = hierarchy()
         action = next((n for n in root.iter('node') if n.get('text') == 'Сравнить'), None)
@@ -157,9 +157,19 @@ def comparison(report):
     option = find(lambda a: a.get('checkable') == 'true' and a.get('checked') == 'false'
                   and a.get('enabled') == 'true')
     ui.tap(option)
+    if exercise_keyboard:
+        field = find(lambda a: a.get('class') == 'android.widget.EditText')
+        ui.tap(field)
+        ui.adb('shell', 'input', 'text', 'M14')
+        ui.text('M14')
+        # Do not dismiss IME or press Back: the real Apply action must remain
+        # usable while typing, including on Android 8.
+        ui.capture('picker-keyboard')
     ui.tap(ui.text('Сравнить · 3'))
     hint = '3 карточки · таблицу можно сдвигать вбок'
     ui.text(hint)
+    if exercise_keyboard:
+        report['checks']['applyWhileKeyboardOpen'] = True
     ui.capture('comparison-three')
     title = ui.text('Основная карточка')
     _, y1, _, y2 = ui.bounds(title)

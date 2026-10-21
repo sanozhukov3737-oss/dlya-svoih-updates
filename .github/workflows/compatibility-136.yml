@@ -1,0 +1,172 @@
+name: Build and verify keyboard fix 0.3.136
+
+on:
+  push:
+    branches: ['main']
+    paths: ['docs/releases/app-0.3.136.json', '.github/workflows/compatibility-136.yml']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: read
+
+concurrency:
+  group: compatibility-136
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    env:
+      CI_SIGNING_KEYSTORE: ${{ github.workspace }}/comparison136-existing.keystore
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: gradle/actions/setup-gradle@v4
+      - name: Verify preserved catalog and existing host checks
+        run: |
+          set -euo pipefail
+          sudo apt-get update -qq
+          sudo apt-get install -y python3-pil
+          /usr/bin/python3 tools/compare136_prepare.py
+          for check in test_quick_comparison.py test_updates.py test_java_features.py test_reader_navigation.py test_search.py test_uav_handbook.py test_demz_catalog.py; do
+            /usr/bin/python3 -m unittest discover -s tools -p "$check"
+          done
+      - name: Restore and verify the existing private signing key
+        env:
+          ANDROID_DEBUG_KEYSTORE_BASE64: ${{ secrets.ANDROID_DEBUG_KEYSTORE_BASE64 }}
+        run: |
+          python3 - <<'PY'
+          import base64,hashlib,os,subprocess
+          from pathlib import Path
+          raw=''.join(os.environ.get('ANDROID_DEBUG_KEYSTORE_BASE64','').split())
+          assert raw,'Existing signing secret unavailable; no replacement key will be generated'
+          p=Path(os.environ['CI_SIGNING_KEYSTORE']);p.write_bytes(base64.b64decode(raw,validate=True));p.chmod(0o600)
+          cert=subprocess.run(['keytool','-exportcert','-keystore',str(p),'-storepass','android','-alias','androiddebugkey'],check=True,capture_output=True).stdout
+          assert hashlib.sha256(cert).hexdigest()=='2f0a0908f269bc039311edb58fca8863347f1e4c3a7cfaddd909991cf1f0b509'
+          print('Existing signing certificate verified')
+          PY
+      - name: Build the optimized signed APK and preserve the catalog offer
+        run: |
+          set -euo pipefail
+          "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" 'platforms;android-36' 'build-tools;36.0.0'
+          printf 'sdk.dir=%s\n' "$ANDROID_HOME" > local.properties
+          bash ./gradlew :app:testDebugUnitTest :app:assembleRelease --no-daemon -PciSigningKeystore="$CI_SIGNING_KEYSTORE"
+          mkdir -p build/compare136
+          curl --fail --silent --show-error --location --retry 2 --max-time 120 'https://github.com/sanozhukov3737-oss/dlya-svoih-updates/releases/latest/download/latest.json' --output build/compare136/latest-before.json
+          /usr/bin/python3 tools/compare136_prepare.py --apk app/build/outputs/apk/release/app-release.apk
+      - uses: actions/upload-artifact@v4
+        with:
+          name: comparison136-signed-release
+          path: build/compare136/release/
+          if-no-files-found: error
+          retention-days: 30
+      - name: Remove temporary private signing key
+        if: always()
+        run: |
+          python3 - <<'PY'
+          import os
+          from pathlib import Path
+          Path(os.environ['CI_SIGNING_KEYSTORE']).unlink(missing_ok=True)
+          PY
+
+  check:
+    needs: build
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        api: [26, 36]
+    env:
+      ANDROID_AVD_HOME: ${{ github.workspace }}/build/android-avds
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: tools
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: actions/download-artifact@v4
+        with:
+          name: comparison136-signed-release
+          path: build/compat136/candidate
+      - name: Obtain the exact public baseline and Android image
+        run: |
+          set -euo pipefail
+          curl --fail --silent --show-error --location --retry 2 --max-time 180 'https://github.com/sanozhukov3737-oss/dlya-svoih-updates/releases/download/app-0.3.135/DLYA_SVOIH_v0.3.135.apk' --output build/compat136/previous.apk
+          echo '068b71392f570ad768b59c391c10dbba8f9f90dce07d545b37bb545ffd71b3aa  build/compat136/previous.apk' | sha256sum --check
+          "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" 'emulator' 'system-images;android-${{ matrix.api }};google_apis;x86_64'
+      - name: Create fresh native 720 by 1280 accelerated device
+        run: |
+          set -euo pipefail
+          echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules
+          sudo udevadm control --reload-rules
+          sudo udevadm trigger --name-match=kvm
+          mkdir -p "$ANDROID_AVD_HOME"
+          echo no | "$ANDROID_HOME/cmdline-tools/latest/bin/avdmanager" create avd --force --name recovery134 --package 'system-images;android-${{ matrix.api }};google_apis;x86_64' --device pixel_2
+          python3 - <<'PY'
+          import os
+          from pathlib import Path
+          p=Path(os.environ['ANDROID_AVD_HOME'])/'recovery134.avd/config.ini'
+          values=dict(line.split('=',1) for line in p.read_text().splitlines() if '=' in line)
+          values.update({'hw.lcd.width':'720','hw.lcd.height':'1280','hw.lcd.density':'320'})
+          p.write_text('\n'.join(k+'='+v for k,v in values.items())+'\n')
+          PY
+      - name: Verify signed upgrade and keyboard confirmation offline
+        run: |
+          set -euo pipefail
+          /usr/bin/python3 tools/run_android_emulator.py --out build/compat136/emulator --timeout 480 -- /usr/bin/python3 tools/check136_android.py --apk build/compat136/candidate/DLYA_SVOIH_v0.3.136.apk --previous build/compat136/previous.apk --metadata build/compat136/candidate/build-result.json --out build/compat136/proof --expected-api ${{ matrix.api }}
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: comparison136-api${{ matrix.api }}-proof
+          path: |
+            build/compat136/proof/
+            build/compat136/emulator/
+          if-no-files-found: error
+          retention-days: 30
+
+  record:
+    needs: [build, check]
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    permissions:
+      contents: write
+      actions: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: comparison136-api*-proof
+          path: build/evidence136
+      - uses: actions/download-artifact@v4
+        with:
+          name: comparison136-signed-release
+          path: build/candidate136
+      - name: Save successful Android evidence for visual review
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import json,shutil
+          from pathlib import Path
+          target=Path('research/compatibility-136');target.mkdir(parents=True,exist_ok=True)
+          for api in (26,36):
+              source=Path(f'build/evidence136/comparison136-api{api}-proof')
+              assert json.loads((source/'proof/result.json').read_text())['passed'] is True
+              for p in (source/'proof').rglob('*'):
+                  if not p.is_file() or p.suffix not in ('.png','.xml','.json','.txt'):continue
+                  dest=target/f'api{api}'/p.relative_to(source/'proof');dest.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(p,dest)
+              shutil.copyfile(source/'emulator/lifecycle.json',target/f'api{api}'/'emulator-lifecycle.json')
+          shutil.copyfile('build/candidate136/build-result.json',target/'build-result.json')
+          PY
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add research/compatibility-136
+          git commit -m 'Record signed 0.3.136 upgrade and keyboard checks on Android 8 and 16'
+          git push origin HEAD:main

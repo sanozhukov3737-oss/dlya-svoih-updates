@@ -1,0 +1,15 @@
+{
+  "versionName": "0.3.136",
+  "versionCode": 140,
+  "contentVersion": 197,
+  "signerSha256": "2f0a0908f269bc039311edb58fca8863347f1e4c3a7cfaddd909991cf1f0b509",
+  "unchangedFiles": {
+    "content/catalog.json": "46415e8d2f5f31fc53237780db386d5702bc9accbbcb2d814cfcc436c6d8c0df",
+    "app/src/main/assets/database/guide-v29.db": "a2cf495b7476e65a52d8f14b22fe737e812310c4c49ee4aa784afd27ab59e8b5",
+    "app/src/main/assets/database/content-version.txt": "46b9d3a6b593718297df7eb071f0725bcf72fe988f1a5cfe099ea20ceeb016bd",
+    "app/src/main/assets/viewer3d/models.json": "11402c11a9f2ac1ad95770ced7f5d25073c8016ba5d4fa0c33b1e943ccd797f4",
+    "app/src/main/assets/viewer3d/index.html": "ab0a4d70a4203d67e274d433332cedeeaf9d6e1818d1c29fb8e43a216551a538"
+  },
+  "changes": "Исправлено окно выбора карточек для сравнения: клавиатура больше не перекрывает подтверждение на Android 8. Проверены поиск в окне выбора, сравнение двух и трёх карточек и крупный шрифт. Каталог 197, изображения и 19 офлайн-моделей сохранены без изменений.",
+  "verificationAttempt": 1
+}

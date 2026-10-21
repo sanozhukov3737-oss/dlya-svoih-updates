@@ -192,8 +192,11 @@ private fun ComparisonPicker(options: List<CardPreview>, selected: List<String>,
         val words = CatalogSearch.normalize(query).split(' ').filter { it.isNotBlank() }
         indexed.filter { (_, title) -> words.all { it in title } }.map { it.first }
     }
-    Dialog(onDismissRequest = dismiss, properties = DialogProperties(usePlatformDefaultWidth = false)) {
-        Surface(Modifier.imePadding().fillMaxWidth(0.96f).fillMaxHeight(0.88f), shape = RoundedCornerShape(24.dp)) {
+    // Let WindowInsets and adjustResize account for the IME on legacy Android
+    // as well; a floating decor-fitted window can leave Apply behind the IME.
+    Dialog(onDismissRequest = dismiss, properties = DialogProperties(usePlatformDefaultWidth = false,
+        decorFitsSystemWindows = false)) {
+        Surface(Modifier.imePadding().navigationBarsPadding().fillMaxWidth(0.96f).fillMaxHeight(0.88f), shape = RoundedCornerShape(24.dp)) {
             Column(Modifier.padding(16.dp), verticalArrangement = Arrangement.spacedBy(10.dp)) {
                 Text("Выбор карточек", style = MaterialTheme.typography.titleLarge)
                 Text("Одна или две карточки из текущей категории", style = MaterialTheme.typography.bodySmall)
