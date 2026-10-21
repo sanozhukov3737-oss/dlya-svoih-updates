@@ -1,12 +1,13 @@
 {
   "formatVersion": 1,
   "purpose": "Bounded compatibility and emulator timing baseline for the unchanged public 0.3.135",
-  "attempt": 2,
-  "sourceCommit": "ee3b530d50a9aaeab5f728ae1d53be23b9e0dde5",
-  "previousRun": 39596604134,
-  "harnessCorrections": ["Do not clear Android 8 logcat buffers", "Accept actual aggregate gfxinfo when detailed frame records are unavailable"],
+  "attempt": 3,
+  "sourceCommit": "b2ce9c5f02d8f4ce21eb77189ee3e003d4a64f1b",
+  "previousRun": 39597307980,
+  "completedAndroid16Run": 39597307980,
+  "harnessCorrections": ["Do not clear Android 8 logcat buffers", "Accept actual aggregate gfxinfo when detailed frame records are unavailable", "Start reader gestures inside the actual list bounds above legacy Android navigation"],
   "apkSha256": "068b71392f570ad768b59c391c10dbba8f9f90dce07d545b37bb545ffd71b3aa",
-  "androidApis": [26, 36],
+  "androidApis": [26],
   "appChanges": false,
   "publishRelease": false
 }

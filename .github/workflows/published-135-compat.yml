@@ -20,7 +20,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        api: [26, 36]
+        # Android 16 passed in run 39597307980; retry only the remaining OS.
+        api: [26]
     env:
       ANDROID_AVD_HOME: ${{ github.workspace }}/build/android-avds
     steps:

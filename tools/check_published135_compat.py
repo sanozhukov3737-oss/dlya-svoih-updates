@@ -89,9 +89,14 @@ def search(query, title, report):
 
 def scroll_sample(label, report):
     before = [(n.get('text'), n.get('bounds')) for n in hierarchy().iter('node') if n.get('text')]
+    region = find(lambda a: a.get('resource-id', '').split('/')[-1] == 'detail_list')
+    left, top, right, bottom = ui.bounds(region)
+    x = (left + right) // 2
+    upper = top + (bottom-top) * 25 // 100
+    lower = top + (bottom-top) * 85 // 100
     ui.adb('shell', 'dumpsys', 'gfxinfo', PACKAGE, 'reset')
     for _ in range(4):
-        ui.adb('shell', 'input', 'swipe', '420', '1040', '420', '470', '350')
+        ui.adb('shell', 'input', 'swipe', x, lower, x, upper, '350')
         time.sleep(.2)
     after = [(n.get('text'), n.get('bounds')) for n in hierarchy().iter('node') if n.get('text')]
     assert before != after, 'Reader did not move after four visible gestures'
@@ -137,7 +142,11 @@ def comparison(report):
         if action is not None:
             ui.tap(action)
             break
-        ui.adb('shell', 'input', 'swipe', '420', '400', '420', '1050', '300')
+        region = find(lambda a: a.get('resource-id', '').split('/')[-1] == 'detail_list')
+        left, top, right, bottom = ui.bounds(region)
+        x = (left+right)//2
+        ui.adb('shell', 'input', 'swipe', x, top+(bottom-top)//4,
+               x, top+(bottom-top)*85//100, '300')
     else:
         raise AssertionError('Comparison action is not reachable')
     ui.text('Выбрать карточки')
