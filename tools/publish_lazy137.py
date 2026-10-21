@@ -37,6 +37,14 @@ def api(path, optional=False):
     return json.loads(raw) if raw is not None else None
 
 
+def release_for_tag():
+    # The by-tag endpoint excludes unpublished releases. The authenticated
+    # releases list includes the draft we must verify before publishing.
+    matches = [r for r in api('releases?per_page=100') if r['tag_name'] == TAG]
+    assert len(matches) <= 1
+    return matches[0] if matches else None
+
+
 def fetch(url):
     request = urllib.request.Request(url, headers={'Cache-Control': 'no-cache', 'Pragma': 'no-cache'})
     with urllib.request.urlopen(request, timeout=90) as response:
@@ -119,12 +127,13 @@ def main():
     current_raw = fetch(canonical)
     assert hashlib.sha256(current_raw).hexdigest() in (request['previousFeedSha256'], feed_sha)
     notes = WORK/'notes.txt'; notes.write_text(request['notes']+'\n')
-    release = api(f'releases/tags/{TAG}', optional=True)
+    release = release_for_tag()
     if release is None:
         assert api('releases/latest')['tag_name'] == 'app-0.3.136'
         run('gh', 'release', 'create', TAG, '--repo', REPO, '--draft', '--target', os.environ['GITHUB_SHA'],
             '--title', 'ДЛЯ СВОИХ — 0.3.137', '--notes-file', notes)
-        release = api(f'releases/tags/{TAG}')
+        release = release_for_tag()
+        assert release is not None and release['draft']
     for file in (apk, feed_file):
         existing = next((a for a in release['assets'] if a['name'] == file.name), None)
         if existing:
@@ -136,7 +145,10 @@ def main():
     run('gh', 'release', 'download', TAG, '--repo', REPO, '--pattern', NAME, '--pattern', 'latest.json',
         '--dir', check, '--skip-existing')
     assert sha(check/NAME) == request['apkSha256'] and sha(check/'latest.json') == feed_sha
-    tag_commit = api(f'git/ref/tags/{TAG}')['object']['sha']
+    # A draft need not have a tag reference yet. Its pinned target is the
+    # publication context; the real tag is checked after the release is public.
+    tag_commit = release['target_commitish']
+    assert len(tag_commit) == 40 and all(c in '0123456789abcdef' for c in tag_commit)
     source_context(request['candidateSourceCommit'], tag_commit)
     report = dict(versionName='0.3.137', versionCode=141, contentVersion=197,
         apkSha256=request['apkSha256'], apkBytes=apk.stat().st_size, feedSha256=feed_sha,
@@ -154,6 +166,7 @@ def main():
         run('gh', 'release', 'edit', TAG, '--repo', REPO, '--draft=false', '--latest')
     release = api(f'releases/tags/{TAG}')
     assert not release['draft'] and api('releases/latest')['tag_name'] == TAG
+    assert api(f'git/ref/tags/{TAG}')['object']['sha'] == tag_commit
     assets = {a['name']:a for a in release['assets']}
     assert assets[NAME]['digest'] == 'sha256:'+request['apkSha256']
     assert assets['latest.json']['digest'] == 'sha256:'+feed_sha
