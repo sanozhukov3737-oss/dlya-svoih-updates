@@ -1,0 +1,36 @@
+{
+  "versionName": "0.3.135",
+  "versionCode": 139,
+  "contentVersion": 197,
+  "visualReview": "passed",
+  "reviewer": "assistant",
+  "apkSha256": "068b71392f570ad768b59c391c10dbba8f9f90dce07d545b37bb545ffd71b3aa",
+  "feedSha256": "f2e318d12acc11c51dea3dc9fddad9d17cdb02544178e0790c10de12851a498f",
+  "candidateSourceCommit": "ebaef40e8a74c3c5e2fb322575ee82c0c656cc2e",
+  "workflowRunId": 39578144223,
+  "reviewedScreens": {
+    "research/comparison-135/screens/comparison135-two-dark.png": "03921ef9be0023786e5ded47ddb745edaddd1868368a98b63c73976cabc09a4a",
+    "research/comparison-135/screens/comparison135-picker.png": "2f0c74771648914d76a1d91256b2547230d36a2d790d92db9a2bf12cedad87cf",
+    "research/comparison-135/screens/comparison135-three-left.png": "6abc4eb944446ad773b6da3fcc9857e6124d5c3e82e3a0cbbe3563789fb3e861",
+    "research/comparison-135/screens/comparison135-three-right.png": "d680002e0779dccaf947913e65b6b12b4241e096510fb9b0b51c395c2048158c",
+    "research/comparison-135/screens/comparison135-three-scrolled.png": "3154e8b0723a79bc67f5befeb848feecec176997a3d5f1c53ba139d1fa2f5bd1",
+    "research/comparison-135/screens/comparison135-three-large-font.png": "16db2849208e00a2e4dc97c7d9a6d933bd4cbe850f80341765e52b0c81037b05"
+  },
+  "hostChecks": 30,
+  "androidUiTests": 4,
+  "observations": [
+    "Two-card comparison readable at 360 dp",
+    "Picker exposes same-category choices and search",
+    "Three-card headers and values stay aligned",
+    "Field names remain visible after horizontal scrolling",
+    "Headers stay visible while vertically scrolling",
+    "Large font 1.3 stays readable and selection survives configuration change"
+  ],
+  "upgradePreservation": [
+    "1695 catalog identities",
+    "favorites",
+    "reading position",
+    "appearance",
+    "reader preferences"
+  ]
+}
