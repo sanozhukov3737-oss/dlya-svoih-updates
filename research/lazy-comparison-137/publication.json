@@ -1,0 +1,131 @@
+{
+  "versionName": "0.3.137",
+  "versionCode": 141,
+  "contentVersion": 197,
+  "apkSha256": "f0a67816b64c831259f54c1da10b010e50ef781ad9bb75010dab89be3715eebe",
+  "apkBytes": 144816913,
+  "feedSha256": "ee571133535eef9422b82d7eea129a32f233318bf98ca12d465f1476694ac4b5",
+  "feedBytes": 2077,
+  "signerSha256": "2f0a0908f269bc039311edb58fca8863347f1e4c3a7cfaddd909991cf1f0b509",
+  "artifactSourceCommit": "510727a0107b8c9a3be881fb5e871d6b78a253bd",
+  "releaseTagCommit": "a1f73501d76098fda87e42ccc7ffeaf3d2fcab98",
+  "buildWorkflowRunId": 39642804088,
+  "androidVerification": {
+    "26": {
+      "runId": 39644608097,
+      "jobId": 119376746192,
+      "conclusion": "success",
+      "verificationSourceCommit": "16fa5abb0127b9b0ae2e2c1b62fd77dd9952d0dc",
+      "artifactId": 12367491149,
+      "artifactSha256": "cc3cbd488cfb1bfe0c6bde15f5741f74d5383e6edd68dcaa2f8202bbc042a744"
+    },
+    "36": {
+      "runId": 39642804088,
+      "jobId": 119373545334,
+      "conclusion": "success",
+      "verificationSourceCommit": "510727a0107b8c9a3be881fb5e871d6b78a253bd",
+      "artifactId": 12366253289,
+      "artifactSha256": "48cfec64e5bb967ab8d6c4f5b4d3fa85935808b79ea62278315bdc9b944dc8ef"
+    }
+  },
+  "reviewedScreens": [
+    {
+      "path": "api26/comparison-options-loading.png",
+      "sha256": "84440f133e01c6ee1ab3e9c576bec05518ccd6170ba3d325c53a0b2b4d21d95e",
+      "status": "passed",
+      "scope": "controlled options-state Compose test"
+    },
+    {
+      "path": "api26/comparison-options-error.png",
+      "sha256": "0912f63ec8665de2277824969787047183b8fc6803f50d4a03afe2ec26362348",
+      "status": "passed",
+      "scope": "controlled options-state Compose test"
+    },
+    {
+      "path": "api26/comparison-options-empty.png",
+      "sha256": "4a185e0b5adfb09a6bafe72525c1b78fd329ba174793741525f8e24fc713c465",
+      "status": "passed",
+      "scope": "controlled options-state Compose test"
+    },
+    {
+      "path": "api26/candidate137-reader-start.png",
+      "sha256": "59d224a64e79caebc549e9079a590ec07e8eb24a23be9aec36682aad6ba989ae",
+      "status": "passed",
+      "scope": "actual signed candidate UI"
+    },
+    {
+      "path": "api26/picker-keyboard.png",
+      "sha256": "92da7d63189aeb5c4a505af0746b3edb6a2afcf1bea820737da76154b77c6d7a",
+      "status": "passed",
+      "scope": "actual signed candidate UI"
+    },
+    {
+      "path": "api26/comparison-three-panned.png",
+      "sha256": "431ac3bcb1836a5dd0a1ed9c51396bd3fc38bdc0e11a812441641fa0a0380f31",
+      "status": "passed",
+      "scope": "actual signed candidate UI"
+    },
+    {
+      "path": "api26/comparison-large-font.png",
+      "sha256": "d006a6742d4b7f85509fe6ed8361e4ef472b5ac1de319e9ccbdf8768befd60dd",
+      "status": "passed",
+      "scope": "actual signed candidate UI"
+    },
+    {
+      "path": "api36/candidate137-reader-start.png",
+      "sha256": "9a6ba4050a1ccb0b8c16b9c4133c0d594d16e12f91935ea53b95314f85576ba5",
+      "status": "passed",
+      "scope": "actual signed candidate UI"
+    },
+    {
+      "path": "api36/picker-keyboard.png",
+      "sha256": "b2a21ab62ee15ba7a6a89e8fbbe1b78e8b1f69235876a4eea1e82a66977b47df",
+      "status": "passed",
+      "scope": "actual signed candidate UI"
+    },
+    {
+      "path": "api36/comparison-three-panned.png",
+      "sha256": "8c9091dd9c3eab5212495b10d2feb4f7459682afaf78d477d7448a2e7652dde8",
+      "status": "passed",
+      "scope": "actual signed candidate UI"
+    },
+    {
+      "path": "api36/comparison-large-font.png",
+      "sha256": "729f877127f8009d97a7989f15ddf2c4dbd1e817286b7459350e4842cde4f25e",
+      "status": "passed",
+      "scope": "actual signed candidate UI"
+    }
+  ],
+  "uploadedBytesVerified": true,
+  "catalogOfferUnchanged": true,
+  "apkUrl": "https://github.com/sanozhukov3737-oss/dlya-svoih-updates/releases/download/app-0.3.137/DLYA_SVOIH_v0.3.137.apk",
+  "updateChannelUrl": "https://github.com/sanozhukov3737-oss/dlya-svoih-updates/releases/latest/download/latest.json",
+  "releaseUrl": "https://github.com/sanozhukov3737-oss/dlya-svoih-updates/releases/tag/app-0.3.137",
+  "releasePublished": true,
+  "updateChannelVerified": true,
+  "publicApkDownloadVerified": true,
+  "publicationWorkflowRunId": 39648659936,
+  "releaseId": 419877904,
+  "publishedAt": "2026-10-21T18:00:17Z",
+  "publicationSourceCommit": "44e3c04ce320ab1afa08c503c00fa4c4a9863908",
+  "assets": [
+    {
+      "name": "DLYA_SVOIH_v0.3.137.apk",
+      "bytes": 144816913,
+      "sha256": "f0a67816b64c831259f54c1da10b010e50ef781ad9bb75010dab89be3715eebe",
+      "url": "https://github.com/sanozhukov3737-oss/dlya-svoih-updates/releases/download/app-0.3.137/DLYA_SVOIH_v0.3.137.apk"
+    },
+    {
+      "name": "latest.json",
+      "bytes": 2077,
+      "sha256": "ee571133535eef9422b82d7eea129a32f233318bf98ca12d465f1476694ac4b5",
+      "url": "https://github.com/sanozhukov3737-oss/dlya-svoih-updates/releases/download/app-0.3.137/latest.json"
+    },
+    {
+      "name": "publication-verification.json",
+      "bytes": 4058,
+      "sha256": "59252cd11e7aa40d7d7470acd0b159cc9690f0bbfd02516d0ffef70e6dee6ccf",
+      "url": "https://github.com/sanozhukov3737-oss/dlya-svoih-updates/releases/download/app-0.3.137/publication-verification.json"
+    }
+  ]
+}

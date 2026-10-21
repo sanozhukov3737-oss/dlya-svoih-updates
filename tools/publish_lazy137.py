@@ -57,7 +57,7 @@ def source_context(candidate, current):
     comparison = api(f'compare/{candidate}...{current}')
     assert comparison['status'] in ('ahead', 'identical')
     assert len(comparison['files']) < 300
-    assert all(f['filename'].startswith(('tools/', '.github/workflows/', 'docs/', 'research/'))
+    assert all(f['filename'] == 'README.md' or f['filename'].startswith(('tools/', '.github/workflows/', 'docs/', 'research/'))
                for f in comparison['files']), 'App sources differ from the tested APK'
 
 

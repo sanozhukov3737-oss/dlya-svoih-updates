@@ -1,0 +1,22 @@
+{
+  "apkSha256": "f0a67816b64c831259f54c1da10b010e50ef781ad9bb75010dab89be3715eebe",
+  "rebuiltForPublication": false,
+  "attempts": [
+    {
+      "runId": 39648010345,
+      "jobId": 119388607994,
+      "conclusion": "failure",
+      "stage": "Draft was created, but by-tag public-release lookup returned HTTP404 before any assets were uploaded.",
+      "releaseId": 419877904,
+      "publicUpdateChannelChanged": false
+    },
+    {
+      "runId": 39648659936,
+      "jobId": 119390893429,
+      "conclusion": "success",
+      "stage": "Existing draft resumed through authenticated release listing; APK and feed downloaded and verified, then published as latest and public links verified.",
+      "releaseId": 419877904,
+      "publicUpdateChannelChanged": true
+    }
+  ]
+}
