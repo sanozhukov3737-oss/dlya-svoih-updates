@@ -1,0 +1,208 @@
+{
+  "method": "Same KVM emulator per API, SwiftShader, native 720x1280 at 320dpi, dark theme and system font 1.0 for both versions; public136 first, signed137 after adb upgrade; 3 batches per APK, 6 next and 6 previous horizontal swipes per batch.",
+  "baselineApkSha256": "0a22658eab2cc409eebf1c9d62cb1139b79cbb160e238ebc5102b8abc4566162",
+  "candidateApkSha256": "f0a67816b64c831259f54c1da10b010e50ef781ad9bb75010dab89be3715eebe",
+  "apis": {
+    "26": {
+      "baseline": [
+        {
+          "totalFrames": 350,
+          "jankyFrames": 350,
+          "jankyPercent": "100.00%",
+          "percentileMs": {
+            "50th": "48",
+            "90th": "69",
+            "95th": "89",
+            "99th": "200"
+          },
+          "detailedFrameTimingsAvailable": true,
+          "retainedFrameSample": 119,
+          "maxRetainedFrameMs": 101.34,
+          "retainedFramesOver700ms": 0
+        },
+        {
+          "totalFrames": 359,
+          "jankyFrames": 359,
+          "jankyPercent": "100.00%",
+          "percentileMs": {
+            "50th": "46",
+            "90th": "69",
+            "95th": "77",
+            "99th": "150"
+          },
+          "detailedFrameTimingsAvailable": true,
+          "retainedFrameSample": 120,
+          "maxRetainedFrameMs": 149.96,
+          "retainedFramesOver700ms": 0
+        },
+        {
+          "totalFrames": 364,
+          "jankyFrames": 364,
+          "jankyPercent": "100.00%",
+          "percentileMs": {
+            "50th": "44",
+            "90th": "61",
+            "95th": "73",
+            "99th": "117"
+          },
+          "detailedFrameTimingsAvailable": true,
+          "retainedFrameSample": 120,
+          "maxRetainedFrameMs": 94.2,
+          "retainedFramesOver700ms": 0
+        }
+      ],
+      "candidate": [
+        {
+          "totalFrames": 357,
+          "jankyFrames": 357,
+          "jankyPercent": "100.00%",
+          "percentileMs": {
+            "50th": "44",
+            "90th": "65",
+            "95th": "85",
+            "99th": "150"
+          },
+          "detailedFrameTimingsAvailable": true,
+          "retainedFrameSample": 120,
+          "maxRetainedFrameMs": 100.01,
+          "retainedFramesOver700ms": 0
+        },
+        {
+          "totalFrames": 369,
+          "jankyFrames": 369,
+          "jankyPercent": "100.00%",
+          "percentileMs": {
+            "50th": "42",
+            "90th": "61",
+            "95th": "73",
+            "99th": "113"
+          },
+          "detailedFrameTimingsAvailable": true,
+          "retainedFrameSample": 120,
+          "maxRetainedFrameMs": 115.13,
+          "retainedFramesOver700ms": 0
+        },
+        {
+          "totalFrames": 372,
+          "jankyFrames": 372,
+          "jankyPercent": "100.00%",
+          "percentileMs": {
+            "50th": "42",
+            "90th": "61",
+            "95th": "69",
+            "99th": "97"
+          },
+          "detailedFrameTimingsAvailable": true,
+          "retainedFrameSample": 120,
+          "maxRetainedFrameMs": 106.59,
+          "retainedFramesOver700ms": 0
+        }
+      ]
+    },
+    "36": {
+      "baseline": [
+        {
+          "totalFrames": 323,
+          "jankyFrames": 159,
+          "jankyPercent": "49.23%",
+          "percentileMs": {
+            "50th": "46",
+            "90th": "69",
+            "95th": "81",
+            "99th": "121"
+          },
+          "detailedFrameTimingsAvailable": false,
+          "retainedFrameSample": 0,
+          "maxRetainedFrameMs": null,
+          "retainedFramesOver700ms": null
+        },
+        {
+          "totalFrames": 349,
+          "jankyFrames": 151,
+          "jankyPercent": "43.27%",
+          "percentileMs": {
+            "50th": "42",
+            "90th": "57",
+            "95th": "65",
+            "99th": "81"
+          },
+          "detailedFrameTimingsAvailable": false,
+          "retainedFrameSample": 0,
+          "maxRetainedFrameMs": null,
+          "retainedFramesOver700ms": null
+        },
+        {
+          "totalFrames": 349,
+          "jankyFrames": 152,
+          "jankyPercent": "43.55%",
+          "percentileMs": {
+            "50th": "42",
+            "90th": "61",
+            "95th": "65",
+            "99th": "81"
+          },
+          "detailedFrameTimingsAvailable": false,
+          "retainedFrameSample": 0,
+          "maxRetainedFrameMs": null,
+          "retainedFramesOver700ms": null
+        }
+      ],
+      "candidate": [
+        {
+          "totalFrames": 324,
+          "jankyFrames": 149,
+          "jankyPercent": "45.99%",
+          "percentileMs": {
+            "50th": "44",
+            "90th": "65",
+            "95th": "73",
+            "99th": "129"
+          },
+          "detailedFrameTimingsAvailable": false,
+          "retainedFrameSample": 0,
+          "maxRetainedFrameMs": null,
+          "retainedFramesOver700ms": null
+        },
+        {
+          "totalFrames": 352,
+          "jankyFrames": 151,
+          "jankyPercent": "42.90%",
+          "percentileMs": {
+            "50th": "42",
+            "90th": "57",
+            "95th": "65",
+            "99th": "73"
+          },
+          "detailedFrameTimingsAvailable": false,
+          "retainedFrameSample": 0,
+          "maxRetainedFrameMs": null,
+          "retainedFramesOver700ms": null
+        },
+        {
+          "totalFrames": 356,
+          "jankyFrames": 150,
+          "jankyPercent": "42.13%",
+          "percentileMs": {
+            "50th": "42",
+            "90th": "57",
+            "95th": "65",
+            "99th": "69"
+          },
+          "detailedFrameTimingsAvailable": false,
+          "retainedFrameSample": 0,
+          "maxRetainedFrameMs": null,
+          "retainedFramesOver700ms": null
+        }
+      ]
+    }
+  },
+  "interpretation": "API26 p95 is lower by 4ms in each sampled batch. API36 repeated batches have the same p95 (65ms). These sequential, small emulator samples do not establish a reliable device-level speedup.",
+  "limitations": [
+    "KVM and software SwiftShader; no physical-phone result.",
+    "Same emulator, baseline first then signed upgrade; order and runner load are not randomized.",
+    "Three batches of 12 real horizontal reader swipes per APK, first and repeated passes mixed.",
+    "gfxinfo describes frame timing, not elapsed time to ready text or first decoded image.",
+    "Image decoding latency and memory-cache hit rate are not measured.",
+    "ADB signed upgrade, not an in-app installer test."
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "packageName": "ru.dlyasvoih.app",
+  "versionCode": 141,
+  "versionName": "0.3.137",
+  "minSdk": 26,
+  "signerSha256": "2f0a0908f269bc039311edb58fca8863347f1e4c3a7cfaddd909991cf1f0b509",
+  "apkSha256": "f0a67816b64c831259f54c1da10b010e50ef781ad9bb75010dab89be3715eebe",
+  "apkBytes": 144816913,
+  "candidateSourceCommit": "510727a0107b8c9a3be881fb5e871d6b78a253bd",
+  "workflowRunId": 39642804088,
+  "contentVersion": 197,
+  "status": "unpublished candidate; Android and visual checks pending"
+}

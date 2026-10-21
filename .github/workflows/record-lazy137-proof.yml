@@ -1,0 +1,73 @@
+name: Record verified on-demand comparison evidence
+
+on:
+  push:
+    branches: ['main']
+    paths: ['.github/workflows/record-lazy137-proof.yml']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: read
+
+jobs:
+  record:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: lazy137-api36-proof
+          run-id: 39642804088
+          github-token: ${{ github.token }}
+          path: build/record137/api36
+      - uses: actions/download-artifact@v4
+        with:
+          name: lazy137-recheck-api26-proof
+          run-id: 39644608097
+          github-token: ${{ github.token }}
+          path: build/record137/api26
+      - uses: actions/download-artifact@v4
+        with:
+          name: lazy137-api26-proof
+          run-id: 39642804088
+          github-token: ${{ github.token }}
+          path: build/record137/attempt1-api26
+      - name: Validate identical candidate and save durable proof
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import hashlib,json,shutil
+          from pathlib import Path
+          target=Path('research/lazy-comparison-137')
+          expected='f0a67816b64c831259f54c1da10b010e50ef781ad9bb75010dab89be3715eebe'
+          for api in (26,36):
+              source=Path(f'build/record137/api{api}')
+              result=json.loads((source/'proof/result.json').read_text())
+              assert result['passed'] is True and result['androidTests']==14
+              assert result['apkSha256']==expected and result['candidateSourceCommit']=='510727a0107b8c9a3be881fb5e871d6b78a253bd'
+              assert result['checks']['signedUpgradeAndSavedState'] and result['checks']['applyWhileKeyboardOpen']
+              lifecycle=json.loads((source/'emulator/lifecycle.json').read_text())
+              assert lifecycle['testPassed'] is True and lifecycle['testExitCode']==0
+              for p in (source/'proof').rglob('*'):
+                  if not p.is_file() or p.suffix not in ('.png','.xml','.json','.txt'):continue
+                  dest=target/f'api{api}'/p.relative_to(source/'proof')
+                  dest.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(p,dest)
+              shutil.copyfile(source/'emulator/lifecycle.json',target/f'api{api}'/'emulator-lifecycle.json')
+          attempt=Path('build/record137/attempt1-api26')
+          dest=target/'attempt1-api26';dest.mkdir(parents=True,exist_ok=True)
+          for name in ('result.json','instrumentation.txt','before-baseline-connectivity.txt'):
+              shutil.copyfile(attempt/'proof'/name,dest/name)
+          shutil.copyfile(attempt/'emulator/lifecycle.json',dest/'emulator-lifecycle.json')
+          ledger=json.loads((target/'visual-review.json').read_text())
+          assert ledger['status']=='passed' and len(ledger['images'])==11
+          for image in ledger['images']:
+              assert hashlib.sha256((target/image['path']).read_bytes()).hexdigest()==image['sha256'],image['path']
+          print('Same signed APK, successful Android checks and 11 reviewed image hashes verified')
+          PY
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add research/lazy-comparison-137
+          git commit -m 'Record tested 0.3.137 candidate and native Android screenshots [skip ci]'
+          git push origin HEAD:main

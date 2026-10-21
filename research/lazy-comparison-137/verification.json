@@ -1,0 +1,44 @@
+{
+  "status": "passed; unpublished candidate",
+  "versionName": "0.3.137",
+  "versionCode": 141,
+  "contentVersion": 197,
+  "apkSha256": "f0a67816b64c831259f54c1da10b010e50ef781ad9bb75010dab89be3715eebe",
+  "candidateSourceCommit": "510727a0107b8c9a3be881fb5e871d6b78a253bd",
+  "buildRunId": 39642804088,
+  "buildJobId": 119370453790,
+  "buildJobConclusion": "success",
+  "hostChecks": 30,
+  "gradleUnitTestTask": "NO-SOURCE; no unit test cases claimed",
+  "buildArtifact": {
+    "id": 12367200207,
+    "sha256": "89aca363a7c9d456be5878965b85d55e40df69d1fc989a88afbfcc1260e64eaf"
+  },
+  "apis": {
+    "26": {
+      "runId": 39644608097,
+      "jobId": 119376746192,
+      "conclusion": "success",
+      "verificationSourceCommit": "16fa5abb0127b9b0ae2e2c1b62fd77dd9952d0dc",
+      "artifactId": 12367491149,
+      "artifactSha256": "cc3cbd488cfb1bfe0c6bde15f5741f74d5383e6edd68dcaa2f8202bbc042a744"
+    },
+    "36": {
+      "runId": 39642804088,
+      "jobId": 119373545334,
+      "conclusion": "success",
+      "verificationSourceCommit": "510727a0107b8c9a3be881fb5e871d6b78a253bd",
+      "artifactId": 12366253289,
+      "artifactSha256": "48cfec64e5bb967ab8d6c4f5b4d3fa85935808b79ea62278315bdc9b944dc8ef"
+    }
+  },
+  "focusedAndroidTestsPerApi": 14,
+  "focusedAndroidTestsFinalTotal": 28,
+  "visuallyReviewedImages": 11,
+  "recheckOnlyChanged": [
+    ".github/workflows/verify-lazy137-artifact.yml",
+    "tools/check137_android.py"
+  ],
+  "intermediateFailure": "First API26 run passed all 14 tests, then rejected an emulator whose mobile default network was not yet disconnected. Original build workflow is therefore failure overall; successful build and API36 jobs are checked separately. Recheck waited up to20sec for the actual disconnect and reused the exact original APK without rebuilding.",
+  "published": false
+}

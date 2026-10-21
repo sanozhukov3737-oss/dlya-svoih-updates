@@ -1,0 +1,74 @@
+{
+  "date": "2026-10-21",
+  "reviewer": "assistant",
+  "status": "passed",
+  "images": [
+    {
+      "path": "api26/comparison-options-loading.png",
+      "sha256": "84440f133e01c6ee1ab3e9c576bec05518ccd6170ba3d325c53a0b2b4d21d95e",
+      "status": "passed",
+      "scope": "controlled options-state Compose test"
+    },
+    {
+      "path": "api26/comparison-options-error.png",
+      "sha256": "0912f63ec8665de2277824969787047183b8fc6803f50d4a03afe2ec26362348",
+      "status": "passed",
+      "scope": "controlled options-state Compose test"
+    },
+    {
+      "path": "api26/comparison-options-empty.png",
+      "sha256": "4a185e0b5adfb09a6bafe72525c1b78fd329ba174793741525f8e24fc713c465",
+      "status": "passed",
+      "scope": "controlled options-state Compose test"
+    },
+    {
+      "path": "api26/candidate137-reader-start.png",
+      "sha256": "59d224a64e79caebc549e9079a590ec07e8eb24a23be9aec36682aad6ba989ae",
+      "status": "passed",
+      "scope": "actual signed candidate UI"
+    },
+    {
+      "path": "api26/picker-keyboard.png",
+      "sha256": "92da7d63189aeb5c4a505af0746b3edb6a2afcf1bea820737da76154b77c6d7a",
+      "status": "passed",
+      "scope": "actual signed candidate UI"
+    },
+    {
+      "path": "api26/comparison-three-panned.png",
+      "sha256": "431ac3bcb1836a5dd0a1ed9c51396bd3fc38bdc0e11a812441641fa0a0380f31",
+      "status": "passed",
+      "scope": "actual signed candidate UI"
+    },
+    {
+      "path": "api26/comparison-large-font.png",
+      "sha256": "d006a6742d4b7f85509fe6ed8361e4ef472b5ac1de319e9ccbdf8768befd60dd",
+      "status": "passed",
+      "scope": "actual signed candidate UI"
+    },
+    {
+      "path": "api36/candidate137-reader-start.png",
+      "sha256": "9a6ba4050a1ccb0b8c16b9c4133c0d594d16e12f91935ea53b95314f85576ba5",
+      "status": "passed",
+      "scope": "actual signed candidate UI"
+    },
+    {
+      "path": "api36/picker-keyboard.png",
+      "sha256": "b2a21ab62ee15ba7a6a89e8fbbe1b78e8b1f69235876a4eea1e82a66977b47df",
+      "status": "passed",
+      "scope": "actual signed candidate UI"
+    },
+    {
+      "path": "api36/comparison-three-panned.png",
+      "sha256": "8c9091dd9c3eab5212495b10d2feb4f7459682afaf78d477d7448a2e7652dde8",
+      "status": "passed",
+      "scope": "actual signed candidate UI"
+    },
+    {
+      "path": "api36/comparison-large-font.png",
+      "sha256": "729f877127f8009d97a7989f15ddf2c4dbd1e817286b7459350e4842cde4f25e",
+      "status": "passed",
+      "scope": "actual signed candidate UI"
+    }
+  ],
+  "scope": "11 individually viewed native screenshots; other saved images are not asserted to have been manually reviewed"
+}
