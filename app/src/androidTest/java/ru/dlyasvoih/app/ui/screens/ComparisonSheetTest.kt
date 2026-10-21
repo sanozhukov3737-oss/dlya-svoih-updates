@@ -94,6 +94,7 @@ class ComparisonSheetTest {
         compose.onNodeWithTag("comparison_columns").performTouchInput { swipeLeft() }
         compose.onNodeWithTag("comparison_header_2").assertIsDisplayed()
         compose.onNodeWithTag("comparison_0_third").assertIsDisplayed()
+        compose.onNodeWithTag("comparison_label_0").assertTextEquals("Цвет").assertIsDisplayed()
         compose.onNodeWithTag("comparison_remove_2").performClick()
         compose.waitUntil(10_000) { compose.onAllNodesWithTag("comparison_header_2").fetchSemanticsNodes().isEmpty() }
     }

@@ -1,6 +1,7 @@
 package ru.dlyasvoih.app.ui.screens
 
 import androidx.compose.foundation.background
+import androidx.compose.foundation.ScrollState
 import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
@@ -25,6 +26,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.window.Dialog
 import androidx.compose.ui.window.DialogProperties
 import kotlinx.coroutines.CancellationException
@@ -112,6 +114,7 @@ private fun ColumnScope.ComparisonTable(data: ComparisonData, onRemove: (String)
         val count = data.cards.size
         val columnWidth = maxOf(148.dp, (maxWidth - 32.dp - 12.dp * (count - 1)) / count)
         val tableWidth = columnWidth * count + 12.dp * (count - 1) + 32.dp
+        val labelWidth = maxWidth - 32.dp
         Column(Modifier.horizontalScroll(horizontal).width(tableWidth).fillMaxHeight().testTag("comparison_columns")) {
             Row(Modifier.padding(horizontal = 16.dp, vertical = 8.dp), horizontalArrangement = Arrangement.spacedBy(12.dp)) {
                 data.cards.forEachIndexed { index, card ->
@@ -136,20 +139,23 @@ private fun ColumnScope.ComparisonTable(data: ComparisonData, onRemove: (String)
                 contentPadding = PaddingValues(start = 16.dp, end = 16.dp, bottom = 28.dp),
                 verticalArrangement = Arrangement.spacedBy(12.dp)) {
                 if (data.rows.isNotEmpty()) item {
-                    TextButton(onClick = { summaries = !summaries }, contentPadding = PaddingValues(0.dp)) {
+                    TextButton(onClick = { summaries = !summaries },
+                        modifier = Modifier.offset { IntOffset(horizontal.value, 0) }, contentPadding = PaddingValues(0.dp)) {
                         Text(if (summaries) "Скрыть описания" else "Показать описания")
                     }
                 }
-                if (summaries) item { ComparisonRow("Описание", data.cards.map { it.summary }, columnWidth, "summary") }
+                if (summaries) item { ComparisonRow("Описание", data.cards.map { it.summary }, columnWidth, "summary", labelWidth, horizontal) }
                 items(data.rows.size) { index ->
                     val row = data.rows[index]
-                    ComparisonRow(row.label, row.values, columnWidth, index.toString())
+                    ComparisonRow(row.label, row.values, columnWidth, index.toString(), labelWidth, horizontal)
                 }
                 if (data.rows.isEmpty()) item {
-                    Text("В карточках нет таблиц характеристик. Показаны описания.", style = MaterialTheme.typography.bodySmall)
+                    Text("В карточках нет таблиц характеристик. Показаны описания.",
+                        Modifier.width(labelWidth).offset { IntOffset(horizontal.value, 0) }, style = MaterialTheme.typography.bodySmall)
                 }
                 item {
                     Text("«Нет данных в карточке» означает, что значение не указано. Единицы измерения сохранены по источникам.",
+                        modifier = Modifier.width(labelWidth).offset { IntOffset(horizontal.value, 0) },
                         style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
                 }
             }
@@ -158,9 +164,10 @@ private fun ColumnScope.ComparisonTable(data: ComparisonData, onRemove: (String)
 }
 
 @Composable
-private fun ComparisonRow(label: String, values: List<String?>, width: Dp, key: String) {
+private fun ComparisonRow(label: String, values: List<String?>, width: Dp, key: String, labelWidth: Dp, horizontal: ScrollState) {
     Column(verticalArrangement = Arrangement.spacedBy(6.dp)) {
-        Text(label, style = MaterialTheme.typography.labelMedium, color = MaterialTheme.colorScheme.primary)
+        Text(label, Modifier.width(labelWidth).offset { IntOffset(horizontal.value, 0) }.testTag("comparison_label_$key"),
+            style = MaterialTheme.typography.labelMedium, color = MaterialTheme.colorScheme.primary)
         Row(horizontalArrangement = Arrangement.spacedBy(12.dp)) {
             values.forEachIndexed { index, value ->
                 val suffix = when (index) { 0 -> "left"; 1 -> "right"; else -> "third" }
