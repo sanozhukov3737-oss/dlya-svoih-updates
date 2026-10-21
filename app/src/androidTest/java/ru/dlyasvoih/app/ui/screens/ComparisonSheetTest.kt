@@ -25,7 +25,18 @@ class ComparisonSheetTest {
         compose.setContent { MaterialTheme {
             ComparisonSheet(a, others.map(::preview), { id -> others.firstOrNull { it.id == id } }, {})
         } }
-        compose.waitUntil(10_000) { compose.onAllNodesWithTag("comparison_table").fetchSemanticsNodes().isNotEmpty() }
+        try {
+            compose.waitUntil(10_000) { compose.onAllNodesWithTag("comparison_table").fetchSemanticsNodes().isNotEmpty() }
+        } catch (error: Exception) {
+            val instrumentation = androidx.test.platform.app.InstrumentationRegistry.getInstrumentation()
+            val bitmap = instrumentation.uiAutomation.takeScreenshot()
+            java.io.File(instrumentation.targetContext.filesDir, "comparison-test-failure.png").outputStream().use {
+                bitmap.compress(android.graphics.Bitmap.CompressFormat.PNG, 100, it)
+            }
+            val tree = compose.onAllNodes(SemanticsMatcher("All") { true }, useUnmergedTree = true)
+                .fetchSemanticsNodes().joinToString("\n") { it.config.toString() + " bounds=" + it.boundsInRoot }
+            throw AssertionError("Comparison screen did not show a table:\n$tree", error)
+        }
         compose.onNodeWithTag("comparison_table").performScrollToNode(hasTestTag("comparison_0_left"))
     }
 
@@ -51,7 +62,10 @@ class ComparisonSheetTest {
 
     @Test fun allFieldsRemainReachableInALongComparison() {
         val rows = (1..40).joinToString("\n") { "| Поле $it | Значение $it |" }
-        show(card("A", rows), listOf(card("B", rows)))
+        val a = card("A", rows)
+        val b = card("B", rows)
+        assertEquals(40, ru.dlyasvoih.app.ui.content.ComparisonContent.table(listOf(a.body,b.body)).size)
+        show(a, listOf(b))
         val top = compose.onNodeWithTag("comparison_header_0").fetchSemanticsNode().boundsInRoot.top
         compose.onNodeWithTag("comparison_table").performScrollToNode(hasTestTag("comparison_39_left"))
         compose.onNodeWithTag("comparison_39_left").assertTextEquals("Значение 40").assertIsDisplayed()

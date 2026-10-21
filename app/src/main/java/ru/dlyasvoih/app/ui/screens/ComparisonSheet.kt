@@ -18,6 +18,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.testTag
+import androidx.compose.ui.platform.LocalFocusManager
+import androidx.compose.ui.platform.LocalSoftwareKeyboardController
 import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
@@ -64,7 +66,10 @@ internal fun ComparisonSheet(card: CardEntity, related: List<CardPreview>,
                 }
             }
         } catch (cancelled: CancellationException) { throw cancelled }
-        catch (_: Exception) { value = ComparisonData(emptyList(), emptyList()) }
+        catch (error: Exception) {
+            android.util.Log.e("Guide", "Comparison loading failed", error)
+            value = ComparisonData(emptyList(), emptyList())
+        }
     }
     ModalBottomSheet(onDismissRequest = onDismiss,
         sheetState = rememberModalBottomSheetState(skipPartiallyExpanded = true)) {
@@ -172,13 +177,16 @@ private fun ComparisonPicker(options: List<CardPreview>, selected: List<String>,
     onApply: (List<String>) -> Unit) {
     var query by rememberSaveable { mutableStateOf("") }
     var chosen by rememberSaveable { mutableStateOf(selected) }
+    val keyboard = LocalSoftwareKeyboardController.current
+    val focus = LocalFocusManager.current
+    val dismiss = { focus.clearFocus(); keyboard?.hide(); onDismiss() }
     val indexed = remember(options) { options.map { it to CatalogSearch.normalize(it.title) } }
     val matches = remember(indexed, query) {
         val words = CatalogSearch.normalize(query).split(' ').filter { it.isNotBlank() }
         indexed.filter { (_, title) -> words.all { it in title } }.map { it.first }
     }
-    Dialog(onDismissRequest = onDismiss, properties = DialogProperties(usePlatformDefaultWidth = false)) {
-        Surface(Modifier.fillMaxWidth(0.96f).fillMaxHeight(0.88f), shape = RoundedCornerShape(24.dp)) {
+    Dialog(onDismissRequest = dismiss, properties = DialogProperties(usePlatformDefaultWidth = false)) {
+        Surface(Modifier.imePadding().fillMaxWidth(0.96f).fillMaxHeight(0.88f), shape = RoundedCornerShape(24.dp)) {
             Column(Modifier.padding(16.dp), verticalArrangement = Arrangement.spacedBy(10.dp)) {
                 Text("Выбор карточек", style = MaterialTheme.typography.titleLarge)
                 Text("Одна или две карточки из текущей категории", style = MaterialTheme.typography.bodySmall)
@@ -206,8 +214,8 @@ private fun ComparisonPicker(options: List<CardPreview>, selected: List<String>,
                     if (matches.isEmpty()) item { Text("Карточки не найдены", Modifier.padding(vertical = 20.dp)) }
                 }
                 Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.End) {
-                    TextButton(onClick = onDismiss) { Text("Отмена") }
-                    Button(onClick = { onApply(chosen) }, enabled = chosen.isNotEmpty(), modifier = Modifier.testTag("comparison_apply")) {
+                    TextButton(onClick = dismiss) { Text("Отмена") }
+                    Button(onClick = { focus.clearFocus(); keyboard?.hide(); onApply(chosen) }, enabled = chosen.isNotEmpty(), modifier = Modifier.testTag("comparison_apply")) {
                         Text("Сравнить · ${chosen.size + 1}")
                     }
                 }

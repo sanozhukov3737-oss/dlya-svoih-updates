@@ -6,6 +6,7 @@ save_reports() {
   adb exec-out screencap -p > build/compare135/reports/last-debug-screen.png || true
   adb shell uiautomator dump /sdcard/comparison135-debug.xml >/dev/null || true
   adb pull /sdcard/comparison135-debug.xml build/compare135/reports/last-debug-ui.xml >/dev/null 2>&1 || true
+  adb exec-out run-as ru.dlyasvoih.app cat files/comparison-test-failure.png > build/compare135/reports/in-test-failure.png 2>/dev/null || true
 }
 trap save_reports EXIT
 adb shell wm size 720x1280
@@ -22,4 +23,6 @@ suites=[ET.parse(p).getroot() for p in files]
 assert sum(int(s.attrib['tests']) for s in suites)==4
 assert sum(int(s.attrib.get(k,0)) for s in suites for k in ('failures','errors','skipped'))==0
 PY
+bash ./gradlew :app:assembleRelease --no-daemon -PciSigningKeystore="$CI_SIGNING_KEYSTORE"
+/usr/bin/python3 tools/compare135_prepare.py --apk app/build/outputs/apk/release/app-release.apk
 /usr/bin/python3 tools/compare135_android.py

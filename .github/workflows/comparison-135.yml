@@ -53,13 +53,12 @@ jobs:
           assert hashlib.sha256(certificate).hexdigest()=='2f0a0908f269bc039311edb58fca8863347f1e4c3a7cfaddd909991cf1f0b509'
           print('Existing signing certificate verified')
           PY
-      - name: Compile tests and optimized signed release
+      - name: Compile comparison and Android regression tests
         run: |
           set -euo pipefail
           "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" 'platforms;android-36' 'build-tools;36.0.0' 'emulator' 'system-images;android-30;google_apis;x86_64'
           printf 'sdk.dir=%s\n' "$ANDROID_HOME" > local.properties
-          bash ./gradlew :app:testDebugUnitTest :app:assembleDebug :app:assembleDebugAndroidTest :app:assembleRelease --no-daemon -PciSigningKeystore="$CI_SIGNING_KEYSTORE"
-          test -s app/build/outputs/mapping/release/mapping.txt
+          bash ./gradlew :app:testDebugUnitTest :app:assembleDebug :app:assembleDebugAndroidTest --no-daemon -PciSigningKeystore="$CI_SIGNING_KEYSTORE"
       - name: Preserve catalog channel and obtain exact published fixtures
         run: |
           set -euo pipefail
@@ -73,7 +72,6 @@ jobs:
           assert p.stat().st_size==144646769
           assert hashlib.sha256(p.read_bytes()).hexdigest()=='300b77deaee3348e05a0135bf0079414c07dc2e15a7dcfd9b1239a8cef99298f'
           PY
-          /usr/bin/python3 tools/compare135_prepare.py --apk app/build/outputs/apk/release/app-release.apk
       - name: Prepare disposable accelerated Android 11 device
         run: |
           set -euo pipefail
