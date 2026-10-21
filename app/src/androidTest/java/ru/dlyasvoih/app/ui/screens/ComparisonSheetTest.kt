@@ -25,7 +25,8 @@ class ComparisonSheetTest {
         compose.setContent { MaterialTheme {
             ComparisonSheet(a, others.map(::preview), { id -> others.firstOrNull { it.id == id } }, {})
         } }
-        compose.waitUntil(10_000) { compose.onAllNodesWithTag("comparison_0_left").fetchSemanticsNodes().isNotEmpty() }
+        compose.waitUntil(10_000) { compose.onAllNodesWithTag("comparison_table").fetchSemanticsNodes().isNotEmpty() }
+        compose.onNodeWithTag("comparison_table").performScrollToNode(hasTestTag("comparison_0_left"))
     }
 
     @Test fun reversedFieldOrderAlignsAndSelectionRecomputesRows() {

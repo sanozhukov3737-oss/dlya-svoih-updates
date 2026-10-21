@@ -1,10 +1,18 @@
 #!/usr/bin/env bash
 set -euo pipefail
 mkdir -p build/compare135/reports
+save_reports() {
+  cp -R app/build/outputs/androidTest-results/connected/debug build/compare135/reports/comparison 2>/dev/null || true
+  adb exec-out screencap -p > build/compare135/reports/last-debug-screen.png || true
+  adb shell uiautomator dump /sdcard/comparison135-debug.xml >/dev/null || true
+  adb pull /sdcard/comparison135-debug.xml build/compare135/reports/last-debug-ui.xml >/dev/null 2>&1 || true
+}
+trap save_reports EXIT
 adb shell wm size 720x1280
 adb shell wm density 320
 bash ./gradlew :app:connectedDebugAndroidTest --no-daemon -PciSigningKeystore="$CI_SIGNING_KEYSTORE" -Pandroid.testInstrumentationRunnerArguments.class=ru.dlyasvoih.app.ui.screens.ComparisonSheetTest
-cp -R app/build/outputs/androidTest-results/connected/debug build/compare135/reports/comparison
+save_reports
+trap - EXIT
 /usr/bin/python3 - <<'PY'
 from pathlib import Path
 import xml.etree.ElementTree as ET

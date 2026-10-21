@@ -42,8 +42,8 @@ public final class HostComparisonChecks {
         check(rows.size() == 3 && rows.get(0).left.equals("40 мм") && rows.get(0).right.equals("4 см"));
         check(rows.get(1).right == null && rows.get(2).left == null);
         String many = "";
-        for (int i = 0; i < 20; i++) many += "| Поле " + i + " | Значение " + i + " |\n";
-        check(ComparisonContent.rows(table(many.trim()), "").size() == 20);
+        for (int i = 0; i < 40; i++) many += "| Поле " + i + " | Значение " + i + " |\n";
+        check(ComparisonContent.rows(table(many.trim()), "").size() == 40);
         System.out.println("Comparison checks passed");
     }
 }
