@@ -196,10 +196,7 @@ private fun ComparisonPicker(options: List<CardPreview>, selected: List<String>,
     // as well; a floating decor-fitted window can leave Apply behind the IME.
     Dialog(onDismissRequest = dismiss, properties = DialogProperties(usePlatformDefaultWidth = false,
         decorFitsSystemWindows = false)) {
-        // Legacy windows already use adjustResize; subtracting IME again can
-        // consume the options viewport. Android 12+ uses adjustNothing instead.
-        val keyboardInsets = if (android.os.Build.VERSION.SDK_INT >= 31) Modifier.imePadding() else Modifier
-        Surface(keyboardInsets.systemBarsPadding().fillMaxWidth(0.96f).fillMaxHeight(0.88f), shape = RoundedCornerShape(24.dp)) {
+        Surface(Modifier.imePadding().systemBarsPadding().fillMaxWidth(0.96f).fillMaxHeight(0.88f), shape = RoundedCornerShape(24.dp)) {
             Column(Modifier.padding(16.dp), verticalArrangement = Arrangement.spacedBy(10.dp)) {
                 Text("Выбор карточек", style = MaterialTheme.typography.titleLarge)
                 OutlinedTextField(query, onValueChange = { query = it.take(120) }, Modifier.fillMaxWidth().testTag("comparison_search"),
