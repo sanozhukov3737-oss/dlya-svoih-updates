@@ -1,0 +1,10 @@
+{
+  "formatVersion": 1,
+  "purpose": "Bounded compatibility and emulator timing baseline for the unchanged public 0.3.135",
+  "attempt": 1,
+  "sourceCommit": "539ad73bc60b007612b87b5e4aff53a927725a36",
+  "apkSha256": "068b71392f570ad768b59c391c10dbba8f9f90dce07d545b37bb545ffd71b3aa",
+  "androidApis": [26, 36],
+  "appChanges": false,
+  "publishRelease": false
+}
