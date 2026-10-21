@@ -196,18 +196,26 @@ private fun ComparisonPicker(options: List<CardPreview>, selected: List<String>,
     // as well; a floating decor-fitted window can leave Apply behind the IME.
     Dialog(onDismissRequest = dismiss, properties = DialogProperties(usePlatformDefaultWidth = false,
         decorFitsSystemWindows = false)) {
-        Surface(Modifier.imePadding().navigationBarsPadding().fillMaxWidth(0.96f).fillMaxHeight(0.88f), shape = RoundedCornerShape(24.dp)) {
+        // Legacy windows already use adjustResize; subtracting IME again can
+        // consume the options viewport. Android 12+ uses adjustNothing instead.
+        val keyboardInsets = if (android.os.Build.VERSION.SDK_INT >= 31) Modifier.imePadding() else Modifier
+        Surface(keyboardInsets.systemBarsPadding().fillMaxWidth(0.96f).fillMaxHeight(0.88f), shape = RoundedCornerShape(24.dp)) {
             Column(Modifier.padding(16.dp), verticalArrangement = Arrangement.spacedBy(10.dp)) {
                 Text("Выбор карточек", style = MaterialTheme.typography.titleLarge)
-                Text("Одна или две карточки из текущей категории", style = MaterialTheme.typography.bodySmall)
                 OutlinedTextField(query, onValueChange = { query = it.take(120) }, Modifier.fillMaxWidth().testTag("comparison_search"),
                     label = { Text("Поиск по названию") }, singleLine = true)
-                LazyRow(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-                    items(options.filter { it.id in chosen }, key = { it.id }) { option ->
-                        InputChip(selected = true, onClick = { chosen = chosen - option.id }, label = { Text(option.title + " ×", maxLines = 1) })
-                    }
-                }
                 LazyColumn(Modifier.weight(1f).fillMaxWidth().testTag("comparison_options")) {
+                    item(key = "comparison_heading") {
+                        Text("Одна или две карточки из текущей категории", Modifier.padding(bottom = 10.dp),
+                            style = MaterialTheme.typography.bodySmall)
+                    }
+                    item(key = "comparison_chosen") {
+                        LazyRow(Modifier.padding(bottom = 10.dp), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                            items(options.filter { it.id in chosen }, key = { it.id }) { option ->
+                                InputChip(selected = true, onClick = { chosen = chosen - option.id }, label = { Text(option.title + " ×", maxLines = 1) })
+                            }
+                        }
+                    }
                     items(matches, key = { it.id }) { option ->
                         val checked = option.id in chosen
                         val enabled = checked || chosen.size < 2

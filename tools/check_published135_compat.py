@@ -154,14 +154,24 @@ def comparison(report, exercise_keyboard=False):
     ui.capture('comparison-two')
     ui.tap(ui.text('Выбрать карточки'))
     ui.text('Поиск по названию')
-    option = find(lambda a: a.get('checkable') == 'true' and a.get('checked') == 'false'
-                  and a.get('enabled') == 'true')
+    for attempt in range(5):
+        root = hierarchy()
+        option = next((n for n in root.iter('node') if n.get('checkable') == 'true'
+            and n.get('checked') == 'false' and n.get('enabled') == 'true'), None)
+        if option is not None:
+            break
+        region = next(n for n in root.iter('node') if n.get('resource-id', '').split('/')[-1] == 'comparison_options')
+        left, top, right, bottom = ui.bounds(region)
+        ui.adb('shell', 'input', 'swipe', (left+right)//2, top+(bottom-top)*85//100,
+            (left+right)//2, top+(bottom-top)*15//100, '250')
+    else:
+        raise AssertionError('No selectable comparison option after five bounded list scrolls')
     ui.tap(option)
     if exercise_keyboard:
         field = find(lambda a: a.get('class') == 'android.widget.EditText')
         ui.tap(field)
         ui.adb('shell', 'input', 'text', 'M14')
-        ui.text('M14')
+        ui.text('M14 (противопехотная мина)')
         # Do not dismiss IME or press Back: the real Apply action must remain
         # usable while typing, including on Android 8.
         ui.capture('picker-keyboard')
