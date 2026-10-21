@@ -1,0 +1,50 @@
+name: Publish verified on-demand comparison 0.3.137
+
+on:
+  push:
+    branches: ['main']
+    paths: ['docs/releases/app-0.3.137-verified.json', '.github/workflows/publish-lazy137.yml']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: read
+
+concurrency:
+  group: publish-app
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: actions/download-artifact@v4
+        with:
+          name: lazy137-build
+          run-id: 39642804088
+          github-token: ${{ github.token }}
+          path: build/lazy137-candidate
+      - name: Install signature verification tools
+        run: '"$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" "build-tools;36.0.0"'
+      - name: Verify existing APK and publish the unchanged catalog offer
+        run: |
+          set -euo pipefail
+          python3 -m unittest discover -s tools -p test_app_feed.py
+          python3 tools/publish_lazy137.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: lazy137-publication-proof
+          path: |
+            build/lazy137-publish/*.json
+            build/lazy137-publish/notes.txt
+          if-no-files-found: warn
+          retention-days: 30
