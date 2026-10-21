@@ -1,6 +1,7 @@
 package ru.dlyasvoih.app.ui.screens
 
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.runtime.*
 import androidx.compose.ui.test.*
 import androidx.compose.ui.test.junit4.createComposeRule
 import org.junit.Assert.assertEquals
@@ -8,6 +9,7 @@ import org.junit.Rule
 import org.junit.Test
 import ru.dlyasvoih.app.data.local.CardEntity
 import ru.dlyasvoih.app.data.local.CardPreview
+import ru.dlyasvoih.app.ui.DataState
 
 class ComparisonSheetTest {
     @get:Rule val compose = createComposeRule()
@@ -21,9 +23,17 @@ class ComparisonSheetTest {
     private fun preview(card: CardEntity) = CardPreview(card.id, card.section, card.title,
         card.summary, card.thumbnailPath, card.categoryId, card.contentStatus, card.modelStatus)
 
+    private fun capture(name: String) {
+        val instrumentation = androidx.test.platform.app.InstrumentationRegistry.getInstrumentation()
+        val bitmap = instrumentation.uiAutomation.takeScreenshot()
+        java.io.File(instrumentation.targetContext.filesDir, "$name.png").outputStream().use {
+            bitmap.compress(android.graphics.Bitmap.CompressFormat.PNG, 100, it)
+        }
+    }
+
     private fun show(a: CardEntity, others: List<CardEntity>) {
         compose.setContent { MaterialTheme {
-            ComparisonSheet(a, others.map(::preview), { id -> others.firstOrNull { it.id == id } }, {})
+            ComparisonSheet(a, DataState.Ready(others.map(::preview)), { id -> others.firstOrNull { it.id == id } }, onDismiss = {})
         } }
         try {
             compose.waitUntil(10_000) { compose.onAllNodesWithTag("comparison_table").fetchSemanticsNodes().isNotEmpty() }
@@ -38,6 +48,50 @@ class ComparisonSheetTest {
             throw AssertionError("Comparison screen did not show a table:\n$tree", error)
         }
         compose.onNodeWithTag("comparison_table").performScrollToNode(hasTestTag("comparison_0_left"))
+    }
+
+    @Test fun candidatesLoadingDoesNotFetchFullCards() {
+        var fullCardLoads = 0
+        compose.setContent { MaterialTheme {
+            ComparisonSheet(card("A", "| Цвет | Красный |"), DataState.Loading,
+                { fullCardLoads++; null }, onDismiss = {})
+        } }
+        compose.onNodeWithText("Загружаем карточки для сравнения…").assertIsDisplayed()
+        compose.onNodeWithTag("comparison_choose").assertDoesNotExist()
+        compose.runOnIdle { assertEquals(0, fullCardLoads) }
+        capture("comparison-options-loading")
+    }
+
+    @Test fun candidatesFailureCanRetryAndReachTheTable() {
+        val a = card("A", "| Цвет | Красный |")
+        val b = card("B", "| Цвет | Синий |")
+        var retries = 0
+        compose.setContent { MaterialTheme {
+            var options by remember { mutableStateOf<DataState<List<CardPreview>>>(DataState.Error) }
+            ComparisonSheet(a, options, { b }, onRetryOptions = {
+                retries++
+                options = DataState.Ready(listOf(preview(b)))
+            }, onDismiss = {})
+        } }
+        compose.onNodeWithText("Не удалось загрузить список карточек.").assertIsDisplayed()
+        capture("comparison-options-error")
+        compose.onNodeWithText("Повторить").performClick()
+        compose.waitUntil(10_000) { compose.onAllNodesWithTag("comparison_table").fetchSemanticsNodes().isNotEmpty() }
+        compose.runOnIdle { assertEquals(1, retries) }
+        compose.onNodeWithTag("comparison_header_1").assertIsDisplayed()
+        capture("comparison-options-retry-ready")
+    }
+
+    @Test fun emptyCandidatesExplainWhyThereIsNoComparison() {
+        var fullCardLoads = 0
+        compose.setContent { MaterialTheme {
+            ComparisonSheet(card("A", "| Цвет | Красный |"), DataState.Ready(emptyList()),
+                { fullCardLoads++; null }, onDismiss = {})
+        } }
+        compose.onNodeWithText("В этой категории нет других карточек.").assertIsDisplayed()
+        compose.onNodeWithTag("comparison_choose").assertIsNotEnabled()
+        compose.runOnIdle { assertEquals(0, fullCardLoads) }
+        capture("comparison-options-empty")
     }
 
     @Test fun reversedFieldOrderAlignsAndSelectionRecomputesRows() {

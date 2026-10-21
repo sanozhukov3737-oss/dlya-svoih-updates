@@ -24,7 +24,7 @@ private const val DEFAULT_UPDATE_SOURCE =
 
 data class CardDetails(val card: CardEntity?, val images: List<ImageEntity>,
     val sources: List<SourceEntity>, val favorite: Boolean, val countries: List<CountryEntity>,
-    val related: List<CardPreview> = emptyList(), val comparisonCards: List<CardPreview> = emptyList())
+    val related: List<CardPreview> = emptyList())
 
 class GuideRepository(private val db: GuideDatabase, private val legacyPrefs: SharedPreferences,
     private val updater: ContentUpdater? = null, private val remote: RemoteCatalogSource? = null,
@@ -225,9 +225,11 @@ class GuideRepository(private val db: GuideDatabase, private val legacyPrefs: Sh
     fun detail(id: String) = combine(combine(dao.card(id), dao.images(id), dao.sources(id),
         dao.isFavorite(id), dao.cardCountries(id)) { card, images, sources, favorite, countries ->
         CardDetails(card, images, sources, favorite, countries)
-    }, dao.relatedCards(id, CardFamilies.relatedIds(id)), dao.comparisonCards(id, CardFamilies.relatedIds(id))) { details, related, comparisonCards ->
-        details.copy(related = related, comparisonCards = comparisonCards)
+    }, dao.relatedCards(id, CardFamilies.relatedIds(id))) { details, related ->
+        details.copy(related = related)
     }
+
+    fun comparisonCandidates(id: String) = dao.comparisonCards(id, CardFamilies.relatedIds(id))
 
     suspend fun comparisonCard(anchorId: String, id: String): CardEntity? = withContext(Dispatchers.IO) {
         val anchor = dao.card(anchorId).first() ?: return@withContext null

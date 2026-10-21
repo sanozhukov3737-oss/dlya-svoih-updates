@@ -201,6 +201,7 @@ sealed interface DetailState {
 class DetailViewModel(private val repo: GuideRepository, saved: SavedStateHandle) : ViewModel() {
     val id = saved.get<String>("id").orEmpty()
     private val reload = MutableStateFlow(0)
+    private val comparisonReload = MutableStateFlow(0)
     private val mutableError = MutableStateFlow<String?>(null)
     val error = mutableError.asStateFlow()
     private val mutableBusy = MutableStateFlow(false)
@@ -225,6 +226,13 @@ class DetailViewModel(private val repo: GuideRepository, saved: SavedStateHandle
             Log.e("Guide", "Detail query failed", e); emit(DetailState.Error)
         }
     }.stateIn(viewModelScope, SharingStarted.WhileSubscribed(5_000), DetailState.Loading)
+    // Only the open comparison sheet subscribes. Closing it stops the query and
+    // drops its replay, so reopening cannot show candidates from an old catalog.
+    val comparisonOptions = comparisonReload.flatMapLatest {
+        repo.comparisonCandidates(id).asDataState("Comparison candidates query failed")
+    }.stateIn(viewModelScope,
+        SharingStarted.WhileSubscribed(stopTimeoutMillis = 0, replayExpirationMillis = 0), DataState.Loading)
+    fun retryComparison() { comparisonReload.value++ }
     fun retry() { reload.value++ }
     fun clearError() { mutableError.value = null }
     fun position(index: Int, offset: Int) { latestPosition = index to offset; repo.scheduleReading(id, index, offset, displayedVersion) }

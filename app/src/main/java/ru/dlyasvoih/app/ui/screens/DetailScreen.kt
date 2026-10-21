@@ -178,7 +178,7 @@ fun DetailScreen(vm: DetailViewModel, onBack: () -> Unit, active: Boolean = true
                             if (card.categoryId != "mortars") {
                                 QuickAction("Быстрая сверка", R.drawable.icon_ui_focus, Modifier.weight(1f)) { quickOpen = true }
                             }
-                            QuickAction("Сравнить", R.drawable.icon_ui_compare, Modifier.weight(1f), enabled = value.comparisonCards.isNotEmpty()) { compareOpen = true }
+                            QuickAction("Сравнить", R.drawable.icon_ui_compare, Modifier.weight(1f)) { compareOpen = true }
                         }
                         LazyRow(contentPadding = PaddingValues(horizontal = 16.dp), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                             items(sections.take(5), key = { it.paragraphIndex }) { section ->
@@ -269,8 +269,9 @@ fun DetailScreen(vm: DetailViewModel, onBack: () -> Unit, active: Boolean = true
     if (quickOpen && card != null) {
         QuickRecognitionSheet(card, recognitionBlocks(paragraphs)) { quickOpen = false }
     }
-    if (compareOpen && card != null && value.comparisonCards.isNotEmpty()) {
-        ComparisonSheet(card, value.comparisonCards, vm::comparisonCard) { compareOpen = false }
+    if (compareOpen && card != null) {
+        val options by vm.comparisonOptions.collectAsStateWithLifecycle()
+        ComparisonSheet(card, options, vm::comparisonCard, vm::retryComparison) { compareOpen = false }
     }
 }
 

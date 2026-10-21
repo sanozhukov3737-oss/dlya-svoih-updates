@@ -35,14 +35,36 @@ import kotlinx.coroutines.withContext
 import ru.dlyasvoih.app.data.CatalogSearch
 import ru.dlyasvoih.app.data.local.CardEntity
 import ru.dlyasvoih.app.data.local.CardPreview
+import ru.dlyasvoih.app.ui.DataState
 import ru.dlyasvoih.app.ui.content.ComparisonContent
 
 private data class ComparisonData(val cards: List<CardEntity>, val rows: List<ComparisonContent.TableRow>)
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-internal fun ComparisonSheet(card: CardEntity, related: List<CardPreview>,
-    loadCard: suspend (String) -> CardEntity?, onDismiss: () -> Unit) {
+internal fun ComparisonSheet(card: CardEntity, options: DataState<List<CardPreview>>,
+    loadCard: suspend (String) -> CardEntity?, onRetryOptions: () -> Unit = {}, onDismiss: () -> Unit) {
+    ModalBottomSheet(onDismissRequest = onDismiss,
+        sheetState = rememberModalBottomSheetState(skipPartiallyExpanded = true)) {
+        when (options) {
+            DataState.Loading -> ComparisonOptionsStatus("Загружаем карточки для сравнения…", loading = true)
+            DataState.Error -> ComparisonOptionsStatus("Не удалось загрузить список карточек.", retry = onRetryOptions)
+            is DataState.Ready -> ComparisonBody(card, options.value, loadCard)
+        }
+    }
+}
+
+@Composable
+private fun ComparisonOptionsStatus(text: String, loading: Boolean = false, retry: (() -> Unit)? = null) {
+    Column(Modifier.fillMaxWidth().fillMaxHeight(0.92f)) {
+        Text("Сравнение", Modifier.padding(horizontal = 16.dp),
+            style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.Bold)
+        StatusPanel(text, Modifier.weight(1f).fillMaxWidth(), loading = loading, retry = retry)
+    }
+}
+
+@Composable
+private fun ComparisonBody(card: CardEntity, related: List<CardPreview>, loadCard: suspend (String) -> CardEntity?) {
     val options = remember(card.id, card.section, card.categoryId, related) {
         related.filter { it.id != card.id && it.section == card.section && it.categoryId == card.categoryId }.distinctBy { it.id }
     }
@@ -73,9 +95,7 @@ internal fun ComparisonSheet(card: CardEntity, related: List<CardPreview>,
             value = ComparisonData(emptyList(), emptyList())
         }
     }
-    ModalBottomSheet(onDismissRequest = onDismiss,
-        sheetState = rememberModalBottomSheetState(skipPartiallyExpanded = true)) {
-        Column(Modifier.fillMaxWidth().fillMaxHeight(0.92f)) {
+    Column(Modifier.fillMaxWidth().fillMaxHeight(0.92f)) {
             Row(Modifier.fillMaxWidth().padding(horizontal = 16.dp),
                 verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.SpaceBetween) {
                 Text("Сравнение", style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.Bold)
@@ -97,7 +117,6 @@ internal fun ComparisonSheet(card: CardEntity, related: List<CardPreview>,
             } else {
                 ComparisonTable(ready, onRemove = { id -> selectedIds = selectedIds.filterNot { it == id } })
             }
-        }
     }
     if (choosing) ComparisonPicker(options, selectedIds, onDismiss = { choosing = false }) {
         selectedIds = it

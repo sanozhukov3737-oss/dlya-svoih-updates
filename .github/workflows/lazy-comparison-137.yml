@@ -1,0 +1,164 @@
+name: Verify on-demand comparison 0.3.137
+
+on:
+  push:
+    branches: ['main']
+    paths: ['.github/workflows/lazy-comparison-137.yml', 'docs/releases/app-0.3.137-check.json']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: read
+
+concurrency:
+  group: lazy-comparison-137
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    env:
+      CI_SIGNING_KEYSTORE: ${{ github.workspace }}/lazy137-existing.keystore
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: gradle/actions/setup-gradle@v4
+      - name: Verify preserved content and host checks
+        run: |
+          set -euo pipefail
+          sudo apt-get update -qq
+          sudo apt-get install -y python3-pil
+          /usr/bin/python3 tools/compare136_prepare.py
+          for check in test_quick_comparison.py test_updates.py test_java_features.py test_reader_navigation.py test_search.py test_uav_handbook.py test_demz_catalog.py; do
+            /usr/bin/python3 -m unittest discover -s tools -p "$check"
+          done
+      - name: Restore the existing private signing key
+        env:
+          ANDROID_DEBUG_KEYSTORE_BASE64: ${{ secrets.ANDROID_DEBUG_KEYSTORE_BASE64 }}
+        run: |
+          python3 - <<'PY'
+          import base64,hashlib,os,subprocess
+          from pathlib import Path
+          raw=''.join(os.environ.get('ANDROID_DEBUG_KEYSTORE_BASE64','').split())
+          assert raw,'Existing signing secret unavailable; no replacement key will be generated'
+          p=Path(os.environ['CI_SIGNING_KEYSTORE']);p.write_bytes(base64.b64decode(raw,validate=True));p.chmod(0o600)
+          cert=subprocess.run(['keytool','-exportcert','-keystore',str(p),'-storepass','android','-alias','androiddebugkey'],check=True,capture_output=True).stdout
+          assert hashlib.sha256(cert).hexdigest()=='2f0a0908f269bc039311edb58fca8863347f1e4c3a7cfaddd909991cf1f0b509'
+          print('Existing signing certificate verified')
+          PY
+      - name: Compile tests and optimized signed candidate
+        run: |
+          set -euo pipefail
+          "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" 'platforms;android-36' 'build-tools;36.0.0'
+          printf 'sdk.dir=%s\n' "$ANDROID_HOME" > local.properties
+          bash ./gradlew :app:testDebugUnitTest :app:assembleDebug :app:assembleDebugAndroidTest :app:assembleRelease --no-daemon -PciSigningKeystore="$CI_SIGNING_KEYSTORE"
+          mkdir -p build/lazy137/apks
+          cp app/build/outputs/apk/debug/app-debug.apk build/lazy137/apks/debug.apk
+          cp app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk build/lazy137/apks/test.apk
+          cp app/build/outputs/apk/release/app-release.apk build/lazy137/apks/DLYA_SVOIH_v0.3.137.apk
+          /usr/bin/python3 - <<'PY'
+          import hashlib,json,os,subprocess,sys,zipfile
+          from pathlib import Path
+          sys.path.insert(0,'tools')
+          from build_app_feed import apk_metadata
+          sdk=Path(os.environ['ANDROID_HOME']);out=Path('build/lazy137/apks');apk=out/'DLYA_SVOIH_v0.3.137.apk'
+          analyzer=str(sdk/'cmdline-tools/latest/bin/apkanalyzer')
+          meta=apk_metadata(apk,analyzer=analyzer,signer=str(sdk/'build-tools/36.0.0/apksigner'))
+          assert meta['versionName']=='0.3.137' and meta['versionCode']==141 and meta['minSdk']==26
+          assert meta['packageName']=='ru.dlyasvoih.app'
+          assert meta['signerSha256']=='2f0a0908f269bc039311edb58fca8863347f1e4c3a7cfaddd909991cf1f0b509'
+          assert subprocess.run([analyzer,'manifest','debuggable',str(apk)],check=True,capture_output=True,text=True).stdout.strip()=='false'
+          request=json.loads(Path('docs/releases/app-0.3.136.json').read_text())
+          with zipfile.ZipFile(apk) as archive:
+              for path,digest in request['unchangedFiles'].items():
+                  if path.startswith('app/src/main/assets/'):
+                      assert hashlib.sha256(archive.read('assets/'+path.removeprefix('app/src/main/assets/'))).hexdigest()==digest,path
+          meta.update(apkSha256=hashlib.sha256(apk.read_bytes()).hexdigest(),apkBytes=apk.stat().st_size,
+              candidateSourceCommit=os.environ['GITHUB_SHA'],workflowRunId=int(os.environ['GITHUB_RUN_ID']),
+              contentVersion=197,status='unpublished candidate; Android and visual checks pending')
+          (out/'build-result.json').write_text(json.dumps(meta,indent=2)+'\n')
+          print(json.dumps(meta))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: lazy137-build
+          path: build/lazy137/apks/
+          if-no-files-found: error
+          retention-days: 14
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: lazy137-build-reports
+          path: app/build/reports/
+          if-no-files-found: warn
+          retention-days: 14
+      - name: Remove temporary private signing key
+        if: always()
+        run: |
+          python3 - <<'PY'
+          import os
+          from pathlib import Path
+          Path(os.environ['CI_SIGNING_KEYSTORE']).unlink(missing_ok=True)
+          PY
+
+  android:
+    needs: build
+    runs-on: ubuntu-24.04
+    timeout-minutes: 22
+    strategy:
+      fail-fast: false
+      matrix:
+        api: [26, 36]
+    env:
+      ANDROID_AVD_HOME: ${{ github.workspace }}/build/android-avds
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: tools
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: actions/download-artifact@v4
+        with:
+          name: lazy137-build
+          path: build/lazy137/apks
+      - name: Obtain exact public baseline and device image
+        run: |
+          set -euo pipefail
+          curl --fail --silent --show-error --location --retry 2 --max-time 180 'https://github.com/sanozhukov3737-oss/dlya-svoih-updates/releases/download/app-0.3.136/DLYA_SVOIH_v0.3.136.apk' --output build/lazy137/previous.apk
+          echo '0a22658eab2cc409eebf1c9d62cb1139b79cbb160e238ebc5102b8abc4566162  build/lazy137/previous.apk' | sha256sum --check
+          "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" 'emulator' 'system-images;android-${{ matrix.api }};google_apis;x86_64'
+      - name: Create fresh native 720 by 1280 accelerated device
+        run: |
+          set -euo pipefail
+          echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules
+          sudo udevadm control --reload-rules
+          sudo udevadm trigger --name-match=kvm
+          mkdir -p "$ANDROID_AVD_HOME"
+          echo no | "$ANDROID_HOME/cmdline-tools/latest/bin/avdmanager" create avd --force --name recovery134 --package 'system-images;android-${{ matrix.api }};google_apis;x86_64' --device pixel_2
+          python3 - <<'PY'
+          import os
+          from pathlib import Path
+          p=Path(os.environ['ANDROID_AVD_HOME'])/'recovery134.avd/config.ini'
+          values=dict(line.split('=',1) for line in p.read_text().splitlines() if '=' in line)
+          values.update({'hw.lcd.width':'720','hw.lcd.height':'1280','hw.lcd.density':'320'})
+          p.write_text('\n'.join(k+'='+v for k,v in values.items())+'\n')
+          PY
+      - name: Check on-demand SQL and compare signed release swipe frames
+        run: |
+          set -euo pipefail
+          /usr/bin/python3 tools/run_android_emulator.py --out build/lazy137/emulator --timeout 900 -- /usr/bin/python3 tools/check137_android.py --apks build/lazy137/apks --previous build/lazy137/previous.apk --out build/lazy137/proof --expected-api ${{ matrix.api }}
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: lazy137-api${{ matrix.api }}-proof
+          path: |
+            build/lazy137/proof/
+            build/lazy137/emulator/
+          if-no-files-found: error
+          retention-days: 14
