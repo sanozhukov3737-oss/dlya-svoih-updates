@@ -1,0 +1,13 @@
+{
+  "versionName": "0.3.136",
+  "versionCode": 140,
+  "contentVersion": 197,
+  "candidateSourceCommit": "91d57c8e9d00a01381eb242cae9f106d5ef140c6",
+  "workflowRunId": 39604907534,
+  "apkSha256": "0a22658eab2cc409eebf1c9d62cb1139b79cbb160e238ebc5102b8abc4566162",
+  "apkBytes": 144816909,
+  "feedSha256": "79aa6f4d38ecb28e555df766dc8556ca41e28a0f87f409069ef7c0a3ef0e0ebe",
+  "signerSha256": "2f0a0908f269bc039311edb58fca8863347f1e4c3a7cfaddd909991cf1f0b509",
+  "catalogOfferUnchanged": true,
+  "humanVisualReview": "pending review of actual Android screenshots"
+}

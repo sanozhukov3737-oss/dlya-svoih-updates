@@ -1,0 +1,7 @@
+Starting: Intent { cmp=ru.dlyasvoih.app/.MainActivity }
+Status: ok
+Activity: ru.dlyasvoih.app/.MainActivity
+ThisTime: 408
+TotalTime: 408
+WaitTime: 458
+Complete

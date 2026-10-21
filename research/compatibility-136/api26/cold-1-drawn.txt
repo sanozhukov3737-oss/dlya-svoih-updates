@@ -1,0 +1,2 @@
+I/ActivityManager( 1691): Displayed ru.dlyasvoih.app/.MainActivity: +343ms
+I/ActivityManager( 1691): Fully drawn ru.dlyasvoih.app/.MainActivity: +883ms

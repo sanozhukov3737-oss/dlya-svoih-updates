@@ -1,0 +1,109 @@
+{
+  "version": "0.3.136",
+  "versionCode": 140,
+  "apkSha256": "0a22658eab2cc409eebf1c9d62cb1139b79cbb160e238ebc5102b8abc4566162",
+  "candidateSourceCommit": "91d57c8e9d00a01381eb242cae9f106d5ef140c6",
+  "checks": {
+    "offlineSearchAndCard": true,
+    "applyWhileKeyboardOpen": true,
+    "comparisonTwoAndThree": true,
+    "selectionSurvivesFontConfiguration": true,
+    "favoriteSurvivesProcessRestart": true,
+    "favoritePersistedToDatabase": true,
+    "noCrashOrAnrObserved": true
+  },
+  "searchObservationUpperBoundsMs": {
+    "PMN2": 1782,
+    "TM46": 1779
+  },
+  "passed": true,
+  "visualReview": "pending",
+  "limitations": [
+    "KVM/SwiftShader timings are emulator observations, not physical-phone benchmarks.",
+    "Search upper bounds include ADB, IME dismissal and UIAutomator overhead.",
+    "APK upgrade uses adb install -r; this is not an in-app download/installer test.",
+    "Unchanged 3D renderer and catalog text are outside this regression test."
+  ],
+  "api": 26,
+  "previousFirstRun": {
+    "ThisTime": 517,
+    "TotalTime": 517,
+    "WaitTime": 530,
+    "drawnLog": [
+      "I/ActivityManager( 1691): Displayed ru.dlyasvoih.app/.MainActivity: +517ms",
+      "I/ActivityManager( 1691): Fully drawn ru.dlyasvoih.app/.MainActivity: +970ms"
+    ]
+  },
+  "firstMeasuredColdAfterUpgrade": {
+    "ThisTime": 422,
+    "TotalTime": 422,
+    "WaitTime": 428,
+    "drawnLog": [
+      "I/ActivityManager( 1691): Displayed ru.dlyasvoih.app/.MainActivity: +422ms",
+      "I/ActivityManager( 1691): Fully drawn ru.dlyasvoih.app/.MainActivity: +963ms"
+    ]
+  },
+  "upgrade": {
+    "previous": "0.3.135",
+    "previousApkSha256": "068b71392f570ad768b59c391c10dbba8f9f90dce07d545b37bb545ffd71b3aa",
+    "idAndRowidCount": 1695,
+    "idsPreserved": true,
+    "favoritesPreserved": true,
+    "readingPreserved": true,
+    "appearancePreserved": true,
+    "method": "adb install -r"
+  },
+  "coldStarts": [
+    {
+      "ThisTime": 343,
+      "TotalTime": 343,
+      "WaitTime": 347,
+      "drawnLog": [
+        "I/ActivityManager( 1691): Displayed ru.dlyasvoih.app/.MainActivity: +343ms",
+        "I/ActivityManager( 1691): Fully drawn ru.dlyasvoih.app/.MainActivity: +883ms"
+      ]
+    },
+    {
+      "ThisTime": 408,
+      "TotalTime": 408,
+      "WaitTime": 458,
+      "drawnLog": [
+        "I/ActivityManager( 1691): Displayed ru.dlyasvoih.app/.MainActivity: +408ms",
+        "I/ActivityManager( 1691): Fully drawn ru.dlyasvoih.app/.MainActivity: +946ms"
+      ]
+    },
+    {
+      "ThisTime": 421,
+      "TotalTime": 421,
+      "WaitTime": 466,
+      "drawnLog": [
+        "I/ActivityManager( 1691): Displayed ru.dlyasvoih.app/.MainActivity: +421ms",
+        "I/ActivityManager( 1691): Fully drawn ru.dlyasvoih.app/.MainActivity: +958ms"
+      ]
+    }
+  ],
+  "coldStartMedianTotalMs": 408,
+  "scrollFrames": {
+    "totalFrames": 150,
+    "jankyFrames": 145,
+    "jankyPercent": "96.67%",
+    "percentileMs": {
+      "50th": "32",
+      "90th": "61",
+      "95th": "93",
+      "99th": "250"
+    },
+    "detailedFrameTimingsAvailable": true,
+    "retainedFrameSample": 120,
+    "maxRetainedFrameMs": 79.0,
+    "retainedFramesOver700ms": 0
+  },
+  "catalog": {
+    "contentVersion": 197,
+    "activeCards": 1695,
+    "images": 1595,
+    "integrity": "ok",
+    "foreignKeys": 0
+  },
+  "durationSeconds": 107.68
+}

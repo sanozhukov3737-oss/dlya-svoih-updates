@@ -1,0 +1,74 @@
+NetworkFactories for: TelephonyNetworkFactory[0] PhoneSwitcherNetworkRequstListener WIFI_UT WIFI
+
+Active default network: none
+
+Current Networks:
+
+Network Requests:
+  uid/pid:1000/1691 NetworkRequest [ BACKGROUND_REQUEST id=2, [ Transports: CELLULAR Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN] ]
+  uid/pid:10027/1832 NetworkRequest [ LISTEN id=5, [] ]
+  uid/pid:10013/1814 NetworkRequest [ LISTEN id=6, [ Capabilities: NOT_RESTRICTED] ]
+  uid/pid:1000/1691 NetworkRequest [ REQUEST id=1, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN] ]
+  uid/pid:1000/1691 NetworkRequest [ TRACK_DEFAULT id=3, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN] ]
+  uid/pid:1000/1691 NetworkRequest [ LISTEN id=4, [ Transports: CELLULAR|WIFI Capabilities: NOT_RESTRICTED&TRUSTED&NOT_VPN] ]
+  uid/pid:10030/2623 NetworkRequest [ LISTEN id=7, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED] ]
+  uid/pid:10076/4129 NetworkRequest [ LISTEN id=8, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&FOREGROUND] ]
+  
+mLegacyTypeTracker:
+  Supported types: 0 1 2 3 4 5 10 11 12 13 14 15 17
+  Current state:
+
+mNetTransitionWakeLock: currently not held, last requested for NetworkAgentInfo [WIFI () - 101]
+
+Tethering:
+  Configuration:
+    tetherableUsbRegexs: []
+    tetherableWifiRegexs: []
+    tetherableBluetoothRegexs: []
+    isDunRequired: false
+    preferredUpstreamIfaceTypes: [MOBILE, WIFI, MOBILE_HIPRI, BLUETOOTH, ETHERNET]
+    dhcpRanges: [192.168.42.2, 192.168.42.254, 192.168.43.2, 192.168.43.254, 192.168.44.2, 192.168.44.254, 192.168.45.2, 192.168.45.254, 192.168.46.2, 192.168.46.254, 192.168.47.2, 192.168.47.254, 192.168.48.2, 192.168.48.254, 192.168.49.2, 192.168.49.254]
+    defaultIPv4DNS: [8.8.4.4, 8.8.8.8]
+  Tether state:
+    Upstream wanted: false
+  Log:
+    10-21 13:26:02.858 - MARK constructed
+    10-21 13:26:03.771 - wlan0 is not a tetherable iface, ignoring
+    10-21 13:26:03.780 - wlan0 is not a tetherable iface, ignoring
+
+Packet keepalives:
+
+Bad Wi-Fi avoidance: unrestricted
+
+
+mValidationLogs (most recent first):
+101 - "AndroidWifi"
+  10-21 13:26:04.008 - PROBE_DNS connectivitycheck.gstatic.com 38ms OK 142.251.150.120
+  10-21 13:26:04.008 - PROBE_DNS www.google.com 44ms OK 142.251.152.119,142.251.155.119,142.251.153.119,142.251.156.119,142.251.150.119,142.251.157.119,142.251.151.119,142.251.154.119
+  10-21 13:26:04.038 - PROBE_HTTP http://connectivitycheck.gstatic.com/generate_204 time=30ms ret=204 request={User-Agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.82 Safari/537.36]} headers={null=[HTTP/1.1 204 No Content], Content-Length=[0], Cross-Origin-Resource-Policy=[cross-origin], Date=[Wed, 21 Oct 2026 13:26:09 GMT], X-Android-Received-Millis=[1792589164038], X-Android-Response-Source=[NETWORK 204], X-Android-Selected-Protocol=[http/1.1], X-Android-Sent-Millis=[1792589164026]}
+  10-21 13:26:04.061 - PROBE_HTTPS https://www.google.com/generate_204 time=52ms ret=204 request={User-Agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.82 Safari/537.36]} headers={null=[HTTP/1.1 204 No Content], Alt-Svc=[h3=":443"; ma=2592000,h3-29=":443"; ma=2592000], Content-Length=[0], Cross-Origin-Resource-Policy=[cross-origin], Date=[Wed, 21 Oct 2026 13:26:09 GMT], X-Android-Received-Millis=[1792589164061], X-Android-Response-Source=[NETWORK 204], X-Android-Selected-Protocol=[http/1.1], X-Android-Sent-Millis=[1792589164049]}
+  10-21 13:26:04.263 - PROBE_DNS www.google.com 0ms OK 142.251.152.119,142.251.155.119,142.251.153.119,142.251.156.119,142.251.150.119,142.251.157.119,142.251.151.119,142.251.154.119
+  10-21 13:26:04.266 - PROBE_DNS connectivitycheck.gstatic.com 0ms OK 142.251.150.120
+  10-21 13:26:04.279 - PROBE_HTTP http://connectivitycheck.gstatic.com/generate_204 time=12ms ret=204 request={User-Agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.82 Safari/537.36]} headers={null=[HTTP/1.1 204 No Content], Content-Length=[0], Cross-Origin-Resource-Policy=[cross-origin], Date=[Wed, 21 Oct 2026 13:26:10 GMT], X-Android-Received-Millis=[1792589164279], X-Android-Response-Source=[NETWORK 204], X-Android-Selected-Protocol=[http/1.1], X-Android-Sent-Millis=[1792589164267]}
+  10-21 13:26:04.282 - PROBE_HTTPS https://www.google.com/generate_204 time=12ms ret=204 request={User-Agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.82 Safari/537.36]} headers={null=[HTTP/1.1 204 No Content], Alt-Svc=[h3=":443"; ma=2592000,h3-29=":443"; ma=2592000], Content-Length=[0], Cross-Origin-Resource-Policy=[cross-origin], Date=[Wed, 21 Oct 2026 13:26:10 GMT], X-Android-Received-Millis=[1792589164282], X-Android-Response-Source=[NETWORK 204], X-Android-Selected-Protocol=[http/1.1], X-Android-Sent-Millis=[1792589164270]}
+  10-21 13:26:04.795 - PROBE_DNS connectivitycheck.gstatic.com 0ms OK 142.251.150.120
+  10-21 13:26:04.795 - PROBE_DNS www.google.com 0ms OK 142.251.152.119,142.251.155.119,142.251.153.119,142.251.156.119,142.251.150.119,142.251.157.119,142.251.151.119,142.251.154.119
+  10-21 13:26:04.807 - PROBE_HTTPS https://www.google.com/generate_204 time=12ms ret=204 request={User-Agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.82 Safari/537.36]} headers={null=[HTTP/1.1 204 No Content], Alt-Svc=[h3=":443"; ma=2592000,h3-29=":443"; ma=2592000], Content-Length=[0], Cross-Origin-Resource-Policy=[cross-origin], Date=[Wed, 21 Oct 2026 13:26:10 GMT], X-Android-Received-Millis=[1792589164807], X-Android-Response-Source=[NETWORK 204], X-Android-Selected-Protocol=[http/1.1], X-Android-Sent-Millis=[1792589164795]}
+  10-21 13:26:04.808 - PROBE_HTTP http://connectivitycheck.gstatic.com/generate_204 time=12ms ret=204 request={User-Agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.82 Safari/537.36]} headers={null=[HTTP/1.1 204 No Content], Content-Length=[0], Cross-Origin-Resource-Policy=[cross-origin], Date=[Wed, 21 Oct 2026 13:26:10 GMT], X-Android-Received-Millis=[1792589164808], X-Android-Response-Source=[NETWORK 204], X-Android-Selected-Protocol=[http/1.1], X-Android-Sent-Millis=[1792589164796]}
+100 - epc.tmobile.com
+  10-21 13:26:00.293 - PROBE_DNS www.google.com 20ms OK 142.251.157.119,142.251.153.119,142.251.151.119,142.251.154.119,142.251.152.119,142.251.150.119,142.251.156.119,142.251.155.119,2001:4860:482c:7700::,2001:4860:482d:7700::,2001:4860:4826:7700::,2001:4860:4829:7700::,2001:4860:482b:7700::,2001:4860:482a:7700::,2001:4860:4827:7700::,2001:4860:4828:7700::
+  10-21 13:26:00.297 - PROBE_DNS connectivitycheck.gstatic.com 21ms OK 142.251.150.120,2001:4860:4826:7800::
+  10-21 13:26:00.338 - PROBE_HTTP http://connectivitycheck.gstatic.com/generate_204 time=30ms ret=204 request={User-Agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.82 Safari/537.36]} headers={null=[HTTP/1.1 204 No Content], Content-Length=[0], Cross-Origin-Resource-Policy=[cross-origin], Date=[Wed, 21 Oct 2026 13:26:06 GMT], X-Android-Received-Millis=[1792589160338], X-Android-Response-Source=[NETWORK 204], X-Android-Selected-Protocol=[http/1.1], X-Android-Sent-Millis=[1792589160326]}
+  10-21 13:26:00.409 - PROBE_HTTPS https://www.google.com/generate_204 time=107ms ret=204 request={User-Agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.82 Safari/537.36]} headers={null=[HTTP/1.1 204 No Content], Alt-Svc=[h3=":443"; ma=2592000,h3-29=":443"; ma=2592000], Content-Length=[0], Cross-Origin-Resource-Policy=[cross-origin], Date=[Wed, 21 Oct 2026 13:26:06 GMT], X-Android-Received-Millis=[1792589160409], X-Android-Response-Source=[NETWORK 204], X-Android-Selected-Protocol=[http/1.1], X-Android-Sent-Millis=[1792589160387]}
+
+mNetworkRequestInfoLogs (most recent first):
+  10-21 13:26:09.382 - REGISTER uid/pid:10076/4129 NetworkRequest [ LISTEN id=8, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&FOREGROUND] ]
+  10-21 13:26:03.348 - REGISTER uid/pid:10030/2623 NetworkRequest [ LISTEN id=7, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED] ]
+  10-21 13:26:03.191 - REGISTER uid/pid:10013/1814 NetworkRequest [ LISTEN id=6, [ Capabilities: NOT_RESTRICTED] ]
+  10-21 13:26:03.910 - REGISTER uid/pid:10027/1832 NetworkRequest [ LISTEN id=5, [] ]
+  10-21 13:26:03.417 - REGISTER uid/pid:1000/1691 NetworkRequest [ LISTEN id=4, [ Transports: CELLULAR|WIFI Capabilities: NOT_RESTRICTED&TRUSTED&NOT_VPN] ]
+  10-21 13:26:03.276 - REGISTER uid/pid:1000/1691 NetworkRequest [ BACKGROUND_REQUEST id=2, [ Transports: CELLULAR Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN] ]
+  10-21 13:26:02.924 - REGISTER uid/pid:1000/1691 NetworkRequest [ TRACK_DEFAULT id=3, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN] ]
+  10-21 13:26:02.857 - REGISTER uid/pid:1000/1691 NetworkRequest [ REQUEST id=1, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN] ]
+
+mNetworkInfoBlockingLogs (most recent first):

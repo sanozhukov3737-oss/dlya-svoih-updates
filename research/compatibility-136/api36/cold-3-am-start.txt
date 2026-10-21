@@ -1,0 +1,7 @@
+Starting: Intent { cmp=ru.dlyasvoih.app/.MainActivity }
+Status: ok
+LaunchState: COLD
+Activity: ru.dlyasvoih.app/.MainActivity
+TotalTime: 1289
+WaitTime: 1306
+Complete

@@ -1,0 +1,118 @@
+Activity Resolver Table:
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        e7b77c9 ru.dlyasvoih.app/.MainActivity filter a5f799f
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      androidx.profileinstaller.action.SAVE_PROFILE:
+        7876ece ru.dlyasvoih.app/androidx.profileinstaller.ProfileInstallReceiver filter bfd3bf9
+          Action: "androidx.profileinstaller.action.SAVE_PROFILE"
+      androidx.profileinstaller.action.INSTALL_PROFILE:
+        7876ece ru.dlyasvoih.app/androidx.profileinstaller.ProfileInstallReceiver filter 2cd5c43
+          Action: "androidx.profileinstaller.action.INSTALL_PROFILE"
+      androidx.profileinstaller.action.SKIP_FILE:
+        7876ece ru.dlyasvoih.app/androidx.profileinstaller.ProfileInstallReceiver filter 25ee2c0
+          Action: "androidx.profileinstaller.action.SKIP_FILE"
+      androidx.profileinstaller.action.BENCHMARK_OPERATION:
+        7876ece ru.dlyasvoih.app/androidx.profileinstaller.ProfileInstallReceiver filter eae973e
+          Action: "androidx.profileinstaller.action.BENCHMARK_OPERATION"
+
+Permissions:
+  Permission [ru.dlyasvoih.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (9c121ef):
+    sourcePackage=ru.dlyasvoih.app
+    uid=10077 gids=null type=0 prot=signature
+    perm=Permission{d6c74fc ru.dlyasvoih.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    packageSetting=PackageSetting{9bac785 ru.dlyasvoih.app/10077}
+
+Registered ContentProviders:
+  ru.dlyasvoih.app/.data.update.UpdateFileProvider:
+    Provider{32fa9da ru.dlyasvoih.app/.data.update.UpdateFileProvider}
+  ru.dlyasvoih.app/androidx.startup.InitializationProvider:
+    Provider{9a7ee0b ru.dlyasvoih.app/androidx.startup.InitializationProvider}
+
+ContentProvider Authorities:
+  [ru.dlyasvoih.app.androidx-startup]:
+    Provider{9a7ee0b ru.dlyasvoih.app/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{e89e4e8 ru.dlyasvoih.app}
+  [ru.dlyasvoih.app.updates]:
+    Provider{32fa9da ru.dlyasvoih.app/.data.update.UpdateFileProvider}
+      applicationInfo=ApplicationInfo{e89e4e8 ru.dlyasvoih.app}
+
+Key Set Manager:
+  [ru.dlyasvoih.app]
+      Signing KeySets: 21
+
+Packages:
+  Package [ru.dlyasvoih.app] (9bac785):
+    userId=10077
+    pkg=Package{7e55701 ru.dlyasvoih.app}
+    codePath=/data/app/ru.dlyasvoih.app-N_ZzOBYZYIeif1CvNuT62Q==
+    resourcePath=/data/app/ru.dlyasvoih.app-N_ZzOBYZYIeif1CvNuT62Q==
+    legacyNativeLibraryDir=/data/app/ru.dlyasvoih.app-N_ZzOBYZYIeif1CvNuT62Q==/lib
+    primaryCpuAbi=x86_64
+    secondaryCpuAbi=null
+    versionCode=140 minSdk=26 targetSdk=36
+    versionName=0.3.136
+    splits=[base]
+    apkSigningVersion=2
+    applicationInfo=ApplicationInfo{e89e4e8 ru.dlyasvoih.app}
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    privateFlags=[ PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ]
+    dataDir=/data/user/0/ru.dlyasvoih.app
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    timeStamp=2026-10-21 13:26:34
+    firstInstallTime=2026-10-21 13:26:12
+    lastUpdateTime=2026-10-21 13:26:35
+    signatures=PackageSignatures{8ee89a6 [1123f4e6]}
+    installPermissionsFixed=true installStatus=1
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    declared permissions:
+      ru.dlyasvoih.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature, INSTALLED
+    requested permissions:
+      android.permission.INTERNET
+      android.permission.REQUEST_INSTALL_PACKAGES
+      ru.dlyasvoih.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+    install permissions:
+      android.permission.INTERNET: granted=true
+      ru.dlyasvoih.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+    User 0: ceDataInode=122986 installed=true hidden=false suspended=false stopped=true notLaunched=false enabled=0 instant=false
+      gids=[3003]
+      runtime permissions:
+
+Package Changes:
+  Sequence number=316
+  User 0:
+    seq=0, package=com.google.android.apps.inputmethod.hindi
+    seq=1, package=com.google.android.inputmethod.pinyin
+    seq=2, package=com.google.android.webview
+    seq=4, package=com.google.android.setupwizard
+    seq=7, package=com.google.android.sdksetup
+    seq=8, package=com.google.android.inputmethod.latin
+    seq=43, package=com.google.android.partnersetup
+    seq=47, package=com.google.android.apps.messaging
+    seq=48, package=com.android.settings
+    seq=63, package=com.google.android.calendar
+    seq=65, package=com.android.camera2
+    seq=172, package=com.google.android.gsf
+    seq=216, package=com.google.android.googlequicksearchbox
+    seq=236, package=com.google.android.videos
+    seq=296, package=com.google.android.youtube
+    seq=313, package=com.google.android.gms
+    seq=314, package=ru.dlyasvoih.app
+    seq=315, package=com.google.android.gm
+
+
+Dexopt state:
+  [ru.dlyasvoih.app]
+    Instruction Set: x86_64
+      path: /data/app/ru.dlyasvoih.app-N_ZzOBYZYIeif1CvNuT62Q==/base.apk
+      status: /data/app/ru.dlyasvoih.app-N_ZzOBYZYIeif1CvNuT62Q==/oat/x86_64/base.odex[status=kOatUpToDate, compilation_
+      filter=quicken]
+
+
+Compiler stats:
+  [ru.dlyasvoih.app]
+     base.apk - 315
