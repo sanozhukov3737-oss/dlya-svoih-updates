@@ -1,0 +1,412 @@
+{
+  "purpose": "Preserve unsuccessful candidate/harness attempts separately from final verification",
+  "attempts": [
+    {
+      "workflowRunId": 39602003224,
+      "api": 26,
+      "published": false,
+      "reason": "Gboard Contacts prompt blocked the first-use emulator; later native screenshot confirmed missing legacy IME padding.",
+      "result": {
+        "version": "0.3.136",
+        "versionCode": 140,
+        "apkSha256": "dc15ca46a065c017d16333a7eefb715ef83279295501511684c10a2173163fa1",
+        "candidateSourceCommit": "b666568842c192ef3e66f58dbd407505cd9fa427",
+        "checks": {
+          "offlineSearchAndCard": true
+        },
+        "searchObservationUpperBoundsMs": {
+          "PMN2": 1886,
+          "TM46": 1838
+        },
+        "passed": false,
+        "visualReview": "pending",
+        "limitations": [
+          "KVM/SwiftShader timings are emulator observations, not physical-phone benchmarks.",
+          "Search upper bounds include ADB, IME dismissal and UIAutomator overhead.",
+          "APK upgrade uses adb install -r; this is not an in-app download/installer test.",
+          "Unchanged 3D renderer and catalog text are outside this regression test."
+        ],
+        "api": 26,
+        "previousFirstRun": {
+          "ThisTime": 909,
+          "TotalTime": 909,
+          "WaitTime": 930,
+          "drawnLog": [
+            "I/ActivityManager( 1721): Displayed ru.dlyasvoih.app/.MainActivity: +909ms",
+            "I/ActivityManager( 1721): Fully drawn ru.dlyasvoih.app/.MainActivity: +1s628ms"
+          ]
+        },
+        "firstMeasuredColdAfterUpgrade": {
+          "ThisTime": 586,
+          "TotalTime": 586,
+          "WaitTime": 602,
+          "drawnLog": [
+            "I/ActivityManager( 1721): Displayed ru.dlyasvoih.app/.MainActivity: +586ms",
+            "I/ActivityManager( 1721): Fully drawn ru.dlyasvoih.app/.MainActivity: +1s157ms"
+          ]
+        },
+        "upgrade": {
+          "previous": "0.3.135",
+          "previousApkSha256": "068b71392f570ad768b59c391c10dbba8f9f90dce07d545b37bb545ffd71b3aa",
+          "idAndRowidCount": 1695,
+          "idsPreserved": true,
+          "favoritesPreserved": true,
+          "readingPreserved": true,
+          "appearancePreserved": true,
+          "method": "adb install -r"
+        },
+        "coldStarts": [
+          {
+            "ThisTime": 487,
+            "TotalTime": 487,
+            "WaitTime": 497,
+            "drawnLog": [
+              "I/ActivityManager( 1721): Displayed ru.dlyasvoih.app/.MainActivity: +487ms",
+              "I/ActivityManager( 1721): Fully drawn ru.dlyasvoih.app/.MainActivity: +1s33ms"
+            ]
+          },
+          {
+            "ThisTime": 476,
+            "TotalTime": 476,
+            "WaitTime": 502,
+            "drawnLog": [
+              "I/ActivityManager( 1721): Displayed ru.dlyasvoih.app/.MainActivity: +476ms",
+              "I/ActivityManager( 1721): Fully drawn ru.dlyasvoih.app/.MainActivity: +1s26ms"
+            ]
+          },
+          {
+            "ThisTime": 522,
+            "TotalTime": 522,
+            "WaitTime": 553,
+            "drawnLog": [
+              "I/ActivityManager( 1721): Displayed ru.dlyasvoih.app/.MainActivity: +522ms",
+              "I/ActivityManager( 1721): Fully drawn ru.dlyasvoih.app/.MainActivity: +1s7ms"
+            ]
+          }
+        ],
+        "coldStartMedianTotalMs": 487,
+        "scrollFrames": {
+          "totalFrames": 153,
+          "jankyFrames": 149,
+          "jankyPercent": "97.39%",
+          "percentileMs": {
+            "50th": "30",
+            "90th": "57",
+            "95th": "93",
+            "99th": "350"
+          },
+          "detailedFrameTimingsAvailable": true,
+          "retainedFrameSample": 120,
+          "maxRetainedFrameMs": 66.69,
+          "retainedFramesOver700ms": 0
+        },
+        "error": "AssertionError: UI element missing: ['Allow Gboard to access your contacts?', 'DENY', 'ALLOW']",
+        "durationSeconds": 114.4
+      }
+    },
+    {
+      "workflowRunId": 39603960019,
+      "api": 26,
+      "published": false,
+      "reason": "The keyboard covered Apply in the intermediate APK; the tap entered an extra m.",
+      "result": {
+        "version": "0.3.136",
+        "versionCode": 140,
+        "apkSha256": "dc15ca46a065c017d16333a7eefb715ef83279295501511684c10a2173163fa1",
+        "candidateSourceCommit": "b666568842c192ef3e66f58dbd407505cd9fa427",
+        "checks": {
+          "offlineSearchAndCard": true
+        },
+        "searchObservationUpperBoundsMs": {
+          "PMN2": 1988,
+          "TM46": 1935
+        },
+        "passed": false,
+        "visualReview": "pending",
+        "limitations": [
+          "KVM/SwiftShader timings are emulator observations, not physical-phone benchmarks.",
+          "Search upper bounds include ADB, IME dismissal and UIAutomator overhead.",
+          "APK upgrade uses adb install -r; this is not an in-app download/installer test.",
+          "Unchanged 3D renderer and catalog text are outside this regression test."
+        ],
+        "api": 26,
+        "previousFirstRun": {
+          "ThisTime": 743,
+          "TotalTime": 743,
+          "WaitTime": 773,
+          "drawnLog": [
+            "I/ActivityManager( 1715): Displayed ru.dlyasvoih.app/.MainActivity: +743ms",
+            "I/ActivityManager( 1715): Fully drawn ru.dlyasvoih.app/.MainActivity: +1s398ms"
+          ]
+        },
+        "firstMeasuredColdAfterUpgrade": {
+          "ThisTime": 619,
+          "TotalTime": 619,
+          "WaitTime": 646,
+          "drawnLog": [
+            "I/ActivityManager( 1715): Displayed ru.dlyasvoih.app/.MainActivity: +619ms",
+            "I/ActivityManager( 1715): Fully drawn ru.dlyasvoih.app/.MainActivity: +1s137ms"
+          ]
+        },
+        "upgrade": {
+          "previous": "0.3.135",
+          "previousApkSha256": "068b71392f570ad768b59c391c10dbba8f9f90dce07d545b37bb545ffd71b3aa",
+          "idAndRowidCount": 1695,
+          "idsPreserved": true,
+          "favoritesPreserved": true,
+          "readingPreserved": true,
+          "appearancePreserved": true,
+          "method": "adb install -r"
+        },
+        "coldStarts": [
+          {
+            "ThisTime": 498,
+            "TotalTime": 498,
+            "WaitTime": 505,
+            "drawnLog": [
+              "I/ActivityManager( 1715): Displayed ru.dlyasvoih.app/.MainActivity: +498ms",
+              "I/ActivityManager( 1715): Fully drawn ru.dlyasvoih.app/.MainActivity: +1s1ms"
+            ]
+          },
+          {
+            "ThisTime": 520,
+            "TotalTime": 520,
+            "WaitTime": 563,
+            "drawnLog": [
+              "I/ActivityManager( 1715): Displayed ru.dlyasvoih.app/.MainActivity: +520ms",
+              "I/ActivityManager( 1715): Fully drawn ru.dlyasvoih.app/.MainActivity: +1s9ms"
+            ]
+          },
+          {
+            "ThisTime": 457,
+            "TotalTime": 457,
+            "WaitTime": 503,
+            "drawnLog": [
+              "I/ActivityManager( 1715): Displayed ru.dlyasvoih.app/.MainActivity: +457ms",
+              "I/ActivityManager( 1715): Fully drawn ru.dlyasvoih.app/.MainActivity: +1s28ms"
+            ]
+          }
+        ],
+        "coldStartMedianTotalMs": 498,
+        "scrollFrames": {
+          "totalFrames": 154,
+          "jankyFrames": 150,
+          "jankyPercent": "97.40%",
+          "percentileMs": {
+            "50th": "30",
+            "90th": "57",
+            "95th": "97",
+            "99th": "300"
+          },
+          "detailedFrameTimingsAvailable": true,
+          "retainedFrameSample": 120,
+          "maxRetainedFrameMs": 78.85,
+          "retainedFramesOver700ms": 0
+        },
+        "error": "AssertionError: UI element missing: ['Выбор карточек', 'M14m', 'Поиск по названию', 'Одна или две карточки из текущей категории', 'ПМН ×', 'ПМН-3 ×', 'Карточки не найдены', 'Отмена', 'Сравнить · 3']",
+        "durationSeconds": 128.73
+      }
+    },
+    {
+      "workflowRunId": 39604907534,
+      "api": 26,
+      "published": false,
+      "reason": "Final APK shows Apply above IME; the harness did not scroll to the matching M14 result.",
+      "result": {
+        "version": "0.3.136",
+        "versionCode": 140,
+        "apkSha256": "0a22658eab2cc409eebf1c9d62cb1139b79cbb160e238ebc5102b8abc4566162",
+        "candidateSourceCommit": "91d57c8e9d00a01381eb242cae9f106d5ef140c6",
+        "checks": {
+          "offlineSearchAndCard": true
+        },
+        "searchObservationUpperBoundsMs": {
+          "PMN2": 2026,
+          "TM46": 1968
+        },
+        "passed": false,
+        "visualReview": "pending",
+        "limitations": [
+          "KVM/SwiftShader timings are emulator observations, not physical-phone benchmarks.",
+          "Search upper bounds include ADB, IME dismissal and UIAutomator overhead.",
+          "APK upgrade uses adb install -r; this is not an in-app download/installer test.",
+          "Unchanged 3D renderer and catalog text are outside this regression test."
+        ],
+        "api": 26,
+        "previousFirstRun": {
+          "ThisTime": 776,
+          "TotalTime": 776,
+          "WaitTime": 798,
+          "drawnLog": [
+            "I/ActivityManager( 1718): Displayed ru.dlyasvoih.app/.MainActivity: +776ms",
+            "I/ActivityManager( 1718): Fully drawn ru.dlyasvoih.app/.MainActivity: +1s156ms"
+          ]
+        },
+        "firstMeasuredColdAfterUpgrade": {
+          "ThisTime": 641,
+          "TotalTime": 641,
+          "WaitTime": 657,
+          "drawnLog": [
+            "I/ActivityManager( 1718): Displayed ru.dlyasvoih.app/.MainActivity: +641ms",
+            "I/ActivityManager( 1718): Fully drawn ru.dlyasvoih.app/.MainActivity: +1s121ms"
+          ]
+        },
+        "upgrade": {
+          "previous": "0.3.135",
+          "previousApkSha256": "068b71392f570ad768b59c391c10dbba8f9f90dce07d545b37bb545ffd71b3aa",
+          "idAndRowidCount": 1695,
+          "idsPreserved": true,
+          "favoritesPreserved": true,
+          "readingPreserved": true,
+          "appearancePreserved": true,
+          "method": "adb install -r"
+        },
+        "coldStarts": [
+          {
+            "ThisTime": 457,
+            "TotalTime": 457,
+            "WaitTime": 464,
+            "drawnLog": [
+              "I/ActivityManager( 1718): Displayed ru.dlyasvoih.app/.MainActivity: +457ms",
+              "I/ActivityManager( 1718): Fully drawn ru.dlyasvoih.app/.MainActivity: +1s10ms"
+            ]
+          },
+          {
+            "ThisTime": 405,
+            "TotalTime": 405,
+            "WaitTime": 445,
+            "drawnLog": [
+              "I/ActivityManager( 1718): Displayed ru.dlyasvoih.app/.MainActivity: +405ms",
+              "I/ActivityManager( 1718): Fully drawn ru.dlyasvoih.app/.MainActivity: +1s2ms"
+            ]
+          },
+          {
+            "ThisTime": 503,
+            "TotalTime": 503,
+            "WaitTime": 556,
+            "drawnLog": [
+              "I/ActivityManager( 1718): Displayed ru.dlyasvoih.app/.MainActivity: +503ms",
+              "I/ActivityManager( 1718): Fully drawn ru.dlyasvoih.app/.MainActivity: +1s15ms"
+            ]
+          }
+        ],
+        "coldStartMedianTotalMs": 457,
+        "scrollFrames": {
+          "totalFrames": 150,
+          "jankyFrames": 147,
+          "jankyPercent": "98.00%",
+          "percentileMs": {
+            "50th": "31",
+            "90th": "61",
+            "95th": "97",
+            "99th": "300"
+          },
+          "detailedFrameTimingsAvailable": true,
+          "retainedFrameSample": 120,
+          "maxRetainedFrameMs": 73.5,
+          "retainedFramesOver700ms": 0
+        },
+        "error": "AssertionError: UI element missing: ['Выбор карточек', 'M14', 'Поиск по названию', 'Одна или две карточки из текущей категории', 'ПМН ×', 'ПМН-3 ×', 'Отмена', 'Сравнить · 3']",
+        "durationSeconds": 123.62
+      }
+    },
+    {
+      "workflowRunId": 39604907534,
+      "api": 36,
+      "published": false,
+      "reason": "The harness sent Back while the modern picker keyboard was already hidden, dismissing the picker.",
+      "result": {
+        "version": "0.3.136",
+        "versionCode": 140,
+        "apkSha256": "0a22658eab2cc409eebf1c9d62cb1139b79cbb160e238ebc5102b8abc4566162",
+        "candidateSourceCommit": "91d57c8e9d00a01381eb242cae9f106d5ef140c6",
+        "checks": {
+          "offlineSearchAndCard": true
+        },
+        "searchObservationUpperBoundsMs": {
+          "PMN2": 2362,
+          "TM46": 2354
+        },
+        "passed": false,
+        "visualReview": "pending",
+        "limitations": [
+          "KVM/SwiftShader timings are emulator observations, not physical-phone benchmarks.",
+          "Search upper bounds include ADB, IME dismissal and UIAutomator overhead.",
+          "APK upgrade uses adb install -r; this is not an in-app download/installer test.",
+          "Unchanged 3D renderer and catalog text are outside this regression test."
+        ],
+        "api": 36,
+        "previousFirstRun": {
+          "TotalTime": 2121,
+          "WaitTime": 2141,
+          "drawnLog": [
+            "I/ActivityTaskManager(  669): Displayed ru.dlyasvoih.app/.MainActivity for user 0: +2s121ms",
+            "I/ActivityTaskManager(  669): Fully drawn ru.dlyasvoih.app/.MainActivity: +2s121ms"
+          ]
+        },
+        "firstMeasuredColdAfterUpgrade": {
+          "TotalTime": 1283,
+          "WaitTime": 1285,
+          "drawnLog": [
+            "I/ActivityTaskManager(  669): Displayed ru.dlyasvoih.app/.MainActivity for user 0: +1s283ms",
+            "I/ActivityTaskManager(  669): Fully drawn ru.dlyasvoih.app/.MainActivity: +1s283ms"
+          ]
+        },
+        "upgrade": {
+          "previous": "0.3.135",
+          "previousApkSha256": "068b71392f570ad768b59c391c10dbba8f9f90dce07d545b37bb545ffd71b3aa",
+          "idAndRowidCount": 1695,
+          "idsPreserved": true,
+          "favoritesPreserved": true,
+          "readingPreserved": true,
+          "appearancePreserved": true,
+          "method": "adb install -r"
+        },
+        "coldStarts": [
+          {
+            "TotalTime": 1371,
+            "WaitTime": 1375,
+            "drawnLog": [
+              "I/ActivityTaskManager(  669): Displayed ru.dlyasvoih.app/.MainActivity for user 0: +1s371ms",
+              "I/ActivityTaskManager(  669): Fully drawn ru.dlyasvoih.app/.MainActivity: +1s371ms"
+            ]
+          },
+          {
+            "TotalTime": 1286,
+            "WaitTime": 1318,
+            "drawnLog": [
+              "I/ActivityTaskManager(  669): Displayed ru.dlyasvoih.app/.MainActivity for user 0: +1s286ms",
+              "I/ActivityTaskManager(  669): Fully drawn ru.dlyasvoih.app/.MainActivity: +1s286ms"
+            ]
+          },
+          {
+            "TotalTime": 1304,
+            "WaitTime": 1307,
+            "drawnLog": [
+              "I/ActivityTaskManager(  669): Displayed ru.dlyasvoih.app/.MainActivity for user 0: +1s304ms",
+              "I/ActivityTaskManager(  669): Fully drawn ru.dlyasvoih.app/.MainActivity: +1s304ms"
+            ]
+          }
+        ],
+        "coldStartMedianTotalMs": 1304,
+        "scrollFrames": {
+          "totalFrames": 127,
+          "jankyFrames": 14,
+          "jankyPercent": "11.02%",
+          "percentileMs": {
+            "50th": "21",
+            "90th": "44",
+            "95th": "65",
+            "99th": "101"
+          },
+          "detailedFrameTimingsAvailable": false,
+          "retainedFrameSample": 0,
+          "maxRetainedFrameMs": null,
+          "retainedFramesOver700ms": null
+        },
+        "error": "AssertionError: UI element missing: ['Close sheet', 'Drag handle', 'Сравнение', 'Выбрать карточки', '2 карточки одной категории', 'ПМН-2', 'ПМН-2', 'Основная карточка', 'ПМН', 'ПМН', 'Выбрана', 'Показать описания', 'Класс', 'Противопехотная мина', 'Противопехотная мина', 'Материал корпуса', 'Пластик; верхняя крестообразная деталь из резины', 'Бакелит; резиновая верхняя крышка и металлическая обойма', 'Полная масса', '415 г', '580 г', 'Диаметр', '121 мм', '112 мм', 'Высота']",
+        "durationSeconds": 139.78
+      }
+    }
+  ]
+}

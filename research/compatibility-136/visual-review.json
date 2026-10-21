@@ -1,0 +1,24 @@
+{
+  "versionName": "0.3.136",
+  "apkSha256": "0a22658eab2cc409eebf1c9d62cb1139b79cbb160e238ebc5102b8abc4566162",
+  "candidateSourceCommit": "91d57c8e9d00a01381eb242cae9f106d5ef140c6",
+  "verificationWorkflowRunId": 39607704093,
+  "visualReview": "passed",
+  "reviewer": "assistant",
+  "reviewedScreens": {
+    "research/compatibility-136/api26/picker-before-selection.png": "53e1a8c6566814d031315659e181e3ae9aa2f5d9192ce5baf9c9b7f901b2ee94",
+    "research/compatibility-136/api26/picker-keyboard.png": "65887455bfde06e7bd3340c5fe6a2c5e4d0889aa3f54da1182d3a59bfc7e5e47",
+    "research/compatibility-136/api26/comparison-three.png": "2cf5f7c2bbc9b89946ed3d408bfff5f0fd6c277e97494df8643e675b6cc6cb1a",
+    "research/compatibility-136/api26/comparison-three-panned.png": "1833ce4bb6bd6b96a1340bd9419d47e21781f438b27aa3fdbf39fc67c485dc8b",
+    "research/compatibility-136/api26/comparison-large-font.png": "65a9b5d321e7854ff3cd9727e523e9a6df1d7b86b8fe5d09132cbf5e27314fdb",
+    "research/compatibility-136/api36/picker-before-selection.png": "a23ffadee6923c31a7c3fa733f459c6e6074393ec2d750b1b7da0dbedf63beb2",
+    "research/compatibility-136/api36/picker-keyboard.png": "bd39913d0b9336e61ce3951ee846dc36f2f1ed9974c487ac75ceefd6c3f630b7",
+    "research/compatibility-136/api36/comparison-three.png": "f6cb8fcf140ce2dd447763e7fde511099ee1b7be0babca55bcf9d657044cf51a",
+    "research/compatibility-136/api36/comparison-three-panned.png": "9613ca39e02e6fd591cb83e0fcb6e5fe87643933337f2142135dde20a4981c3b",
+    "research/compatibility-136/api36/comparison-large-font.png": "0d3137a5216d8444dfd89bf7052cb7f0ca52131fc6e4769875f2fab5b6eefc90"
+  },
+  "observations": {
+    "api26": "Apply remains above the visible Gboard; matching M14 result is readable after scrolling; three-card headers, pinned labels and 1.3 font scale remain readable.",
+    "api36": "Keyboard, matching results and Apply remain visible; three cards and horizontal pan retain field labels; 1.3 font scale retains selection."
+  }
+}

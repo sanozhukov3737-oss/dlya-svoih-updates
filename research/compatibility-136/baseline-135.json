@@ -1,0 +1,185 @@
+{
+  "version": "0.3.135",
+  "apkSha256": "068b71392f570ad768b59c391c10dbba8f9f90dce07d545b37bb545ffd71b3aa",
+  "runs": {
+    "android16": 39597307980,
+    "android8": 39598166289
+  },
+  "results": {
+    "26": {
+      "version": "0.3.135",
+      "versionCode": 139,
+      "apkSha256": "068b71392f570ad768b59c391c10dbba8f9f90dce07d545b37bb545ffd71b3aa",
+      "checks": {
+        "publicApkInstalledOffline": true,
+        "offlineSearchAndCard": true
+      },
+      "searchObservationUpperBoundsMs": {
+        "TM46": 3394,
+        "PMN2": 2526
+      },
+      "passed": false,
+      "visualReview": "pending",
+      "limitations": [
+        "Emulator timings are not physical-phone benchmarks.",
+        "Search observations include ADB input, IME dismissal and UIAutomator dump latency.",
+        "Scrolling is a short frame sample, not a full app performance profile.",
+        "No APK/catalog update installation or 3D renderer test is performed in this stage."
+      ],
+      "api": 26,
+      "firstRun": {
+        "ThisTime": 1341,
+        "TotalTime": 1341,
+        "WaitTime": 1404,
+        "drawnLog": [
+          "I/ActivityManager( 1748): Displayed ru.dlyasvoih.app/.MainActivity: +1s341ms",
+          "I/ActivityManager( 1748): Fully drawn ru.dlyasvoih.app/.MainActivity: +2s801ms"
+        ]
+      },
+      "coldStarts": [
+        {
+          "ThisTime": 778,
+          "TotalTime": 778,
+          "WaitTime": 804,
+          "drawnLog": [
+            "I/ActivityManager( 1748): Displayed ru.dlyasvoih.app/.MainActivity: +778ms",
+            "I/ActivityManager( 1748): Fully drawn ru.dlyasvoih.app/.MainActivity: +1s296ms"
+          ]
+        },
+        {
+          "ThisTime": 1030,
+          "TotalTime": 1030,
+          "WaitTime": 1128,
+          "drawnLog": [
+            "I/ActivityManager( 1748): Displayed ru.dlyasvoih.app/.MainActivity: +1s30ms",
+            "I/ActivityManager( 1748): Fully drawn ru.dlyasvoih.app/.MainActivity: +1s547ms"
+          ]
+        },
+        {
+          "ThisTime": 846,
+          "TotalTime": 846,
+          "WaitTime": 951,
+          "drawnLog": [
+            "I/ActivityManager( 1748): Displayed ru.dlyasvoih.app/.MainActivity: +846ms",
+            "I/ActivityManager( 1748): Fully drawn ru.dlyasvoih.app/.MainActivity: +1s341ms"
+          ]
+        }
+      ],
+      "coldStartMedianTotalMs": 846,
+      "scrollFrames": {
+        "totalFrames": 67,
+        "jankyFrames": 66,
+        "jankyPercent": "98.51%",
+        "percentileMs": {
+          "50th": "69",
+          "90th": "150",
+          "95th": "150",
+          "99th": "650"
+        },
+        "detailedFrameTimingsAvailable": true,
+        "retainedFrameSample": 67,
+        "maxRetainedFrameMs": 136.36,
+        "retainedFramesOver700ms": 0
+      },
+      "error": "AssertionError: UI element missing: ['Выбор карточек', 'Одна или две карточки из текущей категории', 'k', 'Поиск по названию', 'ПМН ×', 'ПМН-3 ×', 'FMK-1', 'KM14 (Республика Корея)', 'KM16 (Республика Корея)', 'KM18A1 (Республика Корея)', 'Отмена', 'Сравнить · 3']",
+      "durationSeconds": 113.89
+    },
+    "36": {
+      "version": "0.3.135",
+      "versionCode": 139,
+      "apkSha256": "068b71392f570ad768b59c391c10dbba8f9f90dce07d545b37bb545ffd71b3aa",
+      "checks": {
+        "publicApkInstalledOffline": true,
+        "offlineSearchAndCard": true,
+        "comparisonTwoAndThree": true,
+        "selectionSurvivesFontConfiguration": true,
+        "favoriteSurvivesProcessRestart": true,
+        "favoritePersistedToDatabase": true,
+        "noCrashOrAnrObserved": true
+      },
+      "searchObservationUpperBoundsMs": {
+        "TM46": 3367,
+        "PMN2": 2770
+      },
+      "passed": true,
+      "visualReview": "pending",
+      "limitations": [
+        "Emulator timings are not physical-phone benchmarks.",
+        "Search observations include ADB input, IME dismissal and UIAutomator dump latency.",
+        "Scrolling is a short frame sample, not a full app performance profile.",
+        "No APK/catalog update installation or 3D renderer test is performed in this stage."
+      ],
+      "api": 36,
+      "firstRun": {
+        "TotalTime": 2795,
+        "WaitTime": 2805,
+        "drawnLog": [
+          "I/ActivityTaskManager(  667): Displayed ru.dlyasvoih.app/.MainActivity for user 0: +2s795ms",
+          "I/ActivityTaskManager(  667): Fully drawn ru.dlyasvoih.app/.MainActivity: +2s795ms"
+        ]
+      },
+      "coldStarts": [
+        {
+          "TotalTime": 2428,
+          "WaitTime": 2434,
+          "drawnLog": [
+            "I/ActivityTaskManager(  667): Displayed ru.dlyasvoih.app/.MainActivity for user 0: +2s428ms",
+            "I/ActivityTaskManager(  667): Fully drawn ru.dlyasvoih.app/.MainActivity: +2s428ms"
+          ]
+        },
+        {
+          "TotalTime": 1654,
+          "WaitTime": 1696,
+          "drawnLog": [
+            "I/ActivityTaskManager(  667): Displayed ru.dlyasvoih.app/.MainActivity for user 0: +1s654ms",
+            "I/ActivityTaskManager(  667): Fully drawn ru.dlyasvoih.app/.MainActivity: +1s654ms"
+          ]
+        },
+        {
+          "TotalTime": 1431,
+          "WaitTime": 1536,
+          "drawnLog": [
+            "I/ActivityTaskManager(  667): Displayed ru.dlyasvoih.app/.MainActivity for user 0: +1s431ms",
+            "I/ActivityTaskManager(  667): Fully drawn ru.dlyasvoih.app/.MainActivity: +1s431ms"
+          ]
+        }
+      ],
+      "coldStartMedianTotalMs": 1654,
+      "scrollFrames": {
+        "totalFrames": 105,
+        "jankyFrames": 37,
+        "jankyPercent": "35.24%",
+        "percentileMs": {
+          "50th": "38",
+          "90th": "61",
+          "95th": "81",
+          "99th": "101"
+        },
+        "detailedFrameTimingsAvailable": false,
+        "retainedFrameSample": 0,
+        "maxRetainedFrameMs": null,
+        "retainedFramesOver700ms": null
+      },
+      "catalog": {
+        "contentVersion": 197,
+        "activeCards": 1695,
+        "images": 1595,
+        "integrity": "ok",
+        "foreignKeys": 0
+      },
+      "durationSeconds": 112.67
+    }
+  },
+  "earlierHarnessCorrections": [
+    {
+      "run": 39596604134,
+      "reason": "Android 8 rejected logcat buffer clearing; Android 16 exposed aggregate rather than per-frame gfxinfo"
+    },
+    {
+      "run": 39597307980,
+      "reason": "Fixed gesture origin below the Android 8 reader viewport"
+    }
+  ],
+  "confirmedUiIssue": "On Android 8 the comparison picker retained its full-height floating layout while the IME covered Apply; the subsequent tap entered k in the IME instead of applying selection.",
+  "performanceCaution": "Different runner loads and native/overridden framebuffer sizes prevent before/after speed comparisons."
+}

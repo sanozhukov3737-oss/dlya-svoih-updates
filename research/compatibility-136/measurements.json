@@ -1,0 +1,64 @@
+{
+  "apkSha256": "0a22658eab2cc409eebf1c9d62cb1139b79cbb160e238ebc5102b8abc4566162",
+  "method": "Three cold process starts after a real APK upgrade, fully-drawn log, four reader swipes, KVM/SwiftShader; different OS/runner timings are not speed comparisons.",
+  "apis": {
+    "26": {
+      "medianFullyDrawnMs": 946,
+      "fullyDrawnSamplesMs": [
+        883,
+        946,
+        958
+      ],
+      "medianFirstFrameTotalMs": 408,
+      "scrollFrames": {
+        "totalFrames": 150,
+        "jankyFrames": 145,
+        "jankyPercent": "96.67%",
+        "percentileMs": {
+          "50th": "32",
+          "90th": "61",
+          "95th": "93",
+          "99th": "250"
+        },
+        "detailedFrameTimingsAvailable": true,
+        "retainedFrameSample": 120,
+        "maxRetainedFrameMs": 79.0,
+        "retainedFramesOver700ms": 0
+      },
+      "searchObservationUpperBoundsMs": {
+        "PMN2": 1782,
+        "TM46": 1779
+      },
+      "pssKiBAfterFavorites": 33506
+    },
+    "36": {
+      "medianFullyDrawnMs": 1238,
+      "fullyDrawnSamplesMs": [
+        1238,
+        1194,
+        1289
+      ],
+      "medianFirstFrameTotalMs": 1238,
+      "scrollFrames": {
+        "totalFrames": 122,
+        "jankyFrames": 18,
+        "jankyPercent": "14.75%",
+        "percentileMs": {
+          "50th": "23",
+          "90th": "42",
+          "95th": "65",
+          "99th": "97"
+        },
+        "detailedFrameTimingsAvailable": false,
+        "retainedFrameSample": 0,
+        "maxRetainedFrameMs": null,
+        "retainedFramesOver700ms": null
+      },
+      "searchObservationUpperBoundsMs": {
+        "PMN2": 2333,
+        "TM46": 2450
+      },
+      "pssKiBAfterFavorites": 43390
+    }
+  }
+}

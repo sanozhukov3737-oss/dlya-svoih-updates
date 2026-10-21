@@ -1,0 +1,67 @@
+name: Publish reviewed keyboard fix 0.3.136
+
+on:
+  push:
+    branches: ['main']
+    paths: ['docs/releases/app-0.3.136-verified.json', '.github/workflows/publish-comparison-136.yml']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: read
+
+concurrency:
+  group: publish-app
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - name: Read the reviewed artifact identity
+        id: request
+        run: |
+          python3 - <<'PY'
+          import json,os
+          from pathlib import Path
+          request=json.loads(Path('docs/releases/app-0.3.136-verified.json').read_text())
+          assert request['visualReview']=='passed'
+          assert isinstance(request['workflowRunId'],int) and request['workflowRunId']>0
+          with open(os.environ['GITHUB_OUTPUT'],'a') as out:
+              out.write('run='+str(request['workflowRunId'])+'\n')
+              out.write('published='+str(bool(request.get('verifyPublishedOnly'))).lower()+'\n')
+          PY
+      - uses: actions/download-artifact@v4
+        if: steps.request.outputs.published != 'true'
+        with:
+          name: comparison136-signed-release
+          run-id: ${{ steps.request.outputs.run }}
+          github-token: ${{ github.token }}
+          path: build/comparison136-candidate
+      - name: Install signature verification tools
+        if: steps.request.outputs.published != 'true'
+        run: '"$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" "build-tools;36.0.0"'
+      - name: Verify exact artifact, publish and check public channel
+        env:
+          VERIFY_PUBLISHED: ${{ steps.request.outputs.published }}
+        run: |
+          if [ "$VERIFY_PUBLISHED" = true ]; then
+            python3 tools/publish_comparison136.py --verify-published
+          else
+            python3 tools/publish_comparison136.py
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: comparison136-publication-proof
+          path: build/comparison136-publish/*.json
+          if-no-files-found: warn
+          retention-days: 30
