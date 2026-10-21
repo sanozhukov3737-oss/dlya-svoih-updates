@@ -3,6 +3,7 @@
 import argparse
 import hashlib
 import json
+import os
 import re
 import sqlite3
 import subprocess
@@ -13,6 +14,20 @@ import check_published135_compat as qa
 
 ui = qa.ui
 BASELINE_SHA = '0a22658eab2cc409eebf1c9d62cb1139b79cbb160e238ebc5102b8abc4566162'
+
+
+def wait_offline(label):
+    # Telephony disconnect is asynchronous on API 26. Do not treat the return
+    # from svc/data or the airplane broadcast as evidence that it has finished.
+    deadline = time.monotonic() + 20
+    while True:
+        try:
+            ui.offline(label)
+            return
+        except AssertionError:
+            if time.monotonic() >= deadline:
+                raise
+            time.sleep(.5)
 
 
 def position():
@@ -96,6 +111,7 @@ def main():
     metadata = json.loads((args.apks / 'build-result.json').read_text())
     report = dict(versionName='0.3.137', versionCode=141, api=args.expected_api,
         apkSha256=metadata['apkSha256'], candidateSourceCommit=metadata['candidateSourceCommit'],
+        verificationSourceCommit=os.environ.get('GITHUB_SHA'),
         checks={}, searchObservationUpperBoundsMs={}, passed=False,
         limitations=['KVM and software SwiftShader; no physical-phone result.',
             'Same emulator, baseline first then signed upgrade; order and runner load are not randomized.',
@@ -131,7 +147,8 @@ def main():
             ui.adb('shell', 'svc', service, 'disable')
         ui.adb('shell', 'settings', 'put', 'global', 'airplane_mode_on', '1')
         ui.adb('shell', 'am', 'broadcast', '-a', 'android.intent.action.AIRPLANE_MODE', '--ez', 'state', 'true')
-        ui.offline('before-baseline')
+        wait_offline('before-baseline')
+        report['checks']['offlineDefaultNetworkAbsent'] = True
         qa.announce('Measure public 0.3.136 on the actual book-reader path')
         assert 'Success' in ui.adb('install', '--no-streaming', args.previous, timeout=180).decode()
         qa.cold_start('baseline-launch')
@@ -162,7 +179,7 @@ def main():
         crash = ui.adb('logcat', '-d', '-b', 'crash').decode(errors='replace')
         (ui.out / 'crash.log').write_text(crash)
         assert 'FATAL EXCEPTION' not in crash and 'Fatal signal' not in crash, crash
-        ui.offline('after-candidate')
+        wait_offline('after-candidate')
         report['checks']['noCrashObserved'] = True
         report['passed'] = True
         qa.announce('Focused tests, signed upgrade and paired swipe samples completed')

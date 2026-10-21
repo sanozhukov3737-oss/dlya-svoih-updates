@@ -1,0 +1,75 @@
+name: Verify existing signed on-demand comparison candidate
+
+on:
+  push:
+    branches: ['main']
+    paths: ['.github/workflows/verify-lazy137-artifact.yml', 'docs/releases/app-0.3.137-recheck.json']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: read
+
+concurrency:
+  group: verify-lazy137-artifact
+  cancel-in-progress: false
+
+jobs:
+  android:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 22
+    strategy:
+      fail-fast: false
+      matrix:
+        api: [26]
+    env:
+      ANDROID_AVD_HOME: ${{ github.workspace }}/build/android-avds
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: tools
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: actions/download-artifact@v4
+        with:
+          name: lazy137-build
+          run-id: 39642804088
+          github-token: ${{ github.token }}
+          path: build/lazy137/apks
+      - name: Obtain exact public baseline and device image
+        run: |
+          set -euo pipefail
+          curl --fail --silent --show-error --location --retry 2 --max-time 180 'https://github.com/sanozhukov3737-oss/dlya-svoih-updates/releases/download/app-0.3.136/DLYA_SVOIH_v0.3.136.apk' --output build/lazy137/previous.apk
+          echo '0a22658eab2cc409eebf1c9d62cb1139b79cbb160e238ebc5102b8abc4566162  build/lazy137/previous.apk' | sha256sum --check
+          "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" 'emulator' 'system-images;android-${{ matrix.api }};google_apis;x86_64'
+      - name: Create fresh native 720 by 1280 accelerated device
+        run: |
+          set -euo pipefail
+          echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules
+          sudo udevadm control --reload-rules
+          sudo udevadm trigger --name-match=kvm
+          mkdir -p "$ANDROID_AVD_HOME"
+          echo no | "$ANDROID_HOME/cmdline-tools/latest/bin/avdmanager" create avd --force --name recovery134 --package 'system-images;android-${{ matrix.api }};google_apis;x86_64' --device pixel_2
+          python3 - <<'PY'
+          import os
+          from pathlib import Path
+          p=Path(os.environ['ANDROID_AVD_HOME'])/'recovery134.avd/config.ini'
+          values=dict(line.split('=',1) for line in p.read_text().splitlines() if '=' in line)
+          values.update({'hw.lcd.width':'720','hw.lcd.height':'1280','hw.lcd.density':'320'})
+          p.write_text('\n'.join(k+'='+v for k,v in values.items())+'\n')
+          PY
+      - name: Check on-demand SQL and compare signed release swipe frames
+        run: |
+          set -euo pipefail
+          /usr/bin/python3 tools/run_android_emulator.py --out build/lazy137/emulator --timeout 900 -- /usr/bin/python3 tools/check137_android.py --apks build/lazy137/apks --previous build/lazy137/previous.apk --out build/lazy137/proof --expected-api ${{ matrix.api }}
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: lazy137-recheck-api${{ matrix.api }}-proof
+          path: |
+            build/lazy137/proof/
+            build/lazy137/emulator/
+          if-no-files-found: error
+          retention-days: 14
