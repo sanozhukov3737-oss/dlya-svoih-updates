@@ -21,7 +21,11 @@ def sha(path):
 
 
 def run(*args):
-    return subprocess.run(list(map(str,args)),check=True,capture_output=True,text=True,timeout=300).stdout
+    result=subprocess.run(list(map(str,args)),capture_output=True,text=True,timeout=300)
+    if result.returncode:
+        print(result.stderr[-6000:],file=sys.stderr,flush=True)
+        result.check_returncode()
+    return result.stdout
 
 
 def verify_published(request):
@@ -96,9 +100,13 @@ def main():
     assert {k:v for k,v in feed.items() if k != 'app'} == {k:v for k,v in previous.items() if k != 'app'}
     assert feed['app']['sha256'] == sha(apk) and feed['app']['versionCode'] == 140
     assert feed['app']['bytes'] == apk.stat().st_size
+    tag_commit=os.environ['GITHUB_SHA']
+    tag_context=json.loads(run('gh','api',f'repos/{REPO}/compare/{request["candidateSourceCommit"]}...{tag_commit}'))
+    assert len(tag_context['files'])<300
+    assert all(f['filename'].startswith(('tools/','.github/workflows/','docs/','research/')) for f in tag_context['files'])
     WORK.mkdir(parents=True,exist_ok=True)
     run('gh','release','create',TAG,apk,feed_path,'--repo',REPO,'--draft',
-        '--target',request['candidateSourceCommit'],'--title','ДЛЯ СВОИХ — 0.3.136',
+        '--target',tag_commit,'--title','ДЛЯ СВОИХ — 0.3.136',
         '--notes-file',source/'notes.txt')
     check = WORK/'download-check'
     check.mkdir(exist_ok=True)
@@ -109,6 +117,7 @@ def main():
         apkSha256=request['apkSha256'],apkBytes=apk.stat().st_size,feedSha256=request['feedSha256'],
         signerSha256=identity['signerSha256'],workflowRunId=request['workflowRunId'],
         verificationWorkflowRunId=request['verificationWorkflowRunId'],
+        artifactSourceCommit=request['candidateSourceCommit'],releaseTagCommit=tag_commit,
         visualReview='passed on actual signed Android screenshots',reviewedScreens=request['reviewedScreens'],
         uploadedBytesVerified=True,catalogOfferUnchanged=True)
     proof = WORK/'publication-verification.json'
