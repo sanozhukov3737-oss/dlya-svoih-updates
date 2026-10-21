@@ -6,6 +6,7 @@ import json
 import sqlite3
 import statistics
 import struct
+import subprocess
 import time
 from pathlib import Path
 
@@ -51,8 +52,17 @@ def main():
         api=int(ui.adb('shell', 'getprop', 'ro.build.version.sdk').decode().strip())
         assert api==args.expected_api
         report['api']=api
-        ui.adb('root'); ui.adb('wait-for-device')
-        assert ui.adb('shell', 'id', '-u').decode().strip()=='0'
+        ui.adb('root',timeout=15)
+        deadline=time.monotonic()+20
+        while time.monotonic()<deadline:
+            try:
+                ready=ui.run('adb','shell','id','-u',timeout=3,check=False)
+                if ready.returncode==0 and ready.stdout.decode().strip()=='0':break
+            except subprocess.TimeoutExpired:
+                pass
+            time.sleep(.3)
+        else:
+            raise AssertionError('Emulator ADB root transport did not become ready within 20 seconds')
         # Fresh API 26 Google images can show Gboard's first-use Contacts
         # permission dialog. Deny access on this disposable emulator; it is
         # unrelated to the app and no keyboard permission is ever granted.
