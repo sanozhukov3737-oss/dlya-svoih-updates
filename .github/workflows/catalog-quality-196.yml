@@ -1,9 +1,6 @@
 name: Verify and publish catalog quality update 196
 
 on:
-  push:
-    branches: ['main']
-    paths: ['docs/releases/catalog-quality-196.json', '.github/workflows/catalog-quality-196.yml']
   workflow_dispatch:
 
 permissions:
@@ -33,6 +30,7 @@ jobs:
           sudo apt-get update -qq
           sudo apt-get install -y python3-pil
           mkdir -p build/catalog196 app/src/androidTest/assets
+          cp test-common/catalog/CatalogQuality196Test.kt app/src/androidTest/java/ru/dlyasvoih/app/
           cp content/catalog.json build/catalog196/baseline.json
           cp app/src/main/assets/database/guide-v29.db app/src/androidTest/assets/quality196-baseline.db
           /usr/bin/python3 - <<'PY'

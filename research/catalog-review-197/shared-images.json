@@ -1,0 +1,2306 @@
+{
+  "baseContentVersion": 196,
+  "reviewedAt": "2026-10-21",
+  "reviewScope": "71 existing byte-identical image groups, with visual inspection and source/variant correspondence; additional repeated crops reviewed during the 158-description pass.",
+  "publisherImageCheck": {
+    "publisher": "Elbit Systems",
+    "imageSize": [
+      162,
+      392
+    ],
+    "jpegSha256": "15e35da042b8debaa7e6e93eaf986e58bdf36bb39360e436b20c4b4a095280cc",
+    "pdfSha256": {
+      "m920_web.pdf": "f8606223c088f2ec8525087a1b3b1735cab67672eadb8660326332eb84e98b27",
+      "m950_web.pdf": "cae5b9a262a93cd1ee7a34b77599767388aa7687270e2c002372b6df9dad3c85"
+    }
+  },
+  "armyManualSha256": "4b249477726e7d95e5b63da2e62e35c9df274ed5b792ee052664476ba7545026",
+  "groups": [
+    {
+      "group": 1,
+      "cardIds": [
+        "eng-m18a1",
+        "ordnance-v29-ga-0371"
+      ],
+      "titles": [
+        "M18A1 Claymore",
+        "M18A1"
+      ],
+      "imageReferences": [
+        {
+          "cardId": "eng-m18a1",
+          "imageId": "photo-v177-42d8268e4bcecd36",
+          "path": "images/photo-v177-42d8268e4bcecd36.webp"
+        },
+        {
+          "cardId": "ordnance-v29-ga-0371",
+          "imageId": "exterior-190-ed287ed6cd8e1859",
+          "path": "images/photo-v177-42d8268e4bcecd36.webp"
+        }
+      ],
+      "decision": "retain-qualified-reference",
+      "basis": "Одна именованная M18A1 показана в обзорной и национальной статьях; различается охват статей. Самостоятельные записи и привязки 3D сохранены.",
+      "sources": [
+        "https://odin.t2com.army.mil/WEG/Asset/649ac2ed86ee78bacdfcaab8a2bb8560",
+        "https://unmas.org/sites/default/files/handbook_english.pdf",
+        "https://www.bulletpicker.com/pdf/TM-43-0001-36.pdf",
+        "https://the-monitor.org/country-profile/turkey/mine-ban-policy",
+        "https://creativecommons.org/licenses/by-sa/4.0",
+        "https://ifrcstaysafe.org/dangerous-situations/mines",
+        "https://commons.wikimedia.org/wiki/File:Claymore_mine,_AHM,_2024-04-28.jpg"
+      ]
+    },
+    {
+      "group": 2,
+      "cardIds": [
+        "eng-type-72p-av",
+        "ref-v8-za-type72-at"
+      ],
+      "titles": [
+        "Type 72 (P), противотранспортная",
+        "Type 72 AT (ЮАР)"
+      ],
+      "imageReferences": [
+        {
+          "cardId": "eng-type-72p-av",
+          "imageId": "reference-v6-d8d4c004d007a523",
+          "path": "images/reference-v6-d8d4c004d007a523.webp"
+        },
+        {
+          "cardId": "ref-v8-za-type72-at",
+          "imageId": "v40-za-type72-at-family",
+          "path": "images/reference-v6-d8d4c004d007a523.webp"
+        }
+      ],
+      "decision": "retain-qualified-reference",
+      "basis": "Китайская Type 72 показана как явно подписанный семейный ориентир для производного изделия; точное исполнение не заявлено.",
+      "sources": [
+        "https://www.jmu.edu/cisr/research/munitions-guide.shtml",
+        "https://odin.t2com.army.mil/WEG/Asset/8d9d8cfa72606d33e8c8db24bcceb910",
+        "https://www.jmu.edu/cisr/research/iraq-oig/08-landmine.pdf",
+        "https://www.hrw.org/reports/1997/safrica/Sarmines-04.htm",
+        "https://www.hrw.org/reports/1999/landmine/WEBAFR1.html",
+        "https://tksu.ru/upload/iblock/23b/vvmthi12mwg7as99z6d2ob81zq2t2p35/Inostrannye-miny.pdf",
+        "https://upload.wikimedia.org/wikipedia/commons/1/1f/WorldwideEquipmentGuide_2015_Ground_Systems.pdf"
+      ]
+    },
+    {
+      "group": 3,
+      "cardIds": [
+        "eng-type-72-ap-family",
+        "ref-v8-za-type72-ap",
+        "mine-audit-v25-cn-gld-111"
+      ],
+      "titles": [
+        "Type 72 A/B/C (противопехотная ветвь)",
+        "Type 72 AP (ЮАР)",
+        "GLD-111"
+      ],
+      "imageReferences": [
+        {
+          "cardId": "eng-type-72-ap-family",
+          "imageId": "reference-v6-a4d351ef75f690ec",
+          "path": "images/reference-v6-a4d351ef75f690ec.webp"
+        },
+        {
+          "cardId": "ref-v8-za-type72-ap",
+          "imageId": "v40-za-type72-ap-family",
+          "path": "images/reference-v6-a4d351ef75f690ec.webp"
+        },
+        {
+          "cardId": "mine-audit-v25-cn-gld-111",
+          "imageId": "mine-audit-v25-cn-gld-111-family-v41",
+          "path": "images/reference-v6-a4d351ef75f690ec.webp"
+        }
+      ],
+      "decision": "retain-qualified-reference",
+      "basis": "В подписи отдельно оговорены неоднозначность GLD-111 и ориентир Type 72. Общая фотография не подтверждает точную модификацию.",
+      "sources": [
+        "https://www.jmu.edu/cisr/research/iraq-oig/08-landmine.pdf",
+        "https://www.iwm.org.uk/collections/item/object/30019725",
+        "https://www.gichd.org/publications-resources/publications/explosive-ordnance-guide-for-ukraine-third-edition/",
+        "https://ifrcstaysafe.org/dangerous-situations/mines",
+        "https://nolandmines.com/explosive_hazards/minestype72ap.htm",
+        "https://tksu.ru/upload/iblock/23b/vvmthi12mwg7as99z6d2ob81zq2t2p35/Inostrannye-miny.pdf",
+        "https://www.hrw.org/reports/1999/landmine/WEBAFR1.html",
+        "https://www.jmu.edu/cisr/research/munitions-guide.shtml",
+        "https://www.globalsecurity.org/military/library/policy/army/fm/3-34-2/appb.htm",
+        "https://www.nuui.com/Sections/Military/Field_Manuals/FM3-34_2/appb.htm",
+        "https://www.tanleiqi.com/show.asp?id=15",
+        "https://www.bits.de/NRANEU/others/amd-us-archive/fm3-34.2%2802%29.pdf"
+      ]
+    },
+    {
+      "group": 4,
+      "cardIds": [
+        "eng-p3-mk2-pk",
+        "ordnance-v27-p3-jumping-pakistan"
+      ],
+      "titles": [
+        "P3 Mk2",
+        "P3 Jumping (Пакистан)"
+      ],
+      "imageReferences": [
+        {
+          "cardId": "eng-p3-mk2-pk",
+          "imageId": "reference-v6-7aa1d40e62a47bd9",
+          "path": "images/reference-v6-7aa1d40e62a47bd9.webp"
+        },
+        {
+          "cardId": "ordnance-v27-p3-jumping-pakistan",
+          "imageId": "v40-p3-jumping-family-mk2",
+          "path": "images/reference-v6-7aa1d40e62a47bd9.webp"
+        }
+      ],
+      "decision": "withdraw-unrelated-image",
+      "basis": "В карточке P3 Jumping был снимок противотанковой P3 Mk2. Ни тождество модели, ни семейная связь не подтверждены; ошибочная привязка удалена.",
+      "sources": [
+        "https://nolandmines.com/PDF_files/MetalDetectorHandbook.pdf",
+        "https://www.gichd.org/publications-resources/publications/explosive-ordnance-guide-for-ukraine-third-edition/",
+        "https://ifrcstaysafe.org/dangerous-situations/mines",
+        "https://the-monitor.org/country-profile/pakistan/mine-ban-policy",
+        "https://nirmt.com/storage/uploads/E-BOOK_BE-AUTOMOBILE/Desert%20Shield.%20Mine%20Recognition%20and%20Warfare%20Handbook.pdf",
+        "https://tksu.ru/upload/iblock/23b/vvmthi12mwg7as99z6d2ob81zq2t2p35/Inostrannye-miny.pdf",
+        "https://the-monitor.org/country-profile/pakistan/mine-ban-policy?year=2023"
+      ]
+    },
+    {
+      "group": 5,
+      "cardIds": [
+        "eng-saci-54-family",
+        "eng-pdf-v7-127"
+      ],
+      "titles": [
+        "SACI 54 (семейство)",
+        "SACI IMAS"
+      ],
+      "imageReferences": [
+        {
+          "cardId": "eng-saci-54-family",
+          "imageId": "eng-saci-54-family-v19-0",
+          "path": "images/eng-saci-54-family-v19-0.webp"
+        },
+        {
+          "cardId": "eng-pdf-v7-127",
+          "imageId": "v40-saci-imas-family",
+          "path": "images/eng-saci-54-family-v19-0.webp"
+        }
+      ],
+      "decision": "retain-qualified-reference",
+      "basis": "SACI-54 и SACI IMAS снабжены явными оговорками об общем семейном изображении.",
+      "sources": [
+        "https://www.bulletpicker.com/pdf/TM-5-280-1971.pdf",
+        "https://cat-uxo.com/explosive-hazards/landmines/saci-landmine",
+        "https://www.gichd.org/publications-resources/publications/explosive-ordnance-guide-for-ukraine-third-edition/",
+        "https://ifrcstaysafe.org/dangerous-situations/mines",
+        "https://tksu.ru/upload/iblock/23b/vvmthi12mwg7as99z6d2ob81zq2t2p35/Inostrannye-miny.pdf"
+      ]
+    },
+    {
+      "group": 6,
+      "cardIds": [
+        "eng-pdf-v7-088",
+        "mine-audit-v25-us-mk-63-quickstrike"
+      ],
+      "titles": [
+        "Quickstrike",
+        "Mk 63 Quickstrike"
+      ],
+      "imageReferences": [
+        {
+          "cardId": "eng-pdf-v7-088",
+          "imageId": "eng-pdf-v7-088-v13-1",
+          "path": "images/eng-pdf-v7-088-v13-1.webp"
+        },
+        {
+          "cardId": "mine-audit-v25-us-mk-63-quickstrike",
+          "imageId": "mine-audit-v25-us-mk-63-quickstrike-pass18-0",
+          "path": "images/eng-pdf-v7-088-v13-1.webp"
+        }
+      ],
+      "decision": "retain-qualified-reference",
+      "basis": "Обзор Quickstrike и конкретная Mk 63 используют именованный снимок US Navy; в обзоре это пример исполнения.",
+      "sources": [
+        "https://news.usni.org/2019/11/05/u-s-naval-offensive-mining-updates-will-focus-on-sub-community-tactics-smart-mines",
+        "https://www.check-six.com/lib/NavEdTra-14313.pdf",
+        "https://www.navy.mil/Resources/Fact-Files/Display-FactFiles/Article/2167942/us-navy-mines/"
+      ]
+    },
+    {
+      "group": 7,
+      "cardIds": [
+        "ref-v8-tm-46",
+        "ordnance-v27-atm-46-kndr"
+      ],
+      "titles": [
+        "ТМ-46",
+        "ATM-46 (КНДР)"
+      ],
+      "imageReferences": [
+        {
+          "cardId": "ref-v8-tm-46",
+          "imageId": "ref-v8-tm-46-v13-0",
+          "path": "images/ref-v8-tm-46-v13-0.webp"
+        },
+        {
+          "cardId": "ordnance-v27-atm-46-kndr",
+          "imageId": "v40-atm46-family-tm46",
+          "path": "images/ref-v8-tm-46-v13-0.webp"
+        }
+      ],
+      "decision": "retain-qualified-reference",
+      "basis": "ATM-46 снабжена явной подписью об ориентире ТМ-46; точный северокорейский образец не заявлен.",
+      "sources": [
+        "https://www.bulletpicker.com/pdf/HALO-Land-Mines-Identification-Guide.pdf",
+        "https://bibliomines.org/wp-content/uploads/TM_46.pdf",
+        "https://en.wikipedia.org/wiki/File:TM-46_AP-mine.JPEG",
+        "https://www.jmu.edu/cisr/research/munitions-guide.shtml",
+        "https://www.rulit.me/books/minnoe-oruzhie-voprosy-minirovaniya-i-razminirovaniya-read-703907-51.html",
+        "https://commons.wikimedia.org/wiki/File:TM-46_AP-mine.JPEG"
+      ]
+    },
+    {
+      "group": 8,
+      "cardIds": [
+        "ref-v8-tmn-46",
+        "ordnance-v27-atm-46n-kndr"
+      ],
+      "titles": [
+        "ТМН-46",
+        "ATM-46N (КНДР)"
+      ],
+      "imageReferences": [
+        {
+          "cardId": "ref-v8-tmn-46",
+          "imageId": "ref-v8-tmn-46-v14-0",
+          "path": "images/ref-v8-tmn-46-v14-0.webp"
+        },
+        {
+          "cardId": "ordnance-v27-atm-46n-kndr",
+          "imageId": "v40-atm46n-family-tmn46",
+          "path": "images/ref-v8-tmn-46-v14-0.webp"
+        }
+      ],
+      "decision": "retain-qualified-reference",
+      "basis": "ATM-46N снабжена явной подписью об ориентире ТМН-46; точный образец не заявлен.",
+      "sources": [
+        "https://bibliomines.org/wp-content/uploads/TMN_46.pdf",
+        "https://www.imfdb.org/wiki/TM-46_anti-tank_mine",
+        "https://metis.fenixinsight.com/munition/mine/atm-46n",
+        "https://www.rulit.me/books/minnoe-oruzhie-voprosy-minirovaniya-i-razminirovaniya-read-703907-51.html",
+        "https://www.jmu.edu/cisr/research/munitions-guide.shtml",
+        "https://www.imfdb.org/wiki/TMN-46"
+      ]
+    },
+    {
+      "group": 9,
+      "cardIds": [
+        "ref-v9-su-tm41",
+        "ordnance-v27-atm-41-kndr"
+      ],
+      "titles": [
+        "ТМ-41",
+        "ATM-41 (КНДР)"
+      ],
+      "imageReferences": [
+        {
+          "cardId": "ref-v9-su-tm41",
+          "imageId": "ref-v9-su-tm41-v13-0",
+          "path": "images/ref-v9-su-tm41-v13-0.webp"
+        },
+        {
+          "cardId": "ordnance-v27-atm-41-kndr",
+          "imageId": "v40-atm41-family-tm41",
+          "path": "images/ref-v9-su-tm41-v13-0.webp"
+        }
+      ],
+      "decision": "retain-qualified-reference",
+      "basis": "ATM-41 снабжена явной подписью об ориентире ТМ-41; точный образец не заявлен.",
+      "sources": [
+        "https://www.bulletpicker.com/pdf/TM-5-280-1971.pdf",
+        "https://www.hrw.org/reports/1999/landmine/WEBAS3.html",
+        "https://www.jmu.edu/cisr/research/munitions-guide.shtml",
+        "https://en.wikipedia.org/wiki/File:TM-41_1_(ORDATA).jpg",
+        "https://www.rulit.me/books/minnoe-oruzhie-voprosy-minirovaniya-i-razminirovaniya-read-703907-51.html",
+        "https://commons.wikimedia.org/wiki/File:TM-41_1_(ORDATA).jpg"
+      ]
+    },
+    {
+      "group": 10,
+      "cardIds": [
+        "ref-v9-su-ozm3",
+        "ref-v9-su-ozm4"
+      ],
+      "titles": [
+        "ОЗМ-3",
+        "ОЗМ-4"
+      ],
+      "imageReferences": [
+        {
+          "cardId": "ref-v9-su-ozm3",
+          "imageId": "ref-v9-su-ozm3-v13-0",
+          "path": "images/ref-v9-su-ozm3-v13-0.webp"
+        },
+        {
+          "cardId": "ref-v9-su-ozm4",
+          "imageId": "ref-v9-su-ozm4-v13-0",
+          "path": "images/ref-v9-su-ozm4-v13-0.webp"
+        }
+      ],
+      "decision": "retain-qualified-reference",
+      "basis": "Групповой музейный кадр перечисляет ОЗМ-3 и ОЗМ-4 и поясняет их положение в кадре.",
+      "sources": [
+        "https://www.bulletpicker.com/pdf/HALO-Land-Mines-Identification-Guide.pdf",
+        "https://www.hrw.org/reports/1999/landmine/WEBAS3.html",
+        "https://www.jmu.edu/cisr/research/munitions-guide.shtml",
+        "https://en.wikipedia.org/wiki/File:OZM_3,_4_und_72.jpg"
+      ]
+    },
+    {
+      "group": 11,
+      "cardIds": [
+        "ref-v10-artillery-lu215",
+        "ref-v10-artillery-lu216"
+      ],
+      "titles": [
+        "LU215 — 155-мм осветительный снаряд",
+        "LU216 — 155-мм инфракрасный осветительный снаряд"
+      ],
+      "imageReferences": [
+        {
+          "cardId": "ref-v10-artillery-lu215",
+          "imageId": "ref-v10-artillery-lu215-v21-0",
+          "path": "images/ref-v10-artillery-lu215-v21-0.webp"
+        },
+        {
+          "cardId": "ref-v10-artillery-lu216",
+          "imageId": "ref-v10-artillery-lu216-v21-0",
+          "path": "images/ref-v10-artillery-lu216-v21-0.webp"
+        }
+      ],
+      "decision": "retain-qualified-reference",
+      "basis": "Групповой кадр LU-215 и LU-216 поясняет положение изделий; одна фотография относится к обеим карточкам.",
+      "sources": [
+        "https://knds.com/en/products/ammunition/155mm-ammunition",
+        "https://knds.com/en/subsidiaries/knds-ammo-france",
+        "https://www.armyrecognition.com/archives/archives-land-defense/land-defense-2024/nexter-nammo-and-vak-receive-eur-41mn-from-eu-to-increase-artillery-ammunition-for-ukraine"
+      ]
+    },
+    {
+      "group": 12,
+      "cardIds": [
+        "mine-audit-v25-su-tmd-44",
+        "ordnance-v27-atm-44-kndr"
+      ],
+      "titles": [
+        "ТМД-44",
+        "ATM-44 (КНДР)"
+      ],
+      "imageReferences": [
+        {
+          "cardId": "mine-audit-v25-su-tmd-44",
+          "imageId": "v40-tmd44-exact-halo",
+          "path": "images/v40-tmd44-halo-guide.webp"
+        },
+        {
+          "cardId": "ordnance-v27-atm-44-kndr",
+          "imageId": "v40-atm44-family-tmd44",
+          "path": "images/v40-tmd44-halo-guide.webp"
+        }
+      ],
+      "decision": "retain-qualified-reference",
+      "basis": "ATM-44 показана с явной оговоркой об ориентире ТМД-44.",
+      "sources": [
+        "https://www.bulletpicker.com/pdf/PAM-30-60-1-Part-3-Vol-2.pdf",
+        "https://www.scribd.com/document/424403569/TM-5-280-Foreign-Mine-Warfare-Equipment-1971",
+        "https://www.halotrust.org/media/3278/land-mines-identification-guide.pdf",
+        "https://metis.fenixinsight.com/munition/mine/atm-44",
+        "https://www.rulit.me/books/minnoe-oruzhie-voprosy-minirovaniya-i-razminirovaniya-read-703907-51.html",
+        "https://www.jmu.edu/cisr/research/munitions-guide.shtml",
+        "https://www.hrw.org/sites/default/files/related_material/memo_dec2001.pdf"
+      ]
+    },
+    {
+      "group": 13,
+      "cardIds": [
+        "mine-audit-v25-fr-mle-1951",
+        "mine-audit-v25-fr-mle-1955"
+      ],
+      "titles": [
+        "Mle 1951",
+        "Mle 1955"
+      ],
+      "imageReferences": [
+        {
+          "cardId": "mine-audit-v25-fr-mle-1951",
+          "imageId": "photo-v154-e46400c028fa0c0f",
+          "path": "images/photo-v154-e46400c028fa0c0f.webp"
+        },
+        {
+          "cardId": "mine-audit-v25-fr-mle-1955",
+          "imageId": "photo-v154-05652c8f7e3319d1",
+          "path": "images/photo-v154-05652c8f7e3319d1.webp"
+        }
+      ],
+      "decision": "retain-qualified-reference",
+      "basis": "Общий рисунок Mle 1951 / Mle 1955 уже отмечен как не устанавливающий точную модификацию.",
+      "sources": [
+        "https://www.bulletpicker.com/pdf/TM-5-280-1971.pdf",
+        "https://www.bits.de/NRANEU/others/amd-us-archive/fm3-34.2(02).pdf",
+        "https://www.globalsecurity.org/military/library/policy/army/fm/3-34-2/appb.htm",
+        "https://www.bulletpicker.com/pdf/TM-5-280-1971.pdf#page=251"
+      ]
+    },
+    {
+      "group": 14,
+      "cardIds": [
+        "mine-audit-v26-su-udm",
+        "mine-audit-v26-su-udm-m"
+      ],
+      "titles": [
+        "УДМ / УДМ-Э",
+        "УДМ-М"
+      ],
+      "imageReferences": [
+        {
+          "cardId": "mine-audit-v26-su-udm",
+          "imageId": "mine-audit-v26-su-udm-e-allmines-museum",
+          "path": "images/mine-udm-e-allmines-museum.webp"
+        },
+        {
+          "cardId": "mine-audit-v26-su-udm-m",
+          "imageId": "v40-udm-m-family-udm-e",
+          "path": "images/mine-udm-e-allmines-museum.webp"
+        }
+      ],
+      "decision": "retain-qualified-reference",
+      "basis": "Музейная УДМ-Э используется с явными семейными оговорками для УДМ и УДМ-М.",
+      "sources": [
+        "https://oboron-prom.ru/page%2C54%2Cpredpriyatiya-351-400.html",
+        "https://www.jmu.edu/cisr/research/iraq-oig/11-naval-mine.pdf",
+        "https://studfile.net/preview/8967788/page:7/",
+        "https://war-russia.info/index.php/nomenklatura-vooruzhenij/67-vmf/oruzhie-vmf/miny",
+        "https://allmines.net/catalog/russia/mines/udme/",
+        "https://allmines.net/catalog/russia/nii/vainer/",
+        "https://www.rusarmy.com/forum/threads/morskie-miny.7367/",
+        "https://war-russia.info/index.php/nomenklatura-vooruzhenij/387-vmf/oruzhie-vmf/miny/donnye-pridonnye-i-samodvizhushchiesya-miny/2325-donnye-miny-udm-udm-500-1961-65g-2"
+      ]
+    },
+    {
+      "group": 15,
+      "cardIds": [
+        "mine-audit-v26-su-pmr-2m",
+        "mine-audit-v26-su-pmr-2u"
+      ],
+      "titles": [
+        "ПМР-2М",
+        "ПМР-2У (учебная)"
+      ],
+      "imageReferences": [
+        {
+          "cardId": "mine-audit-v26-su-pmr-2m",
+          "imageId": "v40-pmr2m-family-pmr2e",
+          "path": "images/v40-pmr2e-allmines.webp"
+        },
+        {
+          "cardId": "mine-audit-v26-su-pmr-2u",
+          "imageId": "v40-pmr2u-family-pmr2e",
+          "path": "images/v40-pmr2e-allmines.webp"
+        }
+      ],
+      "decision": "clarify-caption",
+      "basis": "На кадре разрезной музейный макет ПМР-2Э; подписи уточнены, закрытый вид и суффиксы М/У не подтверждены.",
+      "sources": [
+        "https://www.gidropribor.ru/upload/iblock/1e4/SBORNIK-2020.pdf",
+        "https://allmines.net/catalog/russia/nii/wolfson/",
+        "https://www.gidropribor.ru/netcat_files/userfiles/PMO_250_2020.pdf",
+        "https://oboron-prom.ru/page%2C54%2Cpredpriyatiya-351-400.html"
+      ]
+    },
+    {
+      "group": 16,
+      "cardIds": [
+        "ordnance-v27-155-mm-m692-m731-adam",
+        "ordnance-v29-ga-0077"
+      ],
+      "titles": [
+        "155-мм M692 / M731 ADAM",
+        "155 мм M731"
+      ],
+      "imageReferences": [
+        {
+          "cardId": "ordnance-v27-155-mm-m692-m731-adam",
+          "imageId": "exterior-190-f6e51cfda618c3ee",
+          "path": "images/exterior-190-f6e51cfda618c3ee.webp"
+        },
+        {
+          "cardId": "ordnance-v29-ga-0077",
+          "imageId": "exterior-190-e27aaac197cc579d",
+          "path": "images/exterior-190-e27aaac197cc579d.webp"
+        }
+      ],
+      "decision": "clarify-caption",
+      "basis": "Лист Армии США называет M731; в обзорной статье M692 / M731 подпись уточнена до конкретного показанного исполнения.",
+      "sources": [
+        "https://archive.org/details/milmanual-tm-43-0001-28-army-ammunition-data-sheets",
+        "https://www.bulletpicker.com/pdf/TM-43-0001-28-1994.pdf",
+        "https://www.gichd.org/publications-resources/publications-and-reports/explosive-ordnance-guide-for-ukraine-third-edition/",
+        "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf"
+      ],
+      "checkedPdfPage": 354
+    },
+    {
+      "group": 17,
+      "cardIds": [
+        "ordnance-v27-vog-17-vog-17m",
+        "ordnance-v27-vog-25"
+      ],
+      "titles": [
+        "ВОГ-17 / ВОГ-17М",
+        "ВОГ-25"
+      ],
+      "imageReferences": [
+        {
+          "cardId": "ordnance-v27-vog-17-vog-17m",
+          "imageId": "ordnance-v27-vog-17-sesu-ccby4",
+          "path": "images/grenade-vog17-vog25-sesu-ccby4.webp"
+        },
+        {
+          "cardId": "ordnance-v27-vog-25",
+          "imageId": "ordnance-v27-vog-25-sesu-ccby4",
+          "path": "images/grenade-vog17-vog25-sesu-ccby4.webp"
+        }
+      ],
+      "decision": "retain-qualified-reference",
+      "basis": "Групповой плакат ГСЧС подписывает ВОГ-17 и ВОГ-25; изображения не выданы за один вариант.",
+      "sources": [
+        "https://commons.wikimedia.org/wiki/File:!_Explosive_objects_in_War_in_Ukraine,_2022_(15).jpg",
+        "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+        "https://www.gichd.org/publications-resources/publications-and-reports/explosive-ordnance-guide-for-ukraine-third-edition/"
+      ]
+    },
+    {
+      "group": 18,
+      "cardIds": [
+        "ordnance-v27-m1-he-105-mm-snaryad",
+        "ordnance-v29-ga-0027"
+      ],
+      "titles": [
+        "M1 HE — 105-мм снаряд",
+        "105 мм M1"
+      ],
+      "imageReferences": [
+        {
+          "cardId": "ordnance-v27-m1-he-105-mm-snaryad",
+          "imageId": "exterior-190-6a5b05a4be1afe2c",
+          "path": "images/exterior-190-6a5b05a4be1afe2c.webp"
+        },
+        {
+          "cardId": "ordnance-v29-ga-0027",
+          "imageId": "exterior-190-b1cbd08523a72e7f",
+          "path": "images/exterior-190-b1cbd08523a72e7f.webp"
+        }
+      ],
+      "decision": "retain-qualified-reference",
+      "basis": "Обзор семейства M1 и отдельная американская M1 имеют разный охват; соответствие одинакового рисунка названию сохранено.",
+      "sources": [
+        "https://archive.org/details/milmanual-tm-43-0001-28-army-ammunition-data-sheets",
+        "https://archive.org/download/milmanual-tm-43-0001-28-army-ammunition-data-sheets/tm_43-0001-28_army_ammunition_data_sheets.pdf",
+        "https://www.cpeae.army.mil/Project-Offices/PM-CAS/Organizations/CONVENTIONAL-AMMUNITION/Products/ARTILLERY-AMMO/",
+        "https://www.gichd.org/publications-resources/publications-and-reports/explosive-ordnance-guide-for-ukraine-third-edition/",
+        "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+        "https://www.bulletpicker.com/pdf/TM-43-0001-28-1994.pdf"
+      ]
+    },
+    {
+      "group": 19,
+      "cardIds": [
+        "ordnance-v27-m549-hera-155-mm-snaryad",
+        "ordnance-v29-ga-0071",
+        "ordnance-v29-ga-0072"
+      ],
+      "titles": [
+        "M549 HERA — 155-мм снаряд",
+        "155 мм M549",
+        "155 мм M549A1"
+      ],
+      "imageReferences": [
+        {
+          "cardId": "ordnance-v27-m549-hera-155-mm-snaryad",
+          "imageId": "exterior-190-14b4165aa770c5c1",
+          "path": "images/exterior-190-14b4165aa770c5c1.webp"
+        },
+        {
+          "cardId": "ordnance-v29-ga-0071",
+          "imageId": "exterior-190-504bb478b5542f96",
+          "path": "images/exterior-190-504bb478b5542f96.webp"
+        },
+        {
+          "cardId": "ordnance-v29-ga-0072",
+          "imageId": "exterior-190-a38f2ffd025a1aec",
+          "path": "images/exterior-190-a38f2ffd025a1aec.webp"
+        }
+      ],
+      "decision": "retain-qualified-reference",
+      "basis": "На исходном листе Армии США совместно названы M549 и M549A1; один наружный рисунок используется как семейный.",
+      "sources": [
+        "https://archive.org/details/milmanual-tm-43-0001-28-army-ammunition-data-sheets",
+        "https://www.bulletpicker.com/pdf/TM-43-0001-28-1994.pdf",
+        "https://www.gichd.org/publications-resources/publications-and-reports/explosive-ordnance-guide-for-ukraine-third-edition/",
+        "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+        "https://archive.org/download/milmanual-tm-43-0001-28-army-ammunition-data-sheets/tm_43-0001-28_army_ammunition_data_sheets.pdf",
+        "https://jpeoaa.army.mil/Portals/94/Documents/JPEOAAPortfolioBook_2025.pdf"
+      ],
+      "checkedPdfPage": 330
+    },
+    {
+      "group": 20,
+      "cardIds": [
+        "ordnance-v27-m718-m741-raam-155-mm-snaryady",
+        "ordnance-v29-ga-0078"
+      ],
+      "titles": [
+        "M718 / M741 RAAM — 155-мм снаряды",
+        "155 мм M741"
+      ],
+      "imageReferences": [
+        {
+          "cardId": "ordnance-v27-m718-m741-raam-155-mm-snaryady",
+          "imageId": "exterior-190-4652339a70ec3a58",
+          "path": "images/exterior-190-4652339a70ec3a58.webp"
+        },
+        {
+          "cardId": "ordnance-v29-ga-0078",
+          "imageId": "exterior-190-2520fd3a53ba459a",
+          "path": "images/exterior-190-2520fd3a53ba459a.webp"
+        }
+      ],
+      "decision": "clarify-caption",
+      "basis": "Лист Армии США называет M741; в обзоре M718 / M741 подпись уточнена до конкретного показанного исполнения.",
+      "sources": [
+        "https://archive.org/details/milmanual-tm-43-0001-28-army-ammunition-data-sheets",
+        "https://www.bulletpicker.com/pdf/TM-43-0001-28-1994.pdf",
+        "https://www.gichd.org/publications-resources/publications-and-reports/explosive-ordnance-guide-for-ukraine-third-edition/",
+        "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf"
+      ],
+      "checkedPdfPage": 358
+    },
+    {
+      "group": 21,
+      "cardIds": [
+        "ordnance-v27-100-mm-at-mine-vetnam",
+        "ordnance-v27-150-mm-at-mine-vetnam",
+        "ordnance-v27-200-mm-at-mine-vetnam"
+      ],
+      "titles": [
+        "100-mm AT Mine (Вьетнам)",
+        "150-mm AT Mine (Вьетнам)",
+        "200-mm AT Mine (Вьетнам)"
+      ],
+      "imageReferences": [
+        {
+          "cardId": "ordnance-v27-100-mm-at-mine-vetnam",
+          "imageId": "photo-v155-1eb90e76f361f386",
+          "path": "images/photo-v155-1eb90e76f361f386.webp"
+        },
+        {
+          "cardId": "ordnance-v27-150-mm-at-mine-vetnam",
+          "imageId": "photo-v155-8ca8e4512b4380a6",
+          "path": "images/photo-v155-8ca8e4512b4380a6.webp"
+        },
+        {
+          "cardId": "ordnance-v27-200-mm-at-mine-vetnam",
+          "imageId": "photo-v155-d92591c84aeef1ce",
+          "path": "images/photo-v155-d92591c84aeef1ce.webp"
+        }
+      ],
+      "decision": "clarify-caption",
+      "basis": "Исходная иллюстрация общая для размерной линии 100/150/200 мм. Подписи исправлены: это справочный схематический рисунок, не фотография закрытого изделия.",
+      "sources": [
+        "https://www.jmu.edu/cisr/research/munitions-guide.shtml",
+        "https://tksu.ru/upload/iblock/23b/vvmthi12mwg7as99z6d2ob81zq2t2p35/Inostrannye-miny.pdf",
+        "https://www.bulletpicker.com/pdf/TM-5-280-1971.pdf"
+      ]
+    },
+    {
+      "group": 22,
+      "cardIds": [
+        "ordnance-v29-ga-0018",
+        "ordnance-v29-ga-0019"
+      ],
+      "titles": [
+        "M920 — артиллерийский взрыватель",
+        "M950 — артиллерийский взрыватель"
+      ],
+      "imageReferences": [
+        {
+          "cardId": "ordnance-v29-ga-0018",
+          "imageId": "photo-v153-6d38e7e64500b1a9",
+          "path": "images/photo-v153-6d38e7e64500b1a9.webp"
+        },
+        {
+          "cardId": "ordnance-v29-ga-0019",
+          "imageId": "photo-v153-b680cc3e51d0b8f5",
+          "path": "images/photo-v153-b680cc3e51d0b8f5.webp"
+        }
+      ],
+      "decision": "clarify-caption",
+      "basis": "Из двух заводских PDF Elbit извлечено одинаковое изображение 162×392; SHA-256 обоих JPEG совпадает. Подписи теперь явно говорят об общей фотографии M920/M950.",
+      "sources": [
+        "https://www.elbitsystems.com/sites/default/files/2026-06/m920_web.pdf",
+        "https://www.elbitsystems.com/sites/default/files/2026-06/m920_web.pdf#page=1",
+        "https://www.elbitsystems.com/sites/default/files/2026-06/m950_web.pdf",
+        "https://www.elbitsystems.com/sites/default/files/2026-06/m950_web.pdf#page=1"
+      ]
+    },
+    {
+      "group": 23,
+      "cardIds": [
+        "ordnance-v29-ga-0024",
+        "ordnance-v29-ga-0025"
+      ],
+      "titles": [
+        "OFdMKM BB",
+        "OFdMKM HB"
+      ],
+      "imageReferences": [
+        {
+          "cardId": "ordnance-v29-ga-0024",
+          "imageId": "photo-v155-9e2073a389c731ab",
+          "path": "images/photo-v155-9e2073a389c731ab.webp"
+        },
+        {
+          "cardId": "ordnance-v29-ga-0025",
+          "imageId": "photo-v155-f719c0aecb5584d0",
+          "path": "images/photo-v155-f719c0aecb5584d0.webp"
+        }
+      ],
+      "decision": "retain-qualified-reference",
+      "basis": "Официальная страница DEZAMET использует одну ссылку изображения для HB и BB. Обе существующие подписи уже называют общий семейный вид и не обещают точный вариант.",
+      "sources": [
+        "https://dezamet.com.pl/static/upload/store/ONASPLIKIDOPOBRANIA/katalog_PL_www_2.pdf",
+        "https://dezamet.com.pl/en/products/artillery-ammunition",
+        "https://dezamet.com.pl/produkty/amunicja-artyleryjska"
+      ]
+    },
+    {
+      "group": 24,
+      "cardIds": [
+        "ordnance-v29-ga-0034",
+        "ordnance-v29-ga-0035"
+      ],
+      "titles": [
+        "105 мм M314",
+        "105 мм M314A2"
+      ],
+      "imageReferences": [
+        {
+          "cardId": "ordnance-v29-ga-0034",
+          "imageId": "exterior-190-0c838308476320aa",
+          "path": "images/exterior-190-0c838308476320aa.webp"
+        },
+        {
+          "cardId": "ordnance-v29-ga-0035",
+          "imageId": "exterior-190-fcef517e230be2c9",
+          "path": "images/exterior-190-fcef517e230be2c9.webp"
+        }
+      ],
+      "decision": "retain-qualified-reference",
+      "basis": "Лист Армии США совместно называет M314, M314A2 и M314A2B1; общий вид допустим с существующей оговоркой.",
+      "sources": [
+        "https://archive.org/details/milmanual-tm-43-0001-28-army-ammunition-data-sheets",
+        "https://www.bulletpicker.com/pdf/TM-43-0001-28-1994.pdf",
+        "https://archive.org/download/milmanual-tm-43-0001-28-army-ammunition-data-sheets/tm_43-0001-28_army_ammunition_data_sheets.pdf"
+      ],
+      "checkedPdfPage": 238
+    },
+    {
+      "group": 25,
+      "cardIds": [
+        "ordnance-v29-ga-0084",
+        "ordnance-v29-ga-0085"
+      ],
+      "titles": [
+        "155 мм M825",
+        "155 мм M825A1"
+      ],
+      "imageReferences": [
+        {
+          "cardId": "ordnance-v29-ga-0084",
+          "imageId": "exterior-190-d5d18aa2daf5f2bc",
+          "path": "images/exterior-190-d5d18aa2daf5f2bc.webp"
+        },
+        {
+          "cardId": "ordnance-v29-ga-0085",
+          "imageId": "exterior-190-95cc11970baf14a5",
+          "path": "images/exterior-190-95cc11970baf14a5.webp"
+        }
+      ],
+      "decision": "retain-qualified-reference",
+      "basis": "Лист Армии США совместно называет M825 и M825A1; на общем фрагменте представлены оба исполнения.",
+      "sources": [
+        "https://archive.org/details/milmanual-tm-43-0001-28-army-ammunition-data-sheets",
+        "https://www.bulletpicker.com/pdf/TM-43-0001-28-1994.pdf",
+        "https://archive.org/download/milmanual-tm-43-0001-28-army-ammunition-data-sheets/tm_43-0001-28_army_ammunition_data_sheets.pdf"
+      ],
+      "checkedPdfPage": 376
+    },
+    {
+      "group": 26,
+      "cardIds": [
+        "ordnance-v29-ga-0108",
+        "ordnance-v29-ga-0110",
+        "ordnance-v29-ga-0111"
+      ],
+      "titles": [
+        "GNPO",
+        "NGOS-93",
+        "NGZ-93"
+      ],
+      "imageReferences": [
+        {
+          "cardId": "ordnance-v29-ga-0108",
+          "imageId": "ordnance-v29-ga-0108-polish-family-ccby3",
+          "path": "images/grenade-polish-rifle-family-ccby3.webp"
+        },
+        {
+          "cardId": "ordnance-v29-ga-0110",
+          "imageId": "ordnance-v29-ga-0110-polish-family-ccby3",
+          "path": "images/grenade-polish-rifle-family-ccby3.webp"
+        },
+        {
+          "cardId": "ordnance-v29-ga-0111",
+          "imageId": "ordnance-v29-ga-0111-polish-family-ccby3",
+          "path": "images/grenade-polish-rifle-family-ccby3.webp"
+        }
+      ],
+      "decision": "retain-qualified-reference",
+      "basis": "Групповой музейный кадр перечисляет ГНПО, НГОС-93 и НГЗ-93; в подписи отмечен разрезной макет.",
+      "sources": [
+        "https://dezamet.com.pl/static/upload/store/ONASPLIKIDOPOBRANIA/katalog_PL_www_2.pdf",
+        "https://dezamet.com.pl/en/about-us/prizes-and-awards",
+        "https://commons.wikimedia.org/wiki/File:Granaty-nasadkowe-01.jpg",
+        "https://dezamet.com.pl/en/products/rifle-grenades",
+        "https://dezamet.com.pl/aktualnosci/podsumowanie-roku-2024"
+      ]
+    },
+    {
+      "group": 27,
+      "cardIds": [
+        "ordnance-v29-ga-0127",
+        "ordnance-v29-ga-0128"
+      ],
+      "titles": [
+        "M430",
+        "M430A1 HEDP"
+      ],
+      "imageReferences": [
+        {
+          "cardId": "ordnance-v29-ga-0127",
+          "imageId": "exterior-190-591cb26d57d32ac1",
+          "path": "images/exterior-190-591cb26d57d32ac1.webp"
+        },
+        {
+          "cardId": "ordnance-v29-ga-0128",
+          "imageId": "exterior-190-6add909828cbf154",
+          "path": "images/exterior-190-6add909828cbf154.webp"
+        }
+      ],
+      "decision": "retain-qualified-reference",
+      "basis": "Лист Армии США совместно называет M430 и M430A1. Разные индексы сохранены; общий наружный рисунок не заявлен как индивидуальная фотография.",
+      "sources": [
+        "https://archive.org/details/milmanual-tm-43-0001-28-army-ammunition-data-sheets",
+        "https://www.bulletpicker.com/pdf/TM-43-0001-28-1994.pdf",
+        "https://archive.org/download/milmanual-tm-43-0001-28-army-ammunition-data-sheets/tm_43-0001-28_army_ammunition_data_sheets.pdf",
+        "https://www.gichd.org/publications-resources/publications-and-reports/explosive-ordnance-guide-for-ukraine-third-edition/",
+        "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf"
+      ],
+      "checkedPdfPage": 596
+    },
+    {
+      "group": 28,
+      "cardIds": [
+        "ordnance-v29-ga-0132",
+        "ordnance-v29-ga-0134",
+        "ordnance-v29-ga-0135"
+      ],
+      "titles": [
+        "M583A1",
+        "M661",
+        "M662"
+      ],
+      "imageReferences": [
+        {
+          "cardId": "ordnance-v29-ga-0132",
+          "imageId": "exterior-190-1ab8b476ccc8e9c0",
+          "path": "images/exterior-190-1ab8b476ccc8e9c0.webp"
+        },
+        {
+          "cardId": "ordnance-v29-ga-0134",
+          "imageId": "exterior-190-c927ec93c0525cdc",
+          "path": "images/exterior-190-c927ec93c0525cdc.webp"
+        },
+        {
+          "cardId": "ordnance-v29-ga-0135",
+          "imageId": "exterior-190-96eda9148b661ad1",
+          "path": "images/exterior-190-1ab8b476ccc8e9c0.webp"
+        }
+      ],
+      "decision": "retain-qualified-reference",
+      "basis": "Лист Армии США совместно называет M583A1, M661 и M662. Подписи описывают общий рисунок, не различающий цветовые исполнения.",
+      "sources": [
+        "https://archive.org/details/milmanual-tm-43-0001-28-army-ammunition-data-sheets",
+        "https://www.bulletpicker.com/pdf/TM-43-0001-28-1994.pdf",
+        "https://archive.org/download/milmanual-tm-43-0001-28-army-ammunition-data-sheets/tm_43-0001-28_army_ammunition_data_sheets.pdf"
+      ],
+      "checkedPdfPage": 606
+    },
+    {
+      "group": 29,
+      "cardIds": [
+        "ordnance-v29-ga-0141",
+        "ordnance-v29-ga-0142",
+        "ordnance-v29-ga-0143"
+      ],
+      "titles": [
+        "M713",
+        "M715",
+        "M716"
+      ],
+      "imageReferences": [
+        {
+          "cardId": "ordnance-v29-ga-0141",
+          "imageId": "exterior-190-3d2beeb2518dfcc1",
+          "path": "images/exterior-190-3d2beeb2518dfcc1.webp"
+        },
+        {
+          "cardId": "ordnance-v29-ga-0142",
+          "imageId": "exterior-190-f18b191169b71b0d",
+          "path": "images/exterior-190-f18b191169b71b0d.webp"
+        },
+        {
+          "cardId": "ordnance-v29-ga-0143",
+          "imageId": "exterior-190-023204c627d987d8",
+          "path": "images/exterior-190-023204c627d987d8.webp"
+        }
+      ],
+      "decision": "retain-qualified-reference",
+      "basis": "Лист Армии США совместно называет M713, M715 и M716; существующая оговорка об общем рисунке сохранена.",
+      "sources": [
+        "https://archive.org/details/milmanual-tm-43-0001-28-army-ammunition-data-sheets",
+        "https://www.bulletpicker.com/pdf/TM-43-0001-28-1994.pdf",
+        "https://archive.org/download/milmanual-tm-43-0001-28-army-ammunition-data-sheets/tm_43-0001-28_army_ammunition_data_sheets.pdf"
+      ],
+      "checkedPdfPage": 620
+    },
+    {
+      "group": 30,
+      "cardIds": [
+        "ordnance-v29-ga-0150",
+        "ordnance-v29-ga-0151"
+      ],
+      "titles": [
+        "M22",
+        "M22A2"
+      ],
+      "imageReferences": [
+        {
+          "cardId": "ordnance-v29-ga-0150",
+          "imageId": "exterior-190-b0131717ec219e94",
+          "path": "images/exterior-190-b0131717ec219e94.webp"
+        },
+        {
+          "cardId": "ordnance-v29-ga-0151",
+          "imageId": "exterior-190-35e518980c2d7b1b",
+          "path": "images/exterior-190-35e518980c2d7b1b.webp"
+        }
+      ],
+      "decision": "retain-qualified-reference",
+      "basis": "Лист TM 43-0001-29 совместно представляет M22 и M22A2; общий документальный рисунок подписан как семейный.",
+      "sources": [
+        "https://archive.org/details/milmanual-tm-43-0001-29-army-ammunition-data-sheets-for-grenades",
+        "https://www.bulletpicker.com/pdf/TM-43-0001-29.pdf",
+        "https://www.militarynewbie.com/wp-content/uploads/2013/11/TM-43-0001-29-Army-Ammunition-Data-Sheets-for-Grenades.pdf"
+      ]
+    },
+    {
+      "group": 31,
+      "cardIds": [
+        "ordnance-v29-ga-0152",
+        "ordnance-v29-ga-0153"
+      ],
+      "titles": [
+        "M23 — винтовочная сигнальная граната",
+        "M23A1"
+      ],
+      "imageReferences": [
+        {
+          "cardId": "ordnance-v29-ga-0152",
+          "imageId": "exterior-190-d1c597ef54a09789",
+          "path": "images/exterior-190-d1c597ef54a09789.webp"
+        },
+        {
+          "cardId": "ordnance-v29-ga-0153",
+          "imageId": "exterior-190-a1052f8f4bfeb549",
+          "path": "images/exterior-190-a1052f8f4bfeb549.webp"
+        }
+      ],
+      "decision": "retain-qualified-reference",
+      "basis": "Лист TM 43-0001-29 совместно представляет M23 и M23A1; общий документальный рисунок подписан как семейный.",
+      "sources": [
+        "https://archive.org/details/milmanual-tm-43-0001-29-army-ammunition-data-sheets-for-grenades",
+        "https://www.bulletpicker.com/pdf/TM-43-0001-29.pdf",
+        "https://www.militarynewbie.com/wp-content/uploads/2013/11/TM-43-0001-29-Army-Ammunition-Data-Sheets-for-Grenades.pdf"
+      ]
+    },
+    {
+      "group": 32,
+      "cardIds": [
+        "ordnance-v29-ga-0166",
+        "ordnance-v29-ga-0167"
+      ],
+      "titles": [
+        "M7",
+        "M7A1"
+      ],
+      "imageReferences": [
+        {
+          "cardId": "ordnance-v29-ga-0166",
+          "imageId": "exterior-190-db12eec1d8fda3ff",
+          "path": "images/exterior-190-db12eec1d8fda3ff.webp"
+        },
+        {
+          "cardId": "ordnance-v29-ga-0167",
+          "imageId": "exterior-190-c55b66a84d045830",
+          "path": "images/exterior-190-c55b66a84d045830.webp"
+        }
+      ],
+      "decision": "retain-qualified-reference",
+      "basis": "Лист TM 43-0001-29 совместно представляет M7 и M7A1; общий документальный рисунок подписан как семейный.",
+      "sources": [
+        "https://archive.org/details/milmanual-tm-43-0001-29-army-ammunition-data-sheets-for-grenades",
+        "https://www.bulletpicker.com/pdf/TM-43-0001-29.pdf",
+        "https://www.militarynewbie.com/wp-content/uploads/2013/11/TM-43-0001-29-Army-Ammunition-Data-Sheets-for-Grenades.pdf"
+      ]
+    },
+    {
+      "group": 33,
+      "cardIds": [
+        "ordnance-v29-ga-0176",
+        "ordnance-v29-ga-0178"
+      ],
+      "titles": [
+        "M33A1",
+        "M59"
+      ],
+      "imageReferences": [
+        {
+          "cardId": "ordnance-v29-ga-0176",
+          "imageId": "exterior-190-74520cea266b64c3",
+          "path": "images/exterior-190-74520cea266b64c3.webp"
+        },
+        {
+          "cardId": "ordnance-v29-ga-0178",
+          "imageId": "exterior-190-eb4ab0383afa6a38",
+          "path": "images/exterior-190-eb4ab0383afa6a38.webp"
+        }
+      ],
+      "decision": "retain-qualified-reference",
+      "basis": "Лист TM 43-0001-29 совместно представляет M33A1 и M59; общий документальный рисунок подписан как семейный.",
+      "sources": [
+        "https://archive.org/details/milmanual-tm-43-0001-29-army-ammunition-data-sheets-for-grenades",
+        "https://www.bulletpicker.com/pdf/TM-43-0001-29.pdf",
+        "https://www.militarynewbie.com/wp-content/uploads/2013/11/TM-43-0001-29-Army-Ammunition-Data-Sheets-for-Grenades.pdf"
+      ]
+    },
+    {
+      "group": 34,
+      "cardIds": [
+        "ordnance-v29-ga-0201",
+        "ordnance-v29-ga-0202",
+        "ordnance-v29-ga-0206"
+      ],
+      "titles": [
+        "120 мм Nammo practice",
+        "60 мм Nammo practice",
+        "81 мм Nammo practice"
+      ],
+      "imageReferences": [
+        {
+          "cardId": "ordnance-v29-ga-0201",
+          "imageId": "photo-v153-84ca76822c65c830",
+          "path": "images/photo-v153-84ca76822c65c830.webp"
+        },
+        {
+          "cardId": "ordnance-v29-ga-0202",
+          "imageId": "photo-v153-838c66f09125cb03",
+          "path": "images/photo-v153-838c66f09125cb03.webp"
+        },
+        {
+          "cardId": "ordnance-v29-ga-0206",
+          "imageId": "photo-v153-dfe46c32a7eabc20",
+          "path": "images/photo-v153-dfe46c32a7eabc20.webp"
+        }
+      ],
+      "decision": "retain-qualified-reference",
+      "basis": "Страница Nammo Mortar Practice Ammunition охватывает 60, 81 и 120 мм; подписи прямо называют общую иллюстрацию семейства, а не точный калибр.",
+      "sources": [
+        "https://www.nammo.com/wp-content/uploads/2024/09/Nammo-Handbook-2024_08_Web.cleaned.pdf",
+        "https://www.nammo.com/wp-content/uploads/2020/08/nammo-handbook-2023.pdf",
+        "https://www.nammo.com/products/ammunition/large-caliber-ammunition/mortar-rounds/mortar-practice-ammunition/"
+      ]
+    },
+    {
+      "group": 35,
+      "cardIds": [
+        "ordnance-v29-ga-0224",
+        "ordnance-v29-ga-0225"
+      ],
+      "titles": [
+        "4.2-inch M2",
+        "4.2-inch M2A1"
+      ],
+      "imageReferences": [
+        {
+          "cardId": "ordnance-v29-ga-0224",
+          "imageId": "exterior-190-04ed1c6eb968fbeb",
+          "path": "images/exterior-190-04ed1c6eb968fbeb.webp"
+        },
+        {
+          "cardId": "ordnance-v29-ga-0225",
+          "imageId": "exterior-190-47d2cc5994d207bc",
+          "path": "images/exterior-190-47d2cc5994d207bc.webp"
+        }
+      ],
+      "decision": "retain-qualified-reference",
+      "basis": "На указанном листе TM 43-0001-28 совместно названы исполнения группы; один документальный наружный рисунок относится к именованной линии. Существующая оговорка о пределах общего рисунка сохранена.",
+      "sources": [
+        "https://archive.org/details/milmanual-tm-43-0001-28-army-ammunition-data-sheets",
+        "https://www.bulletpicker.com/pdf/TM-43-0001-28-1994.pdf"
+      ],
+      "checkedPdfPage": 496
+    },
+    {
+      "group": 36,
+      "cardIds": [
+        "ordnance-v29-ga-0226",
+        "ordnance-v29-ga-0236"
+      ],
+      "titles": [
+        "4.2-inch M3",
+        "4.2-inch M3A1"
+      ],
+      "imageReferences": [
+        {
+          "cardId": "ordnance-v29-ga-0226",
+          "imageId": "exterior-190-caf482fc4d751cb3",
+          "path": "images/exterior-190-caf482fc4d751cb3.webp"
+        },
+        {
+          "cardId": "ordnance-v29-ga-0236",
+          "imageId": "exterior-190-4128c6b484ce9049",
+          "path": "images/exterior-190-4128c6b484ce9049.webp"
+        }
+      ],
+      "decision": "retain-qualified-reference",
+      "basis": "На указанном листе TM 43-0001-28 совместно названы исполнения группы; один документальный наружный рисунок относится к именованной линии. Существующая оговорка о пределах общего рисунка сохранена.",
+      "sources": [
+        "https://archive.org/details/milmanual-tm-43-0001-28-army-ammunition-data-sheets",
+        "https://www.bulletpicker.com/pdf/TM-43-0001-28-1994.pdf"
+      ],
+      "checkedPdfPage": 498
+    },
+    {
+      "group": 37,
+      "cardIds": [
+        "ordnance-v29-ga-0227",
+        "ordnance-v29-ga-0228"
+      ],
+      "titles": [
+        "4.2-inch M328",
+        "4.2-inch M328A1"
+      ],
+      "imageReferences": [
+        {
+          "cardId": "ordnance-v29-ga-0227",
+          "imageId": "exterior-190-8d958131091745f5",
+          "path": "images/exterior-190-8d958131091745f5.webp"
+        },
+        {
+          "cardId": "ordnance-v29-ga-0228",
+          "imageId": "exterior-190-73db76f15a935b79",
+          "path": "images/exterior-190-73db76f15a935b79.webp"
+        }
+      ],
+      "decision": "retain-qualified-reference",
+      "basis": "На указанном листе TM 43-0001-28 совместно названы исполнения группы; один документальный наружный рисунок относится к именованной линии. Существующая оговорка о пределах общего рисунка сохранена.",
+      "sources": [
+        "https://archive.org/details/milmanual-tm-43-0001-28-army-ammunition-data-sheets",
+        "https://www.bulletpicker.com/pdf/TM-43-0001-28-1994.pdf"
+      ],
+      "checkedPdfPage": 500
+    },
+    {
+      "group": 38,
+      "cardIds": [
+        "ordnance-v29-ga-0229",
+        "ordnance-v29-ga-0232"
+      ],
+      "titles": [
+        "4.2-inch M329",
+        "4.2-inch M329B1"
+      ],
+      "imageReferences": [
+        {
+          "cardId": "ordnance-v29-ga-0229",
+          "imageId": "exterior-190-85447c806ff33fdd",
+          "path": "images/exterior-190-85447c806ff33fdd.webp"
+        },
+        {
+          "cardId": "ordnance-v29-ga-0232",
+          "imageId": "exterior-190-f14f05ae772ec8fa",
+          "path": "images/exterior-190-f14f05ae772ec8fa.webp"
+        }
+      ],
+      "decision": "retain-qualified-reference",
+      "basis": "На указанном листе TM 43-0001-28 совместно названы исполнения группы; один документальный наружный рисунок относится к именованной линии. Существующая оговорка о пределах общего рисунка сохранена.",
+      "sources": [
+        "https://archive.org/details/milmanual-tm-43-0001-28-army-ammunition-data-sheets",
+        "https://www.bulletpicker.com/pdf/TM-43-0001-28-1994.pdf"
+      ],
+      "checkedPdfPage": 502
+    },
+    {
+      "group": 39,
+      "cardIds": [
+        "ordnance-v29-ga-0233",
+        "ordnance-v29-ga-0234"
+      ],
+      "titles": [
+        "4.2-inch M335",
+        "4.2-inch M335A1"
+      ],
+      "imageReferences": [
+        {
+          "cardId": "ordnance-v29-ga-0233",
+          "imageId": "exterior-190-6d2960bc31157c75",
+          "path": "images/exterior-190-6d2960bc31157c75.webp"
+        },
+        {
+          "cardId": "ordnance-v29-ga-0234",
+          "imageId": "exterior-190-aee5afd27fefd47f",
+          "path": "images/exterior-190-aee5afd27fefd47f.webp"
+        }
+      ],
+      "decision": "retain-qualified-reference",
+      "basis": "На указанном листе TM 43-0001-28 совместно названы исполнения группы; один документальный наружный рисунок относится к именованной линии. Существующая оговорка о пределах общего рисунка сохранена.",
+      "sources": [
+        "https://archive.org/details/milmanual-tm-43-0001-28-army-ammunition-data-sheets",
+        "https://www.bulletpicker.com/pdf/TM-43-0001-28-1994.pdf"
+      ],
+      "checkedPdfPage": 508
+    },
+    {
+      "group": 40,
+      "cardIds": [
+        "ordnance-v29-ga-0247",
+        "ordnance-v29-ga-0248"
+      ],
+      "titles": [
+        "60 мм M302A1",
+        "60 мм M302A2"
+      ],
+      "imageReferences": [
+        {
+          "cardId": "ordnance-v29-ga-0247",
+          "imageId": "exterior-190-282a9f17df157567",
+          "path": "images/exterior-190-282a9f17df157567.webp"
+        },
+        {
+          "cardId": "ordnance-v29-ga-0248",
+          "imageId": "exterior-190-d8428c521aee49cb",
+          "path": "images/exterior-190-d8428c521aee49cb.webp"
+        }
+      ],
+      "decision": "retain-qualified-reference",
+      "basis": "На указанном листе TM 43-0001-28 совместно названы исполнения группы; один документальный наружный рисунок относится к именованной линии. Существующая оговорка о пределах общего рисунка сохранена.",
+      "sources": [
+        "https://archive.org/details/milmanual-tm-43-0001-28-army-ammunition-data-sheets",
+        "https://www.bulletpicker.com/pdf/TM-43-0001-28-1994.pdf"
+      ],
+      "checkedPdfPage": 432
+    },
+    {
+      "group": 41,
+      "cardIds": [
+        "ordnance-v29-ga-0249",
+        "ordnance-v29-ga-0250"
+      ],
+      "titles": [
+        "60 мм M49A2",
+        "60 мм M49A3"
+      ],
+      "imageReferences": [
+        {
+          "cardId": "ordnance-v29-ga-0249",
+          "imageId": "exterior-190-17a5b89665ba94e8",
+          "path": "images/exterior-190-17a5b89665ba94e8.webp"
+        },
+        {
+          "cardId": "ordnance-v29-ga-0250",
+          "imageId": "exterior-190-9024331cb9886013",
+          "path": "images/exterior-190-9024331cb9886013.webp"
+        }
+      ],
+      "decision": "retain-qualified-reference",
+      "basis": "На указанном листе TM 43-0001-28 совместно названы исполнения группы; один документальный наружный рисунок относится к именованной линии. Существующая оговорка о пределах общего рисунка сохранена.",
+      "sources": [
+        "https://archive.org/details/milmanual-tm-43-0001-28-army-ammunition-data-sheets",
+        "https://www.bulletpicker.com/pdf/TM-43-0001-28-1994.pdf"
+      ],
+      "checkedPdfPage": 402
+    },
+    {
+      "group": 42,
+      "cardIds": [
+        "ordnance-v29-ga-0259",
+        "ordnance-v29-ga-0260",
+        "ordnance-v29-ga-0261"
+      ],
+      "titles": [
+        "60 мм M83A1",
+        "60 мм M83A2",
+        "60 мм M83A3"
+      ],
+      "imageReferences": [
+        {
+          "cardId": "ordnance-v29-ga-0259",
+          "imageId": "exterior-190-3638b123914f49a2",
+          "path": "images/exterior-190-3638b123914f49a2.webp"
+        },
+        {
+          "cardId": "ordnance-v29-ga-0260",
+          "imageId": "exterior-190-1dbb82ed3bd24fbf",
+          "path": "images/exterior-190-1dbb82ed3bd24fbf.webp"
+        },
+        {
+          "cardId": "ordnance-v29-ga-0261",
+          "imageId": "exterior-190-b29aee660fc17898",
+          "path": "images/exterior-190-b29aee660fc17898.webp"
+        }
+      ],
+      "decision": "retain-qualified-reference",
+      "basis": "На указанном листе TM 43-0001-28 совместно названы исполнения группы; один документальный наружный рисунок относится к именованной линии. Существующая оговорка о пределах общего рисунка сохранена.",
+      "sources": [
+        "https://archive.org/details/milmanual-tm-43-0001-28-army-ammunition-data-sheets",
+        "https://www.bulletpicker.com/pdf/TM-43-0001-28-1994.pdf"
+      ],
+      "checkedPdfPage": 428
+    },
+    {
+      "group": 43,
+      "cardIds": [
+        "ordnance-v29-ga-0271",
+        "ordnance-v29-ga-0272"
+      ],
+      "titles": [
+        "81 мм M301A1",
+        "81 мм M301A2"
+      ],
+      "imageReferences": [
+        {
+          "cardId": "ordnance-v29-ga-0271",
+          "imageId": "exterior-190-495b001ee49e9a33",
+          "path": "images/exterior-190-495b001ee49e9a33.webp"
+        },
+        {
+          "cardId": "ordnance-v29-ga-0272",
+          "imageId": "exterior-190-c6005f96ed8692b5",
+          "path": "images/exterior-190-c6005f96ed8692b5.webp"
+        }
+      ],
+      "decision": "retain-qualified-reference",
+      "basis": "На указанном листе TM 43-0001-28 совместно названы исполнения группы; один документальный наружный рисунок относится к именованной линии. Существующая оговорка о пределах общего рисунка сохранена.",
+      "sources": [
+        "https://archive.org/details/milmanual-tm-43-0001-28-army-ammunition-data-sheets",
+        "https://www.bulletpicker.com/pdf/TM-43-0001-28-1994.pdf"
+      ],
+      "checkedPdfPage": 450
+    },
+    {
+      "group": 44,
+      "cardIds": [
+        "ordnance-v29-ga-0274",
+        "ordnance-v29-ga-0275"
+      ],
+      "titles": [
+        "81 мм M362",
+        "81 мм M362A1"
+      ],
+      "imageReferences": [
+        {
+          "cardId": "ordnance-v29-ga-0274",
+          "imageId": "exterior-190-d44b2757124c6abd",
+          "path": "images/exterior-190-d44b2757124c6abd.webp"
+        },
+        {
+          "cardId": "ordnance-v29-ga-0275",
+          "imageId": "exterior-190-8964f8d282e9f754",
+          "path": "images/exterior-190-8964f8d282e9f754.webp"
+        }
+      ],
+      "decision": "retain-qualified-reference",
+      "basis": "На указанном листе TM 43-0001-28 совместно названы исполнения группы; один документальный наружный рисунок относится к именованной линии. Существующая оговорка о пределах общего рисунка сохранена.",
+      "sources": [
+        "https://archive.org/details/milmanual-tm-43-0001-28-army-ammunition-data-sheets",
+        "https://www.bulletpicker.com/pdf/TM-43-0001-28-1994.pdf"
+      ],
+      "checkedPdfPage": 454
+    },
+    {
+      "group": 45,
+      "cardIds": [
+        "ordnance-v29-ga-0277",
+        "ordnance-v29-ga-0278"
+      ],
+      "titles": [
+        "81 мм M374",
+        "81 мм M374A2"
+      ],
+      "imageReferences": [
+        {
+          "cardId": "ordnance-v29-ga-0277",
+          "imageId": "exterior-190-777ffd0a18e76718",
+          "path": "images/exterior-190-777ffd0a18e76718.webp"
+        },
+        {
+          "cardId": "ordnance-v29-ga-0278",
+          "imageId": "exterior-190-59fb048d577806e9",
+          "path": "images/exterior-190-59fb048d577806e9.webp"
+        }
+      ],
+      "decision": "retain-qualified-reference",
+      "basis": "На указанном листе TM 43-0001-28 совместно названы исполнения группы; один документальный наружный рисунок относится к именованной линии. Существующая оговорка о пределах общего рисунка сохранена.",
+      "sources": [
+        "https://archive.org/details/milmanual-tm-43-0001-28-army-ammunition-data-sheets",
+        "https://www.bulletpicker.com/pdf/TM-43-0001-28-1994.pdf"
+      ],
+      "checkedPdfPage": 458
+    },
+    {
+      "group": 46,
+      "cardIds": [
+        "ordnance-v29-ga-0281",
+        "ordnance-v29-ga-0282"
+      ],
+      "titles": [
+        "81 мм M375A1",
+        "81 мм M375A2"
+      ],
+      "imageReferences": [
+        {
+          "cardId": "ordnance-v29-ga-0281",
+          "imageId": "ordnance-v29-ga-0281-visual-0",
+          "path": "images/v29-s07-page-0464.webp"
+        },
+        {
+          "cardId": "ordnance-v29-ga-0282",
+          "imageId": "ordnance-v29-ga-0282-visual-0",
+          "path": "images/v29-s07-page-0464.webp"
+        }
+      ],
+      "decision": "clarify-caption",
+      "basis": "Общий фрагмент листа содержит два наружных рисунка M375A1 и M375A2. Обе подписи уточнены, чтобы не выдавать весь фрагмент за одиночное изделие.",
+      "sources": [
+        "https://www.bulletpicker.com/pdf/TM-43-0001-28-1994.pdf",
+        "https://archive.org/details/milmanual-tm-43-0001-28-army-ammunition-data-sheets"
+      ],
+      "checkedPdfPage": 464
+    },
+    {
+      "group": 47,
+      "cardIds": [
+        "ordnance-v29-ga-0287",
+        "ordnance-v29-ga-0288"
+      ],
+      "titles": [
+        "81 мм M57",
+        "81 мм M57A1"
+      ],
+      "imageReferences": [
+        {
+          "cardId": "ordnance-v29-ga-0287",
+          "imageId": "exterior-190-a5c301bab28dd8ec",
+          "path": "images/exterior-190-a5c301bab28dd8ec.webp"
+        },
+        {
+          "cardId": "ordnance-v29-ga-0288",
+          "imageId": "exterior-190-d7d74dde79094661",
+          "path": "images/exterior-190-d7d74dde79094661.webp"
+        }
+      ],
+      "decision": "retain-qualified-reference",
+      "basis": "На указанном листе TM 43-0001-28 совместно названы исполнения группы; один документальный наружный рисунок относится к именованной линии. Существующая оговорка о пределах общего рисунка сохранена.",
+      "sources": [
+        "https://archive.org/details/milmanual-tm-43-0001-28-army-ammunition-data-sheets",
+        "https://www.bulletpicker.com/pdf/TM-43-0001-28-1994.pdf"
+      ],
+      "checkedPdfPage": 446
+    },
+    {
+      "group": 48,
+      "cardIds": [
+        "ordnance-v29-ga-0410",
+        "ordnance-v29-ga-0411"
+      ],
+      "titles": [
+        "20×102 MP LD M70",
+        "20×102 MP LD M70A1"
+      ],
+      "imageReferences": [
+        {
+          "cardId": "ordnance-v29-ga-0410",
+          "imageId": "photo-v153-c51422983741d6a8",
+          "path": "images/photo-v153-c51422983741d6a8.webp"
+        },
+        {
+          "cardId": "ordnance-v29-ga-0411",
+          "imageId": "photo-v153-ebcceef0d15d0e8f",
+          "path": "images/photo-v153-ebcceef0d15d0e8f.webp"
+        }
+      ],
+      "decision": "retain-qualified-reference",
+      "basis": "Фотография Nammo уже подписана как общая иллюстрация соответствующей продуктовой линии; отдельные исполнения этим одним видом не подтверждаются. Привязки сохранены с существующей оговоркой.",
+      "sources": [
+        "https://www.nammo.com/wp-content/uploads/2024/09/Nammo-Handbook-2024_08_Web.cleaned.pdf",
+        "https://www.nammo.com/products/ammunition/medium-caliber-ammunition/20-mm-series/20-mm-x-102-mp-ld-m70/"
+      ]
+    },
+    {
+      "group": 49,
+      "cardIds": [
+        "ordnance-v29-ga-0413",
+        "ordnance-v29-ga-0415"
+      ],
+      "titles": [
+        "20×102 TP LD M12",
+        "20×102 TP-T LD M13"
+      ],
+      "imageReferences": [
+        {
+          "cardId": "ordnance-v29-ga-0413",
+          "imageId": "photo-v153-d8f205aad65d045c",
+          "path": "images/photo-v153-d8f205aad65d045c.webp"
+        },
+        {
+          "cardId": "ordnance-v29-ga-0415",
+          "imageId": "photo-v153-4423514dadefe23d",
+          "path": "images/photo-v153-4423514dadefe23d.webp"
+        }
+      ],
+      "decision": "retain-qualified-reference",
+      "basis": "Фотография Nammo уже подписана как общая иллюстрация соответствующей продуктовой линии; отдельные исполнения этим одним видом не подтверждаются. Привязки сохранены с существующей оговоркой.",
+      "sources": [
+        "https://www.nammo.com/wp-content/uploads/2024/09/Nammo-Handbook-2024_08_Web.cleaned.pdf",
+        "https://www.nammo.com/products/ammunition/medium-caliber-ammunition/20-mm-series/20-mm-x-102-tp-ld-m12-and-tp-t-ld-m13/"
+      ]
+    },
+    {
+      "group": 50,
+      "cardIds": [
+        "ordnance-v29-ga-0421",
+        "ordnance-v29-ga-0422",
+        "ordnance-v29-ga-0423"
+      ],
+      "titles": [
+        "25×137 HEI",
+        "25×137 HEI-T",
+        "25×137 HEI/SD"
+      ],
+      "imageReferences": [
+        {
+          "cardId": "ordnance-v29-ga-0421",
+          "imageId": "photo-v153-0ff2035ce8da24f3",
+          "path": "images/photo-v153-0ff2035ce8da24f3.webp"
+        },
+        {
+          "cardId": "ordnance-v29-ga-0422",
+          "imageId": "photo-v153-99731204ba5b52ed",
+          "path": "images/photo-v153-99731204ba5b52ed.webp"
+        },
+        {
+          "cardId": "ordnance-v29-ga-0423",
+          "imageId": "photo-v153-be741e251834c50e",
+          "path": "images/photo-v153-be741e251834c50e.webp"
+        }
+      ],
+      "decision": "retain-qualified-reference",
+      "basis": "Фотография Nammo уже подписана как общая иллюстрация соответствующей продуктовой линии; отдельные исполнения этим одним видом не подтверждаются. Привязки сохранены с существующей оговоркой.",
+      "sources": [
+        "https://www.nammo.com/wp-content/uploads/2024/09/Nammo-Handbook-2024_08_Web.cleaned.pdf",
+        "https://www.nammo.com/products/ammunition/medium-caliber-ammunition/25-mm-series/25mm-x-137-high-explosive-and-hei-t/",
+        "https://www.nammo.com/products/ammunition/medium-caliber-ammunition/25-mm-series/25mm-x-137-high-explosive-sd-and-hei-t-sd/"
+      ]
+    },
+    {
+      "group": 51,
+      "cardIds": [
+        "ordnance-v29-ga-0427",
+        "ordnance-v29-ga-0428",
+        "ordnance-v29-ga-0429",
+        "ordnance-v29-ga-0430"
+      ],
+      "titles": [
+        "25×137 TP",
+        "25×137 TP-RRR",
+        "25×137 TP-T",
+        "25×137 TP-T RRR"
+      ],
+      "imageReferences": [
+        {
+          "cardId": "ordnance-v29-ga-0427",
+          "imageId": "photo-v153-78423916cd7f6dda",
+          "path": "images/photo-v153-78423916cd7f6dda.webp"
+        },
+        {
+          "cardId": "ordnance-v29-ga-0428",
+          "imageId": "photo-v153-2c3418688a6d3e6d",
+          "path": "images/photo-v153-2c3418688a6d3e6d.webp"
+        },
+        {
+          "cardId": "ordnance-v29-ga-0429",
+          "imageId": "photo-v153-94bc85ba4aaffa67",
+          "path": "images/photo-v153-94bc85ba4aaffa67.webp"
+        },
+        {
+          "cardId": "ordnance-v29-ga-0430",
+          "imageId": "photo-v153-ac11abbedac9d548",
+          "path": "images/photo-v153-ac11abbedac9d548.webp"
+        }
+      ],
+      "decision": "retain-qualified-reference",
+      "basis": "Фотография Nammo уже подписана как общая иллюстрация соответствующей продуктовой линии; отдельные исполнения этим одним видом не подтверждаются. Привязки сохранены с существующей оговоркой.",
+      "sources": [
+        "https://www.nammo.com/wp-content/uploads/2024/09/Nammo-Handbook-2024_08_Web.cleaned.pdf",
+        "https://www.nammo.com/products/ammunition/medium-caliber-ammunition/25-mm-series/25mm-x-137-tp-and-tp-t/",
+        "https://www.nammo.com/products/ammunition/medium-caliber-ammunition/25-mm-series/25mm-x-137-tp-rrr-and-tp-t-rrr/"
+      ]
+    },
+    {
+      "group": 52,
+      "cardIds": [
+        "ordnance-v29-ga-0433",
+        "ordnance-v29-ga-0434"
+      ],
+      "titles": [
+        "30×113 TP",
+        "30×113 TP-T"
+      ],
+      "imageReferences": [
+        {
+          "cardId": "ordnance-v29-ga-0433",
+          "imageId": "photo-v153-5662384d82b942b2",
+          "path": "images/photo-v153-5662384d82b942b2.webp"
+        },
+        {
+          "cardId": "ordnance-v29-ga-0434",
+          "imageId": "photo-v153-3da5c196d6bd7c73",
+          "path": "images/photo-v153-3da5c196d6bd7c73.webp"
+        }
+      ],
+      "decision": "retain-qualified-reference",
+      "basis": "Фотография Nammo уже подписана как общая иллюстрация соответствующей продуктовой линии; отдельные исполнения этим одним видом не подтверждаются. Привязки сохранены с существующей оговоркой.",
+      "sources": [
+        "https://www.nammo.com/wp-content/uploads/2024/09/Nammo-Handbook-2024_08_Web.cleaned.pdf",
+        "https://www.nammo.com/products/ammunition/medium-caliber-ammunition/30-mm-series/30-mm-x-113-tp-and-tp-t/"
+      ]
+    },
+    {
+      "group": 53,
+      "cardIds": [
+        "ordnance-v29-ga-0437",
+        "ordnance-v29-ga-0438",
+        "ordnance-v29-ga-0439"
+      ],
+      "titles": [
+        "30×173 HEI",
+        "30×173 HEI-T",
+        "30×173 HEI/SD"
+      ],
+      "imageReferences": [
+        {
+          "cardId": "ordnance-v29-ga-0437",
+          "imageId": "photo-v153-98c981a2260eb715",
+          "path": "images/photo-v153-98c981a2260eb715.webp"
+        },
+        {
+          "cardId": "ordnance-v29-ga-0438",
+          "imageId": "photo-v153-f044efcc3fda0ace",
+          "path": "images/photo-v153-f044efcc3fda0ace.webp"
+        },
+        {
+          "cardId": "ordnance-v29-ga-0439",
+          "imageId": "photo-v153-d66f28c432526f69",
+          "path": "images/photo-v153-d66f28c432526f69.webp"
+        }
+      ],
+      "decision": "retain-qualified-reference",
+      "basis": "Фотография Nammo уже подписана как общая иллюстрация соответствующей продуктовой линии; отдельные исполнения этим одним видом не подтверждаются. Привязки сохранены с существующей оговоркой.",
+      "sources": [
+        "https://www.nammo.com/wp-content/uploads/2024/09/Nammo-Handbook-2024_08_Web.cleaned.pdf",
+        "https://www.nammo.com/products/ammunition/medium-caliber-ammunition/30-mm-series/30-mm-x-173-high-explosive-incendiary-and-hei-t/",
+        "https://www.nammo.com/products/ammunition/medium-caliber-ammunition/30-mm-series/30-mm-x-173-high-explosive-sd-and-hei-t-sd/"
+      ]
+    },
+    {
+      "group": 54,
+      "cardIds": [
+        "ordnance-v29-ga-0447",
+        "ordnance-v29-ga-0448"
+      ],
+      "titles": [
+        "35×228 TP",
+        "35×228 TP-T"
+      ],
+      "imageReferences": [
+        {
+          "cardId": "ordnance-v29-ga-0447",
+          "imageId": "photo-v153-2aa4e2e65ad7c879",
+          "path": "images/photo-v153-2aa4e2e65ad7c879.webp"
+        },
+        {
+          "cardId": "ordnance-v29-ga-0448",
+          "imageId": "photo-v153-ab232317bb3fbb57",
+          "path": "images/photo-v153-ab232317bb3fbb57.webp"
+        }
+      ],
+      "decision": "retain-qualified-reference",
+      "basis": "Фотография Nammo уже подписана как общая иллюстрация соответствующей продуктовой линии; отдельные исполнения этим одним видом не подтверждаются. Привязки сохранены с существующей оговоркой.",
+      "sources": [
+        "https://www.nammo.com/wp-content/uploads/2024/09/Nammo-Handbook-2024_08_Web.cleaned.pdf",
+        "https://www.nammo.com/products/ammunition/medium-caliber-ammunition/35-mm-series/35-mm-x-228-tp-and-tp-t/"
+      ]
+    },
+    {
+      "group": 55,
+      "cardIds": [
+        "ordnance-v29-ga-0451",
+        "ordnance-v29-ga-0452"
+      ],
+      "titles": [
+        "40×53 HE",
+        "40×53 HE-SD"
+      ],
+      "imageReferences": [
+        {
+          "cardId": "ordnance-v29-ga-0451",
+          "imageId": "photo-v154-617e51dacdc59e79",
+          "path": "images/photo-v154-617e51dacdc59e79.webp"
+        },
+        {
+          "cardId": "ordnance-v29-ga-0452",
+          "imageId": "photo-v154-2e9392873285db7c",
+          "path": "images/photo-v154-2e9392873285db7c.webp"
+        }
+      ],
+      "decision": "retain-qualified-reference",
+      "basis": "Фотография Nammo уже подписана как общая иллюстрация соответствующей продуктовой линии; отдельные исполнения этим одним видом не подтверждаются. Привязки сохранены с существующей оговоркой.",
+      "sources": [
+        "https://www.nammo.com/wp-content/uploads/2024/09/Nammo-Handbook-2024_08_Web.cleaned.pdf",
+        "https://www.nammo.com/wp-content/uploads/2024/09/Nammo-Handbook-2024_08_Web.cleaned.pdf#page=105"
+      ]
+    },
+    {
+      "group": 56,
+      "cardIds": [
+        "ordnance-v29-ga-0453",
+        "ordnance-v29-ga-0456"
+      ],
+      "titles": [
+        "40×53 HEDP",
+        "40×53 HEDP-SD"
+      ],
+      "imageReferences": [
+        {
+          "cardId": "ordnance-v29-ga-0453",
+          "imageId": "photo-v153-e7fd5a0d19852f18",
+          "path": "images/photo-v153-e7fd5a0d19852f18.webp"
+        },
+        {
+          "cardId": "ordnance-v29-ga-0456",
+          "imageId": "photo-v153-acc69b35f5c720c5",
+          "path": "images/photo-v153-acc69b35f5c720c5.webp"
+        }
+      ],
+      "decision": "retain-qualified-reference",
+      "basis": "Фотография Nammo уже подписана как общая иллюстрация соответствующей продуктовой линии; отдельные исполнения этим одним видом не подтверждаются. Привязки сохранены с существующей оговоркой.",
+      "sources": [
+        "https://www.nammo.com/wp-content/uploads/2024/09/Nammo-Handbook-2024_08_Web.cleaned.pdf",
+        "https://www.nammo.com/products/ammunition/medium-caliber-ammunition/40-mm-products/40mm-x-53-hedp-and-hedp-sd/"
+      ]
+    },
+    {
+      "group": 57,
+      "cardIds": [
+        "ordnance-v29-ga-0457",
+        "ordnance-v29-ga-0458"
+      ],
+      "titles": [
+        "40×53 TP",
+        "40×53 TP-T"
+      ],
+      "imageReferences": [
+        {
+          "cardId": "ordnance-v29-ga-0457",
+          "imageId": "photo-v153-cfc4c5d321a470b9",
+          "path": "images/photo-v153-cfc4c5d321a470b9.webp"
+        },
+        {
+          "cardId": "ordnance-v29-ga-0458",
+          "imageId": "photo-v153-d7fe53000cfc7b0d",
+          "path": "images/photo-v153-d7fe53000cfc7b0d.webp"
+        }
+      ],
+      "decision": "retain-qualified-reference",
+      "basis": "Фотография Nammo уже подписана как общая иллюстрация соответствующей продуктовой линии; отдельные исполнения этим одним видом не подтверждаются. Привязки сохранены с существующей оговоркой.",
+      "sources": [
+        "https://www.nammo.com/wp-content/uploads/2024/09/Nammo-Handbook-2024_08_Web.cleaned.pdf",
+        "https://www.nammo.com/products/ammunition/medium-caliber-ammunition/40-mm-products/40mm-x-53-tp-and-tp-t/"
+      ]
+    },
+    {
+      "group": 58,
+      "cardIds": [
+        "ordnance-v29-ga-0463",
+        "ordnance-v29-ga-0464"
+      ],
+      "titles": [
+        "105 мм M392",
+        "105 мм M392A2"
+      ],
+      "imageReferences": [
+        {
+          "cardId": "ordnance-v29-ga-0463",
+          "imageId": "exterior-190-1a6bc9b7cfc64fab",
+          "path": "images/exterior-190-1a6bc9b7cfc64fab.webp"
+        },
+        {
+          "cardId": "ordnance-v29-ga-0464",
+          "imageId": "exterior-190-5674cde7e4180445",
+          "path": "images/exterior-190-5674cde7e4180445.webp"
+        }
+      ],
+      "decision": "retain-qualified-reference",
+      "basis": "На указанном листе TM 43-0001-28 совместно названы исполнения группы; один документальный наружный рисунок относится к именованной линии. Существующая оговорка о пределах общего рисунка сохранена.",
+      "sources": [
+        "https://archive.org/details/milmanual-tm-43-0001-28-army-ammunition-data-sheets",
+        "https://www.bulletpicker.com/pdf/TM-43-0001-28-1994.pdf"
+      ],
+      "checkedPdfPage": 106
+    },
+    {
+      "group": 59,
+      "cardIds": [
+        "ordnance-v29-ga-0466",
+        "ordnance-v29-ga-0467"
+      ],
+      "titles": [
+        "105 мм M393A1",
+        "105 мм M393A2"
+      ],
+      "imageReferences": [
+        {
+          "cardId": "ordnance-v29-ga-0466",
+          "imageId": "ordnance-v29-ga-0466-visual-0",
+          "path": "images/v29-s07-page-0116.webp"
+        },
+        {
+          "cardId": "ordnance-v29-ga-0467",
+          "imageId": "ordnance-v29-ga-0467-visual-0",
+          "path": "images/v29-s07-page-0116.webp"
+        }
+      ],
+      "decision": "retain-qualified-reference",
+      "basis": "На указанном листе TM 43-0001-28 совместно названы исполнения группы; один документальный наружный рисунок относится к именованной линии. Существующая оговорка о пределах общего рисунка сохранена.",
+      "sources": [
+        "https://www.bulletpicker.com/pdf/TM-43-0001-28-1994.pdf",
+        "https://quicksearch.dla.mil/qsDocDetails.aspx?ident_number=31422"
+      ],
+      "checkedPdfPage": 116
+    },
+    {
+      "group": 60,
+      "cardIds": [
+        "ordnance-v29-ga-0469",
+        "ordnance-v29-ga-0470"
+      ],
+      "titles": [
+        "105 мм M456",
+        "105 мм M456A1"
+      ],
+      "imageReferences": [
+        {
+          "cardId": "ordnance-v29-ga-0469",
+          "imageId": "exterior-190-ee6d25e153fe4975",
+          "path": "images/exterior-190-ee6d25e153fe4975.webp"
+        },
+        {
+          "cardId": "ordnance-v29-ga-0470",
+          "imageId": "exterior-190-c8b1351a70498052",
+          "path": "images/exterior-190-c8b1351a70498052.webp"
+        }
+      ],
+      "decision": "retain-qualified-reference",
+      "basis": "На указанном листе TM 43-0001-28 совместно названы исполнения группы; один документальный наружный рисунок относится к именованной линии. Существующая оговорка о пределах общего рисунка сохранена.",
+      "sources": [
+        "https://archive.org/details/milmanual-tm-43-0001-28-army-ammunition-data-sheets",
+        "https://www.bulletpicker.com/pdf/TM-43-0001-28-1994.pdf"
+      ],
+      "checkedPdfPage": 118
+    },
+    {
+      "group": 61,
+      "cardIds": [
+        "ordnance-v29-ga-0477",
+        "ordnance-v29-ga-0478"
+      ],
+      "titles": [
+        "105 мм M724",
+        "105 мм M724A1"
+      ],
+      "imageReferences": [
+        {
+          "cardId": "ordnance-v29-ga-0477",
+          "imageId": "exterior-190-83bd50ce65c6335e",
+          "path": "images/exterior-190-83bd50ce65c6335e.webp"
+        },
+        {
+          "cardId": "ordnance-v29-ga-0478",
+          "imageId": "exterior-190-193e41467b173a73",
+          "path": "images/exterior-190-193e41467b173a73.webp"
+        }
+      ],
+      "decision": "retain-qualified-reference",
+      "basis": "На указанном листе TM 43-0001-28 совместно названы исполнения группы; один документальный наружный рисунок относится к именованной линии. Существующая оговорка о пределах общего рисунка сохранена.",
+      "sources": [
+        "https://archive.org/details/milmanual-tm-43-0001-28-army-ammunition-data-sheets",
+        "https://www.bulletpicker.com/pdf/TM-43-0001-28-1994.pdf"
+      ],
+      "checkedPdfPage": 132
+    },
+    {
+      "group": 62,
+      "cardIds": [
+        "ordnance-v29-ga-0498",
+        "ordnance-v29-ga-0499"
+      ],
+      "titles": [
+        "40 мм Mk 11",
+        "40 мм Mk 2 HE-T"
+      ],
+      "imageReferences": [
+        {
+          "cardId": "ordnance-v29-ga-0498",
+          "imageId": "exterior-190-b38025cb7f06eace",
+          "path": "images/exterior-190-b38025cb7f06eace.webp"
+        },
+        {
+          "cardId": "ordnance-v29-ga-0499",
+          "imageId": "exterior-190-f6b44f320022da03",
+          "path": "images/exterior-190-f6b44f320022da03.webp"
+        }
+      ],
+      "decision": "retain-qualified-reference",
+      "basis": "На указанном листе TM 43-0001-28 совместно названы исполнения группы; один документальный наружный рисунок относится к именованной линии. Существующая оговорка о пределах общего рисунка сохранена.",
+      "sources": [
+        "https://archive.org/details/milmanual-tm-43-0001-28-army-ammunition-data-sheets",
+        "https://www.bulletpicker.com/pdf/TM-43-0001-28-1994.pdf"
+      ],
+      "checkedPdfPage": 50
+    },
+    {
+      "group": 63,
+      "cardIds": [
+        "ordnance-v29-ga-0501",
+        "ordnance-v29-ga-0502"
+      ],
+      "titles": [
+        "76 мм M331A1",
+        "76 мм M331A2"
+      ],
+      "imageReferences": [
+        {
+          "cardId": "ordnance-v29-ga-0501",
+          "imageId": "exterior-190-e273b420bf9bbd2b",
+          "path": "images/exterior-190-e273b420bf9bbd2b.webp"
+        },
+        {
+          "cardId": "ordnance-v29-ga-0502",
+          "imageId": "exterior-190-9755b48baa3452ec",
+          "path": "images/exterior-190-9755b48baa3452ec.webp"
+        }
+      ],
+      "decision": "retain-qualified-reference",
+      "basis": "На указанном листе TM 43-0001-28 совместно названы исполнения группы; один документальный наружный рисунок относится к именованной линии. Существующая оговорка о пределах общего рисунка сохранена.",
+      "sources": [
+        "https://archive.org/details/milmanual-tm-43-0001-28-army-ammunition-data-sheets",
+        "https://www.bulletpicker.com/pdf/TM-43-0001-28-1994.pdf"
+      ],
+      "checkedPdfPage": 70
+    },
+    {
+      "group": 64,
+      "cardIds": [
+        "ordnance-v29-ga-0504",
+        "ordnance-v29-ga-0505"
+      ],
+      "titles": [
+        "76 мм M340",
+        "76 мм M340A1"
+      ],
+      "imageReferences": [
+        {
+          "cardId": "ordnance-v29-ga-0504",
+          "imageId": "exterior-190-e20a0ddcc7738aff",
+          "path": "images/exterior-190-e20a0ddcc7738aff.webp"
+        },
+        {
+          "cardId": "ordnance-v29-ga-0505",
+          "imageId": "exterior-190-24fd54517fd38078",
+          "path": "images/exterior-190-24fd54517fd38078.webp"
+        }
+      ],
+      "decision": "retain-qualified-reference",
+      "basis": "На указанном листе TM 43-0001-28 совместно названы исполнения группы; один документальный наружный рисунок относится к именованной линии. Существующая оговорка о пределах общего рисунка сохранена.",
+      "sources": [
+        "https://archive.org/details/milmanual-tm-43-0001-28-army-ammunition-data-sheets",
+        "https://www.bulletpicker.com/pdf/TM-43-0001-28-1994.pdf"
+      ],
+      "checkedPdfPage": 76
+    },
+    {
+      "group": 65,
+      "cardIds": [
+        "ordnance-v29-ga-0508",
+        "ordnance-v29-ga-0509"
+      ],
+      "titles": [
+        "76 мм M361",
+        "76 мм M361A1"
+      ],
+      "imageReferences": [
+        {
+          "cardId": "ordnance-v29-ga-0508",
+          "imageId": "exterior-190-ac58ee6757f57173",
+          "path": "images/exterior-190-ac58ee6757f57173.webp"
+        },
+        {
+          "cardId": "ordnance-v29-ga-0509",
+          "imageId": "exterior-190-087e8f099667935a",
+          "path": "images/exterior-190-087e8f099667935a.webp"
+        }
+      ],
+      "decision": "retain-qualified-reference",
+      "basis": "На указанном листе TM 43-0001-28 совместно названы исполнения группы; один документальный наружный рисунок относится к именованной линии. Существующая оговорка о пределах общего рисунка сохранена.",
+      "sources": [
+        "https://archive.org/details/milmanual-tm-43-0001-28-army-ammunition-data-sheets",
+        "https://www.bulletpicker.com/pdf/TM-43-0001-28-1994.pdf"
+      ],
+      "checkedPdfPage": 74
+    },
+    {
+      "group": 66,
+      "cardIds": [
+        "ordnance-v29-ga-0512",
+        "ordnance-v29-ga-0513"
+      ],
+      "titles": [
+        "90 мм M313",
+        "90 мм M313C"
+      ],
+      "imageReferences": [
+        {
+          "cardId": "ordnance-v29-ga-0512",
+          "imageId": "exterior-190-61ccc57df07c8049",
+          "path": "images/exterior-190-61ccc57df07c8049.webp"
+        },
+        {
+          "cardId": "ordnance-v29-ga-0513",
+          "imageId": "exterior-190-3f684291ba7e7c71",
+          "path": "images/exterior-190-3f684291ba7e7c71.webp"
+        }
+      ],
+      "decision": "retain-qualified-reference",
+      "basis": "На указанном листе TM 43-0001-28 совместно названы исполнения группы; один документальный наружный рисунок относится к именованной линии. Существующая оговорка о пределах общего рисунка сохранена.",
+      "sources": [
+        "https://archive.org/details/milmanual-tm-43-0001-28-army-ammunition-data-sheets",
+        "https://www.bulletpicker.com/pdf/TM-43-0001-28-1994.pdf"
+      ],
+      "checkedPdfPage": 102
+    },
+    {
+      "group": 67,
+      "cardIds": [
+        "ordnance-v29-ga-0514",
+        "ordnance-v29-ga-0515"
+      ],
+      "titles": [
+        "90 мм M318",
+        "90 мм M318A1"
+      ],
+      "imageReferences": [
+        {
+          "cardId": "ordnance-v29-ga-0514",
+          "imageId": "exterior-190-96060e29abe55dfb",
+          "path": "images/exterior-190-96060e29abe55dfb.webp"
+        },
+        {
+          "cardId": "ordnance-v29-ga-0515",
+          "imageId": "exterior-190-06a55cc01832fea5",
+          "path": "images/exterior-190-06a55cc01832fea5.webp"
+        }
+      ],
+      "decision": "retain-qualified-reference",
+      "basis": "На указанном листе TM 43-0001-28 совместно названы исполнения группы; один документальный наружный рисунок относится к именованной линии. Существующая оговорка о пределах общего рисунка сохранена.",
+      "sources": [
+        "https://archive.org/details/milmanual-tm-43-0001-28-army-ammunition-data-sheets",
+        "https://www.bulletpicker.com/pdf/TM-43-0001-28-1994.pdf"
+      ],
+      "checkedPdfPage": 80
+    },
+    {
+      "group": 68,
+      "cardIds": [
+        "ordnance-v29-ga-0518",
+        "ordnance-v29-ga-0519"
+      ],
+      "titles": [
+        "90 мм M348",
+        "90 мм M348A1"
+      ],
+      "imageReferences": [
+        {
+          "cardId": "ordnance-v29-ga-0518",
+          "imageId": "exterior-190-28c2a6cd348616f2",
+          "path": "images/exterior-190-28c2a6cd348616f2.webp"
+        },
+        {
+          "cardId": "ordnance-v29-ga-0519",
+          "imageId": "exterior-190-242cf49f2266a871",
+          "path": "images/exterior-190-242cf49f2266a871.webp"
+        }
+      ],
+      "decision": "retain-qualified-reference",
+      "basis": "На указанном листе TM 43-0001-28 совместно названы исполнения группы; один документальный наружный рисунок относится к именованной линии. Существующая оговорка о пределах общего рисунка сохранена.",
+      "sources": [
+        "https://archive.org/details/milmanual-tm-43-0001-28-army-ammunition-data-sheets",
+        "https://www.bulletpicker.com/pdf/TM-43-0001-28-1994.pdf"
+      ],
+      "checkedPdfPage": 96
+    },
+    {
+      "group": 69,
+      "cardIds": [
+        "ordnance-v29-ga-0520",
+        "ordnance-v29-ga-0521",
+        "ordnance-v29-ga-0522"
+      ],
+      "titles": [
+        "90 мм M353",
+        "90 мм M353A1",
+        "90 мм M353A2"
+      ],
+      "imageReferences": [
+        {
+          "cardId": "ordnance-v29-ga-0520",
+          "imageId": "exterior-190-a415904aecea20f8",
+          "path": "images/exterior-190-a415904aecea20f8.webp"
+        },
+        {
+          "cardId": "ordnance-v29-ga-0521",
+          "imageId": "exterior-190-1f206aed934e123c",
+          "path": "images/exterior-190-1f206aed934e123c.webp"
+        },
+        {
+          "cardId": "ordnance-v29-ga-0522",
+          "imageId": "exterior-190-46f08dd9f69478ee",
+          "path": "images/exterior-190-46f08dd9f69478ee.webp"
+        }
+      ],
+      "decision": "retain-qualified-reference",
+      "basis": "На указанном листе TM 43-0001-28 совместно названы исполнения группы; один документальный наружный рисунок относится к именованной линии. Существующая оговорка о пределах общего рисунка сохранена.",
+      "sources": [
+        "https://archive.org/details/milmanual-tm-43-0001-28-army-ammunition-data-sheets",
+        "https://www.bulletpicker.com/pdf/TM-43-0001-28-1994.pdf"
+      ],
+      "checkedPdfPage": 104
+    },
+    {
+      "group": 70,
+      "cardIds": [
+        "ordnance-v29-ga-0525",
+        "ordnance-v29-ga-0526",
+        "ordnance-v29-ga-0527"
+      ],
+      "titles": [
+        "90 мм M431",
+        "90 мм M431A1",
+        "90 мм M431A2"
+      ],
+      "imageReferences": [
+        {
+          "cardId": "ordnance-v29-ga-0525",
+          "imageId": "exterior-190-6278820eb2f116e5",
+          "path": "images/exterior-190-6278820eb2f116e5.webp"
+        },
+        {
+          "cardId": "ordnance-v29-ga-0526",
+          "imageId": "exterior-190-3e915a948b386661",
+          "path": "images/exterior-190-3e915a948b386661.webp"
+        },
+        {
+          "cardId": "ordnance-v29-ga-0527",
+          "imageId": "exterior-190-28c45cbea4b2aa16",
+          "path": "images/exterior-190-28c45cbea4b2aa16.webp"
+        }
+      ],
+      "decision": "retain-qualified-reference",
+      "basis": "На указанном листе TM 43-0001-28 совместно названы исполнения группы; один документальный наружный рисунок относится к именованной линии. Существующая оговорка о пределах общего рисунка сохранена.",
+      "sources": [
+        "https://archive.org/details/milmanual-tm-43-0001-28-army-ammunition-data-sheets",
+        "https://www.bulletpicker.com/pdf/TM-43-0001-28-1994.pdf"
+      ],
+      "checkedPdfPage": 98
+    },
+    {
+      "group": 71,
+      "cardIds": [
+        "ordnance-v29-ga-0529",
+        "ordnance-v29-ga-0530"
+      ],
+      "titles": [
+        "90 мм M71",
+        "90 мм M71A1"
+      ],
+      "imageReferences": [
+        {
+          "cardId": "ordnance-v29-ga-0529",
+          "imageId": "exterior-190-d1451ba97f3387e1",
+          "path": "images/exterior-190-d1451ba97f3387e1.webp"
+        },
+        {
+          "cardId": "ordnance-v29-ga-0530",
+          "imageId": "exterior-190-1103d335afef95fc",
+          "path": "images/exterior-190-1103d335afef95fc.webp"
+        }
+      ],
+      "decision": "retain-qualified-reference",
+      "basis": "На указанном листе TM 43-0001-28 совместно названы исполнения группы; один документальный наружный рисунок относится к именованной линии. Существующая оговорка о пределах общего рисунка сохранена.",
+      "sources": [
+        "https://archive.org/details/milmanual-tm-43-0001-28-army-ammunition-data-sheets",
+        "https://www.bulletpicker.com/pdf/TM-43-0001-28-1994.pdf"
+      ],
+      "checkedPdfPage": 94
+    }
+  ]
+}
