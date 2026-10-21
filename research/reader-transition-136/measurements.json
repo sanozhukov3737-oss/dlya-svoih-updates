@@ -1,0 +1,855 @@
+{
+  "kind": "read-only host diagnostic, not Android frame or transition timings",
+  "productSource": "c05e63305c53d0e4c92c9f8edd0a7c4076198ed7",
+  "dbSha256": "a2cf495b7476e65a52d8f14b22fe737e812310c4c49ee4aa784afd27ab59e8b5",
+  "contentVersion": "197",
+  "environment": {
+    "machine": "x86_64",
+    "sqliteVersion": "3.53.1",
+    "javaVersion": "openjdk version \"17.0.20\" 2026-07-21"
+  },
+  "activeCards": 1695,
+  "largestCategories": [
+    {
+      "section": "AMMUNITION",
+      "categoryId": "mines-antipersonnel",
+      "cards": 194,
+      "comparisonCandidates": 193
+    },
+    {
+      "section": "AMMUNITION",
+      "categoryId": "uav-drop-munitions",
+      "cards": 157,
+      "comparisonCandidates": 156
+    },
+    {
+      "section": "AMMUNITION",
+      "categoryId": "cannon-ammunition",
+      "cards": 138,
+      "comparisonCandidates": 137
+    },
+    {
+      "section": "AMMUNITION",
+      "categoryId": "artillery",
+      "cards": 133,
+      "comparisonCandidates": 132
+    },
+    {
+      "section": "AMMUNITION",
+      "categoryId": "mines-antitank",
+      "cards": 123,
+      "comparisonCandidates": 122
+    },
+    {
+      "section": "AMMUNITION",
+      "categoryId": "grenades",
+      "cards": 119,
+      "comparisonCandidates": 118
+    },
+    {
+      "section": "AMMUNITION",
+      "categoryId": "mortars",
+      "cards": 112,
+      "comparisonCandidates": 111
+    },
+    {
+      "section": "AMMUNITION",
+      "categoryId": "target-sensors-boards",
+      "cards": 108,
+      "comparisonCandidates": 107
+    }
+  ],
+  "bodyChars": {
+    "median": 1009,
+    "max": 3575
+  },
+  "textPreparation": {
+    "method": "Actual Java article()+sections()+empty-query matchingParagraphs(); inputs pre-split; 8 shuffled warm-up passes, 15 timed passes; distribution of each card's median; excludes Android layout, text measurement, per-visible-block parsing and image work",
+    "medianMs": 0.0067,
+    "p95Ms": 0.011897,
+    "maxMs": 0.035903,
+    "slowestCardByMedian": "ordnance-v29-ga-0537"
+  },
+  "imagesMetadata": {
+    "count": 1595,
+    "maxWidth": 1600,
+    "maxHeight": 1600,
+    "over2048": 0
+  },
+  "sqlMethod": "Actual DAO SQL, actual Java CardFamilies.relatedIds(), one card per section/category plus named samples; Python fetchall mapping, warm host page cache, 25 repeats each; not Room/Android scheduling or cold storage latency",
+  "queryProbes": [
+    {
+      "id": "eng-pdf-v7-077",
+      "query": "relatedCards",
+      "rows": 12,
+      "medianMs": 0.082542,
+      "p95Ms": 0.172376,
+      "maxMs": 0.173638
+    },
+    {
+      "id": "eng-pdf-v7-077",
+      "query": "comparisonCards",
+      "rows": 71,
+      "medianMs": 1.206891,
+      "p95Ms": 1.716722,
+      "maxMs": 1.784147
+    },
+    {
+      "id": "ref-v8-m670-cord",
+      "query": "relatedCards",
+      "rows": 3,
+      "medianMs": 0.01345,
+      "p95Ms": 0.025308,
+      "maxMs": 0.221359
+    },
+    {
+      "id": "ref-v8-m670-cord",
+      "query": "comparisonCards",
+      "rows": 3,
+      "medianMs": 1.037599,
+      "p95Ms": 1.683938,
+      "maxMs": 2.106695
+    },
+    {
+      "id": "eng-m49a1-signal-mine",
+      "query": "relatedCards",
+      "rows": 12,
+      "medianMs": 0.068983,
+      "p95Ms": 0.224112,
+      "maxMs": 0.280906
+    },
+    {
+      "id": "eng-m49a1-signal-mine",
+      "query": "comparisonCards",
+      "rows": 52,
+      "medianMs": 1.192228,
+      "p95Ms": 1.63115,
+      "maxMs": 1.958946
+    },
+    {
+      "id": "submunition-m42-m46-dpicm-family",
+      "query": "relatedCards",
+      "rows": 12,
+      "medianMs": 0.039208,
+      "p95Ms": 0.188379,
+      "maxMs": 0.197012
+    },
+    {
+      "id": "submunition-m42-m46-dpicm-family",
+      "query": "comparisonCards",
+      "rows": 15,
+      "medianMs": 1.071649,
+      "p95Ms": 1.487056,
+      "maxMs": 1.627665
+    },
+    {
+      "id": "ref-v8-dm11-transfer",
+      "query": "relatedCards",
+      "rows": 12,
+      "medianMs": 0.047059,
+      "p95Ms": 0.162721,
+      "maxMs": 0.181529
+    },
+    {
+      "id": "ref-v8-dm11-transfer",
+      "query": "comparisonCards",
+      "rows": 21,
+      "medianMs": 1.05172,
+      "p95Ms": 1.856114,
+      "maxMs": 2.424056
+    },
+    {
+      "id": "eng-pdf-v7-101",
+      "query": "relatedCards",
+      "rows": 12,
+      "medianMs": 0.043555,
+      "p95Ms": 0.056884,
+      "maxMs": 0.06041
+    },
+    {
+      "id": "eng-pdf-v7-101",
+      "query": "comparisonCards",
+      "rows": 14,
+      "medianMs": 0.943119,
+      "p95Ms": 1.311165,
+      "maxMs": 1.333698
+    },
+    {
+      "id": "eng-ptm-3",
+      "query": "relatedCards",
+      "rows": 12,
+      "medianMs": 0.066118,
+      "p95Ms": 0.139557,
+      "maxMs": 0.162201
+    },
+    {
+      "id": "eng-ptm-3",
+      "query": "comparisonCards",
+      "rows": 47,
+      "medianMs": 1.070468,
+      "p95Ms": 1.275723,
+      "maxMs": 1.417903
+    },
+    {
+      "id": "eng-pmn",
+      "query": "relatedCards",
+      "rows": 12,
+      "medianMs": 0.205174,
+      "p95Ms": 0.230572,
+      "maxMs": 0.248579
+    },
+    {
+      "id": "eng-pmn",
+      "query": "comparisonCards",
+      "rows": 193,
+      "medianMs": 1.598812,
+      "p95Ms": 3.945142,
+      "maxMs": 5.541801
+    },
+    {
+      "id": "grenade-f1-soviet",
+      "query": "relatedCards",
+      "rows": 12,
+      "medianMs": 0.118085,
+      "p95Ms": 0.223552,
+      "maxMs": 0.301036
+    },
+    {
+      "id": "grenade-f1-soviet",
+      "query": "comparisonCards",
+      "rows": 118,
+      "medianMs": 1.312577,
+      "p95Ms": 1.878997,
+      "maxMs": 3.077966
+    },
+    {
+      "id": "ref-v8-primers-overview",
+      "query": "relatedCards",
+      "rows": 2,
+      "medianMs": 0.011317,
+      "p95Ms": 0.031466,
+      "maxMs": 0.067891
+    },
+    {
+      "id": "ref-v8-primers-overview",
+      "query": "comparisonCards",
+      "rows": 2,
+      "medianMs": 0.845544,
+      "p95Ms": 1.00428,
+      "maxMs": 1.166741
+    },
+    {
+      "id": "demzref-motor-srm-102",
+      "query": "relatedCards",
+      "rows": 4,
+      "medianMs": 0.014472,
+      "p95Ms": 0.024506,
+      "maxMs": 0.057265
+    },
+    {
+      "id": "demzref-motor-srm-102",
+      "query": "comparisonCards",
+      "rows": 4,
+      "medianMs": 0.919704,
+      "p95Ms": 1.408499,
+      "maxMs": 1.54347
+    },
+    {
+      "id": "first-aid-bleeding",
+      "query": "relatedCards",
+      "rows": 12,
+      "medianMs": 0.041161,
+      "p95Ms": 0.056744,
+      "maxMs": 0.075482
+    },
+    {
+      "id": "first-aid-bleeding",
+      "query": "comparisonCards",
+      "rows": 19,
+      "medianMs": 0.055552,
+      "p95Ms": 0.173177,
+      "maxMs": 0.698736
+    },
+    {
+      "id": "ref-v8-atmf62",
+      "query": "relatedCards",
+      "rows": 12,
+      "medianMs": 0.046639,
+      "p95Ms": 0.098315,
+      "maxMs": 0.137844
+    },
+    {
+      "id": "ref-v8-atmf62",
+      "query": "comparisonCards",
+      "rows": 20,
+      "medianMs": 1.038951,
+      "p95Ms": 1.292638,
+      "maxMs": 1.40876
+    },
+    {
+      "id": "ref-v8-m14-ignition-tube",
+      "query": "relatedCards",
+      "rows": 1,
+      "medianMs": 0.009314,
+      "p95Ms": 0.01317,
+      "maxMs": 0.014882
+    },
+    {
+      "id": "ref-v8-m14-ignition-tube",
+      "query": "comparisonCards",
+      "rows": 1,
+      "medianMs": 0.879815,
+      "p95Ms": 1.226729,
+      "maxMs": 1.227071
+    },
+    {
+      "id": "ordnance-v27-og-7v",
+      "query": "relatedCards",
+      "rows": 12,
+      "medianMs": 0.060399,
+      "p95Ms": 0.078677,
+      "maxMs": 0.099457
+    },
+    {
+      "id": "ordnance-v27-og-7v",
+      "query": "comparisonCards",
+      "rows": 31,
+      "medianMs": 1.099341,
+      "p95Ms": 1.535247,
+      "maxMs": 1.775013
+    },
+    {
+      "id": "eng-tm-62m",
+      "query": "relatedCards",
+      "rows": 12,
+      "medianMs": 0.161389,
+      "p95Ms": 0.355047,
+      "maxMs": 0.407845
+    },
+    {
+      "id": "eng-tm-62m",
+      "query": "comparisonCards",
+      "rows": 122,
+      "medianMs": 1.537992,
+      "p95Ms": 1.960167,
+      "maxMs": 2.030522
+    },
+    {
+      "id": "ammo-reference-scope",
+      "query": "relatedCards",
+      "rows": 1,
+      "medianMs": 0.009624,
+      "p95Ms": 0.026199,
+      "maxMs": 0.036805
+    },
+    {
+      "id": "ammo-reference-scope",
+      "query": "comparisonCards",
+      "rows": 1,
+      "medianMs": 0.902509,
+      "p95Ms": 1.12558,
+      "maxMs": 1.346617
+    },
+    {
+      "id": "ref-v8-dm77",
+      "query": "relatedCards",
+      "rows": 10,
+      "medianMs": 0.028582,
+      "p95Ms": 0.038397,
+      "maxMs": 0.046059
+    },
+    {
+      "id": "ref-v8-dm77",
+      "query": "comparisonCards",
+      "rows": 10,
+      "medianMs": 1.011731,
+      "p95Ms": 1.956362,
+      "maxMs": 2.317849
+    },
+    {
+      "id": "eng-pdf-v7-087",
+      "query": "relatedCards",
+      "rows": 12,
+      "medianMs": 0.050916,
+      "p95Ms": 0.429567,
+      "maxMs": 0.870602
+    },
+    {
+      "id": "eng-pdf-v7-087",
+      "query": "comparisonCards",
+      "rows": 16,
+      "medianMs": 1.0584,
+      "p95Ms": 1.587164,
+      "maxMs": 2.43979
+    },
+    {
+      "id": "uavref-ofsp-05",
+      "query": "relatedCards",
+      "rows": 12,
+      "medianMs": 0.135662,
+      "p95Ms": 0.294357,
+      "maxMs": 0.402848
+    },
+    {
+      "id": "uavref-ofsp-05",
+      "query": "comparisonCards",
+      "rows": 156,
+      "medianMs": 1.608587,
+      "p95Ms": 2.166734,
+      "maxMs": 2.930477
+    },
+    {
+      "id": "eng-pmn-2",
+      "query": "relatedCards",
+      "rows": 12,
+      "medianMs": 0.213076,
+      "p95Ms": 0.298222,
+      "maxMs": 0.388887
+    },
+    {
+      "id": "eng-pmn-2",
+      "query": "comparisonCards",
+      "rows": 193,
+      "medianMs": 1.867109,
+      "p95Ms": 2.479819,
+      "maxMs": 2.559997
+    },
+    {
+      "id": "suspected-object",
+      "query": "relatedCards",
+      "rows": 0,
+      "medianMs": 0.006369,
+      "p95Ms": 0.008613,
+      "maxMs": 0.026519
+    },
+    {
+      "id": "suspected-object",
+      "query": "comparisonCards",
+      "rows": 0,
+      "medianMs": 0.881728,
+      "p95Ms": 1.161383,
+      "maxMs": 1.214511
+    },
+    {
+      "id": "ref-v8-m11-nonelectric",
+      "query": "relatedCards",
+      "rows": 8,
+      "medianMs": 0.028573,
+      "p95Ms": 0.050004,
+      "maxMs": 0.05443
+    },
+    {
+      "id": "ref-v8-m11-nonelectric",
+      "query": "comparisonCards",
+      "rows": 8,
+      "medianMs": 0.976689,
+      "p95Ms": 1.238678,
+      "maxMs": 2.119003
+    },
+    {
+      "id": "eng-pdf-v7-065",
+      "query": "relatedCards",
+      "rows": 12,
+      "medianMs": 0.042513,
+      "p95Ms": 0.08722,
+      "maxMs": 0.113509
+    },
+    {
+      "id": "eng-pdf-v7-065",
+      "query": "comparisonCards",
+      "rows": 17,
+      "medianMs": 1.046122,
+      "p95Ms": 1.303975,
+      "maxMs": 1.330824
+    },
+    {
+      "id": "ordnance-v27-rbk-250-rbk-275",
+      "query": "relatedCards",
+      "rows": 12,
+      "medianMs": 0.057255,
+      "p95Ms": 0.073178,
+      "maxMs": 0.098807
+    },
+    {
+      "id": "ordnance-v27-rbk-250-rbk-275",
+      "query": "comparisonCards",
+      "rows": 27,
+      "medianMs": 1.068525,
+      "p95Ms": 1.90755,
+      "maxMs": 2.05227
+    },
+    {
+      "id": "fuze-rgm-2",
+      "query": "relatedCards",
+      "rows": 12,
+      "medianMs": 0.063825,
+      "p95Ms": 0.085146,
+      "maxMs": 0.098766
+    },
+    {
+      "id": "fuze-rgm-2",
+      "query": "comparisonCards",
+      "rows": 34,
+      "medianMs": 0.976248,
+      "p95Ms": 1.378865,
+      "maxMs": 2.926601
+    },
+    {
+      "id": "ref-v8-estar-gold",
+      "query": "relatedCards",
+      "rows": 5,
+      "medianMs": 0.019489,
+      "p95Ms": 0.021582,
+      "maxMs": 0.028082
+    },
+    {
+      "id": "ref-v8-estar-gold",
+      "query": "comparisonCards",
+      "rows": 5,
+      "medianMs": 0.846476,
+      "p95Ms": 0.925893,
+      "maxMs": 0.97092
+    },
+    {
+      "id": "sensors-contact-overview",
+      "query": "relatedCards",
+      "rows": 12,
+      "medianMs": 0.113699,
+      "p95Ms": 0.352372,
+      "maxMs": 1.083107
+    },
+    {
+      "id": "sensors-contact-overview",
+      "query": "comparisonCards",
+      "rows": 107,
+      "medianMs": 1.330313,
+      "p95Ms": 1.497972,
+      "maxMs": 1.510891
+    },
+    {
+      "id": "ref-v8-dm11-detonating-cord",
+      "query": "relatedCards",
+      "rows": 2,
+      "medianMs": 0.012088,
+      "p95Ms": 0.173207,
+      "maxMs": 0.192335
+    },
+    {
+      "id": "ref-v8-dm11-detonating-cord",
+      "query": "comparisonCards",
+      "rows": 2,
+      "medianMs": 0.839636,
+      "p95Ms": 1.007395,
+      "maxMs": 1.03109
+    },
+    {
+      "id": "ref-v8-dm11-cap",
+      "query": "relatedCards",
+      "rows": 3,
+      "medianMs": 0.014893,
+      "p95Ms": 0.019429,
+      "maxMs": 0.036815
+    },
+    {
+      "id": "ref-v8-dm11-cap",
+      "query": "comparisonCards",
+      "rows": 3,
+      "medianMs": 0.83563,
+      "p95Ms": 0.985943,
+      "maxMs": 1.108264
+    },
+    {
+      "id": "ref-v8-rockstar",
+      "query": "relatedCards",
+      "rows": 3,
+      "medianMs": 0.014422,
+      "p95Ms": 0.017907,
+      "maxMs": 0.042232
+    },
+    {
+      "id": "ref-v8-rockstar",
+      "query": "comparisonCards",
+      "rows": 3,
+      "medianMs": 0.820417,
+      "p95Ms": 0.938452,
+      "maxMs": 1.114804
+    },
+    {
+      "id": "ref-v11-machine-kpm3",
+      "query": "relatedCards",
+      "rows": 6,
+      "medianMs": 0.02031,
+      "p95Ms": 0.026309,
+      "maxMs": 0.02718
+    },
+    {
+      "id": "ref-v11-machine-kpm3",
+      "query": "comparisonCards",
+      "rows": 6,
+      "medianMs": 0.879434,
+      "p95Ms": 1.163706,
+      "maxMs": 1.375
+    },
+    {
+      "id": "uavref-ofbch-2",
+      "query": "relatedCards",
+      "rows": 12,
+      "medianMs": 0.055523,
+      "p95Ms": 0.076834,
+      "maxMs": 0.266035
+    },
+    {
+      "id": "uavref-ofbch-2",
+      "query": "comparisonCards",
+      "rows": 42,
+      "medianMs": 0.971641,
+      "p95Ms": 1.148253,
+      "maxMs": 1.208082
+    },
+    {
+      "id": "ordnance-v27-82-mm-o-832",
+      "query": "relatedCards",
+      "rows": 12,
+      "medianMs": 0.15509,
+      "p95Ms": 0.324902,
+      "maxMs": 0.359884
+    },
+    {
+      "id": "ordnance-v27-82-mm-o-832",
+      "query": "comparisonCards",
+      "rows": 111,
+      "medianMs": 1.266489,
+      "p95Ms": 1.495709,
+      "maxMs": 1.54361
+    },
+    {
+      "id": "demzref-m119a3-hydro-accumulator",
+      "query": "relatedCards",
+      "rows": 4,
+      "medianMs": 0.015643,
+      "p95Ms": 0.019469,
+      "maxMs": 0.030044
+    },
+    {
+      "id": "demzref-m119a3-hydro-accumulator",
+      "query": "comparisonCards",
+      "rows": 4,
+      "medianMs": 0.019238,
+      "p95Ms": 0.024667,
+      "maxMs": 0.035973
+    },
+    {
+      "id": "ordnance-v27-udm-3-oboznachenie-ne-podtverzhdeno",
+      "query": "relatedCards",
+      "rows": 2,
+      "medianMs": 0.011306,
+      "p95Ms": 0.012248,
+      "maxMs": 0.013149
+    },
+    {
+      "id": "ordnance-v27-udm-3-oboznachenie-ne-podtverzhdeno",
+      "query": "comparisonCards",
+      "rows": 2,
+      "medianMs": 0.85631,
+      "p95Ms": 1.141994,
+      "maxMs": 1.440367
+    },
+    {
+      "id": "atgm-history",
+      "query": "relatedCards",
+      "rows": 12,
+      "medianMs": 0.036214,
+      "p95Ms": 0.075873,
+      "maxMs": 0.109052
+    },
+    {
+      "id": "atgm-history",
+      "query": "comparisonCards",
+      "rows": 16,
+      "medianMs": 0.041982,
+      "p95Ms": 0.055102,
+      "maxMs": 0.303901
+    },
+    {
+      "id": "uavref-ss-02",
+      "query": "relatedCards",
+      "rows": 2,
+      "medianMs": 0.011978,
+      "p95Ms": 0.051026,
+      "maxMs": 0.054231
+    },
+    {
+      "id": "uavref-ss-02",
+      "query": "comparisonCards",
+      "rows": 2,
+      "medianMs": 0.833125,
+      "p95Ms": 1.097078,
+      "maxMs": 1.16633
+    },
+    {
+      "id": "fuze-uzrgm-2",
+      "query": "relatedCards",
+      "rows": 2,
+      "medianMs": 0.011827,
+      "p95Ms": 0.01356,
+      "maxMs": 0.016674
+    },
+    {
+      "id": "fuze-uzrgm-2",
+      "query": "comparisonCards",
+      "rows": 2,
+      "medianMs": 0.818575,
+      "p95Ms": 0.973474,
+      "maxMs": 1.083348
+    },
+    {
+      "id": "artillery-krasnopol-family",
+      "query": "relatedCards",
+      "rows": 12,
+      "medianMs": 0.151856,
+      "p95Ms": 0.173678,
+      "maxMs": 0.176091
+    },
+    {
+      "id": "artillery-krasnopol-family",
+      "query": "comparisonCards",
+      "rows": 132,
+      "medianMs": 1.391875,
+      "p95Ms": 1.548867,
+      "maxMs": 1.778128
+    },
+    {
+      "id": "demzref-mortar-hull-120",
+      "query": "relatedCards",
+      "rows": 12,
+      "medianMs": 0.039188,
+      "p95Ms": 0.166497,
+      "maxMs": 0.171574
+    },
+    {
+      "id": "demzref-mortar-hull-120",
+      "query": "comparisonCards",
+      "rows": 19,
+      "medianMs": 0.940725,
+      "p95Ms": 1.226699,
+      "maxMs": 1.315892
+    },
+    {
+      "id": "eng-fordonsmina-13-family",
+      "query": "relatedCards",
+      "rows": 12,
+      "medianMs": 0.052838,
+      "p95Ms": 0.124584,
+      "maxMs": 0.126838
+    },
+    {
+      "id": "eng-fordonsmina-13-family",
+      "query": "comparisonCards",
+      "rows": 29,
+      "medianMs": 0.93703,
+      "p95Ms": 1.141803,
+      "maxMs": 1.226369
+    },
+    {
+      "id": "ref-v11-spp-1",
+      "query": "relatedCards",
+      "rows": 1,
+      "medianMs": 0.009895,
+      "p95Ms": 0.015604,
+      "maxMs": 0.039329
+    },
+    {
+      "id": "ref-v11-spp-1",
+      "query": "comparisonCards",
+      "rows": 1,
+      "medianMs": 0.845865,
+      "p95Ms": 1.008286,
+      "maxMs": 1.033754
+    },
+    {
+      "id": "demzref-track-bradley",
+      "query": "relatedCards",
+      "rows": 4,
+      "medianMs": 0.015783,
+      "p95Ms": 0.039579,
+      "maxMs": 0.297732
+    },
+    {
+      "id": "demzref-track-bradley",
+      "query": "comparisonCards",
+      "rows": 4,
+      "medianMs": 0.019088,
+      "p95Ms": 0.027911,
+      "maxMs": 0.043525
+    },
+    {
+      "id": "svo-sources",
+      "query": "relatedCards",
+      "rows": 12,
+      "medianMs": 0.044295,
+      "p95Ms": 0.060209,
+      "maxMs": 0.071977
+    },
+    {
+      "id": "svo-sources",
+      "query": "comparisonCards",
+      "rows": 16,
+      "medianMs": 0.050615,
+      "p95Ms": 0.063934,
+      "maxMs": 0.10799
+    },
+    {
+      "id": "ref-v11-r353",
+      "query": "relatedCards",
+      "rows": 1,
+      "medianMs": 0.009504,
+      "p95Ms": 0.012729,
+      "maxMs": 0.017256
+    },
+    {
+      "id": "ref-v11-r353",
+      "query": "comparisonCards",
+      "rows": 1,
+      "medianMs": 0.857192,
+      "p95Ms": 1.096847,
+      "maxMs": 1.136666
+    },
+    {
+      "id": "ref-v8-evf1",
+      "query": "relatedCards",
+      "rows": 2,
+      "medianMs": 0.012529,
+      "p95Ms": 0.042173,
+      "maxMs": 0.092006
+    },
+    {
+      "id": "ref-v8-evf1",
+      "query": "comparisonCards",
+      "rows": 2,
+      "medianMs": 0.855379,
+      "p95Ms": 1.090829,
+      "maxMs": 1.225478
+    },
+    {
+      "id": "ordnance-v27-3ubr6-30-165-mm",
+      "query": "relatedCards",
+      "rows": 12,
+      "medianMs": 0.165125,
+      "p95Ms": 0.185826,
+      "maxMs": 0.18826
+    },
+    {
+      "id": "ordnance-v27-3ubr6-30-165-mm",
+      "query": "comparisonCards",
+      "rows": 137,
+      "medianMs": 1.479094,
+      "p95Ms": 1.777987,
+      "maxMs": 1.808843
+    }
+  ],
+  "limits": [
+    "No APK changed or built; no emulator or physical phone run",
+    "No rendering, decoding, memory-cache hit-rate or next-card time measured",
+    "Warm host measurements cannot establish which operation dominates a phone transition or predict an improvement"
+  ]
+}
