@@ -1,0 +1,20 @@
+{
+  "versionName": "0.3.136",
+  "versionCode": 140,
+  "contentVersion": 197,
+  "apkSha256": "0a22658eab2cc409eebf1c9d62cb1139b79cbb160e238ebc5102b8abc4566162",
+  "feedSha256": "79aa6f4d38ecb28e555df766dc8556ca41e28a0f87f409069ef7c0a3ef0e0ebe",
+  "releasePublished": true,
+  "updateChannelVerified": true,
+  "assetDigestsMatchVerifiedBuild": true,
+  "releaseUrl": "https://github.com/sanozhukov3737-oss/dlya-svoih-updates/releases/tag/app-0.3.136",
+  "buildWorkflowRunId": 39604907534,
+  "verificationWorkflowRunId": 39607704093,
+  "visualReview": "passed",
+  "publicationWorkflowRunId": 39609889514,
+  "releaseTagCommit": "176d3344a250121dc8558094380a6f304d715706",
+  "artifactSourceCommit": "91d57c8e9d00a01381eb242cae9f106d5ef140c6",
+  "apkBytes": 144816909,
+  "apkUrl": "https://github.com/sanozhukov3737-oss/dlya-svoih-updates/releases/download/app-0.3.136/DLYA_SVOIH_v0.3.136.apk",
+  "canonicalChannel": "https://github.com/sanozhukov3737-oss/dlya-svoih-updates/releases/latest/download/latest.json"
+}

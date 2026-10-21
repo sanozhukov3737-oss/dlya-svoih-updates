@@ -1,7 +1,9 @@
 # Android 8/16 и клавиатура — приложение 0.3.136
 
-Проверенный кандидат 0.3.136 / versionCode 140, каталог 197. Публикация запускается
-отдельным workflow только после этого просмотра Android-кадров.
+[0.3.136 опубликована](https://github.com/sanozhukov3737-oss/dlya-svoih-updates/releases/tag/app-0.3.136), versionCode 140, каталог 197.
+[Публикация и проверка публичного канала](https://github.com/sanozhukov3737-oss/dlya-svoih-updates/actions/runs/39609889514) завершены успешно. Публичные APK и latest.json совпадают
+с проверенными SHA-256; штатная ссылка предлагает приложение 0.3.136 и прежний
+каталог 197. Итог — `publication.json`.
 
 В Android 8 клавиатура перекрывала подтверждение в выборе карточек сравнения.
 Окно теперь получает WindowInsets (`decorFitsSystemWindows=false`), учитывает
