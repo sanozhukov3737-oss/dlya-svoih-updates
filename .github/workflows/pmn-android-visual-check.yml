@@ -1,0 +1,125 @@
+name: Check approved PMN prototype in Android viewer
+
+on:
+  push:
+    branches: ['research/pmn-android-check-20261022']
+    paths: ['.github/workflows/pmn-android-visual-check.yml', 'research/pmn-android-check/**']
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pmn-android-visual-check
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: gradle/actions/setup-gradle@v4
+      - name: Reproduce the exact approved GLB and prepare an isolated debug package
+        run: |
+          set -euo pipefail
+          sudo apt-get update -qq
+          sudo apt-get install -y fonts-dejavu-core
+          python3 -m pip install --quiet numpy==2.3.5 scipy==1.17.0 Pillow==12.3.0 trimesh==5.1.1
+          python3 research/pmn-android-check/prepare.py
+      - name: Build debug app and only its test APK
+        run: |
+          set -euo pipefail
+          "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" 'platforms;android-36' 'build-tools;36.0.0'
+          printf 'sdk.dir=%s\n' "$ANDROID_HOME" > local.properties
+          bash ./gradlew :app:assembleDebug :app:assembleDebugAndroidTest --no-daemon
+          cp app/build/outputs/apk/debug/app-debug.apk build/pmn-android/apks/debug.apk
+          cp app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk build/pmn-android/apks/test.apk
+          python3 - <<'PY'
+          import hashlib,json,os
+          from pathlib import Path
+          out=Path('build/pmn-android/apks')
+          result={'sourceCommit':os.environ['GITHUB_SHA'],'workflowRunId':int(os.environ['GITHUB_RUN_ID']),
+                  'releasePublished':False,'package':'ru.dlyasvoih.app.pmnvisualcheck','apks':{}}
+          for name in ['debug.apk','test.apk']:
+              p=out/name;result['apks'][name]={'bytes':p.stat().st_size,'sha256':hashlib.sha256(p.read_bytes()).hexdigest()}
+          (out/'build-result.json').write_text(json.dumps(result,indent=2)+'\n')
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: pmn-android-build
+          path: build/pmn-android/apks/
+          if-no-files-found: error
+          retention-days: 7
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: pmn-build-failure-reports
+          path: |
+            app/build/reports/
+            build/pmn-android/
+          if-no-files-found: warn
+
+  android:
+    needs: build
+    runs-on: ubuntu-24.04
+    timeout-minutes: 18
+    strategy:
+      fail-fast: false
+      matrix:
+        api: [26, 36]
+    env:
+      ANDROID_AVD_HOME: ${{ github.workspace }}/build/android-avds
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+          sparse-checkout: |
+            tools
+            research/pmn-android-check
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: actions/download-artifact@v4
+        with:
+          name: pmn-android-build
+          path: build/pmn-android/apks
+      - name: Prepare fresh 720 by 1280 accelerated Android device
+        run: |
+          set -euo pipefail
+          "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" 'emulator' 'system-images;android-${{ matrix.api }};google_apis;x86_64'
+          echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules
+          sudo udevadm control --reload-rules
+          sudo udevadm trigger --name-match=kvm
+          mkdir -p "$ANDROID_AVD_HOME"
+          echo no | "$ANDROID_HOME/cmdline-tools/latest/bin/avdmanager" create avd --force --name recovery134 --package 'system-images;android-${{ matrix.api }};google_apis;x86_64' --device pixel_2
+          python3 - <<'PY'
+          import os
+          from pathlib import Path
+          p=Path(os.environ['ANDROID_AVD_HOME'])/'recovery134.avd/config.ini'
+          values=dict(line.split('=',1) for line in p.read_text().splitlines() if '=' in line)
+          values.update({'hw.lcd.width':'720','hw.lcd.height':'1280','hw.lcd.density':'320'})
+          p.write_text('\n'.join(k+'='+v for k,v in values.items())+'\n')
+          PY
+      - name: Verify actual offline render and native rotation, pinch and reset
+        run: |
+          python3 tools/run_android_emulator.py --out build/pmn-android/emulator --timeout 300 -- python3 research/pmn-android-check/run.py --apks build/pmn-android/apks --out build/pmn-android/proof --expected-api ${{ matrix.api }}
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: pmn-android-api${{ matrix.api }}-proof
+          path: |
+            build/pmn-android/proof/
+            build/pmn-android/emulator/
+          if-no-files-found: error
+          retention-days: 14
