@@ -3,7 +3,7 @@ name: Recheck existing photo diagnostic APK on Android 8
 on:
   push:
     branches: ['main']
-    paths: ['.github/workflows/recheck-photo-diagnostics-137.yml']
+    paths: ['.github/workflows/recheck-photo-diagnostics-137.yml', 'tools/photo_diagnostics/run.py']
   workflow_dispatch:
 
 permissions:

@@ -20,10 +20,36 @@ def main():
     args.out.mkdir(parents=True, exist_ok=True)
     serial = os.environ['ANDROID_SERIAL']
     def adb(*argv, timeout=30, check=True, binary=False):
-        return subprocess.run(['adb', '-s', serial, *argv], timeout=timeout, check=check,
-                              capture_output=True, text=not binary)
+        result = subprocess.run(['adb', '-s', serial, *argv], timeout=timeout,
+                                capture_output=True, text=not binary)
+        if check and result.returncode:
+            (args.out/'failed-command.json').write_text(json.dumps({'argv': argv,
+                'returncode': result.returncode, 'stdout': str(result.stdout),
+                'stderr': str(result.stderr)}, indent=2)+'\n')
+            for label, command in (('failure-logcat.txt', ['logcat','-d','-v','threadtime']),
+                                   ('failure-meminfo.txt', ['shell','dumpsys','meminfo'])):
+                try:
+                    evidence=subprocess.run(['adb','-s',serial,*command],capture_output=True,timeout=10)
+                    (args.out/label).write_bytes(evidence.stdout+b'\n'+evidence.stderr)
+                except subprocess.TimeoutExpired:
+                    pass
+            raise AssertionError(f'ADB {argv} returned {result.returncode}: {result.stderr!r}')
+        return result
     api = int(adb('shell', 'getprop', 'ro.build.version.sdk').stdout.strip())
     assert api == args.expected_api
+    assert adb('shell', 'getprop', 'ro.kernel.qemu').stdout.strip() == '1', 'Fresh owned emulator required'
+    # Same bounded ADB setup as the already verified API26 compatibility runner.
+    adb('root', timeout=15)
+    deadline = time.monotonic()+20
+    while time.monotonic() < deadline:
+        try:
+            if adb('shell','id','-u',timeout=3,check=False).stdout.strip() == '0':
+                break
+        except subprocess.TimeoutExpired:
+            pass
+        time.sleep(0.3)
+    else:
+        raise AssertionError('Emulator ADB root transport not ready within 20 seconds')
     manifest = json.loads((args.apks / 'build-result.json').read_text())
     for name in ('debug.apk', 'test.apk'):
         assert hashlib.sha256((args.apks/name).read_bytes()).hexdigest() == manifest['apks'][name]['sha256']
@@ -34,6 +60,8 @@ def main():
     adb('shell', 'settings', 'put', 'system', 'font_scale', '1.0')
     adb('shell', 'svc', 'wifi', 'disable')
     adb('shell', 'svc', 'data', 'disable')
+    adb('shell', 'settings', 'put', 'global', 'airplane_mode_on', '1')
+    adb('shell', 'am', 'broadcast', '-a', 'android.intent.action.AIRPLANE_MODE', '--ez', 'state', 'true')
     for _ in range(20):
         connectivity = adb('shell', 'dumpsys', 'connectivity').stdout
         if 'Active default network: none' in connectivity or 'Active default network: null' in connectivity:
