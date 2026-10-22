@@ -88,7 +88,7 @@ class PmnVisualCheckTest {
                 id=i; toolType=MotionEvent.TOOL_TYPE_FINGER
             } }
             val coords = Array(count) { i -> MotionEvent.PointerCoords().apply {
-                x=w*.5f+(if(i==0)-spread else spread);y=h*.56f;pressure=1f;size=1f
+                x=w*.5f+(if(i==0)-spread else spread);y=h*.56f;pressure=1f;this.size=1f
             } }
             val event = MotionEvent.obtain(down,SystemClock.uptimeMillis(),action,count,
                 properties,coords,0,0,1f,1f,0,0,InputDevice.SOURCE_TOUCHSCREEN,0)
