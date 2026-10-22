@@ -28,7 +28,9 @@ def main():
     for name in ('debug.apk', 'test.apk'):
         assert hashlib.sha256((args.apks/name).read_bytes()).hexdigest() == manifest['apks'][name]['sha256']
         adb('install', '-r', '-t', str(args.apks/name), timeout=180)
-    adb('logcat', '-b', 'all', '-c')
+    clear = adb('logcat', '-b', 'main', '-b', 'system', '-b', 'crash', '-c', check=False)
+    (args.out/'log-clear.json').write_text(json.dumps({'returncode': clear.returncode,
+        'stdout': clear.stdout, 'stderr': clear.stderr}, indent=2)+'\n')
     adb('shell', 'settings', 'put', 'system', 'font_scale', '1.0')
     adb('shell', 'svc', 'wifi', 'disable')
     adb('shell', 'svc', 'data', 'disable')
@@ -60,7 +62,8 @@ def main():
     assert not any(e['kind'] == 'requestError' for e in raw['events'])
     assert all(e.get('source') != 'NETWORK' for e in raw['events'])
     (args.out/'verification.json').write_text(json.dumps({'passed': True, 'api': api,
-        'sourceCommit': manifest['sourceCommit'], 'productionApk': False, 'observations': 105,
+        'sourceCommit': manifest['sourceCommit'], 'harnessCommit': os.environ.get('GITHUB_SHA'),
+        'productionApk': False, 'observations': 105,
         'limits': ['debug source build with timing observers', 'emulator, not physical phone',
                    'firstDraw records CPU painter draw, not display presentation',
                    'cache cleared, operating-system file cache not cleared']}, indent=2)+'\n')

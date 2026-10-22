@@ -1,0 +1,65 @@
+name: Recheck existing photo diagnostic APK on Android 8
+
+on:
+  push:
+    branches: ['main']
+    paths: ['.github/workflows/recheck-photo-diagnostics-137.yml']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: read
+
+jobs:
+  android:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 18
+    strategy:
+      fail-fast: false
+      matrix:
+        api: [26]
+    env:
+      ANDROID_AVD_HOME: ${{ github.workspace }}/build/android-avds
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: tools
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: actions/download-artifact@v4
+        with:
+          name: photo-diagnostics-build
+          run-id: 39759607818
+          github-token: ${{ github.token }}
+          path: build/photo-diagnostics/apks
+      - name: Prepare native accelerated device
+        run: |
+          set -euo pipefail
+          "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" 'emulator' 'system-images;android-${{ matrix.api }};google_apis;x86_64'
+          echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules
+          sudo udevadm control --reload-rules
+          sudo udevadm trigger --name-match=kvm
+          mkdir -p "$ANDROID_AVD_HOME"
+          echo no | "$ANDROID_HOME/cmdline-tools/latest/bin/avdmanager" create avd --force --name recovery134 --package 'system-images;android-${{ matrix.api }};google_apis;x86_64' --device pixel_2
+          python3 - <<'PY'
+          import os
+          from pathlib import Path
+          p=Path(os.environ['ANDROID_AVD_HOME'])/'recovery134.avd/config.ini'
+          values=dict(line.split('=',1) for line in p.read_text().splitlines() if '=' in line)
+          values.update({'hw.lcd.width':'720','hw.lcd.height':'1280','hw.lcd.density':'320'})
+          p.write_text('\n'.join(k+'='+v for k,v in values.items())+'\n')
+          PY
+      - name: Measure 3 first-pass and return batches offline
+        run: |
+          /usr/bin/python3 tools/run_android_emulator.py --out build/photo-diagnostics/emulator --timeout 720 -- /usr/bin/python3 tools/photo_diagnostics/run.py --apks build/photo-diagnostics/apks --out build/photo-diagnostics/proof --expected-api ${{ matrix.api }}
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: photo-diagnostics-recheck-api${{ matrix.api }}-proof
+          path: |
+            build/photo-diagnostics/proof/
+            build/photo-diagnostics/emulator/
+          if-no-files-found: error
+          retention-days: 14
