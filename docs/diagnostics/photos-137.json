@@ -1,0 +1,11 @@
+{
+  "stage": "measure photo decode and memory-cache behavior",
+  "sourceVersion": "0.3.137",
+  "baseAppSource": "510727a0107b8c9a3be881fb5e871d6b78a253bd",
+  "publishedReleaseUnchanged": true,
+  "androidApis": [26, 36],
+  "cardsPerBatch": 18,
+  "batches": 3,
+  "imageSettings": "unchanged from the production application",
+  "firstDrawLimit": "CPU-side painter draw, not physical display presentation"
+}

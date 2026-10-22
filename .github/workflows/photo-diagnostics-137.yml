@@ -1,0 +1,114 @@
+name: Measure local photo decoding and cache on 0.3.137 sources
+
+on:
+  push:
+    branches: ['main']
+    paths: ['.github/workflows/photo-diagnostics-137.yml', 'docs/diagnostics/photos-137.json']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: read
+
+concurrency:
+  group: photo-diagnostics-137
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: gradle/actions/setup-gradle@v4
+      - name: Prepare separate debug package with timing observers
+        run: python3 tools/photo_diagnostics/prepare.py
+      - name: Build diagnostic app and instrumentation, without release signing
+        run: |
+          set -euo pipefail
+          "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" 'platforms;android-36' 'build-tools;36.0.0'
+          printf 'sdk.dir=%s\n' "$ANDROID_HOME" > local.properties
+          bash ./gradlew :app:assembleDebug :app:assembleDebugAndroidTest --no-daemon
+          cp app/build/outputs/apk/debug/app-debug.apk build/photo-diagnostics/apks/debug.apk
+          cp app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk build/photo-diagnostics/apks/test.apk
+          python3 - <<'PY'
+          import hashlib,json,os
+          from pathlib import Path
+          out=Path('build/photo-diagnostics/apks')
+          report={'sourceCommit':os.environ['GITHUB_SHA'],'workflowRunId':int(os.environ['GITHUB_RUN_ID']),
+                  'published':False,'productionImageSettingsUnchanged':True,'apks':{}}
+          for name in ('debug.apk','test.apk'):
+              path=out/name
+              report['apks'][name]={'bytes':path.stat().st_size,'sha256':hashlib.sha256(path.read_bytes()).hexdigest()}
+          (out/'build-result.json').write_text(json.dumps(report,indent=2)+'\n')
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: photo-diagnostics-build
+          path: build/photo-diagnostics/apks/
+          if-no-files-found: error
+          retention-days: 14
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: photo-diagnostics-build-reports
+          path: app/build/reports/
+          if-no-files-found: warn
+
+  android:
+    needs: build
+    runs-on: ubuntu-24.04
+    timeout-minutes: 18
+    strategy:
+      fail-fast: false
+      matrix:
+        api: [26, 36]
+    env:
+      ANDROID_AVD_HOME: ${{ github.workspace }}/build/android-avds
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: tools
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: actions/download-artifact@v4
+        with:
+          name: photo-diagnostics-build
+          path: build/photo-diagnostics/apks
+      - name: Prepare native accelerated device
+        run: |
+          set -euo pipefail
+          "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" 'emulator' 'system-images;android-${{ matrix.api }};google_apis;x86_64'
+          echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules
+          sudo udevadm control --reload-rules
+          sudo udevadm trigger --name-match=kvm
+          mkdir -p "$ANDROID_AVD_HOME"
+          echo no | "$ANDROID_HOME/cmdline-tools/latest/bin/avdmanager" create avd --force --name recovery134 --package 'system-images;android-${{ matrix.api }};google_apis;x86_64' --device pixel_2
+          python3 - <<'PY'
+          import os
+          from pathlib import Path
+          p=Path(os.environ['ANDROID_AVD_HOME'])/'recovery134.avd/config.ini'
+          values=dict(line.split('=',1) for line in p.read_text().splitlines() if '=' in line)
+          values.update({'hw.lcd.width':'720','hw.lcd.height':'1280','hw.lcd.density':'320'})
+          p.write_text('\n'.join(k+'='+v for k,v in values.items())+'\n')
+          PY
+      - name: Measure 3 first-pass and return batches offline
+        run: |
+          /usr/bin/python3 tools/run_android_emulator.py --out build/photo-diagnostics/emulator --timeout 720 -- /usr/bin/python3 tools/photo_diagnostics/run.py --apks build/photo-diagnostics/apks --out build/photo-diagnostics/proof --expected-api ${{ matrix.api }}
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: photo-diagnostics-api${{ matrix.api }}-proof
+          path: |
+            build/photo-diagnostics/proof/
+            build/photo-diagnostics/emulator/
+          if-no-files-found: error
+          retention-days: 14
