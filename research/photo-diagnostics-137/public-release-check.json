@@ -1,0 +1,24 @@
+{
+  "checkedAt": "2026-10-22T10:14:22.242Z",
+  "tag": "app-0.3.137",
+  "draft": false,
+  "publishedAt": "2026-10-21T18:00:17Z",
+  "unchanged": true,
+  "assets": [
+    {
+      "name": "DLYA_SVOIH_v0.3.137.apk",
+      "size": 144816913,
+      "digest": "sha256:f0a67816b64c831259f54c1da10b010e50ef781ad9bb75010dab89be3715eebe"
+    },
+    {
+      "name": "latest.json",
+      "size": 2077,
+      "digest": "sha256:ee571133535eef9422b82d7eea129a32f233318bf98ca12d465f1476694ac4b5"
+    },
+    {
+      "name": "publication-verification.json",
+      "size": 4058,
+      "digest": "sha256:59252cd11e7aa40d7d7470acd0b159cc9690f0bbfd02516d0ffef70e6dee6ccf"
+    }
+  ]
+}

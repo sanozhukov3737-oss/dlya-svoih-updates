@@ -1,0 +1,49 @@
+{
+  "status": "reviewed",
+  "images": [
+    {
+      "path": "api26/first-open.png",
+      "sha256": "a91459e53e5e8b4da8a3d9a6174ec902529bd8429d5f3c46f26b8154846c7143",
+      "status": "reviewed",
+      "observed": "hero placeholder; photo not yet presented",
+      "confirmsPhotoVisible": false
+    },
+    {
+      "path": "api26/forward-end.png",
+      "sha256": "a4a2811dd2505f44068ff351cf964cdadb94eaca1ed2a6c0badf7ad66072663c",
+      "status": "reviewed",
+      "observed": "photo visible",
+      "confirmsPhotoVisible": true
+    },
+    {
+      "path": "api26/returned.png",
+      "sha256": "e582220aa0a1ab0b265016b8679a86658d024377b122a9d74216907b344c1f26",
+      "status": "reviewed",
+      "observed": "photo visible",
+      "confirmsPhotoVisible": true
+    },
+    {
+      "path": "api36/first-open.png",
+      "sha256": "9c7ec68397e12cef9e37bc1ed666354044bc78576b76668c2b2437e2e110437a",
+      "status": "reviewed",
+      "observed": "card loading spinner; photo not yet presented",
+      "confirmsPhotoVisible": false
+    },
+    {
+      "path": "api36/forward-end.png",
+      "sha256": "b5496b0d269eaf4ae119e56cc5856ad89863203cf36045727961f031425e42f4",
+      "status": "reviewed",
+      "observed": "photo visible",
+      "confirmsPhotoVisible": true
+    },
+    {
+      "path": "api36/returned.png",
+      "sha256": "417c85df762aa9fc33b28f895c29055ccd5fb0c36aa98b1479720999741d726a",
+      "status": "reviewed",
+      "observed": "photo visible",
+      "confirmsPhotoVisible": true
+    }
+  ],
+  "photoVisibleFrames": 4,
+  "note": "Both first-open captures precede compositor presentation of the photo. They do not confirm first-photo visibility; firstDraw timings are CPU painter callbacks."
+}

@@ -1,0 +1,308 @@
+{
+  "stage": "photo decoding and cache diagnosis",
+  "status": "complete",
+  "date": "2026-10-22",
+  "sourceVersion": "0.3.137",
+  "catalogVersion": 197,
+  "diagnosticSourceCommit": "9470b8388b8e5adf85070693ffaa42a6eb61231d",
+  "baseNativeSourceCommit": "510727a0107b8c9a3be881fb5e871d6b78a253bd",
+  "diagnosticPackage": "ru.dlyasvoih.app.photodiag",
+  "debugBuild": true,
+  "productionApk": false,
+  "physicalPhoneTested": false,
+  "compositorPresentationMeasured": false,
+  "cpuPainterFirstDrawMeasured": true,
+  "productionImageSettingsChanged": false,
+  "productionCodeChanged": false,
+  "releasePublished": false,
+  "totalObservations": 210,
+  "successfulImageRequests": 210,
+  "repeatRequests": 102,
+  "repeatMemoryHits": 102,
+  "profiles": {
+    "26": {
+      "cacheMaxBytes": 33554432,
+      "memoryClassMiB": 576,
+      "isLowRamDevice": false,
+      "observationCount": 105,
+      "requestCount": 105,
+      "status": {
+        "success": 105
+      },
+      "sources": {
+        "DISK": 54,
+        "MEMORY_CACHE": 51
+      },
+      "decode": {
+        "n": 54,
+        "medianMs": 14.571,
+        "p95Ms": 100.604,
+        "maxMs": 216.908
+      },
+      "fileRequest": {
+        "n": 54,
+        "medianMs": 19.33,
+        "p95Ms": 106.061,
+        "maxMs": 244.224
+      },
+      "cachedRequest": {
+        "n": 51,
+        "medianMs": 1.659,
+        "p95Ms": 7.027,
+        "maxMs": 8.25
+      },
+      "successToFirstDraw": {
+        "n": 105,
+        "medianMs": 21.05,
+        "p95Ms": 68.191,
+        "maxMs": 89.463
+      },
+      "cacheSnapshots": [
+        {
+          "batch": 1,
+          "label": "cleared",
+          "sizeBytes": 0,
+          "maxBytes": 33554432,
+          "keys": 0
+        },
+        {
+          "batch": 1,
+          "label": "forward-end",
+          "sizeBytes": 15523716,
+          "maxBytes": 33554432,
+          "keys": 18
+        },
+        {
+          "batch": 1,
+          "label": "return-end",
+          "sizeBytes": 15523716,
+          "maxBytes": 33554432,
+          "keys": 18
+        },
+        {
+          "batch": 2,
+          "label": "cleared",
+          "sizeBytes": 0,
+          "maxBytes": 33554432,
+          "keys": 0
+        },
+        {
+          "batch": 2,
+          "label": "forward-end",
+          "sizeBytes": 15523716,
+          "maxBytes": 33554432,
+          "keys": 18
+        },
+        {
+          "batch": 2,
+          "label": "return-end",
+          "sizeBytes": 15523716,
+          "maxBytes": 33554432,
+          "keys": 18
+        },
+        {
+          "batch": 3,
+          "label": "cleared",
+          "sizeBytes": 0,
+          "maxBytes": 33554432,
+          "keys": 0
+        },
+        {
+          "batch": 3,
+          "label": "forward-end",
+          "sizeBytes": 15523716,
+          "maxBytes": 33554432,
+          "keys": 18
+        },
+        {
+          "batch": 3,
+          "label": "return-end",
+          "sizeBytes": 15523716,
+          "maxBytes": 33554432,
+          "keys": 18
+        }
+      ],
+      "returnMemoryHits": 51,
+      "returnImageRequests": 51,
+      "firstProcessFileRequestMs": 244.22377,
+      "coldCacheFirstOpenRequestMs": [
+        244.224,
+        69.967,
+        46.194
+      ],
+      "forwardMedianByBatchMs": [
+        18.493,
+        19.049,
+        18.872
+      ]
+    },
+    "36": {
+      "cacheMaxBytes": 19922944,
+      "memoryClassMiB": 192,
+      "isLowRamDevice": false,
+      "observationCount": 105,
+      "requestCount": 105,
+      "status": {
+        "success": 105
+      },
+      "sources": {
+        "DISK": 54,
+        "MEMORY_CACHE": 51
+      },
+      "decode": {
+        "n": 54,
+        "medianMs": 13.594,
+        "p95Ms": 118.689,
+        "maxMs": 658.792
+      },
+      "fileRequest": {
+        "n": 54,
+        "medianMs": 18.833,
+        "p95Ms": 175.044,
+        "maxMs": 711.367
+      },
+      "cachedRequest": {
+        "n": 51,
+        "medianMs": 2.968,
+        "p95Ms": 5.636,
+        "maxMs": 7.99
+      },
+      "successToFirstDraw": {
+        "n": 105,
+        "medianMs": 39.221,
+        "p95Ms": 110.75,
+        "maxMs": 256.757
+      },
+      "cacheSnapshots": [
+        {
+          "batch": 1,
+          "label": "cleared",
+          "sizeBytes": 0,
+          "maxBytes": 19922944,
+          "keys": 0
+        },
+        {
+          "batch": 1,
+          "label": "forward-end",
+          "sizeBytes": 15529476,
+          "maxBytes": 19922944,
+          "keys": 18
+        },
+        {
+          "batch": 1,
+          "label": "return-end",
+          "sizeBytes": 15529476,
+          "maxBytes": 19922944,
+          "keys": 18
+        },
+        {
+          "batch": 2,
+          "label": "cleared",
+          "sizeBytes": 0,
+          "maxBytes": 19922944,
+          "keys": 0
+        },
+        {
+          "batch": 2,
+          "label": "forward-end",
+          "sizeBytes": 15529476,
+          "maxBytes": 19922944,
+          "keys": 18
+        },
+        {
+          "batch": 2,
+          "label": "return-end",
+          "sizeBytes": 15529476,
+          "maxBytes": 19922944,
+          "keys": 18
+        },
+        {
+          "batch": 3,
+          "label": "cleared",
+          "sizeBytes": 0,
+          "maxBytes": 19922944,
+          "keys": 0
+        },
+        {
+          "batch": 3,
+          "label": "forward-end",
+          "sizeBytes": 15529476,
+          "maxBytes": 19922944,
+          "keys": 18
+        },
+        {
+          "batch": 3,
+          "label": "return-end",
+          "sizeBytes": 15529476,
+          "maxBytes": 19922944,
+          "keys": 18
+        }
+      ],
+      "returnMemoryHits": 51,
+      "returnImageRequests": 51,
+      "firstProcessFileRequestMs": 711.36695,
+      "coldCacheFirstOpenRequestMs": [
+        711.367,
+        35.262,
+        54.008
+      ],
+      "forwardMedianByBatchMs": [
+        63.566,
+        13.575,
+        13.553
+      ]
+    }
+  },
+  "build": {
+    "runId": 39759607818,
+    "jobId": 119760219759,
+    "conclusion": "success",
+    "artifactId": 12416798384,
+    "zipSha256": "18f816cd171b0a6675fdad83f66a02bcba7f25b0b94156718202a417b93dde05"
+  },
+  "android": {
+    "26": {
+      "runId": 39761233378,
+      "jobId": 119765631631,
+      "conclusion": "success",
+      "harnessCommit": "3582cef6c0d46a081e22985c75039bab84e8d2ba",
+      "artifactId": 12418287111,
+      "zipSha256": "c22101e25bb913dbff5353e66a9cedc1f645859fe431e69eb33143433c64732c"
+    },
+    "36": {
+      "runId": 39759607818,
+      "jobId": 119761185479,
+      "conclusion": "success",
+      "harnessCommit": "9470b8388b8e5adf85070693ffaa42a6eb61231d",
+      "artifactId": 12418055805,
+      "zipSha256": "93f9f5b888030d5d49b178672639c90d85b06db30756142e20e00ab6f92b7bc9"
+    }
+  },
+  "preTestFailures": [
+    {
+      "runId": 39759607818,
+      "jobId": 119761185614,
+      "artifactId": 12417887224,
+      "reason": "logcat -b all -c returned 1 before instrumentation",
+      "zipSha256": "2ad4d4fdaa9c390bc38de2c0ffe68fbc0aa4b90763979e984fe710ef8beda2f7",
+      "observations": 0
+    },
+    {
+      "runId": 39760517125,
+      "jobId": 119763236089,
+      "artifactId": 12418300225,
+      "reason": "svc wifi disable returned 137 before instrumentation; emulator ADB setup omitted",
+      "zipSha256": "a0ad0058195e444f72075da2080a1b6ca20d1d92822a8ae4b2df341f55ad98aa",
+      "observations": 0
+    }
+  ],
+  "decision": "No evidence of redundant decoding on return in the measured 18-card route. Keep existing production cache settings. First uncached request costs more; debug/emulator timings do not establish a production-phone defect.",
+  "limits": [
+    "18 adjacent cards, not the whole catalog or long-run eviction",
+    "Different actual emulator heap sizes produce 32 MiB and 19 MiB cache limits; these are not an OS performance comparison",
+    "Cache cleared each batch; OS file cache and JIT not reset",
+    "CPU painter draw is not compositor presentation",
+    "Gesture marker timings include Compose-test pacing",
+    "No optimization or production APK publication in this stage"
+  ]
+}

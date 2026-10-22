@@ -1,0 +1,93 @@
+name: Record native photo diagnostics evidence
+
+on:
+  push:
+    branches: ['main']
+    paths: ['.github/workflows/record-photo-diagnostics-137.yml']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: read
+
+jobs:
+  record:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: photo-diagnostics-recheck-api26-proof
+          run-id: 39761233378
+          github-token: ${{ github.token }}
+          path: build/record-photos137/api26
+      - uses: actions/download-artifact@v4
+        with:
+          name: photo-diagnostics-api36-proof
+          run-id: 39759607818
+          github-token: ${{ github.token }}
+          path: build/record-photos137/api36
+      - uses: actions/download-artifact@v4
+        with:
+          name: photo-diagnostics-api26-proof
+          run-id: 39759607818
+          github-token: ${{ github.token }}
+          path: build/record-photos137/attempt1-api26
+      - uses: actions/download-artifact@v4
+        with:
+          name: photo-diagnostics-recheck-api26-proof
+          run-id: 39760517125
+          github-token: ${{ github.token }}
+          path: build/record-photos137/attempt2-api26
+      - uses: actions/download-artifact@v4
+        with:
+          name: photo-diagnostics-build
+          run-id: 39759607818
+          github-token: ${{ github.token }}
+          path: build/record-photos137/build
+      - name: Verify measurements and reviewed frames, then archive
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import hashlib,json,shutil,subprocess
+          from pathlib import Path
+          target=Path('research/photo-diagnostics-137')
+          ledger=json.loads((target/'visual-review.json').read_text())
+          assert ledger['status']=='reviewed' and len(ledger['images'])==6
+          expected='9470b8388b8e5adf85070693ffaa42a6eb61231d'
+          for api in (26,36):
+              source=Path(f'build/record-photos137/api{api}')
+              raw=json.loads((source/'proof/raw.json').read_text())
+              result=json.loads((source/'proof/verification.json').read_text())
+              lifecycle=json.loads((source/'emulator/lifecycle.json').read_text())
+              assert raw['passed'] is True and len(raw['observations'])==105 and raw['sdk']==api
+              assert result['passed'] is True and result['productionApk'] is False
+              assert result['sourceCommit']==expected and raw['sourceCommit']==expected
+              assert lifecycle['testPassed'] is True and lifecycle['testExitCode']==0
+              for path in (source/'proof').iterdir():
+                  if path.is_file() and path.suffix in ('.json','.txt','.png'):
+                      dest=target/f'api{api}'/path.name
+                      dest.parent.mkdir(parents=True,exist_ok=True)
+                      shutil.copyfile(path,dest)
+              shutil.copyfile(source/'emulator/lifecycle.json',target/f'api{api}'/'emulator-lifecycle.json')
+              subprocess.run(['python3','tools/photo_diagnostics/analyze.py',str(target/f'api{api}'/'raw.json'),
+                              '--out',str(target/f'api{api}'/'metrics.json')],check=True)
+          attempt=target/'attempt1-api26'
+          attempt.mkdir(exist_ok=True,parents=True)
+          shutil.copyfile('build/record-photos137/attempt1-api26/emulator/lifecycle.json',attempt/'emulator-lifecycle.json')
+          attempt=target/'attempt2-api26'
+          attempt.mkdir(exist_ok=True,parents=True)
+          shutil.copyfile('build/record-photos137/attempt2-api26/emulator/lifecycle.json',attempt/'emulator-lifecycle.json')
+          shutil.copyfile('build/record-photos137/attempt2-api26/proof/log-clear.json',attempt/'log-clear.json')
+          for image in ledger['images']:
+              assert hashlib.sha256((target/image['path']).read_bytes()).hexdigest()==image['sha256'],image['path']
+          for name in ('source-manifest.json','build-result.json'):
+              shutil.copyfile(Path('build/record-photos137/build')/name,target/name)
+          print('210 observations, separate diagnostic APK identity and six reviewed frame hashes verified')
+          PY
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add research/photo-diagnostics-137
+          git commit -m 'Archive native photo decoding and cache measurements [skip ci]'
+          git push origin HEAD:main

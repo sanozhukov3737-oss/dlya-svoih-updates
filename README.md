@@ -65,6 +65,7 @@ bash gradlew :app:assembleRelease
 
 ## Проверки и отчёты
 
+- [Декодирование фотографий и кеш, диагностика на исходниках 0.3.137](research/photo-diagnostics-137/README.md).
 - [Загрузка сравнения по запросу, проверки и публикация 0.3.137](research/lazy-comparison-137/README.md).
 - [Android 8/16, клавиатура и замеры 0.3.136](research/compatibility-136/README.md).
 - [Сравнение и проверка установки 0.3.135](research/comparison-135/README.md).
