@@ -1,0 +1,23 @@
+{
+  "baseAppSource": "510727a0107b8c9a3be881fb5e871d6b78a253bd",
+  "sourceCommit": "9470b8388b8e5adf85070693ffaa42a6eb61231d",
+  "kind": "unpublished debug diagnostics",
+  "patches": {
+    "app/src/main/java/ru/dlyasvoih/app/GuideApplication.kt": {
+      "beforeSha256": "4064690d95c68544be4899d0e1a31196d838637059f09721648b5fc7fe2620a3",
+      "afterSha256": "09893b2a8d23cd40ca754996d2b6c89575027c68bf4cd72e7cccb87010518afb"
+    },
+    "app/src/main/java/ru/dlyasvoih/app/ui/screens/Components.kt": {
+      "beforeSha256": "23f31e3f0adfb6b4c919ec908322b352668725730aff007d8f084fa0ddb9c8f4",
+      "afterSha256": "78cdd257fffc551e396e59104c11608f46f0036ad162c5e25d8646dece0b0485"
+    },
+    "app/src/main/java/ru/dlyasvoih/app/ui/screens/CardReaderScreen.kt": {
+      "beforeSha256": "6cbb19720fef226d6e1d3a0fe8c361a199cae0ed448233cdf6468f7da2c4a6dc",
+      "afterSha256": "1a1063dd6d562312d496bd87644fe99dbfbb11f74d0d09967be1824805067f14"
+    },
+    "app/build.gradle.kts": {
+      "beforeSha256": "6a3ce213be092d6176d3447947245a4e6e1e47cb0968f30c2110c70db222b766",
+      "afterSha256": "6fcb30c13470af9511006354883900f0722123c5b4f53b2418c7c80570956dc2"
+    }
+  }
+}

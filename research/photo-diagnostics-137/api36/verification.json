@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "api": 36,
+  "sourceCommit": "9470b8388b8e5adf85070693ffaa42a6eb61231d",
+  "productionApk": false,
+  "observations": 105,
+  "limits": [
+    "debug source build with timing observers",
+    "emulator, not physical phone",
+    "firstDraw records CPU painter draw, not display presentation",
+    "cache cleared, operating-system file cache not cleared"
+  ]
+}

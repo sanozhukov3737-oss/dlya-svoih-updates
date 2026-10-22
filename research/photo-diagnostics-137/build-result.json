@@ -1,0 +1,16 @@
+{
+  "sourceCommit": "9470b8388b8e5adf85070693ffaa42a6eb61231d",
+  "workflowRunId": 39759607818,
+  "published": false,
+  "productionImageSettingsUnchanged": true,
+  "apks": {
+    "debug.apk": {
+      "bytes": 157198088,
+      "sha256": "01cfbb2c02af98bfa0617f7de63ec190fc6000e0639cc6e4e60885e155fbb79a"
+    },
+    "test.apk": {
+      "bytes": 1198572,
+      "sha256": "d13c42c94b3d13fbb3902c43fef3730abb3f3199f426bf9934481a4b1fcaa6f6"
+    }
+  }
+}
