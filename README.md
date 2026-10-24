@@ -74,7 +74,7 @@ bash gradlew :app:assembleRelease
 - [Завершение работ после публикации](research/POST-0.3.134.md).
 - [Публикация и подпись](research/PUBLICATION-0.3.134.md).
 - [Восстановление, Android и совместимость обновления](research/RECOVERY-STAGE-3.md).
-- [Проверка на физическом телефоне](research/PHYSICAL-ANDROID-0.3.134.md).
+- [Проверка актуальной версии на физическом телефоне](research/PHYSICAL-ANDROID-0.3.137.md).
 - [Правила 3D, авторство и лицензии](OFFLINE_3D.md).
 
 Автоматизированная Android-проверка использует ускоренный KVM-эмулятор. Для
