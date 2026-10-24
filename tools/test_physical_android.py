@@ -46,7 +46,8 @@ class PhoneCaptureTest(unittest.TestCase):
             elif command == ['shell', 'getprop', 'ro.kernel.qemu']:
                 print(os.environ.get('PHONE_FAKE_EMULATOR', '0'))
             elif command == ['shell', 'dumpsys', 'package', 'ru.dlyasvoih.app']:
-                print('versionName=0.3.134\\nversionCode=138 minSdk=26')
+                print('versionName=' + os.environ.get('PHONE_FAKE_VERSION', '0.3.137'))
+                print('versionCode=' + os.environ.get('PHONE_FAKE_CODE', '141') + ' minSdk=26')
             elif command == ['shell', 'dumpsys', 'connectivity']:
                 print('Active default network: ' + os.environ.get('PHONE_FAKE_NETWORK', 'none'))
             elif command == ['shell', 'pm', 'path', 'ru.dlyasvoih.app']:
@@ -73,7 +74,7 @@ class PhoneCaptureTest(unittest.TestCase):
         self.addCleanup(self.environment.stop)
 
     def valid_fixture_hash(self):
-        return patch.dict(phone.VERSIONS, {'after': ('0.3.134', 138,
+        return patch.dict(phone.VERSIONS, {'after': ('0.3.137', 141,
             hashlib.sha256(b'synthetic-installed-apk').hexdigest())})
 
     def test_auto_detection_and_private_wizard_archive(self):
@@ -90,6 +91,7 @@ class PhoneCaptureTest(unittest.TestCase):
             metadata, = [name for name in bundle.namelist() if name.endswith('/evidence.json')]
             evidence = json.loads(bundle.read(metadata))
             self.assertEqual(evidence['phase'], 'after')
+            self.assertEqual((evidence['versionName'], evidence['versionCode']), ('0.3.137', 141))
             self.assertTrue(evidence['physicalDevice'])
             self.assertEqual(evidence['manualFunctionalReview'], 'not-asserted-by-capture-script')
             self.assertNotIn('favoritesPreserved', evidence)
@@ -126,6 +128,32 @@ class PhoneCaptureTest(unittest.TestCase):
             phone.read_phase(str(self.adb), 'PHONE1', 'before')
         calls = [json.loads(line) for line in self.log.read_text().splitlines()]
         self.assertEqual(len(calls), 1)
+
+    def test_published_versions_are_detected(self):
+        for version, code, phase in [('0.3.136', '140', 'before'), ('0.3.137', '141', 'after')]:
+            with self.subTest(version=version), patch.dict(os.environ,
+                    {'PHONE_FAKE_VERSION': version, 'PHONE_FAKE_CODE': code}):
+                self.assertEqual(phone.read_phase(str(self.adb), 'PHONE1')[0], phase)
+
+    def test_old_version_and_wrong_version_code_are_rejected(self):
+        for version, code in [('0.3.134', '138'), ('0.3.137', '140')]:
+            with self.subTest(version=version, code=code), patch.dict(os.environ,
+                    {'PHONE_FAKE_VERSION': version, 'PHONE_FAKE_CODE': code}):
+                with self.assertRaisesRegex(ValueError, 'ничего не удаляйте'):
+                    phone.read_phase(str(self.adb), 'PHONE1')
+        self.assertFalse(self.out.exists())
+
+    def test_capture_configuration_matches_published_releases_and_app(self):
+        root = SCRIPT.parents[1]
+        for phase, report in [('before', 'compatibility-136'), ('after', 'lazy-comparison-137')]:
+            published = json.loads((root / 'research' / report / 'publication.json').read_text())
+            self.assertTrue(published['releasePublished'])
+            self.assertEqual(phone.VERSIONS[phase],
+                (published['versionName'], published['versionCode'], published['apkSha256']))
+        build = (root / 'app/build.gradle.kts').read_text()
+        version, code, _ = phone.VERSIONS['after']
+        self.assertIn('versionName = "' + version + '"', build)
+        self.assertIn('versionCode = ' + str(code), build)
 
 
 if __name__ == '__main__':
