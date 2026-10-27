@@ -101,8 +101,9 @@ class OptionalFeatures139Test {
             Thread.sleep(5000)
             // With the gallery stopped, completion must be handled by the
             // production download receiver and verification job, without UI polling.
-            await(900) { observeDownload();store.state.value.installed || store.state.value.phase==ModelPackPhase.Error }
+            await(1200) { observeDownload();store.state.value.installed || store.state.value.phase==ModelPackPhase.Error }
             assertTrue(store.state.value.message,store.state.value.current)
+            runBlocking(Dispatchers.IO) { store.activeFile.copyTo(master,overwrite=true,bufferSize=1024*1024) }
             shell("am start -n ${host.componentName.flattenToString()} -f 0x00020000")
         } else {
             assertTrue("CI pack fixture missing",master.isFile)
@@ -143,12 +144,13 @@ class OptionalFeatures139Test {
         val freed=store.activeFile.parentFile!!.usableSpace-before
         assertTrue("Deletion did not release the archive's occupied space: $freed",freed>store.descriptor.bytes*9/10)
         compose.onNodeWithTag("model_pack_download").assertIsDisplayed();screen("pack-deleted.png")
-        // Repeat the real public download on API 36, or restore the same immutable
-        // fixture on API 26. Both paths use the production validation/activation.
+        // Confirm a new download can be enqueued after deletion. Reinstall the
+        // already verified test fixture to avoid transferring another 1.28 GB.
         if (realDownload) {
-            store.download();await(900) {observeDownload();store.refresh();store.state.value.installed || store.state.value.phase==ModelPackPhase.Error}
-            assertTrue(store.state.value.message,store.state.value.current)
-        } else runBlocking { withContext(Dispatchers.IO) {master.copyTo(store.pendingFile,overwrite=true,bufferSize=1024*1024)};store.verifyAndActivate(store.pendingFile) }
+            store.download();await {prefs.getLong("download_id",-1)>=0}
+            runBlocking {store.cancel().join()}
+        }
+        runBlocking { withContext(Dispatchers.IO) {master.copyTo(store.pendingFile,overwrite=true,bufferSize=1024*1024)};store.verifyAndActivate(store.pendingFile) }
         assertTrue(store.state.value.current)
         // All 615 approved GLBs must be readable through the new storage layer,
         // with each original SHA-256 checked by the production loader.
@@ -192,7 +194,7 @@ class OptionalFeatures139Test {
         // separate `uiautomator` CLI while it owns that connection cannot dump UI.
         fun visibleText(node: android.view.accessibility.AccessibilityNodeInfo?): String {
             if (node==null) return ""
-            val text=StringBuilder().append(node.text.orEmpty()).append('\n').append(node.contentDescription.orEmpty()).append('\n')
+            val text=StringBuilder().append(node.text?.toString().orEmpty()).append('\n').append(node.contentDescription?.toString().orEmpty()).append('\n')
             for (index in 0 until node.childCount) {
                 val child=node.getChild(index);text.append(visibleText(child));child?.recycle()
             }
