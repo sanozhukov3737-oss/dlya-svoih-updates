@@ -1,0 +1,76 @@
+name: Verify direct and bridge updates 0.3.138
+on:
+  push:
+    branches: ['verify/models-0.3.138']
+    paths: ['.github/workflows/models-138-upgrade.yml', 'tools/check138_android.py']
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+jobs:
+  upgrade:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 50
+    strategy:
+      fail-fast: false
+      matrix:
+        api: [26, 36]
+    env:
+      GH_TOKEN: ${{ github.token }}
+      ANDROID_AVD_HOME: ${{ github.workspace }}/build/android-avds
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - name: Wait for the exact signed build artifact
+        run: |
+          python3 - <<'PY'
+          import json,subprocess,time
+          repo='sanozhukov3737-oss/dlya-svoih-updates'
+          for attempt in range(100):
+              run=json.loads(subprocess.check_output(['gh','api',f'repos/{repo}/actions/runs/40473709029']))
+              assert run['head_sha']=='85dee9a1e95599a079a7babb5269fd58ccc8fff1'
+              artifacts=json.loads(subprocess.check_output(['gh','api',f'repos/{repo}/actions/runs/40473709029/artifacts']))
+              if any(a['name']=='models138-apks' for a in artifacts['artifacts']):break
+              if run['status']=='completed':raise RuntimeError('Signed build did not produce the required artifact: '+str(run['conclusion']))
+              print('Waiting for the signed build artifact',attempt,flush=True);time.sleep(15)
+          else:raise TimeoutError('Signed build artifact was not ready after 25 minutes')
+          PY
+      - uses: actions/download-artifact@v4
+        with:
+          name: models138-apks
+          run-id: 40473709029
+          github-token: ${{ github.token }}
+          path: build/models138/apks
+      - name: Prepare baseline and accelerated Android device
+        run: |
+          set -euo pipefail
+          curl --fail --location --retry 2 --max-time 180 'https://github.com/sanozhukov3737-oss/dlya-svoih-updates/releases/download/app-0.3.137/DLYA_SVOIH_v0.3.137.apk' -o build/models138/previous.apk
+          "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" 'emulator' 'system-images;android-${{ matrix.api }};google_apis;x86_64'
+          echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules
+          sudo udevadm control --reload-rules
+          sudo udevadm trigger --name-match=kvm
+          mkdir -p "$ANDROID_AVD_HOME"
+          echo no | "$ANDROID_HOME/cmdline-tools/latest/bin/avdmanager" create avd --force --name recovery134 --package 'system-images;android-${{ matrix.api }};google_apis;x86_64' --device pixel_2
+          python3 - <<'PY'
+          import os
+          from pathlib import Path
+          p=Path(os.environ['ANDROID_AVD_HOME'])/'recovery134.avd/config.ini'
+          v=dict(line.split('=',1) for line in p.read_text().splitlines() if '=' in line)
+          v.update({'hw.lcd.width':'720','hw.lcd.height':'1280','hw.lcd.density':'320','disk.dataPartition.size':'8G'})
+          p.write_text('\n'.join(k+'='+v for k,v in v.items())+'\n')
+          PY
+      - name: Verify both real signed update paths and release model display
+        run: |
+          /usr/bin/python3 tools/run_android_emulator.py --out build/models138/emulator --timeout 1800 -- /usr/bin/python3 tools/check138_android.py --api ${{ matrix.api }} --apks build/models138/apks --previous build/models138/previous.apk --out build/models138/upgrade-proof
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: models138-upgrade-api${{ matrix.api }}
+          path: |
+            build/models138/upgrade-proof/
+            build/models138/emulator/
+          if-no-files-found: warn
+          retention-days: 14
