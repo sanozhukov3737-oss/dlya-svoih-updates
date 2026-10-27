@@ -70,6 +70,14 @@ jobs:
           path: app/build/reports/
           if-no-files-found: warn
           retention-days: 14
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: models138-partial
+          path: build/models138/apks/
+          compression-level: 0
+          if-no-files-found: warn
+          retention-days: 7
       - name: Remove temporary private signing key
         if: always()
         run: |

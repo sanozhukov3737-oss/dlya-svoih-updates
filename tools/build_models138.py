@@ -45,7 +45,11 @@ def main():
     summary={'candidateSourceCommit':os.environ['GITHUB_SHA'],'workflowRunId':int(os.environ['GITHUB_RUN_ID']),
         'modelCount':615,'contentVersion':197,'originalGlbBytesPreserved':True,'status':'Android and visual review pending'}
     for path,code,key in [(OUT/'DLYA_SVOIH_v0.3.138.apk',143,'full'),(small,142,'bridge')]:
-        meta=apk_metadata(path)
+        signer=str(sdk/'build-tools/36.0.0/apksigner')
+        analyzer=str(sdk/'cmdline-tools/latest/bin/apkanalyzer')
+        certificate_check=subprocess.run([signer,'verify','--print-certs',str(path)],check=True,capture_output=True,text=True,timeout=180)
+        print('Pinned APK verification:',path.name,certificate_check.stdout,flush=True)
+        meta=apk_metadata(path,analyzer=analyzer,signer=signer)
         assert meta['versionName']=='0.3.138' and meta['versionCode']==code and meta['packageName']=='ru.dlyasvoih.app'
         assert meta['signerSha256']==CERT
         meta.update(apkSha256=sha(path),apkBytes=path.stat().st_size,filename=path.name)
