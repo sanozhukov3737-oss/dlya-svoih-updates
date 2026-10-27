@@ -1,0 +1,328 @@
+{
+  "status": "passed",
+  "versionName": "0.3.138",
+  "date": "2026-10-27",
+  "modelCount": 615,
+  "newModelCount": 596,
+  "mappedCardCount": 511,
+  "separateUnconfirmedVisuals": 44,
+  "catalogVersion": 197,
+  "catalogCards": 1695,
+  "catalogImages": 1595,
+  "fullApk": {
+    "packageName": "ru.dlyasvoih.app",
+    "versionCode": 143,
+    "versionName": "0.3.138",
+    "minSdk": 26,
+    "signerSha256": "2f0a0908f269bc039311edb58fca8863347f1e4c3a7cfaddd909991cf1f0b509",
+    "apkSha256": "fa34fe2206a2c0be03dd3cf650be978385549099f9589cc7239fc3809ab60852",
+    "apkBytes": 1389202081,
+    "filename": "DLYA_SVOIH_v0.3.138.apk"
+  },
+  "bridgeApk": {
+    "packageName": "ru.dlyasvoih.app",
+    "versionCode": 142,
+    "versionName": "0.3.138",
+    "minSdk": 26,
+    "signerSha256": "2f0a0908f269bc039311edb58fca8863347f1e4c3a7cfaddd909991cf1f0b509",
+    "apkSha256": "52a424bb01f03faec5c4d12db2efd6fbecffd739e82bffd32b19e9c20657f291",
+    "apkBytes": 144816913,
+    "filename": "DLYA_SVOIH_v0.3.138_Update_Helper.apk"
+  },
+  "modelsRegistrySha256": "e62321912e9c8b3da7f77d09eaeadf5383dc9a1f259d7f22d10642f48e41daab",
+  "databaseSha256": "a2cf495b7476e65a52d8f14b22fe737e812310c4c49ee4aa784afd27ab59e8b5",
+  "reviewManifestSha256": "525fa06d630f705ba8bcdee0ca5b5691c3e05e1b3e1260d50bd337fb780b0d0a",
+  "proofArchive": {
+    "filename": "DLYA_SVOIH_0.3.138_Android_Views.zip",
+    "bytes": 129763561,
+    "sha256": "03ee751b620b3f4d540fcdb91ab6122ef88bb5abccf80b5dcd8cff6e36f3c3bd"
+  },
+  "visualReview": {
+    "status": "passed",
+    "modelPairs": 615,
+    "actualAndroidFrames": 1230,
+    "renderApk": "debug APK from signed release build source and identical GLB payload",
+    "reviewer": "Codex visual inspection of actual Android screenshots",
+    "networkBlocked": true
+  },
+  "upgradeChecks": [
+    {
+      "api": 26,
+      "passed": true,
+      "checks": {
+        "bridgeChainPreservesData": true,
+        "directUpgradePreservesData": true,
+        "releaseGallerySearchAndModel": true
+      },
+      "searchObservationUpperBoundsMs": {
+        "PMN2": 1635
+      },
+      "candidateSourceCommit": "f27c96a352ed39dded9578dcd185dad81d376122"
+    },
+    {
+      "api": 36,
+      "passed": true,
+      "checks": {
+        "bridgeChainPreservesData": true,
+        "directUpgradePreservesData": true,
+        "releaseGallerySearchAndModel": true
+      },
+      "searchObservationUpperBoundsMs": {
+        "PMN2": 2463
+      },
+      "candidateSourceCommit": "f27c96a352ed39dded9578dcd185dad81d376122"
+    }
+  ],
+  "actions": {
+    "repository": "sanozhukov3737-oss/dlya-svoih-updates",
+    "date": "2026-10-27",
+    "build": {
+      "runId": 40476564246,
+      "jobId": 122096134165,
+      "sourceCommit": "f27c96a352ed39dded9578dcd185dad81d376122",
+      "buildJobConclusion": "success",
+      "workflowConclusion": "failure",
+      "workflowFailure": "Initial screenshot export was denied by Android/data access restrictions; signed build succeeded and was reused without changes."
+    },
+    "upgrades": {
+      "runId": 40476882028,
+      "sourceCommit": "16e9d99d77561bd08fdaa8e4e3534558f8180851",
+      "jobs": [
+        {
+          "id": 122097188126,
+          "api": 26,
+          "conclusion": "success"
+        },
+        {
+          "id": 122097188668,
+          "api": 36,
+          "conclusion": "success"
+        }
+      ]
+    },
+    "renderRuns": [
+      {
+        "runId": 40479531721,
+        "sourceCommit": "ae8c79e2f6cbbcb268a6a93d119a915c8a247e09",
+        "jobs": [
+          {
+            "id": 122106046280,
+            "name": "render (2)",
+            "conclusion": "success"
+          },
+          {
+            "id": 122106046436,
+            "name": "render (3)",
+            "conclusion": "success"
+          },
+          {
+            "id": 122106046475,
+            "name": "render (6)",
+            "conclusion": "success"
+          },
+          {
+            "id": 122106046507,
+            "name": "render (0)",
+            "conclusion": "success"
+          },
+          {
+            "id": 122106046515,
+            "name": "render (4)",
+            "conclusion": "success"
+          },
+          {
+            "id": 122106046526,
+            "name": "render (1)",
+            "conclusion": "success"
+          },
+          {
+            "id": 122106046689,
+            "name": "render (7)",
+            "conclusion": "success"
+          },
+          {
+            "id": 122106046742,
+            "name": "render (5)",
+            "conclusion": "success"
+          }
+        ],
+        "artifacts": [
+          {
+            "id": 12723226234,
+            "name": "models138-render-0",
+            "size": 13459498,
+            "sha256": "ac6cfb05d48fe47c97052e731ab5738f1696511992ea04cfcf573bffcd220644"
+          },
+          {
+            "id": 12723138087,
+            "name": "models138-render-4",
+            "size": 14001560,
+            "sha256": "63b54c0f225c0550abf011eb48ba17381b166d7b9047b418f001fb1168e13326"
+          },
+          {
+            "id": 12723032092,
+            "name": "models138-render-6",
+            "size": 13298062,
+            "sha256": "2af4daf441e454d0dd4a9d2e701ea25cb935ff4321db6c9036126164756c1071"
+          },
+          {
+            "id": 12722877037,
+            "name": "models138-render-3",
+            "size": 14259239,
+            "sha256": "75ba14d9b4b92683643c1b78df4259ab50fbbad3984b6c042049cda07cebd0b5"
+          },
+          {
+            "id": 12722482674,
+            "name": "models138-render-7",
+            "size": 12886692,
+            "sha256": "404b2232912392ef2fd7f0e0c165d2e3a2363da4e8240db9a484572b88e7fd34"
+          },
+          {
+            "id": 12722463033,
+            "name": "models138-render-1",
+            "size": 14016088,
+            "sha256": "d42bb0e0bcd51f911ad4d0eb4f8af2ac6e3751bf97e2fb9bad67393611d7ad5e"
+          },
+          {
+            "id": 12722458853,
+            "name": "models138-render-5",
+            "size": 14241336,
+            "sha256": "45d0c25db301d23534c84340c5ceda73876ae367a9b1d5d57b8cbd8a8b02852c"
+          },
+          {
+            "id": 12722313247,
+            "name": "models138-render-2",
+            "size": 13334882,
+            "sha256": "5c195181364ec12eae1828aafad7ec42595eafd6f45e38fbb73279cd83778505"
+          }
+        ],
+        "reviewIssue": "151 initial frames showed the loading caption despite a ready WebView state; those pairs are excluded and replaced by the corrected capture run."
+      },
+      {
+        "runId": 40481937887,
+        "sourceCommit": "131f0951556b2503ef948ca42bef1580e09e4257",
+        "status": "passed",
+        "jobs": [
+          {
+            "id": 122114132093,
+            "name": "test-capture-build",
+            "conclusion": "success"
+          },
+          {
+            "id": 122114859268,
+            "name": "render (5)",
+            "conclusion": "success"
+          },
+          {
+            "id": 122114859303,
+            "name": "render (1)",
+            "conclusion": "success"
+          },
+          {
+            "id": 122114859307,
+            "name": "render (2)",
+            "conclusion": "success"
+          },
+          {
+            "id": 122114859321,
+            "name": "render (6)",
+            "conclusion": "success"
+          },
+          {
+            "id": 122114859348,
+            "name": "render (3)",
+            "conclusion": "success"
+          },
+          {
+            "id": 122114859364,
+            "name": "render (4)",
+            "conclusion": "success"
+          },
+          {
+            "id": 122114859508,
+            "name": "render (0)",
+            "conclusion": "success"
+          },
+          {
+            "id": 122114859716,
+            "name": "render (7)",
+            "conclusion": "success"
+          }
+        ],
+        "artifacts": [
+          {
+            "id": 12724815205,
+            "name": "models138-render-2",
+            "size": 15813736,
+            "sha256": "21e2e38ef0fb19c042b9e3fa5bf8bb2d2ddedbcdc86db726fd76933a9af07a87"
+          },
+          {
+            "id": 12724685162,
+            "name": "models138-render-0",
+            "size": 14284515,
+            "sha256": "a3fac95c56ea556b25b5dcbfab9e73da237abde23eec41a805c3823f44c95fb3"
+          },
+          {
+            "id": 12724665028,
+            "name": "models138-render-3",
+            "size": 16324988,
+            "sha256": "26a9e46dcaebb138da19ce880208fba59a13d6728db379c826baca7aed0320a4"
+          },
+          {
+            "id": 12724275958,
+            "name": "models138-render-1",
+            "size": 15600988,
+            "sha256": "b521133898527c028b99c49a5205a311c22917a8e2d15930edabfb2caed75b50"
+          },
+          {
+            "id": 12723946445,
+            "name": "models138-render-4",
+            "size": 15310829,
+            "sha256": "7ae8fd8c85d99b945ea204522fca862f61574c7b43a3ef7a2d663799ee00b725"
+          },
+          {
+            "id": 12723816757,
+            "name": "models138-render-7",
+            "size": 14548850,
+            "sha256": "a1a6abd0eb8e87ded6d180e9571db8bc6c63efa66f3f649d25522a7726eca974"
+          },
+          {
+            "id": 12723616033,
+            "name": "models138-capture-test",
+            "size": 1080808,
+            "sha256": "ac650194235612b926748834a3c453e36412737571f21040d025fd7259b15f78"
+          },
+          {
+            "id": 12723592488,
+            "name": "models138-render-6",
+            "size": 14574598,
+            "sha256": "77643d69416393ca1b97025f51e2d18e9e8fc31e82f3e2e2c283ad714caf6115"
+          },
+          {
+            "id": 12723443674,
+            "name": "models138-render-5",
+            "size": 16180155,
+            "sha256": "fba15b8f27e2b64475904abcea945da889a21c0e81ba3a12ba0ff81c02869976"
+          }
+        ],
+        "correction": "Wait for a displayed model body, rejecting loading-caption screenshots. All 615 models retested; 151 replacement pairs are used in the visual review archive."
+      }
+    ],
+    "hostChecks": {
+      "passed": 53,
+      "groups": {
+        "app-feed": 15,
+        "updates": 9,
+        "java-features": 4,
+        "reader-navigation": 1,
+        "search": 10,
+        "menu-images": 2,
+        "menu-cache": 3,
+        "quick-comparison": 2,
+        "existing-models": 4,
+        "collection-integrity": 3
+      }
+    }
+  },
+  "physicalPhoneTested": false
+}
