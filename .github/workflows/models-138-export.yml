@@ -1,0 +1,80 @@
+name: Export verified model APKs in bounded parts
+on:
+  push:
+    branches: ['export/models-0.3.138']
+    paths: ['.github/workflows/models-138-export.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+jobs:
+  export:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: models138-apks
+          run-id: 40476564246
+          github-token: ${{ github.token }}
+          path: build/apks
+      - name: Verify unchanged signed APKs and split their transport
+        run: |
+          python3 - <<'PY'
+          import hashlib,json,shutil
+          from pathlib import Path
+          source=Path('build/apks');metadata=json.loads((source/'build-result.json').read_text())
+          assert metadata['candidateSourceCommit']=='f27c96a352ed39dded9578dcd185dad81d376122'
+          for kind in ['full','bridge']:
+              m=metadata[kind];p=source/m['filename']
+              assert p.stat().st_size==m['apkBytes']
+              assert hashlib.file_digest(p.open('rb'),'sha256').hexdigest()==m['apkSha256']
+          parts=[]
+          with (source/metadata['full']['filename']).open('rb') as stream:
+              for index in range(5):
+                  block=stream.read(300*1024**2);assert block
+                  directory=Path('build/export')/str(index);directory.mkdir(parents=True)
+                  name=f'full.part-{index:02}';(directory/name).write_bytes(block)
+                  parts.append({'name':name,'bytes':len(block),'sha256':hashlib.sha256(block).hexdigest()})
+              assert not stream.read(1)
+          first=Path('build/export/0')
+          shutil.copy2(source/'build-result.json',first/'build-result.json')
+          shutil.copy2(source/metadata['bridge']['filename'],first/metadata['bridge']['filename'])
+          (first/'parts.json').write_text(json.dumps({'parts':parts,'fullSha256':metadata['full']['apkSha256'],'fullBytes':metadata['full']['apkBytes']},indent=2)+'\n')
+          print(json.dumps({'parts':parts,'originalFullBytes':metadata['full']['apkBytes']}))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: models138-export-0
+          path: build/export/0/
+          compression-level: 0
+          if-no-files-found: error
+          retention-days: 7
+      - uses: actions/upload-artifact@v4
+        with:
+          name: models138-export-1
+          path: build/export/1/
+          compression-level: 0
+          if-no-files-found: error
+          retention-days: 7
+      - uses: actions/upload-artifact@v4
+        with:
+          name: models138-export-2
+          path: build/export/2/
+          compression-level: 0
+          if-no-files-found: error
+          retention-days: 7
+      - uses: actions/upload-artifact@v4
+        with:
+          name: models138-export-3
+          path: build/export/3/
+          compression-level: 0
+          if-no-files-found: error
+          retention-days: 7
+      - uses: actions/upload-artifact@v4
+        with:
+          name: models138-export-4
+          path: build/export/4/
+          compression-level: 0
+          if-no-files-found: error
+          retention-days: 7

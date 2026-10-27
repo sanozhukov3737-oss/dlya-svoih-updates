@@ -2,6 +2,7 @@ package ru.dlyasvoih.app.ui.screens
 
 import android.content.Context
 import android.graphics.Bitmap
+import android.graphics.Color
 import android.os.ParcelFileDescriptor
 import android.webkit.WebView
 import androidx.compose.material3.MaterialTheme
@@ -57,18 +58,34 @@ class Collection138RenderTest {
             assertTrue("No composited Android frame", done.await(15, TimeUnit.SECONDS))
         }
         fun save(name: String): Bitmap {
-            frame()
             val geometry = IntArray(4)
             instrumentation.runOnMainSync {
                 viewer.getLocationOnScreen(geometry)
                 geometry[2] = viewer.width; geometry[3] = viewer.height
             }
-            val screenshot = instrumentation.uiAutomation.takeScreenshot()
-            assertNotNull(screenshot)
-            val crop = Bitmap.createBitmap(screenshot, geometry[0], geometry[1], geometry[2], geometry[3])
-            File(out, name).outputStream().use { crop.compress(Bitmap.CompressFormat.PNG, 100, it) }
-            screenshot.recycle()
-            return crop
+            // VisualStateCallback can precede the compositor's displayed frame.
+            // Reject the loading caption instead of accepting any non-empty PNG.
+            repeat(30) {
+                frame()
+                val screenshot = instrumentation.uiAutomation.takeScreenshot()
+                assertNotNull(screenshot)
+                val crop = Bitmap.createBitmap(screenshot, geometry[0], geometry[1], geometry[2], geometry[3])
+                screenshot.recycle()
+                var bodyPixels = 0
+                for (y in 60 until crop.height - 40) for (x in 20 until crop.width - 20) {
+                    val c = crop.getPixel(x, y)
+                    if (kotlin.math.abs(Color.red(c)-231)>35 ||
+                        kotlin.math.abs(Color.green(c)-233)>35 || kotlin.math.abs(Color.blue(c)-228)>35) bodyPixels++
+                }
+                if (bodyPixels > 5000) {
+                    File(out, name).outputStream().use { crop.compress(Bitmap.CompressFormat.PNG, 100, it) }
+                    return crop
+                }
+                crop.recycle()
+                instrumentation.runOnMainSync { viewer.invalidate() }
+                Thread.sleep(300)
+            }
+            error("$name: no displayed model body after compositor wait")
         }
         for (model in models) {
             compose.runOnIdle { selected.value = model.id }
