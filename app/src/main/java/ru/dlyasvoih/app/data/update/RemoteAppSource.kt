@@ -27,20 +27,21 @@ class RemoteAppSource(private val cache: File, private val files: RemoteFiles = 
     fun download(app: RemoteApp, progress: (Long) -> Unit): File {
         val directory = File(cache, "remote-apk")
         kotlin.check(directory.isDirectory || directory.mkdirs()) { "Не удалось подготовить скачивание APK" }
-        return files.download(app.url, File(directory, "update.apk"), app.bytes, app.sha256) { progress(it) }
+        return files.downloadApp(app.url, File(directory, "update.apk"), app.bytes, app.sha256) { progress(it) }
     }
 
     fun cachedFile(): File = File(cache, "remote-apk/update.apk")
 
     companion object {
+        const val MAX_APK_BYTES = 2L * 1024 * 1024 * 1024
         const val FEED_URL = "https://github.com/sanozhukov3737-oss/dlya-svoih-updates/releases/latest/download/latest.json"
 
         fun decode(text: String): RemoteApp? {
             require(text.toByteArray(Charsets.UTF_8).size <= 64 * 1024) { "Слишком большое описание обновления" }
             val root = JSONObject(text)
             require(root.opt("formatVersion") == 1) { "Неподдерживаемый формат обновления" }
-            if (!root.has("app")) return null
-            val json = root.getJSONObject("app")
+            if (!root.has("app") && !root.has("appLarge")) return null
+            val json = root.getJSONObject(if (root.has("appLarge")) "appLarge" else "app")
             fun number(name: String): Long = when (val value = json.opt(name)) {
                 is Int -> value.toLong()
                 is Long -> value
@@ -55,7 +56,7 @@ class RemoteAppSource(private val cache: File, private val files: RemoteFiles = 
             val code = number("versionCode")
             val sdk = number("minSdk")
             val size = number("bytes")
-            require(code in 1..Int.MAX_VALUE.toLong() && sdk in 26..Int.MAX_VALUE.toLong() && size in 1..PackFiles.MAX_ARCHIVE) {
+            require(code in 1..Int.MAX_VALUE.toLong() && sdk in 26..Int.MAX_VALUE.toLong() && size in 1..MAX_APK_BYTES) {
                 "Некорректная версия или размер APK"
             }
             val url = string("url", 2048)

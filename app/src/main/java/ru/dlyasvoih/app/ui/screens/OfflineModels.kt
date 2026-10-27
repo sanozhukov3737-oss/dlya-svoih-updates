@@ -4,6 +4,8 @@ import android.content.Context
 import android.net.Uri
 import android.webkit.WebResourceResponse
 import org.json.JSONObject
+import org.json.JSONArray
+import java.util.Locale
 import java.io.ByteArrayInputStream
 
 internal data class OfflineModel(
@@ -16,6 +18,27 @@ internal object OfflineModelFiles {
     const val CARD_ID = "ref-v8-tm-46"
     const val ENTRY_URL = "https://appassets.androidplatform.net/assets/viewer3d/index.html"
     @Volatile private var cached: List<OfflineModel>? = null
+    @Volatile private var cardIndex: Set<String>? = null
+
+    fun hasForCard(context: Context, cardId: String): Boolean {
+        val ids = cardIndex ?: synchronized(this) {
+            cardIndex ?: context.assets.open("viewer3d/card-index.json").bufferedReader().use {
+                val array = JSONArray(it.readText())
+                (0 until array.length()).map { index -> array.getString(index) }.toSet()
+            }.also { cardIndex = it }
+        }
+        return cardId in ids
+    }
+
+    fun normalizeSearch(value: String): String = value.lowercase(Locale.ROOT).replace('ё', 'е')
+        .filter { it.isLetterOrDigit() }
+
+    fun search(models: List<OfflineModel>, query: String): List<OfflineModel> {
+        val needle = normalizeSearch(query)
+        return if (needle.isEmpty()) models else models.filter {
+            normalizeSearch(it.title).contains(needle) || normalizeSearch(it.id).contains(needle)
+        }
+    }
 
     fun models(context: Context): List<OfflineModel> = cached ?: synchronized(this) {
         cached ?: context.assets.open("viewer3d/models.json").bufferedReader().use { reader ->
@@ -26,7 +49,7 @@ internal object OfflineModelFiles {
                 OfflineModel(item.getString("id"), item.getString("file"), item.getString("title"),
                     (0 until ids.length()).map { ids.getString(it) }.toSet(),
                     item.getString("subtitle"), item.getString("author"), item.getString("source"),
-                    item.getString("license"), item.getString("licenseUrl"), item.getString("displayNote"))
+                    item.getString("license"), item.optString("licenseUrl"), item.getString("displayNote"))
             }.also { cached = it }
         }
     }

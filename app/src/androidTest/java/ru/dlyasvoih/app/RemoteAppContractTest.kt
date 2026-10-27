@@ -20,11 +20,21 @@ class RemoteAppContractTest {
 
     @Test fun apkOfferRejectsMalformedAndUnsafeValues() {
         for ((key, value) in listOf("versionCode" to 1.5, "versionCode" to -1, "bytes" to 0,
-            "bytes" to 300000000L, "minSdk" to 0, "sha256" to "abc", "signerSha256" to "x".repeat(64),
+            "bytes" to 2147483649L, "minSdk" to 0, "sha256" to "abc", "signerSha256" to "x".repeat(64),
             "url" to "http://example.com/app.apk", "url" to "https://user:password@example.com/app.apk")) {
             val json = JSONObject(RemoteAppSource.encode(offer))
             json.getJSONObject("app").put(key, value)
             assertThrows(Exception::class.java) { RemoteAppSource.decode(json.toString()) }
         }
+    }
+
+    @Test fun largeOfferIsPreferredAfterTheCompatibleBridge() {
+        val json = JSONObject(RemoteAppSource.encode(offer))
+        val large = JSONObject(json.getJSONObject("app").toString())
+            .put("versionCode", 143).put("bytes", 1400000000L)
+        json.put("appLarge", large)
+        assertEquals(143, RemoteAppSource.decode(json.toString())!!.versionCode)
+        assertEquals(1400000000L, RemoteAppSource.decode(json.toString())!!.bytes)
+        assertEquals(118, json.getJSONObject("app").getInt("versionCode"))
     }
 }

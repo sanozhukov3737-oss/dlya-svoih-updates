@@ -17,6 +17,8 @@ import android.webkit.WebViewClient
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.runtime.saveable.rememberSaveable
@@ -32,11 +34,14 @@ import androidx.compose.ui.window.DialogProperties
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LifecycleEventObserver
 import androidx.lifecycle.compose.LocalLifecycleOwner
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.withContext
 
 @Composable
 internal fun OfflineModelAction(cardId: String, active: Boolean, modifier: Modifier = Modifier) {
     val context = LocalContext.current
-    val model = remember(cardId, context) { OfflineModelFiles.forCard(context, cardId) } ?: return
+    val available = remember(cardId, context) { OfflineModelFiles.hasForCard(context, cardId) }
+    if (!available) return
     var open by rememberSaveable(cardId) { mutableStateOf(false) }
     LaunchedEffect(active) { if (!active) open = false }
     FilledTonalButton(onClick = { open = true }, modifier = modifier.fillMaxWidth().testTag("open_offline_3d")) {
@@ -44,29 +49,44 @@ internal fun OfflineModelAction(cardId: String, active: Boolean, modifier: Modif
         Spacer(Modifier.weight(1f))
         Text("Офлайн", style = MaterialTheme.typography.labelMedium)
     }
-    if (open && active) OfflineModelDialog(modelId = model.id) { open = false }
+    if (open && active) OfflineModelGallery(cardId = cardId, onDismiss = { open = false })
 }
 
 @Composable
-internal fun OfflineModelGallery(onDismiss: () -> Unit) {
+internal fun OfflineModelGallery(cardId: String? = null, onDismiss: () -> Unit) {
     val context = LocalContext.current
-    val models = remember(context) { OfflineModelFiles.models(context) }
+    val loaded by produceState<List<OfflineModel>?>(null, context, cardId) {
+        value = withContext(Dispatchers.IO) {
+            OfflineModelFiles.models(context).filter { cardId == null || cardId in it.cardIds }
+        }
+    }
+    val models = loaded.orEmpty()
+    var query by rememberSaveable(cardId) { mutableStateOf("") }
+    val filtered = remember(models, query) { OfflineModelFiles.search(models, query) }
     var selected by rememberSaveable { mutableStateOf<String?>(null) }
     val selectedId = selected
     if (selectedId != null) {
         OfflineModelDialog(modelId = selectedId) { selected = null }
         return
     }
+    if (cardId != null && models.size == 1) {
+        OfflineModelDialog(modelId = models.single().id, onDismiss = onDismiss)
+        return
+    }
     Dialog(onDismissRequest = onDismiss, properties = DialogProperties(usePlatformDefaultWidth = false)) {
         Surface(Modifier.fillMaxSize().windowInsetsPadding(WindowInsets.systemBars).testTag("offline_3d_gallery")) {
             Column {
                 GuideBar("3D-модели · офлайн", onDismiss)
-                Text("${models.size} моделей · доступны без интернета", Modifier.padding(16.dp),
+                Text(if (loaded == null) "Загружаем коллекцию…" else "${filtered.size} из ${models.size} моделей · офлайн", Modifier.padding(16.dp),
                     style = MaterialTheme.typography.bodyMedium)
+                OutlinedTextField(value = query, onValueChange = { query = it },
+                    label = { Text("Найти модель") }, singleLine = true,
+                    modifier = Modifier.fillMaxWidth().padding(horizontal = 16.dp).testTag("offline_model_search"))
+                if (loaded != null && filtered.isEmpty()) Text("Модели не найдены", Modifier.padding(16.dp))
                 LazyColumn(modifier = Modifier.testTag("offline_3d_gallery_list"),
                     contentPadding = PaddingValues(start = 16.dp, end = 16.dp, bottom = 24.dp),
                     verticalArrangement = Arrangement.spacedBy(10.dp)) {
-                    items(models, key = { it.id }) { model ->
+                    items(filtered, key = { it.id }) { model ->
                         OutlinedCard(onClick = { selected = model.id },
                             modifier = Modifier.fillMaxWidth().testTag("offline_model:${model.id}")) {
                             Column(Modifier.padding(16.dp), verticalArrangement = Arrangement.spacedBy(5.dp)) {
@@ -95,6 +115,7 @@ internal fun OfflineModelDialog(modelId: String = "tm-46", onViewerCreated: (Web
     val holder = remember { ViewerHolder() }
     var failed by remember { mutableStateOf(false) }
     var attempt by remember { mutableIntStateOf(0) }
+    var details by rememberSaveable(modelId) { mutableStateOf(false) }
     DisposableEffect(lifecycle) {
         val observer = LifecycleEventObserver { _, event ->
             when (event) {
@@ -133,14 +154,20 @@ internal fun OfflineModelDialog(modelId: String = "tm-46", onViewerCreated: (Web
                 }
                 HorizontalDivider()
                 Column(Modifier.padding(horizontal = 16.dp, vertical = 10.dp), verticalArrangement = Arrangement.spacedBy(3.dp)) {
+                    Text(model.subtitle, style = MaterialTheme.typography.bodySmall)
+                    TextButton(onClick = { details = !details }, contentPadding = PaddingValues(0.dp)) {
+                        Text(if (details) "Скрыть сведения" else "Автор, источники и пояснения")
+                    }
+                    if (details) Column(Modifier.heightIn(max = 180.dp).verticalScroll(rememberScrollState())) {
                     Text("${model.author} · ${model.license}", style = MaterialTheme.typography.labelMedium)
-                    Text(model.subtitle + ". " + model.displayNote,
+                    Text(model.displayNote,
                         style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
                     Row(horizontalArrangement = Arrangement.spacedBy(16.dp)) {
-                        TextButton(onClick = { uriHandler.openUri(model.source) },
+                        if (model.source.startsWith("https://")) TextButton(onClick = { uriHandler.openUri(model.source) },
                             contentPadding = PaddingValues(0.dp)) { Text("Автор и источник") }
-                        TextButton(onClick = { uriHandler.openUri(model.licenseUrl) },
+                        if (model.licenseUrl.startsWith("https://")) TextButton(onClick = { uriHandler.openUri(model.licenseUrl) },
                             contentPadding = PaddingValues(0.dp)) { Text("Лицензия") }
+                    }
                     }
                 }
             }

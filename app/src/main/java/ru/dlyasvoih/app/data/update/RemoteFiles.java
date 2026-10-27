@@ -76,7 +76,17 @@ public final class RemoteFiles {
     }
 
     public File download(String address, File target, long expectedBytes, String expectedHash, Progress progress) throws IOException {
-        if (expectedBytes <= 0 || expectedBytes > PackFiles.MAX_ARCHIVE || expectedHash == null ||
+        return transfer(address, target, expectedBytes, expectedHash, PackFiles.MAX_ARCHIVE, MAX_TRANSFER_NANOS, progress);
+    }
+
+    public File downloadApp(String address, File target, long expectedBytes, String expectedHash, Progress progress) throws IOException {
+        return transfer(address, target, expectedBytes, expectedHash, 2L * 1024 * 1024 * 1024,
+            40L * 60 * 1_000_000_000, progress);
+    }
+
+    private File transfer(String address, File target, long expectedBytes, String expectedHash,
+            long maximumBytes, long maximumNanos, Progress progress) throws IOException {
+        if (expectedBytes <= 0 || expectedBytes > maximumBytes || expectedHash == null ||
                 !expectedHash.matches("[a-fA-F0-9]{64}")) throw new IllegalArgumentException("Некорректное описание обновления");
         HttpURLConnection connection = open(address);
         boolean complete = false;
@@ -91,7 +101,7 @@ public final class RemoteFiles {
                 while ((count = input.read(buffer)) != -1) {
                     if (Thread.currentThread().isInterrupted()) throw new InterruptedIOException();
                     long now = System.nanoTime();
-                    if (now - started > MAX_TRANSFER_NANOS) throw new IOException("Download timeout");
+                    if (now - started > maximumNanos) throw new IOException("Download timeout");
                     total += count;
                     if (total > expectedBytes) throw new IOException("Download exceeds declared size");
                     output.write(buffer, 0, count);

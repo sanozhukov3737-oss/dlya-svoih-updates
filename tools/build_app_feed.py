@@ -11,6 +11,7 @@ from urllib.parse import urlsplit
 import zipfile
 
 MAX_BYTES = 256 * 1024 * 1024
+MAX_APK_BYTES = 2 * 1024 * 1024 * 1024
 PACKAGE = 'ru.dlyasvoih.app'
 
 # One bounded recovery for the first GitHub APK, which did not use the
@@ -51,7 +52,7 @@ def validate_app_metadata(app):
         raise ValueError('Unsupported APK feed')
     integer(app.get('versionCode'), 1, 2147483647)
     integer(app.get('minSdk'), 26, 2147483647)
-    integer(app.get('bytes'), 1, MAX_BYTES)
+    integer(app.get('bytes'), 1, MAX_APK_BYTES)
     if app.get('packageName') != PACKAGE:
         raise ValueError('Wrong APK package')
     name = app.get('versionName')
@@ -78,6 +79,8 @@ def validate_catalog_feed(feed):
         raise ValueError('Invalid catalog changes')
     if 'app' in feed:
         validate_app_metadata(feed['app'])
+    if 'appLarge' in feed:
+        validate_app_metadata(feed['appLarge'])
     return feed
 
 
@@ -132,7 +135,7 @@ def write_app_feed(apk, catalog_feed, url, output, changes='', analyzer=None, si
     apk, output = Path(apk), Path(output)
     if output.resolve() == apk.resolve() or output.with_suffix(output.suffix + '.tmp').resolve() == apk.resolve():
         raise ValueError('Feed must not overwrite the APK')
-    integer(apk.stat().st_size, 1, MAX_BYTES)
+    integer(apk.stat().st_size, 1, MAX_APK_BYTES)
     https_url(url)
     with zipfile.ZipFile(apk) as z:
         if 'AndroidManifest.xml' not in z.namelist() or z.testzip() is not None:

@@ -101,6 +101,7 @@ class OfflineModelViewerTest {
         compose.onNodeWithTag("offline_3d_gallery_list").performScrollToNode(hasTestTag("offline_model:m18a1-claymore"))
         compose.onNodeWithTag("offline_model:m18a1-claymore").performClick()
         compose.onNodeWithText("M18A1 Claymore · 3D").assertIsDisplayed()
+        compose.onNodeWithText("Автор, источники и пояснения").performClick()
         compose.onNodeWithText("Charlie Tinley · CC BY 4.0").assertIsDisplayed()
         compose.onNodeWithContentDescription("Назад").performClick()
         compose.onNodeWithTag("offline_3d_gallery").assertIsDisplayed()
