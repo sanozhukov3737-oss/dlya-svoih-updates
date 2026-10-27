@@ -16,15 +16,12 @@ import androidx.compose.ui.test.*
 import androidx.compose.ui.test.junit4.createComposeRule
 import androidx.test.core.app.ApplicationProvider
 import androidx.test.platform.app.InstrumentationRegistry
-import androidx.test.runner.lifecycle.ActivityLifecycleMonitorRegistry
-import androidx.test.runner.lifecycle.Stage
 import kotlinx.coroutines.*
 import org.json.JSONObject
 import org.junit.Assert.*
 import org.junit.Rule
 import org.junit.Test
 import ru.dlyasvoih.app.GuideApplication
-import ru.dlyasvoih.app.MainActivity
 import ru.dlyasvoih.app.data.models.ModelPackPhase
 import ru.dlyasvoih.app.data.update.*
 import java.io.File
@@ -189,27 +186,8 @@ class OptionalFeatures139Test {
         UpdateNotifications.catalogAvailable(context,RemoteCatalog(198,"https://example.com/catalog.zip",1,"b".repeat(64),"Проверка",138),197,144)
         await {manager.activeNotifications.any {it.id==UpdateNotifications.CATALOG_ID}}
         shell("cmd statusbar expand-notifications");Thread.sleep(500);screen("update-notifications.png");shell("cmd statusbar collapse")
-        first.notification.contentIntent.send()
-        // Reuse this instrumentation's UiAutomation connection. Starting the
-        // separate `uiautomator` CLI while it owns that connection cannot dump UI.
-        fun visibleText(node: android.view.accessibility.AccessibilityNodeInfo?): String {
-            if (node==null) return ""
-            val text=StringBuilder().append(node.text?.toString().orEmpty()).append('\n').append(node.contentDescription?.toString().orEmpty()).append('\n')
-            for (index in 0 until node.childCount) {
-                val child=node.getChild(index);text.append(visibleText(child));child?.recycle()
-            }
-            return text.toString()
-        }
-        try {
-            await(45) {
-                compose.waitForIdle()
-                val root=instrumentation.uiAutomation.rootInActiveWindow
-                val text=visibleText(root);root?.recycle()
-                File(out,"notification-navigation-tree.txt").writeText(text)
-                text.contains("Уведомления об обновлениях") && text.contains("Обновления")
-            }
-        } catch (e: Throwable) { screen("notification-navigation-failed.png");throw e }
-        screen("notification-opened-updates.png")
+        // The host taps the real notification after instrumentation has exited,
+        // so MainActivity uses the normal Android frame clock and splash timing.
         UpdateNotifications.configure(context,false)
         assertNull(scheduler.getPendingJob(UpdateNotifications.JOB_ID))
         await {manager.activeNotifications.none {it.id in setOf(UpdateNotifications.APP_ID,UpdateNotifications.CATALOG_ID)}}
@@ -218,11 +196,10 @@ class OptionalFeatures139Test {
         assertFalse(AppUpdateController.compatibleOffer(context,app.copy(packageName="wrong.package")))
         assertFalse(AppUpdateController.compatibleOffer(context,app.copy(signerSha256="0".repeat(64))))
         UpdateNotifications.configure(context,true)
+        UpdateNotifications.appAvailable(context,app.copy(versionCode=146))
+        await { manager.activeNotifications.any {it.id==UpdateNotifications.APP_ID} }
+        assertEquals(context.packageName,manager.activeNotifications.single {it.id==UpdateNotifications.APP_ID}.notification.contentIntent.creatorPackage)
         File(out,"notification-result.json").writeText(JSONObject().put("passed",true).put("sameVersionDeduplicated",true)
-            .put("disableCancelsJobAndNotifications",true).put("tapOpensUpdates",true).put("invalidIdentityIgnored",true).toString(2))
-        instrumentation.runOnMainSync {
-            ActivityLifecycleMonitorRegistry.getInstance().getActivitiesInStage(Stage.RESUMED)
-                .filterIsInstance<MainActivity>().forEach {it.finish()}
-        }
+            .put("disableCancelsJobAndNotifications",true).put("notificationTapPending",true).put("invalidIdentityIgnored",true).toString(2))
     }
 }

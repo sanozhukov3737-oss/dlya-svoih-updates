@@ -42,7 +42,12 @@ def main():
         'testApkSha256':hashlib.sha256((a.apks/'test.apk').read_bytes()).hexdigest()}
     try:
         with a.previous.open('rb') as f:assert hashlib.file_digest(f,'sha256').hexdigest()=='fa34fe2206a2c0be03dd3cf650be978385549099f9589cc7239fc3809ab60852'
-        ui.adb('root');ui.adb('wait-for-device',timeout=30)
+        for attempt in range(4):
+            ui.adb('root',check=False,timeout=30)
+            ui.adb('wait-for-device',timeout=30)
+            if ui.adb('shell','id','-u',check=False,timeout=30).decode().strip()=='0':break
+            time.sleep(2)
+        else:raise AssertionError('The dedicated emulator did not reconnect as root')
         assert int(ui.adb('shell','getprop','ro.build.version.sdk').decode().strip())==a.api
         for service in ['wifi','data']:ui.adb('shell','svc',service,'disable')
         install(a.previous);cold('baseline138')
@@ -74,6 +79,15 @@ def main():
         native=ui.out/'native'
         for name in ['model-pack-result.json','notification-result.json']:
             report=json.loads((native/name).read_text());assert report['passed'];result[name]=report
+        # Instrumentation is finished: exercise the actual PendingIntent with
+        # the ordinary Android clock instead of Compose's controlled test clock.
+        ui.adb('shell','input','keyevent','3')
+        ui.adb('shell','cmd','statusbar','expand-notifications')
+        ui.tap(qa.find(lambda n:'Доступно обновление 0.3.140' in n.get('text','')))
+        ui.text('Обновления');ui.text('Уведомления об обновлениях')
+        ui.capture('notification-opened-updates')
+        report=result['notification-result.json'];report['tapOpensUpdates']=True
+        (native/'notification-result.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
         result['checks']['optionalPackLifecycleAndNotifications']=True
         ui.adb('uninstall','ru.dlyasvoih.app.test')
         install(a.apks/'DLYA_SVOIH_v0.3.139.apk')
@@ -101,6 +115,8 @@ def main():
         result['passed']=True
     finally:
         if not result['passed']:
+            try: ui.adb('pull','/data/media/0/Android/data/'+ui.PACKAGE+'/files/features139',ui.out/'native',timeout=45)
+            except Exception: pass
             try: ui.capture('failure-ui')
             except Exception: pass
             try: (ui.out/'failure-crash.log').write_bytes(ui.adb('logcat','-d','-b','crash'))
