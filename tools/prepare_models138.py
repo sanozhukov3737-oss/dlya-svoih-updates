@@ -28,9 +28,12 @@ def main():
     archive = args.archive or ROOT/'build/model-inputs'/request['archiveName']
     if not archive.exists():
         archive.parent.mkdir(parents=True, exist_ok=True)
-        subprocess.run(['gh','release','download','models-0.3.138-inputs',
-            '--repo','sanozhukov3737-oss/dlya-svoih-updates','--pattern',request['archiveName'],
-            '--dir',str(archive.parent)],check=True,timeout=900)
+        # The by-tag API used by `gh release download` omits draft releases.
+        # Use the immutable asset ID, then verify its complete bytes below.
+        with archive.open('wb') as stream:
+            subprocess.run(['gh','api','repos/sanozhukov3737-oss/dlya-svoih-updates/releases/assets/'+
+                str(request['inputAssetId']),'-H','Accept: application/octet-stream'],
+                stdout=stream,check=True,timeout=900)
     assert archive.stat().st_size == request['archiveBytes']
     assert sha(archive) == request['archiveSha256'], 'Input archive changed'
     with zipfile.ZipFile(archive) as z:
