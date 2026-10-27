@@ -15,6 +15,7 @@ import android.webkit.WebResourceResponse
 import android.webkit.WebSettings
 import android.webkit.WebView
 import android.webkit.WebViewClient
+import androidx.compose.foundation.focusable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
@@ -28,9 +29,10 @@ import androidx.compose.ui.draw.clipToBounds
 import androidx.compose.ui.platform.LocalUriHandler
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalView
-import androidx.compose.ui.platform.LocalFocusManager
+import androidx.compose.ui.platform.LocalDensity
+import androidx.compose.ui.focus.FocusRequester
+import androidx.compose.ui.focus.focusRequester
 import androidx.compose.ui.platform.LocalSoftwareKeyboardController
-import androidx.compose.ui.focus.onFocusChanged
 import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.viewinterop.AndroidView
@@ -72,7 +74,6 @@ internal fun OfflineModelGallery(cardId: String? = null, onDismiss: () -> Unit) 
     }
     val models = loaded.orEmpty()
     var query by rememberSaveable(cardId) { mutableStateOf("") }
-    var searching by remember { mutableStateOf(false) }
     val filtered = remember(models, query) { OfflineModelFiles.search(models, query) }
     var selected by rememberSaveable { mutableStateOf<String?>(null) }
     val selectedId = selected
@@ -86,23 +87,24 @@ internal fun OfflineModelGallery(cardId: String? = null, onDismiss: () -> Unit) 
     }
     Dialog(onDismissRequest = onDismiss, properties = DialogProperties(usePlatformDefaultWidth = false)) {
         val window = (LocalView.current.parent as? DialogWindowProvider)?.window
-        val focus = LocalFocusManager.current
+        val entryFocus = remember { FocusRequester() }
+        val keyboardVisible = WindowInsets.ime.getBottom(LocalDensity.current) > 0
         val keyboard = LocalSoftwareKeyboardController.current
         DisposableEffect(window) {
             val previous = window?.attributes?.softInputMode
             window?.setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN or WindowManager.LayoutParams.SOFT_INPUT_ADJUST_RESIZE)
             onDispose { previous?.let { window?.setSoftInputMode(it) } }
         }
-        LaunchedEffect(Unit) { focus.clearFocus(force = true); keyboard?.hide() }
+        LaunchedEffect(Unit) { entryFocus.requestFocus(); keyboard?.hide() }
         Surface(Modifier.fillMaxSize().windowInsetsPadding(WindowInsets.systemBars).testTag("offline_3d_gallery")) {
-            Column {
+            Column(Modifier.focusRequester(entryFocus).focusable()) {
                 GuideBar("3D-модели · офлайн", onDismiss)
-                if (!searching) Box(Modifier.padding(horizontal = 16.dp, vertical = 8.dp)) { ModelPackCard() }
+                if (!keyboardVisible) Box(Modifier.padding(horizontal = 16.dp, vertical = 8.dp)) { ModelPackCard() }
                 Text(if (loaded == null) "Загружаем коллекцию…" else "${filtered.size} из ${models.size} моделей" + if (pack.installed) " · офлайн" else "", Modifier.padding(16.dp),
                     style = MaterialTheme.typography.bodyMedium)
                 OutlinedTextField(value = query, onValueChange = { query = it },
                     label = { Text("Найти модель") }, singleLine = true,
-                    modifier = Modifier.fillMaxWidth().padding(horizontal = 16.dp).onFocusChanged { searching = it.isFocused }.testTag("offline_model_search"))
+                    modifier = Modifier.fillMaxWidth().padding(horizontal = 16.dp).testTag("offline_model_search"))
                 if (loaded != null && filtered.isEmpty()) Text("Модели не найдены", Modifier.padding(16.dp))
                 LazyColumn(modifier = Modifier.weight(1f).testTag("offline_3d_gallery_list"),
                     contentPadding = PaddingValues(start = 16.dp, end = 16.dp, bottom = 24.dp),
