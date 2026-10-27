@@ -46,6 +46,9 @@ class OptionalFeatures139Test {
         assertTrue("Timed out waiting for the requested state", test())
     }
     private fun screen(name: String) {
+        compose.waitForIdle()
+        instrumentation.waitForIdleSync()
+        Thread.sleep(500)
         val bitmap=instrumentation.uiAutomation.takeScreenshot()
         File(out,name).outputStream().use { bitmap.compress(Bitmap.CompressFormat.PNG,100,it) };bitmap.recycle()
     }
@@ -77,12 +80,28 @@ class OptionalFeatures139Test {
         assertFalse(store.pendingFile.exists())
         val realDownload=InstrumentationRegistry.getArguments().getString("realModelDownload","false")=="true"
         val master=File(context.getExternalFilesDir(null),"models3d/fixture.zip")
+        var lastObservation=0L
+        fun observeDownload() {
+            if (System.currentTimeMillis()-lastObservation<5000) return
+            lastObservation=System.currentTimeMillis()
+            val item=JSONObject().put("phase",store.state.value.phase).put("observedBytes",store.state.value.downloaded)
+            val id=prefs.getLong("download_id",-1)
+            if (id>=0) context.getSystemService(android.app.DownloadManager::class.java)
+                .query(android.app.DownloadManager.Query().setFilterById(id)).use {cursor->
+                    if (cursor.moveToFirst()) for (column in listOf(android.app.DownloadManager.COLUMN_STATUS,
+                        android.app.DownloadManager.COLUMN_REASON,android.app.DownloadManager.COLUMN_BYTES_DOWNLOADED_SO_FAR,
+                        android.app.DownloadManager.COLUMN_TOTAL_SIZE_BYTES)) item.put(column,cursor.getLong(cursor.getColumnIndexOrThrow(column)))
+                }
+            File(out,"model-download-state.json").writeText(item.toString(2))
+        }
         if (realDownload) {
             store.download()
             await { prefs.getLong("download_id",-1)>=0 }
             shell("input keyevent 3")
             Thread.sleep(5000)
-            await(900) { store.refresh();store.state.value.installed || store.state.value.phase==ModelPackPhase.Error }
+            // With the gallery stopped, completion must be handled by the
+            // production download receiver and verification job, without UI polling.
+            await(900) { observeDownload();store.state.value.installed || store.state.value.phase==ModelPackPhase.Error }
             assertTrue(store.state.value.message,store.state.value.current)
             shell("am start -n ${host.componentName.flattenToString()} -f 0x00020000")
         } else {
@@ -127,13 +146,26 @@ class OptionalFeatures139Test {
         // Repeat the real public download on API 36, or restore the same immutable
         // fixture on API 26. Both paths use the production validation/activation.
         if (realDownload) {
-            store.download();await(900) {store.refresh();store.state.value.installed || store.state.value.phase==ModelPackPhase.Error}
+            store.download();await(900) {observeDownload();store.refresh();store.state.value.installed || store.state.value.phase==ModelPackPhase.Error}
             assertTrue(store.state.value.message,store.state.value.current)
         } else runBlocking { withContext(Dispatchers.IO) {master.copyTo(store.pendingFile,overwrite=true,bufferSize=1024*1024)};store.verifyAndActivate(store.pendingFile) }
         assertTrue(store.state.value.current)
+        // All 615 approved GLBs must be readable through the new storage layer,
+        // with each original SHA-256 checked by the production loader.
+        var verifiedModels=0
+        runBlocking(Dispatchers.IO) {
+            for (name in store.descriptor.files.keys) {
+                val raw=store.openModel(name)
+                assertTrue(name,raw.size>12 && raw[0]=='g'.code.toByte() && raw[1]=='l'.code.toByte() &&
+                    raw[2]=='T'.code.toByte() && raw[3]=='F'.code.toByte())
+                verifiedModels++
+            }
+        }
+        assertEquals(615,verifiedModels)
         File(out,"model-pack-result.json").writeText(JSONObject().put("passed",true).put("realDownload",realDownload)
             .put("bytesFreedByDelete",freed).put("modelCount",store.descriptor.files.size)
-            .put("cancelVerified",true).put("corruptReplacementRejected",true).put("reinstalled",true).toString(2))
+            .put("cancelVerified",true).put("corruptReplacementRejected",true).put("reinstalled",true)
+            .put("allModelBytesVerified",verifiedModels).toString(2))
     }
 
     @Test fun notificationsAreDeduplicatedCanBeDisabledAndOpenUpdates() {
@@ -156,11 +188,25 @@ class OptionalFeatures139Test {
         await {manager.activeNotifications.any {it.id==UpdateNotifications.CATALOG_ID}}
         shell("cmd statusbar expand-notifications");Thread.sleep(500);screen("update-notifications.png");shell("cmd statusbar collapse")
         first.notification.contentIntent.send()
-        await(45) {
-            shell("uiautomator dump /data/local/tmp/notifications139.xml")
-            val xml=shell("cat /data/local/tmp/notifications139.xml").toString(Charsets.UTF_8)
-            xml.contains("Уведомления об обновлениях") && xml.contains("Обновления")
+        // Reuse this instrumentation's UiAutomation connection. Starting the
+        // separate `uiautomator` CLI while it owns that connection cannot dump UI.
+        fun visibleText(node: android.view.accessibility.AccessibilityNodeInfo?): String {
+            if (node==null) return ""
+            val text=StringBuilder().append(node.text.orEmpty()).append('\n').append(node.contentDescription.orEmpty()).append('\n')
+            for (index in 0 until node.childCount) {
+                val child=node.getChild(index);text.append(visibleText(child));child?.recycle()
+            }
+            return text.toString()
         }
+        try {
+            await(45) {
+                compose.waitForIdle()
+                val root=instrumentation.uiAutomation.rootInActiveWindow
+                val text=visibleText(root);root?.recycle()
+                File(out,"notification-navigation-tree.txt").writeText(text)
+                text.contains("Уведомления об обновлениях") && text.contains("Обновления")
+            }
+        } catch (e: Throwable) { screen("notification-navigation-failed.png");throw e }
         screen("notification-opened-updates.png")
         UpdateNotifications.configure(context,false)
         assertNull(scheduler.getPendingJob(UpdateNotifications.JOB_ID))

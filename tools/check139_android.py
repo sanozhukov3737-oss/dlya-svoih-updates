@@ -2,6 +2,7 @@
 import argparse
 import hashlib
 import json
+import os
 from pathlib import Path
 import re
 import sqlite3
@@ -36,7 +37,9 @@ def main():
     p.add_argument('--pack',type=Path);p.add_argument('--out',type=Path,required=True);p.add_argument('--api',type=int,required=True)
     a=p.parse_args();ui.out=a.out.resolve();ui.out.mkdir(parents=True,exist_ok=True);ui.tree=qa.hierarchy;ui.find=qa.find
     result={'passed':False,'api':a.api,'checks':{},'searchObservationUpperBoundsMs':{},
-        'sourceCommit':json.loads((a.apks/'build-result.json').read_text())['sourceCommit']}
+        'sourceCommit':json.loads((a.apks/'build-result.json').read_text())['sourceCommit'],
+        'qaSourceCommit':os.environ.get('GITHUB_SHA'),
+        'testApkSha256':hashlib.sha256((a.apks/'test.apk').read_bytes()).hexdigest()}
     try:
         with a.previous.open('rb') as f:assert hashlib.file_digest(f,'sha256').hexdigest()=='fa34fe2206a2c0be03dd3cf650be978385549099f9589cc7239fc3809ab60852'
         ui.adb('root');ui.adb('wait-for-device',timeout=30)
@@ -44,7 +47,7 @@ def main():
         for service in ['wifi','data']:ui.adb('shell','svc',service,'disable')
         install(a.previous);cold('baseline138')
         ui.appearance_dialog();ui.tap(ui.text('Тёмная'));ui.tap(ui.text('Готово'))
-        ui.tap(qa.search('PMN2','ПМН-2',result));ui.text('Карточка');ui.tap(ui.description('В избранное'))
+        ui.tap(qa.search('PMN2','ПМН-2',result));ui.text('Карточка');ui.tap(ui.description('В избранное'));ui.description('Убрать из избранного')
         before=snapshot('before');assert len(before['cards'])==1695 and before['images']==1595 and before['favorites'] and before['reading']
         install(a.apks/'DLYA_SVOIH_v0.3.139.apk');cold('release139')
         saved(before,snapshot('after-upgrade'));result['checks']['signedUpgrade143to144PreservesData']=True
@@ -97,6 +100,11 @@ def main():
         assert 'FATAL EXCEPTION' not in crash and 'Fatal signal' not in crash,crash
         result['passed']=True
     finally:
+        if not result['passed']:
+            try: ui.capture('failure-ui')
+            except Exception: pass
+            try: (ui.out/'failure-crash.log').write_bytes(ui.adb('logcat','-d','-b','crash'))
+            except Exception: pass
         (ui.out/'result.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n');print(json.dumps(result,ensure_ascii=False),flush=True)
 
 if __name__=='__main__':main()

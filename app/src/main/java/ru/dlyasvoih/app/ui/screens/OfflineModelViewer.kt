@@ -4,6 +4,7 @@ import android.annotation.SuppressLint
 import android.content.Context
 import android.net.Uri
 import android.view.ViewGroup
+import android.view.WindowManager
 import android.webkit.WebChromeClient
 import android.webkit.ConsoleMessage
 import android.util.Log
@@ -26,11 +27,16 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clipToBounds
 import androidx.compose.ui.platform.LocalUriHandler
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.platform.LocalView
+import androidx.compose.ui.platform.LocalFocusManager
+import androidx.compose.ui.platform.LocalSoftwareKeyboardController
+import androidx.compose.ui.focus.onFocusChanged
 import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.viewinterop.AndroidView
 import androidx.compose.ui.window.Dialog
 import androidx.compose.ui.window.DialogProperties
+import androidx.compose.ui.window.DialogWindowProvider
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LifecycleEventObserver
 import androidx.lifecycle.compose.LocalLifecycleOwner
@@ -58,6 +64,7 @@ internal fun OfflineModelAction(cardId: String, active: Boolean, modifier: Modif
 @Composable
 internal fun OfflineModelGallery(cardId: String? = null, onDismiss: () -> Unit) {
     val context = LocalContext.current
+    val pack by (context.applicationContext as GuideApplication).modelPacks.state.collectAsStateWithLifecycle()
     val loaded by produceState<List<OfflineModel>?>(null, context, cardId) {
         value = withContext(Dispatchers.IO) {
             OfflineModelFiles.models(context).filter { cardId == null || cardId in it.cardIds }
@@ -65,6 +72,7 @@ internal fun OfflineModelGallery(cardId: String? = null, onDismiss: () -> Unit) 
     }
     val models = loaded.orEmpty()
     var query by rememberSaveable(cardId) { mutableStateOf("") }
+    var searching by remember { mutableStateOf(false) }
     val filtered = remember(models, query) { OfflineModelFiles.search(models, query) }
     var selected by rememberSaveable { mutableStateOf<String?>(null) }
     val selectedId = selected
@@ -77,17 +85,26 @@ internal fun OfflineModelGallery(cardId: String? = null, onDismiss: () -> Unit) 
         return
     }
     Dialog(onDismissRequest = onDismiss, properties = DialogProperties(usePlatformDefaultWidth = false)) {
+        val window = (LocalView.current.parent as? DialogWindowProvider)?.window
+        val focus = LocalFocusManager.current
+        val keyboard = LocalSoftwareKeyboardController.current
+        DisposableEffect(window) {
+            val previous = window?.attributes?.softInputMode
+            window?.setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN or WindowManager.LayoutParams.SOFT_INPUT_ADJUST_RESIZE)
+            onDispose { previous?.let { window?.setSoftInputMode(it) } }
+        }
+        LaunchedEffect(Unit) { focus.clearFocus(force = true); keyboard?.hide() }
         Surface(Modifier.fillMaxSize().windowInsetsPadding(WindowInsets.systemBars).testTag("offline_3d_gallery")) {
             Column {
                 GuideBar("3D-модели · офлайн", onDismiss)
-                Box(Modifier.padding(horizontal = 16.dp, vertical = 8.dp)) { ModelPackCard() }
-                Text(if (loaded == null) "Загружаем коллекцию…" else "${filtered.size} из ${models.size} моделей · офлайн", Modifier.padding(16.dp),
+                if (!searching) Box(Modifier.padding(horizontal = 16.dp, vertical = 8.dp)) { ModelPackCard() }
+                Text(if (loaded == null) "Загружаем коллекцию…" else "${filtered.size} из ${models.size} моделей" + if (pack.installed) " · офлайн" else "", Modifier.padding(16.dp),
                     style = MaterialTheme.typography.bodyMedium)
                 OutlinedTextField(value = query, onValueChange = { query = it },
                     label = { Text("Найти модель") }, singleLine = true,
-                    modifier = Modifier.fillMaxWidth().padding(horizontal = 16.dp).testTag("offline_model_search"))
+                    modifier = Modifier.fillMaxWidth().padding(horizontal = 16.dp).onFocusChanged { searching = it.isFocused }.testTag("offline_model_search"))
                 if (loaded != null && filtered.isEmpty()) Text("Модели не найдены", Modifier.padding(16.dp))
-                LazyColumn(modifier = Modifier.testTag("offline_3d_gallery_list"),
+                LazyColumn(modifier = Modifier.weight(1f).testTag("offline_3d_gallery_list"),
                     contentPadding = PaddingValues(start = 16.dp, end = 16.dp, bottom = 24.dp),
                     verticalArrangement = Arrangement.spacedBy(10.dp)) {
                     items(filtered, key = { it.id }) { model ->
