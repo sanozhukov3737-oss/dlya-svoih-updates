@@ -63,7 +63,8 @@ class ModelPackStore(private val context: Context) {
         "Хранилище недоступно. Проверьте свободное место." }, "models3d").apply { check(isDirectory || mkdirs()) }
     internal val activeFile get() = File(directory, "collection.zip")
     internal val pendingFile get() = File(directory, "download.part.zip")
-    private val mutableState = MutableStateFlow(installedState())
+    private val mutableState = MutableStateFlow(installedState(
+        if (prefs.getLong("download_id", -1) >= 0) ModelPackPhase.Waiting else ModelPackPhase.Idle))
     val state = mutableState.asStateFlow()
     val wifiOnly get() = prefs.getBoolean("wifi_only", true)
     fun setWifiOnly(value: Boolean) { prefs.edit().putBoolean("wifi_only", value).apply() }
@@ -75,7 +76,12 @@ class ModelPackStore(private val context: Context) {
     }
     fun refresh() {
         if (refreshing?.isActive == true) return
-        refreshing = scope.launch { refreshNow() }
+        refreshing = scope.launch {
+            try { refreshNow() }
+            catch (e: CancellationException) { throw e }
+            catch (_: Exception) { mutableState.value = installedState(ModelPackPhase.Waiting,
+                message = "Не удалось проверить загрузку. Повторяем попытку…") }
+        }
     }
     private suspend fun refreshNow() {
         val id = prefs.getLong("download_id", -1)
@@ -106,7 +112,7 @@ class ModelPackStore(private val context: Context) {
             lock.withLock {
                 try {
                     require(directory.usableSpace > descriptor.bytes + 32L * 1024 * 1024) { "Недостаточно свободного места для пакета моделей." }
-                    pendingFile.delete()
+                    clearDownload()
                     val request = DownloadManager.Request(Uri.parse(descriptor.url))
                         .setTitle("ДЛЯ СВОИХ — 3D-модели")
                         .setDescription("Коллекция из ${descriptor.files.size} моделей")
@@ -122,28 +128,29 @@ class ModelPackStore(private val context: Context) {
             if (generation.get() == token) refreshNow()
         }
     }
-    fun cancel() {
+    fun cancel(): Job {
         generation.incrementAndGet()
         context.getSystemService(JobScheduler::class.java).cancel(VERIFY_JOB_ID)
-        scope.launch { lock.withLock {
+        return scope.launch { lock.withLock {
             clearDownload(); mutableState.value = installedState()
         } }
     }
-    fun delete() {
+    fun delete(): Job {
         generation.incrementAndGet()
         context.getSystemService(JobScheduler::class.java).cancel(VERIFY_JOB_ID)
-        scope.launch { lock.withLock {
+        return scope.launch { lock.withLock {
             try {
                 clearDownload()
                 check(!activeFile.exists() || activeFile.delete()) { "Не удалось удалить модели. Повторите попытку." }
                 prefs.edit().remove("active_sha").remove("active_version").apply()
+                context.getSystemService(android.app.NotificationManager::class.java).cancel(UpdateNotifications.MODELS_ID)
                 mutableState.value = installedState()
             } catch (e: Exception) { mutableState.value = installedState(ModelPackPhase.Error, message = e.message.orEmpty()) }
         } }
     }
     private fun clearDownload() {
         val id = prefs.getLong("download_id", -1)
-        if (id >= 0) downloads.remove(id)
+        if (id >= 0) runCatching { downloads.remove(id) }
         pendingFile.delete()
         prefs.edit().remove("download_id").remove("download_sha").remove("error").commit()
     }

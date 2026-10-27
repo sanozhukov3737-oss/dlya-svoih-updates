@@ -53,12 +53,12 @@ internal fun ModelPackCard() {
                         Text(if (state.phase == ModelPackPhase.Waiting) "Ожидаем подходящую сеть. Загрузка продолжится автоматически."
                             else "Скачиваем: ${modelSize(state.downloaded)} из ${modelSize(store.descriptor.bytes)}",
                             style = MaterialTheme.typography.bodySmall)
-                        TextButton(onClick = store::cancel, modifier = Modifier.testTag("model_pack_cancel")) { Text("Отменить скачивание") }
+                        TextButton(onClick = { store.cancel() }, modifier = Modifier.testTag("model_pack_cancel")) { Text("Отменить скачивание") }
                     }
                     ModelPackPhase.Verifying -> {
                         LinearProgressIndicator(Modifier.fillMaxWidth())
                         Text("Проверяем пакет моделей…", style = MaterialTheme.typography.bodySmall)
-                        TextButton(onClick = store::cancel, modifier = Modifier.testTag("model_pack_cancel")) { Text("Отменить") }
+                        TextButton(onClick = { store.cancel() }, modifier = Modifier.testTag("model_pack_cancel")) { Text("Отменить") }
                     }
                     else -> {
                         if (state.message.isNotBlank()) Text(state.message, color = MaterialTheme.colorScheme.error,
