@@ -36,18 +36,21 @@ import androidx.lifecycle.LifecycleEventObserver
 import androidx.lifecycle.compose.LocalLifecycleOwner
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
+import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import ru.dlyasvoih.app.GuideApplication
 
 @Composable
 internal fun OfflineModelAction(cardId: String, active: Boolean, modifier: Modifier = Modifier) {
     val context = LocalContext.current
     val available = remember(cardId, context) { OfflineModelFiles.hasForCard(context, cardId) }
     if (!available) return
+    val pack by (context.applicationContext as GuideApplication).modelPacks.state.collectAsStateWithLifecycle()
     var open by rememberSaveable(cardId) { mutableStateOf(false) }
     LaunchedEffect(active) { if (!active) open = false }
     FilledTonalButton(onClick = { open = true }, modifier = modifier.fillMaxWidth().testTag("open_offline_3d")) {
         Text("3D-модель")
         Spacer(Modifier.weight(1f))
-        Text("Офлайн", style = MaterialTheme.typography.labelMedium)
+        Text(if (pack.installed) "Офлайн" else "Скачать", style = MaterialTheme.typography.labelMedium)
     }
     if (open && active) OfflineModelGallery(cardId = cardId, onDismiss = { open = false })
 }
@@ -77,6 +80,7 @@ internal fun OfflineModelGallery(cardId: String? = null, onDismiss: () -> Unit) 
         Surface(Modifier.fillMaxSize().windowInsetsPadding(WindowInsets.systemBars).testTag("offline_3d_gallery")) {
             Column {
                 GuideBar("3D-модели · офлайн", onDismiss)
+                Box(Modifier.padding(horizontal = 16.dp, vertical = 8.dp)) { ModelPackCard() }
                 Text(if (loaded == null) "Загружаем коллекцию…" else "${filtered.size} из ${models.size} моделей · офлайн", Modifier.padding(16.dp),
                     style = MaterialTheme.typography.bodyMedium)
                 OutlinedTextField(value = query, onValueChange = { query = it },
@@ -110,6 +114,21 @@ private class ViewerHolder {
 internal fun OfflineModelDialog(modelId: String = "tm-46", onViewerCreated: (WebView) -> Unit = {}, onDismiss: () -> Unit) {
     val context = LocalContext.current
     val model = remember(modelId, context) { OfflineModelFiles.models(context).first { it.id == modelId } }
+    val pack by (context.applicationContext as GuideApplication).modelPacks.state.collectAsStateWithLifecycle()
+    if (!pack.installed) {
+        Dialog(onDismissRequest = onDismiss, properties = DialogProperties(usePlatformDefaultWidth = false)) {
+            Surface(Modifier.fillMaxSize().windowInsetsPadding(WindowInsets.systemBars).testTag("offline_3d_dialog")) {
+                Column {
+                    GuideBar("${model.title} · 3D", onDismiss)
+                    Column(Modifier.padding(16.dp).verticalScroll(rememberScrollState()), verticalArrangement = Arrangement.spacedBy(16.dp)) {
+                        Text("Для просмотра этой модели скачайте 3D-коллекцию.")
+                        ModelPackCard()
+                    }
+                }
+            }
+        }
+        return
+    }
     val uriHandler = LocalUriHandler.current
     val lifecycle = LocalLifecycleOwner.current.lifecycle
     val holder = remember { ViewerHolder() }

@@ -47,6 +47,7 @@ class AppUpdateController(private val context: Context, private val prefs: Share
                             "APK подписан другим ключом. Автору нужно использовать ключ текущей установки."
                         }
                         prefs.edit().putString("app_update_cached_offer", RemoteAppSource.encode(app)).apply()
+                        if (automatic) UpdateNotifications.appAvailable(context, app)
                         val file = source.cachedFile()
                         val ready = withContext(Dispatchers.IO) {
                             file.isFile && runCatching { verify(file, app); true }.getOrDefault(false)
@@ -147,6 +148,11 @@ class AppUpdateController(private val context: Context, private val prefs: Share
     private fun message(e: Exception, fallback: String) = if (e is IllegalArgumentException) e.message ?: fallback else fallback
 
     companion object {
+        fun compatibleOffer(context: Context, app: RemoteApp): Boolean = runCatching {
+            val installed = context.packageManager.getPackageInfo(context.packageName, signingFlags())
+            app.packageName == context.packageName && app.versionCode > code(installed) &&
+                app.minSdk <= Build.VERSION.SDK_INT && signers(installed) == setOf(app.signerSha256)
+        }.getOrDefault(false)
         @Suppress("DEPRECATION")
         private fun signingFlags(): Int = if (Build.VERSION.SDK_INT >= 28) PackageManager.GET_SIGNING_CERTIFICATES else PackageManager.GET_SIGNATURES
         @Suppress("DEPRECATION")

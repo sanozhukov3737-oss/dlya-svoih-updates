@@ -40,6 +40,7 @@ fun UpdateScreen(repo: GuideRepository, onBack: () -> Unit) {
         Column(Modifier.fillMaxSize().padding(padding).verticalScroll(rememberScrollState()).padding(20.dp),
             verticalArrangement = Arrangement.spacedBy(16.dp)) {
             repo.appUpdater?.let { AppUpdateCard(it, catalogBusy) }
+            UpdateNotificationCard()
             Text("Каталог: новые карточки и фотографии без установки APK.")
             Card(Modifier.fillMaxWidth()) {
                 Column(Modifier.padding(16.dp), verticalArrangement = Arrangement.spacedBy(12.dp)) {

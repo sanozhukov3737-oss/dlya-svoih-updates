@@ -7,6 +7,7 @@ import org.json.JSONObject
 import org.json.JSONArray
 import java.util.Locale
 import java.io.ByteArrayInputStream
+import ru.dlyasvoih.app.GuideApplication
 
 internal data class OfflineModel(
     val id: String, val file: String, val title: String, val cardIds: Set<String>,
@@ -74,7 +75,8 @@ internal object OfflineModelFiles {
         return try {
             WebResourceResponse(mime, if (name.endsWith(".glb")) null else "UTF-8", 200, "OK",
                 mapOf("Cache-Control" to "no-store", "X-Content-Type-Options" to "nosniff"),
-                context.assets.open("viewer3d/$name"))
+                if (name.endsWith(".glb")) ByteArrayInputStream((context.applicationContext as GuideApplication).modelPacks.openModel(name))
+                else context.assets.open("viewer3d/$name"))
         } catch (_: Exception) { blocked() }
     }
 

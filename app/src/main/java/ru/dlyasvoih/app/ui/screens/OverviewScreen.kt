@@ -119,6 +119,7 @@ fun OverviewScreen(
                         .testTag("open_3d_gallery")) { Text("3D-модели · офлайн") }
                 }
                 if (isHome) {
+                    item(key = "update_notification_permission") { UpdateNotificationCard(prompt = true) }
                     if (state.favoriteCards.isNotEmpty()) item(key = "favorites") {
                         PreviewShelf("Избранное", state.favoriteCards, onOpenCard)
                     }

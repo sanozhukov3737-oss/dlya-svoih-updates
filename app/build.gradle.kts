@@ -8,6 +8,14 @@ plugins {
     id("androidx.baselineprofile")
 }
 
+// Keep the canonical source models available to authoring tools, but never copy
+// GLBs into an APK. The optional collection is a verified, removable data ZIP.
+val optionalAppAssets = tasks.register<Sync>("prepareOptionalAppAssets") {
+    from("src/main/assets")
+    exclude("viewer3d/*.glb")
+    into(layout.buildDirectory.dir("optional-app-assets"))
+}
+
 val keystorePropertiesFile = rootProject.file("keystore.properties")
 val keystoreProperties = Properties().apply {
     if (keystorePropertiesFile.isFile) {
@@ -23,14 +31,15 @@ android {
         applicationId = "ru.dlyasvoih.app"
         minSdk = 26
         targetSdk = 36
-        versionCode = 143
-        versionName = "0.3.138"
+        versionCode = 144
+        versionName = "0.3.139"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildFeatures {
         compose = true
     }
+    sourceSets.getByName("main").assets.setSrcDirs(listOf(layout.buildDirectory.dir("optional-app-assets")))
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
@@ -128,14 +137,13 @@ dependencies {
 // The large external collection is restored from its pinned source archive.
 // Refuse to produce a misleading partial APK from a fresh checkout.
 tasks.named("preBuild").configure {
+    dependsOn(optionalAppAssets)
     doFirst {
         val directory = file("src/main/assets/viewer3d")
-        require((directory.listFiles()?.count { it.extension == "glb" } ?: 0) >= 615) {
-            "Prepare the offline collection first: python3 tools/prepare_models138.py --archive /path/to/models-0.3.138-assets.zip"
-        }
         require(directory.resolve("card-index.json").isFile &&
-            directory.resolve("models.json").readText().contains("\"collectionVersion\"")) {
-            "The complete offline model registry has not been prepared. Run tools/prepare_models138.py."
+            directory.resolve("models.json").readText().contains("\"collectionVersion\"") &&
+            directory.resolve("pack.json").isFile) {
+            "Prepare the optional model metadata first: python3 tools/prepare_optional_models139.py"
         }
     }
 }

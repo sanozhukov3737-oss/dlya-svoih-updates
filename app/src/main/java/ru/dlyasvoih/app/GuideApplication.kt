@@ -13,6 +13,11 @@ import ru.dlyasvoih.app.data.update.RemoteCatalogSource
 import ru.dlyasvoih.app.data.update.AppUpdateController
 
 class GuideApplication : Application(), SingletonImageLoader.Factory {
+    val modelPacks by lazy { ru.dlyasvoih.app.data.models.ModelPackStore(this) }
+    override fun onCreate() {
+        super.onCreate()
+        ru.dlyasvoih.app.data.update.UpdateNotifications.schedule(this)
+    }
     val repository by lazy {
         val db = GuideDatabase.create(this)
         @Suppress("DEPRECATION")

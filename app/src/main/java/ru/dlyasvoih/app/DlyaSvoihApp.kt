@@ -91,7 +91,7 @@ private fun GuideNavigation(repo: GuideRepository, shortcutRequest: State<Shortc
     // open still navigates. A stale/unknown route string is ignored rather than crashing the nav host.
     LaunchedEffect(shortcutRequest.value?.token) {
         val route = shortcutRequest.value?.route ?: return@LaunchedEffect
-        if (Tab.entries.any { it.route == route }) {
+        if (Tab.entries.any { it.route == route } || route in setOf("catalog/updates", "catalog/models")) {
             nav.navigate(route) {
                 popUpTo(nav.graph.findStartDestination().id) { saveState = true }
                 launchSingleTop = true
@@ -136,6 +136,7 @@ private fun GuideNavigation(repo: GuideRepository, shortcutRequest: State<Shortc
                         onSearch = { nav.navigate(Tab.SEARCH.route) })
                 }
                 composable("catalog/updates") { UpdateScreen(repo) { nav.popBackStack() } }
+                composable("catalog/models") { ru.dlyasvoih.app.ui.screens.OfflineModelGallery { nav.popBackStack() } }
                 composable("catalog/section/{section}") { backEntry ->
                     val section = backEntry.arguments?.getString("section").orEmpty()
                     OverviewScreen(overviewModel(repo, section), section, onBack = { nav.popBackStack() }, onCategory = { category ->
