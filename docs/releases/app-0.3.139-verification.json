@@ -1,0 +1,121 @@
+{
+  "status": "passed",
+  "build": {
+    "sourceCommit": "c95424574786925998324e82ca9b7a4699f22107",
+    "runId": 40501836833,
+    "versionName": "0.3.139",
+    "versionCode": 144,
+    "bundledModels": 0,
+    "optionalModels": 615,
+    "DLYA_SVOIH_v0.3.139.apk": {
+      "bytes": 106150569,
+      "sha256": "c78b40e6aaf5d656c37484535c4f07855213e629f23313969923abc9619ade9b"
+    },
+    "debug.apk": {
+      "bytes": 118121178,
+      "sha256": "a3d03e4275a527e8914050dd8b6f22d532680405696e13b277e0231a12c7111b"
+    },
+    "test.apk": {
+      "bytes": 1209376,
+      "sha256": "2f2230b09396c946ba51e486b1b6e4fed054a255741b36b1bb52285ea499fa35"
+    }
+  },
+  "android": [
+    {
+      "passed": true,
+      "api": 26,
+      "checks": {
+        "signedUpgrade143to144PreservesData": true,
+        "releaseWorksWithoutModelPack": true,
+        "optionalPackLifecycleAndNotifications": true,
+        "optimizedReleaseReadsExternalPackOffline": true
+      },
+      "searchObservationUpperBoundsMs": {
+        "PMN2": 2683
+      },
+      "sourceCommit": "c95424574786925998324e82ca9b7a4699f22107",
+      "qaSourceCommit": "c95424574786925998324e82ca9b7a4699f22107",
+      "testApkSha256": "2f2230b09396c946ba51e486b1b6e4fed054a255741b36b1bb52285ea499fa35",
+      "model-pack-result.json": {
+        "passed": true,
+        "realDownload": false,
+        "bytesFreedByDelete": 1283100672,
+        "modelCount": 615,
+        "cancelVerified": true,
+        "corruptReplacementRejected": true,
+        "reinstalled": true,
+        "allModelBytesVerified": 615
+      },
+      "notification-result.json": {
+        "passed": true,
+        "sameVersionDeduplicated": true,
+        "disableCancelsJobAndNotifications": true,
+        "notificationTapPending": true,
+        "invalidIdentityIgnored": true,
+        "tapOpensUpdates": true
+      }
+    },
+    {
+      "passed": true,
+      "api": 36,
+      "checks": {
+        "signedUpgrade143to144PreservesData": true,
+        "releaseWorksWithoutModelPack": true,
+        "optionalPackLifecycleAndNotifications": true,
+        "optimizedReleaseReadsExternalPackOffline": true,
+        "notificationPermissionRequest": true
+      },
+      "searchObservationUpperBoundsMs": {
+        "PMN2": 2926
+      },
+      "sourceCommit": "c95424574786925998324e82ca9b7a4699f22107",
+      "qaSourceCommit": "c95424574786925998324e82ca9b7a4699f22107",
+      "testApkSha256": "2f2230b09396c946ba51e486b1b6e4fed054a255741b36b1bb52285ea499fa35",
+      "model-pack-result.json": {
+        "passed": true,
+        "realDownload": true,
+        "bytesFreedByDelete": 1283100672,
+        "modelCount": 615,
+        "cancelVerified": true,
+        "corruptReplacementRejected": true,
+        "reinstalled": true,
+        "allModelBytesVerified": 615
+      },
+      "notification-result.json": {
+        "passed": true,
+        "sameVersionDeduplicated": true,
+        "disableCancelsJobAndNotifications": true,
+        "notificationTapPending": true,
+        "invalidIdentityIgnored": true,
+        "tapOpensUpdates": true
+      }
+    }
+  ],
+  "pack": {
+    "formatVersion": 1,
+    "version": 1,
+    "modelCount": 615,
+    "bytes": 1283096387,
+    "sha256": "7780860bcb82fc23a861f162a66d99fb8950a66508275919ee7bf9c1b6b9147d",
+    "url": "https://github.com/sanozhukov3737-oss/dlya-svoih-updates/releases/download/models-pack-1/models-615-v1.zip",
+    "expandedBytes": 1994669520
+  },
+  "signerSha256": "2f0a0908f269bc039311edb58fca8863347f1e4c3a7cfaddd909991cf1f0b509",
+  "feedSha256": "9406981f8b6f6686dc115c736bac97bfcf997031e3f88501b872216055a227e1",
+  "catalogOfferUnchanged": true,
+  "physicalPhoneTested": false,
+  "notificationQa": "Future app/catalog offers exist only on disposable test emulators. The host taps the real notification after instrumentation exits and verifies the update screen.",
+  "visualModelPayload": "All 615 GLBs are byte-identical to the reviewed 0.3.138 collection; new Android checks exercise external storage and the unchanged viewer.",
+  "unitTests": {
+    "passed": 7,
+    "failed": 0,
+    "ignored": 0,
+    "runId": 40501836833
+  },
+  "androidProofArchive": {
+    "file": "DLYA_SVOIH_0.3.139_Android_Views.zip",
+    "bytes": 2019660,
+    "sha256": "acb49604f8c818ff7a0fe3e168edec378fb5a7f36912fd1ab7c4255896bd071e",
+    "files": 76
+  }
+}
