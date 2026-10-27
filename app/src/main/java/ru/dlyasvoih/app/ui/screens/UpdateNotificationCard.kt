@@ -53,11 +53,13 @@ internal fun UpdateNotificationCard(prompt: Boolean = false) {
             Text("Уведомления об обновлениях", style = MaterialTheme.typography.titleSmall)
             Text("Сообщим о новой версии приложения или каталога. Одна версия — одно уведомление.", style = MaterialTheme.typography.bodySmall)
             if (prompt || !permitted) {
-                TextButton(onClick = { enable() }, modifier = Modifier.testTag("enable_update_notifications")) { Text("Включить уведомления") }
+                Row {
+                    TextButton(onClick = { enable() }, modifier = Modifier.testTag("enable_update_notifications")) { Text("Включить уведомления") }
+                    if (prompt) TextButton(onClick = { dismissed = true; prefs.edit().putBoolean("notification_prompt_dismissed", true).apply() }) { Text("Позже") }
+                }
                 if (!prompt) TextButton(onClick = {
                     context.startActivity(Intent(Settings.ACTION_APP_NOTIFICATION_SETTINGS).putExtra(Settings.EXTRA_APP_PACKAGE, context.packageName))
                 }) { Text("Настройки Android") }
-                if (prompt) TextButton(onClick = { dismissed = true; prefs.edit().putBoolean("notification_prompt_dismissed", true).apply() }) { Text("Позже") }
             } else {
                 Row(verticalAlignment = androidx.compose.ui.Alignment.CenterVertically) {
                     Text("Уведомлять о новых версиях", Modifier.weight(1f))

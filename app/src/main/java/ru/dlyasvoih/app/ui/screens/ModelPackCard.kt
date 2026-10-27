@@ -53,6 +53,7 @@ internal fun ModelPackCard() {
                         Text(if (state.phase == ModelPackPhase.Waiting) "Ожидаем подходящую сеть. Загрузка продолжится автоматически."
                             else "Скачиваем: ${modelSize(state.downloaded)} из ${modelSize(store.descriptor.bytes)}",
                             style = MaterialTheme.typography.bodySmall)
+                        Text("Скачивание продолжится в фоне.", style = MaterialTheme.typography.bodySmall)
                         TextButton(onClick = { store.cancel() }, modifier = Modifier.testTag("model_pack_cancel")) { Text("Отменить скачивание") }
                     }
                     ModelPackPhase.Verifying -> {
@@ -65,7 +66,7 @@ internal fun ModelPackCard() {
                             style = MaterialTheme.typography.bodySmall)
                         if (!state.current) {
                             Text(if (state.installed) "Доступна новая коллекция. Текущие модели работают до окончания загрузки."
-                                else "Модели скачиваются отдельно по желанию. Карточки и фотографии доступны без этого пакета.",
+                                else "Каталог работает и без моделей. Пакет можно удалить и скачать снова.",
                                 style = MaterialTheme.typography.bodySmall)
                             Row(verticalAlignment = Alignment.CenterVertically) {
                                 Text("Только Wi-Fi", Modifier.weight(1f), style = MaterialTheme.typography.bodyMedium)
@@ -75,7 +76,6 @@ internal fun ModelPackCard() {
                             Button(onClick = store::download, modifier = Modifier.fillMaxWidth().testTag("model_pack_download")) {
                                 Text(if (state.installed) "Обновить модели" else "Скачать ${store.descriptor.files.size} моделей")
                             }
-                            Text("Загрузка продолжится в фоне. Пакет можно удалить и скачать снова.", style = MaterialTheme.typography.bodySmall)
                         }
                         if (state.installed) OutlinedButton(onClick = { remove = true },
                             modifier = Modifier.fillMaxWidth().testTag("model_pack_delete")) { Text("Удалить модели · ${modelSize(state.installedBytes)}") }

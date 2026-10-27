@@ -17,7 +17,13 @@ def main():
     for src,dest in [('release/app-release.apk','DLYA_SVOIH_v0.3.139.apk'),('debug/app-debug.apk','debug.apk'),
         ('androidTest/debug/app-debug-androidTest.apk','test.apk')]:
         p=out/dest;shutil.copy2(ROOT/'app/build/outputs/apk'/src,p)
-        subprocess.run([str(sdk/'build-tools/36.0.0/apksigner'),'verify','--print-certs',str(p)],check=True)
+        signature=subprocess.run([str(sdk/'build-tools/36.0.0/apksigner'),'verify','--print-certs',str(p)],check=True,capture_output=True,text=True).stdout
+        assert '2f0a0908f269bc039311edb58fca8863347f1e4c3a7cfaddd909991cf1f0b509' in signature
+        print(signature,flush=True)
+        if dest=='DLYA_SVOIH_v0.3.139.apk':
+            for field,value in [('application-id','ru.dlyasvoih.app'),('version-code','144'),('version-name','0.3.139'),('min-sdk','26'),('debuggable','false')]:
+                actual=subprocess.run([str(sdk/'cmdline-tools/latest/bin/apkanalyzer'),'manifest',field,str(p)],check=True,capture_output=True,text=True).stdout.strip()
+                assert actual==value,(field,actual)
         with zipfile.ZipFile(p) as z:
             if dest!='test.apk':
                 assert not any(n.endswith('.glb') for n in z.namelist())
