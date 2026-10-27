@@ -22,6 +22,7 @@ import ru.dlyasvoih.app.data.update.RemoteFiles
 import ru.dlyasvoih.app.data.update.UpdateNotifications
 import java.io.File
 import java.io.IOException
+import java.util.UUID
 import java.util.concurrent.atomic.AtomicLong
 
 data class ModelPackDescriptor(val version: Int, val url: String, val bytes: Long, val sha256: String,
@@ -62,7 +63,8 @@ class ModelPackStore(private val context: Context) {
     private val directory: File get() = File(requireNotNull(context.getExternalFilesDir(null)) {
         "Хранилище недоступно. Проверьте свободное место." }, "models3d").apply { check(isDirectory || mkdirs()) }
     internal val activeFile get() = File(directory, "collection.zip")
-    internal val pendingFile get() = File(directory, "download.part.zip")
+    internal val pendingFile get() = File(directory, prefs.getString("download_file", null)
+        ?.takeIf { it.matches(Regex("download-[a-f0-9-]+\\.part\\.zip")) } ?: "download.part.zip")
     private val mutableState = MutableStateFlow(installedState(
         if (prefs.getLong("download_id", -1) >= 0) ModelPackPhase.Waiting else ModelPackPhase.Idle))
     val state = mutableState.asStateFlow()
@@ -113,16 +115,20 @@ class ModelPackStore(private val context: Context) {
                 try {
                     require(directory.usableSpace > descriptor.bytes + 32L * 1024 * 1024) { "Недостаточно свободного места для пакета моделей." }
                     clearDownload()
+                    // DownloadManager can finish cleaning a cancelled request
+                    // asynchronously. A new request must never reuse its path.
+                    val candidate = File(directory, "download-${UUID.randomUUID()}.part.zip")
                     val request = DownloadManager.Request(Uri.parse(descriptor.url))
                         .setTitle("ДЛЯ СВОИХ — 3D-модели")
                         .setDescription("Коллекция из ${descriptor.files.size} моделей")
                         .setMimeType("application/zip")
                         .setAllowedOverMetered(!wifiOnly).setAllowedOverRoaming(false)
                         .setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE)
-                        .setDestinationInExternalFilesDir(context, "models3d", pendingFile.name)
+                        .setDestinationInExternalFilesDir(context, "models3d", candidate.name)
                     if (generation.get() != token) return@withLock
                     val id = downloads.enqueue(request)
-                    prefs.edit().putLong("download_id", id).putString("download_sha", descriptor.sha256).remove("error").commit()
+                    prefs.edit().putLong("download_id", id).putString("download_sha", descriptor.sha256)
+                        .putString("download_file", candidate.name).remove("error").commit()
                 } catch (e: Exception) { fail(e.message ?: "Не удалось начать скачивание моделей.") }
             }
             if (generation.get() == token) refreshNow()
@@ -149,10 +155,11 @@ class ModelPackStore(private val context: Context) {
         } }
     }
     private fun clearDownload() {
+        val candidate = pendingFile
         val id = prefs.getLong("download_id", -1)
         if (id >= 0) runCatching { downloads.remove(id) }
-        pendingFile.delete()
-        prefs.edit().remove("download_id").remove("download_sha").remove("error").commit()
+        candidate.delete()
+        prefs.edit().remove("download_id").remove("download_sha").remove("download_file").remove("error").commit()
     }
     private fun fail(message: String) {
         clearDownload()
@@ -172,7 +179,7 @@ class ModelPackStore(private val context: Context) {
             require(prefs.getString("download_sha", null) == descriptor.sha256) { "Коллекция обновилась. Повторите скачивание моделей." }
             verifyAndActivate(pendingFile, token)
             downloads.remove(id)
-            prefs.edit().remove("download_id").remove("download_sha").remove("error").commit()
+            prefs.edit().remove("download_id").remove("download_sha").remove("download_file").remove("error").commit()
             mutableState.value = installedState()
             UpdateNotifications.modelsReady(context)
         } catch (e: CancellationException) { throw e }

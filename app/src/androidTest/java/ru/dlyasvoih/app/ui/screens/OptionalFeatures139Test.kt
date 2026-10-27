@@ -82,6 +82,7 @@ class OptionalFeatures139Test {
             if (System.currentTimeMillis()-lastObservation<5000) return
             lastObservation=System.currentTimeMillis()
             val item=JSONObject().put("phase",store.state.value.phase).put("observedBytes",store.state.value.downloaded)
+                .put("pendingExists",store.pendingFile.exists()).put("pendingBytes",store.pendingFile.length())
             val id=prefs.getLong("download_id",-1)
             if (id>=0) context.getSystemService(android.app.DownloadManager::class.java)
                 .query(android.app.DownloadManager.Query().setFilterById(id)).use {cursor->
