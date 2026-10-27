@@ -30,9 +30,9 @@ jobs:
           import json,subprocess,time
           repo='sanozhukov3737-oss/dlya-svoih-updates'
           for attempt in range(100):
-              run=json.loads(subprocess.check_output(['gh','api',f'repos/{repo}/actions/runs/40473709029']))
-              assert run['head_sha']=='85dee9a1e95599a079a7babb5269fd58ccc8fff1'
-              artifacts=json.loads(subprocess.check_output(['gh','api',f'repos/{repo}/actions/runs/40473709029/artifacts']))
+              run=json.loads(subprocess.check_output(['gh','api',f'repos/{repo}/actions/runs/40474411562']))
+              assert run['head_sha']=='e74286359a154069ec4e2710d026df4078977a2a'
+              artifacts=json.loads(subprocess.check_output(['gh','api',f'repos/{repo}/actions/runs/40474411562/artifacts']))
               if any(a['name']=='models138-apks' for a in artifacts['artifacts']):break
               if run['status']=='completed':raise RuntimeError('Signed build did not produce the required artifact: '+str(run['conclusion']))
               print('Waiting for the signed build artifact',attempt,flush=True);time.sleep(15)
@@ -41,7 +41,7 @@ jobs:
       - uses: actions/download-artifact@v4
         with:
           name: models138-apks
-          run-id: 40473709029
+          run-id: 40474411562
           github-token: ${{ github.token }}
           path: build/models138/apks
       - name: Prepare baseline and accelerated Android device
