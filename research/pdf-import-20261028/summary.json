@@ -1,0 +1,27 @@
+{
+  "baseContentVersion": 197,
+  "preparedContentVersion": 198,
+  "pdfFiles": 8,
+  "pdfPages": 1517,
+  "rawCandidateRecords": 1158,
+  "mergedDuplicateRecords": 16,
+  "newSourceOnlyCards": 1021,
+  "existingCardsEnriched": 76,
+  "newExteriorImages": 543,
+  "existingPhotoReplacements": 0,
+  "excludedUncertainRecords": 37,
+  "originalCardsPreserved": 1695,
+  "bySourceNewCards": {
+    "1": 1,
+    "3": 12,
+    "4": 81,
+    "2": 29,
+    "5": 253,
+    "7": 148,
+    "8": 497
+  },
+  "appBuilt": false,
+  "published": false,
+  "reencodedInvalidExports": 9,
+  "inertVariantPhotoSubstitutionsRejected": 4
+}
