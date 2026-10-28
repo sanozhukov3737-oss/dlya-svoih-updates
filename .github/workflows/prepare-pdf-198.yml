@@ -2,7 +2,7 @@ name: Prepare reviewed PDF references for catalog 198
 on:
   push:
     branches: [content/pdf-review-20261028]
-    paths: [content/inputs/pdf198-assets-manifest.json, content/overlays/pdf-import-20261028.json, tools/verify_pdf_import_198.py]
+    paths: [content/inputs/pdf198-assets-manifest.json, content/inputs/school198-assets-manifest.json, content/overlays/pdf-import-20261028.json, content/overlays/school-images-20261028.json, tools/verify_pdf_import_198.py, tools/verify_school_images_198.py]
 permissions:
   contents: write
 jobs:
@@ -26,18 +26,27 @@ jobs:
           if test -f content/inputs/pdf198-assets.zip.part000; then
             /usr/bin/python3 tools/materialize_pdf_assets_198.py
           fi
+          if test -f content/inputs/school198-assets.zip.part000; then
+            /usr/bin/python3 tools/materialize_pdf_assets_198.py --manifest content/inputs/school198-assets-manifest.json
+          fi
           /usr/bin/python3 tools/materialize_pdf_assets_198.py --prune
           /usr/bin/python3 tools/apply_pdf_import_198.py --source build/pdf-import-198/baseline-197.json --output build/pdf-import-198/catalog.json
           /usr/bin/python3 tools/build_catalog.py --source build/pdf-import-198/catalog.json --output build/pdf-import-198/guide-v29.db
           /usr/bin/python3 tools/verify_pdf_import_198.py --catalog build/pdf-import-198/catalog.json --database build/pdf-import-198/guide-v29.db --report research/pdf-import-20261028/validation.json --baseline build/pdf-import-198/baseline-197.json
+          /usr/bin/python3 tools/apply_school_images_198.py --source build/pdf-import-198/catalog.json --output build/pdf-import-198/final-catalog.json
+          /usr/bin/python3 tools/build_catalog.py --source build/pdf-import-198/final-catalog.json --output build/pdf-import-198/guide-v29.db
+          /usr/bin/python3 tools/verify_school_images_198.py --baseline build/pdf-import-198/catalog.json --catalog build/pdf-import-198/final-catalog.json --database build/pdf-import-198/guide-v29.db --report research/school-images-20261028/validation.json
       - name: Commit prepared data without publishing
         run: |
-          cp build/pdf-import-198/catalog.json content/catalog.json
+          cp build/pdf-import-198/final-catalog.json content/catalog.json
           cp build/pdf-import-198/guide-v29.db app/src/main/assets/database/guide-v29.db
           cp build/pdf-import-198/content-version.txt app/src/main/assets/database/content-version.txt
-          git add -A content/catalog.json app/src/main/assets/images app/src/main/assets/thumbs app/src/main/assets/database/guide-v29.db app/src/main/assets/database/content-version.txt research/pdf-import-20261028/validation.json
+          git add -A content/catalog.json app/src/main/assets/images app/src/main/assets/thumbs app/src/main/assets/database/guide-v29.db app/src/main/assets/database/content-version.txt research/pdf-import-20261028/validation.json research/school-images-20261028/validation.json
           if test -f content/inputs/pdf198-assets.zip.part000; then
             git rm content/inputs/pdf198-assets.zip.part*
+          fi
+          if test -f content/inputs/school198-assets.zip.part000; then
+            git rm content/inputs/school198-assets.zip.part*
           fi
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
@@ -46,4 +55,6 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: pdf-import-198-validation
-          path: research/pdf-import-20261028/validation.json
+          path: |
+            research/pdf-import-20261028/validation.json
+            research/school-images-20261028/validation.json

@@ -6,7 +6,7 @@
   "rawCandidateRecords": 1158,
   "mergedDuplicateRecords": 16,
   "newSourceOnlyCards": 1020,
-  "existingCardsEnriched": 76,
+  "existingCardsEnriched": 75,
   "newExteriorImages": 536,
   "existingPhotoReplacements": 0,
   "excludedUncertainRecords": 38,
@@ -23,5 +23,6 @@
   "appBuilt": false,
   "published": false,
   "reencodedInvalidExports": 9,
-  "inertVariantPhotoSubstitutionsRejected": 4
+  "inertVariantPhotoSubstitutionsRejected": 4,
+  "correctedMibBoardCitation": true
 }

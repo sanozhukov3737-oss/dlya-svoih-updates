@@ -10,8 +10,8 @@ import sys
 ROOT=Path(__file__).resolve().parents[1]
 MANIFEST=ROOT/'content/inputs/pdf198-assets-manifest.json'
 
-def materialize():
-    m=json.loads(MANIFEST.read_text())
+def materialize(manifest=None):
+    m=json.loads((Path(manifest) if manifest else MANIFEST).read_text())
     parts=[]
     for part in m['parts']:
         p=ROOT/part['path'];data=p.read_bytes()
@@ -23,7 +23,7 @@ def materialize():
     with zipfile.ZipFile(io.BytesIO(raw)) as z:
         assert len(z.namelist())==len(known) and set(z.namelist())==set(known)
         for name in z.namelist():
-            assert re.fullmatch(r'(?:images|thumbs)/pdf198-[a-f0-9]{12}\.(?:webp|jpg)',name)
+            assert re.fullmatch(r'(?:images|thumbs)/(?:pdf198|school198)-[a-f0-9]{12}\.(?:webp|jpg)',name)
             info=z.getinfo(name);expected=known[name]
             assert info.file_size==expected['bytes'] and info.file_size<=4*1024*1024
             data=z.read(name);assert hashlib.sha256(data).hexdigest()==expected['sha256']
@@ -34,11 +34,18 @@ def materialize():
 def prune():
     overlay=json.loads((ROOT/'content/overlays/pdf-import-20261028.json').read_text())
     wanted={im[k] for c in overlay['cards'] for im in c['images'] for k in ('localPath','thumbnailPath')}
+    school=ROOT/'content/overlays/school-images-20261028.json'
+    if school.exists():
+        extra=json.loads(school.read_text())
+        wanted.update(im[k] for c in extra['cards'] for im in c['images'] for k in ('localPath','thumbnailPath'))
+        wanted.update(im[k] for c in extra['changes'] for im in c['after']['images'] for k in ('localPath','thumbnailPath'))
     assets=ROOT/'app/src/main/assets';removed=[]
     for folder in ('images','thumbs'):
-        for path in (assets/folder).glob('pdf198-*'):
+        for path in list((assets/folder).glob('pdf198-*'))+list((assets/folder).glob('school198-*')):
             if str(path.relative_to(assets)) not in wanted:
                 removed.append(str(path.relative_to(assets)));path.unlink()
     return {'removedUnusedBatchAssets':removed}
 
-if __name__=='__main__':print(json.dumps(prune() if '--prune' in sys.argv else materialize()))
+if __name__=='__main__':
+    manifest=sys.argv[sys.argv.index('--manifest')+1] if '--manifest' in sys.argv else None
+    print(json.dumps(prune() if '--prune' in sys.argv else materialize(manifest)))
