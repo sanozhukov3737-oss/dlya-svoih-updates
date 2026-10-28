@@ -1091,7 +1091,7 @@
         "безопасность",
         "справочная карточка"
       ],
-      "thumbnailPath": "thumbs/photo-v177-a1748ba4d5c1e23b.webp",
+      "thumbnailPath": "thumbs/school198-fd2a14f13a67.jpg",
       "contentStatus": "reviewed",
       "reviewedAt": "2026-09-09",
       "archived": 0,
@@ -1104,12 +1104,12 @@
       "images": [
         {
           "id": "photo-v177-a1748ba4d5c1e23b",
-          "localPath": "images/photo-v177-a1748ba4d5c1e23b.webp",
-          "caption": "ТМ-62М — наружный вид музейного образца. Фото: Vitaly V. Kuzmin. CC BY-SA 4.0. Кадрировано и преобразовано в WebP без увеличения.",
-          "width": 720,
-          "height": 590,
-          "position": 0,
-          "thumbnailPath": "thumbs/photo-v177-a1748ba4d5c1e23b.webp"
+          "localPath": "images/school198-fd2a14f13a67.jpg",
+          "thumbnailPath": "thumbs/school198-fd2a14f13a67.jpg",
+          "caption": "ПРОТИВОТАНКОВАЯ МИНА  ТМ-62М. Иллюстрация наружного вида по подписи в PDF «ТМ-62М для школы.pdf», PDF-стр. 1. Окраска сохранена; разрешение не увеличено. Автор и отдельная лицензия иллюстрации не установлены.",
+          "width": 838,
+          "height": 633,
+          "position": 0
         }
       ],
       "sources": [
@@ -1164,6 +1164,12 @@
         {
           "id": "eng-tm-62m-pdf198-4-97",
           "title": "Предоставленный PDF «Информационно-справочный материал 2025.pdf», PDF-стр. 97; SHA-256 4952b939ed10dccddc5e3ee2070eadd49e060a2a2403b9e286e9f71e1f89cd80. Самостоятельная достоверность каждого индекса и права на иллюстрации не подтверждены.",
+          "url": null,
+          "accessedAt": "2026-10-28"
+        },
+        {
+          "id": "eng-tm-62m-school198-18",
+          "title": "Предоставленный PDF «ТМ-62М для школы.pdf», PDF-стр. 1; SHA-256 ce023e2f0c8f40dae56b3432e8690b7e5ae8e87105df9d5c82581424f1d171d1. Использована только иллюстрация наружного вида; автор и отдельная лицензия изображения не установлены.",
           "url": null,
           "accessedAt": "2026-10-28"
         }
@@ -1295,12 +1301,12 @@
         },
         {
           "id": "eng-pmn-2-v13-0",
-          "localPath": "images/eng-pmn-2-v13-0.webp",
-          "caption": "ПМН-2, внешний вид. Фото: Danish EOD and Search Center. Источник: GICHD — Explosive Ordnance Guide for Ukraine (2022), PDF-стр. 18.",
-          "width": 340,
-          "height": 277,
-          "position": 1,
-          "thumbnailPath": "thumbs/eng-pmn-2-v13-0.webp"
+          "localPath": "images/school198-45e032bb7d42.jpg",
+          "thumbnailPath": "thumbs/school198-45e032bb7d42.jpg",
+          "caption": "ПРОТИВОПЕХОТНАЯ ФУГАСНАЯ МИНА  ПМН-2. Иллюстрация наружного вида по подписи в PDF «ПМН-2 для школы.pdf», PDF-стр. 1. Окраска сохранена; разрешение не увеличено. Автор и отдельная лицензия иллюстрации не установлены.",
+          "width": 619,
+          "height": 466,
+          "position": 1
         }
       ],
       "sources": [
@@ -1345,6 +1351,12 @@
           "title": "Предоставленный PDF «Информационно-справочный материал 2025.pdf», PDF-стр. 125; SHA-256 4952b939ed10dccddc5e3ee2070eadd49e060a2a2403b9e286e9f71e1f89cd80. Самостоятельная достоверность каждого индекса и права на иллюстрации не подтверждены.",
           "url": null,
           "accessedAt": "2026-10-28"
+        },
+        {
+          "id": "eng-pmn-2-school198-10",
+          "title": "Предоставленный PDF «ПМН-2 для школы.pdf», PDF-стр. 1; SHA-256 46c25005904d921bbb77c06ee223319fbe1280f7f6fbfd4b9dc13cd192e6bfb1. Использована только иллюстрация наружного вида; автор и отдельная лицензия изображения не установлены.",
+          "url": null,
+          "accessedAt": "2026-10-28"
         }
       ],
       "searchProjection": "reader"
@@ -1364,7 +1376,7 @@
         "безопасность",
         "справочная карточка"
       ],
-      "thumbnailPath": "thumbs/eng-mon-50-v13-0.webp",
+      "thumbnailPath": "thumbs/school198-85b0979e0050.jpg",
       "contentStatus": "reviewed",
       "reviewedAt": "2026-09-09",
       "archived": 0,
@@ -1377,12 +1389,12 @@
       "images": [
         {
           "id": "eng-mon-50-v13-0",
-          "localPath": "images/eng-mon-50-v13-0.webp",
-          "caption": "MON-50: внешний вид. Фото: Danish EOD and Search Center Источник: GICHD — Explosive Ordnance Guide for Ukraine (2022), PDF-стр. 10.",
-          "width": 548,
-          "height": 323,
-          "position": 0,
-          "thumbnailPath": "thumbs/eng-mon-50-v13-0.webp"
+          "localPath": "images/school198-85b0979e0050.jpg",
+          "thumbnailPath": "thumbs/school198-85b0979e0050.jpg",
+          "caption": "ПРОТИВОПЕХОТНАЯ ОСКОЛОЧНАЯ МИНА  МОН-50. Иллюстрация наружного вида по подписи в PDF «МОН для школы.pdf», PDF-стр. 1. Окраска сохранена; разрешение не увеличено. Автор и отдельная лицензия иллюстрации не установлены.",
+          "width": 1402,
+          "height": 877,
+          "position": 0
         }
       ],
       "sources": [
@@ -1419,6 +1431,12 @@
         {
           "id": "eng-mon-50-pdf198-4-129",
           "title": "Предоставленный PDF «Информационно-справочный материал 2025.pdf», PDF-стр. 129; SHA-256 4952b939ed10dccddc5e3ee2070eadd49e060a2a2403b9e286e9f71e1f89cd80. Самостоятельная достоверность каждого индекса и права на иллюстрации не подтверждены.",
+          "url": null,
+          "accessedAt": "2026-10-28"
+        },
+        {
+          "id": "eng-mon-50-school198-5",
+          "title": "Предоставленный PDF «МОН для школы.pdf», PDF-стр. 1; SHA-256 98e411c37b2119eb4ab8eb789bdf2060f75584371ca65fe5ed27c7950780f156. Использована только иллюстрация наружного вида; автор и отдельная лицензия изображения не установлены.",
           "url": null,
           "accessedAt": "2026-10-28"
         }
@@ -1459,6 +1477,15 @@
           "height": 997,
           "position": 0,
           "thumbnailPath": "thumbs/photo-v176-e4cc601c974e7d4b.webp"
+        },
+        {
+          "id": "eng-ozm-72-school198-04df2b73aa26",
+          "localPath": "images/school198-04df2b73aa26.jpg",
+          "thumbnailPath": "thumbs/school198-04df2b73aa26.jpg",
+          "caption": "ПРОТИВОПЕХОТНАЯ ОСКОЛОЧНАЯ МИНА  ОЗМ-72. Иллюстрация наружного вида по подписи в PDF «ОЗМ-72 для школы.pdf», PDF-стр. 1. Окраска сохранена; разрешение не увеличено. Автор и отдельная лицензия иллюстрации не установлены.",
+          "width": 691,
+          "height": 1114,
+          "position": 1
         }
       ],
       "sources": [
@@ -1507,6 +1534,12 @@
         {
           "id": "eng-ozm-72-pdf198-4-137",
           "title": "Предоставленный PDF «Информационно-справочный материал 2025.pdf», PDF-стр. 137; SHA-256 4952b939ed10dccddc5e3ee2070eadd49e060a2a2403b9e286e9f71e1f89cd80. Самостоятельная достоверность каждого индекса и права на иллюстрации не подтверждены.",
+          "url": null,
+          "accessedAt": "2026-10-28"
+        },
+        {
+          "id": "eng-ozm-72-school198-7",
+          "title": "Предоставленный PDF «ОЗМ-72 для школы.pdf», PDF-стр. 1; SHA-256 e201d6014e370f83ac69a4fc8f320b0506c93489e1c42d94642259a291667cd7. Использована только иллюстрация наружного вида; автор и отдельная лицензия изображения не установлены.",
           "url": null,
           "accessedAt": "2026-10-28"
         }
@@ -1723,6 +1756,15 @@
           "height": 1060,
           "position": 0,
           "thumbnailPath": "thumbs/photo-v177-0923e86c7c43ffcf.webp"
+        },
+        {
+          "id": "eng-ptm-3-school198-2b8a9c5ecf54",
+          "localPath": "images/school198-2b8a9c5ecf54.jpg",
+          "thumbnailPath": "thumbs/school198-2b8a9c5ecf54.jpg",
+          "caption": "ПРОТИВОТАНКОВАЯ МИНА  ПТМ-3. Иллюстрация наружного вида по подписи в PDF «ПТМ-3 для школы.pdf», PDF-стр. 1. Окраска сохранена; разрешение не увеличено. Автор и отдельная лицензия иллюстрации не установлены.",
+          "width": 1600,
+          "height": 1054,
+          "position": 1
         }
       ],
       "sources": [
@@ -1785,6 +1827,12 @@
           "title": "Предоставленный PDF «Информационно-справочный материал 2025.pdf», PDF-стр. 114; SHA-256 4952b939ed10dccddc5e3ee2070eadd49e060a2a2403b9e286e9f71e1f89cd80. Самостоятельная достоверность каждого индекса и права на иллюстрации не подтверждены.",
           "url": null,
           "accessedAt": "2026-10-28"
+        },
+        {
+          "id": "eng-ptm-3-school198-13",
+          "title": "Предоставленный PDF «ПТМ-3 для школы.pdf», PDF-стр. 1; SHA-256 4fbf57b1ea61305259257eb313c08b23009e64464b05da5090bae6a1dfcaa4e5. Использована только иллюстрация наружного вида; автор и отдельная лицензия изображения не установлены.",
+          "url": null,
+          "accessedAt": "2026-10-28"
         }
       ],
       "searchProjection": "reader"
@@ -1827,6 +1875,15 @@
           "height": 720,
           "position": 0,
           "thumbnailPath": "thumbs/photo-v177-42d8268e4bcecd36.webp"
+        },
+        {
+          "id": "eng-m18a1-school198-b74ab33fb238",
+          "localPath": "images/school198-b74ab33fb238.jpg",
+          "thumbnailPath": "thumbs/school198-b74ab33fb238.jpg",
+          "caption": "ПРОТИВОПЕХОТНАЯ МИНА  М18A1 \"Клэймор\" (США). Иллюстрация наружного вида по подписи в PDF «М18A1 Клэймор для школы.pdf», PDF-стр. 1. Окраска сохранена; разрешение не увеличено. Автор и отдельная лицензия иллюстрации не установлены.",
+          "width": 807,
+          "height": 1085,
+          "position": 1
         }
       ],
       "sources": [
@@ -1883,6 +1940,12 @@
           "title": "Источник фотографии №177: M18A1 Claymore (CC BY-SA 4.0)",
           "url": "https://commons.wikimedia.org/wiki/File:Claymore_mine,_AHM,_2024-04-28.jpg",
           "accessedAt": "2026-10-10"
+        },
+        {
+          "id": "eng-m18a1-school198-3",
+          "title": "Предоставленный PDF «М18A1 Клэймор для школы.pdf», PDF-стр. 1; SHA-256 47df1235d345c29b2a28ff6ba4ae399779d4db4d622a78684c978ecd17b3e85c. Использована только иллюстрация наружного вида; автор и отдельная лицензия изображения не установлены.",
+          "url": null,
+          "accessedAt": "2026-10-28"
         }
       ],
       "searchProjection": "reader"
@@ -3071,6 +3134,15 @@
           "height": 1600,
           "position": 0,
           "thumbnailPath": "thumbs/photo-v177-9f18d2383b79cc0d.webp"
+        },
+        {
+          "id": "grenade-rgd-5-school198-c4e3c3f90ecb",
+          "localPath": "images/school198-c4e3c3f90ecb.jpg",
+          "thumbnailPath": "thumbs/school198-c4e3c3f90ecb.jpg",
+          "caption": "РУЧНАЯ ГРАНАТА  РГД-5. Иллюстрация наружного вида по подписи в PDF «РГД-5 для школы.pdf», PDF-стр. 1. Окраска сохранена; разрешение не увеличено. Автор и отдельная лицензия иллюстрации не установлены.",
+          "width": 526,
+          "height": 902,
+          "position": 1
         }
       ],
       "sources": [
@@ -3127,6 +3199,12 @@
           "title": "Предоставленный PDF «Иностранные гранаты в зоне сво.pdf», PDF-стр. 16; SHA-256 3435364e226980282d1441016d190c2fefe7e30c3e9b92c5d959cbad4c0e6738. Самостоятельная достоверность каждого индекса и права на иллюстрации не подтверждены.",
           "url": null,
           "accessedAt": "2026-10-28"
+        },
+        {
+          "id": "grenade-rgd-5-school198-14",
+          "title": "Предоставленный PDF «РГД-5 для школы.pdf», PDF-стр. 1; SHA-256 3fc7216fe5f634b216ff0e3d9865cd1471eb26a87edd9d712307d3ad4e87d2c8. Использована только иллюстрация наружного вида; автор и отдельная лицензия изображения не установлены.",
+          "url": null,
+          "accessedAt": "2026-10-28"
         }
       ],
       "searchProjection": "reader"
@@ -3147,7 +3225,7 @@
         "СССР",
         "справочная карточка"
       ],
-      "thumbnailPath": "thumbs/grenade-rgn-v13-0.webp",
+      "thumbnailPath": "thumbs/school198-a7d9f1723fb4.jpg",
       "contentStatus": "reviewed",
       "reviewedAt": "2026-09-09",
       "archived": 0,
@@ -3160,12 +3238,12 @@
       "images": [
         {
           "id": "grenade-rgn-v13-0",
-          "localPath": "images/grenade-rgn-v13-0.webp",
-          "caption": "РГН: фотография внешнего вида с размерными обозначениями из US Navy. Public domain. Сохранена отображаемая копия, рамка браузера исключена; преобразование в WebP. Источник: US Navy / Wikimedia Commons — RGN offensive hand grenade.",
-          "width": 479,
-          "height": 391,
-          "position": 0,
-          "thumbnailPath": "thumbs/grenade-rgn-v13-0.webp"
+          "localPath": "images/school198-a7d9f1723fb4.jpg",
+          "thumbnailPath": "thumbs/school198-a7d9f1723fb4.jpg",
+          "caption": "РУЧНАЯ ГРАНАТА  РГН. Иллюстрация наружного вида по подписи в PDF «РГН для школы.pdf», PDF-стр. 1. Окраска сохранена; разрешение не увеличено. Автор и отдельная лицензия иллюстрации не установлены.",
+          "width": 474,
+          "height": 911,
+          "position": 0
         }
       ],
       "sources": [
@@ -3198,6 +3276,12 @@
           "title": "U.S. Army ODIN / World Equipment Guide: RGN Russian Anti-Personnel Grenade",
           "url": "https://odin.t2com.army.mil/WEG/Asset/2a807051f2210ee9d77195dd3ad80e7a",
           "accessedAt": "2026-09-09"
+        },
+        {
+          "id": "grenade-rgn-school198-15",
+          "title": "Предоставленный PDF «РГН для школы.pdf», PDF-стр. 1; SHA-256 411327e5cd2fbff96dbfaf19a0eaab3f808a44307f4e3556d3f7c90fe4dbe4ba. Использована только иллюстрация наружного вида; автор и отдельная лицензия изображения не установлены.",
+          "url": null,
+          "accessedAt": "2026-10-28"
         }
       ],
       "searchProjection": "reader"
@@ -3218,7 +3302,7 @@
         "СССР",
         "справочная карточка"
       ],
-      "thumbnailPath": "thumbs/grenade-rgo-v13-0.webp",
+      "thumbnailPath": "thumbs/school198-3c5c7d1788e2.jpg",
       "contentStatus": "reviewed",
       "reviewedAt": "2026-09-09",
       "archived": 0,
@@ -3231,12 +3315,12 @@
       "images": [
         {
           "id": "grenade-rgo-v13-0",
-          "localPath": "images/grenade-rgo-v13-0.webp",
-          "caption": "РГО: полный снимок внешнего вида из раздела RGO/RGN. Фото: Roly Evans. Источник: GICHD — Explosive Ordnance Guide for Ukraine (2022), PDF-стр. 65.",
-          "width": 670,
-          "height": 328,
-          "position": 0,
-          "thumbnailPath": "thumbs/grenade-rgo-v13-0.webp"
+          "localPath": "images/school198-3c5c7d1788e2.jpg",
+          "thumbnailPath": "thumbs/school198-3c5c7d1788e2.jpg",
+          "caption": "РУЧНАЯ ГРАНАТА  РГО. Иллюстрация наружного вида по подписи в PDF «РГО для школы.pdf», PDF-стр. 1. Окраска сохранена; разрешение не увеличено. Автор и отдельная лицензия иллюстрации не установлены.",
+          "width": 532,
+          "height": 899,
+          "position": 0
         }
       ],
       "sources": [
@@ -3269,6 +3353,12 @@
           "title": "GICHD: Explosive Ordnance Guide for Ukraine, 2022",
           "url": "https://www.gichd.org/fileadmin/uploads/gichd/Publications/GICHD_Explosive_Ordnance_Guide_for_Ukraine_2022_v18.pdf",
           "accessedAt": "2026-09-09"
+        },
+        {
+          "id": "grenade-rgo-school198-16",
+          "title": "Предоставленный PDF «РГО для школы.pdf», PDF-стр. 1; SHA-256 9e0da14878ff1526c022d8584c0f48b000db0ee45c4ec1e8ccf2e0b7a27410a3. Использована только иллюстрация наружного вида; автор и отдельная лицензия изображения не установлены.",
+          "url": null,
+          "accessedAt": "2026-10-28"
         }
       ],
       "searchProjection": "reader"
@@ -8504,7 +8594,7 @@
         "США",
         "справочная карточка"
       ],
-      "thumbnailPath": "thumbs/photo-v181-ab25f078c0ff8b35.webp",
+      "thumbnailPath": "thumbs/school198-18f28ae62d49.jpg",
       "contentStatus": "reviewed",
       "reviewedAt": "2026-09-09",
       "archived": 0,
@@ -8517,12 +8607,12 @@
       "images": [
         {
           "id": "photo-v181-ab25f078c0ff8b35",
-          "localPath": "images/photo-v181-ab25f078c0ff8b35.webp",
-          "caption": "M86: закрытый образец, внешний вид. Фото: CNeal113, 09.08.2018; CC BY-SA 4.0. Оригинал 448×422; преобразован в WebP без увеличения и кадрирования. Фотография не подтверждает пригодность или безопасность конкретного предмета.",
-          "width": 448,
-          "height": 422,
-          "position": 0,
-          "thumbnailPath": "thumbs/photo-v181-ab25f078c0ff8b35.webp"
+          "localPath": "images/school198-18f28ae62d49.jpg",
+          "thumbnailPath": "thumbs/school198-18f28ae62d49.jpg",
+          "caption": "ПРОТИВОПЕХОТНАЯ МИНА  М-86(США). Иллюстрация наружного вида по подписи в PDF «М-86 для школы.pdf», PDF-стр. 1. Окраска сохранена; разрешение не увеличено. Автор и отдельная лицензия иллюстрации не установлены.",
+          "width": 1077,
+          "height": 1200,
+          "position": 0
         }
       ],
       "sources": [
@@ -8567,6 +8657,12 @@
           "title": "Источник фотографии №181: M86 Pursuit Deterrent Munition (CC BY-SA 4.0)",
           "url": "https://commons.wikimedia.org/wiki/File:M86_Pursuit_Deterrent_Munition.jpg",
           "accessedAt": "2026-10-10"
+        },
+        {
+          "id": "eng-m86-pdm-school198-2",
+          "title": "Предоставленный PDF «М-86 для школы.pdf», PDF-стр. 1; SHA-256 662d9b0c7c826998fe3e448f60539446e65a8dd8fdb0037c9e7c7d7e16bfe575. Использована только иллюстрация наружного вида; автор и отдельная лицензия изображения не установлены.",
+          "url": null,
+          "accessedAt": "2026-10-28"
         }
       ],
       "searchProjection": "reader"
@@ -34891,6 +34987,15 @@
           "height": 690,
           "position": 0,
           "thumbnailPath": "thumbs/photo-v158-76d9a9e530f540fb.webp"
+        },
+        {
+          "id": "mine-audit-v25-su-ptm-1g-school198-acb09a864093",
+          "localPath": "images/school198-acb09a864093.jpg",
+          "thumbnailPath": "thumbs/school198-acb09a864093.jpg",
+          "caption": "ПРОТИВОТАНКОВАЯ МИНА  ПТМ-1Г. Иллюстрация наружного вида по подписи в PDF «ПТМ-1Г для школы.pdf», PDF-стр. 1. Окраска сохранена; разрешение не увеличено. Автор и отдельная лицензия иллюстрации не установлены.",
+          "width": 1010,
+          "height": 620,
+          "position": 1
         }
       ],
       "sources": [
@@ -34915,6 +35020,12 @@
         {
           "id": "mine-audit-v25-su-ptm-1g-pdf198-4-113",
           "title": "Предоставленный PDF «Информационно-справочный материал 2025.pdf», PDF-стр. 113; SHA-256 4952b939ed10dccddc5e3ee2070eadd49e060a2a2403b9e286e9f71e1f89cd80. Самостоятельная достоверность каждого индекса и права на иллюстрации не подтверждены.",
+          "url": null,
+          "accessedAt": "2026-10-28"
+        },
+        {
+          "id": "mine-audit-v25-su-ptm-1g-school198-12",
+          "title": "Предоставленный PDF «ПТМ-1Г для школы.pdf», PDF-стр. 1; SHA-256 e06c4251d4f5586b799eb6cb4d12b96a055c121d970c01d2653c78a9485db08b. Использована только иллюстрация наружного вида; автор и отдельная лицензия изображения не установлены.",
           "url": null,
           "accessedAt": "2026-10-28"
         }
@@ -44042,7 +44153,7 @@
         "признаки распознавания",
         "визуальная сверка"
       ],
-      "thumbnailPath": "thumbs/grenade-vog17-vog25-sesu-ccby4.webp",
+      "thumbnailPath": "thumbs/school198-bd39a8edfb14.jpg",
       "contentStatus": "source_only",
       "reviewedAt": "2026-09-13",
       "archived": 0,
@@ -44057,12 +44168,12 @@
       "images": [
         {
           "id": "ordnance-v27-vog-17-sesu-ccby4",
-          "localPath": "images/grenade-vog17-vog25-sesu-ccby4.webp",
-          "caption": "Групповая документальная фотография взрывоопасных предметов; описание источника прямо указывает среди показанных выстрелов ВОГ-17. Фото Государственной службы Украины по чрезвычайным ситуациям, CC BY 4.0. ВОГ-17М отдельно не подтверждается.",
-          "width": 935,
-          "height": 935,
-          "position": 0,
-          "thumbnailPath": "thumbs/grenade-vog17-vog25-sesu-ccby4.webp"
+          "localPath": "images/school198-bd39a8edfb14.jpg",
+          "thumbnailPath": "thumbs/school198-bd39a8edfb14.jpg",
+          "caption": "ВЫСТРЕЛ С ГРАНАТОЙ  ВОГ-17М. Иллюстрация наружного вида по подписи в PDF «ВОГ-17М для школы.pdf», PDF-стр. 1. Вырезан только целый образец ВОГ-17М; разрез ниже исключён. Для общей карточки это иллюстрация варианта 17М. Окраска сохранена; разрешение не увеличено. Автор и отдельная лицензия иллюстрации не установлены.",
+          "width": 949,
+          "height": 250,
+          "position": 0
         }
       ],
       "sources": [
@@ -44089,6 +44200,12 @@
           "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 54: масса и габариты",
           "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
           "accessedAt": "2026-10-04"
+        },
+        {
+          "id": "ordnance-v27-vog-17-vog-17m-school198-0",
+          "title": "Предоставленный PDF «ВОГ-17М для школы.pdf», PDF-стр. 1; SHA-256 58faa27a6d20dbb290945b466027fe21cbea826cff37c4bcfce91276447b66cc. Использована только иллюстрация наружного вида; автор и отдельная лицензия изображения не установлены.",
+          "url": null,
+          "accessedAt": "2026-10-28"
         }
       ],
       "searchProjection": "reader"
@@ -44176,7 +44293,7 @@
         "признаки распознавания",
         "визуальная сверка"
       ],
-      "thumbnailPath": "thumbs/grenade-vog17-vog25-sesu-ccby4.webp",
+      "thumbnailPath": "thumbs/school198-9c1b554b393a.jpg",
       "contentStatus": "source_only",
       "reviewedAt": "2026-09-13",
       "archived": 0,
@@ -44191,12 +44308,12 @@
       "images": [
         {
           "id": "ordnance-v27-vog-25-sesu-ccby4",
-          "localPath": "images/grenade-vog17-vog25-sesu-ccby4.webp",
-          "caption": "Групповая документальная фотография взрывоопасных предметов; описание источника прямо указывает среди показанных выстрелов ВОГ-25 и ВОГ-25П. Фото Государственной службы Украины по чрезвычайным ситуациям, CC BY 4.0.",
-          "width": 935,
-          "height": 935,
-          "position": 0,
-          "thumbnailPath": "thumbs/grenade-vog17-vog25-sesu-ccby4.webp"
+          "localPath": "images/school198-9c1b554b393a.jpg",
+          "thumbnailPath": "thumbs/school198-9c1b554b393a.jpg",
+          "caption": "ВЫСТРЕЛ С ГРАНАТОЙ  ВОГ-25. Иллюстрация наружного вида по подписи в PDF «ВОГ-25 для школы.pdf», PDF-стр. 1. Окраска сохранена; разрешение не увеличено. Автор и отдельная лицензия иллюстрации не установлены.",
+          "width": 1468,
+          "height": 686,
+          "position": 0
         }
       ],
       "sources": [
@@ -44223,6 +44340,12 @@
           "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 56: масса и габариты",
           "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
           "accessedAt": "2026-10-04"
+        },
+        {
+          "id": "ordnance-v27-vog-25-school198-1",
+          "title": "Предоставленный PDF «ВОГ-25 для школы.pdf», PDF-стр. 1; SHA-256 d5dc60b228f509bef9fb05f1fb5fefae031d4106395d7fba49271466a722d218. Использована только иллюстрация наружного вида; автор и отдельная лицензия изображения не установлены.",
+          "url": null,
+          "accessedAt": "2026-10-28"
         }
       ],
       "searchProjection": "reader"
@@ -46375,6 +46498,15 @@
           "height": 535,
           "position": 0,
           "thumbnailPath": "thumbs/v44-og7v-open-thumb.webp"
+        },
+        {
+          "id": "ordnance-v27-og-7v-school198-83cac22394ea",
+          "localPath": "images/school198-83cac22394ea.jpg",
+          "thumbnailPath": "thumbs/school198-83cac22394ea.jpg",
+          "caption": "ВЫСТРЕЛ С ГРАНАТОЙ  ОГ-7В. Иллюстрация наружного вида по подписи в PDF «ОГ-7В для школы.pdf», PDF-стр. 1. Окраска сохранена; разрешение не увеличено. Автор и отдельная лицензия иллюстрации не установлены.",
+          "width": 1211,
+          "height": 112,
+          "position": 1
         }
       ],
       "sources": [
@@ -46405,6 +46537,12 @@
         {
           "id": "ordnance-v27-og-7v-pdf198-2-10",
           "title": "Предоставленный PDF «Гранатометы РФ и гранаты к ним.pdf», PDF-стр. 10; SHA-256 d711fc3aac797b65b9632a6cf3d86bd83be422f958c72708f0129c0bde95c699. Самостоятельная достоверность каждого индекса и права на иллюстрации не подтверждены.",
+          "url": null,
+          "accessedAt": "2026-10-28"
+        },
+        {
+          "id": "ordnance-v27-og-7v-school198-6",
+          "title": "Предоставленный PDF «ОГ-7В для школы.pdf», PDF-стр. 1; SHA-256 378ec38c9f8c0a16dbae6dc7596da36d1e1abb311bd7cb1eda4da01238252a4c. Использована только иллюстрация наружного вида; автор и отдельная лицензия изображения не установлены.",
           "url": null,
           "accessedAt": "2026-10-28"
         }
@@ -46650,7 +46788,7 @@
         "признаки распознавания",
         "визуальная сверка"
       ],
-      "thumbnailPath": "thumbs/aoig-v48-pg7vl-0.webp",
+      "thumbnailPath": "thumbs/school198-7783c1e210d0.jpg",
       "contentStatus": "source_only",
       "reviewedAt": "2026-09-12",
       "archived": 0,
@@ -46665,12 +46803,12 @@
       "images": [
         {
           "id": "aoig-v48-pg7vl-0",
-          "localPath": "images/aoig-v48-pg7vl-0.webp",
-          "caption": "ПГ-7ВЛ: фотографии и чертёж с размерами из опознавательного руководства по боеприпасам Афганистана, том 1, с. 208. Издание Naval EOD Technology Division ВМС США, 2004, разрешено к открытому распространению.",
-          "width": 1064,
-          "height": 624,
-          "position": 0,
-          "thumbnailPath": "thumbs/aoig-v48-pg7vl-0.webp"
+          "localPath": "images/school198-7783c1e210d0.jpg",
+          "thumbnailPath": "thumbs/school198-7783c1e210d0.jpg",
+          "caption": "ВЫСТРЕЛ С ГРАНАТОЙ  ПГ-7ВЛ. Иллюстрация наружного вида по подписи в PDF «ПГ-7ВЛ для школы.pdf», PDF-стр. 1. Окраска сохранена; разрешение не увеличено. Автор и отдельная лицензия иллюстрации не установлены.",
+          "width": 1536,
+          "height": 166,
+          "position": 0
         }
       ],
       "sources": [
@@ -46707,6 +46845,12 @@
         {
           "id": "ordnance-v27-pg-7vl-pdf198-5-123",
           "title": "Предоставленный PDF «Классификатор боеприпасов (1).pdf», PDF-стр. 123; SHA-256 d0c0046a0681b20652c8a4d1a2c223533f3188845559be3e9af9ec8e729c0b02. Самостоятельная достоверность каждого индекса и права на иллюстрации не подтверждены.",
+          "url": null,
+          "accessedAt": "2026-10-28"
+        },
+        {
+          "id": "ordnance-v27-pg-7vl-school198-8",
+          "title": "Предоставленный PDF «ПГ-7ВЛ для школы.pdf», PDF-стр. 1; SHA-256 6dd8770a4be56aacc1e8e9d70f27457ee0de82e1f5ab4867566e1db681324fb5. Использована только иллюстрация наружного вида; автор и отдельная лицензия изображения не установлены.",
           "url": null,
           "accessedAt": "2026-10-28"
         }
@@ -72482,6 +72626,15 @@
           "height": 720,
           "position": 0,
           "thumbnailPath": "thumbs/photo-v177-42d8268e4bcecd36.webp"
+        },
+        {
+          "id": "ordnance-v29-ga-0371-school198-b74ab33fb238",
+          "localPath": "images/school198-b74ab33fb238.jpg",
+          "thumbnailPath": "thumbs/school198-b74ab33fb238.jpg",
+          "caption": "ПРОТИВОПЕХОТНАЯ МИНА  М18A1 \"Клэймор\" (США). Иллюстрация наружного вида по подписи в PDF «М18A1 Клэймор для школы.pdf», PDF-стр. 1. Окраска сохранена; разрешение не увеличено. Автор и отдельная лицензия иллюстрации не установлены.",
+          "width": 807,
+          "height": 1085,
+          "position": 1
         }
       ],
       "sources": [
@@ -72550,6 +72703,12 @@
           "title": "Армия США, TM 43-0001-36, с. 3-13",
           "url": "https://www.bulletpicker.com/pdf/TM-43-0001-36.pdf",
           "accessedAt": "2026-09-25"
+        },
+        {
+          "id": "ordnance-v29-ga-0371-school198-3",
+          "title": "Предоставленный PDF «М18A1 Клэймор для школы.pdf», PDF-стр. 1; SHA-256 47df1235d345c29b2a28ff6ba4ae399779d4db4d622a78684c978ecd17b3e85c. Использована только иллюстрация наружного вида; автор и отдельная лицензия изображения не установлены.",
+          "url": null,
+          "accessedAt": "2026-10-28"
         }
       ],
       "searchProjection": "reader"
@@ -72570,7 +72729,7 @@
         "глобальный аудит 29",
         "verified-model"
       ],
-      "thumbnailPath": "thumbs/v30-m86-pdm.webp",
+      "thumbnailPath": "thumbs/school198-18f28ae62d49.jpg",
       "contentStatus": "source_only",
       "reviewedAt": "2026-09-12",
       "archived": 0,
@@ -72583,12 +72742,12 @@
       "images": [
         {
           "id": "ordnance-v29-ga-0377-photo-v30",
-          "localPath": "images/v30-m86-pdm.webp",
-          "caption": "Точный вид M86 PDM сверху. Фото: CNeal113, 2018; CC BY-SA 4.0; преобразовано в WebP.",
-          "width": 448,
-          "height": 422,
-          "position": 0,
-          "thumbnailPath": "thumbs/v30-m86-pdm.webp"
+          "localPath": "images/school198-18f28ae62d49.jpg",
+          "thumbnailPath": "thumbs/school198-18f28ae62d49.jpg",
+          "caption": "ПРОТИВОПЕХОТНАЯ МИНА  М-86(США). Иллюстрация наружного вида по подписи в PDF «М-86 для школы.pdf», PDF-стр. 1. Окраска сохранена; разрешение не увеличено. Автор и отдельная лицензия иллюстрации не установлены.",
+          "width": 1077,
+          "height": 1200,
+          "position": 0
         }
       ],
       "sources": [
@@ -72609,6 +72768,12 @@
           "title": "Армия США, TM 43-0001-36, с. 3-21",
           "url": "https://www.bulletpicker.com/pdf/TM-43-0001-36.pdf",
           "accessedAt": "2026-09-25"
+        },
+        {
+          "id": "ordnance-v29-ga-0377-school198-2",
+          "title": "Предоставленный PDF «М-86 для школы.pdf», PDF-стр. 1; SHA-256 662d9b0c7c826998fe3e448f60539446e65a8dd8fdb0037c9e7c7d7e16bfe575. Использована только иллюстрация наружного вида; автор и отдельная лицензия изображения не установлены.",
+          "url": null,
+          "accessedAt": "2026-10-28"
         }
       ],
       "searchProjection": "reader"
@@ -86093,12 +86258,6 @@
           "title": "Пользовательский PDF: «БРОШКА пиу.pdf» — атлас ZMops-V · НЛО, с. 64; подписи требуют уточнения",
           "url": null,
           "accessedAt": "2026-10-11"
-        },
-        {
-          "id": "atlas-mib-pdf198-4-140",
-          "title": "Предоставленный PDF «Информационно-справочный материал 2025.pdf», PDF-стр. 140; SHA-256 4952b939ed10dccddc5e3ee2070eadd49e060a2a2403b9e286e9f71e1f89cd80. Самостоятельная достоверность каждого индекса и права на иллюстрации не подтверждены.",
-          "url": null,
-          "accessedAt": "2026-10-28"
         }
       ],
       "searchProjection": "reader"
@@ -104579,13 +104738,13 @@
       "categoryId": "rockets-recoilless",
       "title": "Выстрел ПГ-7ВР",
       "summary": "Выстрел ПГ-7ВР — реактивная граната или гранатомётный выстрел. Обозначение приведено по предоставленному PDF; запись сохраняет источник и точную страницу.",
-      "body": "## Описание\n\nВыстрел ПГ-7ВР.\n\nКласс в предоставленном материале: реактивная граната или гранатомётный выстрел.\n\n## Иллюстрация\n\nОтдельный подтверждённый наружный вид этого исполнения в карточку не добавлен.\n\n## Достоверность\n\nЗапись подготовлена по предоставленному PDF. Независимое подтверждение обозначения и модификации не выполнено. Данные о боевом применении и инструкции не перенесены.\n",
+      "body": "## Описание\n\nВыстрел ПГ-7ВР.\n\nКласс в предоставленном материале: реактивная граната или гранатомётный выстрел.\n\n## Иллюстрация\n\nДобавлена иллюстрация наружного вида по подписи предоставленного PDF. Источник и страница указаны в подписи; независимая проверка обозначения не выполнена.\n\n## Достоверность\n\nЗапись подготовлена по предоставленному PDF. Независимое подтверждение обозначения и модификации не выполнено. Данные о боевом применении и инструкции не перенесены.\n",
       "tags": [
         "ПГ-7ВР",
         "реактивная граната или гранатомётный выстрел",
         "PDF 2026-10-28"
       ],
-      "thumbnailPath": null,
+      "thumbnailPath": "thumbs/school198-82dac3a772f0.jpg",
       "contentStatus": "source_only",
       "reviewedAt": null,
       "archived": 0,
@@ -104593,11 +104752,27 @@
       "sourceGrade": "B",
       "verifiedAt": null,
       "countries": [],
-      "images": [],
+      "images": [
+        {
+          "id": "pdf198-2-7696b5ee1458-school198-82dac3a772f0",
+          "localPath": "images/school198-82dac3a772f0.jpg",
+          "thumbnailPath": "thumbs/school198-82dac3a772f0.jpg",
+          "caption": "ВЫСТРЕЛ С ГРАНАТОЙ  ПГ-7ВР. Иллюстрация наружного вида по подписи в PDF «ПГ-7ВР для школы.pdf», PDF-стр. 1. Окраска сохранена; разрешение не увеличено. Автор и отдельная лицензия иллюстрации не установлены.",
+          "width": 1536,
+          "height": 147,
+          "position": 0
+        }
+      ],
       "sources": [
         {
           "id": "pdf198-2-7696b5ee1458-pdf198-2-9",
           "title": "Предоставленный PDF «Гранатометы РФ и гранаты к ним.pdf», PDF-стр. 9; SHA-256 d711fc3aac797b65b9632a6cf3d86bd83be422f958c72708f0129c0bde95c699. Самостоятельная достоверность каждого индекса и права на иллюстрации не подтверждены.",
+          "url": null,
+          "accessedAt": "2026-10-28"
+        },
+        {
+          "id": "pdf198-2-7696b5ee1458-school198-9",
+          "title": "Предоставленный PDF «ПГ-7ВР для школы.pdf», PDF-стр. 1; SHA-256 be73227fa5848472651db55bb274189b71e7a43f028cc4642fb5988df57a1218. Использована только иллюстрация наружного вида; автор и отдельная лицензия изображения не установлены.",
           "url": null,
           "accessedAt": "2026-10-28"
         }
@@ -104699,6 +104874,15 @@
           "position": 0,
           "id": "pdf198-2-5b2bc5cc5896-exterior",
           "caption": "Выстрел ТБГ-7В: внешний вид по предоставленному PDF «Гранатометы РФ и гранаты к ним.pdf», PDF-стр. 12. Исходная окраска сохранена, разрешение не увеличено. Автор и лицензия отдельной иллюстрации в источнике не установлены."
+        },
+        {
+          "id": "pdf198-2-5b2bc5cc5896-school198-ea5fbb609dae",
+          "localPath": "images/school198-ea5fbb609dae.jpg",
+          "thumbnailPath": "thumbs/school198-ea5fbb609dae.jpg",
+          "caption": "ВЫСТРЕЛ С ГРАНАТОЙ  ТБГ-7В. Иллюстрация наружного вида по подписи в PDF «ТБГ-7В для школы.pdf», PDF-стр. 1. Окраска сохранена; разрешение не увеличено. Автор и отдельная лицензия иллюстрации не установлены.",
+          "width": 1536,
+          "height": 198,
+          "position": 1
         }
       ],
       "sources": [
@@ -104711,6 +104895,12 @@
         {
           "id": "pdf198-2-5b2bc5cc5896-pdf198-5-124",
           "title": "Предоставленный PDF «Классификатор боеприпасов (1).pdf», PDF-стр. 124; SHA-256 d0c0046a0681b20652c8a4d1a2c223533f3188845559be3e9af9ec8e729c0b02. Самостоятельная достоверность каждого индекса и права на иллюстрации не подтверждены.",
+          "url": null,
+          "accessedAt": "2026-10-28"
+        },
+        {
+          "id": "pdf198-2-5b2bc5cc5896-school198-17",
+          "title": "Предоставленный PDF «ТБГ-7В для школы.pdf», PDF-стр. 1; SHA-256 f7f762c33542cad6d36d06539a1ea08330f68d2bb3ae21f039ea927719a759b9. Использована только иллюстрация наружного вида; автор и отдельная лицензия изображения не установлены.",
           "url": null,
           "accessedAt": "2026-10-28"
         }
@@ -111072,13 +111262,13 @@
       "categoryId": "mortars",
       "title": "30-мм выстрел ВОГ-17М с осколочной гранатой",
       "summary": "30-мм выстрел ВОГ-17М с осколочной гранатой — миномётный выстрел. Обозначение приведено по предоставленному PDF; запись сохраняет источник и точную страницу.",
-      "body": "## Описание\n\n30-мм выстрел ВОГ-17М с осколочной гранатой.\n\nКласс в предоставленном материале: миномётный выстрел.\n\nНоминальный калибр, указанный в заголовке источника: 30 мм.\n\n## Иллюстрация\n\nОтдельный подтверждённый наружный вид этого исполнения в карточку не добавлен.\n\n## Достоверность\n\nЗапись подготовлена по предоставленному PDF. Независимое подтверждение обозначения и модификации не выполнено. Данные о боевом применении и инструкции не перенесены.\n",
+      "body": "## Описание\n\n30-мм выстрел ВОГ-17М с осколочной гранатой.\n\nКласс в предоставленном материале: миномётный выстрел.\n\nНоминальный калибр, указанный в заголовке источника: 30 мм.\n\n## Иллюстрация\n\nДобавлена иллюстрация наружного вида по подписи предоставленного PDF. Источник и страница указаны в подписи; независимая проверка обозначения не выполнена.\n\n## Достоверность\n\nЗапись подготовлена по предоставленному PDF. Независимое подтверждение обозначения и модификации не выполнено. Данные о боевом применении и инструкции не перенесены.\n",
       "tags": [
         "ВОГ-17М",
         "миномётный выстрел",
         "PDF 2026-10-28"
       ],
-      "thumbnailPath": null,
+      "thumbnailPath": "thumbs/school198-bd39a8edfb14.jpg",
       "contentStatus": "source_only",
       "reviewedAt": null,
       "archived": 0,
@@ -111086,11 +111276,27 @@
       "sourceGrade": "B",
       "verifiedAt": null,
       "countries": [],
-      "images": [],
+      "images": [
+        {
+          "id": "pdf198-5-48859048a05c-school198-bd39a8edfb14",
+          "localPath": "images/school198-bd39a8edfb14.jpg",
+          "thumbnailPath": "thumbs/school198-bd39a8edfb14.jpg",
+          "caption": "ВЫСТРЕЛ С ГРАНАТОЙ  ВОГ-17М. Иллюстрация наружного вида по подписи в PDF «ВОГ-17М для школы.pdf», PDF-стр. 1. Вырезан только целый образец ВОГ-17М; разрез ниже исключён. Для общей карточки это иллюстрация варианта 17М. Окраска сохранена; разрешение не увеличено. Автор и отдельная лицензия иллюстрации не установлены.",
+          "width": 949,
+          "height": 250,
+          "position": 0
+        }
+      ],
       "sources": [
         {
           "id": "pdf198-5-48859048a05c-pdf198-5-118",
           "title": "Предоставленный PDF «Классификатор боеприпасов (1).pdf», PDF-стр. 118; SHA-256 d0c0046a0681b20652c8a4d1a2c223533f3188845559be3e9af9ec8e729c0b02. Самостоятельная достоверность каждого индекса и права на иллюстрации не подтверждены.",
+          "url": null,
+          "accessedAt": "2026-10-28"
+        },
+        {
+          "id": "pdf198-5-48859048a05c-school198-0",
+          "title": "Предоставленный PDF «ВОГ-17М для школы.pdf», PDF-стр. 1; SHA-256 58faa27a6d20dbb290945b466027fe21cbea826cff37c4bcfce91276447b66cc. Использована только иллюстрация наружного вида; автор и отдельная лицензия изображения не установлены.",
           "url": null,
           "accessedAt": "2026-10-28"
         }
@@ -139836,13 +140042,13 @@
       "categoryId": "mines-antipersonnel",
       "title": "ПОБ — противопехотный осколочный боеприпас",
       "summary": "ПОБ — противопехотный осколочный боеприпас — инженерный боеприпас или средство. Обозначение приведено по предоставленному PDF; запись сохраняет источник и точную страницу.",
-      "body": "## Описание\n\nПОБ — противопехотный осколочный боеприпас.\n\nКласс в предоставленном материале: инженерный боеприпас или средство.\n\n## Иллюстрация\n\nОтдельный подтверждённый наружный вид этого исполнения в карточку не добавлен.\n\n## Достоверность\n\nЗапись подготовлена по предоставленному PDF. Независимое подтверждение обозначения и модификации не выполнено. Данные о боевом применении и инструкции не перенесены.\n",
+      "body": "## Описание\n\nПОБ — противопехотный осколочный боеприпас.\n\nКласс в предоставленном материале: инженерный боеприпас или средство.\n\n## Иллюстрация\n\nДобавлена иллюстрация наружного вида по подписи предоставленного PDF. Источник и страница указаны в подписи; независимая проверка обозначения не выполнена.\n\n## Достоверность\n\nЗапись подготовлена по предоставленному PDF. Независимое подтверждение обозначения и модификации не выполнено. Данные о боевом применении и инструкции не перенесены.\n",
       "tags": [
         "ПОБ — противопехотный осколочный боеприпас",
         "инженерный боеприпас или средство",
         "PDF 2026-10-28"
       ],
-      "thumbnailPath": null,
+      "thumbnailPath": "thumbs/school198-d39eca09f61a.jpg",
       "contentStatus": "source_only",
       "reviewedAt": null,
       "archived": 0,
@@ -139850,11 +140056,27 @@
       "sourceGrade": "B",
       "verifiedAt": null,
       "countries": [],
-      "images": [],
+      "images": [
+        {
+          "id": "pdf198-4-7657025b7ae9-school198-d39eca09f61a",
+          "localPath": "images/school198-d39eca09f61a.jpg",
+          "thumbnailPath": "thumbs/school198-d39eca09f61a.jpg",
+          "caption": "ПРОТИВОПЕХОТНАЯ ОСКОЛОЧНАЯ МИНА  ПОБ. Иллюстрация наружного вида по подписи в PDF «ПОБ для школы.pdf», PDF-стр. 1. Окраска сохранена; разрешение не увеличено. Автор и отдельная лицензия иллюстрации не установлены.",
+          "width": 379,
+          "height": 662,
+          "position": 0
+        }
+      ],
       "sources": [
         {
           "id": "pdf198-4-7657025b7ae9-pdf198-4-138",
           "title": "Предоставленный PDF «Информационно-справочный материал 2025.pdf», PDF-стр. 138; SHA-256 4952b939ed10dccddc5e3ee2070eadd49e060a2a2403b9e286e9f71e1f89cd80. Самостоятельная достоверность каждого индекса и права на иллюстрации не подтверждены.",
+          "url": null,
+          "accessedAt": "2026-10-28"
+        },
+        {
+          "id": "pdf198-4-7657025b7ae9-school198-11",
+          "title": "Предоставленный PDF «ПОБ для школы.pdf», PDF-стр. 1; SHA-256 a85082dabc4e7fd53b082fb92cf397e151e7ad0e28fef54bb94d0e360483fb6a. Использована только иллюстрация наружного вида; автор и отдельная лицензия изображения не установлены.",
           "url": null,
           "accessedAt": "2026-10-28"
         }
@@ -140847,6 +141069,55 @@
         {
           "id": "pdf198-5-93f54888c0dc-pdf198-5-204",
           "title": "Предоставленный PDF «Классификатор боеприпасов (1).pdf», PDF-стр. 204; SHA-256 d0c0046a0681b20652c8a4d1a2c223533f3188845559be3e9af9ec8e729c0b02. Самостоятельная достоверность каждого индекса и права на иллюстрации не подтверждены.",
+          "url": null,
+          "accessedAt": "2026-10-28"
+        }
+      ],
+      "searchProjection": "reader"
+    },
+    {
+      "rowid": 13199,
+      "id": "pdf198-school-mib-engineering",
+      "section": "AMMUNITION",
+      "categoryId": "mines-special",
+      "title": "МИБ — многофункциональный инженерный боеприпас",
+      "summary": "МИБ — обозначение многофункционального инженерного боеприпаса в предоставленных материалах. На иллюстрации показан вытянутый цилиндрический корпус с перфорацией, наружными пластинами и красной лентой.",
+      "body": "## Обозначение\n\nМИБ — многофункциональный инженерный боеприпас по подписи предоставленного PDF.\n\n## Внешний вид\n\nНа иллюстрации виден вытянутый цилиндрический корпус защитного цвета с перфорацией, наружными пластинами, выступающей верхней частью и красной лентой. Это описание показанного экземпляра; окраска других исполнений может отличаться.\n\n## Достоверность\n\nЗапись подготовлена по предоставленным материалам без независимого подтверждения технических характеристик. Электронная плата с подписью MIB в визуальном атласе является другим предметом и сохраняет отдельную карточку.\n",
+      "tags": [
+        "МИБ",
+        "MIB",
+        "многофункциональный инженерный боеприпас",
+        "наружный вид"
+      ],
+      "thumbnailPath": "thumbs/school198-608f87c92fc3.jpg",
+      "contentStatus": "source_only",
+      "reviewedAt": null,
+      "archived": 0,
+      "modelStatus": "source-listed",
+      "sourceGrade": "B",
+      "verifiedAt": null,
+      "countries": [],
+      "images": [
+        {
+          "id": "pdf198-school-mib-engineering-school198-608f87c92fc3",
+          "localPath": "images/school198-608f87c92fc3.jpg",
+          "thumbnailPath": "thumbs/school198-608f87c92fc3.jpg",
+          "caption": "МНОГОФУНКЦИОНАЛЬНЫЙ ИНЖЕНЕРНЫЙ БОЕПРИПАС. Иллюстрация наружного вида по подписи в PDF «МИБ для школы.pdf», PDF-стр. 1. Окраска сохранена; разрешение не увеличено. Автор и отдельная лицензия иллюстрации не установлены.",
+          "width": 483,
+          "height": 821,
+          "position": 0
+        }
+      ],
+      "sources": [
+        {
+          "id": "pdf198-school-mib-engineering-school198-4",
+          "title": "Предоставленный PDF «МИБ для школы.pdf», PDF-стр. 1; SHA-256 e97b980066a36d2ccbd5948bd0d1dccbe324e30f66d76b2e4c29ab155e7f4373. Использована только иллюстрация наружного вида; автор и отдельная лицензия изображения не установлены.",
+          "url": null,
+          "accessedAt": "2026-10-28"
+        },
+        {
+          "id": "pdf198-school-mib-engineering-pdf198-4-140",
+          "title": "Предоставленный PDF «Информационно-справочный материал 2025.pdf», PDF-стр. 140; SHA-256 4952b939ed10dccddc5e3ee2070eadd49e060a2a2403b9e286e9f71e1f89cd80. Самостоятельная достоверность каждого индекса и права на иллюстрации не подтверждены.",
           "url": null,
           "accessedAt": "2026-10-28"
         }
