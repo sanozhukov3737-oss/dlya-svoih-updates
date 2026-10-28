@@ -1,0 +1,16 @@
+{
+  "integrity": "ok",
+  "foreignKeys": "ok",
+  "fts": "ok",
+  "previousCardIdsAndRowidsPreserved": 2716,
+  "newCards": 1,
+  "decodedImageAndThumbnailFiles": 40,
+  "replacedGalleryRows": 10,
+  "addedGalleryRows": 10,
+  "cardCount": 2717,
+  "imageCount": 2153,
+  "dm31AtSeparatedFromAp": true,
+  "ts61SeparatedFromTs50AndVs16": true,
+  "androidImportTested": false,
+  "published": false
+}

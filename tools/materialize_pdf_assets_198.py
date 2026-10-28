@@ -23,7 +23,7 @@ def materialize(manifest=None):
     with zipfile.ZipFile(io.BytesIO(raw)) as z:
         assert len(z.namelist())==len(known) and set(z.namelist())==set(known)
         for name in z.namelist():
-            assert re.fullmatch(r'(?:images|thumbs)/(?:pdf198|school198)-[a-f0-9]{12}\.(?:webp|jpg)',name)
+            assert re.fullmatch(r'(?:images|thumbs)/(?:pdf198|school198|school3)-[a-f0-9]{12}\.(?:webp|jpg)',name)
             info=z.getinfo(name);expected=known[name]
             assert info.file_size==expected['bytes'] and info.file_size<=4*1024*1024
             data=z.read(name);assert hashlib.sha256(data).hexdigest()==expected['sha256']
@@ -34,14 +34,13 @@ def materialize(manifest=None):
 def prune():
     overlay=json.loads((ROOT/'content/overlays/pdf-import-20261028.json').read_text())
     wanted={im[k] for c in overlay['cards'] for im in c['images'] for k in ('localPath','thumbnailPath')}
-    school=ROOT/'content/overlays/school-images-20261028.json'
-    if school.exists():
+    for school in (ROOT/'content/overlays').glob('school-images*.json'):
         extra=json.loads(school.read_text())
         wanted.update(im[k] for c in extra['cards'] for im in c['images'] for k in ('localPath','thumbnailPath'))
         wanted.update(im[k] for c in extra['changes'] for im in c['after']['images'] for k in ('localPath','thumbnailPath'))
     assets=ROOT/'app/src/main/assets';removed=[]
     for folder in ('images','thumbs'):
-        for path in list((assets/folder).glob('pdf198-*'))+list((assets/folder).glob('school198-*')):
+        for path in list((assets/folder).glob('pdf198-*'))+list((assets/folder).glob('school198-*'))+list((assets/folder).glob('school3-*')):
             if str(path.relative_to(assets)) not in wanted:
                 removed.append(str(path.relative_to(assets)));path.unlink()
     return {'removedUnusedBatchAssets':removed}
