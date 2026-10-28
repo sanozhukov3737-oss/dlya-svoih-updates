@@ -11,9 +11,12 @@ from build_catalog import validate
 
 ROOT=Path(__file__).resolve().parents[1]
 
-def verify(catalog, database):
-    old=json.loads((ROOT/'content/catalog.json').read_text())
+def verify(catalog, database, baseline=None):
+    baseline=Path(baseline) if baseline else ROOT/'content/catalog.json'
+    old=json.loads(baseline.read_text())
     overlay=json.loads((ROOT/'content/overlays/pdf-import-20261028.json').read_text())
+    assert old['contentVersion']==197
+    assert hashlib.sha256(baseline.read_bytes()).hexdigest()==overlay['baseCatalogSha256']
     new=json.loads(Path(catalog).read_text())
     validate(new)
     before={c['id']:c for c in old['cards']}
@@ -64,6 +67,6 @@ def verify(catalog, database):
     return result
 
 if __name__=='__main__':
-    p=argparse.ArgumentParser();p.add_argument('--catalog',required=True);p.add_argument('--database',required=True);p.add_argument('--report')
-    a=p.parse_args();result=verify(a.catalog,a.database)
+    p=argparse.ArgumentParser();p.add_argument('--catalog',required=True);p.add_argument('--database',required=True);p.add_argument('--report');p.add_argument('--baseline')
+    a=p.parse_args();result=verify(a.catalog,a.database,a.baseline)
     if a.report:Path(a.report).write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n')

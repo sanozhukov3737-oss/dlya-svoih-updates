@@ -5,6 +5,7 @@ import json
 import re
 import zipfile
 import io
+import sys
 
 ROOT=Path(__file__).resolve().parents[1]
 MANIFEST=ROOT/'content/inputs/pdf198-assets-manifest.json'
@@ -30,4 +31,14 @@ def materialize():
             target.write_bytes(data)
     return {'restoredFiles':len(known),'sha256':m['sha256']}
 
-if __name__=='__main__':print(json.dumps(materialize()))
+def prune():
+    overlay=json.loads((ROOT/'content/overlays/pdf-import-20261028.json').read_text())
+    wanted={im[k] for c in overlay['cards'] for im in c['images'] for k in ('localPath','thumbnailPath')}
+    assets=ROOT/'app/src/main/assets';removed=[]
+    for folder in ('images','thumbs'):
+        for path in (assets/folder).glob('pdf198-*'):
+            if str(path.relative_to(assets)) not in wanted:
+                removed.append(str(path.relative_to(assets)));path.unlink()
+    return {'removedUnusedBatchAssets':removed}
+
+if __name__=='__main__':print(json.dumps(prune() if '--prune' in sys.argv else materialize()))

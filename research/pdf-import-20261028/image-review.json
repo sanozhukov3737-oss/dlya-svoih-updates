@@ -320,9 +320,9 @@
     "key": "1bb589429413",
     "index": 12,
     "title": "Взрыватель ВЗД-12ч",
-    "decision": "accepted-exterior",
+    "decision": "rejected-after-final-crop-review-or-index-conflict",
     "crop": null,
-    "includedInNewCard": true
+    "includedInNewCard": false
   },
   {
     "source": 4,
@@ -1805,9 +1805,9 @@
     "key": "d3481878f035",
     "index": 7,
     "title": "76-мм выстрел УБР-354А (53-УБР-354Б) с бронебойно-трассирующим снарядом",
-    "decision": "accepted-exterior",
+    "decision": "rejected-after-final-crop-review-or-index-conflict",
     "crop": null,
-    "includedInNewCard": true
+    "includedInNewCard": false
   },
   {
     "source": 5,
@@ -2645,14 +2645,14 @@
     "key": "198c19b2c4eb",
     "index": 91,
     "title": "23-мм патрон с бронебойно-зажигательно-трассирующим снарядом инертного снаряжения УБР1 ИН",
-    "decision": "accepted-exterior",
+    "decision": "rejected-after-final-crop-review-or-index-conflict",
     "crop": [
       0,
       0.52,
       1,
       1
     ],
-    "includedInNewCard": true
+    "includedInNewCard": false
   },
   {
     "source": 5,
@@ -2720,14 +2720,14 @@
     "key": "144916a1e589",
     "index": 96,
     "title": "30-мм патрон с практическим осколочно-фугасно-зажигательным снарядом УОФ8 ИН",
-    "decision": "accepted-exterior",
+    "decision": "rejected-after-final-crop-review-or-index-conflict",
     "crop": [
       0,
       0.52,
       1,
       1
     ],
-    "includedInNewCard": true
+    "includedInNewCard": false
   },
   {
     "source": 5,
@@ -3265,9 +3265,9 @@
     "key": "6b39198f4be6",
     "index": 149,
     "title": "40-мм выстрел ПГ-7ВС с кумулятивной противотанковой гранатой",
-    "decision": "accepted-exterior",
+    "decision": "rejected-after-final-crop-review-or-index-conflict",
     "crop": null,
-    "includedInNewCard": true
+    "includedInNewCard": false
   },
   {
     "source": 5,
@@ -3515,9 +3515,9 @@
     "key": "a96ca93ffc91",
     "index": 174,
     "title": "5,45-мм патрон к АК-74 холостой",
-    "decision": "accepted-exterior",
+    "decision": "rejected-after-final-crop-review-or-index-conflict",
     "crop": null,
-    "includedInNewCard": true
+    "includedInNewCard": false
   },
   {
     "source": 5,
@@ -3635,9 +3635,9 @@
     "key": "37df618d030f",
     "index": 186,
     "title": "14,5-мм патроны с пулей БЗТМ",
-    "decision": "accepted-exterior",
+    "decision": "rejected-after-final-crop-review-or-index-conflict",
     "crop": null,
-    "includedInNewCard": true
+    "includedInNewCard": false
   },
   {
     "source": 5,
