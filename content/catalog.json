@@ -1580,6 +1580,15 @@
           "height": 1067,
           "position": 0,
           "thumbnailPath": "thumbs/photo-v176-884f739e7edd6e7c.webp"
+        },
+        {
+          "id": "eng-pfm-1-school3-fb4d0cc52a11",
+          "localPath": "images/school3-fb4d0cc52a11.jpg",
+          "thumbnailPath": "thumbs/school3-fb4d0cc52a11.jpg",
+          "caption": "По подписи PDF: ПРОТИВОПЕХОТНАЯ ФУГАСНАЯ МИНА  ПФМ-1. «ПФМ для школы.pdf», PDF-стр. 1. Исходная окраска сохранена, разрешение не увеличено. Автор и отдельная лицензия иллюстрации не установлены.",
+          "width": 1536,
+          "height": 863,
+          "position": 1
         }
       ],
       "sources": [
@@ -1630,6 +1639,12 @@
           "title": "Источник фотографии №176: ПФМ-1 «Лепесток» (CC BY-SA 4.0)",
           "url": "https://commons.wikimedia.org/wiki/File:PFM-1_mine_Army-2022_2022-08-20_2467.jpg",
           "accessedAt": "2026-10-10"
+        },
+        {
+          "id": "eng-pfm-1-school3-1-p1-f0",
+          "title": "Предоставленный PDF «ПФМ для школы.pdf», PDF-стр. 1; SHA-256 6e2337e66f7f244e9668fc6d9dffe6528f04401e99c3442d2b91faa9820c410f. Использована иллюстрация наружного вида по подписи источника.",
+          "url": null,
+          "accessedAt": "2026-10-28"
         }
       ],
       "searchProjection": "reader"
@@ -2029,7 +2044,7 @@
         "безопасность",
         "справочная карточка"
       ],
-      "thumbnailPath": "thumbs/reference-v6-2e24b2b340546b9e.webp",
+      "thumbnailPath": "thumbs/school3-07c1248e653e.jpg",
       "contentStatus": "reviewed",
       "reviewedAt": "2026-09-09",
       "archived": 0,
@@ -2043,12 +2058,12 @@
       "images": [
         {
           "id": "reference-v6-2e24b2b340546b9e",
-          "localPath": "images/reference-v6-2e24b2b340546b9e.webp",
-          "caption": "Противотанковая DM31: левое изображение на рис. 5.31. Соседняя учебно-практическая DM70 в кадр не включена. Источник: Иностранные мины 2, PDF-стр. 123.",
-          "width": 408,
-          "height": 336,
-          "position": 0,
-          "thumbnailPath": "thumbs/reference-v6-2e24b2b340546b9e.webp"
+          "localPath": "images/school3-07c1248e653e.jpg",
+          "thumbnailPath": "thumbs/school3-07c1248e653e.jpg",
+          "caption": "По подписи PDF: ПРОТИВОТАНКОВАЯ МИНА  DM31 (Германия). «DM31 для школы.pdf», PDF-стр. 1. Исходная окраска сохранена, разрешение не увеличено. Автор и отдельная лицензия иллюстрации не установлены.",
+          "width": 563,
+          "height": 500,
+          "position": 0
         }
       ],
       "sources": [
@@ -2081,6 +2096,12 @@
           "title": "Предоставленный PDF «Иностранные мины 2» — PDF-стр. 122, 123",
           "url": null,
           "accessedAt": "2026-09-09"
+        },
+        {
+          "id": "eng-dm-31-at-school3-14-p1-f0",
+          "title": "Предоставленный PDF «DM31 для школы.pdf», PDF-стр. 1; SHA-256 d7f8f259c0e6d2bcf57becf539c825b86f6ded1f42eb73d27dc06cff6574df2b. Использована иллюстрация наружного вида по подписи источника.",
+          "url": null,
+          "accessedAt": "2026-10-28"
         }
       ],
       "searchProjection": "reader"
@@ -3407,6 +3428,15 @@
           "height": 667,
           "position": 1,
           "thumbnailPath": "thumbs/photo-v176-432f8958e6ec27a0.webp"
+        },
+        {
+          "id": "grenade-m67-school3-72206112ea79",
+          "localPath": "images/school3-72206112ea79.jpg",
+          "thumbnailPath": "thumbs/school3-72206112ea79.jpg",
+          "caption": "По подписи PDF: РУЧНАЯ ГРАНАТА  M67 (США). «M67 для школы.pdf», PDF-стр. 1. Исходная окраска сохранена, разрешение не увеличено. Автор и отдельная лицензия иллюстрации не установлены.",
+          "width": 735,
+          "height": 1012,
+          "position": 2
         }
       ],
       "sources": [
@@ -3451,6 +3481,12 @@
           "title": "Предоставленный PDF «Иностранные гранаты в зоне сво.pdf», PDF-стр. 6; SHA-256 3435364e226980282d1441016d190c2fefe7e30c3e9b92c5d959cbad4c0e6738. Самостоятельная достоверность каждого индекса и права на иллюстрации не подтверждены.",
           "url": null,
           "accessedAt": "2026-10-28"
+        },
+        {
+          "id": "grenade-m67-school3-9-p1-f0",
+          "title": "Предоставленный PDF «M67 для школы.pdf», PDF-стр. 1; SHA-256 c4e323cf03d060ff8799039843dc3bd014b8031daacbb12c3287af9bbef7d10b. Использована иллюстрация наружного вида по подписи источника.",
+          "url": null,
+          "accessedAt": "2026-10-28"
         }
       ],
       "searchProjection": "reader"
@@ -3490,6 +3526,15 @@
           "height": 1500,
           "position": 0,
           "thumbnailPath": "thumbs/photo-v176-bffdb2ec55cc08b5.webp"
+        },
+        {
+          "id": "grenade-dm51-school3-1efa063436a7",
+          "localPath": "images/school3-1efa063436a7.jpg",
+          "thumbnailPath": "thumbs/school3-1efa063436a7.jpg",
+          "caption": "По подписи PDF: РУЧНАЯ ГРАНАТА  DM51 (Германия). «DM51 для школы.pdf», PDF-стр. 1. Показанные в источнике наружные корпуса; внутренний разрез не включён. Исходная окраска сохранена, разрешение не увеличено. Автор и отдельная лицензия иллюстрации не установлены.",
+          "width": 1128,
+          "height": 1000,
+          "position": 1
         }
       ],
       "sources": [
@@ -3526,6 +3571,12 @@
         {
           "id": "grenade-dm51-pdf198-3-9",
           "title": "Предоставленный PDF «Иностранные гранаты в зоне сво.pdf», PDF-стр. 9; SHA-256 3435364e226980282d1441016d190c2fefe7e30c3e9b92c5d959cbad4c0e6738. Самостоятельная достоверность каждого индекса и права на иллюстрации не подтверждены.",
+          "url": null,
+          "accessedAt": "2026-10-28"
+        },
+        {
+          "id": "grenade-dm51-school3-12-p1-f0",
+          "title": "Предоставленный PDF «DM51 для школы.pdf», PDF-стр. 1; SHA-256 a78985420422dbe87c63461d52ca9c068fb04fe553ab9a9f129325f7c6c15f28. Использована иллюстрация наружного вида по подписи источника.",
           "url": null,
           "accessedAt": "2026-10-28"
         }
@@ -8272,6 +8323,24 @@
           "height": 720,
           "position": 0,
           "thumbnailPath": "thumbs/photo-v177-3a4390039a4f32fa.webp"
+        },
+        {
+          "id": "eng-m14-ap-mine-school3-0389e3e5538c",
+          "localPath": "images/school3-0389e3e5538c.jpg",
+          "thumbnailPath": "thumbs/school3-0389e3e5538c.jpg",
+          "caption": "M14 — наружный вид показанного образца. «М14.pdf», PDF-стр. 1. Исходная окраска сохранена, разрешение не увеличено. Авторская отметка источника: ©Веремеев Ю.; сохранена на снимке. Отдельная лицензия не установлена.",
+          "width": 332,
+          "height": 336,
+          "position": 1
+        },
+        {
+          "id": "eng-m14-ap-mine-school3-4fe650ae5e64",
+          "localPath": "images/school3-4fe650ae5e64.jpg",
+          "thumbnailPath": "thumbs/school3-4fe650ae5e64.jpg",
+          "caption": "M14 — наружный вид показанного образца. «М14.pdf», PDF-стр. 3. Наружный вид днища и маркировки; подписи исходного изображения сохранены. Исходная окраска сохранена, разрешение не увеличено. Автор и отдельная лицензия иллюстрации не установлены.",
+          "width": 259,
+          "height": 243,
+          "position": 2
         }
       ],
       "sources": [
@@ -8322,6 +8391,18 @@
           "title": "Источник фотографии №177: M14 (противопехотная мина) (Public domain)",
           "url": "https://commons.wikimedia.org/wiki/File:M14_(Mine).jpg",
           "accessedAt": "2026-10-10"
+        },
+        {
+          "id": "eng-m14-ap-mine-school3-0-p1-f0",
+          "title": "Предоставленный PDF «М14.pdf», PDF-стр. 1; SHA-256 224aac2abad363406fa43cb1405292b9e816d8de38e9841dc8f2cccdc79bdff8. Использована иллюстрация наружного вида по подписи источника.",
+          "url": null,
+          "accessedAt": "2026-10-28"
+        },
+        {
+          "id": "eng-m14-ap-mine-school3-0-p3-f0",
+          "title": "Предоставленный PDF «М14.pdf», PDF-стр. 3; SHA-256 224aac2abad363406fa43cb1405292b9e816d8de38e9841dc8f2cccdc79bdff8. Использована иллюстрация наружного вида по подписи источника.",
+          "url": null,
+          "accessedAt": "2026-10-28"
         }
       ],
       "searchProjection": "reader"
@@ -9566,7 +9647,7 @@
         "Италия",
         "справочная карточка"
       ],
-      "thumbnailPath": "thumbs/reference-v6-07716e8a5712e531.webp",
+      "thumbnailPath": "thumbs/school3-8a02fb668e37.jpg",
       "contentStatus": "reviewed",
       "reviewedAt": "2026-09-09",
       "archived": 0,
@@ -9579,12 +9660,12 @@
       "images": [
         {
           "id": "reference-v6-07716e8a5712e531",
-          "localPath": "images/reference-v6-07716e8a5712e531.webp",
-          "caption": "SB-33, внешний вид экземпляра на фотографии. По подписи PDF: Jane’s Mines and Mine Clearance 1999–00, редактор Colin King. На исходной фотографии предмет находится в руке; это не рекомендация к обращению с находками. Источник: Иностранные мины 1, PDF-стр. 11.",
-          "width": 390,
-          "height": 298,
-          "position": 0,
-          "thumbnailPath": "thumbs/reference-v6-07716e8a5712e531.webp"
+          "localPath": "images/school3-8a02fb668e37.jpg",
+          "thumbnailPath": "thumbs/school3-8a02fb668e37.jpg",
+          "caption": "По подписи PDF: ПРОТИВОПЕХОТНАЯ МИНА  SB-33 (Италия). «SB-33 для школы.pdf», PDF-стр. 1. Исходная окраска сохранена, разрешение не увеличено. Автор и отдельная лицензия иллюстрации не установлены.",
+          "width": 691,
+          "height": 435,
+          "position": 0
         }
       ],
       "sources": [
@@ -9629,6 +9710,12 @@
           "title": "Предоставленный PDF «Иностранные мины на Ближнем и Среднем Востоке и в Северной Африке» (2016) — PDF-стр. 10, 11",
           "url": null,
           "accessedAt": "2026-09-09"
+        },
+        {
+          "id": "eng-sb-33-family-school3-6-p1-f0",
+          "title": "Предоставленный PDF «SB-33 для школы.pdf», PDF-стр. 1; SHA-256 8f0c08ddea7b9b8039dd9799337f0d4df84ec3e0918b1b064f553bee296fc491. Использована иллюстрация наружного вида по подписи источника.",
+          "url": null,
+          "accessedAt": "2026-10-28"
         }
       ],
       "searchProjection": "reader"
@@ -10349,7 +10436,7 @@
         "справочная карточка",
         "Сингапур"
       ],
-      "thumbnailPath": "thumbs/reference-v6-aa7aa166139c0eb2.webp",
+      "thumbnailPath": "thumbs/school3-8858517a083e.jpg",
       "contentStatus": "reviewed",
       "reviewedAt": "2026-09-09",
       "archived": 0,
@@ -10362,12 +10449,21 @@
       ],
       "images": [
         {
+          "id": "eng-vs-50-family-school3-8858517a083e",
+          "localPath": "images/school3-8858517a083e.jpg",
+          "thumbnailPath": "thumbs/school3-8858517a083e.jpg",
+          "caption": "По подписи PDF: ПРОТИВОПЕХОТНАЯ МИНА  VS-50 (Италия). «VS-50 для школы.pdf», PDF-стр. 1. Исходная окраска сохранена, разрешение не увеличено. Автор и отдельная лицензия иллюстрации не установлены.",
+          "width": 680,
+          "height": 603,
+          "position": 0
+        },
+        {
           "id": "reference-v6-aa7aa166139c0eb2",
           "localPath": "images/reference-v6-aa7aa166139c0eb2.webp",
           "caption": "VS-50, внешний вид. Автор фотографии по подписи PDF: Найден Илиев. Окраска показанного экземпляра не подтверждает его безопасность или учебный статус. Источник: Иностранные мины 1, PDF-стр. 15.",
           "width": 702,
           "height": 937,
-          "position": 0,
+          "position": 1,
           "thumbnailPath": "thumbs/reference-v6-aa7aa166139c0eb2.webp"
         }
       ],
@@ -10419,6 +10515,12 @@
           "title": "Предоставленный PDF «Иностранные мины на Ближнем и Среднем Востоке и в Северной Африке» (2016) — PDF-стр. 12, 14, 15",
           "url": null,
           "accessedAt": "2026-09-09"
+        },
+        {
+          "id": "eng-vs-50-family-school3-4-p1-f0",
+          "title": "Предоставленный PDF «VS-50 для школы.pdf», PDF-стр. 1; SHA-256 6bd9580a1aeeb6dbd8565fae3e4537d7f83d98ade775a780d5218b82e46966f4. Использована иллюстрация наружного вида по подписи источника.",
+          "url": null,
+          "accessedAt": "2026-10-28"
         }
       ],
       "searchProjection": "reader"
@@ -12245,7 +12347,7 @@
         "Германия",
         "справочная карточка"
       ],
-      "thumbnailPath": "thumbs/reference-v6-df08e881d21bb13e.webp",
+      "thumbnailPath": "thumbs/school3-3b9ab16fe68d.jpg",
       "contentStatus": "reviewed",
       "reviewedAt": "2026-09-09",
       "archived": 0,
@@ -12258,12 +12360,12 @@
       "images": [
         {
           "id": "reference-v6-df08e881d21bb13e",
-          "localPath": "images/reference-v6-df08e881d21bb13e.webp",
-          "caption": "DM12 (PARM): общий вид, рисунок 6.18; PDF-стр. 170. Фотография относится к DM12. Источник: Иностранные мины 2, PDF-стр. 170.",
-          "width": 450,
-          "height": 380,
-          "position": 0,
-          "thumbnailPath": "thumbs/reference-v6-df08e881d21bb13e.webp"
+          "localPath": "images/school3-3b9ab16fe68d.jpg",
+          "thumbnailPath": "thumbs/school3-3b9ab16fe68d.jpg",
+          "caption": "По подписи PDF: ПРОТИВОТАНКОВАЯ МИНА  DM12 (Германия). «DM12 для школы.pdf», PDF-стр. 1. Исходная окраска сохранена, разрешение не увеличено. Автор и отдельная лицензия иллюстрации не установлены.",
+          "width": 886,
+          "height": 785,
+          "position": 0
         }
       ],
       "sources": [
@@ -12314,6 +12416,12 @@
           "title": "Предоставленный PDF «Иностранные мины 2» — PDF-стр. 170, 171, 175",
           "url": null,
           "accessedAt": "2026-09-09"
+        },
+        {
+          "id": "eng-parm-family-school3-16-p1-f0",
+          "title": "Предоставленный PDF «DM12 для школы.pdf», PDF-стр. 1; SHA-256 f43b16940b7e4f590ff0186a5661df6523285aa1679689f77f5bb6898d91c169. Использована иллюстрация наружного вида по подписи источника.",
+          "url": null,
+          "accessedAt": "2026-10-28"
         }
       ],
       "searchProjection": "reader"
@@ -17413,6 +17521,15 @@
           "height": 960,
           "position": 0,
           "thumbnailPath": "thumbs/photo-v178-f7268f3d854d5952.webp"
+        },
+        {
+          "id": "eng-pdf-v7-021-school3-0cf545f55395",
+          "localPath": "images/school3-0cf545f55395.jpg",
+          "thumbnailPath": "thumbs/school3-0cf545f55395.jpg",
+          "caption": "По подписи PDF: ПРОТИВОТАНКОВАЯ МИНА  DM1274 (Германия). «DM1274 для школы.pdf», PDF-стр. 1. В этой иллюстрации источник использует индекс DM1274; другие индексы семейства автоматически не приписываются. Исходная окраска сохранена, разрешение не увеличено. Автор и отдельная лицензия иллюстрации не установлены.",
+          "width": 800,
+          "height": 747,
+          "position": 1
         }
       ],
       "sources": [
@@ -17451,6 +17568,12 @@
           "title": "Источник фотографии №178: AT-2: DM1274 / DM1274A1 / DM1399 / DM1233 (CC BY-SA 3.0)",
           "url": "https://commons.wikimedia.org/wiki/File:AT-2.jpg",
           "accessedAt": "2026-10-10"
+        },
+        {
+          "id": "eng-pdf-v7-021-school3-15-p1-f0",
+          "title": "Предоставленный PDF «DM1274 для школы.pdf», PDF-стр. 1; SHA-256 d3dc5cb98ed7da7a706eb8860c1250b7e3ecace14b97ce5e256594810e025dba. Использована иллюстрация наружного вида по подписи источника.",
+          "url": null,
+          "accessedAt": "2026-10-28"
         }
       ],
       "searchProjection": "reader"
@@ -17546,6 +17669,15 @@
           "height": 602,
           "position": 0,
           "thumbnailPath": "thumbs/reference-v7-022-0.webp"
+        },
+        {
+          "id": "eng-pdf-v7-023-school3-0473beca97d5",
+          "localPath": "images/school3-0473beca97d5.jpg",
+          "thumbnailPath": "thumbs/school3-0473beca97d5.jpg",
+          "caption": "По подписи PDF: ПРОТИВОТАНКОВАЯ МИНА  HPD F2 (Франция). «HPD F2 для школы.pdf», PDF-стр. 1. Для семейства HPD изображён подписанный в этом PDF вариант HPD F2. Исходная окраска сохранена, разрешение не увеличено. Автор и отдельная лицензия иллюстрации не установлены.",
+          "width": 660,
+          "height": 517,
+          "position": 1
         }
       ],
       "sources": [
@@ -17578,6 +17710,12 @@
           "title": "Предоставленный PDF «Справочник сапера “Минлей”» (2025) — PDF-стр. 123",
           "url": null,
           "accessedAt": "2026-09-09"
+        },
+        {
+          "id": "eng-pdf-v7-023-school3-10-p1-f0",
+          "title": "Предоставленный PDF «HPD F2 для школы.pdf», PDF-стр. 1; SHA-256 9bad5b02b615b601ab973609843b06848d91953959e57ac063f8744665954039. Использована иллюстрация наружного вида по подписи источника.",
+          "url": null,
+          "accessedAt": "2026-10-28"
         }
       ],
       "searchProjection": "reader"
@@ -26813,7 +26951,7 @@
         "ПМН-4",
         "справочная карточка"
       ],
-      "thumbnailPath": "thumbs/photo-v178-c55ac640ef12f2f4.webp",
+      "thumbnailPath": "thumbs/school3-b7fdb48710a0.jpg",
       "contentStatus": "reviewed",
       "reviewedAt": "2026-09-09",
       "archived": 0,
@@ -26826,12 +26964,12 @@
       "images": [
         {
           "id": "photo-v178-c55ac640ef12f2f4",
-          "localPath": "images/photo-v178-c55ac640ef12f2f4.webp",
-          "caption": "ПМН-4: внешний вид с читаемой маркировкой на корпусе. Фото: Государственная пограничная служба Украины. Wikimedia Commons, PMN-4 anti-personnel landmine in Kyiv Oblast (2022-12-14) 01.jpg. CC BY 4.0.",
-          "width": 1600,
-          "height": 1200,
-          "position": 0,
-          "thumbnailPath": "thumbs/photo-v178-c55ac640ef12f2f4.webp"
+          "localPath": "images/school3-b7fdb48710a0.jpg",
+          "thumbnailPath": "thumbs/school3-b7fdb48710a0.jpg",
+          "caption": "По подписи PDF: ПРОТИВОПЕХОТНАЯ ФУГАСНАЯ МИНА  ПМН-4. «ПМН-4 для школы.pdf», PDF-стр. 1. Исходная окраска сохранена, разрешение не увеличено. Автор и отдельная лицензия иллюстрации не установлены.",
+          "width": 1232,
+          "height": 977,
+          "position": 0
         }
       ],
       "sources": [
@@ -26868,6 +27006,12 @@
         {
           "id": "ref-v8-pmn-4-pdf198-4-127",
           "title": "Предоставленный PDF «Информационно-справочный материал 2025.pdf», PDF-стр. 127; SHA-256 4952b939ed10dccddc5e3ee2070eadd49e060a2a2403b9e286e9f71e1f89cd80. Самостоятельная достоверность каждого индекса и права на иллюстрации не подтверждены.",
+          "url": null,
+          "accessedAt": "2026-10-28"
+        },
+        {
+          "id": "ref-v8-pmn-4-school3-2-p1-f0",
+          "title": "Предоставленный PDF «ПМН-4 для школы.pdf», PDF-стр. 1; SHA-256 68bd7876463d50777895233c455555d5362bd24cb8f2c7b20531fa4c269a14cb. Использована иллюстрация наружного вида по подписи источника.",
           "url": null,
           "accessedAt": "2026-10-28"
         }
@@ -27493,7 +27637,7 @@
         "СССР",
         "СССР / Россия"
       ],
-      "thumbnailPath": "thumbs/photo-v178-437bef23d02f5f95.webp",
+      "thumbnailPath": "thumbs/school3-395ebb3c74d2.jpg",
       "contentStatus": "reviewed",
       "reviewedAt": "2026-09-09",
       "archived": 0,
@@ -27506,12 +27650,12 @@
       "images": [
         {
           "id": "photo-v178-437bef23d02f5f95",
-          "localPath": "images/photo-v178-437bef23d02f5f95.webp",
-          "caption": "ТМ-62П3: внешний вид корпуса. Фото: ДСНС Украины. Wikimedia Commons, ТМ-62П3.jpg; первичный источник mine.dsns.gov.ua. CC BY 4.0.",
-          "width": 750,
-          "height": 750,
-          "position": 0,
-          "thumbnailPath": "thumbs/photo-v178-437bef23d02f5f95.webp"
+          "localPath": "images/school3-395ebb3c74d2.jpg",
+          "thumbnailPath": "thumbs/school3-395ebb3c74d2.jpg",
+          "caption": "По подписи PDF: ПРОТИВОТАНКОВАЯ МИНА  ТМ-62П3. «ТМ-62П3 для школы.pdf», PDF-стр. 1. Исходная окраска сохранена, разрешение не увеличено. Автор и отдельная лицензия иллюстрации не установлены.",
+          "width": 985,
+          "height": 715,
+          "position": 0
         }
       ],
       "sources": [
@@ -27554,6 +27698,12 @@
         {
           "id": "ref-v8-tm-62p3-pdf198-4-99",
           "title": "Предоставленный PDF «Информационно-справочный материал 2025.pdf», PDF-стр. 99; SHA-256 4952b939ed10dccddc5e3ee2070eadd49e060a2a2403b9e286e9f71e1f89cd80. Самостоятельная достоверность каждого индекса и права на иллюстрации не подтверждены.",
+          "url": null,
+          "accessedAt": "2026-10-28"
+        },
+        {
+          "id": "ref-v8-tm-62p3-school3-19-p1-f0",
+          "title": "Предоставленный PDF «ТМ-62П3 для школы.pdf», PDF-стр. 1; SHA-256 f4512a8a5138c846ff6c49610e3c2cac973a13c21be5a1363b8c8f39f8819fba. Использована иллюстрация наружного вида по подписи источника.",
           "url": null,
           "accessedAt": "2026-10-28"
         }
@@ -35226,7 +35376,7 @@
         "справочная карточка",
         "аудит моделей 25"
       ],
-      "thumbnailPath": "thumbs/v44-tm83-open-thumb.webp",
+      "thumbnailPath": "thumbs/school3-7d0fe6e12a27.jpg",
       "contentStatus": "source_only",
       "reviewedAt": "2026-09-11",
       "archived": 0,
@@ -35240,12 +35390,12 @@
       "images": [
         {
           "id": "img-v44-tm83-open",
-          "localPath": "images/v44-tm83-open.webp",
-          "caption": "ТМ-83 - На полигоне инженерных войск в подмосковном Николо-Урюпино показали боевую работу Уран-6 и Уран-14 01. Точное визуальное соответствие карточке.",
-          "width": 720,
-          "height": 480,
-          "position": 0,
-          "thumbnailPath": "thumbs/v44-tm83-open-thumb.webp"
+          "localPath": "images/school3-7d0fe6e12a27.jpg",
+          "thumbnailPath": "thumbs/school3-7d0fe6e12a27.jpg",
+          "caption": "По подписи PDF: ПРОТИВОТАНКОВАЯ МИНА  ТМ-83. «ТМ-83 для школы.pdf», PDF-стр. 1. Исходная окраска сохранена, разрешение не увеличено. Автор и отдельная лицензия иллюстрации не установлены.",
+          "width": 654,
+          "height": 786,
+          "position": 0
         }
       ],
       "sources": [
@@ -35276,6 +35426,12 @@
         {
           "id": "mine-audit-v25-su-tm-83-pdf198-4-108",
           "title": "Предоставленный PDF «Информационно-справочный материал 2025.pdf», PDF-стр. 108; SHA-256 4952b939ed10dccddc5e3ee2070eadd49e060a2a2403b9e286e9f71e1f89cd80. Самостоятельная достоверность каждого индекса и права на иллюстрации не подтверждены.",
+          "url": null,
+          "accessedAt": "2026-10-28"
+        },
+        {
+          "id": "mine-audit-v25-su-tm-83-school3-18-p1-f0",
+          "title": "Предоставленный PDF «ТМ-83 для школы.pdf», PDF-стр. 1; SHA-256 5b71e44f5539560e8329bfc01a1436047dfbc231646380a3e2707204ed5f96f0. Использована иллюстрация наружного вида по подписи источника.",
           "url": null,
           "accessedAt": "2026-10-28"
         }
@@ -61631,7 +61787,7 @@
         "глобальный аудит 29",
         "verified-model"
       ],
-      "thumbnailPath": "thumbs/grenade-rgz89-polish-af-attribution.webp",
+      "thumbnailPath": "thumbs/school3-07a2b6cc51fb.jpg",
       "contentStatus": "source_only",
       "reviewedAt": "2026-09-13",
       "archived": 0,
@@ -61644,12 +61800,12 @@
       "images": [
         {
           "id": "ordnance-v29-ga-0113-rgz89-attribution",
-          "localPath": "images/grenade-rgz89-polish-af-attribution.webp",
-          "caption": "RGZ-89, предметная фотография. Источник: Polish Armed Forces / Wikimedia Commons; лицензия с указанием авторства.",
-          "width": 482,
-          "height": 820,
-          "position": 0,
-          "thumbnailPath": "thumbs/grenade-rgz89-polish-af-attribution.webp"
+          "localPath": "images/school3-07a2b6cc51fb.jpg",
+          "thumbnailPath": "thumbs/school3-07a2b6cc51fb.jpg",
+          "caption": "По подписи PDF: РУЧНАЯ ГРАНАТА  RGZ-89 (Польша). «RGZ-89 для школы.pdf», PDF-стр. 1. Исходная окраска сохранена, разрешение не увеличено. Автор и отдельная лицензия иллюстрации не установлены.",
+          "width": 500,
+          "height": 1004,
+          "position": 0
         }
       ],
       "sources": [
@@ -61680,6 +61836,12 @@
         {
           "id": "ordnance-v29-ga-0113-pdf198-3-5",
           "title": "Предоставленный PDF «Иностранные гранаты в зоне сво.pdf», PDF-стр. 5; SHA-256 3435364e226980282d1441016d190c2fefe7e30c3e9b92c5d959cbad4c0e6738. Самостоятельная достоверность каждого индекса и права на иллюстрации не подтверждены.",
+          "url": null,
+          "accessedAt": "2026-10-28"
+        },
+        {
+          "id": "ordnance-v29-ga-0113-school3-5-p1-f0",
+          "title": "Предоставленный PDF «RGZ-89 для школы.pdf», PDF-стр. 1; SHA-256 f3016897f4c356b24bdc51aef3f1fd482fe461948900458d00c4177c9d683484. Использована иллюстрация наружного вида по подписи источника.",
           "url": null,
           "accessedAt": "2026-10-28"
         }
@@ -101970,7 +102132,7 @@
         "ручная граната",
         "PDF 2026-10-28"
       ],
-      "thumbnailPath": "thumbs/pdf198-ab17da441cd9.webp",
+      "thumbnailPath": "thumbs/school3-d81638a8bb73.jpg",
       "contentStatus": "source_only",
       "reviewedAt": null,
       "archived": 0,
@@ -101982,19 +102144,25 @@
       ],
       "images": [
         {
-          "localPath": "images/pdf198-ab17da441cd9.webp",
-          "thumbnailPath": "thumbs/pdf198-ab17da441cd9.webp",
-          "width": 210,
-          "height": 431,
-          "position": 0,
           "id": "pdf198-3-ab17da441cd9-exterior",
-          "caption": "RG-4: внешний вид по предоставленному PDF «Иностранные гранаты в зоне сво.pdf», PDF-стр. 8. Кадрирован только наружный вид. Исходная окраска сохранена, разрешение не увеличено. Автор и лицензия отдельной иллюстрации в источнике не установлены."
+          "localPath": "images/school3-d81638a8bb73.jpg",
+          "thumbnailPath": "thumbs/school3-d81638a8bb73.jpg",
+          "caption": "По подписи PDF: РУЧНАЯ ГРАНАТА  RG-4 (Чехия). «RG-4 для школы.pdf», PDF-стр. 1. Исходная окраска сохранена, разрешение не увеличено. Автор и отдельная лицензия иллюстрации не установлены.",
+          "width": 461,
+          "height": 607,
+          "position": 0
         }
       ],
       "sources": [
         {
           "id": "pdf198-3-ab17da441cd9-pdf198-3-8",
           "title": "Предоставленный PDF «Иностранные гранаты в зоне сво.pdf», PDF-стр. 8; SHA-256 3435364e226980282d1441016d190c2fefe7e30c3e9b92c5d959cbad4c0e6738. Самостоятельная достоверность каждого индекса и права на иллюстрации не подтверждены.",
+          "url": null,
+          "accessedAt": "2026-10-28"
+        },
+        {
+          "id": "pdf198-3-ab17da441cd9-school3-7-p1-f0",
+          "title": "Предоставленный PDF «RG-4 для школы.pdf», PDF-стр. 1; SHA-256 202b7365843f36e8efab10771232090f5480e7dc3823502ee70044aed9efd76b. Использована иллюстрация наружного вида по подписи источника.",
           "url": null,
           "accessedAt": "2026-10-28"
         }
@@ -102008,13 +102176,13 @@
       "categoryId": "grenades",
       "title": "DM61",
       "summary": "DM61 — ручная граната. Обозначение приведено по предоставленному PDF; запись сохраняет источник и точную страницу.",
-      "body": "## Описание\n\nDM61.\n\nКласс в предоставленном материале: ручная граната.\n\n## Происхождение по источнику\n\nГермания. Это атрибуция предоставленного материала; она не является самостоятельной проверкой производителя или места выпуска конкретного экземпляра.\n\n## Иллюстрация\n\nОтдельный подтверждённый наружный вид этого исполнения в карточку не добавлен.\n\n## Достоверность\n\nЗапись подготовлена по предоставленному PDF. Независимое подтверждение обозначения и модификации не выполнено. Данные о боевом применении и инструкции не перенесены. Источник является черновиком; его противоречивые числовые данные не используются.\n",
+      "body": "## Описание\n\nDM61.\n\nКласс в предоставленном материале: ручная граната.\n\n## Происхождение по источнику\n\nГермания. Это атрибуция предоставленного материала; она не является самостоятельной проверкой производителя или места выпуска конкретного экземпляра.\n\n## Иллюстрация\n\nДобавлена иллюстрация наружного вида по подписи предоставленной памятки; источник и страница указаны в подписи.\n\n## Достоверность\n\nЗапись подготовлена по предоставленному PDF. Независимое подтверждение обозначения и модификации не выполнено. Данные о боевом применении и инструкции не перенесены. Источник является черновиком; его противоречивые числовые данные не используются.\n",
       "tags": [
         "DM61",
         "ручная граната",
         "PDF 2026-10-28"
       ],
-      "thumbnailPath": null,
+      "thumbnailPath": "thumbs/school3-ab07341a7059.jpg",
       "contentStatus": "source_only",
       "reviewedAt": null,
       "archived": 0,
@@ -102024,11 +102192,27 @@
       "countries": [
         "de"
       ],
-      "images": [],
+      "images": [
+        {
+          "id": "pdf198-3-cf1a8ba4a02e-school3-ab07341a7059",
+          "localPath": "images/school3-ab07341a7059.jpg",
+          "thumbnailPath": "thumbs/school3-ab07341a7059.jpg",
+          "caption": "По подписи PDF: РУЧНАЯ ГРАНАТА  DM61 (Германия). «DM61 для школы.pdf», PDF-стр. 1. Исходная окраска сохранена, разрешение не увеличено. Автор и отдельная лицензия иллюстрации не установлены.",
+          "width": 285,
+          "height": 491,
+          "position": 0
+        }
+      ],
       "sources": [
         {
           "id": "pdf198-3-cf1a8ba4a02e-pdf198-3-10",
           "title": "Предоставленный PDF «Иностранные гранаты в зоне сво.pdf», PDF-стр. 10; SHA-256 3435364e226980282d1441016d190c2fefe7e30c3e9b92c5d959cbad4c0e6738. Самостоятельная достоверность каждого индекса и права на иллюстрации не подтверждены.",
+          "url": null,
+          "accessedAt": "2026-10-28"
+        },
+        {
+          "id": "pdf198-3-cf1a8ba4a02e-school3-13-p1-f0",
+          "title": "Предоставленный PDF «DM61 для школы.pdf», PDF-стр. 1; SHA-256 4806828b25047ff5ed2edc7ba4d7617ae1723599aec3079eb8c78460807fa5a7. Использована иллюстрация наружного вида по подписи источника.",
           "url": null,
           "accessedAt": "2026-10-28"
         }
@@ -102180,7 +102364,7 @@
         "ручная граната",
         "PDF 2026-10-28"
       ],
-      "thumbnailPath": "thumbs/pdf198-f8e2441edc1d.webp",
+      "thumbnailPath": "thumbs/school3-7748fe5ab404.jpg",
       "contentStatus": "source_only",
       "reviewedAt": null,
       "archived": 0,
@@ -102192,19 +102376,25 @@
       ],
       "images": [
         {
-          "localPath": "images/pdf198-f8e2441edc1d.webp",
-          "thumbnailPath": "thumbs/pdf198-f8e2441edc1d.webp",
-          "width": 233,
-          "height": 391,
-          "position": 0,
           "id": "pdf198-3-f8e2441edc1d-exterior",
-          "caption": "GHO-1: внешний вид по предоставленному PDF «Иностранные гранаты в зоне сво.pdf», PDF-стр. 14. Кадрирован только наружный вид. Исходная окраска сохранена, разрешение не увеличено. Автор и лицензия отдельной иллюстрации в источнике не установлены."
+          "localPath": "images/school3-7748fe5ab404.jpg",
+          "thumbnailPath": "thumbs/school3-7748fe5ab404.jpg",
+          "caption": "По подписи PDF: РУЧНАЯ ГРАНАТА  GHO-1 RDX (Болгария). «GHO-1 RDX для школы.pdf», PDF-стр. 1. Исходная окраска сохранена, разрешение не увеличено. Автор и отдельная лицензия иллюстрации не установлены.",
+          "width": 314,
+          "height": 495,
+          "position": 0
         }
       ],
       "sources": [
         {
           "id": "pdf198-3-f8e2441edc1d-pdf198-3-14",
           "title": "Предоставленный PDF «Иностранные гранаты в зоне сво.pdf», PDF-стр. 14; SHA-256 3435364e226980282d1441016d190c2fefe7e30c3e9b92c5d959cbad4c0e6738. Самостоятельная достоверность каждого индекса и права на иллюстрации не подтверждены.",
+          "url": null,
+          "accessedAt": "2026-10-28"
+        },
+        {
+          "id": "pdf198-3-f8e2441edc1d-school3-11-p1-f0",
+          "title": "Предоставленный PDF «GHO-1 RDX для школы.pdf», PDF-стр. 1; SHA-256 79f30691a56a3c366e9ebd2e83e02bcdfa283a3f72fe4b22d061e6d42dce8769. Использована иллюстрация наружного вида по подписи источника.",
           "url": null,
           "accessedAt": "2026-10-28"
         }
@@ -102268,7 +102458,7 @@
         "ручная граната",
         "PDF 2026-10-28"
       ],
-      "thumbnailPath": "thumbs/pdf198-dc34947e98c4.webp",
+      "thumbnailPath": "thumbs/school3-12af873f5960.jpg",
       "contentStatus": "source_only",
       "reviewedAt": null,
       "archived": 0,
@@ -102280,19 +102470,25 @@
       ],
       "images": [
         {
-          "localPath": "images/pdf198-dc34947e98c4.webp",
-          "thumbnailPath": "thumbs/pdf198-dc34947e98c4.webp",
-          "width": 217,
-          "height": 324,
-          "position": 0,
           "id": "pdf198-3-dc34947e98c4-exterior",
-          "caption": "РГО-78: внешний вид по предоставленному PDF «Иностранные гранаты в зоне сво.pdf», PDF-стр. 17. Исходная окраска сохранена, разрешение не увеличено. Автор и лицензия отдельной иллюстрации в источнике не установлены."
+          "localPath": "images/school3-12af873f5960.jpg",
+          "thumbnailPath": "thumbs/school3-12af873f5960.jpg",
+          "caption": "По подписи PDF: РУЧНАЯ ГРАНАТА  RGO-78 (Болгария). «RGO-78 для школы.pdf», PDF-стр. 1. Исходная окраска сохранена, разрешение не увеличено. Автор и отдельная лицензия иллюстрации не установлены.",
+          "width": 787,
+          "height": 1161,
+          "position": 0
         }
       ],
       "sources": [
         {
           "id": "pdf198-3-dc34947e98c4-pdf198-3-17",
           "title": "Предоставленный PDF «Иностранные гранаты в зоне сво.pdf», PDF-стр. 17; SHA-256 3435364e226980282d1441016d190c2fefe7e30c3e9b92c5d959cbad4c0e6738. Самостоятельная достоверность каждого индекса и права на иллюстрации не подтверждены.",
+          "url": null,
+          "accessedAt": "2026-10-28"
+        },
+        {
+          "id": "pdf198-3-dc34947e98c4-school3-8-p1-f0",
+          "title": "Предоставленный PDF «RGO-78 для школы.pdf», PDF-стр. 1; SHA-256 aaa933f5b6c7bf080792da04d1ace39ac4396ad79ca6da5f2de7b77bb65f2ba8. Использована иллюстрация наружного вида по подписи источника.",
           "url": null,
           "accessedAt": "2026-10-28"
         }
@@ -141118,6 +141314,52 @@
         {
           "id": "pdf198-school-mib-engineering-pdf198-4-140",
           "title": "Предоставленный PDF «Информационно-справочный материал 2025.pdf», PDF-стр. 140; SHA-256 4952b939ed10dccddc5e3ee2070eadd49e060a2a2403b9e286e9f71e1f89cd80. Самостоятельная достоверность каждого индекса и права на иллюстрации не подтверждены.",
+          "url": null,
+          "accessedAt": "2026-10-28"
+        }
+      ],
+      "searchProjection": "reader"
+    },
+    {
+      "rowid": 13200,
+      "id": "pdf198-school3-ts-6-1",
+      "section": "AMMUNITION",
+      "categoryId": "mines-antitank",
+      "title": "TS-6,1 — противотанковая мина",
+      "summary": "TS-6,1 — обозначение противотанковой мины в предоставленной памятке. На иллюстрации показан круглый корпус светлого защитного цвета с рёбрами по боковой поверхности и центральной верхней площадкой.",
+      "body": "## Обозначение\n\nTS-6,1 — противотанковая мина по подписи предоставленного PDF. Страна в заголовке источника — Италия. Это отдельная справочная запись; TS-50 и VS-1.6 не являются её альтернативными названиями.\n\n## Внешний вид\n\nНа иллюстрации виден круглый корпус светлого защитного цвета с выраженными боковыми рёбрами, центральной верхней площадкой и тёмными нижними выступами. Окраска относится к показанному экземпляру.\n\n## Достоверность\n\nЗапись подготовлена по предоставленному PDF без независимого подтверждения технических характеристик. Инструкции и параметры применения не перенесены.\n",
+      "tags": [
+        "TS-6,1",
+        "TS-6.1",
+        "TS6.1",
+        "ТС-6,1",
+        "наружный вид"
+      ],
+      "thumbnailPath": "thumbs/school3-3bd003191f35.jpg",
+      "contentStatus": "source_only",
+      "reviewedAt": null,
+      "archived": 0,
+      "modelStatus": "source-listed",
+      "sourceGrade": "B",
+      "verifiedAt": null,
+      "countries": [
+        "it"
+      ],
+      "images": [
+        {
+          "id": "pdf198-school3-ts-6-1-school3-3bd003191f35",
+          "localPath": "images/school3-3bd003191f35.jpg",
+          "thumbnailPath": "thumbs/school3-3bd003191f35.jpg",
+          "caption": "По подписи PDF: ПРОТИВОТАНКОВАЯ МИНА  TS-6,1 (Италия). «TS-6_1 для школы.pdf», PDF-стр. 1. Исходная окраска сохранена, разрешение не увеличено. Автор и отдельная лицензия иллюстрации не установлены.",
+          "width": 670,
+          "height": 674,
+          "position": 0
+        }
+      ],
+      "sources": [
+        {
+          "id": "pdf198-school3-ts-6-1-school3-3-p1-f0",
+          "title": "Предоставленный PDF «TS-6_1 для школы.pdf», PDF-стр. 1; SHA-256 3bd0a6aa2b3c06baca3320a571314e6be298c208f076294df508e3fca9d9cbf2. Использована иллюстрация наружного вида по подписи источника.",
           "url": null,
           "accessedAt": "2026-10-28"
         }
