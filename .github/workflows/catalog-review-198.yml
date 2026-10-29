@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
 
 concurrency:
   group: publish-app
@@ -18,7 +18,6 @@ jobs:
     runs-on: ubuntu-24.04
     timeout-minutes: 35
     env:
-      GH_TOKEN: ${{ github.token }}
       ANDROID_AVD_HOME: ${{ github.workspace }}/build/android-avds
     steps:
       - uses: actions/checkout@v4
@@ -67,6 +66,7 @@ jobs:
           set -euo pipefail
           "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" 'platforms;android-36' 'build-tools;36.0.0' 'emulator' 'system-images;android-30;google_apis;x86_64'
           printf 'sdk.dir=%s\n' "$ANDROID_HOME" > local.properties
+          python3 tools/prepare_optional_models139.py
           bash ./gradlew :app:assembleDebug :app:assembleDebugAndroidTest --no-daemon
           echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules
           sudo udevadm control --reload-rules
@@ -93,7 +93,32 @@ jobs:
                      mediaDecodedOnAndroid=True,repeatImportRejected=True)
           Path('build/catalog198/android-verification.json').write_text(json.dumps(proof,indent=2)+'\n')
           PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: catalog198-release-and-android-proof
+          path: |
+            build/catalog198/
+            app/build/outputs/androidTest-results/connected/debug/
+          retention-days: 30
+
+  publish:
+    needs: catalog
+    if: ${{ needs.catalog.result == 'success' }}
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions:
+      contents: write
+      actions: read
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: catalog198-release-and-android-proof
+          path: .
       - name: Upload, verify and open catalog update channel
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: sanozhukov3737-oss/dlya-svoih-updates
         run: |
           set -euo pipefail
           curl --fail --silent --show-error --location --retry 3 --max-time 90 'https://github.com/sanozhukov3737-oss/dlya-svoih-updates/releases/latest/download/latest.json' --output build/catalog198/latest-at-publish.json
@@ -124,11 +149,3 @@ jobs:
           assert feed['app']==json.loads((out/'latest-before.json').read_text())['app']
           PY
           gh release edit catalog-198 --draft=false --latest
-      - uses: actions/upload-artifact@v4
-        if: always()
-        with:
-          name: catalog198-release-and-android-proof
-          path: |
-            build/catalog198/
-            app/build/outputs/androidTest-results/connected/debug/
-          retention-days: 30
