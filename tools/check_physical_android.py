@@ -14,10 +14,10 @@ import zipfile
 
 PACKAGE = 'ru.dlyasvoih.app'
 VERSIONS = {
-    'before': ('0.3.133', 137,
-        '8cff50f9d76dbeec261ca928603277bdf540d0d0b42913bde919a82ce8d5d49f'),
-    'after': ('0.3.134', 138,
-        '300b77deaee3348e05a0135bf0079414c07dc2e15a7dcfd9b1239a8cef99298f'),
+    'before': ('0.3.136', 140,
+        '0a22658eab2cc409eebf1c9d62cb1139b79cbb160e238ebc5102b8abc4566162'),
+    'after': ('0.3.137', 141,
+        'f0a67816b64c831259f54c1da10b010e50ef781ad9bb75010dab89be3715eebe'),
 }
 
 
@@ -94,7 +94,8 @@ def read_phase(adb, serial, requested=None):
             require(requested is None or requested == phase,
                 f'Установлена {version}; запрошен другой этап. Не удаляйте и не откатывайте приложение.')
             return phase, package
-    raise ValueError('Ожидалась установленная 0.3.133 или 0.3.134. '
+    expected = ' или '.join(version for version, _, _ in VERSIONS.values())
+    raise ValueError('Ожидалась установленная ' + expected + '. '
         'Приложение не установлено либо имеет другую версию; ничего не удаляйте.')
 
 
@@ -136,15 +137,16 @@ def wizard(adb, serial, out):
     print('\nДЛЯ СВОИХ — проверка телефона. Установлена ' + VERSIONS[phase][0])
     print('Приложение и его данные сохраняются. Откройте нужный экран на телефоне.')
     if phase == 'after':
-        print('0.3.134 уже установлена: начинаем проверку текущей версии. Откат не нужен.')
+        print(VERSIONS['after'][0] + ' уже установлена: начинаем проверку текущей версии. Откат не нужен.')
         print('Сохранение избранного при прошлой установке задним числом не подтверждается.')
     print('Снимки и журналы могут содержать личные данные. Архив автоматически никуда не отправляется.')
-    labels = {'1': 'favorites', '2': 'appearance', '3': 'gallery', '4': 'navigation'}
+    labels = {'1': 'favorites', '2': 'appearance', '3': 'gallery', '4': 'navigation', '7': 'comparison'}
     captured = []
     try:
         while True:
             print('\n1 — Избранное; 2 — Тема и текст; 3 — Галерея; 4 — Навигация')
             print('5 — 3D-модель; 6 — Текущий экран без интернета; 0 — Завершить и собрать ZIP')
+            print('7 — Сравнение карточек')
             choice = input('Номер: ').strip()
             if choice == '0':
                 break
@@ -188,7 +190,8 @@ def main():
     parser.add_argument('--serial', help='Автоматический выбор, если подключён один физический телефон')
     parser.add_argument('--phase', choices=VERSIONS, help='По умолчанию определяется по установленной версии')
     parser.add_argument('--label', help='favorites, appearance, gallery, m14-rotated и т. п.')
-    parser.add_argument('--out', type=Path, default=Path(__file__).resolve().parents[1] / 'build/physical-android-0.3.134')
+    parser.add_argument('--out', type=Path, default=Path(__file__).resolve().parents[1]
+        / ('build/physical-android-' + VERSIONS['after'][0]))
     parser.add_argument('--require-offline', action='store_true')
     parser.add_argument('--wizard', action='store_true', help='Пошаговое меню и частный ZIP результатов')
     args = parser.parse_args()
