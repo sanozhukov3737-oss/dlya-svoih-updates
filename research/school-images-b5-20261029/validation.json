@@ -1,0 +1,20 @@
+{
+  "integrity": "ok",
+  "foreignKeys": "ok",
+  "fts": "ok",
+  "actualFtsQueries": 120,
+  "previousCardIdsAndRowidsPreserved": 2765,
+  "newCards": 90,
+  "existingCardsUpdated": 30,
+  "replacedGalleryRows": 27,
+  "addedGalleryRows": 93,
+  "decodedAssetFiles": 240,
+  "cardCount": 2855,
+  "imageCount": 2317,
+  "androidImportTested": false,
+  "published": false,
+  "minesAndChargesSeparated": true,
+  "uavPerformanceTablesExcluded": true,
+  "uncertainVariantsExcluded": true,
+  "emptyGalleriesFilled": 2
+}

@@ -1,0 +1,86 @@
+[
+  {
+    "file": "Авиабоеприпасы..pdf",
+    "pages": 63,
+    "sha256": "f09c336d93f4ad984492c1d78fa4bb5e087eca797eae3a06ab14804008e6ec3d",
+    "acceptedFigures": 37
+  },
+  {
+    "file": "MI AC AH F2.pdf",
+    "pages": 6,
+    "sha256": "03d503b0a334c407678a1b693066bf40316fa049c5eee0b31f3d68c4f24394f4",
+    "acceptedFigures": 0
+  },
+  {
+    "file": "MI AP MB 51.pdf",
+    "pages": 5,
+    "sha256": "ad45aa33b5cd9c4cf5ef29be8b2f69ed9c31931e9e8b36395ddede4432be1e9a",
+    "acceptedFigures": 0
+  },
+  {
+    "file": "MI AP DV 59.pdf",
+    "pages": 4,
+    "sha256": "a15daf34bc2f641ad467c680bb927f2d16038140390a71505891ce1b6c95bcc9",
+    "acceptedFigures": 0
+  },
+  {
+    "file": "MI AC AH F1.pdf",
+    "pages": 7,
+    "sha256": "1727110bc044bac2cc0ede3ee61a0b6ff8d906c467799f87efbfa3e2d66b29a0",
+    "acceptedFigures": 0
+  },
+  {
+    "file": "HPD F2.pdf",
+    "pages": 4,
+    "sha256": "eebbbd59eaa81f3f8f4013e3bcc3217a115c66ff46fc0bf16a7959272a427f31",
+    "acceptedFigures": 0
+  },
+  {
+    "file": "MI AC PR F1.pdf",
+    "pages": 4,
+    "sha256": "b3a564ce8c78b40998b617c1585866e87ebfbd4514f676fb67f9068d63978795",
+    "acceptedFigures": 1
+  },
+  {
+    "file": "m-52B Швеция.pdf",
+    "pages": 5,
+    "sha256": "30ca5e58c61d97c3a83c748eb06b254505e423fa826dbfd8d362408f2c6f9e5d",
+    "acceptedFigures": 0
+  },
+  {
+    "file": "MI AC HPD F3.pdf",
+    "pages": 4,
+    "sha256": "ae7a20d6a584330bdb3df445cc88952a91b4d00bf8b1ec711860b686e9b2b2c2",
+    "acceptedFigures": 0
+  },
+  {
+    "file": "DM31 DM12 DM31.pdf",
+    "pages": 9,
+    "sha256": "43c0cb037867e15834b01bfca2003ef1fe3fa054bc0cd3f563327a3e06aa0944",
+    "acceptedFigures": 0
+  },
+  {
+    "file": "DM1274 DM1399.pdf",
+    "pages": 6,
+    "sha256": "8f55986fe15b90ad779382fec1049eaaed28919849b6507b45507311c483726c",
+    "acceptedFigures": 0
+  },
+  {
+    "file": "Справочник сапера Минлей.pdf",
+    "pages": 169,
+    "sha256": "2d69d3863b0ebb2c6b823d1efd3a07ea6580a35afe176bbb8c70c81225dc42dc",
+    "acceptedFigures": 27
+  },
+  {
+    "file": "Классификатор БПЛА ВСУ.pdf",
+    "pages": 14,
+    "sha256": "5fa56542dff7d2057f3249df002da7c5a9668291ca9d98bf6f80aff40f62151e",
+    "acceptedFigures": 17
+  },
+  {
+    "file": "книга ВВ_ СВ ин.армий.pdf",
+    "pages": 168,
+    "sha256": "1fe482e98b2c9fd5b463e0443965a1ffe4a85c447d68013e0ba909c3a778d03f",
+    "acceptedFigures": 38
+  }
+]
