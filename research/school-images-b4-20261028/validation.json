@@ -1,0 +1,17 @@
+{
+  "integrity": "ok",
+  "foreignKeys": "ok",
+  "fts": "ok",
+  "actualFtsQueries": 75,
+  "previousCardIdsAndRowidsPreserved": 2717,
+  "newCards": 48,
+  "existingCardsUpdated": 27,
+  "replacedGalleryRows": 10,
+  "addedGalleryRows": 71,
+  "decodedAssetFiles": 162,
+  "cardCount": 2765,
+  "imageCount": 2224,
+  "androidImportTested": false,
+  "published": false,
+  "fourthBatchIdentitiesRecovered": true
+}

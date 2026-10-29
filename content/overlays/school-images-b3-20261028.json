@@ -1,0 +1,2598 @@
+{
+  "formatVersion": 1,
+  "baseContentVersion": 198,
+  "targetContentVersion": 198,
+  "baseCatalogSha256": "340f552cca7dcd237808755850bf7a736643686c73cf60e6cd3b4d73d68ceb4e",
+  "sources": [
+    {
+      "filename": "М14.pdf",
+      "pages": 3,
+      "sha256": "224aac2abad363406fa43cb1405292b9e816d8de38e9841dc8f2cccdc79bdff8"
+    },
+    {
+      "filename": "ПФМ для школы.pdf",
+      "pages": 1,
+      "sha256": "6e2337e66f7f244e9668fc6d9dffe6528f04401e99c3442d2b91faa9820c410f"
+    },
+    {
+      "filename": "ПМН-4 для школы.pdf",
+      "pages": 1,
+      "sha256": "68bd7876463d50777895233c455555d5362bd24cb8f2c7b20531fa4c269a14cb"
+    },
+    {
+      "filename": "TS-6_1 для школы.pdf",
+      "pages": 1,
+      "sha256": "3bd0a6aa2b3c06baca3320a571314e6be298c208f076294df508e3fca9d9cbf2"
+    },
+    {
+      "filename": "VS-50 для школы.pdf",
+      "pages": 1,
+      "sha256": "6bd9580a1aeeb6dbd8565fae3e4537d7f83d98ade775a780d5218b82e46966f4"
+    },
+    {
+      "filename": "RGZ-89 для школы.pdf",
+      "pages": 1,
+      "sha256": "f3016897f4c356b24bdc51aef3f1fd482fe461948900458d00c4177c9d683484"
+    },
+    {
+      "filename": "SB-33 для школы.pdf",
+      "pages": 1,
+      "sha256": "8f0c08ddea7b9b8039dd9799337f0d4df84ec3e0918b1b064f553bee296fc491"
+    },
+    {
+      "filename": "RG-4 для школы.pdf",
+      "pages": 1,
+      "sha256": "202b7365843f36e8efab10771232090f5480e7dc3823502ee70044aed9efd76b"
+    },
+    {
+      "filename": "RGO-78 для школы.pdf",
+      "pages": 1,
+      "sha256": "aaa933f5b6c7bf080792da04d1ace39ac4396ad79ca6da5f2de7b77bb65f2ba8"
+    },
+    {
+      "filename": "M67 для школы.pdf",
+      "pages": 1,
+      "sha256": "c4e323cf03d060ff8799039843dc3bd014b8031daacbb12c3287af9bbef7d10b"
+    },
+    {
+      "filename": "HPD F2 для школы.pdf",
+      "pages": 1,
+      "sha256": "9bad5b02b615b601ab973609843b06848d91953959e57ac063f8744665954039"
+    },
+    {
+      "filename": "GHO-1 RDX для школы.pdf",
+      "pages": 1,
+      "sha256": "79f30691a56a3c366e9ebd2e83e02bcdfa283a3f72fe4b22d061e6d42dce8769"
+    },
+    {
+      "filename": "DM51 для школы.pdf",
+      "pages": 1,
+      "sha256": "a78985420422dbe87c63461d52ca9c068fb04fe553ab9a9f129325f7c6c15f28"
+    },
+    {
+      "filename": "DM61 для школы.pdf",
+      "pages": 1,
+      "sha256": "4806828b25047ff5ed2edc7ba4d7617ae1723599aec3079eb8c78460807fa5a7"
+    },
+    {
+      "filename": "DM31 для школы.pdf",
+      "pages": 1,
+      "sha256": "d7f8f259c0e6d2bcf57becf539c825b86f6ded1f42eb73d27dc06cff6574df2b"
+    },
+    {
+      "filename": "DM1274 для школы.pdf",
+      "pages": 1,
+      "sha256": "d3dc5cb98ed7da7a706eb8860c1250b7e3ecace14b97ce5e256594810e025dba"
+    },
+    {
+      "filename": "DM12 для школы.pdf",
+      "pages": 1,
+      "sha256": "f43b16940b7e4f590ff0186a5661df6523285aa1679689f77f5bb6898d91c169"
+    },
+    {
+      "filename": "Ф-1 для школы.pdf",
+      "pages": 1,
+      "sha256": "a02c7c711aeed7efbdc768f5c5754e301597185dd3e3970567caaaff371aa5a9"
+    },
+    {
+      "filename": "ТМ-83 для школы.pdf",
+      "pages": 1,
+      "sha256": "5b71e44f5539560e8329bfc01a1436047dfbc231646380a3e2707204ed5f96f0"
+    },
+    {
+      "filename": "ТМ-62П3 для школы.pdf",
+      "pages": 1,
+      "sha256": "f4512a8a5138c846ff6c49610e3c2cac973a13c21be5a1363b8c8f39f8819fba"
+    }
+  ],
+  "cards": [
+    {
+      "rowid": 13200,
+      "id": "pdf198-school3-ts-6-1",
+      "section": "AMMUNITION",
+      "categoryId": "mines-antitank",
+      "title": "TS-6,1 — противотанковая мина",
+      "summary": "TS-6,1 — обозначение противотанковой мины в предоставленной памятке. На иллюстрации показан круглый корпус светлого защитного цвета с рёбрами по боковой поверхности и центральной верхней площадкой.",
+      "body": "## Обозначение\n\nTS-6,1 — противотанковая мина по подписи предоставленного PDF. Страна в заголовке источника — Италия. Это отдельная справочная запись; TS-50 и VS-1.6 не являются её альтернативными названиями.\n\n## Внешний вид\n\nНа иллюстрации виден круглый корпус светлого защитного цвета с выраженными боковыми рёбрами, центральной верхней площадкой и тёмными нижними выступами. Окраска относится к показанному экземпляру.\n\n## Достоверность\n\nЗапись подготовлена по предоставленному PDF без независимого подтверждения технических характеристик. Инструкции и параметры применения не перенесены.\n",
+      "tags": [
+        "TS-6,1",
+        "TS-6.1",
+        "TS6.1",
+        "ТС-6,1",
+        "наружный вид"
+      ],
+      "thumbnailPath": "thumbs/school3-3bd003191f35.jpg",
+      "contentStatus": "source_only",
+      "reviewedAt": null,
+      "archived": 0,
+      "modelStatus": "source-listed",
+      "sourceGrade": "B",
+      "verifiedAt": null,
+      "countries": [
+        "it"
+      ],
+      "images": [
+        {
+          "id": "pdf198-school3-ts-6-1-school3-3bd003191f35",
+          "localPath": "images/school3-3bd003191f35.jpg",
+          "thumbnailPath": "thumbs/school3-3bd003191f35.jpg",
+          "caption": "По подписи PDF: ПРОТИВОТАНКОВАЯ МИНА  TS-6,1 (Италия). «TS-6_1 для школы.pdf», PDF-стр. 1. Исходная окраска сохранена, разрешение не увеличено. Автор и отдельная лицензия иллюстрации не установлены.",
+          "width": 670,
+          "height": 674,
+          "position": 0
+        }
+      ],
+      "sources": [
+        {
+          "id": "pdf198-school3-ts-6-1-school3-3-p1-f0",
+          "title": "Предоставленный PDF «TS-6_1 для школы.pdf», PDF-стр. 1; SHA-256 3bd0a6aa2b3c06baca3320a571314e6be298c208f076294df508e3fca9d9cbf2. Использована иллюстрация наружного вида по подписи источника.",
+          "url": null,
+          "accessedAt": "2026-10-28"
+        }
+      ],
+      "searchProjection": "reader"
+    }
+  ],
+  "changes": [
+    {
+      "cardId": "eng-m14-ap-mine",
+      "before": {
+        "images": [
+          {
+            "id": "photo-v177-3a4390039a4f32fa",
+            "localPath": "images/photo-v177-3a4390039a4f32fa.webp",
+            "caption": "M14 — наружный вид музейного образца. Фото: MoserB at German Wikipedia. Public domain. Преобразовано в WebP без увеличения.",
+            "width": 960,
+            "height": 720,
+            "position": 0,
+            "thumbnailPath": "thumbs/photo-v177-3a4390039a4f32fa.webp"
+          }
+        ],
+        "thumbnailPath": "thumbs/photo-v177-3a4390039a4f32fa.webp",
+        "sources": [
+          {
+            "id": "eng-m14-ap-mine-filling-v156",
+            "title": "US Army — TM 43-0001-36, Change 2, стр. 3-7–3-8, M14",
+            "url": "https://www.militarynewbie.com/wp-content/uploads/2013/11/TM-43-0001-36-Ammunition-Data-Sheets-for-Land-Mines.pdf",
+            "accessedAt": "2026-10-04"
+          },
+          {
+            "id": "eng-m14-ap-mine-v27-source-5",
+            "title": "Landmine Monitor — Türkiye mine ban policy",
+            "url": "https://the-monitor.org/country-profile/turkey/mine-ban-policy",
+            "accessedAt": "2026-09-12"
+          },
+          {
+            "id": "pdf-v4-006-01",
+            "title": "Предоставленный PDF «Иностранные мины на Ближнем и Среднем Востоке и в Северной Африке» (2016) — PDF-стр. 9–10, 40, 51–54",
+            "url": null,
+            "accessedAt": "2026-09-09"
+          },
+          {
+            "id": "pdf-v4-006-gichd",
+            "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (границы распознавания)",
+            "url": "https://www.gichd.org/publications-resources/publications/explosive-ordnance-guide-for-ukraine-third-edition/",
+            "accessedAt": "2026-09-09"
+          },
+          {
+            "id": "reference-v5-foreign1-eng-m14-ap-mine",
+            "title": "Предоставленный PDF «Иностранные мины на Ближнем и Среднем Востоке и в Северной Африке» (2016) — PDF-стр. 51, 52",
+            "url": null,
+            "accessedAt": "2026-09-09"
+          },
+          {
+            "id": "reference-v5-safety-eng-m14-ap-mine",
+            "title": "IFRC — Mines & Explosive Remnants of War: при обнаружении",
+            "url": "https://ifrcstaysafe.org/dangerous-situations/mines",
+            "accessedAt": "2026-09-09"
+          },
+          {
+            "id": "reference-v6-3f8eea79a8a1e400918d",
+            "title": "Предоставленный PDF «Иностранные мины на Ближнем и Среднем Востоке и в Северной Африке» (2016) — PDF-стр. 51, 52",
+            "url": null,
+            "accessedAt": "2026-09-09"
+          },
+          {
+            "id": "source-photo-v177-3a4390039a4f32fa",
+            "title": "Источник фотографии №177: M14 (противопехотная мина) (Public domain)",
+            "url": "https://commons.wikimedia.org/wiki/File:M14_(Mine).jpg",
+            "accessedAt": "2026-10-10"
+          }
+        ],
+        "body": "## Страна и происхождение\n\nСША, с. 51–52\n\n## Описание\n\nM14 — американская противопехотная мина с небольшим круглым пластиковым корпусом. Она принадлежит к группе низких компактных мин и по внешним пропорциям резко отличается от американских металлических M16. В описании M14 важнее всего небольшая высота и простая дискообразная форма.\n\nРазмеры корпуса находятся примерно в пределах шести сантиметров по ширине и четырёх по высоте. В разных справочных записях численные значения немного отличаются; отдельные записи массы расходятся сильнее, причём одна исходная пара унций и граммов содержит ошибку пересчёта. Ниже эти расхождения обозначены прямо.\n\nЮжнокорейская KM14 связана с этой конструкцией, однако её учебный корпус имеет собственные размеры и массу. Учебный аналог может воспроизводить форму боевой модели, не повторяя её внутреннее содержимое и полную массу. Поэтому данные KM14 не заменяют самостоятельные характеристики M14.\n\n## Характеристики\n\n| Параметр | Значение |\n| --- | --- |\n| Класс | Противопехотная мина |\n| Происхождение | Разработка и производство США |\n| Материал корпуса | Пластмасса |\n| Ширина — термин источника | 58 мм |\n| Высота | 40 мм |\n| Масса в первоначальной статье — противоречие источника | Несовместимые значения «3,5 унции» и «приблизительно 85 г»; не использованы как подтверждённая полная масса |\n| Полная масса | 4,5 oz (≈ 127,6 г) |\n| Высота | 1 9/16 in (≈ 39,69 мм) |\n| Максимальный диаметр | 2 3/16 in (≈ 55,56 мм) |\n| Тип ВВ основного заряда | Tetryl (тетрил) |\n| Масса ВВ основного заряда | 28,35 г |\n\n## При обнаружении\n\nВнешний вид не подтверждает безопасность предмета. Остановитесь, не приближайтесь, не трогайте и не перемещайте его. Предупредите окружающих и сообщите местным экстренным службам. При подозрении на мину оставайтесь на месте до помощи специалистов.\n"
+      },
+      "after": {
+        "images": [
+          {
+            "id": "photo-v177-3a4390039a4f32fa",
+            "localPath": "images/photo-v177-3a4390039a4f32fa.webp",
+            "caption": "M14 — наружный вид музейного образца. Фото: MoserB at German Wikipedia. Public domain. Преобразовано в WebP без увеличения.",
+            "width": 960,
+            "height": 720,
+            "position": 0,
+            "thumbnailPath": "thumbs/photo-v177-3a4390039a4f32fa.webp"
+          },
+          {
+            "id": "eng-m14-ap-mine-school3-0389e3e5538c",
+            "localPath": "images/school3-0389e3e5538c.jpg",
+            "thumbnailPath": "thumbs/school3-0389e3e5538c.jpg",
+            "caption": "M14 — наружный вид показанного образца. «М14.pdf», PDF-стр. 1. Исходная окраска сохранена, разрешение не увеличено. Авторская отметка источника: ©Веремеев Ю.; сохранена на снимке. Отдельная лицензия не установлена.",
+            "width": 332,
+            "height": 336,
+            "position": 1
+          },
+          {
+            "id": "eng-m14-ap-mine-school3-4fe650ae5e64",
+            "localPath": "images/school3-4fe650ae5e64.jpg",
+            "thumbnailPath": "thumbs/school3-4fe650ae5e64.jpg",
+            "caption": "M14 — наружный вид показанного образца. «М14.pdf», PDF-стр. 3. Наружный вид днища и маркировки; подписи исходного изображения сохранены. Исходная окраска сохранена, разрешение не увеличено. Автор и отдельная лицензия иллюстрации не установлены.",
+            "width": 259,
+            "height": 243,
+            "position": 2
+          }
+        ],
+        "thumbnailPath": "thumbs/photo-v177-3a4390039a4f32fa.webp",
+        "sources": [
+          {
+            "id": "eng-m14-ap-mine-filling-v156",
+            "title": "US Army — TM 43-0001-36, Change 2, стр. 3-7–3-8, M14",
+            "url": "https://www.militarynewbie.com/wp-content/uploads/2013/11/TM-43-0001-36-Ammunition-Data-Sheets-for-Land-Mines.pdf",
+            "accessedAt": "2026-10-04"
+          },
+          {
+            "id": "eng-m14-ap-mine-v27-source-5",
+            "title": "Landmine Monitor — Türkiye mine ban policy",
+            "url": "https://the-monitor.org/country-profile/turkey/mine-ban-policy",
+            "accessedAt": "2026-09-12"
+          },
+          {
+            "id": "pdf-v4-006-01",
+            "title": "Предоставленный PDF «Иностранные мины на Ближнем и Среднем Востоке и в Северной Африке» (2016) — PDF-стр. 9–10, 40, 51–54",
+            "url": null,
+            "accessedAt": "2026-09-09"
+          },
+          {
+            "id": "pdf-v4-006-gichd",
+            "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (границы распознавания)",
+            "url": "https://www.gichd.org/publications-resources/publications/explosive-ordnance-guide-for-ukraine-third-edition/",
+            "accessedAt": "2026-09-09"
+          },
+          {
+            "id": "reference-v5-foreign1-eng-m14-ap-mine",
+            "title": "Предоставленный PDF «Иностранные мины на Ближнем и Среднем Востоке и в Северной Африке» (2016) — PDF-стр. 51, 52",
+            "url": null,
+            "accessedAt": "2026-09-09"
+          },
+          {
+            "id": "reference-v5-safety-eng-m14-ap-mine",
+            "title": "IFRC — Mines & Explosive Remnants of War: при обнаружении",
+            "url": "https://ifrcstaysafe.org/dangerous-situations/mines",
+            "accessedAt": "2026-09-09"
+          },
+          {
+            "id": "reference-v6-3f8eea79a8a1e400918d",
+            "title": "Предоставленный PDF «Иностранные мины на Ближнем и Среднем Востоке и в Северной Африке» (2016) — PDF-стр. 51, 52",
+            "url": null,
+            "accessedAt": "2026-09-09"
+          },
+          {
+            "id": "source-photo-v177-3a4390039a4f32fa",
+            "title": "Источник фотографии №177: M14 (противопехотная мина) (Public domain)",
+            "url": "https://commons.wikimedia.org/wiki/File:M14_(Mine).jpg",
+            "accessedAt": "2026-10-10"
+          },
+          {
+            "id": "eng-m14-ap-mine-school3-0-p1-f0",
+            "title": "Предоставленный PDF «М14.pdf», PDF-стр. 1; SHA-256 224aac2abad363406fa43cb1405292b9e816d8de38e9841dc8f2cccdc79bdff8. Использована иллюстрация наружного вида по подписи источника.",
+            "url": null,
+            "accessedAt": "2026-10-28"
+          },
+          {
+            "id": "eng-m14-ap-mine-school3-0-p3-f0",
+            "title": "Предоставленный PDF «М14.pdf», PDF-стр. 3; SHA-256 224aac2abad363406fa43cb1405292b9e816d8de38e9841dc8f2cccdc79bdff8. Использована иллюстрация наружного вида по подписи источника.",
+            "url": null,
+            "accessedAt": "2026-10-28"
+          }
+        ],
+        "body": "## Страна и происхождение\n\nСША, с. 51–52\n\n## Описание\n\nM14 — американская противопехотная мина с небольшим круглым пластиковым корпусом. Она принадлежит к группе низких компактных мин и по внешним пропорциям резко отличается от американских металлических M16. В описании M14 важнее всего небольшая высота и простая дискообразная форма.\n\nРазмеры корпуса находятся примерно в пределах шести сантиметров по ширине и четырёх по высоте. В разных справочных записях численные значения немного отличаются; отдельные записи массы расходятся сильнее, причём одна исходная пара унций и граммов содержит ошибку пересчёта. Ниже эти расхождения обозначены прямо.\n\nЮжнокорейская KM14 связана с этой конструкцией, однако её учебный корпус имеет собственные размеры и массу. Учебный аналог может воспроизводить форму боевой модели, не повторяя её внутреннее содержимое и полную массу. Поэтому данные KM14 не заменяют самостоятельные характеристики M14.\n\n## Характеристики\n\n| Параметр | Значение |\n| --- | --- |\n| Класс | Противопехотная мина |\n| Происхождение | Разработка и производство США |\n| Материал корпуса | Пластмасса |\n| Ширина — термин источника | 58 мм |\n| Высота | 40 мм |\n| Масса в первоначальной статье — противоречие источника | Несовместимые значения «3,5 унции» и «приблизительно 85 г»; не использованы как подтверждённая полная масса |\n| Полная масса | 4,5 oz (≈ 127,6 г) |\n| Высота | 1 9/16 in (≈ 39,69 мм) |\n| Максимальный диаметр | 2 3/16 in (≈ 55,56 мм) |\n| Тип ВВ основного заряда | Tetryl (тетрил) |\n| Масса ВВ основного заряда | 28,35 г |\n\n## При обнаружении\n\nВнешний вид не подтверждает безопасность предмета. Остановитесь, не приближайтесь, не трогайте и не перемещайте его. Предупредите окружающих и сообщите местным экстренным службам. При подозрении на мину оставайтесь на месте до помощи специалистов.\n"
+      }
+    },
+    {
+      "cardId": "eng-pfm-1",
+      "before": {
+        "images": [
+          {
+            "id": "photo-v176-884f739e7edd6e7c",
+            "localPath": "images/photo-v176-884f739e7edd6e7c.webp",
+            "caption": "ПФМ-1 — выставочный образец с читаемой маркировкой, «Армия-2022». Фото: Mike1979 Russia, 20.08.2022. CC BY-SA 4.0. Уменьшено до 1600 пикселей и преобразовано в WebP.",
+            "width": 1600,
+            "height": 1067,
+            "position": 0,
+            "thumbnailPath": "thumbs/photo-v176-884f739e7edd6e7c.webp"
+          }
+        ],
+        "thumbnailPath": "thumbs/photo-v176-884f739e7edd6e7c.webp",
+        "sources": [
+          {
+            "id": "eng-13-gichd",
+            "title": "GICHD — Explosive Ordnance Guide for Ukraine, First Edition (2022)",
+            "url": "https://www.gichd.org/fileadmin/uploads/gichd/Publications/GICHD_Explosive_Ordnance_Guide_for_Ukraine_2022_v18.pdf",
+            "accessedAt": "2026-09-09"
+          },
+          {
+            "id": "eng-13-gichd-2025",
+            "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition",
+            "url": "https://www.gichd.org/publications-resources/publications/explosive-ordnance-guide-for-ukraine-third-edition/",
+            "accessedAt": "2026-09-09"
+          },
+          {
+            "id": "eng-13-unmas-ua",
+            "title": "UNMAS — Ukraine",
+            "url": "https://unmas.org/en/where-we-work/ukraine",
+            "accessedAt": "2026-09-09"
+          },
+          {
+            "id": "eng-pfm-1-filling-v160",
+            "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 34: наполнение",
+            "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+            "accessedAt": "2026-10-04"
+          },
+          {
+            "id": "eng-pfm-1-v13-source-0",
+            "title": "GICHD — Explosive Ordnance Guide for Ukraine (2022) — PDF-стр. 15",
+            "url": "https://www.gichd.org/fileadmin/uploads/gichd/Publications/GICHD_Explosive_Ordnance_Guide_for_Ukraine_2022_v18.pdf",
+            "accessedAt": "2026-09-10"
+          },
+          {
+            "id": "license-photo-v176-884f739e7edd6e7c",
+            "title": "Условия использования фотографии №176: CC BY-SA 4.0",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "accessedAt": "2026-10-10"
+          },
+          {
+            "id": "reference-v6-19eee2c9a71c3da9ed4a",
+            "title": "ESAG / CPADD — PFM 1, описательная карточка, сентябрь 2005",
+            "url": "https://bibliomines.org/wp-content/uploads/PFM_1.pdf",
+            "accessedAt": "2026-09-09"
+          },
+          {
+            "id": "source-photo-v176-884f739e7edd6e7c",
+            "title": "Источник фотографии №176: ПФМ-1 «Лепесток» (CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:PFM-1_mine_Army-2022_2022-08-20_2467.jpg",
+            "accessedAt": "2026-10-10"
+          }
+        ],
+        "body": "## Страна и происхождение\n\nСССР\n\n## Описание\n\nПФМ-1 — советская противопехотная мина с необычным асимметричным полиэтиленовым корпусом. Одна его сторона широкая и тонкая, другая заметно толще. Из-за этого силуэта модель известна под названиями «лепесток» и «бабочка»: прозвища описывают форму, которая сильно отличается от круглых мин ПМН.\n\nИзвестны оливковые, зелёные, белые и коричневые образцы. Окраска не является единым стандартом внешнего вида. ПФМ-1С — отдельная модификация; сходный силуэт не означает совпадения всех характеристик.\n\nВ справочниках встречаются немного разные значения полной массы и размеров ПФМ-1. Ниже они сохранены раздельно: отличающиеся строки не следует складывать в характеристику одного условного экземпляра.\n\n## Характеристики\n\n| Параметр | Значение |\n| --- | --- |\n| Класс | Противопехотная мина |\n| Материал корпуса | Полиэтилен |\n| Полная масса | 70 г |\n| Длина | 120 мм |\n| Ширина | 66 мм |\n| Высота | 19 мм |\n| Варианты окраски | Оливково-зелёная, белая, коричневая |\n| Тип ВВ — ПФМ-1 | VS-6D |\n| Масса ВВ — ПФМ-1 | 37 г |\n| Полная масса — ПФМ-1 | 75 г |\n| Габариты — ПФМ-1 | 120 × 61 × 20 мм; оси в таблице не подписаны |\n\n## При обнаружении\n\nВнешний вид не подтверждает безопасность предмета. Остановитесь, не приближайтесь, не трогайте и не перемещайте его. Предупредите окружающих и сообщите местным экстренным службам. При подозрении на мину оставайтесь на месте до помощи специалистов.\n"
+      },
+      "after": {
+        "images": [
+          {
+            "id": "photo-v176-884f739e7edd6e7c",
+            "localPath": "images/photo-v176-884f739e7edd6e7c.webp",
+            "caption": "ПФМ-1 — выставочный образец с читаемой маркировкой, «Армия-2022». Фото: Mike1979 Russia, 20.08.2022. CC BY-SA 4.0. Уменьшено до 1600 пикселей и преобразовано в WebP.",
+            "width": 1600,
+            "height": 1067,
+            "position": 0,
+            "thumbnailPath": "thumbs/photo-v176-884f739e7edd6e7c.webp"
+          },
+          {
+            "id": "eng-pfm-1-school3-fb4d0cc52a11",
+            "localPath": "images/school3-fb4d0cc52a11.jpg",
+            "thumbnailPath": "thumbs/school3-fb4d0cc52a11.jpg",
+            "caption": "По подписи PDF: ПРОТИВОПЕХОТНАЯ ФУГАСНАЯ МИНА  ПФМ-1. «ПФМ для школы.pdf», PDF-стр. 1. Исходная окраска сохранена, разрешение не увеличено. Автор и отдельная лицензия иллюстрации не установлены.",
+            "width": 1536,
+            "height": 863,
+            "position": 1
+          }
+        ],
+        "thumbnailPath": "thumbs/photo-v176-884f739e7edd6e7c.webp",
+        "sources": [
+          {
+            "id": "eng-13-gichd",
+            "title": "GICHD — Explosive Ordnance Guide for Ukraine, First Edition (2022)",
+            "url": "https://www.gichd.org/fileadmin/uploads/gichd/Publications/GICHD_Explosive_Ordnance_Guide_for_Ukraine_2022_v18.pdf",
+            "accessedAt": "2026-09-09"
+          },
+          {
+            "id": "eng-13-gichd-2025",
+            "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition",
+            "url": "https://www.gichd.org/publications-resources/publications/explosive-ordnance-guide-for-ukraine-third-edition/",
+            "accessedAt": "2026-09-09"
+          },
+          {
+            "id": "eng-13-unmas-ua",
+            "title": "UNMAS — Ukraine",
+            "url": "https://unmas.org/en/where-we-work/ukraine",
+            "accessedAt": "2026-09-09"
+          },
+          {
+            "id": "eng-pfm-1-filling-v160",
+            "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 34: наполнение",
+            "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+            "accessedAt": "2026-10-04"
+          },
+          {
+            "id": "eng-pfm-1-v13-source-0",
+            "title": "GICHD — Explosive Ordnance Guide for Ukraine (2022) — PDF-стр. 15",
+            "url": "https://www.gichd.org/fileadmin/uploads/gichd/Publications/GICHD_Explosive_Ordnance_Guide_for_Ukraine_2022_v18.pdf",
+            "accessedAt": "2026-09-10"
+          },
+          {
+            "id": "license-photo-v176-884f739e7edd6e7c",
+            "title": "Условия использования фотографии №176: CC BY-SA 4.0",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "accessedAt": "2026-10-10"
+          },
+          {
+            "id": "reference-v6-19eee2c9a71c3da9ed4a",
+            "title": "ESAG / CPADD — PFM 1, описательная карточка, сентябрь 2005",
+            "url": "https://bibliomines.org/wp-content/uploads/PFM_1.pdf",
+            "accessedAt": "2026-09-09"
+          },
+          {
+            "id": "source-photo-v176-884f739e7edd6e7c",
+            "title": "Источник фотографии №176: ПФМ-1 «Лепесток» (CC BY-SA 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:PFM-1_mine_Army-2022_2022-08-20_2467.jpg",
+            "accessedAt": "2026-10-10"
+          },
+          {
+            "id": "eng-pfm-1-school3-1-p1-f0",
+            "title": "Предоставленный PDF «ПФМ для школы.pdf», PDF-стр. 1; SHA-256 6e2337e66f7f244e9668fc6d9dffe6528f04401e99c3442d2b91faa9820c410f. Использована иллюстрация наружного вида по подписи источника.",
+            "url": null,
+            "accessedAt": "2026-10-28"
+          }
+        ],
+        "body": "## Страна и происхождение\n\nСССР\n\n## Описание\n\nПФМ-1 — советская противопехотная мина с необычным асимметричным полиэтиленовым корпусом. Одна его сторона широкая и тонкая, другая заметно толще. Из-за этого силуэта модель известна под названиями «лепесток» и «бабочка»: прозвища описывают форму, которая сильно отличается от круглых мин ПМН.\n\nИзвестны оливковые, зелёные, белые и коричневые образцы. Окраска не является единым стандартом внешнего вида. ПФМ-1С — отдельная модификация; сходный силуэт не означает совпадения всех характеристик.\n\nВ справочниках встречаются немного разные значения полной массы и размеров ПФМ-1. Ниже они сохранены раздельно: отличающиеся строки не следует складывать в характеристику одного условного экземпляра.\n\n## Характеристики\n\n| Параметр | Значение |\n| --- | --- |\n| Класс | Противопехотная мина |\n| Материал корпуса | Полиэтилен |\n| Полная масса | 70 г |\n| Длина | 120 мм |\n| Ширина | 66 мм |\n| Высота | 19 мм |\n| Варианты окраски | Оливково-зелёная, белая, коричневая |\n| Тип ВВ — ПФМ-1 | VS-6D |\n| Масса ВВ — ПФМ-1 | 37 г |\n| Полная масса — ПФМ-1 | 75 г |\n| Габариты — ПФМ-1 | 120 × 61 × 20 мм; оси в таблице не подписаны |\n\n## При обнаружении\n\nВнешний вид не подтверждает безопасность предмета. Остановитесь, не приближайтесь, не трогайте и не перемещайте его. Предупредите окружающих и сообщите местным экстренным службам. При подозрении на мину оставайтесь на месте до помощи специалистов.\n"
+      }
+    },
+    {
+      "cardId": "ref-v8-pmn-4",
+      "before": {
+        "images": [
+          {
+            "id": "photo-v178-c55ac640ef12f2f4",
+            "localPath": "images/photo-v178-c55ac640ef12f2f4.webp",
+            "caption": "ПМН-4: внешний вид с читаемой маркировкой на корпусе. Фото: Государственная пограничная служба Украины. Wikimedia Commons, PMN-4 anti-personnel landmine in Kyiv Oblast (2022-12-14) 01.jpg. CC BY 4.0.",
+            "width": 1600,
+            "height": 1200,
+            "position": 0,
+            "thumbnailPath": "thumbs/photo-v178-c55ac640ef12f2f4.webp"
+          }
+        ],
+        "thumbnailPath": "thumbs/photo-v178-c55ac640ef12f2f4.webp",
+        "sources": [
+          {
+            "id": "license-photo-v178-c55ac640ef12f2f4",
+            "title": "Условия использования фотографии №178: CC BY 4.0",
+            "url": "https://creativecommons.org/licenses/by/4.0",
+            "accessedAt": "2026-10-10"
+          },
+          {
+            "id": "ref-v8-pmn-4-filling-v160",
+            "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 17: наполнение",
+            "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+            "accessedAt": "2026-10-04"
+          },
+          {
+            "id": "ref-v8-pmn-4-source-0",
+            "title": "ESAG / CPADD — PMN 4; декабрь 2005",
+            "url": "https://bibliomines.org/wp-content/uploads/PMN_4.pdf",
+            "accessedAt": "2026-09-09"
+          },
+          {
+            "id": "ref-v8-pmn-4-v13-source-0",
+            "title": "GICHD — Explosive Ordnance Guide for Ukraine (2022) — PDF-стр. 19",
+            "url": "https://www.gichd.org/fileadmin/uploads/gichd/Publications/GICHD_Explosive_Ordnance_Guide_for_Ukraine_2022_v18.pdf",
+            "accessedAt": "2026-09-10"
+          },
+          {
+            "id": "source-photo-v178-c55ac640ef12f2f4",
+            "title": "Источник фотографии №178: ПМН-4 (CC BY 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:PMN-4_anti-personnel_landmine_in_Kyiv_Oblast_(2022-12-14)_01.jpg",
+            "accessedAt": "2026-10-10"
+          },
+          {
+            "id": "ref-v8-pmn-4-pdf198-4-127",
+            "title": "Предоставленный PDF «Информационно-справочный материал 2025.pdf», PDF-стр. 127; SHA-256 4952b939ed10dccddc5e3ee2070eadd49e060a2a2403b9e286e9f71e1f89cd80. Самостоятельная достоверность каждого индекса и права на иллюстрации не подтверждены.",
+            "url": null,
+            "accessedAt": "2026-10-28"
+          }
+        ],
+        "body": "## Страна и происхождение\n\nРоссия — страна, указанная в карточке ESAG\n\n## Описание\n\nПМН-4 — российская противопехотная мина с небольшим цилиндрическим корпусом из пластика. Сверху расположена резиновая деталь, которую удерживает металлический ободок. Внешне это компактный представитель номенклатуры ПМН: справочные диаметр и высота меньше, чем у ПМН-2 и ПМН-3.\n\nВ описаниях показаны различающиеся варианты оформления, в том числе корпус с выступающей кромкой. Поэтому внешний ободок и цвет отдельного экземпляра следует рассматривать вместе с его обозначением. ПМН-4 имеет собственную массу и размеры; характеристики других мин ПМН к ней не относятся.\n\n## Характеристики\n\n| Параметр | Значение |\n| --- | --- |\n| Материал корпуса | Пластик; резиновая верхняя деталь и металлический ободок |\n| Диаметр | 95 мм |\n| Высота | 42 мм |\n| Полная масса | 300 г |\n| Тип ВВ — ПМН-4 | TNT; TG-40 упомянут как альтернативные сведения |\n| Масса ВВ — ПМН-4 | 52–60 г |\n\n## При обнаружении\n\nВнешний вид не подтверждает безопасность предмета. Остановитесь, не приближайтесь, не трогайте и не перемещайте его. Предупредите окружающих и сообщите местным экстренным службам. При подозрении на мину оставайтесь на месте до помощи специалистов.\n"
+      },
+      "after": {
+        "images": [
+          {
+            "id": "photo-v178-c55ac640ef12f2f4",
+            "localPath": "images/school3-b7fdb48710a0.jpg",
+            "thumbnailPath": "thumbs/school3-b7fdb48710a0.jpg",
+            "caption": "По подписи PDF: ПРОТИВОПЕХОТНАЯ ФУГАСНАЯ МИНА  ПМН-4. «ПМН-4 для школы.pdf», PDF-стр. 1. Исходная окраска сохранена, разрешение не увеличено. Автор и отдельная лицензия иллюстрации не установлены.",
+            "width": 1232,
+            "height": 977,
+            "position": 0
+          }
+        ],
+        "thumbnailPath": "thumbs/school3-b7fdb48710a0.jpg",
+        "sources": [
+          {
+            "id": "license-photo-v178-c55ac640ef12f2f4",
+            "title": "Условия использования фотографии №178: CC BY 4.0",
+            "url": "https://creativecommons.org/licenses/by/4.0",
+            "accessedAt": "2026-10-10"
+          },
+          {
+            "id": "ref-v8-pmn-4-filling-v160",
+            "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 17: наполнение",
+            "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+            "accessedAt": "2026-10-04"
+          },
+          {
+            "id": "ref-v8-pmn-4-source-0",
+            "title": "ESAG / CPADD — PMN 4; декабрь 2005",
+            "url": "https://bibliomines.org/wp-content/uploads/PMN_4.pdf",
+            "accessedAt": "2026-09-09"
+          },
+          {
+            "id": "ref-v8-pmn-4-v13-source-0",
+            "title": "GICHD — Explosive Ordnance Guide for Ukraine (2022) — PDF-стр. 19",
+            "url": "https://www.gichd.org/fileadmin/uploads/gichd/Publications/GICHD_Explosive_Ordnance_Guide_for_Ukraine_2022_v18.pdf",
+            "accessedAt": "2026-09-10"
+          },
+          {
+            "id": "source-photo-v178-c55ac640ef12f2f4",
+            "title": "Источник фотографии №178: ПМН-4 (CC BY 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:PMN-4_anti-personnel_landmine_in_Kyiv_Oblast_(2022-12-14)_01.jpg",
+            "accessedAt": "2026-10-10"
+          },
+          {
+            "id": "ref-v8-pmn-4-pdf198-4-127",
+            "title": "Предоставленный PDF «Информационно-справочный материал 2025.pdf», PDF-стр. 127; SHA-256 4952b939ed10dccddc5e3ee2070eadd49e060a2a2403b9e286e9f71e1f89cd80. Самостоятельная достоверность каждого индекса и права на иллюстрации не подтверждены.",
+            "url": null,
+            "accessedAt": "2026-10-28"
+          },
+          {
+            "id": "ref-v8-pmn-4-school3-2-p1-f0",
+            "title": "Предоставленный PDF «ПМН-4 для школы.pdf», PDF-стр. 1; SHA-256 68bd7876463d50777895233c455555d5362bd24cb8f2c7b20531fa4c269a14cb. Использована иллюстрация наружного вида по подписи источника.",
+            "url": null,
+            "accessedAt": "2026-10-28"
+          }
+        ],
+        "body": "## Страна и происхождение\n\nРоссия — страна, указанная в карточке ESAG\n\n## Описание\n\nПМН-4 — российская противопехотная мина с небольшим цилиндрическим корпусом из пластика. Сверху расположена резиновая деталь, которую удерживает металлический ободок. Внешне это компактный представитель номенклатуры ПМН: справочные диаметр и высота меньше, чем у ПМН-2 и ПМН-3.\n\nВ описаниях показаны различающиеся варианты оформления, в том числе корпус с выступающей кромкой. Поэтому внешний ободок и цвет отдельного экземпляра следует рассматривать вместе с его обозначением. ПМН-4 имеет собственную массу и размеры; характеристики других мин ПМН к ней не относятся.\n\n## Характеристики\n\n| Параметр | Значение |\n| --- | --- |\n| Материал корпуса | Пластик; резиновая верхняя деталь и металлический ободок |\n| Диаметр | 95 мм |\n| Высота | 42 мм |\n| Полная масса | 300 г |\n| Тип ВВ — ПМН-4 | TNT; TG-40 упомянут как альтернативные сведения |\n| Масса ВВ — ПМН-4 | 52–60 г |\n\n## При обнаружении\n\nВнешний вид не подтверждает безопасность предмета. Остановитесь, не приближайтесь, не трогайте и не перемещайте его. Предупредите окружающих и сообщите местным экстренным службам. При подозрении на мину оставайтесь на месте до помощи специалистов.\n"
+      }
+    },
+    {
+      "cardId": "eng-vs-50-family",
+      "before": {
+        "images": [
+          {
+            "id": "reference-v6-aa7aa166139c0eb2",
+            "localPath": "images/reference-v6-aa7aa166139c0eb2.webp",
+            "caption": "VS-50, внешний вид. Автор фотографии по подписи PDF: Найден Илиев. Окраска показанного экземпляра не подтверждает его безопасность или учебный статус. Источник: Иностранные мины 1, PDF-стр. 15.",
+            "width": 702,
+            "height": 937,
+            "position": 0,
+            "thumbnailPath": "thumbs/reference-v6-aa7aa166139c0eb2.webp"
+          }
+        ],
+        "thumbnailPath": "thumbs/reference-v6-aa7aa166139c0eb2.webp",
+        "sources": [
+          {
+            "id": "eng-vs-50-family-filling-v157",
+            "title": "HALO Trust — Land Mines Identification Guide, Itamar Levy, August 2005, стр. 12, VS-50",
+            "url": "https://www.bulletpicker.com/pdf/HALO-Land-Mines-Identification-Guide.pdf",
+            "accessedAt": "2026-10-04"
+          },
+          {
+            "id": "eng-vs-50-family-v27-source-6",
+            "title": "Landmine Monitor 1999 / Human Rights Watch — Asia-Pacific",
+            "url": "https://www.hrw.org/reports/1999/landmine/WEBAS3.html",
+            "accessedAt": "2026-09-12"
+          },
+          {
+            "id": "pdf-v4-033-01",
+            "title": "Предоставленный PDF «Иностранные мины 2» — PDF-стр. 64-65",
+            "url": null,
+            "accessedAt": "2026-09-09"
+          },
+          {
+            "id": "pdf-v4-033-02",
+            "title": "Предоставленный PDF «Иностранные мины на Ближнем и Среднем Востоке и в Северной Африке» (2016) — PDF-стр. 4, 9, 12, 14–18, 53",
+            "url": null,
+            "accessedAt": "2026-09-09"
+          },
+          {
+            "id": "pdf-v4-033-gichd",
+            "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (границы распознавания)",
+            "url": "https://www.gichd.org/publications-resources/publications/explosive-ordnance-guide-for-ukraine-third-edition/",
+            "accessedAt": "2026-09-09"
+          },
+          {
+            "id": "reference-v5-foreign1-eng-vs-50-family",
+            "title": "Предоставленный PDF «Иностранные мины на Ближнем и Среднем Востоке и в Северной Африке» (2016) — PDF-стр. 12, 14, 15",
+            "url": null,
+            "accessedAt": "2026-09-09"
+          },
+          {
+            "id": "reference-v5-safety-eng-vs-50-family",
+            "title": "IFRC — Mines & Explosive Remnants of War: при обнаружении",
+            "url": "https://ifrcstaysafe.org/dangerous-situations/mines",
+            "accessedAt": "2026-09-09"
+          },
+          {
+            "id": "reference-v6-872373ca1d499e7e5c02",
+            "title": "Предоставленный PDF «Иностранные мины на Ближнем и Среднем Востоке и в Северной Африке» (2016) — PDF-стр. 12, 14, 15",
+            "url": null,
+            "accessedAt": "2026-09-09"
+          }
+        ],
+        "body": "## Страна и происхождение\n\nИталия; Сингапур под обозначением SPM-1, с. 12, 15\n\n## Описание\n\nVS-50 — итальянская противопехотная мина компании Valsella с низким круглым корпусом. На описанном образце наружная часть светлая, верхняя центральная поверхность темнее, а по окружности проходят рёбра. Такое сочетание деталей придаёт простому дисковому силуэту узнаваемую фактуру.\n\nИстория VS-50 включает лицензионное сингапурское обозначение SPM-1. Отдельно встречается исполнение EO-3. Национальная копия и модификация относятся к линии VS-50, но дополнительные индексы сохраняют значение: они не являются случайными вариантами написания.\n\nДля VS-50 приводятся полная масса 185 г и габариты 9×4,5 см. Итальянская TS-50 внешне похожа, однако принадлежит другой линии изделий. Совпадение размеров и формы не делает названия VS-50 и TS-50 взаимозаменяемыми.\n\n## Характеристики\n\n| Параметр | Значение |\n| --- | --- |\n| Класс | Противопехотная мина |\n| Компания, указанная в источнике | Valsella, Италия |\n| Полная масса VS-50 | 185 г |\n| Сингапурское обозначение | SPM-1 |\n| Другой упомянутый вариант | VS-50 EO3 |\n| Внешне сходная отдельная модель | TS-50 |\n| Масса ВВ — NEQ, VS-50 | 43 г |\n| Размеры — VS-50 | 9 × 4,5 см (90 × 45 мм); оси в таблице не подписаны |\n\n## При обнаружении\n\nВнешний вид не подтверждает безопасность предмета. Остановитесь, не приближайтесь, не трогайте и не перемещайте его. Предупредите окружающих и сообщите местным экстренным службам. При подозрении на мину оставайтесь на месте до помощи специалистов.\n"
+      },
+      "after": {
+        "images": [
+          {
+            "id": "eng-vs-50-family-school3-8858517a083e",
+            "localPath": "images/school3-8858517a083e.jpg",
+            "thumbnailPath": "thumbs/school3-8858517a083e.jpg",
+            "caption": "По подписи PDF: ПРОТИВОПЕХОТНАЯ МИНА  VS-50 (Италия). «VS-50 для школы.pdf», PDF-стр. 1. Исходная окраска сохранена, разрешение не увеличено. Автор и отдельная лицензия иллюстрации не установлены.",
+            "width": 680,
+            "height": 603,
+            "position": 0
+          },
+          {
+            "id": "reference-v6-aa7aa166139c0eb2",
+            "localPath": "images/reference-v6-aa7aa166139c0eb2.webp",
+            "caption": "VS-50, внешний вид. Автор фотографии по подписи PDF: Найден Илиев. Окраска показанного экземпляра не подтверждает его безопасность или учебный статус. Источник: Иностранные мины 1, PDF-стр. 15.",
+            "width": 702,
+            "height": 937,
+            "position": 1,
+            "thumbnailPath": "thumbs/reference-v6-aa7aa166139c0eb2.webp"
+          }
+        ],
+        "thumbnailPath": "thumbs/school3-8858517a083e.jpg",
+        "sources": [
+          {
+            "id": "eng-vs-50-family-filling-v157",
+            "title": "HALO Trust — Land Mines Identification Guide, Itamar Levy, August 2005, стр. 12, VS-50",
+            "url": "https://www.bulletpicker.com/pdf/HALO-Land-Mines-Identification-Guide.pdf",
+            "accessedAt": "2026-10-04"
+          },
+          {
+            "id": "eng-vs-50-family-v27-source-6",
+            "title": "Landmine Monitor 1999 / Human Rights Watch — Asia-Pacific",
+            "url": "https://www.hrw.org/reports/1999/landmine/WEBAS3.html",
+            "accessedAt": "2026-09-12"
+          },
+          {
+            "id": "pdf-v4-033-01",
+            "title": "Предоставленный PDF «Иностранные мины 2» — PDF-стр. 64-65",
+            "url": null,
+            "accessedAt": "2026-09-09"
+          },
+          {
+            "id": "pdf-v4-033-02",
+            "title": "Предоставленный PDF «Иностранные мины на Ближнем и Среднем Востоке и в Северной Африке» (2016) — PDF-стр. 4, 9, 12, 14–18, 53",
+            "url": null,
+            "accessedAt": "2026-09-09"
+          },
+          {
+            "id": "pdf-v4-033-gichd",
+            "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (границы распознавания)",
+            "url": "https://www.gichd.org/publications-resources/publications/explosive-ordnance-guide-for-ukraine-third-edition/",
+            "accessedAt": "2026-09-09"
+          },
+          {
+            "id": "reference-v5-foreign1-eng-vs-50-family",
+            "title": "Предоставленный PDF «Иностранные мины на Ближнем и Среднем Востоке и в Северной Африке» (2016) — PDF-стр. 12, 14, 15",
+            "url": null,
+            "accessedAt": "2026-09-09"
+          },
+          {
+            "id": "reference-v5-safety-eng-vs-50-family",
+            "title": "IFRC — Mines & Explosive Remnants of War: при обнаружении",
+            "url": "https://ifrcstaysafe.org/dangerous-situations/mines",
+            "accessedAt": "2026-09-09"
+          },
+          {
+            "id": "reference-v6-872373ca1d499e7e5c02",
+            "title": "Предоставленный PDF «Иностранные мины на Ближнем и Среднем Востоке и в Северной Африке» (2016) — PDF-стр. 12, 14, 15",
+            "url": null,
+            "accessedAt": "2026-09-09"
+          },
+          {
+            "id": "eng-vs-50-family-school3-4-p1-f0",
+            "title": "Предоставленный PDF «VS-50 для школы.pdf», PDF-стр. 1; SHA-256 6bd9580a1aeeb6dbd8565fae3e4537d7f83d98ade775a780d5218b82e46966f4. Использована иллюстрация наружного вида по подписи источника.",
+            "url": null,
+            "accessedAt": "2026-10-28"
+          }
+        ],
+        "body": "## Страна и происхождение\n\nИталия; Сингапур под обозначением SPM-1, с. 12, 15\n\n## Описание\n\nVS-50 — итальянская противопехотная мина компании Valsella с низким круглым корпусом. На описанном образце наружная часть светлая, верхняя центральная поверхность темнее, а по окружности проходят рёбра. Такое сочетание деталей придаёт простому дисковому силуэту узнаваемую фактуру.\n\nИстория VS-50 включает лицензионное сингапурское обозначение SPM-1. Отдельно встречается исполнение EO-3. Национальная копия и модификация относятся к линии VS-50, но дополнительные индексы сохраняют значение: они не являются случайными вариантами написания.\n\nДля VS-50 приводятся полная масса 185 г и габариты 9×4,5 см. Итальянская TS-50 внешне похожа, однако принадлежит другой линии изделий. Совпадение размеров и формы не делает названия VS-50 и TS-50 взаимозаменяемыми.\n\n## Характеристики\n\n| Параметр | Значение |\n| --- | --- |\n| Класс | Противопехотная мина |\n| Компания, указанная в источнике | Valsella, Италия |\n| Полная масса VS-50 | 185 г |\n| Сингапурское обозначение | SPM-1 |\n| Другой упомянутый вариант | VS-50 EO3 |\n| Внешне сходная отдельная модель | TS-50 |\n| Масса ВВ — NEQ, VS-50 | 43 г |\n| Размеры — VS-50 | 9 × 4,5 см (90 × 45 мм); оси в таблице не подписаны |\n\n## При обнаружении\n\nВнешний вид не подтверждает безопасность предмета. Остановитесь, не приближайтесь, не трогайте и не перемещайте его. Предупредите окружающих и сообщите местным экстренным службам. При подозрении на мину оставайтесь на месте до помощи специалистов.\n"
+      }
+    },
+    {
+      "cardId": "ordnance-v29-ga-0113",
+      "before": {
+        "images": [
+          {
+            "id": "ordnance-v29-ga-0113-rgz89-attribution",
+            "localPath": "images/grenade-rgz89-polish-af-attribution.webp",
+            "caption": "RGZ-89, предметная фотография. Источник: Polish Armed Forces / Wikimedia Commons; лицензия с указанием авторства.",
+            "width": 482,
+            "height": 820,
+            "position": 0,
+            "thumbnailPath": "thumbs/grenade-rgz89-polish-af-attribution.webp"
+          }
+        ],
+        "thumbnailPath": "thumbs/grenade-rgz89-polish-af-attribution.webp",
+        "sources": [
+          {
+            "id": "ordnance-v29-ga-0113-filling-v156",
+            "title": "Dezamet — каталог производителя, стр. 2, таблица ручных гранат, RGZ-89",
+            "url": "https://dezamet.com.pl/static/upload/store/ONASPLIKIDOPOBRANIA/katalog_PL_www_2.pdf",
+            "accessedAt": "2026-10-04"
+          },
+          {
+            "id": "ordnance-v29-ga-0113-source-rgz89-attribution",
+            "title": "Wikimedia Commons — Gr zacz1(cropped).jpg",
+            "url": "https://commons.wikimedia.org/wiki/File:Gr_zacz1(cropped).jpg",
+            "accessedAt": "2026-09-13"
+          },
+          {
+            "id": "ordnance-v29-ga-0113-source-s12",
+            "title": "Dezamet — Hand Grenades",
+            "url": "https://dezamet.com.pl/en/products/hand-grenades",
+            "accessedAt": "2026-09-12"
+          },
+          {
+            "id": "ordnance-v29-ga-0113-specs-v147",
+            "title": "Dezamet — каталог производителя, стр. 2, таблица ручных гранат",
+            "url": "https://dezamet.com.pl/static/upload/store/ONASPLIKIDOPOBRANIA/katalog_PL_www_2.pdf",
+            "accessedAt": "2026-10-04"
+          },
+          {
+            "id": "ordnance-v29-ga-0113-pdf198-3-5",
+            "title": "Предоставленный PDF «Иностранные гранаты в зоне сво.pdf», PDF-стр. 5; SHA-256 3435364e226980282d1441016d190c2fefe7e30c3e9b92c5d959cbad4c0e6738. Самостоятельная достоверность каждого индекса и права на иллюстрации не подтверждены.",
+            "url": null,
+            "accessedAt": "2026-10-28"
+          }
+        ],
+        "body": "## Описание\n\nRGZ-89 — польская наступательная ручная граната предприятия Dezamet, разработанная в 1987–1992 годах как преемница РГ-42. Производство новой модели началось в 1995 году. Вместо металлической наружной оболочки она получила корпус из пластмассы — полиамида.\n\nУ RGZ-89 высокий цилиндрический корпус с глубокими продольными рёбрами и округлыми плечиками в верхней части. Заводской образец окрашен в зелёный цвет. Внешне модель существенно отличается от оборонительной RGO-88: у той округлая гладкая стальная оболочка, а у RGZ-89 — вытянутый ребристый корпус.\n\n## Характеристики\n\n| Параметр | Значение |\n| --- | --- |\n| Масса с транспортной пробкой | 325 ± 5 г |\n| Высота с транспортной пробкой | не более 98 мм |\n| Диаметр корпуса | не более 59 мм |\n| Тип ВВ | RDX (гексоген) |\n| Масса ВВ | 106 г |\n\n## При обнаружении\n\nНе приближайтесь, не трогайте и не перемещайте предмет. Отойдите по уже пройденному пути, предупредите окружающих и сообщите местным экстренным службам.\n"
+      },
+      "after": {
+        "images": [
+          {
+            "id": "ordnance-v29-ga-0113-rgz89-attribution",
+            "localPath": "images/school3-07a2b6cc51fb.jpg",
+            "thumbnailPath": "thumbs/school3-07a2b6cc51fb.jpg",
+            "caption": "По подписи PDF: РУЧНАЯ ГРАНАТА  RGZ-89 (Польша). «RGZ-89 для школы.pdf», PDF-стр. 1. Исходная окраска сохранена, разрешение не увеличено. Автор и отдельная лицензия иллюстрации не установлены.",
+            "width": 500,
+            "height": 1004,
+            "position": 0
+          }
+        ],
+        "thumbnailPath": "thumbs/school3-07a2b6cc51fb.jpg",
+        "sources": [
+          {
+            "id": "ordnance-v29-ga-0113-filling-v156",
+            "title": "Dezamet — каталог производителя, стр. 2, таблица ручных гранат, RGZ-89",
+            "url": "https://dezamet.com.pl/static/upload/store/ONASPLIKIDOPOBRANIA/katalog_PL_www_2.pdf",
+            "accessedAt": "2026-10-04"
+          },
+          {
+            "id": "ordnance-v29-ga-0113-source-rgz89-attribution",
+            "title": "Wikimedia Commons — Gr zacz1(cropped).jpg",
+            "url": "https://commons.wikimedia.org/wiki/File:Gr_zacz1(cropped).jpg",
+            "accessedAt": "2026-09-13"
+          },
+          {
+            "id": "ordnance-v29-ga-0113-source-s12",
+            "title": "Dezamet — Hand Grenades",
+            "url": "https://dezamet.com.pl/en/products/hand-grenades",
+            "accessedAt": "2026-09-12"
+          },
+          {
+            "id": "ordnance-v29-ga-0113-specs-v147",
+            "title": "Dezamet — каталог производителя, стр. 2, таблица ручных гранат",
+            "url": "https://dezamet.com.pl/static/upload/store/ONASPLIKIDOPOBRANIA/katalog_PL_www_2.pdf",
+            "accessedAt": "2026-10-04"
+          },
+          {
+            "id": "ordnance-v29-ga-0113-pdf198-3-5",
+            "title": "Предоставленный PDF «Иностранные гранаты в зоне сво.pdf», PDF-стр. 5; SHA-256 3435364e226980282d1441016d190c2fefe7e30c3e9b92c5d959cbad4c0e6738. Самостоятельная достоверность каждого индекса и права на иллюстрации не подтверждены.",
+            "url": null,
+            "accessedAt": "2026-10-28"
+          },
+          {
+            "id": "ordnance-v29-ga-0113-school3-5-p1-f0",
+            "title": "Предоставленный PDF «RGZ-89 для школы.pdf», PDF-стр. 1; SHA-256 f3016897f4c356b24bdc51aef3f1fd482fe461948900458d00c4177c9d683484. Использована иллюстрация наружного вида по подписи источника.",
+            "url": null,
+            "accessedAt": "2026-10-28"
+          }
+        ],
+        "body": "## Описание\n\nRGZ-89 — польская наступательная ручная граната предприятия Dezamet, разработанная в 1987–1992 годах как преемница РГ-42. Производство новой модели началось в 1995 году. Вместо металлической наружной оболочки она получила корпус из пластмассы — полиамида.\n\nУ RGZ-89 высокий цилиндрический корпус с глубокими продольными рёбрами и округлыми плечиками в верхней части. Заводской образец окрашен в зелёный цвет. Внешне модель существенно отличается от оборонительной RGO-88: у той округлая гладкая стальная оболочка, а у RGZ-89 — вытянутый ребристый корпус.\n\n## Характеристики\n\n| Параметр | Значение |\n| --- | --- |\n| Масса с транспортной пробкой | 325 ± 5 г |\n| Высота с транспортной пробкой | не более 98 мм |\n| Диаметр корпуса | не более 59 мм |\n| Тип ВВ | RDX (гексоген) |\n| Масса ВВ | 106 г |\n\n## При обнаружении\n\nНе приближайтесь, не трогайте и не перемещайте предмет. Отойдите по уже пройденному пути, предупредите окружающих и сообщите местным экстренным службам.\n"
+      }
+    },
+    {
+      "cardId": "eng-sb-33-family",
+      "before": {
+        "images": [
+          {
+            "id": "reference-v6-07716e8a5712e531",
+            "localPath": "images/reference-v6-07716e8a5712e531.webp",
+            "caption": "SB-33, внешний вид экземпляра на фотографии. По подписи PDF: Jane’s Mines and Mine Clearance 1999–00, редактор Colin King. На исходной фотографии предмет находится в руке; это не рекомендация к обращению с находками. Источник: Иностранные мины 1, PDF-стр. 11.",
+            "width": 390,
+            "height": 298,
+            "position": 0,
+            "thumbnailPath": "thumbs/reference-v6-07716e8a5712e531.webp"
+          }
+        ],
+        "thumbnailPath": "thumbs/reference-v6-07716e8a5712e531.webp",
+        "sources": [
+          {
+            "id": "eng-sb-33-family-filling-v157",
+            "title": "HALO Trust — Land Mines Identification Guide, Itamar Levy, August 2005, стр. 14, SB-33",
+            "url": "https://www.bulletpicker.com/pdf/HALO-Land-Mines-Identification-Guide.pdf",
+            "accessedAt": "2026-10-04"
+          },
+          {
+            "id": "pdf-v4-023-01",
+            "title": "Предоставленный PDF «Иностранные мины 2» — PDF-стр. 60-61",
+            "url": null,
+            "accessedAt": "2026-09-09"
+          },
+          {
+            "id": "pdf-v4-023-02",
+            "title": "Предоставленный PDF «Иностранные мины на Ближнем и Среднем Востоке и в Северной Африке» (2016) — PDF-стр. 9–11",
+            "url": null,
+            "accessedAt": "2026-09-09"
+          },
+          {
+            "id": "pdf-v4-023-gichd",
+            "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (границы распознавания)",
+            "url": "https://www.gichd.org/publications-resources/publications/explosive-ordnance-guide-for-ukraine-third-edition/",
+            "accessedAt": "2026-09-09"
+          },
+          {
+            "id": "reference-v5-foreign1-eng-sb-33-family",
+            "title": "Предоставленный PDF «Иностранные мины на Ближнем и Среднем Востоке и в Северной Африке» (2016) — PDF-стр. 10, 11",
+            "url": null,
+            "accessedAt": "2026-09-09"
+          },
+          {
+            "id": "reference-v5-safety-eng-sb-33-family",
+            "title": "IFRC — Mines & Explosive Remnants of War: при обнаружении",
+            "url": "https://ifrcstaysafe.org/dangerous-situations/mines",
+            "accessedAt": "2026-09-09"
+          },
+          {
+            "id": "reference-v6-6710ca54b838d161f5ea",
+            "title": "Предоставленный PDF «Иностранные мины на Ближнем и Среднем Востоке и в Северной Африке» (2016) — PDF-стр. 10, 11",
+            "url": null,
+            "accessedAt": "2026-09-09"
+          }
+        ],
+        "body": "## Страна и происхождение\n\nИталия; также Греция, Португалия и Испания, с. 10–11\n\n## Описание\n\nSB-33 — итальянская противопехотная мина компании BPD с низким круглым корпусом. На тёмно-зелёном образце заметны мелкая фактура наружной поверхности и тёмная центральная область сверху. По силуэту она входит в многочисленную группу компактных пластиковых мин, но имеет собственную производственную историю.\n\nС SB-33 связаны лицензионные обозначения EM-20 в Греции, M/412 в Португалии и P-5 в Испании. Поэтому одна исходная конструкция встречается в справочниках под разными национальными названиями. Страна изготовления конкретного экземпляра определяется его происхождением и маркировкой, а не только сходством формы.\n\nSB-33AR выделяется как отдельное исполнение. В размерной записи семейства приведены 8,5×3 см, а масса взрывчатого содержимого составляет 35 г. Эта величина описывает содержимое, не весь корпус; характеристики вариантов ниже сохраняют свои полные обозначения.\n\n## Характеристики\n\n| Параметр | Значение |\n| --- | --- |\n| Класс | Противопехотная мина |\n| Компания, указанная в источнике | BPD, Италия |\n| Греческое обозначение | EM-20 |\n| Португальское обозначение | M-412 |\n| Испанское обозначение | P-5 |\n| Другой упомянутый вариант | SB-33 AR |\n| Масса ВВ — NEQ, SB-33 | 35 г |\n| Размеры — SB-33 | 8,5 × 3 см (85 × 30 мм); оси в таблице не подписаны |\n\n## При обнаружении\n\nВнешний вид не подтверждает безопасность предмета. Остановитесь, не приближайтесь, не трогайте и не перемещайте его. Предупредите окружающих и сообщите местным экстренным службам. При подозрении на мину оставайтесь на месте до помощи специалистов.\n"
+      },
+      "after": {
+        "images": [
+          {
+            "id": "reference-v6-07716e8a5712e531",
+            "localPath": "images/school3-8a02fb668e37.jpg",
+            "thumbnailPath": "thumbs/school3-8a02fb668e37.jpg",
+            "caption": "По подписи PDF: ПРОТИВОПЕХОТНАЯ МИНА  SB-33 (Италия). «SB-33 для школы.pdf», PDF-стр. 1. Исходная окраска сохранена, разрешение не увеличено. Автор и отдельная лицензия иллюстрации не установлены.",
+            "width": 691,
+            "height": 435,
+            "position": 0
+          }
+        ],
+        "thumbnailPath": "thumbs/school3-8a02fb668e37.jpg",
+        "sources": [
+          {
+            "id": "eng-sb-33-family-filling-v157",
+            "title": "HALO Trust — Land Mines Identification Guide, Itamar Levy, August 2005, стр. 14, SB-33",
+            "url": "https://www.bulletpicker.com/pdf/HALO-Land-Mines-Identification-Guide.pdf",
+            "accessedAt": "2026-10-04"
+          },
+          {
+            "id": "pdf-v4-023-01",
+            "title": "Предоставленный PDF «Иностранные мины 2» — PDF-стр. 60-61",
+            "url": null,
+            "accessedAt": "2026-09-09"
+          },
+          {
+            "id": "pdf-v4-023-02",
+            "title": "Предоставленный PDF «Иностранные мины на Ближнем и Среднем Востоке и в Северной Африке» (2016) — PDF-стр. 9–11",
+            "url": null,
+            "accessedAt": "2026-09-09"
+          },
+          {
+            "id": "pdf-v4-023-gichd",
+            "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (границы распознавания)",
+            "url": "https://www.gichd.org/publications-resources/publications/explosive-ordnance-guide-for-ukraine-third-edition/",
+            "accessedAt": "2026-09-09"
+          },
+          {
+            "id": "reference-v5-foreign1-eng-sb-33-family",
+            "title": "Предоставленный PDF «Иностранные мины на Ближнем и Среднем Востоке и в Северной Африке» (2016) — PDF-стр. 10, 11",
+            "url": null,
+            "accessedAt": "2026-09-09"
+          },
+          {
+            "id": "reference-v5-safety-eng-sb-33-family",
+            "title": "IFRC — Mines & Explosive Remnants of War: при обнаружении",
+            "url": "https://ifrcstaysafe.org/dangerous-situations/mines",
+            "accessedAt": "2026-09-09"
+          },
+          {
+            "id": "reference-v6-6710ca54b838d161f5ea",
+            "title": "Предоставленный PDF «Иностранные мины на Ближнем и Среднем Востоке и в Северной Африке» (2016) — PDF-стр. 10, 11",
+            "url": null,
+            "accessedAt": "2026-09-09"
+          },
+          {
+            "id": "eng-sb-33-family-school3-6-p1-f0",
+            "title": "Предоставленный PDF «SB-33 для школы.pdf», PDF-стр. 1; SHA-256 8f0c08ddea7b9b8039dd9799337f0d4df84ec3e0918b1b064f553bee296fc491. Использована иллюстрация наружного вида по подписи источника.",
+            "url": null,
+            "accessedAt": "2026-10-28"
+          }
+        ],
+        "body": "## Страна и происхождение\n\nИталия; также Греция, Португалия и Испания, с. 10–11\n\n## Описание\n\nSB-33 — итальянская противопехотная мина компании BPD с низким круглым корпусом. На тёмно-зелёном образце заметны мелкая фактура наружной поверхности и тёмная центральная область сверху. По силуэту она входит в многочисленную группу компактных пластиковых мин, но имеет собственную производственную историю.\n\nС SB-33 связаны лицензионные обозначения EM-20 в Греции, M/412 в Португалии и P-5 в Испании. Поэтому одна исходная конструкция встречается в справочниках под разными национальными названиями. Страна изготовления конкретного экземпляра определяется его происхождением и маркировкой, а не только сходством формы.\n\nSB-33AR выделяется как отдельное исполнение. В размерной записи семейства приведены 8,5×3 см, а масса взрывчатого содержимого составляет 35 г. Эта величина описывает содержимое, не весь корпус; характеристики вариантов ниже сохраняют свои полные обозначения.\n\n## Характеристики\n\n| Параметр | Значение |\n| --- | --- |\n| Класс | Противопехотная мина |\n| Компания, указанная в источнике | BPD, Италия |\n| Греческое обозначение | EM-20 |\n| Португальское обозначение | M-412 |\n| Испанское обозначение | P-5 |\n| Другой упомянутый вариант | SB-33 AR |\n| Масса ВВ — NEQ, SB-33 | 35 г |\n| Размеры — SB-33 | 8,5 × 3 см (85 × 30 мм); оси в таблице не подписаны |\n\n## При обнаружении\n\nВнешний вид не подтверждает безопасность предмета. Остановитесь, не приближайтесь, не трогайте и не перемещайте его. Предупредите окружающих и сообщите местным экстренным службам. При подозрении на мину оставайтесь на месте до помощи специалистов.\n"
+      }
+    },
+    {
+      "cardId": "pdf198-3-ab17da441cd9",
+      "before": {
+        "images": [
+          {
+            "localPath": "images/pdf198-ab17da441cd9.webp",
+            "thumbnailPath": "thumbs/pdf198-ab17da441cd9.webp",
+            "width": 210,
+            "height": 431,
+            "position": 0,
+            "id": "pdf198-3-ab17da441cd9-exterior",
+            "caption": "RG-4: внешний вид по предоставленному PDF «Иностранные гранаты в зоне сво.pdf», PDF-стр. 8. Кадрирован только наружный вид. Исходная окраска сохранена, разрешение не увеличено. Автор и лицензия отдельной иллюстрации в источнике не установлены."
+          }
+        ],
+        "thumbnailPath": "thumbs/pdf198-ab17da441cd9.webp",
+        "sources": [
+          {
+            "id": "pdf198-3-ab17da441cd9-pdf198-3-8",
+            "title": "Предоставленный PDF «Иностранные гранаты в зоне сво.pdf», PDF-стр. 8; SHA-256 3435364e226980282d1441016d190c2fefe7e30c3e9b92c5d959cbad4c0e6738. Самостоятельная достоверность каждого индекса и права на иллюстрации не подтверждены.",
+            "url": null,
+            "accessedAt": "2026-10-28"
+          }
+        ],
+        "body": "## Описание\n\nRG-4.\n\nКласс в предоставленном материале: ручная граната.\n\n## Происхождение по источнику\n\nЧехия. Это атрибуция предоставленного материала; она не является самостоятельной проверкой производителя или места выпуска конкретного экземпляра.\n\n## Иллюстрация\n\nНаружный вид приведён по странице, указанной в подписи; исходная окраска сохранена.\n\n## Достоверность\n\nЗапись подготовлена по предоставленному PDF. Независимое подтверждение обозначения и модификации не выполнено. Данные о боевом применении и инструкции не перенесены. Источник является черновиком; его противоречивые числовые данные не используются.\n"
+      },
+      "after": {
+        "images": [
+          {
+            "id": "pdf198-3-ab17da441cd9-exterior",
+            "localPath": "images/school3-d81638a8bb73.jpg",
+            "thumbnailPath": "thumbs/school3-d81638a8bb73.jpg",
+            "caption": "По подписи PDF: РУЧНАЯ ГРАНАТА  RG-4 (Чехия). «RG-4 для школы.pdf», PDF-стр. 1. Исходная окраска сохранена, разрешение не увеличено. Автор и отдельная лицензия иллюстрации не установлены.",
+            "width": 461,
+            "height": 607,
+            "position": 0
+          }
+        ],
+        "thumbnailPath": "thumbs/school3-d81638a8bb73.jpg",
+        "sources": [
+          {
+            "id": "pdf198-3-ab17da441cd9-pdf198-3-8",
+            "title": "Предоставленный PDF «Иностранные гранаты в зоне сво.pdf», PDF-стр. 8; SHA-256 3435364e226980282d1441016d190c2fefe7e30c3e9b92c5d959cbad4c0e6738. Самостоятельная достоверность каждого индекса и права на иллюстрации не подтверждены.",
+            "url": null,
+            "accessedAt": "2026-10-28"
+          },
+          {
+            "id": "pdf198-3-ab17da441cd9-school3-7-p1-f0",
+            "title": "Предоставленный PDF «RG-4 для школы.pdf», PDF-стр. 1; SHA-256 202b7365843f36e8efab10771232090f5480e7dc3823502ee70044aed9efd76b. Использована иллюстрация наружного вида по подписи источника.",
+            "url": null,
+            "accessedAt": "2026-10-28"
+          }
+        ],
+        "body": "## Описание\n\nRG-4.\n\nКласс в предоставленном материале: ручная граната.\n\n## Происхождение по источнику\n\nЧехия. Это атрибуция предоставленного материала; она не является самостоятельной проверкой производителя или места выпуска конкретного экземпляра.\n\n## Иллюстрация\n\nНаружный вид приведён по странице, указанной в подписи; исходная окраска сохранена.\n\n## Достоверность\n\nЗапись подготовлена по предоставленному PDF. Независимое подтверждение обозначения и модификации не выполнено. Данные о боевом применении и инструкции не перенесены. Источник является черновиком; его противоречивые числовые данные не используются.\n"
+      }
+    },
+    {
+      "cardId": "pdf198-3-dc34947e98c4",
+      "before": {
+        "images": [
+          {
+            "localPath": "images/pdf198-dc34947e98c4.webp",
+            "thumbnailPath": "thumbs/pdf198-dc34947e98c4.webp",
+            "width": 217,
+            "height": 324,
+            "position": 0,
+            "id": "pdf198-3-dc34947e98c4-exterior",
+            "caption": "РГО-78: внешний вид по предоставленному PDF «Иностранные гранаты в зоне сво.pdf», PDF-стр. 17. Исходная окраска сохранена, разрешение не увеличено. Автор и лицензия отдельной иллюстрации в источнике не установлены."
+          }
+        ],
+        "thumbnailPath": "thumbs/pdf198-dc34947e98c4.webp",
+        "sources": [
+          {
+            "id": "pdf198-3-dc34947e98c4-pdf198-3-17",
+            "title": "Предоставленный PDF «Иностранные гранаты в зоне сво.pdf», PDF-стр. 17; SHA-256 3435364e226980282d1441016d190c2fefe7e30c3e9b92c5d959cbad4c0e6738. Самостоятельная достоверность каждого индекса и права на иллюстрации не подтверждены.",
+            "url": null,
+            "accessedAt": "2026-10-28"
+          }
+        ],
+        "body": "## Описание\n\nРГО-78.\n\nКласс в предоставленном материале: ручная граната.\n\n## Происхождение по источнику\n\nБолгария. Это атрибуция предоставленного материала; она не является самостоятельной проверкой производителя или места выпуска конкретного экземпляра.\n\n## Иллюстрация\n\nНаружный вид приведён по странице, указанной в подписи; исходная окраска сохранена.\n\n## Достоверность\n\nЗапись подготовлена по предоставленному PDF. Независимое подтверждение обозначения и модификации не выполнено. Данные о боевом применении и инструкции не перенесены. Источник является черновиком; его противоречивые числовые данные не используются.\n"
+      },
+      "after": {
+        "images": [
+          {
+            "id": "pdf198-3-dc34947e98c4-exterior",
+            "localPath": "images/school3-12af873f5960.jpg",
+            "thumbnailPath": "thumbs/school3-12af873f5960.jpg",
+            "caption": "По подписи PDF: РУЧНАЯ ГРАНАТА  RGO-78 (Болгария). «RGO-78 для школы.pdf», PDF-стр. 1. Исходная окраска сохранена, разрешение не увеличено. Автор и отдельная лицензия иллюстрации не установлены.",
+            "width": 787,
+            "height": 1161,
+            "position": 0
+          }
+        ],
+        "thumbnailPath": "thumbs/school3-12af873f5960.jpg",
+        "sources": [
+          {
+            "id": "pdf198-3-dc34947e98c4-pdf198-3-17",
+            "title": "Предоставленный PDF «Иностранные гранаты в зоне сво.pdf», PDF-стр. 17; SHA-256 3435364e226980282d1441016d190c2fefe7e30c3e9b92c5d959cbad4c0e6738. Самостоятельная достоверность каждого индекса и права на иллюстрации не подтверждены.",
+            "url": null,
+            "accessedAt": "2026-10-28"
+          },
+          {
+            "id": "pdf198-3-dc34947e98c4-school3-8-p1-f0",
+            "title": "Предоставленный PDF «RGO-78 для школы.pdf», PDF-стр. 1; SHA-256 aaa933f5b6c7bf080792da04d1ace39ac4396ad79ca6da5f2de7b77bb65f2ba8. Использована иллюстрация наружного вида по подписи источника.",
+            "url": null,
+            "accessedAt": "2026-10-28"
+          }
+        ],
+        "body": "## Описание\n\nРГО-78.\n\nКласс в предоставленном материале: ручная граната.\n\n## Происхождение по источнику\n\nБолгария. Это атрибуция предоставленного материала; она не является самостоятельной проверкой производителя или места выпуска конкретного экземпляра.\n\n## Иллюстрация\n\nНаружный вид приведён по странице, указанной в подписи; исходная окраска сохранена.\n\n## Достоверность\n\nЗапись подготовлена по предоставленному PDF. Независимое подтверждение обозначения и модификации не выполнено. Данные о боевом применении и инструкции не перенесены. Источник является черновиком; его противоречивые числовые данные не используются.\n"
+      }
+    },
+    {
+      "cardId": "grenade-m67",
+      "before": {
+        "images": [
+          {
+            "id": "photo-v184-grenade-m67-0",
+            "localPath": "images/photo-v184-grenade-m67-0.webp",
+            "caption": "M67: целый образец с маркировкой и упаковка на официальной странице Nammo. Автор изображения и открытая лицензия не указаны. Без увеличения и дорисовки.",
+            "width": 1600,
+            "height": 1227,
+            "position": 0,
+            "thumbnailPath": "thumbs/photo-v184-grenade-m67-0.webp"
+          },
+          {
+            "id": "photo-v176-432f8958e6ec27a0",
+            "localPath": "images/photo-v176-432f8958e6ec27a0.webp",
+            "caption": "M67 — дополнительный крупный наружный вид на снимке U.S. Army / Sgt. Austin Parker, Fort Drum, 21.08.2018. DVIDS, фото 4670305; общественное достояние в США. Получена открытая копия 1000×667 без увеличения. Часть корпуса закрыта перчаткой; общий вид сохранён на первом снимке.",
+            "width": 1000,
+            "height": 667,
+            "position": 1,
+            "thumbnailPath": "thumbs/photo-v176-432f8958e6ec27a0.webp"
+          }
+        ],
+        "thumbnailPath": "thumbs/photo-v184-grenade-m67-0.webp",
+        "sources": [
+          {
+            "id": "ammo-src-36-army",
+            "title": "U.S. Army PAE AS&A: Lethal Hand Grenades — M67",
+            "url": "https://www.cpeae.army.mil/Project-Offices/PM-CCS/Organizations/PdD-Combat-Armaments-and-Protection-Systems/Products/Grenades/Lethal-Hand-Grenades/",
+            "accessedAt": "2026-09-09"
+          },
+          {
+            "id": "grenade-m67-filling-v157",
+            "title": "Nammo — Ammunition Handbook, Edition 7 (August 2024), стр. 144, M67 Grenade",
+            "url": "https://www.nammo.com/wp-content/uploads/2024/09/Nammo-Handbook-2024_08_Web.cleaned.pdf",
+            "accessedAt": "2026-10-04"
+          },
+          {
+            "id": "grenade-m67-v13-source-0",
+            "title": "Wikimedia Commons — M67b.jpg",
+            "url": "https://en.wikipedia.org/wiki/File:M67b.jpg",
+            "accessedAt": "2026-09-10"
+          },
+          {
+            "id": "reference-v6-52ade434e4d765c29881",
+            "title": "Nammo: M67 Grenade",
+            "url": "https://www.nammo.com/products/grenades-warheads-energetics/m67-grenade/",
+            "accessedAt": "2026-09-09"
+          },
+          {
+            "id": "source-photo-v176-432f8958e6ec27a0",
+            "title": "Источник фотографии №176: M67 — американская ручная осколочная граната (Public domain)",
+            "url": "https://www.dvidshub.net/image/4670305/m67-grenade-range",
+            "accessedAt": "2026-10-10"
+          },
+          {
+            "id": "source-photo-v184-grenade-m67-0",
+            "title": "M67 — американская ручная осколочная граната — официальный оригинал иллюстрации (автор и открытая лицензия не указаны)",
+            "url": "https://www.nammo.com/products/grenades-warheads-energetics/m67-grenade/",
+            "accessedAt": "2026-10-10"
+          },
+          {
+            "id": "grenade-m67-pdf198-3-6",
+            "title": "Предоставленный PDF «Иностранные гранаты в зоне сво.pdf», PDF-стр. 6; SHA-256 3435364e226980282d1441016d190c2fefe7e30c3e9b92c5d959cbad4c0e6738. Самостоятельная достоверность каждого индекса и права на иллюстрации не подтверждены.",
+            "url": null,
+            "accessedAt": "2026-10-28"
+          }
+        ],
+        "body": "## Страна и происхождение\n\nСША — происхождение модели; M67 представлена также в продукции Nammo\n\n## Описание\n\nM67 — американская ручная осколочная граната с шарообразным стальным корпусом. Основная поверхность гладкая, без глубокого наружного рельефа старой Mk 2. Компактная округлая форма — наиболее заметная особенность её внешнего облика; детали запала выступают над основным корпусом.\n\nДиаметр корпуса составляет 63,5 мм, максимальная высота со взрывателем — 89,6 мм. Полная масса 14 унций, примерно 397 г, включает изделие со взрывателем. Разница между диаметром шара и общей высотой объясняется выступающей верхней частью, а не вытянутой формой самого корпуса.\n\nУчебная M69 повторяет общий силуэт M67, однако имеет собственное обозначение и другую комплектацию. M67 представлена также в продукции Nammo: американское происхождение модели и название современного изготовителя описывают разные стороны её истории.\n\n## Характеристики\n\n| Параметр | Значение |\n| --- | --- |\n| Класс | Ручная осколочная граната |\n| Материал и форма корпуса | Сталь; шарообразный корпус |\n| Диаметр корпуса | 63,5 мм |\n| Максимальная высота со взрывателем | 89,6 мм |\n| Масса со взрывателем | 14 унций, приблизительно 397 г |\n| Тип основного ВВ | Composition B |\n| Масса основного ВВ | 6,5 oz (≈ 184,3 г) |\n\n## При обнаружении\n\nВнешний вид не подтверждает безопасность предмета. Остановитесь, не приближайтесь, не трогайте и не перемещайте его. Предупредите окружающих и сообщите местным экстренным службам. При подозрении на мину оставайтесь на месте до помощи специалистов.\n"
+      },
+      "after": {
+        "images": [
+          {
+            "id": "photo-v184-grenade-m67-0",
+            "localPath": "images/photo-v184-grenade-m67-0.webp",
+            "caption": "M67: целый образец с маркировкой и упаковка на официальной странице Nammo. Автор изображения и открытая лицензия не указаны. Без увеличения и дорисовки.",
+            "width": 1600,
+            "height": 1227,
+            "position": 0,
+            "thumbnailPath": "thumbs/photo-v184-grenade-m67-0.webp"
+          },
+          {
+            "id": "photo-v176-432f8958e6ec27a0",
+            "localPath": "images/photo-v176-432f8958e6ec27a0.webp",
+            "caption": "M67 — дополнительный крупный наружный вид на снимке U.S. Army / Sgt. Austin Parker, Fort Drum, 21.08.2018. DVIDS, фото 4670305; общественное достояние в США. Получена открытая копия 1000×667 без увеличения. Часть корпуса закрыта перчаткой; общий вид сохранён на первом снимке.",
+            "width": 1000,
+            "height": 667,
+            "position": 1,
+            "thumbnailPath": "thumbs/photo-v176-432f8958e6ec27a0.webp"
+          },
+          {
+            "id": "grenade-m67-school3-72206112ea79",
+            "localPath": "images/school3-72206112ea79.jpg",
+            "thumbnailPath": "thumbs/school3-72206112ea79.jpg",
+            "caption": "По подписи PDF: РУЧНАЯ ГРАНАТА  M67 (США). «M67 для школы.pdf», PDF-стр. 1. Исходная окраска сохранена, разрешение не увеличено. Автор и отдельная лицензия иллюстрации не установлены.",
+            "width": 735,
+            "height": 1012,
+            "position": 2
+          }
+        ],
+        "thumbnailPath": "thumbs/photo-v184-grenade-m67-0.webp",
+        "sources": [
+          {
+            "id": "ammo-src-36-army",
+            "title": "U.S. Army PAE AS&A: Lethal Hand Grenades — M67",
+            "url": "https://www.cpeae.army.mil/Project-Offices/PM-CCS/Organizations/PdD-Combat-Armaments-and-Protection-Systems/Products/Grenades/Lethal-Hand-Grenades/",
+            "accessedAt": "2026-09-09"
+          },
+          {
+            "id": "grenade-m67-filling-v157",
+            "title": "Nammo — Ammunition Handbook, Edition 7 (August 2024), стр. 144, M67 Grenade",
+            "url": "https://www.nammo.com/wp-content/uploads/2024/09/Nammo-Handbook-2024_08_Web.cleaned.pdf",
+            "accessedAt": "2026-10-04"
+          },
+          {
+            "id": "grenade-m67-v13-source-0",
+            "title": "Wikimedia Commons — M67b.jpg",
+            "url": "https://en.wikipedia.org/wiki/File:M67b.jpg",
+            "accessedAt": "2026-09-10"
+          },
+          {
+            "id": "reference-v6-52ade434e4d765c29881",
+            "title": "Nammo: M67 Grenade",
+            "url": "https://www.nammo.com/products/grenades-warheads-energetics/m67-grenade/",
+            "accessedAt": "2026-09-09"
+          },
+          {
+            "id": "source-photo-v176-432f8958e6ec27a0",
+            "title": "Источник фотографии №176: M67 — американская ручная осколочная граната (Public domain)",
+            "url": "https://www.dvidshub.net/image/4670305/m67-grenade-range",
+            "accessedAt": "2026-10-10"
+          },
+          {
+            "id": "source-photo-v184-grenade-m67-0",
+            "title": "M67 — американская ручная осколочная граната — официальный оригинал иллюстрации (автор и открытая лицензия не указаны)",
+            "url": "https://www.nammo.com/products/grenades-warheads-energetics/m67-grenade/",
+            "accessedAt": "2026-10-10"
+          },
+          {
+            "id": "grenade-m67-pdf198-3-6",
+            "title": "Предоставленный PDF «Иностранные гранаты в зоне сво.pdf», PDF-стр. 6; SHA-256 3435364e226980282d1441016d190c2fefe7e30c3e9b92c5d959cbad4c0e6738. Самостоятельная достоверность каждого индекса и права на иллюстрации не подтверждены.",
+            "url": null,
+            "accessedAt": "2026-10-28"
+          },
+          {
+            "id": "grenade-m67-school3-9-p1-f0",
+            "title": "Предоставленный PDF «M67 для школы.pdf», PDF-стр. 1; SHA-256 c4e323cf03d060ff8799039843dc3bd014b8031daacbb12c3287af9bbef7d10b. Использована иллюстрация наружного вида по подписи источника.",
+            "url": null,
+            "accessedAt": "2026-10-28"
+          }
+        ],
+        "body": "## Страна и происхождение\n\nСША — происхождение модели; M67 представлена также в продукции Nammo\n\n## Описание\n\nM67 — американская ручная осколочная граната с шарообразным стальным корпусом. Основная поверхность гладкая, без глубокого наружного рельефа старой Mk 2. Компактная округлая форма — наиболее заметная особенность её внешнего облика; детали запала выступают над основным корпусом.\n\nДиаметр корпуса составляет 63,5 мм, максимальная высота со взрывателем — 89,6 мм. Полная масса 14 унций, примерно 397 г, включает изделие со взрывателем. Разница между диаметром шара и общей высотой объясняется выступающей верхней частью, а не вытянутой формой самого корпуса.\n\nУчебная M69 повторяет общий силуэт M67, однако имеет собственное обозначение и другую комплектацию. M67 представлена также в продукции Nammo: американское происхождение модели и название современного изготовителя описывают разные стороны её истории.\n\n## Характеристики\n\n| Параметр | Значение |\n| --- | --- |\n| Класс | Ручная осколочная граната |\n| Материал и форма корпуса | Сталь; шарообразный корпус |\n| Диаметр корпуса | 63,5 мм |\n| Максимальная высота со взрывателем | 89,6 мм |\n| Масса со взрывателем | 14 унций, приблизительно 397 г |\n| Тип основного ВВ | Composition B |\n| Масса основного ВВ | 6,5 oz (≈ 184,3 г) |\n\n## При обнаружении\n\nВнешний вид не подтверждает безопасность предмета. Остановитесь, не приближайтесь, не трогайте и не перемещайте его. Предупредите окружающих и сообщите местным экстренным службам. При подозрении на мину оставайтесь на месте до помощи специалистов.\n"
+      }
+    },
+    {
+      "cardId": "eng-pdf-v7-023",
+      "before": {
+        "images": [
+          {
+            "id": "reference-v7-022-0",
+            "localPath": "images/reference-v7-022-0.webp",
+            "caption": "Внешние варианты HPD1, HPD1A, HPD2 и HPD3; рис. 5.26. Источник: Иностранные мины 2, PDF-стр. 119.",
+            "width": 849,
+            "height": 602,
+            "position": 0,
+            "thumbnailPath": "thumbs/reference-v7-022-0.webp"
+          }
+        ],
+        "thumbnailPath": "thumbs/reference-v7-022-0.webp",
+        "sources": [
+          {
+            "id": "eng-pdf-v7-023-filling-v160",
+            "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 28: наполнение",
+            "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+            "accessedAt": "2026-10-04"
+          },
+          {
+            "id": "eng-pdf-v7-023-v10-classification",
+            "title": "Предоставленный PDF «Иностранные мины 2» — прямые названия класса в разделе 5 — PDF-стр. 119; HPD: HPD1 / HPD1A / HPD2 / HPD3 / HPD F2 / HPD 2A2",
+            "url": null,
+            "accessedAt": "2026-09-10"
+          },
+          {
+            "id": "reference-v7-022-foreign2",
+            "title": "Предоставленный PDF «Иностранные мины 2» — PDF-стр. 119, 120",
+            "url": null,
+            "accessedAt": "2026-09-09"
+          },
+          {
+            "id": "reference-v7-022-foreignbp",
+            "title": "Предоставленный PDF «Иностранные БП, СВ, ВВ без фоновых ссылок» — PDF-стр. 61, 62",
+            "url": null,
+            "accessedAt": "2026-09-09"
+          },
+          {
+            "id": "reference-v7-022-minley",
+            "title": "Предоставленный PDF «Справочник сапера “Минлей”» (2025) — PDF-стр. 123",
+            "url": null,
+            "accessedAt": "2026-09-09"
+          }
+        ],
+        "body": "## Страна и происхождение\n\nФранция; производство HPD F2 в Швейцарии также известно\n\n## Описание\n\nHPD — семейство французских противотанковых мин с пластмассовыми корпусами. Скруглённая основная часть сочетается с боковым прямоугольным выступом. Общий облик сохраняется у нескольких исполнений, хотя наружные детали и масса различаются.\n\nHPD1 имеет массу 6,1 кг, HPD1A — 7,0 кг, HPD2 и HPD3 — по 7,2 кг. Их габариты близки к 280×185×105 мм, но собственные записи каждого варианта сохранены в таблице. Близкие размеры не скрывают разницу моделей.\n\nHPD F2 представляет дальнейшее развитие HPD1. Известны французское и швейцарское производство и швейцарское обозначение Panzerabwehrmine 88. Для F2 приведены масса 7,0 кг и габариты 278,3×189×104 мм.\n\nHPD 2A2 сохраняет отдельную запись: масса 7,0 кг и размеры 278×189×104 мм, без подписанных осей. Эти значения не назначены ранним HPD1 или HPD1A. История семейства объединяет развитие конструкции и национальные исполнения.\n\n## Характеристики\n\n| Параметр | Значение |\n| --- | --- |\n| Материал корпуса | Пластмасса |\n| HPD1: габариты, длина × ширина × высота | 280 × 185 × 105 мм |\n| HPD1: общая масса | 6,1 кг |\n| HPD1A: габариты, длина × ширина × высота | 280 × 187 × 103 мм |\n| HPD1A: общая масса | 7,0 кг |\n| HPD2: габариты, длина × ширина × высота | 278 × 185 × 105 мм |\n| HPD2: общая масса | 7,2 кг |\n| HPD3: габариты, длина × ширина × высота | 280 × 185 × 105 мм |\n| HPD3: общая масса | 7,2 кг |\n| HPD F2: общая масса | 7,0 кг |\n| HPD F2: габариты | 278,3 × 189 × 104 мм |\n| HPD 2A2: страна происхождения | Франция |\n| HPD 2A2: общая масса в соответствующем разделе | 7 кг; строка таблицы подписана HPD2 |\n| Тип ВВ — только HPD-2A2 | Composition B |\n| Масса ВВ — только HPD-2A2 | 2 800 г (2,8 кг) |\n| Полная масса — HPD-2A2 | 7 000 г (7,0 кг) |\n| Габариты — HPD-2A2 | 278 × 189 × 104 мм; оси в таблице не подписаны |\n\n## При обнаружении\n\nВнешний вид не подтверждает безопасность предмета. Остановитесь, не приближайтесь, не трогайте и не перемещайте его. Предупредите окружающих и сообщите местным экстренным службам. При подозрении на мину оставайтесь на месте до помощи специалистов.\n"
+      },
+      "after": {
+        "images": [
+          {
+            "id": "reference-v7-022-0",
+            "localPath": "images/reference-v7-022-0.webp",
+            "caption": "Внешние варианты HPD1, HPD1A, HPD2 и HPD3; рис. 5.26. Источник: Иностранные мины 2, PDF-стр. 119.",
+            "width": 849,
+            "height": 602,
+            "position": 0,
+            "thumbnailPath": "thumbs/reference-v7-022-0.webp"
+          },
+          {
+            "id": "eng-pdf-v7-023-school3-0473beca97d5",
+            "localPath": "images/school3-0473beca97d5.jpg",
+            "thumbnailPath": "thumbs/school3-0473beca97d5.jpg",
+            "caption": "По подписи PDF: ПРОТИВОТАНКОВАЯ МИНА  HPD F2 (Франция). «HPD F2 для школы.pdf», PDF-стр. 1. Для семейства HPD изображён подписанный в этом PDF вариант HPD F2. Исходная окраска сохранена, разрешение не увеличено. Автор и отдельная лицензия иллюстрации не установлены.",
+            "width": 660,
+            "height": 517,
+            "position": 1
+          }
+        ],
+        "thumbnailPath": "thumbs/reference-v7-022-0.webp",
+        "sources": [
+          {
+            "id": "eng-pdf-v7-023-filling-v160",
+            "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 28: наполнение",
+            "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+            "accessedAt": "2026-10-04"
+          },
+          {
+            "id": "eng-pdf-v7-023-v10-classification",
+            "title": "Предоставленный PDF «Иностранные мины 2» — прямые названия класса в разделе 5 — PDF-стр. 119; HPD: HPD1 / HPD1A / HPD2 / HPD3 / HPD F2 / HPD 2A2",
+            "url": null,
+            "accessedAt": "2026-09-10"
+          },
+          {
+            "id": "reference-v7-022-foreign2",
+            "title": "Предоставленный PDF «Иностранные мины 2» — PDF-стр. 119, 120",
+            "url": null,
+            "accessedAt": "2026-09-09"
+          },
+          {
+            "id": "reference-v7-022-foreignbp",
+            "title": "Предоставленный PDF «Иностранные БП, СВ, ВВ без фоновых ссылок» — PDF-стр. 61, 62",
+            "url": null,
+            "accessedAt": "2026-09-09"
+          },
+          {
+            "id": "reference-v7-022-minley",
+            "title": "Предоставленный PDF «Справочник сапера “Минлей”» (2025) — PDF-стр. 123",
+            "url": null,
+            "accessedAt": "2026-09-09"
+          },
+          {
+            "id": "eng-pdf-v7-023-school3-10-p1-f0",
+            "title": "Предоставленный PDF «HPD F2 для школы.pdf», PDF-стр. 1; SHA-256 9bad5b02b615b601ab973609843b06848d91953959e57ac063f8744665954039. Использована иллюстрация наружного вида по подписи источника.",
+            "url": null,
+            "accessedAt": "2026-10-28"
+          }
+        ],
+        "body": "## Страна и происхождение\n\nФранция; производство HPD F2 в Швейцарии также известно\n\n## Описание\n\nHPD — семейство французских противотанковых мин с пластмассовыми корпусами. Скруглённая основная часть сочетается с боковым прямоугольным выступом. Общий облик сохраняется у нескольких исполнений, хотя наружные детали и масса различаются.\n\nHPD1 имеет массу 6,1 кг, HPD1A — 7,0 кг, HPD2 и HPD3 — по 7,2 кг. Их габариты близки к 280×185×105 мм, но собственные записи каждого варианта сохранены в таблице. Близкие размеры не скрывают разницу моделей.\n\nHPD F2 представляет дальнейшее развитие HPD1. Известны французское и швейцарское производство и швейцарское обозначение Panzerabwehrmine 88. Для F2 приведены масса 7,0 кг и габариты 278,3×189×104 мм.\n\nHPD 2A2 сохраняет отдельную запись: масса 7,0 кг и размеры 278×189×104 мм, без подписанных осей. Эти значения не назначены ранним HPD1 или HPD1A. История семейства объединяет развитие конструкции и национальные исполнения.\n\n## Характеристики\n\n| Параметр | Значение |\n| --- | --- |\n| Материал корпуса | Пластмасса |\n| HPD1: габариты, длина × ширина × высота | 280 × 185 × 105 мм |\n| HPD1: общая масса | 6,1 кг |\n| HPD1A: габариты, длина × ширина × высота | 280 × 187 × 103 мм |\n| HPD1A: общая масса | 7,0 кг |\n| HPD2: габариты, длина × ширина × высота | 278 × 185 × 105 мм |\n| HPD2: общая масса | 7,2 кг |\n| HPD3: габариты, длина × ширина × высота | 280 × 185 × 105 мм |\n| HPD3: общая масса | 7,2 кг |\n| HPD F2: общая масса | 7,0 кг |\n| HPD F2: габариты | 278,3 × 189 × 104 мм |\n| HPD 2A2: страна происхождения | Франция |\n| HPD 2A2: общая масса в соответствующем разделе | 7 кг; строка таблицы подписана HPD2 |\n| Тип ВВ — только HPD-2A2 | Composition B |\n| Масса ВВ — только HPD-2A2 | 2 800 г (2,8 кг) |\n| Полная масса — HPD-2A2 | 7 000 г (7,0 кг) |\n| Габариты — HPD-2A2 | 278 × 189 × 104 мм; оси в таблице не подписаны |\n\n## При обнаружении\n\nВнешний вид не подтверждает безопасность предмета. Остановитесь, не приближайтесь, не трогайте и не перемещайте его. Предупредите окружающих и сообщите местным экстренным службам. При подозрении на мину оставайтесь на месте до помощи специалистов.\n"
+      }
+    },
+    {
+      "cardId": "pdf198-3-f8e2441edc1d",
+      "before": {
+        "images": [
+          {
+            "localPath": "images/pdf198-f8e2441edc1d.webp",
+            "thumbnailPath": "thumbs/pdf198-f8e2441edc1d.webp",
+            "width": 233,
+            "height": 391,
+            "position": 0,
+            "id": "pdf198-3-f8e2441edc1d-exterior",
+            "caption": "GHO-1: внешний вид по предоставленному PDF «Иностранные гранаты в зоне сво.pdf», PDF-стр. 14. Кадрирован только наружный вид. Исходная окраска сохранена, разрешение не увеличено. Автор и лицензия отдельной иллюстрации в источнике не установлены."
+          }
+        ],
+        "thumbnailPath": "thumbs/pdf198-f8e2441edc1d.webp",
+        "sources": [
+          {
+            "id": "pdf198-3-f8e2441edc1d-pdf198-3-14",
+            "title": "Предоставленный PDF «Иностранные гранаты в зоне сво.pdf», PDF-стр. 14; SHA-256 3435364e226980282d1441016d190c2fefe7e30c3e9b92c5d959cbad4c0e6738. Самостоятельная достоверность каждого индекса и права на иллюстрации не подтверждены.",
+            "url": null,
+            "accessedAt": "2026-10-28"
+          }
+        ],
+        "body": "## Описание\n\nGHO-1.\n\nКласс в предоставленном материале: ручная граната.\n\n## Происхождение по источнику\n\nБолгария. Это атрибуция предоставленного материала; она не является самостоятельной проверкой производителя или места выпуска конкретного экземпляра.\n\n## Иллюстрация\n\nНаружный вид приведён по странице, указанной в подписи; исходная окраска сохранена.\n\n## Достоверность\n\nЗапись подготовлена по предоставленному PDF. Независимое подтверждение обозначения и модификации не выполнено. Данные о боевом применении и инструкции не перенесены. Источник является черновиком; его противоречивые числовые данные не используются.\n"
+      },
+      "after": {
+        "images": [
+          {
+            "id": "pdf198-3-f8e2441edc1d-exterior",
+            "localPath": "images/school3-7748fe5ab404.jpg",
+            "thumbnailPath": "thumbs/school3-7748fe5ab404.jpg",
+            "caption": "По подписи PDF: РУЧНАЯ ГРАНАТА  GHO-1 RDX (Болгария). «GHO-1 RDX для школы.pdf», PDF-стр. 1. Исходная окраска сохранена, разрешение не увеличено. Автор и отдельная лицензия иллюстрации не установлены.",
+            "width": 314,
+            "height": 495,
+            "position": 0
+          }
+        ],
+        "thumbnailPath": "thumbs/school3-7748fe5ab404.jpg",
+        "sources": [
+          {
+            "id": "pdf198-3-f8e2441edc1d-pdf198-3-14",
+            "title": "Предоставленный PDF «Иностранные гранаты в зоне сво.pdf», PDF-стр. 14; SHA-256 3435364e226980282d1441016d190c2fefe7e30c3e9b92c5d959cbad4c0e6738. Самостоятельная достоверность каждого индекса и права на иллюстрации не подтверждены.",
+            "url": null,
+            "accessedAt": "2026-10-28"
+          },
+          {
+            "id": "pdf198-3-f8e2441edc1d-school3-11-p1-f0",
+            "title": "Предоставленный PDF «GHO-1 RDX для школы.pdf», PDF-стр. 1; SHA-256 79f30691a56a3c366e9ebd2e83e02bcdfa283a3f72fe4b22d061e6d42dce8769. Использована иллюстрация наружного вида по подписи источника.",
+            "url": null,
+            "accessedAt": "2026-10-28"
+          }
+        ],
+        "body": "## Описание\n\nGHO-1.\n\nКласс в предоставленном материале: ручная граната.\n\n## Происхождение по источнику\n\nБолгария. Это атрибуция предоставленного материала; она не является самостоятельной проверкой производителя или места выпуска конкретного экземпляра.\n\n## Иллюстрация\n\nНаружный вид приведён по странице, указанной в подписи; исходная окраска сохранена.\n\n## Достоверность\n\nЗапись подготовлена по предоставленному PDF. Независимое подтверждение обозначения и модификации не выполнено. Данные о боевом применении и инструкции не перенесены. Источник является черновиком; его противоречивые числовые данные не используются.\n"
+      }
+    },
+    {
+      "cardId": "grenade-dm51",
+      "before": {
+        "images": [
+          {
+            "id": "photo-v176-bffdb2ec55cc08b5",
+            "localPath": "images/photo-v176-bffdb2ec55cc08b5.webp",
+            "caption": "DM51 — наружный вид на снимке U.S. Army, 04.04.2024. Фото: Spc. Thomas Dixon; DVIDS, общественное достояние в США. Копия Wikimedia Commons 1000×1500. По фотографии нельзя определить состояние конкретного изделия.",
+            "width": 1000,
+            "height": 1500,
+            "position": 0,
+            "thumbnailPath": "thumbs/photo-v176-bffdb2ec55cc08b5.webp"
+          }
+        ],
+        "thumbnailPath": "thumbs/photo-v176-bffdb2ec55cc08b5.webp",
+        "sources": [
+          {
+            "id": "ammo-src-37-bundeswehr",
+            "title": "Bundeswehr: Handgranate DM51",
+            "url": "https://www.bundeswehr.de/de/ausruestung-technik-bundeswehr/ausruestung-bewaffnung/handgranate-dm51",
+            "accessedAt": "2026-09-09"
+          },
+          {
+            "id": "grenade-dm51-filling-v164",
+            "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 59: наполнение и границы применимости",
+            "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+            "accessedAt": "2026-10-04"
+          },
+          {
+            "id": "grenade-dm51-v13-source-0",
+            "title": "GICHD — Explosive Ordnance Guide for Ukraine, третье издание — PDF-стр. 59",
+            "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD_-_Third_edition__v06_WEB.pdf",
+            "accessedAt": "2026-09-10"
+          },
+          {
+            "id": "reference-v6-5380091fd4f74df84bfb",
+            "title": "Bundeswehr: Handgranate DM51, 10.04.2025",
+            "url": "https://www.bundeswehr.de/de/ausruestung-technik-bundeswehr/ausruestung-bewaffnung/handgranate-dm51",
+            "accessedAt": "2026-09-09"
+          },
+          {
+            "id": "source-photo-v176-bffdb2ec55cc08b5",
+            "title": "Источник фотографии №176: DM51 — немецкая ручная граната (Public domain)",
+            "url": "https://commons.wikimedia.org/wiki/File:Diehl_DM51_grenade_in_German_Army.webp",
+            "accessedAt": "2026-10-10"
+          },
+          {
+            "id": "grenade-dm51-pdf198-3-9",
+            "title": "Предоставленный PDF «Иностранные гранаты в зоне сво.pdf», PDF-стр. 9; SHA-256 3435364e226980282d1441016d190c2fefe7e30c3e9b92c5d959cbad4c0e6738. Самостоятельная достоверность каждого индекса и права на иллюстрации не подтверждены.",
+            "url": null,
+            "accessedAt": "2026-10-28"
+          }
+        ],
+        "body": "## Страна и происхождение\n\nГермания; граната номенклатуры Бундесвера\n\n## Описание\n\nDM51 — немецкая ручная граната с характерной бочкообразной наружной частью. Её конструкция объединяет внутренний фугасный корпус и отдельную осколочную оболочку. Такое разделение объясняет, почему внешний объём DM51 заметно больше её внутренней центральной части.\n\nНаружная оболочка выполнена из литой пластмассы со встроенными стальными шариками. Пластик здесь не означает отсутствие металлических осколочных элементов: он составляет внешнюю основу составной оболочки. Это важное отличие от гранат, у которых наружная оболочка сама изготовлена из массивного металла.\n\nВ основной описанной конфигурации полная масса составляет около 450 г. Известны внешние исполнения и учебные изделия; конкретные цвета и маркировка относятся к соответствующему образцу. Общее название DM51 объединяет немецкую номенклатуру, но не подтверждает одинаковую комплектацию всех похожих корпусов.\n\n## Характеристики\n\n| Параметр | Значение |\n| --- | --- |\n| Класс | Ручная граната |\n| Масса полного изделия | Около 450 г |\n| Форма наружного корпуса | Бочкообразная |\n| Материал наружной оболочки | Литая пластмасса |\n| Масса основного вещества | 60 г |\n\n## При обнаружении\n\nВнешний вид не подтверждает безопасность предмета. Остановитесь, не приближайтесь, не трогайте и не перемещайте его. Предупредите окружающих и сообщите местным экстренным службам. При подозрении на мину оставайтесь на месте до помощи специалистов.\n"
+      },
+      "after": {
+        "images": [
+          {
+            "id": "photo-v176-bffdb2ec55cc08b5",
+            "localPath": "images/photo-v176-bffdb2ec55cc08b5.webp",
+            "caption": "DM51 — наружный вид на снимке U.S. Army, 04.04.2024. Фото: Spc. Thomas Dixon; DVIDS, общественное достояние в США. Копия Wikimedia Commons 1000×1500. По фотографии нельзя определить состояние конкретного изделия.",
+            "width": 1000,
+            "height": 1500,
+            "position": 0,
+            "thumbnailPath": "thumbs/photo-v176-bffdb2ec55cc08b5.webp"
+          },
+          {
+            "id": "grenade-dm51-school3-1efa063436a7",
+            "localPath": "images/school3-1efa063436a7.jpg",
+            "thumbnailPath": "thumbs/school3-1efa063436a7.jpg",
+            "caption": "По подписи PDF: РУЧНАЯ ГРАНАТА  DM51 (Германия). «DM51 для школы.pdf», PDF-стр. 1. Показанные в источнике наружные корпуса; внутренний разрез не включён. Исходная окраска сохранена, разрешение не увеличено. Автор и отдельная лицензия иллюстрации не установлены.",
+            "width": 1128,
+            "height": 1000,
+            "position": 1
+          }
+        ],
+        "thumbnailPath": "thumbs/photo-v176-bffdb2ec55cc08b5.webp",
+        "sources": [
+          {
+            "id": "ammo-src-37-bundeswehr",
+            "title": "Bundeswehr: Handgranate DM51",
+            "url": "https://www.bundeswehr.de/de/ausruestung-technik-bundeswehr/ausruestung-bewaffnung/handgranate-dm51",
+            "accessedAt": "2026-09-09"
+          },
+          {
+            "id": "grenade-dm51-filling-v164",
+            "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 59: наполнение и границы применимости",
+            "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+            "accessedAt": "2026-10-04"
+          },
+          {
+            "id": "grenade-dm51-v13-source-0",
+            "title": "GICHD — Explosive Ordnance Guide for Ukraine, третье издание — PDF-стр. 59",
+            "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD_-_Third_edition__v06_WEB.pdf",
+            "accessedAt": "2026-09-10"
+          },
+          {
+            "id": "reference-v6-5380091fd4f74df84bfb",
+            "title": "Bundeswehr: Handgranate DM51, 10.04.2025",
+            "url": "https://www.bundeswehr.de/de/ausruestung-technik-bundeswehr/ausruestung-bewaffnung/handgranate-dm51",
+            "accessedAt": "2026-09-09"
+          },
+          {
+            "id": "source-photo-v176-bffdb2ec55cc08b5",
+            "title": "Источник фотографии №176: DM51 — немецкая ручная граната (Public domain)",
+            "url": "https://commons.wikimedia.org/wiki/File:Diehl_DM51_grenade_in_German_Army.webp",
+            "accessedAt": "2026-10-10"
+          },
+          {
+            "id": "grenade-dm51-pdf198-3-9",
+            "title": "Предоставленный PDF «Иностранные гранаты в зоне сво.pdf», PDF-стр. 9; SHA-256 3435364e226980282d1441016d190c2fefe7e30c3e9b92c5d959cbad4c0e6738. Самостоятельная достоверность каждого индекса и права на иллюстрации не подтверждены.",
+            "url": null,
+            "accessedAt": "2026-10-28"
+          },
+          {
+            "id": "grenade-dm51-school3-12-p1-f0",
+            "title": "Предоставленный PDF «DM51 для школы.pdf», PDF-стр. 1; SHA-256 a78985420422dbe87c63461d52ca9c068fb04fe553ab9a9f129325f7c6c15f28. Использована иллюстрация наружного вида по подписи источника.",
+            "url": null,
+            "accessedAt": "2026-10-28"
+          }
+        ],
+        "body": "## Страна и происхождение\n\nГермания; граната номенклатуры Бундесвера\n\n## Описание\n\nDM51 — немецкая ручная граната с характерной бочкообразной наружной частью. Её конструкция объединяет внутренний фугасный корпус и отдельную осколочную оболочку. Такое разделение объясняет, почему внешний объём DM51 заметно больше её внутренней центральной части.\n\nНаружная оболочка выполнена из литой пластмассы со встроенными стальными шариками. Пластик здесь не означает отсутствие металлических осколочных элементов: он составляет внешнюю основу составной оболочки. Это важное отличие от гранат, у которых наружная оболочка сама изготовлена из массивного металла.\n\nВ основной описанной конфигурации полная масса составляет около 450 г. Известны внешние исполнения и учебные изделия; конкретные цвета и маркировка относятся к соответствующему образцу. Общее название DM51 объединяет немецкую номенклатуру, но не подтверждает одинаковую комплектацию всех похожих корпусов.\n\n## Характеристики\n\n| Параметр | Значение |\n| --- | --- |\n| Класс | Ручная граната |\n| Масса полного изделия | Около 450 г |\n| Форма наружного корпуса | Бочкообразная |\n| Материал наружной оболочки | Литая пластмасса |\n| Масса основного вещества | 60 г |\n\n## При обнаружении\n\nВнешний вид не подтверждает безопасность предмета. Остановитесь, не приближайтесь, не трогайте и не перемещайте его. Предупредите окружающих и сообщите местным экстренным службам. При подозрении на мину оставайтесь на месте до помощи специалистов.\n"
+      }
+    },
+    {
+      "cardId": "pdf198-3-cf1a8ba4a02e",
+      "before": {
+        "images": [],
+        "thumbnailPath": null,
+        "sources": [
+          {
+            "id": "pdf198-3-cf1a8ba4a02e-pdf198-3-10",
+            "title": "Предоставленный PDF «Иностранные гранаты в зоне сво.pdf», PDF-стр. 10; SHA-256 3435364e226980282d1441016d190c2fefe7e30c3e9b92c5d959cbad4c0e6738. Самостоятельная достоверность каждого индекса и права на иллюстрации не подтверждены.",
+            "url": null,
+            "accessedAt": "2026-10-28"
+          }
+        ],
+        "body": "## Описание\n\nDM61.\n\nКласс в предоставленном материале: ручная граната.\n\n## Происхождение по источнику\n\nГермания. Это атрибуция предоставленного материала; она не является самостоятельной проверкой производителя или места выпуска конкретного экземпляра.\n\n## Иллюстрация\n\nОтдельный подтверждённый наружный вид этого исполнения в карточку не добавлен.\n\n## Достоверность\n\nЗапись подготовлена по предоставленному PDF. Независимое подтверждение обозначения и модификации не выполнено. Данные о боевом применении и инструкции не перенесены. Источник является черновиком; его противоречивые числовые данные не используются.\n"
+      },
+      "after": {
+        "images": [
+          {
+            "id": "pdf198-3-cf1a8ba4a02e-school3-ab07341a7059",
+            "localPath": "images/school3-ab07341a7059.jpg",
+            "thumbnailPath": "thumbs/school3-ab07341a7059.jpg",
+            "caption": "По подписи PDF: РУЧНАЯ ГРАНАТА  DM61 (Германия). «DM61 для школы.pdf», PDF-стр. 1. Исходная окраска сохранена, разрешение не увеличено. Автор и отдельная лицензия иллюстрации не установлены.",
+            "width": 285,
+            "height": 491,
+            "position": 0
+          }
+        ],
+        "thumbnailPath": "thumbs/school3-ab07341a7059.jpg",
+        "sources": [
+          {
+            "id": "pdf198-3-cf1a8ba4a02e-pdf198-3-10",
+            "title": "Предоставленный PDF «Иностранные гранаты в зоне сво.pdf», PDF-стр. 10; SHA-256 3435364e226980282d1441016d190c2fefe7e30c3e9b92c5d959cbad4c0e6738. Самостоятельная достоверность каждого индекса и права на иллюстрации не подтверждены.",
+            "url": null,
+            "accessedAt": "2026-10-28"
+          },
+          {
+            "id": "pdf198-3-cf1a8ba4a02e-school3-13-p1-f0",
+            "title": "Предоставленный PDF «DM61 для школы.pdf», PDF-стр. 1; SHA-256 4806828b25047ff5ed2edc7ba4d7617ae1723599aec3079eb8c78460807fa5a7. Использована иллюстрация наружного вида по подписи источника.",
+            "url": null,
+            "accessedAt": "2026-10-28"
+          }
+        ],
+        "body": "## Описание\n\nDM61.\n\nКласс в предоставленном материале: ручная граната.\n\n## Происхождение по источнику\n\nГермания. Это атрибуция предоставленного материала; она не является самостоятельной проверкой производителя или места выпуска конкретного экземпляра.\n\n## Иллюстрация\n\nДобавлена иллюстрация наружного вида по подписи предоставленной памятки; источник и страница указаны в подписи.\n\n## Достоверность\n\nЗапись подготовлена по предоставленному PDF. Независимое подтверждение обозначения и модификации не выполнено. Данные о боевом применении и инструкции не перенесены. Источник является черновиком; его противоречивые числовые данные не используются.\n"
+      }
+    },
+    {
+      "cardId": "eng-dm-31-at",
+      "before": {
+        "images": [
+          {
+            "id": "reference-v6-2e24b2b340546b9e",
+            "localPath": "images/reference-v6-2e24b2b340546b9e.webp",
+            "caption": "Противотанковая DM31: левое изображение на рис. 5.31. Соседняя учебно-практическая DM70 в кадр не включена. Источник: Иностранные мины 2, PDF-стр. 123.",
+            "width": 408,
+            "height": 336,
+            "position": 0,
+            "thumbnailPath": "thumbs/reference-v6-2e24b2b340546b9e.webp"
+          }
+        ],
+        "thumbnailPath": "thumbs/reference-v6-2e24b2b340546b9e.webp",
+        "sources": [
+          {
+            "id": "eng-18-bundeswehr",
+            "title": "Bundeswehr — Tödliche Saat: Bedeutung von Panzerabwehrminen",
+            "url": "https://www.bundeswehr.de/de/toedliche-saat-bedeutung-panzerabwehrminen-2799016",
+            "accessedAt": "2026-09-09"
+          },
+          {
+            "id": "eng-18-jmu",
+            "title": "James Madison University CISR — Munitions Reference Guide",
+            "url": "https://www.jmu.edu/cisr/research/munitions-guide.shtml",
+            "accessedAt": "2026-09-09"
+          },
+          {
+            "id": "eng-dm-31-at-filling-v160",
+            "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 27: наполнение",
+            "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+            "accessedAt": "2026-10-04"
+          },
+          {
+            "id": "eng-dm-31-at-v10-classification",
+            "title": "Предоставленный PDF «Иностранные мины 2» — прямые названия класса в разделе 5 — PDF-стр. 122; DM-31 AT",
+            "url": null,
+            "accessedAt": "2026-09-10"
+          },
+          {
+            "id": "reference-v6-79f6e5061a444665503f",
+            "title": "Предоставленный PDF «Иностранные мины 2» — PDF-стр. 122, 123",
+            "url": null,
+            "accessedAt": "2026-09-09"
+          }
+        ],
+        "body": "## Страна и происхождение\n\nФРГ (Германия)\n\n## Описание\n\nDM31 AT — противотанковая мина, разработанная в ФРГ. У неё низкий круглый корпус с широкой верхней поверхностью, краевыми выступами и ремнём для переноски. В конструкции сочетаются алюминиевый корпус и прорезиненная боковая поверхность.\n\nДиаметр 254 мм и высота 134 мм относятся к транспортной конфигурации; полная масса составляет 8,4 кг. Боковое покрытие и ремень являются заметными особенностями наружного облика. Близкая по форме шведская FFV 028 имеет собственные национальное название и характеристики.\n\nВ германской номенклатуре индекс DM31 встречается и у противопехотной осколочной мины. Это другое изделие, поэтому уточнение AT здесь существенно. Учебное исполнение противотанковой линии обозначено DM70 и также рассматривается как отдельная версия.\n\n## Характеристики\n\n| Параметр | Значение |\n| --- | --- |\n| Класс | Противотанковая мина |\n| Полная масса изделия | 8,4 кг |\n| Диаметр в транспортной конфигурации | 254 мм |\n| Высота в транспортной конфигурации | 134 мм |\n| Материал корпуса | Алюминий; обрезиненная боковая поверхность |\n| Тип ВВ — противотанковая DM-31 | TNT/RDX |\n| Масса ВВ — противотанковая DM-31 | 3 900–4 000 г (3,9–4,0 кг) |\n\n## При обнаружении\n\nВнешний вид не подтверждает безопасность предмета. Остановитесь, не приближайтесь, не трогайте и не перемещайте его. Предупредите окружающих и сообщите местным экстренным службам. При подозрении на мину оставайтесь на месте до помощи специалистов.\n"
+      },
+      "after": {
+        "images": [
+          {
+            "id": "reference-v6-2e24b2b340546b9e",
+            "localPath": "images/school3-07c1248e653e.jpg",
+            "thumbnailPath": "thumbs/school3-07c1248e653e.jpg",
+            "caption": "По подписи PDF: ПРОТИВОТАНКОВАЯ МИНА  DM31 (Германия). «DM31 для школы.pdf», PDF-стр. 1. Исходная окраска сохранена, разрешение не увеличено. Автор и отдельная лицензия иллюстрации не установлены.",
+            "width": 563,
+            "height": 500,
+            "position": 0
+          }
+        ],
+        "thumbnailPath": "thumbs/school3-07c1248e653e.jpg",
+        "sources": [
+          {
+            "id": "eng-18-bundeswehr",
+            "title": "Bundeswehr — Tödliche Saat: Bedeutung von Panzerabwehrminen",
+            "url": "https://www.bundeswehr.de/de/toedliche-saat-bedeutung-panzerabwehrminen-2799016",
+            "accessedAt": "2026-09-09"
+          },
+          {
+            "id": "eng-18-jmu",
+            "title": "James Madison University CISR — Munitions Reference Guide",
+            "url": "https://www.jmu.edu/cisr/research/munitions-guide.shtml",
+            "accessedAt": "2026-09-09"
+          },
+          {
+            "id": "eng-dm-31-at-filling-v160",
+            "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 27: наполнение",
+            "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+            "accessedAt": "2026-10-04"
+          },
+          {
+            "id": "eng-dm-31-at-v10-classification",
+            "title": "Предоставленный PDF «Иностранные мины 2» — прямые названия класса в разделе 5 — PDF-стр. 122; DM-31 AT",
+            "url": null,
+            "accessedAt": "2026-09-10"
+          },
+          {
+            "id": "reference-v6-79f6e5061a444665503f",
+            "title": "Предоставленный PDF «Иностранные мины 2» — PDF-стр. 122, 123",
+            "url": null,
+            "accessedAt": "2026-09-09"
+          },
+          {
+            "id": "eng-dm-31-at-school3-14-p1-f0",
+            "title": "Предоставленный PDF «DM31 для школы.pdf», PDF-стр. 1; SHA-256 d7f8f259c0e6d2bcf57becf539c825b86f6ded1f42eb73d27dc06cff6574df2b. Использована иллюстрация наружного вида по подписи источника.",
+            "url": null,
+            "accessedAt": "2026-10-28"
+          }
+        ],
+        "body": "## Страна и происхождение\n\nФРГ (Германия)\n\n## Описание\n\nDM31 AT — противотанковая мина, разработанная в ФРГ. У неё низкий круглый корпус с широкой верхней поверхностью, краевыми выступами и ремнём для переноски. В конструкции сочетаются алюминиевый корпус и прорезиненная боковая поверхность.\n\nДиаметр 254 мм и высота 134 мм относятся к транспортной конфигурации; полная масса составляет 8,4 кг. Боковое покрытие и ремень являются заметными особенностями наружного облика. Близкая по форме шведская FFV 028 имеет собственные национальное название и характеристики.\n\nВ германской номенклатуре индекс DM31 встречается и у противопехотной осколочной мины. Это другое изделие, поэтому уточнение AT здесь существенно. Учебное исполнение противотанковой линии обозначено DM70 и также рассматривается как отдельная версия.\n\n## Характеристики\n\n| Параметр | Значение |\n| --- | --- |\n| Класс | Противотанковая мина |\n| Полная масса изделия | 8,4 кг |\n| Диаметр в транспортной конфигурации | 254 мм |\n| Высота в транспортной конфигурации | 134 мм |\n| Материал корпуса | Алюминий; обрезиненная боковая поверхность |\n| Тип ВВ — противотанковая DM-31 | TNT/RDX |\n| Масса ВВ — противотанковая DM-31 | 3 900–4 000 г (3,9–4,0 кг) |\n\n## При обнаружении\n\nВнешний вид не подтверждает безопасность предмета. Остановитесь, не приближайтесь, не трогайте и не перемещайте его. Предупредите окружающих и сообщите местным экстренным службам. При подозрении на мину оставайтесь на месте до помощи специалистов.\n"
+      }
+    },
+    {
+      "cardId": "eng-pdf-v7-021",
+      "before": {
+        "images": [
+          {
+            "id": "photo-v178-f7268f3d854d5952",
+            "localPath": "images/photo-v178-f7268f3d854d5952.webp",
+            "caption": "AT-2: внешний вид учебного образца семейства; конкретный индекс DM не установлен. Фото: Esquilo (Johan Fredriksson). Wikimedia Commons, AT-2.jpg. CC BY-SA 3.0.",
+            "width": 960,
+            "height": 960,
+            "position": 0,
+            "thumbnailPath": "thumbs/photo-v178-f7268f3d854d5952.webp"
+          }
+        ],
+        "thumbnailPath": "thumbs/photo-v178-f7268f3d854d5952.webp",
+        "sources": [
+          {
+            "id": "eng-pdf-v7-021-v10-classification",
+            "title": "Предоставленный PDF «Иностранные мины 2» — прямые названия класса в разделе 5 — PDF-стр. 115; AT-2: DM1274 / DM1274A1 / DM1399 / DM1233",
+            "url": null,
+            "accessedAt": "2026-09-10"
+          },
+          {
+            "id": "license-photo-v178-f7268f3d854d5952",
+            "title": "Условия использования фотографии №178: CC BY-SA 3.0",
+            "url": "https://creativecommons.org/licenses/by-sa/3.0",
+            "accessedAt": "2026-10-10"
+          },
+          {
+            "id": "reference-v176-eng-pdf-v7-021-1",
+            "title": "U.S. Army — FM 3-34.2, B-3, PDF-стр. 76",
+            "url": "https://www.bits.de/NRANEU/others/amd-us-archive/fm3-34.2%2802%29.pdf",
+            "accessedAt": "2026-10-05"
+          },
+          {
+            "id": "reference-v7-020-foreign2",
+            "title": "Предоставленный PDF «Иностранные мины 2» — PDF-стр. 115, 116",
+            "url": null,
+            "accessedAt": "2026-09-09"
+          },
+          {
+            "id": "reference-v7-020-minley",
+            "title": "Предоставленный PDF «Справочник сапера “Минлей”» (2025) — PDF-стр. 117, 121",
+            "url": null,
+            "accessedAt": "2026-09-09"
+          },
+          {
+            "id": "source-photo-v178-f7268f3d854d5952",
+            "title": "Источник фотографии №178: AT-2: DM1274 / DM1274A1 / DM1399 / DM1233 (CC BY-SA 3.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:AT-2.jpg",
+            "accessedAt": "2026-10-10"
+          }
+        ],
+        "body": "## Страна и происхождение\n\nГермания (ФРГ)\n\n## Описание\n\nAT-2 — германское противотанковое семейство, исторически связанное с Dynamit Nobel AG. В него включены DM1274, DM1274A1, DM1399 и DM1233. Общее название объединяет разные исполнения, сохраняя их собственные индексы.\n\nХарактерный внешний силуэт вытянутый и цилиндрический, с продольными наружными рёбрами и металлическими опорами. Общий диаметр корпуса приведён как 103,5 мм. Наружные опоры составляют отдельную часть видимого очертания.\n\nДля DM1274/DM1274A1 указаны масса 2,25 кг и сочетание пластмассы со сталью, для DM1399 — 2,22 кг и комбинированный пластмассово-металлический корпус. Диапазон 2,22–2,25 кг поэтому относится к разным моделям, а не к установленному допуску одной мины.\n\n## Характеристики\n\n| Параметр | Значение |\n| --- | --- |\n| Изготовитель | Dynamit Nobel AG |\n| Общая масса | 2,22–2,25 кг в зависимости от модели |\n| Диаметр | 103,5 мм |\n| DM1274/DM1274A1: общая масса | 2,25 кг |\n| DM1399: общая масса | 2,22 кг |\n\n## При обнаружении\n\nВнешний вид не подтверждает безопасность предмета. Остановитесь, не приближайтесь, не трогайте и не перемещайте его. Предупредите окружающих и сообщите местным экстренным службам. При подозрении на мину оставайтесь на месте до помощи специалистов.\n"
+      },
+      "after": {
+        "images": [
+          {
+            "id": "photo-v178-f7268f3d854d5952",
+            "localPath": "images/photo-v178-f7268f3d854d5952.webp",
+            "caption": "AT-2: внешний вид учебного образца семейства; конкретный индекс DM не установлен. Фото: Esquilo (Johan Fredriksson). Wikimedia Commons, AT-2.jpg. CC BY-SA 3.0.",
+            "width": 960,
+            "height": 960,
+            "position": 0,
+            "thumbnailPath": "thumbs/photo-v178-f7268f3d854d5952.webp"
+          },
+          {
+            "id": "eng-pdf-v7-021-school3-0cf545f55395",
+            "localPath": "images/school3-0cf545f55395.jpg",
+            "thumbnailPath": "thumbs/school3-0cf545f55395.jpg",
+            "caption": "По подписи PDF: ПРОТИВОТАНКОВАЯ МИНА  DM1274 (Германия). «DM1274 для школы.pdf», PDF-стр. 1. В этой иллюстрации источник использует индекс DM1274; другие индексы семейства автоматически не приписываются. Исходная окраска сохранена, разрешение не увеличено. Автор и отдельная лицензия иллюстрации не установлены.",
+            "width": 800,
+            "height": 747,
+            "position": 1
+          }
+        ],
+        "thumbnailPath": "thumbs/photo-v178-f7268f3d854d5952.webp",
+        "sources": [
+          {
+            "id": "eng-pdf-v7-021-v10-classification",
+            "title": "Предоставленный PDF «Иностранные мины 2» — прямые названия класса в разделе 5 — PDF-стр. 115; AT-2: DM1274 / DM1274A1 / DM1399 / DM1233",
+            "url": null,
+            "accessedAt": "2026-09-10"
+          },
+          {
+            "id": "license-photo-v178-f7268f3d854d5952",
+            "title": "Условия использования фотографии №178: CC BY-SA 3.0",
+            "url": "https://creativecommons.org/licenses/by-sa/3.0",
+            "accessedAt": "2026-10-10"
+          },
+          {
+            "id": "reference-v176-eng-pdf-v7-021-1",
+            "title": "U.S. Army — FM 3-34.2, B-3, PDF-стр. 76",
+            "url": "https://www.bits.de/NRANEU/others/amd-us-archive/fm3-34.2%2802%29.pdf",
+            "accessedAt": "2026-10-05"
+          },
+          {
+            "id": "reference-v7-020-foreign2",
+            "title": "Предоставленный PDF «Иностранные мины 2» — PDF-стр. 115, 116",
+            "url": null,
+            "accessedAt": "2026-09-09"
+          },
+          {
+            "id": "reference-v7-020-minley",
+            "title": "Предоставленный PDF «Справочник сапера “Минлей”» (2025) — PDF-стр. 117, 121",
+            "url": null,
+            "accessedAt": "2026-09-09"
+          },
+          {
+            "id": "source-photo-v178-f7268f3d854d5952",
+            "title": "Источник фотографии №178: AT-2: DM1274 / DM1274A1 / DM1399 / DM1233 (CC BY-SA 3.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:AT-2.jpg",
+            "accessedAt": "2026-10-10"
+          },
+          {
+            "id": "eng-pdf-v7-021-school3-15-p1-f0",
+            "title": "Предоставленный PDF «DM1274 для школы.pdf», PDF-стр. 1; SHA-256 d3dc5cb98ed7da7a706eb8860c1250b7e3ecace14b97ce5e256594810e025dba. Использована иллюстрация наружного вида по подписи источника.",
+            "url": null,
+            "accessedAt": "2026-10-28"
+          }
+        ],
+        "body": "## Страна и происхождение\n\nГермания (ФРГ)\n\n## Описание\n\nAT-2 — германское противотанковое семейство, исторически связанное с Dynamit Nobel AG. В него включены DM1274, DM1274A1, DM1399 и DM1233. Общее название объединяет разные исполнения, сохраняя их собственные индексы.\n\nХарактерный внешний силуэт вытянутый и цилиндрический, с продольными наружными рёбрами и металлическими опорами. Общий диаметр корпуса приведён как 103,5 мм. Наружные опоры составляют отдельную часть видимого очертания.\n\nДля DM1274/DM1274A1 указаны масса 2,25 кг и сочетание пластмассы со сталью, для DM1399 — 2,22 кг и комбинированный пластмассово-металлический корпус. Диапазон 2,22–2,25 кг поэтому относится к разным моделям, а не к установленному допуску одной мины.\n\n## Характеристики\n\n| Параметр | Значение |\n| --- | --- |\n| Изготовитель | Dynamit Nobel AG |\n| Общая масса | 2,22–2,25 кг в зависимости от модели |\n| Диаметр | 103,5 мм |\n| DM1274/DM1274A1: общая масса | 2,25 кг |\n| DM1399: общая масса | 2,22 кг |\n\n## При обнаружении\n\nВнешний вид не подтверждает безопасность предмета. Остановитесь, не приближайтесь, не трогайте и не перемещайте его. Предупредите окружающих и сообщите местным экстренным службам. При подозрении на мину оставайтесь на месте до помощи специалистов.\n"
+      }
+    },
+    {
+      "cardId": "eng-parm-family",
+      "before": {
+        "images": [
+          {
+            "id": "reference-v6-df08e881d21bb13e",
+            "localPath": "images/reference-v6-df08e881d21bb13e.webp",
+            "caption": "DM12 (PARM): общий вид, рисунок 6.18; PDF-стр. 170. Фотография относится к DM12. Источник: Иностранные мины 2, PDF-стр. 170.",
+            "width": 450,
+            "height": 380,
+            "position": 0,
+            "thumbnailPath": "thumbs/reference-v6-df08e881d21bb13e.webp"
+          }
+        ],
+        "thumbnailPath": "thumbs/reference-v6-df08e881d21bb13e.webp",
+        "sources": [
+          {
+            "id": "eng-parm-family-gichd-v174",
+            "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), PDF / печатная с. 26: PARM 2 / DM-22",
+            "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+            "accessedAt": "2026-10-04"
+          },
+          {
+            "id": "eng-parm-family-reference-v174",
+            "title": "U.S. Army / TRADOC — Worldwide Equipment Guide, Vol. 1: Ground Systems (2015), PDF 463",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/1/1f/WorldwideEquipmentGuide_2015_Ground_Systems.pdf",
+            "accessedAt": "2026-10-04"
+          },
+          {
+            "id": "pdf-v4-058-01",
+            "title": "Предоставленный PDF «Иностранные мины 2» — PDF-стр. 170-174",
+            "url": null,
+            "accessedAt": "2026-09-09"
+          },
+          {
+            "id": "pdf-v4-058-02",
+            "title": "Предоставленный PDF «Справочник сапера “Минлей”» (2025) — PDF-стр. 137–138",
+            "url": null,
+            "accessedAt": "2026-09-09"
+          },
+          {
+            "id": "pdf-v4-058-03",
+            "title": "Предоставленный PDF «Иностранные БП, СВ, ВВ без фоновых ссылок» — PDF-стр. 75-84",
+            "url": null,
+            "accessedAt": "2026-09-09"
+          },
+          {
+            "id": "pdf-v4-058-gichd",
+            "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (границы распознавания)",
+            "url": "https://www.gichd.org/publications-resources/publications/explosive-ordnance-guide-for-ukraine-third-edition/",
+            "accessedAt": "2026-09-09"
+          },
+          {
+            "id": "reference-v5-safety-eng-parm-family",
+            "title": "IFRC — Mines & Explosive Remnants of War: при обнаружении",
+            "url": "https://ifrcstaysafe.org/dangerous-situations/mines",
+            "accessedAt": "2026-09-09"
+          },
+          {
+            "id": "reference-v6-ff39a6e5341fc358d88e",
+            "title": "Предоставленный PDF «Иностранные мины 2» — PDF-стр. 170, 171, 175",
+            "url": null,
+            "accessedAt": "2026-09-09"
+          }
+        ],
+        "body": "## Страна и происхождение\n\nГермания (ФРГ) — страна, указанная в заголовке статьи\n\n## Описание\n\nDM12 и DM22 — родственные германские модели, известные как PARM и PARM 2. Для DM12 исторически названа Daimler-Benz Aerospace AG, для DM22 — Deutsche Aerospace AG. Это названия изготовителей периода описания, без утверждения о современной производственной линии.\n\nОбщий силуэт образует вытянутый горизонтальный корпус на треноге. На фотографии DM12 видны зелёные поверхности, чёрная торцевая область и три разнесённые ноги опоры. Полная масса PARM 1 / DM12 приводится как 10 кг, PARM 2 / DM22 — 20 кг.\n\nУ DM12 записаны размерные поля 390 / 128 мм, у DM22 — отдельное наружное поле 300–700 мм и диаметр 110 мм. Эти записи не сведены в универсальные габариты семейства. Практический вариант DM58 сохраняет собственное обозначение и не является синонимом DM12 или DM22.\n\n## Характеристики\n\n| Параметр | Значение |\n| --- | --- |\n| Обозначения семейства | DM12 / PARM; DM22 / PARM 2 |\n| Изготовитель DM12 по тексту | Daimler-Benz Aerospace AG |\n| Изготовитель DM22 по тексту | Deutsche Aerospace AG |\n| Связанный практический вариант | DM58 |\n| Внешняя компоновка | Удлинённый корпус на треноге |\n| PARM 1 / DM12: полная масса | 10 кг |\n| PARM 1 / DM12: размерные поля L / D | 390 / 128 мм |\n| PARM 2 / DM22: полная масса | 20 кг |\n| PARM 2 / DM22: наружное размерное поле GICHD | 300–700 мм; диаметр 110 мм |\n\n## При обнаружении\n\nВнешний вид не подтверждает безопасность предмета. Остановитесь, не приближайтесь, не трогайте и не перемещайте его. Предупредите окружающих и сообщите местным экстренным службам. При подозрении на мину оставайтесь на месте до помощи специалистов.\n"
+      },
+      "after": {
+        "images": [
+          {
+            "id": "reference-v6-df08e881d21bb13e",
+            "localPath": "images/school3-3b9ab16fe68d.jpg",
+            "thumbnailPath": "thumbs/school3-3b9ab16fe68d.jpg",
+            "caption": "По подписи PDF: ПРОТИВОТАНКОВАЯ МИНА  DM12 (Германия). «DM12 для школы.pdf», PDF-стр. 1. Исходная окраска сохранена, разрешение не увеличено. Автор и отдельная лицензия иллюстрации не установлены.",
+            "width": 886,
+            "height": 785,
+            "position": 0
+          }
+        ],
+        "thumbnailPath": "thumbs/school3-3b9ab16fe68d.jpg",
+        "sources": [
+          {
+            "id": "eng-parm-family-gichd-v174",
+            "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), PDF / печатная с. 26: PARM 2 / DM-22",
+            "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+            "accessedAt": "2026-10-04"
+          },
+          {
+            "id": "eng-parm-family-reference-v174",
+            "title": "U.S. Army / TRADOC — Worldwide Equipment Guide, Vol. 1: Ground Systems (2015), PDF 463",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/1/1f/WorldwideEquipmentGuide_2015_Ground_Systems.pdf",
+            "accessedAt": "2026-10-04"
+          },
+          {
+            "id": "pdf-v4-058-01",
+            "title": "Предоставленный PDF «Иностранные мины 2» — PDF-стр. 170-174",
+            "url": null,
+            "accessedAt": "2026-09-09"
+          },
+          {
+            "id": "pdf-v4-058-02",
+            "title": "Предоставленный PDF «Справочник сапера “Минлей”» (2025) — PDF-стр. 137–138",
+            "url": null,
+            "accessedAt": "2026-09-09"
+          },
+          {
+            "id": "pdf-v4-058-03",
+            "title": "Предоставленный PDF «Иностранные БП, СВ, ВВ без фоновых ссылок» — PDF-стр. 75-84",
+            "url": null,
+            "accessedAt": "2026-09-09"
+          },
+          {
+            "id": "pdf-v4-058-gichd",
+            "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (границы распознавания)",
+            "url": "https://www.gichd.org/publications-resources/publications/explosive-ordnance-guide-for-ukraine-third-edition/",
+            "accessedAt": "2026-09-09"
+          },
+          {
+            "id": "reference-v5-safety-eng-parm-family",
+            "title": "IFRC — Mines & Explosive Remnants of War: при обнаружении",
+            "url": "https://ifrcstaysafe.org/dangerous-situations/mines",
+            "accessedAt": "2026-09-09"
+          },
+          {
+            "id": "reference-v6-ff39a6e5341fc358d88e",
+            "title": "Предоставленный PDF «Иностранные мины 2» — PDF-стр. 170, 171, 175",
+            "url": null,
+            "accessedAt": "2026-09-09"
+          },
+          {
+            "id": "eng-parm-family-school3-16-p1-f0",
+            "title": "Предоставленный PDF «DM12 для школы.pdf», PDF-стр. 1; SHA-256 f43b16940b7e4f590ff0186a5661df6523285aa1679689f77f5bb6898d91c169. Использована иллюстрация наружного вида по подписи источника.",
+            "url": null,
+            "accessedAt": "2026-10-28"
+          }
+        ],
+        "body": "## Страна и происхождение\n\nГермания (ФРГ) — страна, указанная в заголовке статьи\n\n## Описание\n\nDM12 и DM22 — родственные германские модели, известные как PARM и PARM 2. Для DM12 исторически названа Daimler-Benz Aerospace AG, для DM22 — Deutsche Aerospace AG. Это названия изготовителей периода описания, без утверждения о современной производственной линии.\n\nОбщий силуэт образует вытянутый горизонтальный корпус на треноге. На фотографии DM12 видны зелёные поверхности, чёрная торцевая область и три разнесённые ноги опоры. Полная масса PARM 1 / DM12 приводится как 10 кг, PARM 2 / DM22 — 20 кг.\n\nУ DM12 записаны размерные поля 390 / 128 мм, у DM22 — отдельное наружное поле 300–700 мм и диаметр 110 мм. Эти записи не сведены в универсальные габариты семейства. Практический вариант DM58 сохраняет собственное обозначение и не является синонимом DM12 или DM22.\n\n## Характеристики\n\n| Параметр | Значение |\n| --- | --- |\n| Обозначения семейства | DM12 / PARM; DM22 / PARM 2 |\n| Изготовитель DM12 по тексту | Daimler-Benz Aerospace AG |\n| Изготовитель DM22 по тексту | Deutsche Aerospace AG |\n| Связанный практический вариант | DM58 |\n| Внешняя компоновка | Удлинённый корпус на треноге |\n| PARM 1 / DM12: полная масса | 10 кг |\n| PARM 1 / DM12: размерные поля L / D | 390 / 128 мм |\n| PARM 2 / DM22: полная масса | 20 кг |\n| PARM 2 / DM22: наружное размерное поле GICHD | 300–700 мм; диаметр 110 мм |\n\n## При обнаружении\n\nВнешний вид не подтверждает безопасность предмета. Остановитесь, не приближайтесь, не трогайте и не перемещайте его. Предупредите окружающих и сообщите местным экстренным службам. При подозрении на мину оставайтесь на месте до помощи специалистов.\n"
+      }
+    },
+    {
+      "cardId": "mine-audit-v25-su-tm-83",
+      "before": {
+        "images": [
+          {
+            "id": "img-v44-tm83-open",
+            "localPath": "images/v44-tm83-open.webp",
+            "caption": "ТМ-83 - На полигоне инженерных войск в подмосковном Николо-Урюпино показали боевую работу Уран-6 и Уран-14 01. Точное визуальное соответствие карточке.",
+            "width": 720,
+            "height": 480,
+            "position": 0,
+            "thumbnailPath": "thumbs/v44-tm83-open-thumb.webp"
+          }
+        ],
+        "thumbnailPath": "thumbs/v44-tm83-open-thumb.webp",
+        "sources": [
+          {
+            "id": "mine-audit-v25-su-tm-83-filling-v160",
+            "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 24: наполнение",
+            "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+            "accessedAt": "2026-10-04"
+          },
+          {
+            "id": "mine-audit-v25-su-tm-83-source-0",
+            "title": "U.S. Department of the Army — FM 3-34.2 Combined-Arms Breaching Operations, Appendix B (2002)",
+            "url": "https://www.globalsecurity.org/military/library/policy/army/fm/3-34-2/appb.htm",
+            "accessedAt": "2026-09-11"
+          },
+          {
+            "id": "mine-audit-v25-su-tm-83-specs-v146-gichd",
+            "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 24: масса и габариты",
+            "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+            "accessedAt": "2026-10-04"
+          },
+          {
+            "id": "src-v44-commons-tm83",
+            "title": "Wikimedia Commons: ТМ-83 - На полигоне инженерных войск в подмосковном Николо-Урюпино показали боевую работу Уран-6 и Уран-14 01.jpg",
+            "url": "https://commons.wikimedia.org/wiki/File:%D0%A2%D0%9C-83_-_%D0%9D%D0%B0_%D0%BF%D0%BE%D0%BB%D0%B8%D0%B3%D0%BE%D0%BD%D0%B5_%D0%B8%D0%BD%D0%B6%D0%B5%D0%BD%D0%B5%D1%80%D0%BD%D1%8B%D1%85_%D0%B2%D0%BE%D0%B9%D1%81%D0%BA_%D0%B2_%D0%BF%D0%BE%D0%B4%D0%BC%D0%BE%D1%81%D0%BA%D0%BE%D0%B2%D0%BD%D0%BE%D0%BC_%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%BE-%D0%A3%D1%80%D1%8E%D0%BF%D0%B8%D0%BD%D0%BE_%D0%BF%D0%BE%D0%BA%D0%B0%D0%B7%D0%B0%D0%BB%D0%B8_%D0%B1%D0%BE%D0%B5%D0%B2%D1%83%D1%8E_%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%83_%D0%A3%D1%80%D0%B0%D0%BD-6_%D0%B8_%D0%A3%D1%80%D0%B0%D0%BD-14_01.jpg",
+            "accessedAt": "2026-09-17"
+          },
+          {
+            "id": "mine-audit-v25-su-tm-83-pdf198-4-108",
+            "title": "Предоставленный PDF «Информационно-справочный материал 2025.pdf», PDF-стр. 108; SHA-256 4952b939ed10dccddc5e3ee2070eadd49e060a2a2403b9e286e9f71e1f89cd80. Самостоятельная достоверность каждого индекса и права на иллюстрации не подтверждены.",
+            "url": null,
+            "accessedAt": "2026-10-28"
+          }
+        ],
+        "body": "## Страна и происхождение\n\nСССР / Россия\n\n## Описание\n\nТМ-83 — противобортовая мина советской и российской номенклатуры. Название класса отражает её отличие от привычных плоских противотанковых мин: это отдельная группа изделий с иными пропорциями и внешним оформлением.\n\nДля ТМ-83 указаны диаметр 250 мм и высота 440 мм на подставке. Второй размер относится ко всему представленному изделию вместе с опорой, поэтому его нельзя сравнивать напрямую с высотой одного корпуса ТМ-57 или ТМ-62М.\n\nВ справочной записи полная масса дана как 20 400 г (20,4 кг), а масса взрывчатого вещества — отдельно. Фотография в карточке показывает конкретный демонстрационный образец; наружные элементы на ней не следует принимать за обязательную комплектацию всех экземпляров.\n\n## Характеристики\n\n| Параметр | Значение |\n| --- | --- |\n| Полная масса | 20 400 г (20,4 кг) |\n| Габариты | 250 мм (диаметр), 440 мм (высота на подставке) |\n| Тип ВВ — ТМ-83 | TG-40 |\n| Масса ВВ — ТМ-83 | 9 600 г (9,6 кг) |\n\n## При обнаружении\n\nВнешний вид не подтверждает безопасность предмета. Не приближайтесь, не трогайте и не перемещайте его. Предупредите окружающих и сообщите местным экстренным службам.\n"
+      },
+      "after": {
+        "images": [
+          {
+            "id": "img-v44-tm83-open",
+            "localPath": "images/school3-7d0fe6e12a27.jpg",
+            "thumbnailPath": "thumbs/school3-7d0fe6e12a27.jpg",
+            "caption": "По подписи PDF: ПРОТИВОТАНКОВАЯ МИНА  ТМ-83. «ТМ-83 для школы.pdf», PDF-стр. 1. Исходная окраска сохранена, разрешение не увеличено. Автор и отдельная лицензия иллюстрации не установлены.",
+            "width": 654,
+            "height": 786,
+            "position": 0
+          }
+        ],
+        "thumbnailPath": "thumbs/school3-7d0fe6e12a27.jpg",
+        "sources": [
+          {
+            "id": "mine-audit-v25-su-tm-83-filling-v160",
+            "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 24: наполнение",
+            "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+            "accessedAt": "2026-10-04"
+          },
+          {
+            "id": "mine-audit-v25-su-tm-83-source-0",
+            "title": "U.S. Department of the Army — FM 3-34.2 Combined-Arms Breaching Operations, Appendix B (2002)",
+            "url": "https://www.globalsecurity.org/military/library/policy/army/fm/3-34-2/appb.htm",
+            "accessedAt": "2026-09-11"
+          },
+          {
+            "id": "mine-audit-v25-su-tm-83-specs-v146-gichd",
+            "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 24: масса и габариты",
+            "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+            "accessedAt": "2026-10-04"
+          },
+          {
+            "id": "src-v44-commons-tm83",
+            "title": "Wikimedia Commons: ТМ-83 - На полигоне инженерных войск в подмосковном Николо-Урюпино показали боевую работу Уран-6 и Уран-14 01.jpg",
+            "url": "https://commons.wikimedia.org/wiki/File:%D0%A2%D0%9C-83_-_%D0%9D%D0%B0_%D0%BF%D0%BE%D0%BB%D0%B8%D0%B3%D0%BE%D0%BD%D0%B5_%D0%B8%D0%BD%D0%B6%D0%B5%D0%BD%D0%B5%D1%80%D0%BD%D1%8B%D1%85_%D0%B2%D0%BE%D0%B9%D1%81%D0%BA_%D0%B2_%D0%BF%D0%BE%D0%B4%D0%BC%D0%BE%D1%81%D0%BA%D0%BE%D0%B2%D0%BD%D0%BE%D0%BC_%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%BE-%D0%A3%D1%80%D1%8E%D0%BF%D0%B8%D0%BD%D0%BE_%D0%BF%D0%BE%D0%BA%D0%B0%D0%B7%D0%B0%D0%BB%D0%B8_%D0%B1%D0%BE%D0%B5%D0%B2%D1%83%D1%8E_%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%83_%D0%A3%D1%80%D0%B0%D0%BD-6_%D0%B8_%D0%A3%D1%80%D0%B0%D0%BD-14_01.jpg",
+            "accessedAt": "2026-09-17"
+          },
+          {
+            "id": "mine-audit-v25-su-tm-83-pdf198-4-108",
+            "title": "Предоставленный PDF «Информационно-справочный материал 2025.pdf», PDF-стр. 108; SHA-256 4952b939ed10dccddc5e3ee2070eadd49e060a2a2403b9e286e9f71e1f89cd80. Самостоятельная достоверность каждого индекса и права на иллюстрации не подтверждены.",
+            "url": null,
+            "accessedAt": "2026-10-28"
+          },
+          {
+            "id": "mine-audit-v25-su-tm-83-school3-18-p1-f0",
+            "title": "Предоставленный PDF «ТМ-83 для школы.pdf», PDF-стр. 1; SHA-256 5b71e44f5539560e8329bfc01a1436047dfbc231646380a3e2707204ed5f96f0. Использована иллюстрация наружного вида по подписи источника.",
+            "url": null,
+            "accessedAt": "2026-10-28"
+          }
+        ],
+        "body": "## Страна и происхождение\n\nСССР / Россия\n\n## Описание\n\nТМ-83 — противобортовая мина советской и российской номенклатуры. Название класса отражает её отличие от привычных плоских противотанковых мин: это отдельная группа изделий с иными пропорциями и внешним оформлением.\n\nДля ТМ-83 указаны диаметр 250 мм и высота 440 мм на подставке. Второй размер относится ко всему представленному изделию вместе с опорой, поэтому его нельзя сравнивать напрямую с высотой одного корпуса ТМ-57 или ТМ-62М.\n\nВ справочной записи полная масса дана как 20 400 г (20,4 кг), а масса взрывчатого вещества — отдельно. Фотография в карточке показывает конкретный демонстрационный образец; наружные элементы на ней не следует принимать за обязательную комплектацию всех экземпляров.\n\n## Характеристики\n\n| Параметр | Значение |\n| --- | --- |\n| Полная масса | 20 400 г (20,4 кг) |\n| Габариты | 250 мм (диаметр), 440 мм (высота на подставке) |\n| Тип ВВ — ТМ-83 | TG-40 |\n| Масса ВВ — ТМ-83 | 9 600 г (9,6 кг) |\n\n## При обнаружении\n\nВнешний вид не подтверждает безопасность предмета. Не приближайтесь, не трогайте и не перемещайте его. Предупредите окружающих и сообщите местным экстренным службам.\n"
+      }
+    },
+    {
+      "cardId": "ref-v8-tm-62p3",
+      "before": {
+        "images": [
+          {
+            "id": "photo-v178-437bef23d02f5f95",
+            "localPath": "images/photo-v178-437bef23d02f5f95.webp",
+            "caption": "ТМ-62П3: внешний вид корпуса. Фото: ДСНС Украины. Wikimedia Commons, ТМ-62П3.jpg; первичный источник mine.dsns.gov.ua. CC BY 4.0.",
+            "width": 750,
+            "height": 750,
+            "position": 0,
+            "thumbnailPath": "thumbs/photo-v178-437bef23d02f5f95.webp"
+          }
+        ],
+        "thumbnailPath": "thumbs/photo-v178-437bef23d02f5f95.webp",
+        "sources": [
+          {
+            "id": "license-photo-v178-437bef23d02f5f95",
+            "title": "Условия использования фотографии №178: CC BY 4.0",
+            "url": "https://creativecommons.org/licenses/by/4.0",
+            "accessedAt": "2026-10-10"
+          },
+          {
+            "id": "ref-v8-tm-62p3-audit-source",
+            "title": "Министерство обороны СССР, Воениздат — Инженерные боеприпасы. Руководство по материальной части и применению. Книга 3 (1979)",
+            "url": "https://djvu.online/file/vgCsPFecLU1tb",
+            "accessedAt": "2026-09-11"
+          },
+          {
+            "id": "ref-v8-tm-62p3-filling-v160",
+            "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 22: наполнение",
+            "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+            "accessedAt": "2026-10-04"
+          },
+          {
+            "id": "ref-v8-tm-62p3-source-0",
+            "title": "Збройні Сили України — «Інженерна підготовка», 10.01.2019 — PDF-стр. 6",
+            "url": "https://ivms.mil.gov.ua/wp-content/uploads/2023/01/inzhenerna-pidgotovka.pdf",
+            "accessedAt": "2026-09-09"
+          },
+          {
+            "id": "ref-v8-tm-62p3-v13-source-0",
+            "title": "GICHD — Explosive Ordnance Guide for Ukraine (2022) — PDF-стр. 25",
+            "url": "https://www.gichd.org/fileadmin/uploads/gichd/Publications/GICHD_Explosive_Ordnance_Guide_for_Ukraine_2022_v18.pdf",
+            "accessedAt": "2026-09-10"
+          },
+          {
+            "id": "source-photo-v178-437bef23d02f5f95",
+            "title": "Источник фотографии №178: ТМ-62П3 (CC BY 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:%D0%A2%D0%9C-62%D0%9F3.jpg",
+            "accessedAt": "2026-10-10"
+          },
+          {
+            "id": "ref-v8-tm-62p3-pdf198-4-99",
+            "title": "Предоставленный PDF «Информационно-справочный материал 2025.pdf», PDF-стр. 99; SHA-256 4952b939ed10dccddc5e3ee2070eadd49e060a2a2403b9e286e9f71e1f89cd80. Самостоятельная достоверность каждого индекса и права на иллюстрации не подтверждены.",
+            "url": null,
+            "accessedAt": "2026-10-28"
+          }
+        ],
+        "body": "## Страна и происхождение\n\nВ проверенной таблице страна производства не указана\n\n## Описание\n\nТМ-62П3 — противотанковая мина семейства ТМ-62 с полиэтиленовым корпусом. В этой номенклатуре индекс уточняет исполнение: ТМ-62П3 и металлическая ТМ-62М относятся к одному семейству, но различаются материалом корпуса и справочными параметрами.\n\nОсновное описание приводит круглое изделие диаметром 320 мм, высотой 128 мм и полной массой 8–8,7 кг. Полиэтилен — материал корпуса, а не обозначение заряда; полная масса изделия и масса взрывчатого вещества также вынесены в разные строки.\n\nДругой справочник даёт 8 000 г (8,0 кг) и размеры 310 × 85 мм, не уточняя оси и комплектацию. Эта запись оставлена отдельно. Выбирать один из двух наборов как универсальный стандарт без дополнительного документа было бы неточно.\n\n## Характеристики\n\n| Параметр | Значение |\n| --- | --- |\n| Материал корпуса | Полиэтилен |\n| Полная масса | 8–8,7 кг |\n| Диаметр | 320 мм |\n| Высота | 128 мм |\n| Тип ВВ — ТМ-62П3 | TNT |\n| Масса ВВ — ТМ-62П3 | 6 500 г (6,5 кг) |\n| Полная масса — ТМ-62П3 | 8 000 г (8,0 кг) |\n| Габариты — ТМ-62П3 | 310 × 85 мм; оси и комплектация в таблице не подписаны |\n\n## При обнаружении\n\nВнешний вид не подтверждает безопасность предмета. Остановитесь, не приближайтесь, не трогайте и не перемещайте его. Предупредите окружающих и сообщите местным экстренным службам. При подозрении на мину оставайтесь на месте до помощи специалистов.\n"
+      },
+      "after": {
+        "images": [
+          {
+            "id": "photo-v178-437bef23d02f5f95",
+            "localPath": "images/school3-395ebb3c74d2.jpg",
+            "thumbnailPath": "thumbs/school3-395ebb3c74d2.jpg",
+            "caption": "По подписи PDF: ПРОТИВОТАНКОВАЯ МИНА  ТМ-62П3. «ТМ-62П3 для школы.pdf», PDF-стр. 1. Исходная окраска сохранена, разрешение не увеличено. Автор и отдельная лицензия иллюстрации не установлены.",
+            "width": 985,
+            "height": 715,
+            "position": 0
+          }
+        ],
+        "thumbnailPath": "thumbs/school3-395ebb3c74d2.jpg",
+        "sources": [
+          {
+            "id": "license-photo-v178-437bef23d02f5f95",
+            "title": "Условия использования фотографии №178: CC BY 4.0",
+            "url": "https://creativecommons.org/licenses/by/4.0",
+            "accessedAt": "2026-10-10"
+          },
+          {
+            "id": "ref-v8-tm-62p3-audit-source",
+            "title": "Министерство обороны СССР, Воениздат — Инженерные боеприпасы. Руководство по материальной части и применению. Книга 3 (1979)",
+            "url": "https://djvu.online/file/vgCsPFecLU1tb",
+            "accessedAt": "2026-09-11"
+          },
+          {
+            "id": "ref-v8-tm-62p3-filling-v160",
+            "title": "GICHD — Explosive Ordnance Guide for Ukraine, Third Edition (2025), стр. 22: наполнение",
+            "url": "https://www.gichd.org/fileadmin/user_upload/Explosive_Ordnance_Guide_for_Ukraine__GICHD___Third_Edition.pdf",
+            "accessedAt": "2026-10-04"
+          },
+          {
+            "id": "ref-v8-tm-62p3-source-0",
+            "title": "Збройні Сили України — «Інженерна підготовка», 10.01.2019 — PDF-стр. 6",
+            "url": "https://ivms.mil.gov.ua/wp-content/uploads/2023/01/inzhenerna-pidgotovka.pdf",
+            "accessedAt": "2026-09-09"
+          },
+          {
+            "id": "ref-v8-tm-62p3-v13-source-0",
+            "title": "GICHD — Explosive Ordnance Guide for Ukraine (2022) — PDF-стр. 25",
+            "url": "https://www.gichd.org/fileadmin/uploads/gichd/Publications/GICHD_Explosive_Ordnance_Guide_for_Ukraine_2022_v18.pdf",
+            "accessedAt": "2026-09-10"
+          },
+          {
+            "id": "source-photo-v178-437bef23d02f5f95",
+            "title": "Источник фотографии №178: ТМ-62П3 (CC BY 4.0)",
+            "url": "https://commons.wikimedia.org/wiki/File:%D0%A2%D0%9C-62%D0%9F3.jpg",
+            "accessedAt": "2026-10-10"
+          },
+          {
+            "id": "ref-v8-tm-62p3-pdf198-4-99",
+            "title": "Предоставленный PDF «Информационно-справочный материал 2025.pdf», PDF-стр. 99; SHA-256 4952b939ed10dccddc5e3ee2070eadd49e060a2a2403b9e286e9f71e1f89cd80. Самостоятельная достоверность каждого индекса и права на иллюстрации не подтверждены.",
+            "url": null,
+            "accessedAt": "2026-10-28"
+          },
+          {
+            "id": "ref-v8-tm-62p3-school3-19-p1-f0",
+            "title": "Предоставленный PDF «ТМ-62П3 для школы.pdf», PDF-стр. 1; SHA-256 f4512a8a5138c846ff6c49610e3c2cac973a13c21be5a1363b8c8f39f8819fba. Использована иллюстрация наружного вида по подписи источника.",
+            "url": null,
+            "accessedAt": "2026-10-28"
+          }
+        ],
+        "body": "## Страна и происхождение\n\nВ проверенной таблице страна производства не указана\n\n## Описание\n\nТМ-62П3 — противотанковая мина семейства ТМ-62 с полиэтиленовым корпусом. В этой номенклатуре индекс уточняет исполнение: ТМ-62П3 и металлическая ТМ-62М относятся к одному семейству, но различаются материалом корпуса и справочными параметрами.\n\nОсновное описание приводит круглое изделие диаметром 320 мм, высотой 128 мм и полной массой 8–8,7 кг. Полиэтилен — материал корпуса, а не обозначение заряда; полная масса изделия и масса взрывчатого вещества также вынесены в разные строки.\n\nДругой справочник даёт 8 000 г (8,0 кг) и размеры 310 × 85 мм, не уточняя оси и комплектацию. Эта запись оставлена отдельно. Выбирать один из двух наборов как универсальный стандарт без дополнительного документа было бы неточно.\n\n## Характеристики\n\n| Параметр | Значение |\n| --- | --- |\n| Материал корпуса | Полиэтилен |\n| Полная масса | 8–8,7 кг |\n| Диаметр | 320 мм |\n| Высота | 128 мм |\n| Тип ВВ — ТМ-62П3 | TNT |\n| Масса ВВ — ТМ-62П3 | 6 500 г (6,5 кг) |\n| Полная масса — ТМ-62П3 | 8 000 г (8,0 кг) |\n| Габариты — ТМ-62П3 | 310 × 85 мм; оси и комплектация в таблице не подписаны |\n\n## При обнаружении\n\nВнешний вид не подтверждает безопасность предмета. Остановитесь, не приближайтесь, не трогайте и не перемещайте его. Предупредите окружающих и сообщите местным экстренным службам. При подозрении на мину оставайтесь на месте до помощи специалистов.\n"
+      }
+    }
+  ],
+  "summary": {
+    "pdfFiles": 20,
+    "pdfPages": 22,
+    "acceptedExteriorFigures": 20,
+    "replacedGalleryRows": 10,
+    "addedGalleryRows": 10,
+    "updatedExistingCards": 18,
+    "newSourceOnlyCards": 1,
+    "skippedFigures": 4,
+    "cardCount": 2717,
+    "imageCount": 2153,
+    "androidImportTested": false,
+    "published": false
+  },
+  "review": [
+    {
+      "file": "М14.pdf",
+      "page": 1,
+      "figure": 0,
+      "decision": "add-distinct-exterior-view",
+      "cardId": "eng-m14-ap-mine",
+      "asset": {
+        "id": "eng-m14-ap-mine-school3-0389e3e5538c",
+        "localPath": "images/school3-0389e3e5538c.jpg",
+        "thumbnailPath": "thumbs/school3-0389e3e5538c.jpg",
+        "caption": "M14 — наружный вид показанного образца. «М14.pdf», PDF-стр. 1. Исходная окраска сохранена, разрешение не увеличено. Авторская отметка источника: ©Веремеев Ю.; сохранена на снимке. Отдельная лицензия не установлена.",
+        "width": 332,
+        "height": 336,
+        "position": 1
+      },
+      "nativeSize": [
+        332,
+        336
+      ]
+    },
+    {
+      "file": "М14.pdf",
+      "page": 1,
+      "figure": 1,
+      "decision": "skip-section-or-duplicate-hand-view"
+    },
+    {
+      "file": "ПФМ для школы.pdf",
+      "page": 1,
+      "figure": 0,
+      "decision": "add-distinct-exterior-view",
+      "cardId": "eng-pfm-1",
+      "asset": {
+        "id": "eng-pfm-1-school3-fb4d0cc52a11",
+        "localPath": "images/school3-fb4d0cc52a11.jpg",
+        "thumbnailPath": "thumbs/school3-fb4d0cc52a11.jpg",
+        "caption": "По подписи PDF: ПРОТИВОПЕХОТНАЯ ФУГАСНАЯ МИНА  ПФМ-1. «ПФМ для школы.pdf», PDF-стр. 1. Исходная окраска сохранена, разрешение не увеличено. Автор и отдельная лицензия иллюстрации не установлены.",
+        "width": 1536,
+        "height": 863,
+        "position": 1
+      },
+      "nativeSize": [
+        1536,
+        863
+      ]
+    },
+    {
+      "file": "ПМН-4 для школы.pdf",
+      "page": 1,
+      "figure": 0,
+      "decision": "replace-existing-image",
+      "cardId": "ref-v8-pmn-4",
+      "asset": {
+        "id": "photo-v178-c55ac640ef12f2f4",
+        "localPath": "images/school3-b7fdb48710a0.jpg",
+        "thumbnailPath": "thumbs/school3-b7fdb48710a0.jpg",
+        "caption": "По подписи PDF: ПРОТИВОПЕХОТНАЯ ФУГАСНАЯ МИНА  ПМН-4. «ПМН-4 для школы.pdf», PDF-стр. 1. Исходная окраска сохранена, разрешение не увеличено. Автор и отдельная лицензия иллюстрации не установлены.",
+        "width": 1232,
+        "height": 977,
+        "position": 0
+      },
+      "nativeSize": [
+        1232,
+        977
+      ]
+    },
+    {
+      "file": "TS-6_1 для школы.pdf",
+      "page": 1,
+      "figure": 0,
+      "decision": "new-card-and-image",
+      "cardId": "pdf198-school3-ts-6-1",
+      "asset": {
+        "id": "pdf198-school3-ts-6-1-school3-3bd003191f35",
+        "localPath": "images/school3-3bd003191f35.jpg",
+        "thumbnailPath": "thumbs/school3-3bd003191f35.jpg",
+        "caption": "По подписи PDF: ПРОТИВОТАНКОВАЯ МИНА  TS-6,1 (Италия). «TS-6_1 для школы.pdf», PDF-стр. 1. Исходная окраска сохранена, разрешение не увеличено. Автор и отдельная лицензия иллюстрации не установлены.",
+        "width": 670,
+        "height": 674,
+        "position": 0
+      },
+      "nativeSize": [
+        670,
+        674
+      ]
+    },
+    {
+      "file": "VS-50 для школы.pdf",
+      "page": 1,
+      "figure": 0,
+      "decision": "add-clear-primary-view-retain-family-photo",
+      "cardId": "eng-vs-50-family",
+      "asset": {
+        "id": "eng-vs-50-family-school3-8858517a083e",
+        "localPath": "images/school3-8858517a083e.jpg",
+        "thumbnailPath": "thumbs/school3-8858517a083e.jpg",
+        "caption": "По подписи PDF: ПРОТИВОПЕХОТНАЯ МИНА  VS-50 (Италия). «VS-50 для школы.pdf», PDF-стр. 1. Исходная окраска сохранена, разрешение не увеличено. Автор и отдельная лицензия иллюстрации не установлены.",
+        "width": 680,
+        "height": 603,
+        "position": 0
+      },
+      "nativeSize": [
+        680,
+        603
+      ]
+    },
+    {
+      "file": "RGZ-89 для школы.pdf",
+      "page": 1,
+      "figure": 0,
+      "decision": "replace-existing-image",
+      "cardId": "ordnance-v29-ga-0113",
+      "asset": {
+        "id": "ordnance-v29-ga-0113-rgz89-attribution",
+        "localPath": "images/school3-07a2b6cc51fb.jpg",
+        "thumbnailPath": "thumbs/school3-07a2b6cc51fb.jpg",
+        "caption": "По подписи PDF: РУЧНАЯ ГРАНАТА  RGZ-89 (Польша). «RGZ-89 для школы.pdf», PDF-стр. 1. Исходная окраска сохранена, разрешение не увеличено. Автор и отдельная лицензия иллюстрации не установлены.",
+        "width": 500,
+        "height": 1004,
+        "position": 0
+      },
+      "nativeSize": [
+        500,
+        1004
+      ]
+    },
+    {
+      "file": "SB-33 для школы.pdf",
+      "page": 1,
+      "figure": 0,
+      "decision": "replace-existing-image",
+      "cardId": "eng-sb-33-family",
+      "asset": {
+        "id": "reference-v6-07716e8a5712e531",
+        "localPath": "images/school3-8a02fb668e37.jpg",
+        "thumbnailPath": "thumbs/school3-8a02fb668e37.jpg",
+        "caption": "По подписи PDF: ПРОТИВОПЕХОТНАЯ МИНА  SB-33 (Италия). «SB-33 для школы.pdf», PDF-стр. 1. Исходная окраска сохранена, разрешение не увеличено. Автор и отдельная лицензия иллюстрации не установлены.",
+        "width": 691,
+        "height": 435,
+        "position": 0
+      },
+      "nativeSize": [
+        691,
+        435
+      ]
+    },
+    {
+      "file": "RG-4 для школы.pdf",
+      "page": 1,
+      "figure": 0,
+      "decision": "replace-existing-image",
+      "cardId": "pdf198-3-ab17da441cd9",
+      "asset": {
+        "id": "pdf198-3-ab17da441cd9-exterior",
+        "localPath": "images/school3-d81638a8bb73.jpg",
+        "thumbnailPath": "thumbs/school3-d81638a8bb73.jpg",
+        "caption": "По подписи PDF: РУЧНАЯ ГРАНАТА  RG-4 (Чехия). «RG-4 для школы.pdf», PDF-стр. 1. Исходная окраска сохранена, разрешение не увеличено. Автор и отдельная лицензия иллюстрации не установлены.",
+        "width": 461,
+        "height": 607,
+        "position": 0
+      },
+      "nativeSize": [
+        461,
+        607
+      ]
+    },
+    {
+      "file": "RGO-78 для школы.pdf",
+      "page": 1,
+      "figure": 0,
+      "decision": "replace-existing-image",
+      "cardId": "pdf198-3-dc34947e98c4",
+      "asset": {
+        "id": "pdf198-3-dc34947e98c4-exterior",
+        "localPath": "images/school3-12af873f5960.jpg",
+        "thumbnailPath": "thumbs/school3-12af873f5960.jpg",
+        "caption": "По подписи PDF: РУЧНАЯ ГРАНАТА  RGO-78 (Болгария). «RGO-78 для школы.pdf», PDF-стр. 1. Исходная окраска сохранена, разрешение не увеличено. Автор и отдельная лицензия иллюстрации не установлены.",
+        "width": 787,
+        "height": 1161,
+        "position": 0
+      },
+      "nativeSize": [
+        787,
+        1161
+      ]
+    },
+    {
+      "file": "M67 для школы.pdf",
+      "page": 1,
+      "figure": 0,
+      "decision": "add-distinct-exterior-view",
+      "cardId": "grenade-m67",
+      "asset": {
+        "id": "grenade-m67-school3-72206112ea79",
+        "localPath": "images/school3-72206112ea79.jpg",
+        "thumbnailPath": "thumbs/school3-72206112ea79.jpg",
+        "caption": "По подписи PDF: РУЧНАЯ ГРАНАТА  M67 (США). «M67 для школы.pdf», PDF-стр. 1. Исходная окраска сохранена, разрешение не увеличено. Автор и отдельная лицензия иллюстрации не установлены.",
+        "width": 735,
+        "height": 1012,
+        "position": 2
+      },
+      "nativeSize": [
+        735,
+        1012
+      ]
+    },
+    {
+      "file": "M67 для школы.pdf",
+      "page": 1,
+      "figure": 1,
+      "decision": "skip-section-or-duplicate-hand-view"
+    },
+    {
+      "file": "HPD F2 для школы.pdf",
+      "page": 1,
+      "figure": 0,
+      "decision": "add-distinct-exterior-view",
+      "cardId": "eng-pdf-v7-023",
+      "asset": {
+        "id": "eng-pdf-v7-023-school3-0473beca97d5",
+        "localPath": "images/school3-0473beca97d5.jpg",
+        "thumbnailPath": "thumbs/school3-0473beca97d5.jpg",
+        "caption": "По подписи PDF: ПРОТИВОТАНКОВАЯ МИНА  HPD F2 (Франция). «HPD F2 для школы.pdf», PDF-стр. 1. Для семейства HPD изображён подписанный в этом PDF вариант HPD F2. Исходная окраска сохранена, разрешение не увеличено. Автор и отдельная лицензия иллюстрации не установлены.",
+        "width": 660,
+        "height": 517,
+        "position": 1
+      },
+      "nativeSize": [
+        660,
+        517
+      ]
+    },
+    {
+      "file": "GHO-1 RDX для школы.pdf",
+      "page": 1,
+      "figure": 0,
+      "decision": "replace-existing-image",
+      "cardId": "pdf198-3-f8e2441edc1d",
+      "asset": {
+        "id": "pdf198-3-f8e2441edc1d-exterior",
+        "localPath": "images/school3-7748fe5ab404.jpg",
+        "thumbnailPath": "thumbs/school3-7748fe5ab404.jpg",
+        "caption": "По подписи PDF: РУЧНАЯ ГРАНАТА  GHO-1 RDX (Болгария). «GHO-1 RDX для школы.pdf», PDF-стр. 1. Исходная окраска сохранена, разрешение не увеличено. Автор и отдельная лицензия иллюстрации не установлены.",
+        "width": 314,
+        "height": 495,
+        "position": 0
+      },
+      "nativeSize": [
+        314,
+        495
+      ]
+    },
+    {
+      "file": "DM51 для школы.pdf",
+      "page": 1,
+      "figure": 0,
+      "decision": "add-distinct-exterior-view",
+      "cardId": "grenade-dm51",
+      "asset": {
+        "id": "grenade-dm51-school3-1efa063436a7",
+        "localPath": "images/school3-1efa063436a7.jpg",
+        "thumbnailPath": "thumbs/school3-1efa063436a7.jpg",
+        "caption": "По подписи PDF: РУЧНАЯ ГРАНАТА  DM51 (Германия). «DM51 для школы.pdf», PDF-стр. 1. Показанные в источнике наружные корпуса; внутренний разрез не включён. Исходная окраска сохранена, разрешение не увеличено. Автор и отдельная лицензия иллюстрации не установлены.",
+        "width": 1128,
+        "height": 1000,
+        "position": 1
+      },
+      "nativeSize": [
+        1128,
+        1000
+      ]
+    },
+    {
+      "file": "DM51 для школы.pdf",
+      "page": 1,
+      "figure": 1,
+      "decision": "skip-section-or-duplicate-hand-view"
+    },
+    {
+      "file": "DM61 для школы.pdf",
+      "page": 1,
+      "figure": 0,
+      "decision": "fill-missing-image",
+      "cardId": "pdf198-3-cf1a8ba4a02e",
+      "asset": {
+        "id": "pdf198-3-cf1a8ba4a02e-school3-ab07341a7059",
+        "localPath": "images/school3-ab07341a7059.jpg",
+        "thumbnailPath": "thumbs/school3-ab07341a7059.jpg",
+        "caption": "По подписи PDF: РУЧНАЯ ГРАНАТА  DM61 (Германия). «DM61 для школы.pdf», PDF-стр. 1. Исходная окраска сохранена, разрешение не увеличено. Автор и отдельная лицензия иллюстрации не установлены.",
+        "width": 285,
+        "height": 491,
+        "position": 0
+      },
+      "nativeSize": [
+        285,
+        491
+      ]
+    },
+    {
+      "file": "DM31 для школы.pdf",
+      "page": 1,
+      "figure": 0,
+      "decision": "replace-existing-image",
+      "cardId": "eng-dm-31-at",
+      "asset": {
+        "id": "reference-v6-2e24b2b340546b9e",
+        "localPath": "images/school3-07c1248e653e.jpg",
+        "thumbnailPath": "thumbs/school3-07c1248e653e.jpg",
+        "caption": "По подписи PDF: ПРОТИВОТАНКОВАЯ МИНА  DM31 (Германия). «DM31 для школы.pdf», PDF-стр. 1. Исходная окраска сохранена, разрешение не увеличено. Автор и отдельная лицензия иллюстрации не установлены.",
+        "width": 563,
+        "height": 500,
+        "position": 0
+      },
+      "nativeSize": [
+        563,
+        500
+      ]
+    },
+    {
+      "file": "DM1274 для школы.pdf",
+      "page": 1,
+      "figure": 0,
+      "decision": "add-distinct-exterior-view",
+      "cardId": "eng-pdf-v7-021",
+      "asset": {
+        "id": "eng-pdf-v7-021-school3-0cf545f55395",
+        "localPath": "images/school3-0cf545f55395.jpg",
+        "thumbnailPath": "thumbs/school3-0cf545f55395.jpg",
+        "caption": "По подписи PDF: ПРОТИВОТАНКОВАЯ МИНА  DM1274 (Германия). «DM1274 для школы.pdf», PDF-стр. 1. В этой иллюстрации источник использует индекс DM1274; другие индексы семейства автоматически не приписываются. Исходная окраска сохранена, разрешение не увеличено. Автор и отдельная лицензия иллюстрации не установлены.",
+        "width": 800,
+        "height": 747,
+        "position": 1
+      },
+      "nativeSize": [
+        800,
+        747
+      ]
+    },
+    {
+      "file": "DM12 для школы.pdf",
+      "page": 1,
+      "figure": 0,
+      "decision": "replace-existing-image",
+      "cardId": "eng-parm-family",
+      "asset": {
+        "id": "reference-v6-df08e881d21bb13e",
+        "localPath": "images/school3-3b9ab16fe68d.jpg",
+        "thumbnailPath": "thumbs/school3-3b9ab16fe68d.jpg",
+        "caption": "По подписи PDF: ПРОТИВОТАНКОВАЯ МИНА  DM12 (Германия). «DM12 для школы.pdf», PDF-стр. 1. Исходная окраска сохранена, разрешение не увеличено. Автор и отдельная лицензия иллюстрации не установлены.",
+        "width": 886,
+        "height": 785,
+        "position": 0
+      },
+      "nativeSize": [
+        886,
+        785
+      ]
+    },
+    {
+      "file": "Ф-1 для школы.pdf",
+      "page": 1,
+      "figure": 0,
+      "decision": "skip-existing-clearer"
+    },
+    {
+      "file": "ТМ-83 для школы.pdf",
+      "page": 1,
+      "figure": 0,
+      "decision": "replace-existing-image",
+      "cardId": "mine-audit-v25-su-tm-83",
+      "asset": {
+        "id": "img-v44-tm83-open",
+        "localPath": "images/school3-7d0fe6e12a27.jpg",
+        "thumbnailPath": "thumbs/school3-7d0fe6e12a27.jpg",
+        "caption": "По подписи PDF: ПРОТИВОТАНКОВАЯ МИНА  ТМ-83. «ТМ-83 для школы.pdf», PDF-стр. 1. Исходная окраска сохранена, разрешение не увеличено. Автор и отдельная лицензия иллюстрации не установлены.",
+        "width": 654,
+        "height": 786,
+        "position": 0
+      },
+      "nativeSize": [
+        654,
+        786
+      ]
+    },
+    {
+      "file": "ТМ-62П3 для школы.pdf",
+      "page": 1,
+      "figure": 0,
+      "decision": "replace-existing-image",
+      "cardId": "ref-v8-tm-62p3",
+      "asset": {
+        "id": "photo-v178-437bef23d02f5f95",
+        "localPath": "images/school3-395ebb3c74d2.jpg",
+        "thumbnailPath": "thumbs/school3-395ebb3c74d2.jpg",
+        "caption": "По подписи PDF: ПРОТИВОТАНКОВАЯ МИНА  ТМ-62П3. «ТМ-62П3 для школы.pdf», PDF-стр. 1. Исходная окраска сохранена, разрешение не увеличено. Автор и отдельная лицензия иллюстрации не установлены.",
+        "width": 985,
+        "height": 715,
+        "position": 0
+      },
+      "nativeSize": [
+        985,
+        715
+      ]
+    },
+    {
+      "file": "М14.pdf",
+      "page": 3,
+      "figure": 0,
+      "decision": "add-distinct-exterior-view",
+      "cardId": "eng-m14-ap-mine",
+      "asset": {
+        "id": "eng-m14-ap-mine-school3-4fe650ae5e64",
+        "localPath": "images/school3-4fe650ae5e64.jpg",
+        "thumbnailPath": "thumbs/school3-4fe650ae5e64.jpg",
+        "caption": "M14 — наружный вид показанного образца. «М14.pdf», PDF-стр. 3. Наружный вид днища и маркировки; подписи исходного изображения сохранены. Исходная окраска сохранена, разрешение не увеличено. Автор и отдельная лицензия иллюстрации не установлены.",
+        "width": 259,
+        "height": 243,
+        "position": 2
+      },
+      "nativeSize": [
+        259,
+        243
+      ]
+    }
+  ]
+}

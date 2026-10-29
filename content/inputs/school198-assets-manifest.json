@@ -1,0 +1,203 @@
+{
+  "bytes": 1843870,
+  "sha256": "40d9c10c4921b9bef57e6b16fc2492636ea6e2f306bafe66264ac419c47dd958",
+  "parts": [
+    {
+      "path": "content/inputs/school198-assets.zip.part000",
+      "bytes": 1843870,
+      "sha256": "40d9c10c4921b9bef57e6b16fc2492636ea6e2f306bafe66264ac419c47dd958"
+    }
+  ],
+  "files": [
+    {
+      "path": "images/school198-04df2b73aa26.jpg",
+      "bytes": 98287,
+      "sha256": "ac7e83df17f728274460feff1c58fb2512d183d38ce2e30c67e7a7b97cd1b408"
+    },
+    {
+      "path": "images/school198-18f28ae62d49.jpg",
+      "bytes": 186541,
+      "sha256": "ac597b32741ca28c0f909d641388cac611d7d181f1093f8abd808f386c09312e"
+    },
+    {
+      "path": "images/school198-2b8a9c5ecf54.jpg",
+      "bytes": 211048,
+      "sha256": "916e3b61b14ce4a208590f82addb6f4c1d4f6ea12d4a16956256b696a5e22b9a"
+    },
+    {
+      "path": "images/school198-3c5c7d1788e2.jpg",
+      "bytes": 81279,
+      "sha256": "b83be642d6b281722da2f0ef8a12f5d8d23c08f9fe80c262d59822229a2f822b"
+    },
+    {
+      "path": "images/school198-45e032bb7d42.jpg",
+      "bytes": 64768,
+      "sha256": "7497a80bfda874ab9cf185153de2fc5beb6c496d7b67157298263e194b3d98f0"
+    },
+    {
+      "path": "images/school198-608f87c92fc3.jpg",
+      "bytes": 125770,
+      "sha256": "7736045a4d17c8a58df317e51898ea6b8629a2a97cbe187cf10a01ac90a1a783"
+    },
+    {
+      "path": "images/school198-7783c1e210d0.jpg",
+      "bytes": 38856,
+      "sha256": "f5dd6ac59e6b4fcdb68bfc06afe0f5b359e9b288cdd5d2b8ed2fad3298ff10b3"
+    },
+    {
+      "path": "images/school198-82dac3a772f0.jpg",
+      "bytes": 41715,
+      "sha256": "95cb8d84771d1cb375f3b8a7e18dd18e40db7498fe362b06fe3b07b7a910dc63"
+    },
+    {
+      "path": "images/school198-83cac22394ea.jpg",
+      "bytes": 35464,
+      "sha256": "33a9158c1541bc27bbef56a5438b4ef21762350cefedc31588f59d929aa4334d"
+    },
+    {
+      "path": "images/school198-85b0979e0050.jpg",
+      "bytes": 137471,
+      "sha256": "c39672e8dd0c803733961f2d5d59abc51e0eedc3b62c45ffba9e23460ba27331"
+    },
+    {
+      "path": "images/school198-9c1b554b393a.jpg",
+      "bytes": 134083,
+      "sha256": "fd4d8ce327ecba1a816803fd32ac97a855589dd8cccec4affc3d68ee4298257b"
+    },
+    {
+      "path": "images/school198-a7d9f1723fb4.jpg",
+      "bytes": 74389,
+      "sha256": "5e19efafa85cf744c1d16eb924b8cc455e6a44afb9924f46ef29ec30707c862f"
+    },
+    {
+      "path": "images/school198-acb09a864093.jpg",
+      "bytes": 56756,
+      "sha256": "168891fdbb10bb39b4ddd9a4a5db9bf94a5211a58bc57f658f9e1f59658fd127"
+    },
+    {
+      "path": "images/school198-b74ab33fb238.jpg",
+      "bytes": 84696,
+      "sha256": "f89ef0cc251f594f4da1b07e0a4b09b9aa98007d0fc1df931c8d06db3551b80a"
+    },
+    {
+      "path": "images/school198-bd39a8edfb14.jpg",
+      "bytes": 54933,
+      "sha256": "d39b8b2a01ac21813e25aa0a46e36d07a437590296f41dc33836307667d5dc38"
+    },
+    {
+      "path": "images/school198-c4e3c3f90ecb.jpg",
+      "bytes": 61009,
+      "sha256": "6a35556901394b134428a6cd6146d76727db8bfbebc827e1c73510ce5e71adb6"
+    },
+    {
+      "path": "images/school198-d39eca09f61a.jpg",
+      "bytes": 49035,
+      "sha256": "7b08c1f4eefa6440764acef1c4dd966d540cc60115f418964bd12e262a564ee1"
+    },
+    {
+      "path": "images/school198-ea5fbb609dae.jpg",
+      "bytes": 43549,
+      "sha256": "3b5d2b2cd0655790ed3fd711feea6ed2331dc4a6fda5e3a28efb0f1e5da45c43"
+    },
+    {
+      "path": "images/school198-fd2a14f13a67.jpg",
+      "bytes": 94973,
+      "sha256": "52d070d2a60aca7c200cc041e65372b664c8305542ef63599105aedd60778267"
+    },
+    {
+      "path": "thumbs/school198-04df2b73aa26.jpg",
+      "bytes": 8361,
+      "sha256": "873bff78157b9e750d2f592e7e66f3c2998aeb9e9eedeacfd78e89b8ae683021"
+    },
+    {
+      "path": "thumbs/school198-18f28ae62d49.jpg",
+      "bytes": 14125,
+      "sha256": "bae12332c5730129ae540584111a7d307a2626f03a2b486eaddbd3507463fcaf"
+    },
+    {
+      "path": "thumbs/school198-2b8a9c5ecf54.jpg",
+      "bytes": 8481,
+      "sha256": "bc0d87ae98a34cf79d8238d9a1f5b83bbf2cf2027d12a2281dc73bbf8cfc628c"
+    },
+    {
+      "path": "thumbs/school198-3c5c7d1788e2.jpg",
+      "bytes": 10166,
+      "sha256": "91d183ab22c424eb35c5b9208f38609489a529641b7044982434863c34ae372f"
+    },
+    {
+      "path": "thumbs/school198-45e032bb7d42.jpg",
+      "bytes": 14440,
+      "sha256": "8913253a3a7f878a8cb745fa37ec199b896e7c868f1d321bef986e3fba75057f"
+    },
+    {
+      "path": "thumbs/school198-608f87c92fc3.jpg",
+      "bytes": 15391,
+      "sha256": "18175f965e0988ed2273966eca9aa003c295dd3d190dab6eedef1dfa7fdbc113"
+    },
+    {
+      "path": "thumbs/school198-7783c1e210d0.jpg",
+      "bytes": 2603,
+      "sha256": "6ee1c0d07944bd8ddff13df6014abdc12cd9dff83c74e6571ec43c879b94fbeb"
+    },
+    {
+      "path": "thumbs/school198-82dac3a772f0.jpg",
+      "bytes": 2681,
+      "sha256": "88ff628b6d3ec68591ca7a0281a0590c53b4db707359dc6f634c0629b6df2c75"
+    },
+    {
+      "path": "thumbs/school198-83cac22394ea.jpg",
+      "bytes": 2843,
+      "sha256": "fddbf4e63a8b7f35f9f3629629b2e393f07b93190798ef94b58c1b2fc2aa890d"
+    },
+    {
+      "path": "thumbs/school198-85b0979e0050.jpg",
+      "bytes": 10896,
+      "sha256": "399f15af81c1958b3ecf094984771bdc7e0f8e596110a0312dc0c977148e2cb9"
+    },
+    {
+      "path": "thumbs/school198-9c1b554b393a.jpg",
+      "bytes": 7060,
+      "sha256": "be5e49b43be839646917b3f6feceaa83d243e69fd07478b3dad088f63e2ea0d6"
+    },
+    {
+      "path": "thumbs/school198-a7d9f1723fb4.jpg",
+      "bytes": 8721,
+      "sha256": "d998164108d7ecbaed96823ecefc1c09af4aff7ee773dafaa9f4f69ca780bc3f"
+    },
+    {
+      "path": "thumbs/school198-acb09a864093.jpg",
+      "bytes": 6898,
+      "sha256": "926beb31aff89f9fd75bd216869111ce55b8aa45d4e7e3648255237e61b4b3f0"
+    },
+    {
+      "path": "thumbs/school198-b74ab33fb238.jpg",
+      "bytes": 9650,
+      "sha256": "9ccc8718c8b2f71bbf1aad5b5dcaa13ebdf83277603e0d4f465fb57db4c25d33"
+    },
+    {
+      "path": "thumbs/school198-bd39a8edfb14.jpg",
+      "bytes": 5390,
+      "sha256": "740e53144739a697d3ee7a74b2be3530e63c263677a601fe098a49a8e08f800f"
+    },
+    {
+      "path": "thumbs/school198-c4e3c3f90ecb.jpg",
+      "bytes": 7978,
+      "sha256": "ac34e333ce8bb6679a3dc5b4dc87d32f5e29880a95a48a1c18d0cf16f9dd9fc4"
+    },
+    {
+      "path": "thumbs/school198-d39eca09f61a.jpg",
+      "bytes": 10745,
+      "sha256": "7f313dbf3b1585da96b552c4eb3a764b77c97a4368446b5e57b930623611c9fe"
+    },
+    {
+      "path": "thumbs/school198-ea5fbb609dae.jpg",
+      "bytes": 2772,
+      "sha256": "afa34e9a52e393c35a85eb7d52c5fc8a42049b4bd3cbebb69b29bed26ee501c6"
+    },
+    {
+      "path": "thumbs/school198-fd2a14f13a67.jpg",
+      "bytes": 14629,
+      "sha256": "06a502920bd117e9bcf4af3222963b4830d0f64c059cbec668357891f6a0f869"
+    }
+  ]
+}

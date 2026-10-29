@@ -1,0 +1,17 @@
+{
+  "integrity": "ok",
+  "foreignKeys": "ok",
+  "fts": "ok",
+  "previousCardIdsAndRowidsPreserved": 2715,
+  "newCards": 1,
+  "newNativeFigures": 19,
+  "decodedImageAndThumbnailFiles": 38,
+  "replacedGalleryRows": 10,
+  "addedGalleryRows": 12,
+  "cardCount": 2716,
+  "imageCount": 2143,
+  "mibBoardSeparatedFromEngineeringMunition": true,
+  "coverImagesReplaced": true,
+  "androidImportTested": false,
+  "published": false
+}

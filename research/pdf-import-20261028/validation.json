@@ -1,0 +1,13 @@
+{
+  "integrity": "ok",
+  "foreignKeys": "ok",
+  "fts": "ok",
+  "allNewReferencesIndexed": 1020,
+  "oldCardIdsAndRowidsPreserved": 1695,
+  "oldTextAndPhotos": "unchanged",
+  "newImagesFullyDecoded": 536,
+  "existingPhotoReplacements": 0,
+  "independentTechnicalVerification": false,
+  "androidImportTested": false,
+  "published": false
+}

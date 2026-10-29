@@ -1,0 +1,92 @@
+name: Prepare reviewed PDF references for catalog 198
+on:
+  push:
+    branches: [content/pdf-review-20261028]
+    paths: [content/inputs/pdf198-assets-manifest.json, content/inputs/school198-assets-manifest.json, content/inputs/school3-assets-manifest.json, content/inputs/school4-assets-manifest.json, content/inputs/school5-assets-manifest.json, content/overlays/pdf-import-20261028.json, content/overlays/school-images-20261028.json, content/overlays/school-images-b3-20261028.json, content/overlays/school-images-b4-20261028.json, content/overlays/school-images-b5-20261029.json, tools/verify_pdf_import_198.py, tools/verify_school_images_198.py, tools/verify_reviewed_pdf_batch_198.py, tools/materialize_pdf_assets_198.py]
+permissions:
+  contents: write
+jobs:
+  prepare:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - name: Install image validation dependency
+        run: sudo apt-get update -qq && sudo apt-get install -y python3-pil
+      - name: Restore pinned exterior assets and build catalog
+        run: |
+          mkdir -p build/pdf-import-198
+          git fetch --depth=1 origin 849924c143c960ced730b314e95758eb3729edf7
+          git show 849924c143c960ced730b314e95758eb3729edf7:content/catalog.json > build/pdf-import-198/baseline-197.json
+          if test -f content/inputs/pdf198-assets.zip.part000; then
+            /usr/bin/python3 tools/materialize_pdf_assets_198.py
+          fi
+          if test -f content/inputs/school198-assets.zip.part000; then
+            /usr/bin/python3 tools/materialize_pdf_assets_198.py --manifest content/inputs/school198-assets-manifest.json
+          fi
+          if test -f content/inputs/school3-assets.zip.part000; then
+            /usr/bin/python3 tools/materialize_pdf_assets_198.py --manifest content/inputs/school3-assets-manifest.json
+          fi
+          if test -f content/inputs/school4-assets.zip.part000; then
+            /usr/bin/python3 tools/materialize_pdf_assets_198.py --manifest content/inputs/school4-assets-manifest.json
+          fi
+          if test -f content/inputs/school5-assets.zip.part000; then
+            /usr/bin/python3 tools/materialize_pdf_assets_198.py --manifest content/inputs/school5-assets-manifest.json
+          fi
+          /usr/bin/python3 tools/materialize_pdf_assets_198.py --prune
+          /usr/bin/python3 tools/apply_pdf_import_198.py --source build/pdf-import-198/baseline-197.json --output build/pdf-import-198/catalog.json
+          /usr/bin/python3 tools/build_catalog.py --source build/pdf-import-198/catalog.json --output build/pdf-import-198/guide-v29.db
+          /usr/bin/python3 tools/verify_pdf_import_198.py --catalog build/pdf-import-198/catalog.json --database build/pdf-import-198/guide-v29.db --report research/pdf-import-20261028/validation.json --baseline build/pdf-import-198/baseline-197.json
+          /usr/bin/python3 tools/apply_school_images_198.py --source build/pdf-import-198/catalog.json --output build/pdf-import-198/final-catalog.json
+          /usr/bin/python3 tools/build_catalog.py --source build/pdf-import-198/final-catalog.json --output build/pdf-import-198/guide-v29.db
+          /usr/bin/python3 tools/verify_school_images_198.py --baseline build/pdf-import-198/catalog.json --catalog build/pdf-import-198/final-catalog.json --database build/pdf-import-198/guide-v29.db --report research/school-images-20261028/validation.json
+          /usr/bin/python3 tools/apply_school_images_198.py --overlay content/overlays/school-images-b3-20261028.json --source build/pdf-import-198/final-catalog.json --output build/pdf-import-198/b3-catalog.json
+          /usr/bin/python3 tools/build_catalog.py --source build/pdf-import-198/b3-catalog.json --output build/pdf-import-198/guide-v29.db
+          /usr/bin/python3 tools/verify_school_images_b3_198.py --baseline build/pdf-import-198/final-catalog.json --catalog build/pdf-import-198/b3-catalog.json --database build/pdf-import-198/guide-v29.db --report research/school-images-b3-20261028/validation.json
+          /usr/bin/python3 tools/apply_school_images_198.py --overlay content/overlays/school-images-b4-20261028.json --source build/pdf-import-198/b3-catalog.json --output build/pdf-import-198/b4-catalog.json
+          /usr/bin/python3 tools/build_catalog.py --source build/pdf-import-198/b4-catalog.json --output build/pdf-import-198/guide-v29.db
+          /usr/bin/python3 tools/verify_reviewed_pdf_batch_198.py --overlay content/overlays/school-images-b4-20261028.json --baseline build/pdf-import-198/b3-catalog.json --catalog build/pdf-import-198/b4-catalog.json --database build/pdf-import-198/guide-v29.db --report research/school-images-b4-20261028/validation.json
+          /usr/bin/python3 tools/apply_school_images_198.py --overlay content/overlays/school-images-b5-20261029.json --source build/pdf-import-198/b4-catalog.json --output build/pdf-import-198/b5-catalog.json
+          /usr/bin/python3 tools/build_catalog.py --source build/pdf-import-198/b5-catalog.json --output build/pdf-import-198/guide-v29.db
+          /usr/bin/python3 tools/verify_reviewed_pdf_batch_198.py --overlay content/overlays/school-images-b5-20261029.json --baseline build/pdf-import-198/b4-catalog.json --catalog build/pdf-import-198/b5-catalog.json --database build/pdf-import-198/guide-v29.db --report research/school-images-b5-20261029/validation.json
+      - name: Commit prepared data without publishing
+        run: |
+          cp build/pdf-import-198/b5-catalog.json content/catalog.json
+          cp build/pdf-import-198/guide-v29.db app/src/main/assets/database/guide-v29.db
+          cp build/pdf-import-198/content-version.txt app/src/main/assets/database/content-version.txt
+          git add -A content/catalog.json app/src/main/assets/images app/src/main/assets/thumbs app/src/main/assets/database/guide-v29.db app/src/main/assets/database/content-version.txt research/pdf-import-20261028/validation.json research/school-images-20261028/validation.json research/school-images-b3-20261028/validation.json research/school-images-b4-20261028/validation.json research/school-images-b5-20261029/validation.json
+          if test -f content/inputs/pdf198-assets.zip.part000; then
+            git rm content/inputs/pdf198-assets.zip.part*
+          fi
+          if test -f content/inputs/school198-assets.zip.part000; then
+            git rm content/inputs/school198-assets.zip.part*
+          fi
+          if test -f content/inputs/school3-assets.zip.part000; then
+            git rm content/inputs/school3-assets.zip.part*
+          fi
+          if test -f content/inputs/school4-assets.zip.part000; then
+            git rm content/inputs/school4-assets.zip.part*
+          fi
+          if test -f content/inputs/school5-assets.zip.part000; then
+            git rm content/inputs/school5-assets.zip.part*
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          if ! git diff --cached --quiet; then
+            git commit -m 'Materialize reviewed PDF references and catalog 198 database [skip ci]'
+            git push origin HEAD:content/pdf-review-20261028
+          fi
+      - uses: actions/upload-artifact@v4
+        with:
+          name: pdf-import-198-validation
+          path: |
+            research/pdf-import-20261028/validation.json
+            research/school-images-20261028/validation.json
+            research/school-images-b3-20261028/validation.json
+            research/school-images-b4-20261028/validation.json
+            research/school-images-b5-20261029/validation.json

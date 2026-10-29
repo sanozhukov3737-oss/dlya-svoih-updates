@@ -23,6 +23,11 @@ def normalize(value):
     return unicodedata.normalize('NFKC', value).lower().replace('ё', 'е')
 
 
+def android_length(value):
+    # ContentUpdater uses Kotlin String.length (UTF-16 code units).
+    return len(value.encode('utf-16-le')) // 2
+
+
 def unique(rows, key, label):
     values = [row[key] for row in rows]
     if len(values) != len(set(values)):
@@ -50,7 +55,7 @@ def validate(data):
         if categories[card['categoryId']]['section'] != card['section']:
             raise ValueError('Card/category section mismatch')
         for field, limit in [('title', 200), ('summary', 600), ('body', 100_000)]:
-            if not isinstance(card[field], str) or not card[field].strip() or len(card[field]) > limit:
+            if not isinstance(card[field], str) or not card[field].strip() or android_length(card[field]) > limit:
                 raise ValueError(f'Invalid {field}: {card["id"]}')
         if not isinstance(card.get('modelStatus'), str) or not card['modelStatus'].strip() or len(card['modelStatus']) > 40:
             raise ValueError(f'Invalid model status: {card["id"]}')
@@ -71,7 +76,13 @@ def validate(data):
             raise ValueError('Invalid card country')
         if len(card['images']) > 12:
             raise ValueError('Too many images in a card')
+        if android_length(' · '.join(card['tags'])) > 2000:
+            raise ValueError('Tags exceed Android importer limit')
         for picture in card['images']:
+            if not re.fullmatch(r'[a-z0-9][a-z0-9-]{0,95}', picture['id']):
+                raise ValueError('Invalid image id')
+            if not isinstance(picture['caption'], str) or not picture['caption'].strip() or android_length(picture['caption']) > 600:
+                raise ValueError(f'Image caption exceeds Android importer limit: {picture["id"]}')
             if type(picture.get('position')) is not int or not 0 <= picture['position'] <= 11:
                 raise ValueError(f'Invalid image position: {card["id"]}/{picture["id"]}')
             if picture['id'] in image_ids:
@@ -91,10 +102,14 @@ def validate(data):
                         raise ValueError('Image dimensions do not match metadata')
                     image.verify()
         for source in card['sources']:
+            if not re.fullmatch(r'[a-z0-9][a-z0-9-]{0,95}', source['id']):
+                raise ValueError('Invalid source id')
+            if not isinstance(source['title'], str) or not source['title'].strip() or android_length(source['title']) > 500:
+                raise ValueError('Source title exceeds Android importer limit')
             if source['id'] in source_ids:
                 raise ValueError('Duplicate source id')
             source_ids.add(source['id'])
-            if source['url'] is not None and not source['url'].startswith('https://'):
+            if source['url'] is not None and (not source['url'].startswith('https://') or android_length(source['url']) > 2048):
                 raise ValueError('Source URL must use HTTPS')
 
 
