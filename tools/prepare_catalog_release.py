@@ -7,6 +7,7 @@ import sqlite3
 import zipfile
 from build_catalog import ROOT, ASSETS, normalize, validate
 from build_update_feed import write_feed
+from catalog_projection import search_fields
 
 
 def sha(path):
@@ -39,11 +40,12 @@ def prepare(request_path, previous_feed, output):
             if db.execute('SELECT COUNT(*) FROM ' + table).fetchone()[0]:
                 raise ValueError('Release contains user data')
         expected = []
+        search = search_fields(data['cards'])
         for c in data['cards']:
             row = {k: c[k] for k in ('rowid', 'id', 'section', 'categoryId', 'title', 'summary', 'body',
                 'contentStatus', 'reviewedAt', 'modelStatus', 'sourceGrade', 'verifiedAt')}
             row.update(archived=0, tags=' · '.join(c['tags']), sortTitle=normalize(c['title']),
-                searchText=normalize(' '.join([c['title'], c['summary'], c['body'].split('\n\n## Служебные сведения', 1)[0], *c['tags']])),
+                searchText=search[c['id']],
                 thumbnailPath=c['images'][0]['thumbnailPath'] if c['images'] else None)
             expected.append(row)
         if sorted(expected, key=lambda x: x['id']) != sorted([dict(r) for r in db.execute('SELECT * FROM cards')], key=lambda x: x['id']):
