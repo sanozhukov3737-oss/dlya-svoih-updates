@@ -1,5 +1,6 @@
 """Host migration/media/package contract tests. Android importer is tested separately on device."""
 import copy
+from contextlib import closing
 import hashlib
 import json
 from pathlib import Path
@@ -18,7 +19,7 @@ PRODUCTION_DB = ASSETS / 'database/guide-v29.db'
 
 class UpdateTests(unittest.TestCase):
     def test_bundled_image_positions_pass_android_importer(self):
-        with sqlite3.connect(PRODUCTION_DB) as db:
+        with closing(sqlite3.connect(PRODUCTION_DB)) as db:
             invalid = db.execute('SELECT id, cardId, position FROM images WHERE position NOT BETWEEN 0 AND 11').fetchall()
         self.assertEqual([], invalid)
 
@@ -36,7 +37,7 @@ class UpdateTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as directory:
             old = Path(directory) / 'old.db'
             shutil.copyfile(ROOT / 'app/src/androidTest/assets/database/v1.db', old)
-            with sqlite3.connect(old) as db, sqlite3.connect(PRODUCTION_DB) as current:
+            with closing(sqlite3.connect(old)) as db, closing(sqlite3.connect(PRODUCTION_DB)) as current:
                 db.execute('PRAGMA foreign_keys=ON')
                 db.execute("INSERT INTO favorites VALUES ('first-aid-burn',1)")
                 for statement in migration:
@@ -46,27 +47,29 @@ class UpdateTests(unittest.TestCase):
                 self.assertEqual([('first-aid-burn',1)], db.execute('SELECT * FROM favorites').fetchall())
                 self.assertEqual(1, db.execute('SELECT COUNT(*) FROM cards_fts WHERE cards_fts MATCH ?', ('"проточ*"',)).fetchone()[0])
                 self.assertFalse(db.execute('PRAGMA foreign_key_check').fetchall())
+                db.commit()
 
     def test_reading_survives_database_reopen_and_card_update(self):
         with tempfile.TemporaryDirectory() as directory:
             path = Path(directory) / 'guide.db'
             shutil.copyfile(PRODUCTION_DB, path)
-            with sqlite3.connect(path) as db:
+            with closing(sqlite3.connect(path)) as db:
                 db.execute('PRAGMA foreign_keys=ON')
                 db.execute("INSERT INTO reading VALUES ('first-aid-burn', 4, 72, 1000, 2)")
                 db.execute("UPDATE cards SET summary='Тестовое изменение' WHERE id='first-aid-burn'")
-            with sqlite3.connect(path) as db:
+                db.commit()
+            with closing(sqlite3.connect(path)) as db:
                 self.assertEqual(('first-aid-burn',4,72,1000,2), db.execute('SELECT * FROM reading').fetchone())
 
     def test_bundled_version_marker_matches_database(self):
-        with sqlite3.connect(PRODUCTION_DB) as db:
+        with closing(sqlite3.connect(PRODUCTION_DB)) as db:
             self.assertEqual((ASSETS / 'database/content-version.txt').read_text().strip(),
                 db.execute("SELECT value FROM metadata WHERE key='content_version'").fetchone()[0])
 
     def test_bundled_search_fields_match_catalog_text(self):
         from catalog_projection import search_fields
         expected_fields = search_fields(DATA['cards'])
-        with sqlite3.connect(PRODUCTION_DB) as db:
+        with closing(sqlite3.connect(PRODUCTION_DB)) as db:
             rows = {
                 card_id: (sort_title, search_text)
                 for card_id, sort_title, search_text in
@@ -108,7 +111,7 @@ class UpdateTests(unittest.TestCase):
                     self.assertEqual(len(data),item['bytes'])
                     self.assertEqual(hashlib.sha256(data).hexdigest(),item['sha256'])
                 db_path=Path(directory)/'check.db';db_path.write_bytes(archive.read('guide.db'))
-                with sqlite3.connect(db_path) as db:
+                with closing(sqlite3.connect(db_path)) as db:
                     self.assertEqual(0,db.execute('SELECT COUNT(*) FROM favorites').fetchone()[0])
                     self.assertEqual(0,db.execute('SELECT COUNT(*) FROM reading').fetchone()[0])
 
