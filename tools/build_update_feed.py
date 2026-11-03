@@ -56,7 +56,8 @@ def describe_pack(pack, url, changes='', min_app_code=116):
             with archive.open('guide.db') as source, database.open('wb') as destination:
                 for chunk in iter(lambda: source.read(65536), b''):
                     destination.write(chunk)
-            with sqlite3.connect(database) as db:
+            db = sqlite3.connect(database)
+            try:
                 installed = db.execute("SELECT value FROM metadata WHERE key='content_version'").fetchone()
                 if installed != (str(version),) or db.execute('PRAGMA user_version').fetchone() != (3,):
                     raise ValueError('Package and database versions differ')
@@ -67,6 +68,8 @@ def describe_pack(pack, url, changes='', min_app_code=116):
                 media = {row[0] for row in db.execute("SELECT localPath FROM images UNION SELECT thumbnailPath FROM cards WHERE thumbnailPath IS NOT NULL")}
                 if not media.issubset(set(paths)):
                     raise ValueError('Package is missing referenced media')
+            finally:
+                db.close()
     digest = hashlib.sha256()
     with pack.open('rb') as stream:
         for chunk in iter(lambda: stream.read(65536), b''):
